@@ -34,8 +34,6 @@ export default function HomePage() {
           <SearchBar />
         </div>
 
-        {/* Quick Chips (12 instant widgets) */}
-        <QuickChips />
       </main>
 
       <Footer />

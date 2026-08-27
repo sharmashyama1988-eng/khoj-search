@@ -39,7 +39,6 @@ function getSourceBadge(domain: string): string {
   return domain;
 }
 
-// 🧠 Advanced Enterprise BM25 + Relevancy Scoring Algorithm
 function computeEnterpriseRelevancyScore(query: string, title: string, description: string, domain: string): number {
   const cleanQ = query.toLowerCase().replace(/[^\w\s]/gi, '').trim();
   const cleanTitle = title.toLowerCase();
@@ -50,11 +49,9 @@ function computeEnterpriseRelevancyScore(query: string, title: string, descripti
 
   let score = 0;
 
-  // 1. EXACT PHRASE MATCH BONUS
   if (cleanTitle.includes(cleanQ)) score += 100;
   if (cleanDesc.includes(cleanQ)) score += 50;
 
-  // 2. TOKEN FREQUENCY MATCHING
   let matchedTokensCount = 0;
   queryTokens.forEach((token) => {
     let matched = false;
@@ -69,20 +66,17 @@ function computeEnterpriseRelevancyScore(query: string, title: string, descripti
     if (matched) matchedTokensCount++;
   });
 
-  // HARD REJECTION GUARD: If less than 40% of query keywords match, DISCARD!
   const matchRatio = matchedTokensCount / queryTokens.length;
-  if (matchRatio < 0.4) {
+  if (matchRatio < 0.25) {
     return -1000;
   }
 
-  // 3. INTENT DOMAIN RELEVANCY BOOST
   const isProductOrPrice = /\b(price|cost|buy|specs|phone|laptop|car|vs|review|iphone|samsung|mobile)\b/i.test(query);
   if (isProductOrPrice) {
     if (domain.includes('apple') || domain.includes('amazon') || domain.includes('flipkart') || domain.includes('gsmarena') || domain.includes('techradar') || domain.includes('tomshardware')) {
       score += 50;
     }
-    // Penalize developer blogs when searching product prices
-    if (domain.includes('dev.to') || domain.includes('stackoverflow')) {
+    if (domain.includes('dev.to')) {
       score -= 80;
     }
   }
@@ -90,14 +84,13 @@ function computeEnterpriseRelevancyScore(query: string, title: string, descripti
   return score;
 }
 
-// 1. Fetch DuckDuckGo Web Engine
+// 1. DuckDuckGo HTML Web Search
 async function fetchDuckDuckGoWeb(query: string): Promise<WebSearchResult[]> {
   try {
     const res = await fetch(`https://html.duckduckgo.com/html/?q=${encodeURIComponent(query)}`, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-        'Accept-Language': 'en-US,en;q=0.9',
       },
       next: { revalidate: 60 },
     });
@@ -149,11 +142,11 @@ async function fetchDuckDuckGoWeb(query: string): Promise<WebSearchResult[]> {
   }
 }
 
-// 2. Fetch Wikipedia Search (Capped at 2)
+// 2. Wikipedia Search API
 async function fetchWikipediaWeb(query: string, lang = 'en'): Promise<WebSearchResult[]> {
   try {
     const wikiBase = `https://${lang}.wikipedia.org`;
-    const url = `${wikiBase}/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&srlimit=2&format=json&origin=*`;
+    const url = `${wikiBase}/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&srlimit=5&format=json&origin=*`;
     const res = await fetch(url, { next: { revalidate: 120 } });
     if (!res.ok) return [];
 
@@ -178,10 +171,10 @@ async function fetchWikipediaWeb(query: string, lang = 'en'): Promise<WebSearchR
   }
 }
 
-// 3. Fetch Reddit Results
+// 3. Reddit Search API
 async function fetchRedditWeb(query: string): Promise<WebSearchResult[]> {
   try {
-    const res = await fetch(`https://www.reddit.com/search.json?q=${encodeURIComponent(query)}&limit=3&sort=relevance`, {
+    const res = await fetch(`https://www.reddit.com/search.json?q=${encodeURIComponent(query)}&limit=4&sort=relevance`, {
       headers: { 'User-Agent': 'Mozilla/5.0 KhojSearch/1.0' },
       next: { revalidate: 180 },
     });
@@ -231,10 +224,8 @@ export async function GET(req: NextRequest) {
       if (batch.status === 'fulfilled') {
         batch.value.forEach((item) => {
           if (!seenUrls.has(item.url)) {
-            // Compute Enterprise Relevancy Score
             const score = computeEnterpriseRelevancyScore(query, item.title, item.description, item.domain);
-            // DISCARD if score is below 20 (hard rejection guard)
-            if (score > 10) {
+            if (score > -500) {
               seenUrls.add(item.url);
               combined.push({ ...item, score });
             }
@@ -243,7 +234,21 @@ export async function GET(req: NextRequest) {
       }
     });
 
-    // Rank descending by Enterprise Relevancy Score!
+    // If initial strict filter returned empty results, fallback to all fetched items without strict filter
+    if (combined.length === 0) {
+      fetchedBatches.forEach((batch) => {
+        if (batch.status === 'fulfilled') {
+          batch.value.forEach((item) => {
+            if (!seenUrls.has(item.url)) {
+              seenUrls.add(item.url);
+              combined.push(item);
+            }
+          });
+        }
+      });
+    }
+
+    // Rank descending by Relevancy Score!
     combined.sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
 
     return NextResponse.json({

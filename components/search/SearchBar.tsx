@@ -129,13 +129,7 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
             spellCheck={false}
           />
 
-          {/* Keyboard shortcut hint */}
-          {!compact && !query && (
-            <kbd className="hidden lg:flex items-center gap-1 px-2 py-0.5 rounded-md text-xs
-              text-text-muted bg-surface-3/50 border border-border/60 font-mono shrink-0">
-              <span>⌘</span>K
-            </kbd>
-          )}
+
 
           {/* Clear button */}
           {query && (

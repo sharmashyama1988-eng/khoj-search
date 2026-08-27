@@ -133,7 +133,7 @@ export default function SearchPageContent() {
 
             {/* Instant widget */}
             {hasWidget && (
-              <div className="mb-5 animate-slide-up max-w-sm">{widget}</div>
+              <div className="mb-6 animate-slide-up max-w-xl">{widget}</div>
             )}
 
             {/* Did You Mean */}
