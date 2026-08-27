@@ -33,10 +33,10 @@ export function useSearch() {
     try {
       const fetches: Promise<void>[] = [];
 
-      // Always fetch web (wikipedia) results for "all" tab
+      // Fetch global multi-source web results + query expansion for "all" tab
       if (tab === 'all') {
         fetches.push(
-          fetch(`/api/wikipedia?q=${encodeURIComponent(query)}&lang=${lang}&type=search`, { signal })
+          fetch(`/api/web?q=${encodeURIComponent(query)}&lang=${lang}`, { signal })
             .then((r) => r.json())
             .then((d: { results?: SearchResult[] }) => {
               setState((s) => ({ ...s, results: d.results ?? [] }));

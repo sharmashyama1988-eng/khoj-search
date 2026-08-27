@@ -7,9 +7,11 @@ export interface SearchResult {
   title: string;
   url: string;
   description: string;
-  source: 'wikipedia' | 'duckduckgo' | 'openlibrary' | 'arxiv' | 'github';
+  source: string;
   thumbnail?: string;
   date?: string;
+  favicon?: string;
+  badge?: string;
   extra?: Record<string, unknown>;
 }
 
