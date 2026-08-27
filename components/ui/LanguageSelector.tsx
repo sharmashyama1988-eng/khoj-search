@@ -1,10 +1,10 @@
 'use client';
-import { useState, useRef, useEffect } from 'react';
+import { Suspense, useState, useRef, useEffect } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { useLanguage } from '@/hooks/useLanguage';
 import { LANGUAGES } from '@/lib/languages';
 
-export function LanguageSelector() {
+function LanguageSelectorContent() {
   const { lang, setLang, currentLang, t } = useLanguage();
   const [open, setOpen]     = useState(false);
   const [search, setSearch]   = useState('');
@@ -25,7 +25,6 @@ export function LanguageSelector() {
     setOpen(false);
     setSearch('');
 
-    // If on search page, update URL so results immediately refresh in selected language
     const query = searchParams?.get('q');
     const tab   = searchParams?.get('tab') ?? 'all';
     if (query) {
@@ -101,5 +100,18 @@ export function LanguageSelector() {
         </div>
       )}
     </div>
+  );
+}
+
+export function LanguageSelector() {
+  return (
+    <Suspense fallback={
+      <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-medium bg-surface-2/80 border border-border/80 text-text-secondary">
+        <span>🌐</span>
+        <span className="hidden sm:inline">English</span>
+      </div>
+    }>
+      <LanguageSelectorContent />
+    </Suspense>
   );
 }
