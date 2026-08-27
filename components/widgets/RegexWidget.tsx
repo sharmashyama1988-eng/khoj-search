@@ -19,7 +19,7 @@ export function RegexWidget() {
     setMatches([]);
     try {
       const re   = new RegExp(pattern, flags);
-      const all  = [...input.matchAll(new RegExp(pattern, flags.includes('g') ? flags : flags + 'g'))];
+      const all  = Array.from(input.matchAll(new RegExp(pattern, flags.includes('g') ? flags : flags + 'g')));
       setMatches(all.map((m) => m[0]));
       setOutput(input.replace(re, (m) => `【${m}】`));
     } catch (e) {
