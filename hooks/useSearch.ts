@@ -1,0 +1,113 @@
+'use client';
+import { useState, useCallback, useRef } from 'react';
+import type { SearchResult, ImageResult, BookResult, ArxivResult, GithubResult, WikiPanel, SearchTab } from '@/types';
+
+export interface SearchState {
+  results:    SearchResult[];
+  images:     ImageResult[];
+  books:      BookResult[];
+  arxiv:      ArxivResult[];
+  github:     GithubResult[];
+  wikiPanel:  WikiPanel | null;
+  loading:    boolean;
+  error:      string | null;
+}
+
+const INIT: SearchState = {
+  results: [], images: [], books: [], arxiv: [], github: [],
+  wikiPanel: null, loading: false, error: null,
+};
+
+export function useSearch() {
+  const [state, setState] = useState<SearchState>(INIT);
+  const abortRef = useRef<AbortController | null>(null);
+
+  const search = useCallback(async (query: string, lang: string, tab: SearchTab) => {
+    if (!query.trim()) return;
+    abortRef.current?.abort();
+    abortRef.current = new AbortController();
+    const { signal } = abortRef.current;
+
+    setState((s) => ({ ...s, loading: true, error: null }));
+
+    try {
+      const fetches: Promise<void>[] = [];
+
+      // Always fetch web (wikipedia) results for "all" tab
+      if (tab === 'all') {
+        fetches.push(
+          fetch(`/api/wikipedia?q=${encodeURIComponent(query)}&lang=${lang}&type=search`, { signal })
+            .then((r) => r.json())
+            .then((d: { results?: SearchResult[] }) => {
+              setState((s) => ({ ...s, results: d.results ?? [] }));
+            })
+            .catch(() => {}),
+
+          fetch(`/api/wikipedia?q=${encodeURIComponent(query)}&lang=${lang}&type=panel`, { signal })
+            .then((r) => r.json())
+            .then((d: { panel?: WikiPanel | null }) => {
+              setState((s) => ({ ...s, wikiPanel: d.panel ?? null }));
+            })
+            .catch(() => {}),
+        );
+      }
+
+      if (tab === 'images') {
+        fetches.push(
+          fetch(`/api/images?q=${encodeURIComponent(query)}&lang=${lang}`, { signal })
+            .then((r) => r.json())
+            .then((d: { results?: ImageResult[] }) => {
+              setState((s) => ({ ...s, images: d.results ?? [] }));
+            })
+            .catch(() => {}),
+        );
+      }
+
+      if (tab === 'books') {
+        fetches.push(
+          fetch(`/api/books?q=${encodeURIComponent(query)}`, { signal })
+            .then((r) => r.json())
+            .then((d: { results?: BookResult[] }) => {
+              setState((s) => ({ ...s, books: d.results ?? [] }));
+            })
+            .catch(() => {}),
+        );
+      }
+
+      if (tab === 'research') {
+        fetches.push(
+          fetch(`/api/arxiv?q=${encodeURIComponent(query)}`, { signal })
+            .then((r) => r.json())
+            .then((d: { results?: ArxivResult[] }) => {
+              setState((s) => ({ ...s, arxiv: d.results ?? [] }));
+            })
+            .catch(() => {}),
+        );
+      }
+
+      if (tab === 'code') {
+        fetches.push(
+          fetch(`/api/github?q=${encodeURIComponent(query)}`, { signal })
+            .then((r) => r.json())
+            .then((d: { results?: GithubResult[] }) => {
+              setState((s) => ({ ...s, github: d.results ?? [] }));
+            })
+            .catch(() => {}),
+        );
+      }
+
+      await Promise.allSettled(fetches);
+    } catch (e) {
+      if (!signal.aborted) setState((s) => ({ ...s, error: String(e) }));
+    } finally {
+      if (!signal?.aborted) setState((s) => ({ ...s, loading: false }));
+    }
+  }, []);
+
+  const reset = useCallback(() => {
+    abortRef.current?.abort();
+    setState(INIT);
+  }, []);
+
+  return { ...state, search, reset };
+}
