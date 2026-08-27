@@ -11,7 +11,7 @@ const SOURCE_COLORS: Record<string, string> = {
   Medium:        'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
   'Dev.to':      'bg-purple-500/10 text-purple-400 border-purple-500/20',
   GitHub:        'bg-slate-500/10 text-slate-300 border-slate-500/20',
-  Wikipedia:     'bg-blue-500/10 text-blue-400 border-blue-500/20',
+  Wikipedia:     'bg-indigo-500/10 text-indigo-400 border-indigo-500/20',
   DuckDuckGo:    'bg-yellow-500/10 text-yellow-400 border-yellow-500/20',
   YouTube:       'bg-red-600/10 text-red-500 border-red-600/20',
 };
@@ -30,15 +30,15 @@ function getDomain(url: string): string {
 
 export function ResultCard({ result, index }: Props) {
   const badge = result.badge || result.source;
-  const badgeClass = SOURCE_COLORS[badge] || 'bg-surface-3 text-text-muted border-border';
+  const badgeClass = SOURCE_COLORS[badge] || 'bg-surface-3/60 text-text-muted border-border/40';
 
   return (
     <a
       href={result.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group block p-4.5 rounded-2xl border border-border/70 bg-surface-2/50 backdrop-blur-sm
-        hover:border-accent/30 hover:bg-surface-2 hover:shadow-md hover:shadow-black/5
+      className="group block p-4.5 rounded-2xl border border-white/[0.07] dark:border-white/[0.07] bg-surface-2/60 backdrop-blur-md
+        hover:border-indigo-500/30 hover:bg-surface-2 hover:shadow-xl hover:shadow-black/10
         transition-all duration-200 animate-fade-in"
       style={{ animationDelay: `${Math.min(index * 30, 300)}ms` }}
     >
@@ -52,13 +52,13 @@ export function ResultCard({ result, index }: Props) {
           onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
         />
         <span className="text-xs text-text-muted font-mono">{getDomain(result.url)}</span>
-        <span className={`text-xs px-2 py-0.5 rounded-full border font-medium ${badgeClass}`}>
+        <span className={`text-[11px] px-2 py-0.5 rounded-full border font-medium ${badgeClass}`}>
           {badge}
         </span>
       </div>
 
       {/* Title */}
-      <h3 className="text-text-primary font-semibold text-base group-hover:text-accent line-clamp-2 mb-1.5 leading-snug transition-colors">
+      <h3 className="text-text-primary font-semibold text-base group-hover:text-indigo-400 line-clamp-2 mb-1.5 leading-snug transition-colors">
         {result.title}
       </h3>
 

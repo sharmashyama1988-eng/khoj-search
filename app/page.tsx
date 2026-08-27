@@ -47,18 +47,6 @@ export default function HomePage() {
         {/* Quick Chips (12 instant widgets) */}
         <QuickChips />
 
-        {/* Feature Pills */}
-        <div className="mt-12 flex flex-wrap justify-center gap-2 text-xs text-text-muted max-w-xl text-center">
-          {[
-            '🌍 30+ Languages', '⚡ Instant Answers', '📚 Books', '🔬 Research Papers',
-            '💻 Code Sandbox', '🖼️ Images', '🌤️ Weather', '💱 Crypto & Currency',
-            '🗺️ Live Maps', '📈 Stocks', '🔤 RegEx Tester', '🔐 Password Generator',
-          ].map((feat) => (
-            <span key={feat} className="px-3 py-1.5 rounded-full bg-surface-2/80 border border-border/80 backdrop-blur-sm transition-all hover:border-accent/40">
-              {feat}
-            </span>
-          ))}
-        </div>
       </main>
 
       <Footer />

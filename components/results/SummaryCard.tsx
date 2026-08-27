@@ -9,15 +9,25 @@ interface SummaryData {
   extract: string;
   image?: string;
   url: string;
-  type: 'wikipedia' | 'duckduckgo' | 'definition';
+  type: 'wikipedia' | 'duckduckgo' | 'summary';
 }
 
 interface Props { query: string }
 
+// Clean search prefixes to get the core topic for summary lookups
+function extractTopic(rawQuery: string): string {
+  return rawQuery
+    .replace(/^(define|definition of|meaning of|what is|what does|search|explain|tell me about)\s+/i, '')
+    .replace(/\s+(meaning|definition|ka matlab|matlab)$/i, '')
+    .replace(/\bsite:[^\s]+/gi, '')
+    .replace(/\bfiletype:[^\s]+/gi, '')
+    .trim() || rawQuery;
+}
+
 export function SummaryCard({ query }: Props) {
-  const { lang, t } = useLanguage();
-  const [data, setData]   = useState<SummaryData | null>(null);
-  const [loading, setLoading] = useState(true);
+  const { lang } = useLanguage();
+  const [data, setData]       = useState<SummaryData | null>(null);
+  const [loading, setLoading]   = useState(true);
   const [expanded, setExpanded] = useState(false);
   const [speaking, setSpeaking] = useState(false);
 
@@ -39,75 +49,82 @@ export function SummaryCard({ query }: Props) {
     setData(null);
     setExpanded(false);
 
-    // Fetch Wikipedia summary (instant answer)
+    const topic = extractTopic(query);
     const wikiBase = `https://${lang}.wikipedia.org`;
-    const endpoint = `${wikiBase}/api/rest_v1/page/summary/${encodeURIComponent(query.replace(/ /g, '_'))}`;
 
-    fetch(endpoint)
+    // Strategy 1: Direct Wikipedia page summary (fastest, richest)
+    const summaryUrl = `${wikiBase}/api/rest_v1/page/summary/${encodeURIComponent(topic.replace(/ /g, '_'))}`;
+
+    fetch(summaryUrl)
       .then((r) => (r.ok ? r.json() : null))
-      .then((d: {
+      .then(async (d: {
         title?: string; extract?: string;
         thumbnail?: { source?: string };
         content_urls?: { desktop?: { page?: string } };
         type?: string;
       } | null) => {
-        if (d?.extract && d.type !== 'disambiguation') {
+        if (d?.extract && d.type !== 'disambiguation' && d.extract.length > 30) {
           setData({
-            title:   d.title ?? query,
+            title:   d.title ?? topic,
             extract: d.extract,
             image:   d.thumbnail?.source,
-            url:     d.content_urls?.desktop?.page ?? '',
+            url:     d.content_urls?.desktop?.page ?? `${wikiBase}/wiki/${encodeURIComponent(topic)}`,
             type:    'wikipedia',
           });
-        } else {
-          // Fallback: DuckDuckGo instant answer
-          return fetch(`https://api.duckduckgo.com/?q=${encodeURIComponent(query)}&format=json&no_html=1&skip_disambig=1`)
-            .then((r) => r.json())
-            .then((dd: {
-              AbstractText?: string; AbstractTitle?: string;
-              AbstractURL?: string; Image?: string;
-            }) => {
-              if (dd.AbstractText) {
-                setData({
-                  title:   dd.AbstractTitle ?? query,
-                  extract: dd.AbstractText,
-                  image:   dd.Image || undefined,
-                  url:     dd.AbstractURL ?? '',
-                  type:    'duckduckgo',
-                });
-              }
+          setLoading(false);
+          return;
+        }
+
+        // Strategy 2: Fallback to Wikipedia Opensearch / Search list snippet
+        const searchUrl = `${wikiBase}/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(topic)}&srlimit=1&format=json&origin=*`;
+        const sRes = await fetch(searchUrl);
+        if (sRes.ok) {
+          const sData = await sRes.json() as { query?: { search?: Array<{ title: string; snippet: string; pageid: number }> } };
+          const first = sData.query?.search?.[0];
+          if (first?.snippet) {
+            const cleanText = first.snippet.replace(/<[^>]*>/g, '').replace(/&[a-z]+;/gi, ' ').trim();
+            if (cleanText.length > 30) {
+              setData({
+                title:   first.title,
+                extract: cleanText,
+                url:     `${wikiBase}/wiki/${encodeURIComponent(first.title.replace(/ /g, '_'))}`,
+                type:    'wikipedia',
+              });
+              setLoading(false);
+              return;
+            }
+          }
+        }
+
+        // Strategy 3: Fallback to DuckDuckGo Instant Answer API
+        const ddgUrl = `https://api.duckduckgo.com/?q=${encodeURIComponent(topic)}&format=json&no_redirect=1&no_html=1`;
+        const dRes = await fetch(ddgUrl);
+        if (dRes.ok) {
+          const ddg = await dRes.json() as { AbstractText?: string; Heading?: string; AbstractURL?: string; Image?: string };
+          if (ddg.AbstractText && ddg.AbstractText.length > 20) {
+            setData({
+              title:   ddg.Heading || topic,
+              extract: ddg.AbstractText,
+              image:   ddg.Image ? (ddg.Image.startsWith('http') ? ddg.Image : `https://duckduckgo.com${ddg.Image}`) : undefined,
+              url:     ddg.AbstractURL || '#',
+              type:    'duckduckgo',
             });
+          }
         }
       })
       .catch(() => {})
       .finally(() => setLoading(false));
   }, [query, lang]);
 
-  if (loading) {
-    return (
-      <div className="rounded-xl border border-accent/20 bg-accent/5 p-4 mb-4 animate-pulse">
-        <div className="flex gap-3">
-          <div className="w-1 rounded-full bg-accent/30 self-stretch" />
-          <div className="flex-1 space-y-2">
-            <div className="h-4 bg-surface-3 rounded w-1/3" />
-            <div className="h-3 bg-surface-3 rounded w-full" />
-            <div className="h-3 bg-surface-3 rounded w-5/6" />
-            <div className="h-3 bg-surface-3 rounded w-3/4" />
-          </div>
-        </div>
-      </div>
-    );
-  }
+  if (loading || !data) return null;
 
-  if (!data) return null;
-
-  const SHORT = 300;
+  const SHORT = 280;
   const isLong = data.extract.length > SHORT;
   const displayText = expanded || !isLong ? data.extract : truncate(data.extract, SHORT);
 
   return (
-    <div className="rounded-2xl border border-indigo-500/20 bg-surface-2/70 backdrop-blur-md
-      overflow-hidden mb-6 animate-slide-up shadow-md shadow-indigo-500/5">
+    <div className="rounded-2xl border border-indigo-500/20 bg-surface-2/80 backdrop-blur-xl
+      overflow-hidden mb-6 animate-slide-up shadow-lg shadow-black/5">
       {/* Header strip */}
       <div className="flex items-center gap-3 px-5 py-3 border-b border-border/60 bg-surface-3/30">
         <div className="flex items-center gap-2">
@@ -117,15 +134,16 @@ export function SummaryCard({ query }: Props) {
           </span>
         </div>
         <div className="ml-auto flex items-center gap-2">
-          <span className="text-xs text-text-muted">
+          <span className="text-xs text-text-muted font-medium">
             {data.type === 'wikipedia' ? '📖 Wikipedia' : '🦆 DuckDuckGo'}
           </span>
           {/* 🔊 Text-to-Speech */}
           <button
+            type="button"
             onClick={() => speak(data.extract)}
             title={speaking ? 'Stop reading' : 'Read aloud'}
-            className={`w-6 h-6 rounded-md flex items-center justify-center text-xs transition-all
-              ${speaking ? 'text-accent animate-pulse' : 'text-text-muted hover:text-accent'}`}
+            className={`w-7 h-7 rounded-lg flex items-center justify-center text-xs transition-all cursor-pointer
+              ${speaking ? 'text-indigo-400 bg-indigo-500/20 animate-pulse' : 'text-text-muted hover:text-text-primary hover:bg-surface-3'}`}
           >
             {speaking ? '⏹' : '🔊'}
           </button>
@@ -133,58 +151,47 @@ export function SummaryCard({ query }: Props) {
         </div>
       </div>
 
-      <div className="px-4 py-4 flex gap-4">
-        {/* Colored left border */}
-        <div className="w-1 rounded-full bg-gradient-to-b from-accent to-accent/20 self-stretch shrink-0" />
+      <div className="p-5 flex gap-4 items-start">
+        {/* Thumbnail Image */}
+        {data.image && (
+          <div className="shrink-0 w-24 h-24 rounded-xl overflow-hidden bg-surface-3 border border-border/60">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={data.image} alt={data.title} className="w-full h-full object-cover" loading="lazy" />
+          </div>
+        )}
 
         <div className="flex-1 min-w-0">
-          {/* Title */}
-          <h2 className="text-base font-bold text-text-primary mb-2">{data.title}</h2>
+          <h3 className="font-semibold text-text-primary text-base mb-2">
+            {data.title}
+          </h3>
 
-          {/* Extract text */}
-          <p className="text-sm text-text-secondary leading-relaxed">
+          <p className="text-text-secondary text-sm leading-relaxed">
             {displayText}
           </p>
 
-          {/* Read more toggle */}
           {isLong && (
             <button
+              type="button"
               onClick={() => setExpanded(!expanded)}
-              className="mt-2 text-xs text-accent hover:underline"
+              className="mt-2 text-xs font-medium text-indigo-400 hover:underline inline-block cursor-pointer"
             >
-              {expanded ? '▲ Show less' : '▼ Read more'}
+              {expanded ? 'Show less ▲' : 'Read full answer ▼'}
             </button>
           )}
 
-          {/* Source link */}
-          {data.url && (
-            <a
-              href={data.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 mt-3 text-xs text-text-muted
-                hover:text-accent transition-colors"
-            >
-              <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-              {t('read_more')}
-            </a>
+          {data.url && data.url !== '#' && (
+            <div className="mt-3">
+              <a
+                href={data.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-text-muted hover:text-indigo-400 hover:underline font-medium inline-flex items-center gap-1"
+              >
+                Learn more on {data.type === 'wikipedia' ? 'Wikipedia' : 'Source'} →
+              </a>
+            </div>
           )}
         </div>
-
-        {/* Thumbnail */}
-        {data.image && (
-          <div className="shrink-0 hidden sm:block">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={data.image}
-              alt={data.title}
-              className="w-24 h-24 object-cover rounded-lg border border-border"
-            />
-          </div>
-        )}
       </div>
     </div>
   );
