@@ -11,6 +11,11 @@ export const metadata: Metadata = {
     description: 'Free, open search engine with instant answers, weather, crypto, dictionary and more.',
     type: 'website',
   },
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
+  },
 };
 
 export const viewport: Viewport = {
