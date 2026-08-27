@@ -31,7 +31,7 @@ export function ArxivCard({ paper, index }: Props) {
     >
       {/* Categories */}
       <div className="flex flex-wrap gap-1.5 mb-2">
-        {paper.categories.map((c) => (
+        {(paper.categories || []).map((c) => (
           <span key={c} className={`text-xs px-2 py-0.5 rounded-full font-mono ${getCatColor(c)}`}>{c}</span>
         ))}
         <span className="text-xs text-text-muted ml-auto">{paper.published}</span>
@@ -45,7 +45,7 @@ export function ArxivCard({ paper, index }: Props) {
 
       {/* Authors */}
       <p className="text-xs text-text-muted mb-2">
-        {paper.authors.join(', ')}{paper.authors.length >= 5 ? ' et al.' : ''}
+        {(paper.authors || []).join(', ')}{(paper.authors?.length ?? 0) >= 5 ? ' et al.' : ''}
       </p>
 
       {/* Summary */}

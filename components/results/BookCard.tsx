@@ -35,7 +35,7 @@ export function BookCard({ book, index }: Props) {
         <h3 className="font-semibold text-text-primary group-hover:text-accent line-clamp-2 mb-1 transition-colors">
           {book.title}
         </h3>
-        {book.authors.length > 0 && (
+        {Boolean(book.authors?.length) && (
           <p className="text-sm text-text-secondary mb-1">
             {t('authors')}: {book.authors.slice(0, 3).join(', ')}
           </p>
@@ -45,9 +45,9 @@ export function BookCard({ book, index }: Props) {
             {t('published')}: {book.year}
           </p>
         )}
-        {book.subjects.length > 0 && (
+        {Boolean(book.subjects?.length) && (
           <div className="flex flex-wrap gap-1.5">
-            {book.subjects.slice(0, 4).map((s) => (
+            {book.subjects!.slice(0, 4).map((s) => (
               <span key={s} className="text-xs px-2 py-0.5 rounded-full bg-surface-3 text-text-muted border border-border">
                 {s}
               </span>

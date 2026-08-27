@@ -52,9 +52,9 @@ export function GithubCard({ repo, index }: Props) {
       </div>
 
       {/* Topics */}
-      {repo.topics.length > 0 && (
+      {Boolean(repo.topics?.length) && (
         <div className="flex flex-wrap gap-1.5 mt-2">
-          {repo.topics.slice(0, 5).map((t) => (
+          {repo.topics!.slice(0, 5).map((t) => (
             <span key={t} className="text-xs px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">
               {t}
             </span>
