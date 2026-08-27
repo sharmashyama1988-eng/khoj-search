@@ -13,7 +13,6 @@ export interface WebSearchResult {
   badge?: string;
 }
 
-// Extract domain name cleanly
 function getDomain(urlStr: string): string {
   try {
     const parsed = new URL(urlStr);
@@ -23,7 +22,6 @@ function getDomain(urlStr: string): string {
   }
 }
 
-// Generate source badge for popular platforms
 function getSourceBadge(domain: string): string {
   if (domain.includes('reddit.com')) return 'Reddit';
   if (domain.includes('quora.com')) return 'Quora';
@@ -33,20 +31,21 @@ function getSourceBadge(domain: string): string {
   if (domain.includes('github.com')) return 'GitHub';
   if (domain.includes('wikipedia.org')) return 'Wikipedia';
   if (domain.includes('youtube.com')) return 'YouTube';
+  if (domain.includes('openlibrary.org')) return 'Open Library';
   if (domain.includes('arxiv.org')) return 'arXiv';
   return domain;
 }
 
-// Parse DuckDuckGo HTML output for real web results across all sites
-async function fetchDuckDuckGoWeb(query: string): Promise<WebSearchResult[]> {
+// 1. DuckDuckGo Lite fetcher (serverless-friendly plain HTML)
+async function fetchDuckDuckGoLite(query: string): Promise<WebSearchResult[]> {
   try {
-    const res = await fetch('https://html.duckduckgo.com/html/', {
+    const res = await fetch(`https://lite.duckduckgo.com/lite/`, {
       method: 'POST',
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
         'Content-Type': 'application/x-www-form-urlencoded',
       },
-      body: `q=${encodeURIComponent(query)}&b=`,
+      body: `q=${encodeURIComponent(query)}`,
       next: { revalidate: 120 },
     });
 
@@ -55,19 +54,15 @@ async function fetchDuckDuckGoWeb(query: string): Promise<WebSearchResult[]> {
     const html = await res.text();
     const results: WebSearchResult[] = [];
 
-    // Match DDG HTML result blocks
-    const resultRegex = /<a class="result__url" href="([^"]+)".*?>[\s\S]*?<a class="result__snippet[^"]*"[^>]*>([\s\S]*?)<\/a>/gi;
-    const titleRegex  = /<a class="result__a"[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi;
+    const linkRegex = /<a class="result-snippet"[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi;
+    const titleRegex = /<a rel="nofollow" class='result-link' href="([^"]+)">([\s\S]*?)<\/a>/gi;
 
     const titles: Array<{ url: string; title: string }> = [];
     let tMatch;
     while ((tMatch = titleRegex.exec(html)) !== null) {
       let rawUrl = tMatch[1];
-      // Decode DDG redirect URL if needed
       const uddgMatch = rawUrl.match(/uddg=([^&]+)/);
-      if (uddgMatch) {
-        rawUrl = decodeURIComponent(uddgMatch[1]);
-      }
+      if (uddgMatch) rawUrl = decodeURIComponent(uddgMatch[1]);
       const titleText = tMatch[2].replace(/<[^>]*>/g, '').replace(/&[a-z]+;/gi, ' ').trim();
       if (rawUrl.startsWith('http') && titleText) {
         titles.push({ url: rawUrl, title: titleText });
@@ -76,15 +71,14 @@ async function fetchDuckDuckGoWeb(query: string): Promise<WebSearchResult[]> {
 
     const snippets: string[] = [];
     let sMatch;
-    while ((sMatch = resultRegex.exec(html)) !== null) {
-      const snip = sMatch[2].replace(/<[^>]*>/g, '').replace(/&[a-z]+;/gi, ' ').trim();
-      snippets.push(snip);
+    while ((sMatch = linkRegex.exec(html)) !== null) {
+      snippets.push(sMatch[2].replace(/<[^>]*>/g, '').replace(/&[a-z]+;/gi, ' ').trim());
     }
 
-    titles.slice(0, 15).forEach((item, i) => {
+    titles.slice(0, 10).forEach((item, i) => {
       const domain = getDomain(item.url);
       results.push({
-        id: `ddg-${i}-${Math.random().toString(36).slice(2, 6)}`,
+        id: `ddg-lite-${i}-${Math.random().toString(36).slice(2, 6)}`,
         title: item.title,
         url: item.url,
         description: snippets[i] || item.title,
@@ -101,11 +95,90 @@ async function fetchDuckDuckGoWeb(query: string): Promise<WebSearchResult[]> {
   }
 }
 
-// Fetch Wikipedia results for knowledge coverage
+// 2. Reddit Open Search API
+async function fetchRedditWeb(query: string): Promise<WebSearchResult[]> {
+  try {
+    const res = await fetch(`https://www.reddit.com/search.json?q=${encodeURIComponent(query)}&limit=4&sort=relevance`, {
+      headers: { 'User-Agent': 'KhojSearch/1.0' },
+      next: { revalidate: 180 },
+    });
+    if (!res.ok) return [];
+
+    const data = await res.json() as {
+      data?: { children?: Array<{ data: { id: string; title: string; permalink: string; selftext: string; subreddit: string } }> };
+    };
+
+    const posts = data.data?.children ?? [];
+    return posts.map((p) => ({
+      id: `reddit-${p.data.id}`,
+      title: `${p.data.title} (r/${p.data.subreddit})`,
+      url: `https://www.reddit.com${p.data.permalink}`,
+      description: p.data.selftext ? p.data.selftext.slice(0, 240) : `Discussion on r/${p.data.subreddit} about ${p.data.title}`,
+      source: 'Reddit',
+      domain: 'reddit.com',
+      favicon: 'https://www.google.com/s2/favicons?domain=reddit.com&sz=32',
+      badge: 'Reddit',
+    }));
+  } catch {
+    return [];
+  }
+}
+
+// 3. StackOverflow Open API
+async function fetchStackOverflowWeb(query: string): Promise<WebSearchResult[]> {
+  try {
+    const res = await fetch(`https://api.stackexchange.com/2.3/search/advanced?order=desc&sort=relevance&q=${encodeURIComponent(query)}&site=stackoverflow&pagesize=3`, {
+      next: { revalidate: 300 },
+    });
+    if (!res.ok) return [];
+
+    const data = await res.json() as { items?: Array<{ question_id: number; title: string; link: string; body_markdown?: string }> };
+    const items = data.items ?? [];
+
+    return items.map((q) => ({
+      id: `so-${q.question_id}`,
+      title: q.title.replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, '&'),
+      url: q.link,
+      description: q.body_markdown ? q.body_markdown.slice(0, 240) : `StackOverflow question and answers regarding ${q.title}`,
+      source: 'StackOverflow',
+      domain: 'stackoverflow.com',
+      favicon: 'https://www.google.com/s2/favicons?domain=stackoverflow.com&sz=32',
+      badge: 'StackOverflow',
+    }));
+  } catch {
+    return [];
+  }
+}
+
+// 4. Dev.to Tech Articles API
+async function fetchDevToWeb(query: string): Promise<WebSearchResult[]> {
+  try {
+    const res = await fetch(`https://dev.to/api/articles?search=${encodeURIComponent(query)}&per_page=3`, {
+      next: { revalidate: 300 },
+    });
+    if (!res.ok) return [];
+
+    const articles = await res.json() as Array<{ id: number; title: string; url: string; description: string }>;
+    return (articles || []).map((a) => ({
+      id: `devto-${a.id}`,
+      title: a.title,
+      url: a.url,
+      description: a.description || a.title,
+      source: 'Dev.to',
+      domain: 'dev.to',
+      favicon: 'https://www.google.com/s2/favicons?domain=dev.to&sz=32',
+      badge: 'Dev.to',
+    }));
+  } catch {
+    return [];
+  }
+}
+
+// 5. Wikipedia (Strictly Capped at 2 items max)
 async function fetchWikipediaWeb(query: string, lang = 'en'): Promise<WebSearchResult[]> {
   try {
     const wikiBase = `https://${lang}.wikipedia.org`;
-    const url = `${wikiBase}/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&srlimit=8&format=json&origin=*`;
+    const url = `${wikiBase}/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&srlimit=2&format=json&origin=*`;
     const res = await fetch(url, { next: { revalidate: 120 } });
     if (!res.ok) return [];
 
@@ -137,25 +210,16 @@ export async function GET(req: NextRequest) {
 
   if (!rawQuery.trim()) return NextResponse.json({ results: [] });
 
-  let query = rawQuery.trim();
-
-  // Check discussion/forum intent
-  const isDiscussionIntent = /\b(reddit|quora|forum|review|opinion|vs|best|experiences|discussion|solution|fix)\b/i.test(query);
+  const query = rawQuery.trim();
 
   try {
-    const promises: Promise<WebSearchResult[]>[] = [];
-
-    // 1. Primary global search
-    promises.push(fetchDuckDuckGoWeb(query));
-
-    // 2. Wikipedia search
-    promises.push(fetchWikipediaWeb(query, lang));
-
-    // 3. Query Expansion: If discussion topic, send parallel targeted search for Reddit / Quora / Forums!
-    if (isDiscussionIntent && !query.includes('site:')) {
-      const expandedQuery = `${query} (site:reddit.com OR site:quora.com OR site:stackoverflow.com OR site:medium.com)`;
-      promises.push(fetchDuckDuckGoWeb(expandedQuery));
-    }
+    const promises = [
+      fetchDuckDuckGoLite(query),
+      fetchRedditWeb(query),
+      fetchStackOverflowWeb(query),
+      fetchDevToWeb(query),
+      fetchWikipediaWeb(query, lang),
+    ];
 
     const fetchedBatches = await Promise.allSettled(promises);
     const combined: WebSearchResult[] = [];
@@ -173,9 +237,8 @@ export async function GET(req: NextRequest) {
     });
 
     return NextResponse.json({
-      results: combined.slice(0, 25),
+      results: combined.slice(0, 20),
       total: combined.length,
-      expanded: isDiscussionIntent,
     });
   } catch (e) {
     return NextResponse.json({ error: String(e) }, { status: 500 });
