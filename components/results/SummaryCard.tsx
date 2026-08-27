@@ -106,13 +106,13 @@ export function SummaryCard({ query }: Props) {
   const displayText = expanded || !isLong ? data.extract : truncate(data.extract, SHORT);
 
   return (
-    <div className="rounded-xl border border-accent/30 bg-gradient-to-br from-accent/5 to-surface-2
-      overflow-hidden mb-5 animate-slide-up">
+    <div className="rounded-2xl border border-indigo-500/20 bg-surface-2/70 backdrop-blur-md
+      overflow-hidden mb-6 animate-slide-up shadow-md shadow-indigo-500/5">
       {/* Header strip */}
-      <div className="flex items-center gap-3 px-4 py-2.5 border-b border-accent/15 bg-accent/8">
+      <div className="flex items-center gap-3 px-5 py-3 border-b border-border/60 bg-surface-3/30">
         <div className="flex items-center gap-2">
-          <span className="text-accent text-sm">✦</span>
-          <span className="text-xs font-semibold uppercase tracking-widest text-accent/80">
+          <span className="text-indigo-400 text-sm">✦</span>
+          <span className="text-xs font-semibold uppercase tracking-widest text-indigo-400">
             Featured Answer
           </span>
         </div>

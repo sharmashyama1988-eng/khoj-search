@@ -37,8 +37,8 @@ export function ResultCard({ result, index }: Props) {
       href={result.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group block p-4 rounded-xl border border-border/80 bg-surface-2/40
-        hover:border-accent/50 hover:bg-surface-2/90 hover:shadow-lg hover:shadow-accent/5
+      className="group block p-4.5 rounded-2xl border border-border/70 bg-surface-2/50 backdrop-blur-sm
+        hover:border-accent/30 hover:bg-surface-2 hover:shadow-md hover:shadow-black/5
         transition-all duration-200 animate-fade-in"
       style={{ animationDelay: `${Math.min(index * 30, 300)}ms` }}
     >
@@ -58,7 +58,7 @@ export function ResultCard({ result, index }: Props) {
       </div>
 
       {/* Title */}
-      <h3 className="text-accent font-semibold text-base group-hover:underline line-clamp-2 mb-1.5 leading-snug">
+      <h3 className="text-text-primary font-semibold text-base group-hover:text-accent line-clamp-2 mb-1.5 leading-snug transition-colors">
         {result.title}
       </h3>
 
