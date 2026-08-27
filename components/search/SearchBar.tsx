@@ -63,7 +63,7 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
       setSuggestions(data.suggestions ?? []);
       setShowSugg(true);
     } catch { setSuggestions([]); }
-  }, 250) as (q: string) => void;
+  }, 250);
 
   const handleChange = (v: string) => {
     setQuery(v);

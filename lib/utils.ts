@@ -25,12 +25,15 @@ export function truncate(str: string, max = 200): string {
   return str.length > max ? str.slice(0, max) + '…' : str;
 }
 
-export function debounce<T extends (...args: unknown[]) => void>(fn: T, ms: number): T {
-  let id: ReturnType<typeof setTimeout>;
-  return ((...args: unknown[]) => {
-    clearTimeout(id);
-    id = setTimeout(() => fn(...args), ms);
-  }) as T;
+export function debounce<T extends (...args: any[]) => any>(
+  fn: T,
+  ms: number
+): (...args: Parameters<T>) => void {
+  let timer: ReturnType<typeof setTimeout>;
+  return (...args: Parameters<T>) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => fn(...args), ms);
+  };
 }
 
 export function generateId(): string {
