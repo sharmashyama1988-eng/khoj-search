@@ -1,8 +1,7 @@
 'use client';
+import { Header } from '@/components/layout/Header';
 import { SearchBar } from '@/components/search/SearchBar';
 import { QuickChips } from '@/components/ui/QuickChips';
-import { ThemeToggle } from '@/components/ui/ThemeToggle';
-import { LanguageSelector } from '@/components/ui/LanguageSelector';
 import { Footer } from '@/components/layout/Footer';
 import { KhojLogo } from '@/components/ui/KhojLogo';
 import { useLanguage } from '@/hooks/useLanguage';
@@ -12,29 +11,20 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen flex flex-col bg-surface text-text-primary transition-colors" dir={currentLang.dir}>
-      {/* Top bar */}
-      <div className="flex justify-end items-center gap-2 px-6 pt-4 z-10">
-        <LanguageSelector />
-        <ThemeToggle />
-      </div>
-
-      {/* Background Decorative Auras */}
-      <div className="fixed inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-3xl opacity-70" />
-        <div className="absolute top-1/3 left-1/3 w-[350px] h-[350px] bg-purple-500/10 rounded-full blur-3xl opacity-50" />
-      </div>
+      {/* Google-style Header Top Bar with 9-Dot App Menu, Language Selector & Theme Toggle */}
+      <Header showSearch={false} />
 
       {/* Hero Content */}
-      <main className="flex-1 flex flex-col items-center justify-center px-4 -mt-10 z-10">
+      <main className="flex-1 flex flex-col items-center justify-center px-4 -mt-12">
         {/* Logo & Branding */}
         <div className="mb-8 flex flex-col items-center text-center">
           <div className="mb-4">
             <KhojLogo size="xl" />
           </div>
-          <h1 className="text-4xl sm:text-6xl font-black tracking-tight bg-gradient-to-r from-text-primary via-indigo-400 to-purple-500 bg-clip-text text-transparent">
+          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-text-primary">
             Khoj
           </h1>
-          <p className="text-text-secondary text-base sm:text-lg mt-2 font-medium max-w-md">
+          <p className="text-text-secondary text-base sm:text-lg mt-2 font-normal max-w-md">
             {t('footer_tagline')}
           </p>
         </div>
@@ -46,7 +36,6 @@ export default function HomePage() {
 
         {/* Quick Chips (12 instant widgets) */}
         <QuickChips />
-
       </main>
 
       <Footer />

@@ -2,34 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ── Light Theme (Soft Alabaster & Cream Luxury) ────────────────────────── */
+/* ── Light Theme (Google Clean Light) ────────────────────────────────────── */
 :root {
-  --surface:        #f7f7f8;
-  --surface-2:      #ffffff;
-  --surface-3:      #f1f1f5;
-  --border:         rgba(0, 0, 0, 0.08);
-  --text-primary:   #18181b;
-  --text-secondary: #52525b;
-  --text-muted:     #8e8e93;
-  --accent:         #4f46e5;
-  --accent-hover:   #4338ca;
-  --shadow-sm:      0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02);
-  --shadow-md:      0 4px 20px -2px rgba(0,0,0,0.05);
+  --surface:        #ffffff;
+  --surface-2:      #f8f9fa;
+  --surface-3:      #f1f3f4;
+  --border:         #dadce0;
+  --text-primary:   #202124;
+  --text-secondary: #5f6368;
+  --text-muted:     #70757a;
+  --accent:         #1a73e8;
+  --accent-hover:   #1557b0;
+  --shadow-sm:      0 1px 3px rgba(60,64,67,0.15);
+  --shadow-md:      0 4px 12px rgba(60,64,67,0.15);
 }
 
-/* ── Dark Theme (Deep Obsidian Charcoal Quiet Luxury) ────────────────────── */
+/* ── Dark Theme (Google Signature Smooth Charcoal Grey) ───────────────────── */
 .dark {
-  --surface:        #09090b;
-  --surface-2:      #121215;
-  --surface-3:      #18181b;
-  --border:         rgba(255, 255, 255, 0.08);
-  --text-primary:   #f4f4f5;
-  --text-secondary: #a1a1aa;
-  --text-muted:     #71717a;
-  --accent:         #6366f1;
-  --accent-hover:   #818cf8;
-  --shadow-sm:      0 1px 3px rgba(0,0,0,0.4);
-  --shadow-md:      0 8px 30px rgba(0,0,0,0.3);
+  --surface:        #202124;
+  --surface-2:      #303134;
+  --surface-3:      #3c4043;
+  --border:         #3c4043;
+  --text-primary:   #e8eaed;
+  --text-secondary: #bdc1c6;
+  --text-muted:     #9aa0a6;
+  --accent:         #8ab4f8;
+  --accent-hover:   #aecbfa;
+  --shadow-sm:      0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md:      0 4px 16px rgba(0,0,0,0.4);
 }
 
 /* ── Base Reset & Typography ─────────────────────────────────────────────── */
@@ -47,30 +47,15 @@ html {
 body {
   background-color: var(--surface);
   color: var(--text-primary);
-  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', Roboto, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Google Sans', 'Roboto', sans-serif;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transition: background-color 0.25s ease, color 0.25s ease;
-}
-
-/* ── Custom Glassmorphism ────────────────────────────────────────────────── */
-.glass-card {
-  background: var(--surface-2);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-sm);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.glass-card:hover {
-  border-color: rgba(99, 102, 241, 0.25);
-  box-shadow: var(--shadow-md);
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 /* ── Scrollbar ────────────────────────────────────────────────────────────── */
-::-webkit-scrollbar       { width: 6px; height: 6px; }
+::-webkit-scrollbar       { width: 8px; height: 8px; }
 ::-webkit-scrollbar-track  { background: transparent; }
 ::-webkit-scrollbar-thumb  { background: var(--border); border-radius: 9999px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
@@ -80,25 +65,25 @@ body {
 
 /* ── Selection ────────────────────────────────────────────────────────────── */
 ::selection {
-  background: rgba(99, 102, 241, 0.25);
+  background: rgba(138, 180, 248, 0.25);
   color: var(--text-primary);
 }
 
 /* ── Animations ───────────────────────────────────────────────────────────── */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(6px); }
+  from { opacity: 0; transform: translateY(4px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes slideUp {
-  from { opacity: 0; transform: translateY(12px); }
+  from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
 .animate-fade-in {
-  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .animate-slide-up {
-  animation: slideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }

@@ -104,9 +104,9 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
     <div className={`w-full ${compact ? 'max-w-2xl' : 'max-w-2xl'} relative`}>
       <form onSubmit={handleSubmit} className="relative">
         <div className={`flex items-center gap-3 w-full
-          bg-surface-2/90 backdrop-blur-xl border border-border/80 rounded-2xl
-          shadow-lg shadow-black/5 hover:border-accent/30 focus-within:border-accent/50 focus-within:ring-2 focus-within:ring-accent/10
-          transition-all duration-300 ${compact ? 'px-4 py-2' : 'px-5 py-3.5'}`}
+          bg-surface-2 border border-border rounded-full
+          shadow-sm hover:shadow-md hover:border-text-muted/40 focus-within:border-accent focus-within:ring-2 focus-within:ring-accent/15
+          transition-all duration-200 ${compact ? 'px-4 py-1.5' : 'px-5 py-3'}`}
         >
           {/* Search icon */}
           <svg className="w-5 h-5 text-text-muted shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -123,7 +123,7 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
             onFocus={() => suggestions.length > 0 && setShowSugg(true)}
             onBlur={() => setTimeout(() => setShowSugg(false), 150)}
             placeholder={t('search_placeholder')}
-            className={`flex-1 bg-transparent text-text-primary placeholder-text-muted/70
+            className={`flex-1 bg-transparent text-text-primary placeholder-text-muted
               outline-none font-normal ${compact ? 'text-sm' : 'text-base'}`}
             autoComplete="off"
             spellCheck={false}
@@ -132,7 +132,7 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
           {/* Keyboard shortcut hint */}
           {!compact && !query && (
             <kbd className="hidden lg:flex items-center gap-1 px-2 py-0.5 rounded-md text-xs
-              text-text-muted/80 bg-surface-3/50 border border-border/60 font-mono shrink-0">
+              text-text-muted bg-surface-3/50 border border-border/60 font-mono shrink-0">
               <span>⌘</span>K
             </kbd>
           )}
@@ -163,9 +163,9 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
           </button>
 
           <button type="submit"
-            className={`shrink-0 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-medium
-              rounded-xl transition-all duration-200 hover:scale-105 active:scale-95 shadow-md shadow-indigo-500/20
-              ${compact ? 'px-3.5 py-1.5 text-xs' : 'px-5 py-2 text-sm'}`}
+            className={`shrink-0 bg-accent hover:bg-accent-hover text-surface-2 font-medium
+              rounded-full transition-all duration-200 hover:scale-105 active:scale-95 shadow-sm
+              ${compact ? 'px-3.5 py-1 text-xs' : 'px-5 py-2 text-sm'}`}
           >
             {t('search_button')}
           </button>

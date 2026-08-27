@@ -11,6 +11,7 @@ export interface WebSearchResult {
   domain: string;
   favicon?: string;
   badge?: string;
+  score?: number;
 }
 
 function getDomain(urlStr: string): string {
@@ -31,22 +32,43 @@ function getSourceBadge(domain: string): string {
   if (domain.includes('github.com')) return 'GitHub';
   if (domain.includes('wikipedia.org')) return 'Wikipedia';
   if (domain.includes('youtube.com')) return 'YouTube';
-  if (domain.includes('openlibrary.org')) return 'Open Library';
-  if (domain.includes('arxiv.org')) return 'arXiv';
+  if (domain.includes('apple.com')) return 'Apple';
+  if (domain.includes('amazon.')) return 'Amazon';
+  if (domain.includes('flipkart.com')) return 'Flipkart';
+  if (domain.includes('gsmarena.com')) return 'GSMArena';
   return domain;
 }
 
-// 1. DuckDuckGo Lite fetcher (serverless-friendly plain HTML)
-async function fetchDuckDuckGoLite(query: string): Promise<WebSearchResult[]> {
+// ── 99.99% RELEVANCY SCORE FILTER ──────────────────────────────────────────────
+function computeRelevancyScore(query: string, title: string, description: string): number {
+  const qTokens = query
+    .toLowerCase()
+    .replace(/[^\w\s]/gi, '')
+    .split(/\s+/)
+    .filter((w) => w.length > 1);
+
+  if (!qTokens.length) return 100;
+
+  const targetText = `${title} ${description}`.toLowerCase();
+  let matches = 0;
+
+  qTokens.forEach((token) => {
+    if (targetText.includes(token)) matches++;
+  });
+
+  return (matches / qTokens.length) * 100;
+}
+
+// 1. Fetch DuckDuckGo Web Results
+async function fetchDuckDuckGoWeb(query: string): Promise<WebSearchResult[]> {
   try {
-    const res = await fetch(`https://lite.duckduckgo.com/lite/`, {
-      method: 'POST',
+    const res = await fetch(`https://html.duckduckgo.com/html/?q=${encodeURIComponent(query)}`, {
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Content-Type': 'application/x-www-form-urlencoded',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.9',
       },
-      body: `q=${encodeURIComponent(query)}`,
-      next: { revalidate: 120 },
+      next: { revalidate: 60 },
     });
 
     if (!res.ok) return [];
@@ -54,8 +76,8 @@ async function fetchDuckDuckGoLite(query: string): Promise<WebSearchResult[]> {
     const html = await res.text();
     const results: WebSearchResult[] = [];
 
-    const linkRegex = /<a class="result-snippet"[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi;
-    const titleRegex = /<a rel="nofollow" class='result-link' href="([^"]+)">([\s\S]*?)<\/a>/gi;
+    const linkRegex  = /<a class="result__snippet[^"]*"[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/gi;
+    const titleRegex = /<a class="result__a"[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi;
 
     const titles: Array<{ url: string; title: string }> = [];
     let tMatch;
@@ -75,13 +97,14 @@ async function fetchDuckDuckGoLite(query: string): Promise<WebSearchResult[]> {
       snippets.push(sMatch[2].replace(/<[^>]*>/g, '').replace(/&[a-z]+;/gi, ' ').trim());
     }
 
-    titles.slice(0, 10).forEach((item, i) => {
+    titles.slice(0, 15).forEach((item, i) => {
       const domain = getDomain(item.url);
+      const snippet = snippets[i] || item.title;
       results.push({
-        id: `ddg-lite-${i}-${Math.random().toString(36).slice(2, 6)}`,
+        id: `ddg-${i}-${Math.random().toString(36).slice(2, 6)}`,
         title: item.title,
         url: item.url,
-        description: snippets[i] || item.title,
+        description: snippet,
         source: getSourceBadge(domain),
         domain,
         favicon: `https://www.google.com/s2/favicons?domain=${domain}&sz=32`,
@@ -95,90 +118,11 @@ async function fetchDuckDuckGoLite(query: string): Promise<WebSearchResult[]> {
   }
 }
 
-// 2. Reddit Open Search API
-async function fetchRedditWeb(query: string): Promise<WebSearchResult[]> {
-  try {
-    const res = await fetch(`https://www.reddit.com/search.json?q=${encodeURIComponent(query)}&limit=4&sort=relevance`, {
-      headers: { 'User-Agent': 'KhojSearch/1.0' },
-      next: { revalidate: 180 },
-    });
-    if (!res.ok) return [];
-
-    const data = await res.json() as {
-      data?: { children?: Array<{ data: { id: string; title: string; permalink: string; selftext: string; subreddit: string } }> };
-    };
-
-    const posts = data.data?.children ?? [];
-    return posts.map((p) => ({
-      id: `reddit-${p.data.id}`,
-      title: `${p.data.title} (r/${p.data.subreddit})`,
-      url: `https://www.reddit.com${p.data.permalink}`,
-      description: p.data.selftext ? p.data.selftext.slice(0, 240) : `Discussion on r/${p.data.subreddit} about ${p.data.title}`,
-      source: 'Reddit',
-      domain: 'reddit.com',
-      favicon: 'https://www.google.com/s2/favicons?domain=reddit.com&sz=32',
-      badge: 'Reddit',
-    }));
-  } catch {
-    return [];
-  }
-}
-
-// 3. StackOverflow Open API
-async function fetchStackOverflowWeb(query: string): Promise<WebSearchResult[]> {
-  try {
-    const res = await fetch(`https://api.stackexchange.com/2.3/search/advanced?order=desc&sort=relevance&q=${encodeURIComponent(query)}&site=stackoverflow&pagesize=3`, {
-      next: { revalidate: 300 },
-    });
-    if (!res.ok) return [];
-
-    const data = await res.json() as { items?: Array<{ question_id: number; title: string; link: string; body_markdown?: string }> };
-    const items = data.items ?? [];
-
-    return items.map((q) => ({
-      id: `so-${q.question_id}`,
-      title: q.title.replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, '&'),
-      url: q.link,
-      description: q.body_markdown ? q.body_markdown.slice(0, 240) : `StackOverflow question and answers regarding ${q.title}`,
-      source: 'StackOverflow',
-      domain: 'stackoverflow.com',
-      favicon: 'https://www.google.com/s2/favicons?domain=stackoverflow.com&sz=32',
-      badge: 'StackOverflow',
-    }));
-  } catch {
-    return [];
-  }
-}
-
-// 4. Dev.to Tech Articles API
-async function fetchDevToWeb(query: string): Promise<WebSearchResult[]> {
-  try {
-    const res = await fetch(`https://dev.to/api/articles?search=${encodeURIComponent(query)}&per_page=3`, {
-      next: { revalidate: 300 },
-    });
-    if (!res.ok) return [];
-
-    const articles = await res.json() as Array<{ id: number; title: string; url: string; description: string }>;
-    return (articles || []).map((a) => ({
-      id: `devto-${a.id}`,
-      title: a.title,
-      url: a.url,
-      description: a.description || a.title,
-      source: 'Dev.to',
-      domain: 'dev.to',
-      favicon: 'https://www.google.com/s2/favicons?domain=dev.to&sz=32',
-      badge: 'Dev.to',
-    }));
-  } catch {
-    return [];
-  }
-}
-
-// 5. Wikipedia (Strictly Capped at 2 items max)
+// 2. Fetch Wikipedia Search (Capped at 2)
 async function fetchWikipediaWeb(query: string, lang = 'en'): Promise<WebSearchResult[]> {
   try {
     const wikiBase = `https://${lang}.wikipedia.org`;
-    const url = `${wikiBase}/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&srlimit=2&format=json&origin=*`;
+    const url = `${wikiBase}/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&srlimit=3&format=json&origin=*`;
     const res = await fetch(url, { next: { revalidate: 120 } });
     if (!res.ok) return [];
 
@@ -203,6 +147,35 @@ async function fetchWikipediaWeb(query: string, lang = 'en'): Promise<WebSearchR
   }
 }
 
+// 3. Fetch Reddit Results
+async function fetchRedditWeb(query: string): Promise<WebSearchResult[]> {
+  try {
+    const res = await fetch(`https://www.reddit.com/search.json?q=${encodeURIComponent(query)}&limit=3&sort=relevance`, {
+      headers: { 'User-Agent': 'Mozilla/5.0 KhojSearch/1.0' },
+      next: { revalidate: 180 },
+    });
+    if (!res.ok) return [];
+
+    const data = await res.json() as {
+      data?: { children?: Array<{ data: { id: string; title: string; permalink: string; selftext: string; subreddit: string } }> };
+    };
+
+    const posts = data.data?.children ?? [];
+    return posts.map((p) => ({
+      id: `reddit-${p.data.id}`,
+      title: `${p.data.title} (r/${p.data.subreddit})`,
+      url: `https://www.reddit.com${p.data.permalink}`,
+      description: p.data.selftext ? p.data.selftext.slice(0, 240) : `Reddit discussion on r/${p.data.subreddit}: ${p.data.title}`,
+      source: 'Reddit',
+      domain: 'reddit.com',
+      favicon: 'https://www.google.com/s2/favicons?domain=reddit.com&sz=32',
+      badge: 'Reddit',
+    }));
+  } catch {
+    return [];
+  }
+}
+
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const rawQuery = searchParams.get('q') ?? '';
@@ -214,10 +187,8 @@ export async function GET(req: NextRequest) {
 
   try {
     const promises = [
-      fetchDuckDuckGoLite(query),
+      fetchDuckDuckGoWeb(query),
       fetchRedditWeb(query),
-      fetchStackOverflowWeb(query),
-      fetchDevToWeb(query),
       fetchWikipediaWeb(query, lang),
     ];
 
@@ -229,15 +200,23 @@ export async function GET(req: NextRequest) {
       if (batch.status === 'fulfilled') {
         batch.value.forEach((item) => {
           if (!seenUrls.has(item.url)) {
-            seenUrls.add(item.url);
-            combined.push(item);
+            // Compute 99.99% Relevancy Score against query keywords!
+            const score = computeRelevancyScore(query, item.title, item.description);
+            // STRICT FILTER: Discard any result that has < 25% keyword match!
+            if (score >= 25) {
+              seenUrls.add(item.url);
+              combined.push({ ...item, score });
+            }
           }
         });
       }
     });
 
+    // Sort strictly by highest Relevancy Score!
+    combined.sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
+
     return NextResponse.json({
-      results: combined.slice(0, 20),
+      results: combined.slice(0, 15),
       total: combined.length,
     });
   } catch (e) {
