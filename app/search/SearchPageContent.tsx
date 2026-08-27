@@ -13,6 +13,7 @@ import { GithubCard } from '@/components/results/GithubCard';
 import { SummaryCard } from '@/components/results/SummaryCard';
 import { KhojPagination } from '@/components/results/KhojPagination';
 import { DidYouMean } from '@/components/results/DidYouMean';
+import { PeopleAlsoAsk } from '@/components/results/PeopleAlsoAsk';
 import { SkeletonLoader, SkeletonPanel, SkeletonImageGrid } from '@/components/ui/SkeletonLoader';
 import { ExportButton } from '@/components/ui/ExportButton';
 // ── Widgets ──────────────────────────────────────────────────────────────────
@@ -161,7 +162,13 @@ export default function SearchPageContent() {
             {/* All */}
             {!loading && activeTab === 'all' && (
               results.length > 0
-                ? <div className="space-y-2">{results.map((r, i) => <ResultCard key={r.id} result={r} index={i} />)}</div>
+                ? (
+                  <div className="space-y-1">
+                    {results.slice(0, 2).map((r, i) => <ResultCard key={r.id} result={r} index={i} />)}
+                    <PeopleAlsoAsk query={query} />
+                    {results.slice(2).map((r, i) => <ResultCard key={r.id} result={r} index={i + 2} />)}
+                  </div>
+                )
                 : !error && !hasWidget && <EmptyState message={t('no_results')} />
             )}
 

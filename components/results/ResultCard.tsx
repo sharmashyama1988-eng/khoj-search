@@ -28,43 +28,54 @@ function getDomain(url: string): string {
   catch { return url; }
 }
 
+function getCleanBreadcrumb(url: string): string {
+  try {
+    const u = new URL(url);
+    const pathParts = u.pathname.split('/').filter(Boolean).slice(0, 2);
+    if (!pathParts.length) return u.hostname;
+    return `${u.hostname} › ${pathParts.join(' › ')}`;
+  } catch {
+    return url;
+  }
+}
+
 export function ResultCard({ result, index }: Props) {
   const badge = result.badge || result.source;
-  const badgeClass = SOURCE_COLORS[badge] || 'bg-surface-3/60 text-text-muted border-border/40';
+  const badgeClass = SOURCE_COLORS[badge] || 'bg-surface-3/50 text-text-muted border-border/40';
 
   return (
     <a
       href={result.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group block p-4.5 rounded-2xl border border-white/[0.07] dark:border-white/[0.07] bg-surface-2/60 backdrop-blur-md
-        hover:border-indigo-500/30 hover:bg-surface-2 hover:shadow-xl hover:shadow-black/10
-        transition-all duration-200 animate-fade-in"
-      style={{ animationDelay: `${Math.min(index * 30, 300)}ms` }}
+      className="group block py-3.5 px-2 rounded-xl border-b border-border/20 last:border-b-0
+        hover:bg-surface-2/40 transition-colors duration-150 animate-fade-in"
+      style={{ animationDelay: `${Math.min(index * 25, 250)}ms` }}
     >
-      {/* Domain + Favicon + Source Badge */}
-      <div className="flex items-center gap-2 mb-2">
+      {/* Google-style Header: Favicon + Domain + Breadcrumb + Badge */}
+      <div className="flex items-center gap-2 mb-1 text-xs text-text-muted">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={result.favicon || getFavicon(result.url)}
           alt=""
-          className="w-4 h-4 rounded-sm shrink-0"
+          className="w-4 h-4 rounded-full shrink-0"
           onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
         />
-        <span className="text-xs text-text-muted font-mono">{getDomain(result.url)}</span>
-        <span className={`text-[11px] px-2 py-0.5 rounded-full border font-medium ${badgeClass}`}>
+        <span className="font-medium text-text-primary text-[13px]">{getDomain(result.url)}</span>
+        <span className="text-text-muted/60 text-[12px] truncate max-w-xs">{getCleanBreadcrumb(result.url)}</span>
+        <span className={`text-[10px] px-2 py-0.2 rounded-full border font-medium ml-auto ${badgeClass}`}>
           {badge}
         </span>
       </div>
 
-      {/* Title */}
-      <h3 className="text-text-primary font-semibold text-base group-hover:text-indigo-400 line-clamp-2 mb-1.5 leading-snug transition-colors">
+      {/* Google-style Title: Soft Blue/Indigo Link */}
+      <h3 className="text-[19px] leading-[26px] font-normal text-indigo-400 dark:text-[#8ab4f8] group-hover:underline line-clamp-1 mb-1">
         {result.title}
       </h3>
 
-      {/* Description */}
-      <p className="text-text-secondary text-sm leading-relaxed line-clamp-3">
-        {truncate(result.description, 250)}
+      {/* Google-style Description Snippet */}
+      <p className="text-[14px] leading-[22px] text-text-secondary dark:text-[#bdc1c6] line-clamp-2">
+        {truncate(result.description, 240)}
       </p>
     </a>
   );
