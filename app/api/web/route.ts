@@ -39,27 +39,58 @@ function getSourceBadge(domain: string): string {
   return domain;
 }
 
-// ── 99.99% RELEVANCY SCORE FILTER ──────────────────────────────────────────────
-function computeRelevancyScore(query: string, title: string, description: string): number {
-  const qTokens = query
-    .toLowerCase()
-    .replace(/[^\w\s]/gi, '')
-    .split(/\s+/)
-    .filter((w) => w.length > 1);
+// 🧠 Advanced Enterprise BM25 + Relevancy Scoring Algorithm
+function computeEnterpriseRelevancyScore(query: string, title: string, description: string, domain: string): number {
+  const cleanQ = query.toLowerCase().replace(/[^\w\s]/gi, '').trim();
+  const cleanTitle = title.toLowerCase();
+  const cleanDesc = description.toLowerCase();
 
-  if (!qTokens.length) return 100;
+  const queryTokens = cleanQ.split(/\s+/).filter((w) => w.length > 1);
+  if (!queryTokens.length) return 100;
 
-  const targetText = `${title} ${description}`.toLowerCase();
-  let matches = 0;
+  let score = 0;
 
-  qTokens.forEach((token) => {
-    if (targetText.includes(token)) matches++;
+  // 1. EXACT PHRASE MATCH BONUS
+  if (cleanTitle.includes(cleanQ)) score += 100;
+  if (cleanDesc.includes(cleanQ)) score += 50;
+
+  // 2. TOKEN FREQUENCY MATCHING
+  let matchedTokensCount = 0;
+  queryTokens.forEach((token) => {
+    let matched = false;
+    if (cleanTitle.includes(token)) {
+      score += 30;
+      matched = true;
+    }
+    if (cleanDesc.includes(token)) {
+      score += 15;
+      matched = true;
+    }
+    if (matched) matchedTokensCount++;
   });
 
-  return (matches / qTokens.length) * 100;
+  // HARD REJECTION GUARD: If less than 40% of query keywords match, DISCARD!
+  const matchRatio = matchedTokensCount / queryTokens.length;
+  if (matchRatio < 0.4) {
+    return -1000;
+  }
+
+  // 3. INTENT DOMAIN RELEVANCY BOOST
+  const isProductOrPrice = /\b(price|cost|buy|specs|phone|laptop|car|vs|review|iphone|samsung|mobile)\b/i.test(query);
+  if (isProductOrPrice) {
+    if (domain.includes('apple') || domain.includes('amazon') || domain.includes('flipkart') || domain.includes('gsmarena') || domain.includes('techradar') || domain.includes('tomshardware')) {
+      score += 50;
+    }
+    // Penalize developer blogs when searching product prices
+    if (domain.includes('dev.to') || domain.includes('stackoverflow')) {
+      score -= 80;
+    }
+  }
+
+  return score;
 }
 
-// 1. Fetch DuckDuckGo Web Results
+// 1. Fetch DuckDuckGo Web Engine
 async function fetchDuckDuckGoWeb(query: string): Promise<WebSearchResult[]> {
   try {
     const res = await fetch(`https://html.duckduckgo.com/html/?q=${encodeURIComponent(query)}`, {
@@ -122,7 +153,7 @@ async function fetchDuckDuckGoWeb(query: string): Promise<WebSearchResult[]> {
 async function fetchWikipediaWeb(query: string, lang = 'en'): Promise<WebSearchResult[]> {
   try {
     const wikiBase = `https://${lang}.wikipedia.org`;
-    const url = `${wikiBase}/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&srlimit=3&format=json&origin=*`;
+    const url = `${wikiBase}/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&srlimit=2&format=json&origin=*`;
     const res = await fetch(url, { next: { revalidate: 120 } });
     if (!res.ok) return [];
 
@@ -200,10 +231,10 @@ export async function GET(req: NextRequest) {
       if (batch.status === 'fulfilled') {
         batch.value.forEach((item) => {
           if (!seenUrls.has(item.url)) {
-            // Compute 99.99% Relevancy Score against query keywords!
-            const score = computeRelevancyScore(query, item.title, item.description);
-            // STRICT FILTER: Discard any result that has < 25% keyword match!
-            if (score >= 25) {
+            // Compute Enterprise Relevancy Score
+            const score = computeEnterpriseRelevancyScore(query, item.title, item.description, item.domain);
+            // DISCARD if score is below 20 (hard rejection guard)
+            if (score > 10) {
               seenUrls.add(item.url);
               combined.push({ ...item, score });
             }
@@ -212,7 +243,7 @@ export async function GET(req: NextRequest) {
       }
     });
 
-    // Sort strictly by highest Relevancy Score!
+    // Rank descending by Enterprise Relevancy Score!
     combined.sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
 
     return NextResponse.json({
