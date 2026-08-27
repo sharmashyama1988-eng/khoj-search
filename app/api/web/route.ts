@@ -67,30 +67,76 @@ function computeEnterpriseRelevancyScore(query: string, title: string, descripti
   });
 
   const matchRatio = matchedTokensCount / queryTokens.length;
-  if (matchRatio < 0.25) {
+  if (matchRatio < 0.2) {
     return -1000;
   }
 
-  const isProductOrPrice = /\b(price|cost|buy|specs|phone|laptop|car|vs|review|iphone|samsung|mobile)\b/i.test(query);
-  if (isProductOrPrice) {
-    if (domain.includes('apple') || domain.includes('amazon') || domain.includes('flipkart') || domain.includes('gsmarena') || domain.includes('techradar') || domain.includes('tomshardware')) {
-      score += 50;
-    }
-    if (domain.includes('dev.to')) {
-      score -= 80;
-    }
+  // Non-Wikipedia domains get an automatic boost so Wikipedia never dominates!
+  if (!domain.includes('wikipedia.org')) {
+    score += 40;
   }
 
   return score;
 }
 
-// 1. DuckDuckGo HTML Web Search
+// 1. Google Web Scraper (Official Google text results)
+async function fetchGoogleWeb(query: string): Promise<WebSearchResult[]> {
+  try {
+    const res = await fetch(`https://www.google.com/search?q=${encodeURIComponent(query)}&gbv=1`, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept-Language': 'en-US,en;q=0.9',
+      },
+      next: { revalidate: 120 },
+    });
+
+    if (!res.ok) return [];
+
+    const html = await res.text();
+    const results: WebSearchResult[] = [];
+
+    const urlRegex = /\/url\?q=(https?:\/\/[^&]+)/gi;
+    const matches = Array.from(html.matchAll(urlRegex));
+    const seen = new Set<string>();
+
+    let count = 0;
+    for (const match of matches) {
+      let rawUrl = match[1];
+      try { rawUrl = decodeURIComponent(rawUrl); } catch {}
+
+      if (rawUrl.includes('google.com') || rawUrl.includes('youtube.com/results') || seen.has(rawUrl)) continue;
+
+      seen.add(rawUrl);
+      const domain = getDomain(rawUrl);
+      const slug = rawUrl.split('/').filter(Boolean).pop()?.replace(/[-_]/g, ' ') || domain;
+      const cleanTitle = slug.charAt(0).toUpperCase() + slug.slice(1);
+
+      results.push({
+        id: `goog-${count++}-${Math.random().toString(36).slice(2, 6)}`,
+        title: `${query.toUpperCase()} — ${cleanTitle}`,
+        url: rawUrl,
+        description: `Direct web result for "${query}" on ${domain}. Access latest news, official documentation, prices, specs, and user reviews.`,
+        source: getSourceBadge(domain),
+        domain,
+        favicon: `https://www.google.com/s2/favicons?domain=${domain}&sz=32`,
+        badge: getSourceBadge(domain),
+      });
+
+      if (count >= 8) break;
+    }
+
+    return results;
+  } catch {
+    return [];
+  }
+}
+
+// 2. DuckDuckGo HTML Web Search
 async function fetchDuckDuckGoWeb(query: string): Promise<WebSearchResult[]> {
   try {
     const res = await fetch(`https://html.duckduckgo.com/html/?q=${encodeURIComponent(query)}`, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
       },
       next: { revalidate: 60 },
     });
@@ -121,7 +167,7 @@ async function fetchDuckDuckGoWeb(query: string): Promise<WebSearchResult[]> {
       snippets.push(sMatch[2].replace(/<[^>]*>/g, '').replace(/&[a-z]+;/gi, ' ').trim());
     }
 
-    titles.slice(0, 15).forEach((item, i) => {
+    titles.slice(0, 10).forEach((item, i) => {
       const domain = getDomain(item.url);
       const snippet = snippets[i] || item.title;
       results.push({
@@ -142,39 +188,10 @@ async function fetchDuckDuckGoWeb(query: string): Promise<WebSearchResult[]> {
   }
 }
 
-// 2. Wikipedia Search API
-async function fetchWikipediaWeb(query: string, lang = 'en'): Promise<WebSearchResult[]> {
-  try {
-    const wikiBase = `https://${lang}.wikipedia.org`;
-    const url = `${wikiBase}/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&srlimit=5&format=json&origin=*`;
-    const res = await fetch(url, { next: { revalidate: 120 } });
-    if (!res.ok) return [];
-
-    const data = await res.json() as { query?: { search?: Array<{ pageid: number; title: string; snippet: string }> } };
-    const items = data.query?.search ?? [];
-
-    return items.map((r) => {
-      const cleanDesc = r.snippet.replace(/<[^>]*>/g, '').replace(/&[a-z]+;/gi, ' ').trim();
-      return {
-        id: `wiki-${r.pageid}`,
-        title: r.title,
-        url: `${wikiBase}/wiki/${encodeURIComponent(r.title.replace(/ /g, '_'))}`,
-        description: cleanDesc,
-        source: 'Wikipedia',
-        domain: `${lang}.wikipedia.org`,
-        favicon: 'https://www.google.com/s2/favicons?domain=wikipedia.org&sz=32',
-        badge: 'Wikipedia',
-      };
-    });
-  } catch {
-    return [];
-  }
-}
-
 // 3. Reddit Search API
 async function fetchRedditWeb(query: string): Promise<WebSearchResult[]> {
   try {
-    const res = await fetch(`https://www.reddit.com/search.json?q=${encodeURIComponent(query)}&limit=4&sort=relevance`, {
+    const res = await fetch(`https://www.reddit.com/search.json?q=${encodeURIComponent(query)}&limit=3&sort=relevance`, {
       headers: { 'User-Agent': 'Mozilla/5.0 KhojSearch/1.0' },
       next: { revalidate: 180 },
     });
@@ -200,6 +217,35 @@ async function fetchRedditWeb(query: string): Promise<WebSearchResult[]> {
   }
 }
 
+// 4. Wikipedia Search API (STRICTLY CAPPED AT 1 ITEM MAX)
+async function fetchWikipediaWeb(query: string, lang = 'en'): Promise<WebSearchResult[]> {
+  try {
+    const wikiBase = `https://${lang}.wikipedia.org`;
+    const url = `${wikiBase}/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&srlimit=1&format=json&origin=*`;
+    const res = await fetch(url, { next: { revalidate: 120 } });
+    if (!res.ok) return [];
+
+    const data = await res.json() as { query?: { search?: Array<{ pageid: number; title: string; snippet: string }> } };
+    const items = data.query?.search ?? [];
+
+    return items.map((r) => {
+      const cleanDesc = r.snippet.replace(/<[^>]*>/g, '').replace(/&[a-z]+;/gi, ' ').trim();
+      return {
+        id: `wiki-${r.pageid}`,
+        title: r.title,
+        url: `${wikiBase}/wiki/${encodeURIComponent(r.title.replace(/ /g, '_'))}`,
+        description: cleanDesc,
+        source: 'Wikipedia',
+        domain: `${lang}.wikipedia.org`,
+        favicon: 'https://www.google.com/s2/favicons?domain=wikipedia.org&sz=32',
+        badge: 'Wikipedia',
+      };
+    });
+  } catch {
+    return [];
+  }
+}
+
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const rawQuery = searchParams.get('q') ?? '';
@@ -211,6 +257,7 @@ export async function GET(req: NextRequest) {
 
   try {
     const promises = [
+      fetchGoogleWeb(query),
       fetchDuckDuckGoWeb(query),
       fetchRedditWeb(query),
       fetchWikipediaWeb(query, lang),
@@ -233,20 +280,6 @@ export async function GET(req: NextRequest) {
         });
       }
     });
-
-    // If initial strict filter returned empty results, fallback to all fetched items without strict filter
-    if (combined.length === 0) {
-      fetchedBatches.forEach((batch) => {
-        if (batch.status === 'fulfilled') {
-          batch.value.forEach((item) => {
-            if (!seenUrls.has(item.url)) {
-              seenUrls.add(item.url);
-              combined.push(item);
-            }
-          });
-        }
-      });
-    }
 
     // Rank descending by Relevancy Score!
     combined.sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
