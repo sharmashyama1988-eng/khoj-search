@@ -27,6 +27,12 @@ export interface AgentRunOptions {
   allowedTools?: string[];
 }
 
+interface AgentDataPayload {
+  price?: { title: string; mainPrice: string; subtitle: string; variants?: Array<{ label: string; price: string }> };
+  translation?: string;
+  [key: string]: unknown;
+}
+
 export async function runKhojAgent(options: AgentRunOptions): Promise<AgentExecutionResult> {
   const startTime = Date.now();
   const { query, lang = 'en', origin = 'http://localhost:3000' } = options;
@@ -36,7 +42,7 @@ export async function runKhojAgent(options: AgentRunOptions): Promise<AgentExecu
   let directAnswer = '';
   const keyInsights: string[] = [];
   let sources: SearchResult[] = [];
-  let dataPayload: Record<string, unknown> | undefined = undefined;
+  const dataPayload: AgentDataPayload = {};
 
   // Step 1: Query Deconstruction & Intent Analysis
   const isPriceQuery = /\b(gold|silver|iphone|s24|ps5|petrol|diesel|price|rate|cost|bhav)\b/i.test(qLower);
@@ -88,9 +94,9 @@ export async function runKhojAgent(options: AgentRunOptions): Promise<AgentExecu
         try {
           const priceRes = await fetch(`${origin}/api/price?q=${encodeURIComponent(query)}`);
           if (priceRes.ok) {
-            const priceData = await priceRes.json() as { data?: Record<string, unknown> };
+            const priceData = await priceRes.json() as { data?: { title: string; mainPrice: string; subtitle: string; variants?: Array<{ label: string; price: string }> } };
             if (priceData.data) {
-              dataPayload = { ...(dataPayload || {}), price: priceData.data };
+              dataPayload.price = priceData.data;
               steps.push({
                 step: steps.length + 1,
                 toolName: 'LivePriceEngine',
@@ -115,7 +121,7 @@ export async function runKhojAgent(options: AgentRunOptions): Promise<AgentExecu
           if (transRes.ok) {
             const transData = await transRes.json() as { translatedText?: string };
             if (transData.translatedText) {
-              dataPayload = { ...(dataPayload || {}), translation: transData.translatedText };
+              dataPayload.translation = transData.translatedText;
               steps.push({
                 step: steps.length + 1,
                 toolName: 'NeuralTranslator',
@@ -134,8 +140,8 @@ export async function runKhojAgent(options: AgentRunOptions): Promise<AgentExecu
   await Promise.allSettled(parallelTasks);
 
   // Step 3: Synthesis & Reflection
-  if (dataPayload?.price) {
-    const p = dataPayload.price as { title: string; mainPrice: string; subtitle: string; variants?: Array<{ label: string; price: string }> };
+  if (dataPayload.price) {
+    const p = dataPayload.price;
     directAnswer = `${p.title}: ${p.mainPrice}. ${p.subtitle}.`;
     keyInsights.push(`Current rate/price: ${p.mainPrice}`);
     if (p.variants && p.variants.length > 0) {
@@ -169,8 +175,8 @@ export async function runKhojAgent(options: AgentRunOptions): Promise<AgentExecu
     directAnswer,
     keyInsights,
     sources: sources.slice(0, 10),
-    dataPayload,
-    confidenceScore: sources.length > 0 || dataPayload ? 0.98 : 0.75,
+    dataPayload: Object.keys(dataPayload).length > 0 ? dataPayload : undefined,
+    confidenceScore: sources.length > 0 || dataPayload.price ? 0.98 : 0.75,
     executionTimeMs,
   };
 }
