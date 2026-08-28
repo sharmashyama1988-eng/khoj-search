@@ -33,6 +33,7 @@ import { StockWidget } from '@/components/widgets/StockWidget';
 import { CodeRunnerWidget } from '@/components/widgets/CodeRunnerWidget';
 import { RegexWidget } from '@/components/widgets/RegexWidget';
 import { PriceWidget } from '@/components/widgets/PriceWidget';
+import { TranslatorWidget } from '@/components/widgets/TranslatorWidget';
 // ── Hooks ─────────────────────────────────────────────────────────────────────
 import { useSearch } from '@/hooks/useSearch';
 import { useIntentDetector } from '@/hooks/useIntentDetector';
@@ -106,6 +107,7 @@ export default function SearchPageContent() {
       case 'map':        return <MapWidget place={intent.payload ?? query} />;
       case 'stock':      return <StockWidget symbol={intent.payload ?? 'AAPL'} />;
       case 'price':      return <PriceWidget query={intent.payload ?? query} />;
+      case 'translator': return <TranslatorWidget initialText={intent.payload} />;
       case 'code':       return <CodeRunnerWidget initialCode={intent.payload} />;
       case 'regex':      return <RegexWidget />;
       default:           return null;

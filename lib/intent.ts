@@ -1,4 +1,4 @@
-﻿import type { DetectedIntent, IntentType } from '@/types';
+import type { DetectedIntent, IntentType } from '@/types';
 
 interface IntentPattern {
   type: IntentType;
@@ -42,6 +42,20 @@ export function isDirectDomainOrUrl(query: string): { isUrl: boolean; url: strin
 }
 
 const INTENT_PATTERNS: IntentPattern[] = [
+  {
+    type: 'translator',
+    patterns: [
+      /^(?:translate|translator|translation|anuvad|anuvaad|tarjuma)\b/i,
+      /\btranslate\s+(.+)\s+(?:to|in|into)\s+([a-z]+)/i,
+      /\b(.+)\s+ka\s+anuvad\b/i,
+      /^(?:english|hindi|spanish|french|german|arabic)\s+translator$/i,
+    ],
+    extract: (q) => {
+      const m = q.match(/\btranslate\s+(.+)\s+(?:to|in|into)\s+([a-z]+)/i);
+      if (m) return `${m[1]}:${m[2]}`;
+      return q.replace(/^(?:translate|translator|translation|anuvad|anuvaad|tarjuma)\s*/i, '').trim() || 'Hello, how are you?';
+    },
+  },
   {
     type: 'price',
     patterns: [

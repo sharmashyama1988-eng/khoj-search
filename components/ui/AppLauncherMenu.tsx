@@ -4,9 +4,11 @@ import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/hooks/useLanguage';
 
 const KHOJ_APPS = [
+  { key: 'chip_translator', query: 'translator',         icon: '🌐', label: 'Translator' },
   { key: 'chip_calculator', query: 'calculator',         icon: '🧮', label: 'Calculator' },
   { key: 'chip_weather',    query: 'weather in Delhi',   icon: '⛅', label: 'Weather' },
   { key: 'chip_dictionary', query: 'define cosmos',      icon: '📖', label: 'Dictionary' },
+  { key: 'chip_price',      query: 'gold price',         icon: '💰', label: 'Live Rates' },
   { key: 'chip_timer',      query: 'timer 5 minutes',    icon: '⏱️', label: 'Timer' },
   { key: 'chip_currency',   query: '100 USD to INR',     icon: '💱', label: 'Currency' },
   { key: 'chip_qr',         query: 'qr code',            icon: '🔲', label: 'QR Code' },

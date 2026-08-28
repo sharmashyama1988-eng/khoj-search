@@ -1,6 +1,7 @@
 ﻿'use client';
 import { useEffect, useState } from 'react';
 import { CopyButton } from '@/components/ui/CopyButton';
+import { TTSButton } from '@/components/ui/TTSButton';
 
 interface ReaderData {
   title: string;
@@ -23,7 +24,6 @@ export function ReaderModal({ url, initialTitle, onClose }: Props) {
   const [data, setData] = useState<ReaderData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [speaking, setSpeaking] = useState(false);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -50,55 +50,27 @@ export function ReaderModal({ url, initialTitle, onClose }: Props) {
       .finally(() => setLoading(false));
   }, [url]);
 
-  const toggleSpeak = (text: string) => {
-    if (typeof window === 'undefined' || !window.speechSynthesis) return;
-    if (speaking) {
-      window.speechSynthesis.cancel();
-      setSpeaking(false);
-      return;
-    }
-    const cleanText = text.slice(0, 3000).replace(/[*#_`]/g, '');
-    const utt = new SpeechSynthesisUtterance(cleanText);
-    utt.rate = 1.0;
-    utt.onend = () => setSpeaking(false);
-    utt.onerror = () => setSpeaking(false);
-    setSpeaking(true);
-    window.speechSynthesis.speak(utt);
-  };
-
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/70 backdrop-blur-md animate-fade-in">
-      {/* Click backdrop to close */}
-      <div className="absolute inset-0" onClick={onClose} />
-
-      {/* Modal Window */}
-      <div className="relative w-full max-w-3xl max-h-[88vh] bg-surface-2 border border-border/80 rounded-2xl shadow-2xl flex flex-col overflow-hidden z-10 animate-scale-up">
-        {/* Top bar */}
-        <div className="flex items-center justify-between px-5 py-3.5 border-b border-border/60 bg-surface-3/50">
-          <div className="flex items-center gap-2.5 min-w-0">
-            <span className="text-base text-indigo-400">📖</span>
-            <span className="font-semibold text-sm text-text-primary truncate">
-              {data?.title || initialTitle || 'Instant Reader Mode'}
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/75 backdrop-blur-md animate-fade-in">
+      <div className="relative w-full max-w-3xl max-h-[90vh] bg-surface-2 border border-border/80 rounded-3xl shadow-2xl overflow-hidden flex flex-col">
+        {/* Modal Top Bar */}
+        <div className="flex items-center justify-between px-5 sm:px-8 py-3.5 border-b border-border/60 bg-surface-3/40">
+          <div className="flex items-center gap-2 min-w-0">
+            <span className="text-base shrink-0">📖</span>
+            <span className="text-xs sm:text-sm font-semibold text-text-primary truncate">
+              {data?.title || initialTitle || 'Reading Mode'}
             </span>
-            {data?.readingTimeMinutes && (
-              <span className="text-[11px] px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 font-medium shrink-0">
-                ⏱ {data.readingTimeMinutes} min read
+            {data && (
+              <span className="shrink-0 text-[10px] px-2 py-0.5 rounded-full bg-indigo-500/15 text-indigo-400 font-mono hidden sm:inline-block">
+                {data.readingTimeMinutes} min read
               </span>
             )}
           </div>
 
           <div className="flex items-center gap-2 shrink-0">
-            {data?.content && (
+            {data && (
               <>
-                <button
-                  type="button"
-                  onClick={() => toggleSpeak(data.content)}
-                  title={speaking ? 'Stop Reading' : 'Listen with TTS'}
-                  className={`px-2.5 py-1 rounded-lg text-xs font-medium border transition-colors flex items-center gap-1.5 cursor-pointer
-                    ${speaking ? 'bg-indigo-500 text-white border-indigo-500' : 'bg-surface-3 hover:bg-surface-4 text-text-muted border-border/60'}`}
-                >
-                  <span>{speaking ? '⏹ Stop' : '🔊 Listen'}</span>
-                </button>
+                <TTSButton text={data.content} lang="en" size="sm" label="Listen" />
                 <CopyButton text={data.content} />
               </>
             )}

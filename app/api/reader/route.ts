@@ -18,6 +18,69 @@ export async function POST(req: NextRequest) {
   }
 }
 
+function cleanArticleMarkdown(rawMarkdown: string, domain: string): string {
+  let text = rawMarkdown;
+
+  // 1. Remove markdown images & HTML images
+  text = text.replace(/!\[[^\]]*\]\([^)]*\)/gi, '');
+  text = text.replace(/<img[^>]*>/gi, '');
+
+  // 2. Clean raw link syntax [Title](url) -> Title
+  text = text.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1');
+
+  // 3. Remove standalone tracking URLs
+  text = text.replace(/https?:\/\/[^\s]+/gi, (url) => url.length > 55 ? '' : url);
+
+  const lines = text.split('\n');
+  const cleanedLines: string[] = [];
+
+  const BOILERPLATE_PATTERNS = [
+    /sign\s*up/i,
+    /log\s*in/i,
+    /terms\s*of\s*service/i,
+    /privacy\s*policy/i,
+    /cookie/i,
+    /accept\s*all/i,
+    /by\s*clicking/i,
+    /sign\s*in/i,
+    /^#*\s*OR$/i,
+    /^#*\s*Email$/i,
+    /^#*\s*Password$/i,
+    /^#*\s*Submit$/i,
+    /^#*\s*Search$/i,
+    /^#*\s*$/i, // empty markdown headers
+    /advertisement/i,
+    /subscribe/i,
+    /share\s*on/i,
+    /follow\s*us/i,
+    /all\s*rights\s*reserved/i,
+    /skip\s*to\s*(?:main\s*)?content/i,
+    /navigation\s*menu/i,
+    /create\s*a\s*free\s*team/i,
+    /ask\s*question/i,
+    /your\s*privacy\s*choices/i,
+    /table\s*of\s*contents/i,
+    /jump\s*to\s*content/i,
+    /manage\s*cookies/i
+  ];
+
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed) {
+      cleanedLines.push('');
+      continue;
+    }
+
+    const isBoilerplate = BOILERPLATE_PATTERNS.some((p) => p.test(trimmed)) && trimmed.length < 160;
+    if (!isBoilerplate) {
+      cleanedLines.push(line);
+    }
+  }
+
+  const result = cleanedLines.join('\n').replace(/\n{3,}/g, '\n\n').trim();
+  return result;
+}
+
 async function handleReadUrl(targetUrl: string) {
   if (!targetUrl.trim()) {
     return NextResponse.json({ error: 'Parameter "url" or "targetUrl" is required.' }, { status: 400 });
@@ -30,9 +93,10 @@ async function handleReadUrl(targetUrl: string) {
   }
 
   const finalUrl = cleanUrl.startsWith('http') ? cleanUrl : `https://${cleanUrl}`;
+  const domain = getDomain(finalUrl);
 
   try {
-    // 1. Fetch from Jina AI Reader (Fast, clean Markdown extraction)
+    // 1. Fetch from Jina AI Reader
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), 8000);
 
@@ -52,26 +116,27 @@ async function handleReadUrl(targetUrl: string) {
         data?: { title?: string; description?: string; content?: string; url?: string };
       };
 
-      const title = data.data?.title || getDomain(finalUrl);
-      const content = data.data?.content || '';
-      const description = data.data?.description || content.slice(0, 240);
-      const wordCount = content.split(/\s+/).filter(Boolean).length;
+      const title = data.data?.title?.replace(/ - .*$/, '') || domain;
+      const rawContent = data.data?.content || '';
+      const cleanContent = cleanArticleMarkdown(rawContent, domain);
+      const description = data.data?.description || cleanContent.slice(0, 240);
+      const wordCount = cleanContent.split(/\s+/).filter(Boolean).length;
       const readingTimeMinutes = Math.max(1, Math.ceil(wordCount / 200));
 
       return NextResponse.json({
         status: 'success',
         title,
         url: finalUrl,
-        domain: getDomain(finalUrl),
+        domain,
         description,
-        content,
+        content: cleanContent,
         wordCount,
         readingTimeMinutes,
-        source: 'Jina AI Reader / Clean DOM',
+        source: `${domain} via Clean Reader`,
       });
     }
 
-    // 2. Direct HTML Fallback if Jina is unavailable
+    // 2. Direct HTML Fallback
     const htmlRes = await fetch(finalUrl, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
@@ -88,9 +153,8 @@ async function handleReadUrl(targetUrl: string) {
 
     const html = await htmlRes.text();
     const titleMatch = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
-    const title = titleMatch ? titleMatch[1].replace(/<[^>]*>/g, '').trim() : getDomain(finalUrl);
+    const title = titleMatch ? titleMatch[1].replace(/<[^>]*>/g, '').trim() : domain;
 
-    // Strip scripts, styles, navigations
     const cleanText = html
       .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
       .replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, '')
@@ -101,22 +165,23 @@ async function handleReadUrl(targetUrl: string) {
       .replace(/\s+/g, ' ')
       .trim();
 
-    const wordCount = cleanText.split(/\s+/).filter(Boolean).length;
+    const sanitized = cleanArticleMarkdown(cleanText.slice(0, 8000), domain);
+    const wordCount = sanitized.split(/\s+/).filter(Boolean).length;
 
     return NextResponse.json({
       status: 'success',
       title,
       url: finalUrl,
-      domain: getDomain(finalUrl),
-      description: cleanText.slice(0, 240),
-      content: cleanText.slice(0, 8000),
+      domain,
+      description: sanitized.slice(0, 240),
+      content: sanitized,
       wordCount,
       readingTimeMinutes: Math.max(1, Math.ceil(wordCount / 200)),
-      source: 'Direct HTML Parser',
+      source: 'Direct Clean Parser',
     });
   } catch (error) {
     return NextResponse.json({
-      error: `Failed to load reader mode: ${String(error)}`,
+      error: `Failed to load clean reader: ${String(error)}`,
       url: finalUrl,
     }, { status: 500 });
   }
