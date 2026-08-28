@@ -1,0 +1,59 @@
+[
+  {
+    "id": "ai-what-is-llm",
+    "keywords": [
+      "what is llm",
+      "large language model",
+      "how llm works",
+      "transformer model",
+      "generative ai",
+      "chatgpt"
+    ],
+    "title": "Large Language Models (LLMs) & Transformer Architecture",
+    "category": "Artificial Intelligence",
+    "answer": "A Large Language Model (LLM) is an AI neural network trained on vast text datasets to understand, reason, and generate human language. Powered by the Transformer architecture with self-attention mechanisms.",
+    "highlights": [
+      "Core Mechanism: Self-Attention mechanism introduced in the 2017 Google paper 'Attention Is All You Need'.",
+      "Training Stages: Pre-training (Next token prediction on billions of tokens) followed by RLHF / Instruction Fine-Tuning.",
+      "Key Examples: Gemini (Google), GPT-4/ChatGPT (OpenAI), Claude (Anthropic), LLaMA (Meta), DeepSeek."
+    ],
+    "url": "https://en.wikipedia.org/wiki/Large_language_model"
+  },
+  {
+    "id": "ai-neural-network",
+    "keywords": [
+      "what is neural network",
+      "artificial neural network",
+      "deep learning",
+      "how neural network works",
+      "backpropagation"
+    ],
+    "title": "Artificial Neural Networks (ANN) & Deep Learning",
+    "category": "Artificial Intelligence",
+    "answer": "An Artificial Neural Network is a computational model inspired by biological brains, composed of interconnected layers of artificial neurons (nodes) that learn representations from data through backpropagation.",
+    "highlights": [
+      "Layer Structure: Input Layer -> Hidden Layers (features & weights) -> Output Layer.",
+      "Learning Algorithm: Backpropagation with Gradient Descent calculates loss and updates synaptic weights.",
+      "Architectures: CNNs (Computer Vision), RNNs/LSTMs (Sequential data), Transformers (Language & Multi-modal)."
+    ],
+    "url": "https://en.wikipedia.org/wiki/Artificial_neural_network"
+  },
+  {
+    "id": "ai-agi",
+    "keywords": [
+      "what is agi",
+      "artificial general intelligence",
+      "agi definition",
+      "difference between ai and agi"
+    ],
+    "title": "Artificial General Intelligence (AGI)",
+    "category": "Artificial Intelligence",
+    "answer": "Artificial General Intelligence (AGI) is a theoretical form of AI that possesses human-equivalent or superior intellectual capability across all cognitive, creative, and technical domains.",
+    "highlights": [
+      "Narrow AI vs AGI: Current AI (Narrow) excels at specific tasks (chess, translation); AGI can generalize across any intellectual task.",
+      "Key Milestones: Multimodal reasoning, autonomous agency, scientific discovery synthesis, meta-learning.",
+      "Safety Research: Alignment, interpretability, reinforcement learning from human feedback (RLHF)."
+    ],
+    "url": "https://en.wikipedia.org/wiki/Artificial_general_intelligence"
+  }
+]

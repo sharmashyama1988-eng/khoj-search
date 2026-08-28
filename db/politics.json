@@ -1,0 +1,60 @@
+[
+  {
+    "id": "pol-indian-constitution",
+    "keywords": [
+      "indian constitution",
+      "father of indian constitution",
+      "when was indian constitution adopted",
+      "article 370",
+      "fundamental rights india",
+      "dr br ambedkar"
+    ],
+    "title": "Constitution of India — Supreme Law of India",
+    "category": "Politics",
+    "answer": "The Constitution of India is the supreme law of India, drafted by the Constituent Assembly under drafting committee chairman Dr. B.R. Ambedkar. Adopted on 26 November 1949 and came into effect on 26 January 1950 (Republic Day).",
+    "highlights": [
+      "Chief Architect: Dr. B. R. Ambedkar (Chairman of Drafting Committee)",
+      "Adopted: 26 November 1949 (Constitution Day) | Effective: 26 January 1950 (Republic Day)",
+      "Length: Longest written national constitution in the world (originally 395 articles in 22 parts)",
+      "Preamble: Declares India a Sovereign, Socialist, Secular, Democratic Republic"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Constitution_of_India"
+  },
+  {
+    "id": "pol-lok-sabha-rajya-sabha",
+    "keywords": [
+      "lok sabha vs rajya sabha",
+      "parliament of india",
+      "lok sabha seats",
+      "rajya sabha seats",
+      "lower house upper house"
+    ],
+    "title": "Parliament of India (Lok Sabha & Rajya Sabha)",
+    "category": "Politics",
+    "answer": "The Parliament of India is the bicameral legislature consisting of the President of India and two houses: the Lok Sabha (House of the People / Lower House) and the Rajya Sabha (Council of States / Upper House).",
+    "highlights": [
+      "Lok Sabha (Lower House): Maximum 543 elected members, 5-year term, directly elected by citizens (First-past-the-post).",
+      "Rajya Sabha (Upper House): Maximum 250 members (238 elected by state MLAs + 12 nominated by President), permanent body with 6-year terms (1/3rd retire every 2 years).",
+      "Presiding Officers: Speaker for Lok Sabha; Vice President of India (ex-officio Chairman) for Rajya Sabha."
+    ],
+    "url": "https://en.wikipedia.org/wiki/Parliament_of_India"
+  },
+  {
+    "id": "pol-democracy-vs-republic",
+    "keywords": [
+      "difference between democracy and republic",
+      "what is democracy",
+      "what is republic",
+      "types of government"
+    ],
+    "title": "Democracy vs Republic — Political Systems",
+    "category": "Politics",
+    "answer": "A democracy is a system of government where citizens exercise power directly or through elected representatives. A republic is a state in which supreme power is held by the people and their elected representatives, with an elected head of state (not a monarch).",
+    "highlights": [
+      "Pure Democracy: Majority rule decides policy directly without constitutional constraints.",
+      "Constitutional Republic: Power is governed by a constitution that protects minority rights from majority tyranny.",
+      "Example: India and the United States are both constitutional democratic republics."
+    ],
+    "url": "https://en.wikipedia.org/wiki/Democratic_republic"
+  }
+]

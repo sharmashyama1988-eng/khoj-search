@@ -2,6 +2,12 @@
 import geography from '@/db/geography.json';
 import mathematics from '@/db/mathematics.json';
 import science from '@/db/science.json';
+import physics from '@/db/physics.json';
+import economics from '@/db/economics.json';
+import ai from '@/db/ai.json';
+import socialMedia from '@/db/social_media.json';
+import politics from '@/db/politics.json';
+import technology from '@/db/technology.json';
 import techProgramming from '@/db/tech_programming.json';
 
 export interface KnowledgeDBEntry {
@@ -15,13 +21,19 @@ export interface KnowledgeDBEntry {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Unified High-Density Knowledge Database (/db)
+// Unified Multi-Domain Knowledge Base (/db)
 // ─────────────────────────────────────────────────────────────────────────────
 const ALL_ENTRIES: KnowledgeDBEntry[] = [
   ...(biographies as unknown as KnowledgeDBEntry[]),
   ...(geography as unknown as KnowledgeDBEntry[]),
   ...(mathematics as unknown as KnowledgeDBEntry[]),
   ...(science as unknown as KnowledgeDBEntry[]),
+  ...(physics as unknown as KnowledgeDBEntry[]),
+  ...(economics as unknown as KnowledgeDBEntry[]),
+  ...(ai as unknown as KnowledgeDBEntry[]),
+  ...(socialMedia as unknown as KnowledgeDBEntry[]),
+  ...(politics as unknown as KnowledgeDBEntry[]),
+  ...(technology as unknown as KnowledgeDBEntry[]),
   ...(techProgramming as unknown as KnowledgeDBEntry[]),
 ];
 
@@ -51,7 +63,7 @@ export function searchKnowledgeDB(query: string): KnowledgeDBEntry | null {
   for (const entry of ALL_ENTRIES) {
     let score = 0;
 
-    // 1. Exact or Substring Keyword Match (+500 points)
+    // 1. Exact or Substring Keyword Match (+500 to +600 points)
     for (const kw of entry.keywords) {
       const kwClean = kw.toLowerCase().trim();
       if (rawClean === kwClean) {

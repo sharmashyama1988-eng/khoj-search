@@ -1,176 +1,25 @@
 [
   {
-    "id": "geo-cap-france",
-    "keywords": [
-      "capital of france",
-      "france capital",
-      "france ki rajdhani",
-      "france city"
-    ],
-    "title": "Capital of France — Paris",
-    "category": "Geography",
-    "answer": "Paris is the capital and largest city of France, situated along the Seine River.",
-    "highlights": [
-      "Capital City: Paris",
-      "Country: France (Europe)",
-      "Famous Landmarks: Eiffel Tower, Louvre Museum, Notre-Dame, Arc de Triomphe",
-      "Currency: Euro (EUR)"
-    ],
-    "url": "https://en.wikipedia.org/wiki/Paris"
-  },
-  {
-    "id": "geo-cap-india",
-    "keywords": [
-      "capital of india",
-      "india capital",
-      "bharat ki rajdhani",
-      "delhi capital"
-    ],
-    "title": "Capital of India — New Delhi",
-    "category": "Geography",
-    "answer": "New Delhi is the capital of India and the seat of all three branches of the Government of India.",
-    "highlights": [
-      "National Capital: New Delhi",
-      "Country: Republic of India",
-      "Seat of Government: Rashtrapati Bhavan, Sansad Bhavan, Supreme Court",
-      "Currency: Indian Rupee (INR)"
-    ],
-    "url": "https://en.wikipedia.org/wiki/New_Delhi"
-  },
-  {
-    "id": "geo-cap-japan",
-    "keywords": [
-      "capital of japan",
-      "japan capital",
-      "japan ki rajdhani",
-      "tokyo capital"
-    ],
-    "title": "Capital of Japan — Tokyo",
-    "category": "Geography",
-    "answer": "Tokyo is the capital of Japan and the world's most populous metropolitan area.",
-    "highlights": [
-      "Capital City: Tokyo",
-      "Country: Japan (East Asia)",
-      "Population: Over 37 million in Greater Tokyo Area",
-      "Currency: Japanese Yen (JPY)"
-    ],
-    "url": "https://en.wikipedia.org/wiki/Tokyo"
-  },
-  {
-    "id": "geo-cap-usa",
-    "keywords": [
-      "capital of usa",
-      "capital of united states",
-      "capital of america",
-      "america capital",
-      "usa capital"
-    ],
-    "title": "Capital of the United States — Washington, D.C.",
-    "category": "Geography",
-    "answer": "Washington, D.C. (District of Columbia) is the federal capital of the United States of America.",
-    "highlights": [
-      "Federal Capital: Washington, D.C.",
-      "Country: United States of America (USA)",
-      "Seat of Government: The White House, Capitol Hill, Supreme Court",
-      "Currency: United States Dollar (USD)"
-    ],
-    "url": "https://en.wikipedia.org/wiki/Washington,_D.C."
-  },
-  {
-    "id": "geo-cap-uk",
-    "keywords": [
-      "capital of uk",
-      "capital of united kingdom",
-      "capital of england",
-      "england capital",
-      "london capital"
-    ],
-    "title": "Capital of the United Kingdom — London",
-    "category": "Geography",
-    "answer": "London is the capital and largest city of England and the United Kingdom, standing on the River Thames.",
-    "highlights": [
-      "Capital City: London",
-      "Country: United Kingdom",
-      "Famous Landmarks: Big Ben, Tower Bridge, Buckingham Palace, British Museum",
-      "Currency: Pound Sterling (GBP)"
-    ],
-    "url": "https://en.wikipedia.org/wiki/London"
-  },
-  {
-    "id": "geo-cap-australia",
-    "keywords": [
-      "capital of australia",
-      "australia capital",
-      "australia ki rajdhani",
-      "canberra capital"
-    ],
-    "title": "Capital of Australia — Canberra",
-    "category": "Geography",
-    "answer": "Canberra is the capital city of Australia, situated within the Australian Capital Territory (ACT).",
-    "highlights": [
-      "Capital City: Canberra",
-      "Country: Commonwealth of Australia",
-      "Selection: Chosen as a compromise between Sydney and Melbourne in 1908",
-      "Currency: Australian Dollar (AUD)"
-    ],
-    "url": "https://en.wikipedia.org/wiki/Canberra"
-  },
-  {
-    "id": "geo-cap-germany",
-    "keywords": [
-      "capital of germany",
-      "germany capital",
-      "germany ki rajdhani",
-      "berlin capital"
-    ],
-    "title": "Capital of Germany — Berlin",
-    "category": "Geography",
-    "answer": "Berlin is the capital and largest city of Germany by both area and population.",
-    "highlights": [
-      "Capital City: Berlin",
-      "Country: Federal Republic of Germany",
-      "Famous Landmarks: Brandenburg Gate, Reichstag Building, Berlin Wall Memorial",
-      "Currency: Euro (EUR)"
-    ],
-    "url": "https://en.wikipedia.org/wiki/Berlin"
-  },
-  {
-    "id": "geo-cap-canada",
-    "keywords": [
-      "capital of canada",
-      "canada capital",
-      "canada ki rajdhani",
-      "ottawa capital"
-    ],
-    "title": "Capital of Canada — Ottawa",
-    "category": "Geography",
-    "answer": "Ottawa is the capital city of Canada, located in the province of Ontario on the south bank of the Ottawa River.",
-    "highlights": [
-      "Capital City: Ottawa",
-      "Country: Canada",
-      "Seat of Government: Parliament Hill",
-      "Currency: Canadian Dollar (CAD)"
-    ],
-    "url": "https://en.wikipedia.org/wiki/Ottawa"
-  },
-  {
     "id": "geo-continents",
     "keywords": [
       "how many continents",
       "continents in the world",
       "list of continents",
       "7 continents",
-      "seven continents"
+      "seven continents",
+      "continents"
     ],
     "title": "The 7 Continents of the World",
     "category": "Geography",
     "answer": "There are 7 continents on Earth: Asia, Africa, North America, South America, Antarctica, Europe, and Australia (Oceania).",
     "highlights": [
-      "Largest by Area & Population: Asia (~4.7 billion people)",
-      "Second Largest: Africa (~1.4 billion people)",
-      "Third Largest: North America (~590 million people)",
-      "Coldest / Most Desolate: Antarctica",
-      "Smallest by Land Area: Australia / Oceania"
+      "Largest by Area & Population: Asia (~4.7 billion people, 44.58 million km²)",
+      "Second Largest: Africa (~1.4 billion people, 30.37 million km²)",
+      "Third Largest: North America (~590 million people, 24.71 million km²)",
+      "Fourth Largest: South America (~430 million people, 17.84 million km²)",
+      "Coldest & Most Desolate: Antarctica (14.2 million km², no permanent human population)",
+      "Sixth Largest: Europe (~750 million people, 10.18 million km²)",
+      "Smallest by Land Area: Australia / Oceania (~43 million people, 8.6 million km²)"
     ],
     "url": "https://en.wikipedia.org/wiki/Continent"
   },
@@ -182,17 +31,18 @@
       "list of oceans",
       "5 oceans",
       "five oceans",
-      "largest ocean"
+      "largest ocean",
+      "deepest ocean"
     ],
     "title": "The 5 Oceans of the World",
     "category": "Geography",
-    "answer": "There are 5 major oceans on Earth: Pacific Ocean, Atlantic Ocean, Indian Ocean, Southern (Antarctic) Ocean, and Arctic Ocean.",
+    "answer": "There are 5 recognized oceans on Earth: Pacific Ocean, Atlantic Ocean, Indian Ocean, Southern (Antarctic) Ocean, and Arctic Ocean.",
     "highlights": [
-      "Largest & Deepest: Pacific Ocean (Covers over 30% of Earth surface)",
-      "Second Largest: Atlantic Ocean",
-      "Third Largest: Indian Ocean",
-      "Southernmost: Southern Ocean",
-      "Smallest & Shallowest: Arctic Ocean"
+      "Largest & Deepest: Pacific Ocean (Covers >30% of Earth surface, contains Mariana Trench)",
+      "Second Largest: Atlantic Ocean (Separates the Americas from Europe and Africa)",
+      "Third Largest: Indian Ocean (Warmest ocean, washes around Indian subcontinent)",
+      "Fourth Largest: Southern Ocean (Encircles Antarctica south of 60°S latitude)",
+      "Smallest & Shallowest: Arctic Ocean (Surrounds the North Pole, mostly covered by sea ice)"
     ],
     "url": "https://en.wikipedia.org/wiki/Ocean"
   },
@@ -203,16 +53,681 @@
       "highest peak",
       "highest mountain in the world",
       "mount everest height",
-      "everest height"
+      "everest height",
+      "mount everest"
     ],
     "title": "Mount Everest (Sagarmatha / Chomolungma) — Tallest Mountain",
     "category": "Geography",
-    "answer": "Mount Everest is Earth highest mountain above sea level, with an official elevation of 8,848.86 metres (29,031.7 ft). Located in the Himalayas on the border between Nepal and China.",
+    "answer": "Mount Everest is Earth's highest mountain above sea level, with an official elevation of 8,848.86 metres (29,031.7 ft). It is located in the Mahalangur Himal sub-range of the Himalayas on the border between Nepal and China (Tibet).",
     "highlights": [
       "Official Elevation: 8,848.86 m (29,031.7 ft)",
-      "Location: Himalayas, Nepal / Tibet (China)",
+      "Location: Himalayas (Border of Nepal and Tibet Autonomous Region, China)",
+      "Local Names: Sagarmatha (Nepal), Chomolungma (Tibet)",
       "First Confirmed Ascent: Sir Edmund Hillary and Tenzing Norgay (29 May 1953)"
     ],
     "url": "https://en.wikipedia.org/wiki/Mount_Everest"
+  },
+  {
+    "id": "geo-nile-river",
+    "keywords": [
+      "longest river",
+      "longest river in the world",
+      "nile river",
+      "river nile",
+      "nile length"
+    ],
+    "title": "Nile River — Longest River in the World",
+    "category": "Geography",
+    "answer": "The Nile River is the longest river in the world, with an estimated length of 6,650 kilometres (4,132 miles), flowing northward through eleven countries in northeastern Africa into the Mediterranean Sea.",
+    "highlights": [
+      "Length: Approximately 6,650 km (4,132 miles)",
+      "Primary Tributaries: White Nile and Blue Nile (meeting at Khartoum, Sudan)",
+      "Basin Countries: Egypt, Sudan, South Sudan, Ethiopia, Uganda, DR Congo, Kenya, Tanzania, Rwanda, Burundi, Eritrea",
+      "Significance: Provided life and fertile silt for Ancient Egyptian civilization"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Nile"
+  },
+  {
+    "id": "geo-amazon-river",
+    "keywords": [
+      "largest river",
+      "largest river by volume",
+      "amazon river",
+      "amazon river length",
+      "amazon basin"
+    ],
+    "title": "Amazon River — Largest River by Discharge Volume",
+    "category": "Geography",
+    "answer": "The Amazon River in South America is the largest river in the world by water discharge volume (accounting for roughly 20% of global river discharge into oceans) and the second longest at approximately 6,400 km (3,977 mi).",
+    "highlights": [
+      "Discharge: ~209,000 m³/s (greater than the next seven largest rivers combined)",
+      "Length: ~6,400 km (3,977 miles)",
+      "Drainage Basin: Amazon Basin (~7 million km² across Brazil, Peru, Colombia, Bolivia, Ecuador)",
+      "Biodiversity: Flows through the Amazon Rainforest, the world's most biodiverse tropical rainforest"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Amazon_River"
+  },
+  {
+    "id": "geo-sahara-desert",
+    "keywords": [
+      "largest desert",
+      "largest hot desert",
+      "sahara desert",
+      "sahara size",
+      "sahara location"
+    ],
+    "title": "Sahara Desert — Largest Hot Desert in the World",
+    "category": "Geography",
+    "answer": "The Sahara is the largest hot desert in the world and the third-largest desert overall (after Antarctica and the Arctic), covering an area of 9.2 million square kilometres (3.6 million sq mi) across Northern Africa.",
+    "highlights": [
+      "Total Area: ~9,200,000 km² (comparable to the area of China or the United States)",
+      "Location: North Africa (spans 11 countries: Algeria, Chad, Egypt, Libya, Mali, Mauritania, Morocco, Niger, Sudan, Tunisia, Western Sahara)",
+      "Climate: Hyper-arid, with sand dunes (ergs) reaching up to 180 metres in height"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sahara"
+  },
+  {
+    "id": "geo-mariana-trench",
+    "keywords": [
+      "deepest point on earth",
+      "deepest ocean trench",
+      "mariana trench",
+      "challenger deep",
+      "mariana trench depth"
+    ],
+    "title": "Mariana Trench (Challenger Deep) — Deepest Oceanic Trench",
+    "category": "Geography",
+    "answer": "The Mariana Trench is the deepest oceanic trench on Earth, located in the western Pacific Ocean. Its deepest point, the Challenger Deep, reaches a depth of approximately 10,994 metres (36,070 ft / ~11 km) below sea level.",
+    "highlights": [
+      "Maximum Depth: ~10,994 m (36,070 ft / nearly 11 km) at Challenger Deep",
+      "Location: Western Pacific Ocean, east of the Mariana Islands",
+      "Water Pressure: Exceeds 1,000 atmospheres (108.6 MPa) at the trench floor"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Mariana_Trench"
+  },
+  {
+    "id": "geo-grand-canyon",
+    "keywords": [
+      "grand canyon",
+      "where is grand canyon",
+      "colorado river canyon",
+      "grand canyon depth"
+    ],
+    "title": "Grand Canyon — Steep-Sided Canyon in Arizona, USA",
+    "category": "Geography",
+    "answer": "The Grand Canyon is a steep-sided canyon carved by the Colorado River in Arizona, United States. It is 446 km (277 mi) long, up to 29 km (18 mi) wide, and attains a depth of over 1,857 metres (6,093 feet).",
+    "highlights": [
+      "Length & Depth: 446 km (277 miles) long, ~1,857 m (6,000 ft) deep",
+      "River: Carved over millions of years by the Colorado River",
+      "Status: UNESCO World Heritage Site and US National Park"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Grand_Canyon"
+  },
+  {
+    "id": "geo-in-state-ap",
+    "keywords": ["capital of andhra pradesh", "andhra pradesh capital", "andhra ki rajdhani", "amaravati capital"],
+    "title": "Capital of Andhra Pradesh — Amaravati",
+    "category": "Geography",
+    "answer": "Amaravati is the capital of the Indian state of Andhra Pradesh, located on the southern banks of the Krishna River.",
+    "highlights": ["Capital: Amaravati", "State: Andhra Pradesh (Southern India)", "Major Cities: Visakhapatnam, Vijayawada, Guntur", "Official Language: Telugu"],
+    "url": "https://en.wikipedia.org/wiki/Amaravati"
+  },
+  {
+    "id": "geo-in-state-ar",
+    "keywords": ["capital of arunachal pradesh", "arunachal pradesh capital", "itanagar capital"],
+    "title": "Capital of Arunachal Pradesh — Itanagar",
+    "category": "Geography",
+    "answer": "Itanagar is the capital of Arunachal Pradesh, India's northeasternmost state known as the 'Land of the Dawn-Lit Mountains'.",
+    "highlights": ["Capital: Itanagar", "State: Arunachal Pradesh (Northeast India)", "Landmark: Ita Fort (14th-century fort)", "Official Language: English"],
+    "url": "https://en.wikipedia.org/wiki/Itanagar"
+  },
+  {
+    "id": "geo-in-state-as",
+    "keywords": ["capital of assam", "assam capital", "dispur capital", "assam ki rajdhani"],
+    "title": "Capital of Assam — Dispur",
+    "category": "Geography",
+    "answer": "Dispur is the capital of the northeastern Indian state of Assam, situated as a locality within the city of Guwahati.",
+    "highlights": ["Capital: Dispur", "State: Assam", "Largest City: Guwahati", "Famous For: Assam Tea, One-horned Rhinoceros (Kaziranga National Park)"],
+    "url": "https://en.wikipedia.org/wiki/Dispur"
+  },
+  {
+    "id": "geo-in-state-br",
+    "keywords": ["capital of bihar", "bihar capital", "patna capital", "bihar ki rajdhani"],
+    "title": "Capital of Bihar — Patna",
+    "category": "Geography",
+    "answer": "Patna (historically Pataliputra) is the capital and largest city of the Indian state of Bihar, situated along the south bank of the Ganges River.",
+    "highlights": ["Capital: Patna", "Historical Name: Pataliputra (capital of Maurya and Gupta empires)", "State: Bihar", "Official Languages: Hindi, Urdu"],
+    "url": "https://en.wikipedia.org/wiki/Patna"
+  },
+  {
+    "id": "geo-in-state-cg",
+    "keywords": ["capital of chhattisgarh", "chhattisgarh capital", "raipur capital"],
+    "title": "Capital of Chhattisgarh — Raipur",
+    "category": "Geography",
+    "answer": "Raipur is the capital and largest city of the central Indian state of Chhattisgarh.",
+    "highlights": ["Capital: Raipur (with administrative hub Nava Raipur / Atal Nagar)", "State: Chhattisgarh", "Formed: 1 November 2000 (carved from Madhya Pradesh)", "Official Language: Chhattisgarhi, Hindi"],
+    "url": "https://en.wikipedia.org/wiki/Raipur"
+  },
+  {
+    "id": "geo-in-state-ga",
+    "keywords": ["capital of goa", "goa capital", "panaji capital", "panjim"],
+    "title": "Capital of Goa — Panaji",
+    "category": "Geography",
+    "answer": "Panaji (Panjim) is the capital of Goa, situated on the banks of the Mandovi River estuary.",
+    "highlights": ["Capital: Panaji (Panjim)", "State: Goa (India's smallest state by area)", "Largest City: Vasco da Gama", "Official Language: Konkani"],
+    "url": "https://en.wikipedia.org/wiki/Panaji"
+  },
+  {
+    "id": "geo-in-state-gj",
+    "keywords": ["capital of gujarat", "gujarat capital", "gandhinagar capital", "gujarat ki rajdhani"],
+    "title": "Capital of Gujarat — Gandhinagar",
+    "category": "Geography",
+    "answer": "Gandhinagar is the planned capital city of the western Indian state of Gujarat, named after Mahatma Gandhi.",
+    "highlights": ["Capital: Gandhinagar", "State: Gujarat", "Largest City & Financial Hub: Ahmedabad", "Official Language: Gujarati"],
+    "url": "https://en.wikipedia.org/wiki/Gandhinagar"
+  },
+  {
+    "id": "geo-in-state-hr",
+    "keywords": ["capital of haryana", "haryana capital", "chandigarh capital haryana"],
+    "title": "Capital of Haryana — Chandigarh",
+    "category": "Geography",
+    "answer": "Chandigarh serves as the joint capital of Haryana and Punjab, administered separately as a Union Territory.",
+    "highlights": ["Capital: Chandigarh (Joint capital with Punjab)", "State: Haryana", "Major Economic Hub: Gurugram (Gurgaon)", "Official Language: Hindi"],
+    "url": "https://en.wikipedia.org/wiki/Chandigarh"
+  },
+  {
+    "id": "geo-in-state-hp",
+    "keywords": ["capital of himachal pradesh", "himachal capital", "shimla capital", "dharamshala capital"],
+    "title": "Capital of Himachal Pradesh — Shimla (Summer) / Dharamshala (Winter)",
+    "category": "Geography",
+    "answer": "Shimla is the summer capital and Dharamshala is the second / winter capital of the northern Indian state of Himachal Pradesh.",
+    "highlights": ["Summer Capital: Shimla (historic summer capital of British India)", "Winter Capital: Dharamshala", "State: Himachal Pradesh", "Official Language: Hindi"],
+    "url": "https://en.wikipedia.org/wiki/Shimla"
+  },
+  {
+    "id": "geo-in-state-jh",
+    "keywords": ["capital of jharkhand", "jharkhand capital", "ranchi capital", "jharkhand ki rajdhani"],
+    "title": "Capital of Jharkhand — Ranchi",
+    "category": "Geography",
+    "answer": "Ranchi is the capital of the eastern Indian state of Jharkhand, known as the 'City of Waterfalls'.",
+    "highlights": ["Capital: Ranchi", "State: Jharkhand", "Formed: 15 November 2000 (carved from southern Bihar)", "Official Language: Hindi"],
+    "url": "https://en.wikipedia.org/wiki/Ranchi"
+  },
+  {
+    "id": "geo-in-state-ka",
+    "keywords": ["capital of karnataka", "karnataka capital", "bengaluru capital", "bangalore capital"],
+    "title": "Capital of Karnataka — Bengaluru",
+    "category": "Geography",
+    "answer": "Bengaluru (Bangalore) is the capital and largest city of Karnataka, widely known as the 'Silicon Valley of India'.",
+    "highlights": ["Capital: Bengaluru (Bangalore)", "State: Karnataka", "Nickname: Silicon Valley of India / IT Capital", "Official Language: Kannada"],
+    "url": "https://en.wikipedia.org/wiki/Bengaluru"
+  },
+  {
+    "id": "geo-in-state-kl",
+    "keywords": ["capital of kerala", "kerala capital", "thiruvananthapuram capital", "trivandrum capital"],
+    "title": "Capital of Kerala — Thiruvananthapuram",
+    "category": "Geography",
+    "answer": "Thiruvananthapuram (formerly Trivandrum) is the capital and largest city of the southwestern coastal state of Kerala.",
+    "highlights": ["Capital: Thiruvananthapuram (Trivandrum)", "State: Kerala (God's Own Country)", "Major Landmarks: Padmanabhaswamy Temple, Technopark", "Official Language: Malayalam"],
+    "url": "https://en.wikipedia.org/wiki/Thiruvananthapuram"
+  },
+  {
+    "id": "geo-in-state-mp",
+    "keywords": ["capital of madhya pradesh", "madhya pradesh capital", "mp capital", "bhopal capital"],
+    "title": "Capital of Madhya Pradesh — Bhopal",
+    "category": "Geography",
+    "answer": "Bhopal is the capital of Madhya Pradesh, known as the 'City of Lakes' due to its numerous natural and artificial water bodies.",
+    "highlights": ["Capital: Bhopal", "State: Madhya Pradesh", "Largest City & Cleanest City of India: Indore", "Official Language: Hindi"],
+    "url": "https://en.wikipedia.org/wiki/Bhopal"
+  },
+  {
+    "id": "geo-in-state-mh",
+    "keywords": ["capital of maharashtra", "maharashtra capital", "mumbai capital", "maharashtra ki rajdhani"],
+    "title": "Capital of Maharashtra — Mumbai",
+    "category": "Geography",
+    "answer": "Mumbai (formerly Bombay) is the capital of Maharashtra and the financial, commercial, and entertainment capital of India.",
+    "highlights": ["Capital: Mumbai (Winter Capital: Nagpur)", "State: Maharashtra", "Financial Hub: Seat of Reserve Bank of India (RBI), BSE, NSE, Bollywood", "Official Language: Marathi"],
+    "url": "https://en.wikipedia.org/wiki/Mumbai"
+  },
+  {
+    "id": "geo-in-state-mn",
+    "keywords": ["capital of manipur", "manipur capital", "imphal capital"],
+    "title": "Capital of Manipur — Imphal",
+    "category": "Geography",
+    "answer": "Imphal is the capital city of Manipur, situated in the northeastern region of India.",
+    "highlights": ["Capital: Imphal", "State: Manipur", "Landmark: Kangla Fort, Loktak Lake (Keibul Lamjao floating national park)", "Official Language: Meitei (Manipuri)"],
+    "url": "https://en.wikipedia.org/wiki/Imphal"
+  },
+  {
+    "id": "geo-in-state-ml",
+    "keywords": ["capital of meghalaya", "meghalaya capital", "shillong capital"],
+    "title": "Capital of Meghalaya — Shillong",
+    "category": "Geography",
+    "answer": "Shillong is the capital of Meghalaya, popularly known as the 'Scotland of the East' for its rolling hills and waterfalls.",
+    "highlights": ["Capital: Shillong", "State: Meghalaya (Abode of Clouds)", "Wettest Place on Earth: Mawsynram / Cherrapunji in Meghalaya", "Official Language: English"],
+    "url": "https://en.wikipedia.org/wiki/Shillong"
+  },
+  {
+    "id": "geo-in-state-mz",
+    "keywords": ["capital of mizoram", "mizoram capital", "aizawl capital"],
+    "title": "Capital of Mizoram — Aizawl",
+    "category": "Geography",
+    "answer": "Aizawl is the capital and largest city of the northeastern Indian state of Mizoram.",
+    "highlights": ["Capital: Aizawl", "State: Mizoram", "Elevation: 1,132 metres above sea level on a ridge", "Official Language: Mizo, English"],
+    "url": "https://en.wikipedia.org/wiki/Aizawl"
+  },
+  {
+    "id": "geo-in-state-nl",
+    "keywords": ["capital of nagaland", "nagaland capital", "kohima capital"],
+    "title": "Capital of Nagaland — Kohima",
+    "category": "Geography",
+    "answer": "Kohima is the hilly capital city of the northeastern Indian state of Nagaland.",
+    "highlights": ["Capital: Kohima", "State: Nagaland", "Famous Event: Hornbill Festival (celebrated annually in December)", "Official Language: English"],
+    "url": "https://en.wikipedia.org/wiki/Kohima"
+  },
+  {
+    "id": "geo-in-state-od",
+    "keywords": ["capital of odisha", "odisha capital", "bhubaneswar capital", "orissa capital"],
+    "title": "Capital of Odisha — Bhubaneswar",
+    "category": "Geography",
+    "answer": "Bhubaneswar is the capital and largest city of the eastern Indian state of Odisha, known as the 'Temple City of India'.",
+    "highlights": ["Capital: Bhubaneswar", "State: Odisha (formerly Orissa)", "Famous Temples: Lingaraj Temple, Mukteshvara Temple", "Official Language: Odia"],
+    "url": "https://en.wikipedia.org/wiki/Bhubaneswar"
+  },
+  {
+    "id": "geo-in-state-pb",
+    "keywords": ["capital of punjab", "punjab capital", "punjab ki rajdhani"],
+    "title": "Capital of Punjab — Chandigarh",
+    "category": "Geography",
+    "answer": "Chandigarh serves as the capital of Punjab and Haryana, designed by renowned French architect Le Corbusier.",
+    "highlights": ["Capital: Chandigarh", "State: Punjab (Land of Five Rivers)", "Major Cultural City: Amritsar (Golden Temple / Harmandir Sahib)", "Official Language: Punjabi"],
+    "url": "https://en.wikipedia.org/wiki/Chandigarh"
+  },
+  {
+    "id": "geo-in-state-rj",
+    "keywords": ["capital of rajasthan", "rajasthan capital", "jaipur capital", "pink city"],
+    "title": "Capital of Rajasthan — Jaipur",
+    "category": "Geography",
+    "answer": "Jaipur, famously known as the 'Pink City', is the capital and largest city of Rajasthan, India's largest state by land area.",
+    "highlights": ["Capital: Jaipur (Pink City — UNESCO World Heritage Site)", "State: Rajasthan", "Landmarks: Hawa Mahal, Amer Fort, City Palace, Jantar Mantar", "Official Language: Hindi, Rajasthani"],
+    "url": "https://en.wikipedia.org/wiki/Jaipur"
+  },
+  {
+    "id": "geo-in-state-sk",
+    "keywords": ["capital of sikkim", "sikkim capital", "gangtok capital"],
+    "title": "Capital of Sikkim — Gangtok",
+    "category": "Geography",
+    "answer": "Gangtok is the capital and largest city of the Himalayan state of Sikkim, nestled in the Eastern Himalayas.",
+    "highlights": ["Capital: Gangtok", "State: Sikkim (First 100% Organic State in the world)", "Highest Peak: Kangchenjunga (8,586 m, 3rd highest in world)", "Official Languages: Nepali, Sikkimese, Lepcha, English"],
+    "url": "https://en.wikipedia.org/wiki/Gangtok"
+  },
+  {
+    "id": "geo-in-state-tn",
+    "keywords": ["capital of tamil nadu", "tamil nadu capital", "chennai capital", "madras capital"],
+    "title": "Capital of Tamil Nadu — Chennai",
+    "category": "Geography",
+    "answer": "Chennai (formerly Madras) is the capital of Tamil Nadu, located on the Coromandel Coast of the Bay of Bengal, known as the 'Detroit of South Asia' for its automobile industry.",
+    "highlights": ["Capital: Chennai (Madras)", "State: Tamil Nadu", "Landmarks: Marina Beach, Kapaleeshwarar Temple, Fort St. George", "Official Language: Tamil"],
+    "url": "https://en.wikipedia.org/wiki/Chennai"
+  },
+  {
+    "id": "geo-in-state-ts",
+    "keywords": ["capital of telangana", "telangana capital", "hyderabad capital"],
+    "title": "Capital of Telangana — Hyderabad",
+    "category": "Geography",
+    "answer": "Hyderabad is the capital and largest city of Telangana, known as the 'City of Pearls' and a major global IT and pharmaceutical hub.",
+    "highlights": ["Capital: Hyderabad", "State: Telangana (formed 2 June 2014)", "Landmarks: Charminar, Golconda Fort, HITEC City (Cyberabad)", "Official Language: Telugu, Urdu"],
+    "url": "https://en.wikipedia.org/wiki/Hyderabad"
+  },
+  {
+    "id": "geo-in-state-tr",
+    "keywords": ["capital of tripura", "tripura capital", "agartala capital"],
+    "title": "Capital of Tripura — Agartala",
+    "category": "Geography",
+    "answer": "Agartala is the capital city of Tripura in northeastern India, situated along the Howrah River near the Bangladesh border.",
+    "highlights": ["Capital: Agartala", "State: Tripura", "Landmark: Ujjayanta Palace", "Official Languages: Bengali, Kokborok, English"],
+    "url": "https://en.wikipedia.org/wiki/Agartala"
+  },
+  {
+    "id": "geo-in-state-up",
+    "keywords": ["capital of uttar pradesh", "uttar pradesh capital", "up capital", "lucknow capital", "up ki rajdhani"],
+    "title": "Capital of Uttar Pradesh — Lucknow",
+    "category": "Geography",
+    "answer": "Lucknow, known as the 'City of Nawabs', is the capital city of Uttar Pradesh, India's most populous state.",
+    "highlights": ["Capital: Lucknow", "State: Uttar Pradesh", "Landmarks: Bara Imambara, Rumi Darwaza, Ambedkar Memorial Park", "Official Languages: Hindi, Urdu"],
+    "url": "https://en.wikipedia.org/wiki/Lucknow"
+  },
+  {
+    "id": "geo-in-state-uk",
+    "keywords": ["capital of uttarakhand", "uttarakhand capital", "dehradun capital", "gairsain capital"],
+    "title": "Capital of Uttarakhand — Dehradun (Winter) / Gairsain (Summer)",
+    "category": "Geography",
+    "answer": "Dehradun is the winter capital and Gairsain (Bhararisain) is the summer capital of Uttarakhand in northern India.",
+    "highlights": ["Winter Capital: Dehradun", "Summer Capital: Gairsain (Bhararisain)", "State: Uttarakhand (Devbhumi — Land of the Gods)", "Official Language: Hindi, Sanskrit"],
+    "url": "https://en.wikipedia.org/wiki/Dehradun"
+  },
+  {
+    "id": "geo-in-state-wb",
+    "keywords": ["capital of west bengal", "west bengal capital", "kolkata capital", "calcutta capital"],
+    "title": "Capital of West Bengal — Kolkata",
+    "category": "Geography",
+    "answer": "Kolkata (formerly Calcutta) is the capital of West Bengal and the primary cultural, commercial, and educational hub of Eastern India.",
+    "highlights": ["Capital: Kolkata (Calcutta — former capital of British India until 1911)", "State: West Bengal", "Landmarks: Howrah Bridge, Victoria Memorial, Dakshineswar Kali Temple", "Official Language: Bengali, English"],
+    "url": "https://en.wikipedia.org/wiki/Kolkata"
+  },
+  {
+    "id": "geo-in-ut-delhi",
+    "keywords": ["capital of delhi", "capital of india", "national capital territory", "new delhi capital", "bharat ki rajdhani"],
+    "title": "Capital of India & NCT — New Delhi",
+    "category": "Geography",
+    "answer": "New Delhi is the national capital of India and the administrative centre of the National Capital Territory (NCT) of Delhi.",
+    "highlights": ["National Capital: New Delhi", "Seat of Government: Rashtrapati Bhavan, Parliament House (Sansad Bhavan), Supreme Court", "Status: Union Territory with Legislative Assembly"],
+    "url": "https://en.wikipedia.org/wiki/New_Delhi"
+  },
+  {
+    "id": "geo-in-ut-jk",
+    "keywords": ["capital of jammu and kashmir", "jammu and kashmir capital", "srinagar capital", "jammu capital"],
+    "title": "Capital of Jammu and Kashmir — Srinagar (Summer) / Jammu (Winter)",
+    "category": "Geography",
+    "answer": "Srinagar is the summer capital and Jammu is the winter capital of the Union Territory of Jammu and Kashmir.",
+    "highlights": ["Summer Capital: Srinagar (Dal Lake, Mughal Gardens)", "Winter Capital: Jammu (City of Temples)", "Status: Union Territory (reorganized October 2019)"],
+    "url": "https://en.wikipedia.org/wiki/Srinagar"
+  },
+  {
+    "id": "geo-in-ut-ladakh",
+    "keywords": ["capital of ladakh", "ladakh capital", "leh capital", "kargil capital"],
+    "title": "Capital of Ladakh — Leh (Summer) / Kargil (Winter)",
+    "category": "Geography",
+    "answer": "Leh is the summer capital and Kargil is the winter capital of the Union Territory of Ladakh, India's high-altitude cold desert region.",
+    "highlights": ["Summer Capital: Leh", "Winter Capital: Kargil", "Status: Union Territory created on 31 October 2019", "Geography: High altitude Himalayan cold desert"],
+    "url": "https://en.wikipedia.org/wiki/Leh"
+  },
+  {
+    "id": "geo-in-ut-an",
+    "keywords": ["capital of andaman and nicobar", "andaman capital", "port blair capital", "sri vijaya puram"],
+    "title": "Capital of Andaman and Nicobar Islands — Sri Vijaya Puram (Port Blair)",
+    "category": "Geography",
+    "answer": "Sri Vijaya Puram (formerly Port Blair) is the capital city of the Union Territory of the Andaman and Nicobar Islands.",
+    "highlights": ["Capital: Sri Vijaya Puram (Port Blair)", "Historic Landmark: Cellular Jail (Kala Pani)", "Location: South Andaman Island, Bay of Bengal"],
+    "url": "https://en.wikipedia.org/wiki/Port_Blair"
+  },
+  {
+    "id": "geo-in-ut-ch",
+    "keywords": ["capital of chandigarh", "chandigarh ut capital"],
+    "title": "Capital of Chandigarh — Chandigarh",
+    "category": "Geography",
+    "answer": "Chandigarh is a Union Territory that serves as its own capital as well as the joint capital for Punjab and Haryana.",
+    "highlights": ["Type: Union Territory & Planned City", "Architect: Le Corbusier", "Landmarks: Rock Garden, Sukhna Lake"],
+    "url": "https://en.wikipedia.org/wiki/Chandigarh"
+  },
+  {
+    "id": "geo-in-ut-dd",
+    "keywords": ["capital of dadra and nagar haveli and daman and diu", "daman capital", "daman and diu capital"],
+    "title": "Capital of Dadra and Nagar Haveli and Daman and Diu — Daman",
+    "category": "Geography",
+    "answer": "Daman is the capital of the merged Union Territory of Dadra and Nagar Haveli and Daman and Diu.",
+    "highlights": ["Capital: Daman", "Merger Date: 26 January 2020", "Coast: Arabian Sea coastal enclaves"],
+    "url": "https://en.wikipedia.org/wiki/Daman,_India"
+  },
+  {
+    "id": "geo-in-ut-lk",
+    "keywords": ["capital of lakshadweep", "lakshadweep capital", "kavaratti capital"],
+    "title": "Capital of Lakshadweep — Kavaratti",
+    "category": "Geography",
+    "answer": "Kavaratti is the capital of the Union Territory of Lakshadweep, an archipelago in the Arabian Sea.",
+    "highlights": ["Capital: Kavaratti", "Geography: 36 coral atolls and islands in the Arabian Sea", "Smallest UT: Land area of only 32 km²"],
+    "url": "https://en.wikipedia.org/wiki/Kavaratti"
+  },
+  {
+    "id": "geo-in-ut-py",
+    "keywords": ["capital of puducherry", "puducherry capital", "pondicherry capital"],
+    "title": "Capital of Puducherry — Pondicherry (Puducherry)",
+    "category": "Geography",
+    "answer": "Puducherry (Pondicherry) is the capital of the Union Territory of Puducherry, known for its French colonial heritage and Auroville.",
+    "highlights": ["Capital: Pondicherry (Puducherry)", "Former Rule: French India colony until 1954", "Enclaves: Puducherry, Karaikal, Mahé, Yanam"],
+    "url": "https://en.wikipedia.org/wiki/Pondicherry"
+  },
+  {
+    "id": "geo-cap-france",
+    "keywords": ["capital of france", "france capital", "france ki rajdhani", "paris capital"],
+    "title": "Capital of France — Paris",
+    "category": "Geography",
+    "answer": "Paris is the capital and largest city of France, situated along the Seine River.",
+    "highlights": ["Capital: Paris", "Country: France (Western Europe)", "Landmarks: Eiffel Tower, Louvre, Notre-Dame, Arc de Triomphe", "Currency: Euro (EUR)"],
+    "url": "https://en.wikipedia.org/wiki/Paris"
+  },
+  {
+    "id": "geo-cap-japan",
+    "keywords": ["capital of japan", "japan capital", "japan ki rajdhani", "tokyo capital"],
+    "title": "Capital of Japan — Tokyo",
+    "category": "Geography",
+    "answer": "Tokyo is the capital of Japan and the world's most populous metropolitan area.",
+    "highlights": ["Capital: Tokyo", "Country: Japan (East Asia)", "Metropolitan Population: Over 37 million people", "Currency: Japanese Yen (JPY)"],
+    "url": "https://en.wikipedia.org/wiki/Tokyo"
+  },
+  {
+    "id": "geo-cap-usa",
+    "keywords": ["capital of usa", "capital of united states", "capital of america", "america capital", "washington dc capital"],
+    "title": "Capital of the United States — Washington, D.C.",
+    "category": "Geography",
+    "answer": "Washington, D.C. (District of Columbia) is the federal capital of the United States of America.",
+    "highlights": ["Capital: Washington, D.C.", "Country: United States of America", "Seat of Government: White House, Capitol Hill, Supreme Court", "Currency: US Dollar (USD)"],
+    "url": "https://en.wikipedia.org/wiki/Washington,_D.C."
+  },
+  {
+    "id": "geo-cap-uk",
+    "keywords": ["capital of uk", "capital of united kingdom", "capital of england", "england capital", "london capital"],
+    "title": "Capital of the United Kingdom — London",
+    "category": "Geography",
+    "answer": "London is the capital and largest city of England and the United Kingdom, standing on the River Thames.",
+    "highlights": ["Capital: London", "Country: United Kingdom", "Landmarks: Big Ben, Tower of London, Buckingham Palace, British Museum", "Currency: British Pound (GBP)"],
+    "url": "https://en.wikipedia.org/wiki/London"
+  },
+  {
+    "id": "geo-cap-australia",
+    "keywords": ["capital of australia", "australia capital", "australia ki rajdhani", "canberra capital"],
+    "title": "Capital of Australia — Canberra",
+    "category": "Geography",
+    "answer": "Canberra is the capital city of Australia, situated within the Australian Capital Territory (ACT).",
+    "highlights": ["Capital: Canberra", "Country: Australia", "Chosen In: 1908 as a compromise between Sydney and Melbourne", "Currency: Australian Dollar (AUD)"],
+    "url": "https://en.wikipedia.org/wiki/Canberra"
+  },
+  {
+    "id": "geo-cap-germany",
+    "keywords": ["capital of germany", "germany capital", "germany ki rajdhani", "berlin capital"],
+    "title": "Capital of Germany — Berlin",
+    "category": "Geography",
+    "answer": "Berlin is the capital and largest city of Germany by both area and population.",
+    "highlights": ["Capital: Berlin", "Country: Federal Republic of Germany", "Landmarks: Brandenburg Gate, Reichstag Building, Berlin Wall Memorial", "Currency: Euro (EUR)"],
+    "url": "https://en.wikipedia.org/wiki/Berlin"
+  },
+  {
+    "id": "geo-cap-canada",
+    "keywords": ["capital of canada", "canada capital", "canada ki rajdhani", "ottawa capital"],
+    "title": "Capital of Canada — Ottawa",
+    "category": "Geography",
+    "answer": "Ottawa is the capital city of Canada, located in the province of Ontario on the south bank of the Ottawa River.",
+    "highlights": ["Capital: Ottawa", "Country: Canada", "Seat of Government: Parliament Hill", "Currency: Canadian Dollar (CAD)"],
+    "url": "https://en.wikipedia.org/wiki/Ottawa"
+  },
+  {
+    "id": "geo-cap-russia",
+    "keywords": ["capital of russia", "russia capital", "moscow capital", "russia ki rajdhani"],
+    "title": "Capital of Russia — Moscow",
+    "category": "Geography",
+    "answer": "Moscow is the capital and largest city of the Russian Federation, situated along the Moskva River.",
+    "highlights": ["Capital: Moscow", "Country: Russia (largest country in world by area)", "Landmarks: Red Square, Kremlin, Saint Basil's Cathedral", "Currency: Russian Ruble (RUB)"],
+    "url": "https://en.wikipedia.org/wiki/Moscow"
+  },
+  {
+    "id": "geo-cap-china",
+    "keywords": ["capital of china", "china capital", "beijing capital", "china ki rajdhani"],
+    "title": "Capital of China — Beijing",
+    "category": "Geography",
+    "answer": "Beijing (Peking) is the capital city of the People's Republic of China, with over 3,000 years of rich history.",
+    "highlights": ["Capital: Beijing", "Country: People's Republic of China", "Landmarks: Forbidden City, Tiananmen Square, Great Wall of China", "Currency: Chinese Yuan (RMB)"],
+    "url": "https://en.wikipedia.org/wiki/Beijing"
+  },
+  {
+    "id": "geo-cap-italy",
+    "keywords": ["capital of italy", "italy capital", "rome capital", "italy ki rajdhani"],
+    "title": "Capital of Italy — Rome",
+    "category": "Geography",
+    "answer": "Rome is the capital city of Italy, known as the 'Eternal City' and home to the Vatican City enclave.",
+    "highlights": ["Capital: Rome", "Country: Italy", "Landmarks: Colosseum, Roman Forum, Trevi Fountain, Pantheon", "Currency: Euro (EUR)"],
+    "url": "https://en.wikipedia.org/wiki/Rome"
+  },
+  {
+    "id": "geo-cap-brazil",
+    "keywords": ["capital of brazil", "brazil capital", "brasilia capital"],
+    "title": "Capital of Brazil — Brasília",
+    "category": "Geography",
+    "answer": "Brasília is the federal capital of Brazil, inaugurated in 1960 as a planned city designed by Oscar Niemeyer and Lúcio Costa.",
+    "highlights": ["Capital: Brasília", "Country: Brazil", "Design: Planned city shaped like an airplane", "Currency: Brazilian Real (BRL)"],
+    "url": "https://en.wikipedia.org/wiki/Bras%C3%ADlia"
+  },
+  {
+    "id": "geo-cap-saudi",
+    "keywords": ["capital of saudi arabia", "saudi arabia capital", "riyadh capital"],
+    "title": "Capital of Saudi Arabia — Riyadh",
+    "category": "Geography",
+    "answer": "Riyadh is the capital and largest city of the Kingdom of Saudi Arabia.",
+    "highlights": ["Capital: Riyadh", "Country: Saudi Arabia", "Region: Arabian Peninsula", "Currency: Saudi Riyal (SAR)"],
+    "url": "https://en.wikipedia.org/wiki/Riyadh"
+  },
+  {
+    "id": "geo-cap-uae",
+    "keywords": ["capital of uae", "capital of united arab emirates", "uae capital", "abu dhabi capital"],
+    "title": "Capital of the United Arab Emirates — Abu Dhabi",
+    "category": "Geography",
+    "answer": "Abu Dhabi is the capital and second-most populous city of the United Arab Emirates (after Dubai).",
+    "highlights": ["Capital: Abu Dhabi", "Country: United Arab Emirates (UAE)", "Landmarks: Sheikh Zayed Grand Mosque, Louvre Abu Dhabi", "Currency: UAE Dirham (AED)"],
+    "url": "https://en.wikipedia.org/wiki/Abu_Dhabi"
+  },
+  {
+    "id": "geo-cap-pakistan",
+    "keywords": ["capital of pakistan", "pakistan capital", "islamabad capital"],
+    "title": "Capital of Pakistan — Islamabad",
+    "category": "Geography",
+    "answer": "Islamabad is the federal capital city of Pakistan, located in the Islamabad Capital Territory in the foothills of the Margalla Hills.",
+    "highlights": ["Capital: Islamabad", "Country: Pakistan", "Built In: 1960s to replace Karachi as capital", "Currency: Pakistani Rupee (PKR)"],
+    "url": "https://en.wikipedia.org/wiki/Islamabad"
+  },
+  {
+    "id": "geo-cap-bangladesh",
+    "keywords": ["capital of bangladesh", "bangladesh capital", "dhaka capital"],
+    "title": "Capital of Bangladesh — Dhaka",
+    "category": "Geography",
+    "answer": "Dhaka is the capital and largest megacity of Bangladesh, situated along the Buriganga River.",
+    "highlights": ["Capital: Dhaka", "Country: Bangladesh", "Nickname: City of Mosques / Rickshaw Capital of the World", "Currency: Bangladeshi Taka (BDT)"],
+    "url": "https://en.wikipedia.org/wiki/Dhaka"
+  },
+  {
+    "id": "geo-cap-nepal",
+    "keywords": ["capital of nepal", "nepal capital", "kathmandu capital"],
+    "title": "Capital of Nepal — Kathmandu",
+    "category": "Geography",
+    "answer": "Kathmandu is the capital and largest city of Nepal, set in the Kathmandu Valley in the Himalayas.",
+    "highlights": ["Capital: Kathmandu", "Country: Nepal", "Landmarks: Pashupatinath Temple, Swayambhunath (Monkey Temple), Boudhanath", "Currency: Nepalese Rupee (NPR)"],
+    "url": "https://en.wikipedia.org/wiki/Kathmandu"
+  },
+  {
+    "id": "geo-cap-srilanka",
+    "keywords": ["capital of sri lanka", "sri lanka capital", "colombo capital", "sri jayawardenepura kotte"],
+    "title": "Capital of Sri Lanka — Sri Jayawardenepura Kotte / Colombo",
+    "category": "Geography",
+    "answer": "Sri Jayawardenepura Kotte is the legislative capital and Colombo is the executive, judicial, and commercial capital of Sri Lanka.",
+    "highlights": ["Legislative Capital: Sri Jayawardenepura Kotte", "Commercial / Judicial Capital: Colombo", "Country: Sri Lanka", "Currency: Sri Lankan Rupee (LKR)"],
+    "url": "https://en.wikipedia.org/wiki/Sri_Jayawardenepura_Kotte"
+  },
+  {
+    "id": "geo-cap-spain",
+    "keywords": ["capital of spain", "spain capital", "madrid capital", "spain ki rajdhani"],
+    "title": "Capital of Spain — Madrid",
+    "category": "Geography",
+    "answer": "Madrid is the capital and largest city of Spain, located in the central part of the Iberian Peninsula on the Manzanares River.",
+    "highlights": ["Capital: Madrid", "Country: Kingdom of Spain", "Landmarks: Royal Palace of Madrid, Prado Museum", "Currency: Euro (EUR)"],
+    "url": "https://en.wikipedia.org/wiki/Madrid"
+  },
+  {
+    "id": "geo-cap-southkorea",
+    "keywords": ["capital of south korea", "south korea capital", "seoul capital", "korea capital"],
+    "title": "Capital of South Korea — Seoul",
+    "category": "Geography",
+    "answer": "Seoul is the capital and largest metropolis of South Korea, located on the Han River.",
+    "highlights": ["Capital: Seoul", "Country: Republic of Korea (South Korea)", "Landmarks: Gyeongbokgung Palace, N Seoul Tower, Lotte World Tower", "Currency: South Korean Won (KRW)"],
+    "url": "https://en.wikipedia.org/wiki/Seoul"
+  },
+  {
+    "id": "geo-cap-southafrica",
+    "keywords": ["capital of south africa", "south africa capital", "pretoria capital", "cape town capital"],
+    "title": "Capitals of South Africa — Pretoria / Cape Town / Bloemfontein",
+    "category": "Geography",
+    "answer": "South Africa has three official capital cities: Pretoria (Executive / Administrative), Cape Town (Legislative), and Bloemfontein (Judicial).",
+    "highlights": ["Executive Capital: Pretoria", "Legislative Capital: Cape Town", "Judicial Capital: Bloemfontein", "Currency: South African Rand (ZAR)"],
+    "url": "https://en.wikipedia.org/wiki/Capitals_of_South_Africa"
+  },
+  {
+    "id": "geo-cap-egypt",
+    "keywords": ["capital of egypt", "egypt capital", "cairo capital", "egypt ki rajdhani"],
+    "title": "Capital of Egypt — Cairo",
+    "category": "Geography",
+    "answer": "Cairo is the capital and largest city of Egypt and the Arab world, situated near the Nile River Delta.",
+    "highlights": ["Capital: Cairo", "Country: Arab Republic of Egypt", "Landmarks: Giza Pyramids, Great Sphinx, Grand Egyptian Museum", "Currency: Egyptian Pound (EGP)"],
+    "url": "https://en.wikipedia.org/wiki/Cairo"
+  },
+  {
+    "id": "geo-cap-mexico",
+    "keywords": ["capital of mexico", "mexico capital", "mexico city capital"],
+    "title": "Capital of Mexico — Mexico City",
+    "category": "Geography",
+    "answer": "Mexico City is the capital and largest city of Mexico, built on the historic ruins of Tenochtitlan in the Valley of Mexico.",
+    "highlights": ["Capital: Mexico City (CDMX)", "Country: United Mexican States", "Elevation: ~2,240 metres above sea level", "Currency: Mexican Peso (MXN)"],
+    "url": "https://en.wikipedia.org/wiki/Mexico_City"
+  },
+  {
+    "id": "geo-cap-argentina",
+    "keywords": ["capital of argentina", "argentina capital", "buenos aires capital"],
+    "title": "Capital of Argentina — Buenos Aires",
+    "category": "Geography",
+    "answer": "Buenos Aires is the capital and largest city of Argentina, located on the western shore of the Río de la Plata estuary.",
+    "highlights": ["Capital: Buenos Aires", "Country: Argentine Republic", "Landmarks: Casa Rosada, Plaza de Mayo, Teatro Colón, Obelisco", "Currency: Argentine Peso (ARS)"],
+    "url": "https://en.wikipedia.org/wiki/Buenos_Aires"
+  },
+  {
+    "id": "geo-cap-indonesia",
+    "keywords": ["capital of indonesia", "indonesia capital", "jakarta capital", "nusantara capital"],
+    "title": "Capital of Indonesia — Jakarta (transitioning to Nusantara)",
+    "category": "Geography",
+    "answer": "Jakarta is the current capital and largest city of Indonesia, with Nusantara in East Kalimantan designated as the future planned administrative capital.",
+    "highlights": ["Current Capital: Jakarta (Java Island)", "Planned Capital: Nusantara (East Kalimantan / Borneo)", "Country: Republic of Indonesia", "Currency: Indonesian Rupiah (IDR)"],
+    "url": "https://en.wikipedia.org/wiki/Jakarta"
+  },
+  {
+    "id": "geo-cap-turkey",
+    "keywords": ["capital of turkey", "turkey capital", "turkiye capital", "ankara capital"],
+    "title": "Capital of Turkey (Türkiye) — Ankara",
+    "category": "Geography",
+    "answer": "Ankara is the capital city of Turkey (Türkiye), situated in the central Anatolia region, while Istanbul is its largest city.",
+    "highlights": ["Capital: Ankara", "Largest City & Cultural Hub: Istanbul", "Country: Republic of Türkiye", "Currency: Turkish Lira (TRY)"],
+    "url": "https://en.wikipedia.org/wiki/Ankara"
+  },
+  {
+    "id": "geo-cap-switzerland",
+    "keywords": ["capital of switzerland", "switzerland capital", "bern capital", "swiss capital"],
+    "title": "De Facto Capital of Switzerland — Bern",
+    "category": "Geography",
+    "answer": "Bern is the de facto capital (Federal City) and seat of government of Switzerland.",
+    "highlights": ["Federal City / De Facto Capital: Bern", "Country: Swiss Confederation (Switzerland)", "Major Financial Cities: Zurich, Geneva", "Currency: Swiss Franc (CHF)"],
+    "url": "https://en.wikipedia.org/wiki/Bern"
+  },
+  {
+    "id": "geo-cap-netherlands",
+    "keywords": ["capital of netherlands", "netherlands capital", "holland capital", "amsterdam capital"],
+    "title": "Capital of the Netherlands — Amsterdam (The Hague seat of govt)",
+    "category": "Geography",
+    "answer": "Amsterdam is the constitutional capital of the Netherlands, while The Hague is the seat of its government, parliament, and Supreme Court.",
+    "highlights": ["Official Capital: Amsterdam", "Seat of Government & International Courts: The Hague", "Country: Kingdom of the Netherlands", "Currency: Euro (EUR)"],
+    "url": "https://en.wikipedia.org/wiki/Amsterdam"
   }
 ]

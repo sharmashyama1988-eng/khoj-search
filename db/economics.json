@@ -1,0 +1,79 @@
+[
+  {
+    "id": "econ-gdp",
+    "keywords": [
+      "what is gdp",
+      "gross domestic product",
+      "gdp definition",
+      "how is gdp calculated",
+      "nominal gdp vs real gdp"
+    ],
+    "title": "Gross Domestic Product (GDP) — Definition & Formula",
+    "category": "Economics",
+    "answer": "Gross Domestic Product (GDP) is the total monetary value of all finished goods and services produced within a country's borders in a specific time period. Formula: GDP = C + I + G + (X - M).",
+    "highlights": [
+      "Expenditure Formula: GDP = Consumption (C) + Investment (I) + Government Spending (G) + Net Exports (X - M)",
+      "Nominal vs Real GDP: Nominal measures at current market prices; Real GDP is adjusted for inflation",
+      "Per Capita GDP: GDP divided by total population, indicating average standard of living"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Gross_domestic_product"
+  },
+  {
+    "id": "econ-inflation",
+    "keywords": [
+      "what is inflation",
+      "inflation definition",
+      "cpi",
+      "consumer price index",
+      "causes of inflation",
+      "hyperinflation"
+    ],
+    "title": "Inflation — Concept, Causes & Measurement",
+    "category": "Economics",
+    "answer": "Inflation is the general, sustained increase in the prices of goods and services in an economy over time, which reduces the purchasing power of money. Measured primarily via the Consumer Price Index (CPI).",
+    "highlights": [
+      "Demand-Pull Inflation: Occurs when aggregate demand for goods exceeds aggregate supply ('too much money chasing too few goods').",
+      "Cost-Push Inflation: Occurs when production costs rise (e.g. oil price surges, wages), decreasing supply.",
+      "Control Mechanism: Central banks raise benchmark interest rates (Repo rate) to cool inflation."
+    ],
+    "url": "https://en.wikipedia.org/wiki/Inflation"
+  },
+  {
+    "id": "econ-fiscal-vs-monetary",
+    "keywords": [
+      "fiscal policy vs monetary policy",
+      "difference between fiscal and monetary",
+      "fiscal policy",
+      "monetary policy",
+      "repo rate"
+    ],
+    "title": "Fiscal Policy vs Monetary Policy",
+    "category": "Economics",
+    "answer": "Fiscal policy is managed by the government through taxation and public spending. Monetary policy is managed by the central bank (e.g. RBI, Federal Reserve) by controlling interest rates and money supply.",
+    "highlights": [
+      "Fiscal Policy: Controlled by Government / Ministry of Finance via Taxes, Budget Deficits, and Infrastructure Spending.",
+      "Monetary Policy: Controlled by Central Bank via Interest Rates, Reserve Ratios (CRR/SLR), and Open Market Operations.",
+      "Goal: Both aim to stabilize inflation, maximize employment, and achieve economic growth."
+    ],
+    "url": "https://en.wikipedia.org/wiki/Monetary_policy"
+  },
+  {
+    "id": "econ-supply-demand",
+    "keywords": [
+      "law of supply and demand",
+      "supply and demand",
+      "equilibrium price",
+      "supply curve",
+      "demand curve"
+    ],
+    "title": "Law of Supply and Demand & Market Equilibrium",
+    "category": "Economics",
+    "answer": "The law of supply and demand states that in a free market, price is determined by the balance between the quantity supplied by producers and the quantity demanded by consumers, reaching an equilibrium price.",
+    "highlights": [
+      "Law of Demand: As price rises, quantity demanded falls (inverse relationship, downward sloping curve).",
+      "Law of Supply: As price rises, quantity supplied increases (direct relationship, upward sloping curve).",
+      "Market Equilibrium: The price point where Quantity Demanded equals Quantity Supplied (no surplus or shortage)."
+    ],
+    "url": "https://en.wikipedia.org/wiki/Supply_and_demand"
+  }
+]

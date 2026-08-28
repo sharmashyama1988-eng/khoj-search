@@ -8,7 +8,8 @@
       "a b ka whole square",
       "a plus b square formula",
       "a+b square",
-      "(a+b)2"
+      "(a+b)2",
+      "(a+b)^2"
     ],
     "title": "(a + b)² — Algebraic Identity Formula & Derivation",
     "category": "Mathematics",
@@ -28,7 +29,8 @@
       "a minus b whole square",
       "a b whole square minus",
       "a minus b square",
-      "(a-b)2"
+      "(a-b)2",
+      "(a-b)^2"
     ],
     "title": "(a - b)² — Algebraic Identity Formula & Derivation",
     "category": "Mathematics",
@@ -47,14 +49,15 @@
       "a square minus b square",
       "a 2 minus b 2",
       "difference of two squares",
-      "a2 minus b2 formula"
+      "a2 minus b2 formula",
+      "a^2 - b^2"
     ],
     "title": "a² - b² (Difference of Two Squares)",
     "category": "Mathematics",
     "answer": "a² - b² = (a + b)(a - b). This fundamental algebraic identity states that the difference of two squares equals the product of their sum and their difference.",
     "highlights": [
       "Formula: a² - b² = (a + b)(a - b)",
-      "Numerical Example: 10² - 6² = (10 + 6)(10 - 6) = 16 * 4 = 64 (100 - 36 = 64)",
+      "Numerical Example: 10² - 6² = (10 + 6)(10 - 6) = 16 × 4 = 64 (100 - 36 = 64)",
       "Use Case: Factoring polynomials, mental calculation, calculus integration"
     ],
     "url": "https://en.wikipedia.org/wiki/Difference_of_two_squares"
@@ -66,6 +69,7 @@
       "a plus b whole cube",
       "a b whole cube",
       "(a+b)3",
+      "(a+b)^3",
       "a+b cube formula"
     ],
     "title": "(a + b)³ — Algebraic Cube Identity",
@@ -79,21 +83,99 @@
     "url": "https://en.wikipedia.org/wiki/Cube_(algebra)"
   },
   {
+    "id": "math-a-minus-b-cube",
+    "keywords": [
+      "a-b whole cube",
+      "a minus b whole cube",
+      "a b whole cube minus",
+      "(a-b)3",
+      "(a-b)^3",
+      "a-b cube formula"
+    ],
+    "title": "(a - b)³ — Algebraic Difference Cube Identity",
+    "category": "Mathematics",
+    "answer": "(a - b)³ = a³ - 3a²b + 3ab² - b³ = a³ - b³ - 3ab(a - b). It is the formula for the cube of a difference of two terms.",
+    "highlights": [
+      "Standard Form: (a - b)³ = a³ - 3a²b + 3ab² - b³",
+      "Factored Form: (a - b)³ = a³ - b³ - 3ab(a - b)",
+      "Sign Rule: Signs alternate +, -, +, -"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Cube_(algebra)"
+  },
+  {
+    "id": "math-a3-plus-b3",
+    "keywords": [
+      "a3+b3",
+      "a cube plus b cube",
+      "a^3 + b^3",
+      "sum of two cubes",
+      "a3 plus b3 formula"
+    ],
+    "title": "a³ + b³ (Sum of Two Cubes)",
+    "category": "Mathematics",
+    "answer": "a³ + b³ = (a + b)(a² - ab + b²). This identity factorizes the sum of two cubed terms into a linear binomial and a quadratic trinomial.",
+    "highlights": [
+      "Formula: a³ + b³ = (a + b)(a² - ab + b²)",
+      "Alternative Form: a³ + b³ = (a + b)³ - 3ab(a + b)",
+      "Related Identity: a³ - b³ = (a - b)(a² + ab + b²)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Factorization"
+  },
+  {
+    "id": "math-a3-minus-b3",
+    "keywords": [
+      "a3-b3",
+      "a cube minus b cube",
+      "a^3 - b^3",
+      "difference of two cubes",
+      "a3 minus b3 formula"
+    ],
+    "title": "a³ - b³ (Difference of Two Cubes)",
+    "category": "Mathematics",
+    "answer": "a³ - b³ = (a - b)(a² + ab + b²). This identity factorizes the difference of two cubed terms.",
+    "highlights": [
+      "Formula: a³ - b³ = (a - b)(a² + ab + b²)",
+      "Alternative Form: a³ - b³ = (a - b)³ + 3ab(a - b)",
+      "Sign Tip: The first factor (a - b) has a minus sign, while the second factor has all positive terms (a² + ab + b²)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Factorization"
+  },
+  {
+    "id": "math-a-plus-b-plus-c-sq",
+    "keywords": [
+      "(a+b+c)2",
+      "(a+b+c)^2",
+      "a plus b plus c whole square",
+      "a+b+c whole square",
+      "three term square formula"
+    ],
+    "title": "(a + b + c)² — Trinomial Square Identity",
+    "category": "Mathematics",
+    "answer": "(a + b + c)² = a² + b² + c² + 2(ab + bc + ca) = a² + b² + c² + 2ab + 2bc + 2ca. It expands the square of a sum of three terms.",
+    "highlights": [
+      "Formula: (a + b + c)² = a² + b² + c² + 2ab + 2bc + 2ca",
+      "Factorized Group: a² + b² + c² + 2(ab + bc + ca)",
+      "Use Case: Three-dimensional geometry and coordinate distance derivations"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algebraic_identity"
+  },
+  {
     "id": "math-pythagoras",
     "keywords": [
       "pythagoras theorem",
       "pythagorean theorem",
       "a2+b2=c2",
+      "a^2+b^2=c^2",
       "right triangle formula",
       "hypotenuse formula"
     ],
     "title": "Pythagorean Theorem (a² + b² = c²)",
     "category": "Mathematics",
-    "answer": "In a right-angled triangle, the square of the hypotenuse (c) is equal to the sum of the squares of the other two legs (a and b): a² + b² = c².",
+    "answer": "In any right-angled triangle, the square of the hypotenuse (c) is equal to the sum of the squares of the other two sides (a and b): a² + b² = c².",
     "highlights": [
-      "Formula: a² + b² = c² (or c = sqrt(a² + b²))",
-      "Pythagorean Triples: (3, 4, 5), (5, 12, 13), (7, 24, 25), (8, 15, 17)",
-      "Applicability: Geometry, Trigonometry, Vector magnitude, Distance in Cartesian space"
+      "Formula: a² + b² = c² (or c = √(a² + b²))",
+      "Common Pythagorean Triples: (3, 4, 5), (5, 12, 13), (7, 24, 25), (8, 15, 17)",
+      "Applications: Euclidean geometry, 2D/3D distance formula, vector magnitude, navigation"
     ],
     "url": "https://en.wikipedia.org/wiki/Pythagorean_theorem"
   },
@@ -108,12 +190,276 @@
     ],
     "title": "Quadratic Formula (Roots of ax² + bx + c = 0)",
     "category": "Mathematics",
-    "answer": "For any quadratic equation ax² + bx + c = 0 (where a != 0), the roots are given by x = [-b +- sqrt(b² - 4ac)] / (2a).",
+    "answer": "For any quadratic equation ax² + bx + c = 0 (where a ≠ 0), the roots are given by x = [-b ± √(b² - 4ac)] / (2a).",
     "highlights": [
-      "Formula: x = [-b +- sqrt(b² - 4ac)] / (2a)",
-      "Discriminant (D = b² - 4ac): If D > 0 (2 distinct real roots), D = 0 (1 repeated real root), D < 0 (2 complex conjugate roots)",
-      "Discovered By: Ancient Indian mathematician Sridhara"
+      "Formula: x = [-b ± √(b² - 4ac)] / (2a)",
+      "Discriminant (D = b² - 4ac): D > 0 (2 distinct real roots), D = 0 (1 repeated real root), D < 0 (2 complex conjugate roots)",
+      "Discovered By: Ancient Indian mathematician Sridhara (Sridharacharya)"
     ],
     "url": "https://en.wikipedia.org/wiki/Quadratic_formula"
+  },
+  {
+    "id": "math-area-circle",
+    "keywords": [
+      "area of circle",
+      "circle area formula",
+      "circumference of circle",
+      "perimeter of circle",
+      "circle formulas"
+    ],
+    "title": "Circle Formulas — Area & Circumference",
+    "category": "Mathematics",
+    "answer": "The area of a circle with radius r is A = πr² (or πd²/4). The circumference (perimeter) of a circle is C = 2πr (or πd).",
+    "highlights": [
+      "Area Formula: A = πr² (where r is radius, d = 2r is diameter)",
+      "Circumference Formula: C = 2πr = πd",
+      "Arc Length: L = (θ / 360°) × 2πr (for angle θ in degrees)",
+      "Sector Area: A_sector = (θ / 360°) × πr²"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Area_of_a_circle"
+  },
+  {
+    "id": "math-volume-sphere",
+    "keywords": [
+      "volume of sphere",
+      "surface area of sphere",
+      "sphere volume formula",
+      "sphere surface area"
+    ],
+    "title": "Sphere — Volume & Surface Area Formulas",
+    "category": "Mathematics",
+    "answer": "The volume of a sphere of radius r is V = (4/3)πr³. The total surface area of a sphere is SA = 4πr².",
+    "highlights": [
+      "Volume Formula: V = (4/3)πr³",
+      "Surface Area Formula: SA = 4πr²",
+      "Hemisphere Volume: V_hemi = (2/3)πr³",
+      "Hemisphere Total Surface Area: TSA = 3πr² (Curved Surface Area = 2πr²)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sphere"
+  },
+  {
+    "id": "math-volume-cylinder",
+    "keywords": [
+      "volume of cylinder",
+      "surface area of cylinder",
+      "cylinder volume formula",
+      "cylinder surface area"
+    ],
+    "title": "Cylinder — Volume & Surface Area Formulas",
+    "category": "Mathematics",
+    "answer": "The volume of a right circular cylinder of radius r and height h is V = πr²h. Its curved surface area is CSA = 2πrh and total surface area is TSA = 2πr(r + h).",
+    "highlights": [
+      "Volume: V = πr²h",
+      "Curved Surface Area (CSA): 2πrh",
+      "Total Surface Area (TSA): 2πr(r + h) = 2πrh + 2πr²",
+      "Cross-sectional Base Area: πr²"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Cylinder"
+  },
+  {
+    "id": "math-volume-cone",
+    "keywords": [
+      "volume of cone",
+      "surface area of cone",
+      "cone volume formula",
+      "cone surface area",
+      "slant height of cone"
+    ],
+    "title": "Cone — Volume & Surface Area Formulas",
+    "category": "Mathematics",
+    "answer": "The volume of a right circular cone of radius r and vertical height h is V = (1/3)πr²h. Its curved surface area is CSA = πrl where slant height l = √(r² + h²), and total surface area is TSA = πr(r + l).",
+    "highlights": [
+      "Volume: V = (1/3)πr²h (exactly one-third of a cylinder with same base and height)",
+      "Slant Height: l = √(r² + h²)",
+      "Curved Surface Area (CSA): πrl",
+      "Total Surface Area (TSA): πr(r + l) = πrl + πr²"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Cone"
+  },
+  {
+    "id": "math-euler-formula",
+    "keywords": [
+      "euler formula",
+      "euler's identity",
+      "e^ipi+1=0",
+      "e^(ix)",
+      "most beautiful equation in math"
+    ],
+    "title": "Euler's Formula & Identity (e^(iπ) + 1 = 0)",
+    "category": "Mathematics",
+    "answer": "Euler's formula in complex analysis states that e^(ix) = cos(x) + i sin(x). When x = π, it yields Euler's identity: e^(iπ) + 1 = 0, widely hailed as the most beautiful equation in mathematics.",
+    "highlights": [
+      "Euler's Formula: e^(ix) = cos(x) + i sin(x)",
+      "Euler's Identity: e^(iπ) + 1 = 0 (unites five fundamental constants: 0, 1, e, i, π)",
+      "Polyhedral Formula: V - E + F = 2 (Vertices - Edges + Faces = 2 for convex polyhedra)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Euler%27s_formula"
+  },
+  {
+    "id": "math-trig-identities",
+    "keywords": [
+      "trigonometric identities",
+      "sin2+cos2=1",
+      "sin^2 x + cos^2 x = 1",
+      "1+tan2=sec2",
+      "trigonometry formulas",
+      "sin cos tan identities"
+    ],
+    "title": "Fundamental Trigonometric Pythagorean Identities",
+    "category": "Mathematics",
+    "answer": "The primary Pythagorean trigonometric identities are: 1) sin²(θ) + cos²(θ) = 1; 2) 1 + tan²(θ) = sec²(θ); 3) 1 + cot²(θ) = csc²(θ).",
+    "highlights": [
+      "Primary Identity: sin²(θ) + cos²(θ) = 1",
+      "Tangent-Secant: 1 + tan²(θ) = sec²(θ)  [or sec²(θ) - tan²(θ) = 1]",
+      "Cotangent-Cosecant: 1 + cot²(θ) = csc²(θ)  [or csc²(θ) - cot²(θ) = 1]",
+      "Basic Ratios: tan(θ) = sin(θ)/cos(θ), cot(θ) = cos(θ)/sin(θ), sec(θ) = 1/cos(θ), csc(θ) = 1/sin(θ)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_trigonometric_identities"
+  },
+  {
+    "id": "math-trig-sum-diff",
+    "keywords": [
+      "sin a+b formula",
+      "cos a+b formula",
+      "tan a+b formula",
+      "trigonometry sum and difference formulas",
+      "sin(a+b)",
+      "cos(a+b)"
+    ],
+    "title": "Trigonometric Compound Angle Addition & Subtraction Formulas",
+    "category": "Mathematics",
+    "answer": "The sum and difference identities in trigonometry are: sin(A ± B) = sin A cos B ± cos A sin B; cos(A ± B) = cos A cos B ∓ sin A sin B; tan(A ± B) = (tan A ± tan B) / (1 ∓ tan A tan B).",
+    "highlights": [
+      "Sine Sum: sin(A + B) = sin A cos B + cos A sin B",
+      "Sine Difference: sin(A - B) = sin A cos B - cos A sin B",
+      "Cosine Sum: cos(A + B) = cos A cos B - sin A sin B (sign flips!)",
+      "Cosine Difference: cos(A - B) = cos A cos B + sin A sin B",
+      "Tangent Sum: tan(A + B) = (tan A + tan B) / (1 - tan A tan B)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_trigonometric_identities#Angle_sum_and_difference_identities"
+  },
+  {
+    "id": "math-trig-double-angle",
+    "keywords": [
+      "sin 2x formula",
+      "cos 2x formula",
+      "tan 2x formula",
+      "double angle formulas",
+      "sin2theta",
+      "cos2theta"
+    ],
+    "title": "Double Angle Trigonometric Formulas (sin 2x, cos 2x, tan 2x)",
+    "category": "Mathematics",
+    "answer": "The double angle formulas are: sin(2x) = 2 sin(x) cos(x); cos(2x) = cos²(x) - sin²(x) = 2cos²(x) - 1 = 1 - 2sin²(x); tan(2x) = 2tan(x) / (1 - tan²(x)).",
+    "highlights": [
+      "Sine Double Angle: sin(2x) = 2 sin(x) cos(x) = 2tan(x) / (1 + tan²(x))",
+      "Cosine Double Angle: cos(2x) = cos²(x) - sin²(x) = 2cos²(x) - 1 = 1 - 2sin²(x) = (1 - tan²(x))/(1 + tan²(x))",
+      "Tangent Double Angle: tan(2x) = 2tan(x) / (1 - tan²(x))"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_trigonometric_identities#Double-angle_formulae"
+  },
+  {
+    "id": "math-heron-formula",
+    "keywords": [
+      "heron formula",
+      "herons formula",
+      "area of scalene triangle",
+      "area of triangle with 3 sides",
+      "semi perimeter formula"
+    ],
+    "title": "Heron's Formula — Area of a Triangle with Three Known Sides",
+    "category": "Mathematics",
+    "answer": "Heron's formula gives the area of a triangle with side lengths a, b, c as Area = √(s(s - a)(s - b)(s - c)), where s = (a + b + c) / 2 is the semi-perimeter.",
+    "highlights": [
+      "Formula: Area = √(s(s - a)(s - b)(s - c))",
+      "Semi-perimeter: s = (a + b + c) / 2",
+      "Discovered By: Hero of Alexandria (c. 60 CE)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Heron%27s_formula"
+  },
+  {
+    "id": "math-calculus-derivatives",
+    "keywords": [
+      "calculus differentiation rules",
+      "derivative formulas",
+      "power rule derivative",
+      "product rule",
+      "chain rule calculus",
+      "quotient rule"
+    ],
+    "title": "Calculus Differentiation Rules & Derivatives Cheat Sheet",
+    "category": "Mathematics",
+    "answer": "The fundamental derivative rules are: Power Rule: d/dx(xⁿ) = n·xⁿ⁻¹; Product Rule: (uv)' = u'v + uv'; Quotient Rule: (u/v)' = (u'v - uv')/v²; Chain Rule: d/dx[f(g(x))] = f'(g(x))·g'(x).",
+    "highlights": [
+      "Power Rule: d/dx(xⁿ) = n·xⁿ⁻¹",
+      "Product Rule: d/dx[u·v] = u·(dv/dx) + v·(du/dx)",
+      "Quotient Rule: d/dx[u/v] = (v·du/dx - u·dv/dx) / v²",
+      "Trig Derivatives: d/dx(sin x) = cos x, d/dx(cos x) = -sin x, d/dx(tan x) = sec² x",
+      "Exponential: d/dx(eˣ) = eˣ, d/dx(ln x) = 1/x"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Differentiation_rules"
+  },
+  {
+    "id": "math-calculus-integrals",
+    "keywords": [
+      "calculus integration formulas",
+      "integral rules",
+      "power rule integration",
+      "fundamental theorem of calculus",
+      "integration by parts"
+    ],
+    "title": "Calculus Integration Formulas & Fundamental Rules",
+    "category": "Mathematics",
+    "answer": "The basic integration rules are: Power Rule: ∫ xⁿ dx = (xⁿ⁺¹)/(n + 1) + C (for n ≠ -1); ∫ (1/x) dx = ln|x| + C; ∫ eˣ dx = eˣ + C; Integration by Parts: ∫ u dv = uv - ∫ v du.",
+    "highlights": [
+      "Power Rule: ∫ xⁿ dx = (xⁿ⁺¹)/(n + 1) + C (n ≠ -1)",
+      "Logarithmic: ∫ (1/x) dx = ln|x| + C",
+      "Exponential: ∫ eˣ dx = eˣ + C",
+      "Integration by Parts: ∫ u dv = uv - ∫ v du (based on product rule of differentiation)",
+      "Trigonometric Integrals: ∫ sin x dx = -cos x + C, ∫ cos x dx = sin x + C, ∫ sec²x dx = tan x + C"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Lists_of_integrals"
+  },
+  {
+    "id": "math-logarithm-rules",
+    "keywords": [
+      "log rules",
+      "logarithm properties",
+      "log a plus log b",
+      "log rules cheat sheet",
+      "change of base formula"
+    ],
+    "title": "Logarithm Rules & Properties Reference",
+    "category": "Mathematics",
+    "answer": "The core logarithm laws are: Product: log_b(xy) = log_b(x) + log_b(y); Quotient: log_b(x/y) = log_b(x) - log_b(y); Power: log_b(xᵏ) = k·log_b(x); Change of Base: log_b(x) = ln(x) / ln(b) = log_c(x) / log_c(b).",
+    "highlights": [
+      "Product Rule: log(xy) = log(x) + log(y)",
+      "Quotient Rule: log(x/y) = log(x) - log(y)",
+      "Power Rule: log(xᵏ) = k·log(x)",
+      "Special Values: log_b(1) = 0, log_b(b) = 1, log_b(bᵏ) = k",
+      "Change of Base: log_a(b) = log_c(b) / log_c(a)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Logarithm"
+  },
+  {
+    "id": "math-ap-gp",
+    "keywords": [
+      "arithmetic progression formula",
+      "ap nth term",
+      "geometric progression formula",
+      "gp nth term",
+      "sum of ap",
+      "sum of gp"
+    ],
+    "title": "Arithmetic Progression (AP) & Geometric Progression (GP) Formulas",
+    "category": "Mathematics",
+    "answer": "For Arithmetic Progression (AP): nth term a_n = a + (n - 1)d, Sum S_n = (n/2)[2a + (n - 1)d] = (n/2)(first + last). For Geometric Progression (GP): nth term a_n = a·rⁿ⁻¹, Sum S_n = a(rⁿ - 1)/(r - 1) (for r ≠ 1), Infinite sum S_∞ = a/(1 - r) for |r| < 1.",
+    "highlights": [
+      "AP nth Term: a_n = a + (n - 1)d (where a = 1st term, d = common difference)",
+      "AP Sum: S_n = (n/2)[2a + (n - 1)d] = (n/2)(a + l)",
+      "GP nth Term: a_n = a·rⁿ⁻¹ (where r = common ratio)",
+      "GP Sum: S_n = a(1 - rⁿ)/(1 - r) for r < 1; Infinite GP Sum = a/(1 - r) (|r| < 1)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Arithmetic_progression"
   }
 ]

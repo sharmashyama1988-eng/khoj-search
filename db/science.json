@@ -6,14 +6,15 @@
       "speed of light in vacuum",
       "value of c",
       "prakash ki chal",
+      "prakash ki chaal",
       "light speed m/s"
     ],
     "title": "Speed of Light in Vacuum (c)",
     "category": "Science",
-    "answer": "The speed of light in vacuum is exactly 299,792,458 metres per second (approximately 3 * 10^8 m/s or 186,282 miles per second). Denoted by the physical constant 'c'.",
+    "answer": "The speed of light in vacuum is exactly 299,792,458 metres per second (approximately 3 × 10⁸ m/s or 186,282 miles per second). Denoted by the physical constant 'c'.",
     "highlights": [
       "Exact Value (SI): 299,792,458 m/s",
-      "Metric Approximation: 300,000 km/s (3 * 10^8 m/s)",
+      "Metric Approximation: 300,000 km/s (3 × 10⁸ m/s)",
       "Imperial Approximation: ~186,282 miles/second",
       "Significance: Universal physical constant and upper limit for speed of energy, matter, and information"
     ],
@@ -39,6 +40,65 @@
     "url": "https://en.wikipedia.org/wiki/Pi"
   },
   {
+    "id": "sci-planck-constant",
+    "keywords": [
+      "planck constant",
+      "value of h",
+      "planck's constant",
+      "planck constant value",
+      "reduced planck constant"
+    ],
+    "title": "Planck Constant (h)",
+    "category": "Science",
+    "answer": "The Planck constant (h) is exactly 6.62607015 × 10⁻³⁴ Joule-seconds (J·s). It is the fundamental physical constant relating the energy of a photon to its frequency (E = hν).",
+    "highlights": [
+      "Exact SI Value: h = 6.62607015 × 10⁻³⁴ J·s (or kg·m²·s⁻¹)",
+      "Reduced Planck Constant (ħ): ħ = h / (2π) ≈ 1.054571817 × 10⁻³⁴ J·s",
+      "Photon Energy Formula: E = hν = hc / λ",
+      "Significance: Foundation of quantum mechanics and defines the kilogram in the SI system"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Planck_constant"
+  },
+  {
+    "id": "sci-gravitational-constant",
+    "keywords": [
+      "gravitational constant",
+      "value of capital g",
+      "universal gravitational constant",
+      "value of big g",
+      "g constant value"
+    ],
+    "title": "Newtonian Constant of Gravitation (G)",
+    "category": "Science",
+    "answer": "The Universal Gravitational Constant (G) is approximately 6.67430 × 10⁻¹¹ N·m²/kg² (m³·kg⁻¹·s⁻²). It represents the proportionality constant in Newton's Law of Universal Gravitation.",
+    "highlights": [
+      "Recommended Value (CODATA): G = 6.67430(15) × 10⁻¹¹ N·m²/kg²",
+      "Universal Law of Gravitation: F = G · (m₁ · m₂) / r²",
+      "First Measured By: Henry Cavendish in 1798 using a torsion balance"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Gravitational_constant"
+  },
+  {
+    "id": "sci-avogadro-number",
+    "keywords": [
+      "avogadro number",
+      "avogadro constant",
+      "value of avogadro number",
+      "one mole atoms",
+      "n_a constant"
+    ],
+    "title": "Avogadro Constant (N_A)",
+    "category": "Science",
+    "answer": "The Avogadro constant (N_A) is defined as exactly 6.02214076 × 10²³ reciprocal moles (mol⁻¹). It represents the number of constituent particles (atoms, molecules, or ions) in one mole of a substance.",
+    "highlights": [
+      "Exact SI Value: N_A = 6.02214076 × 10²³ mol⁻¹",
+      "Definition: The number of particles per mole of substance",
+      "Named After: Italian scientist Amedeo Avogadro",
+      "Relation to Gas: 1 mole of any ideal gas occupies 22.4 litres at STP (0 °C, 1 atm)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Avogadro_constant"
+  },
+  {
     "id": "sci-gravity",
     "keywords": [
       "value of g",
@@ -49,13 +109,131 @@
     ],
     "title": "Standard Acceleration Due to Gravity (g)",
     "category": "Science",
-    "answer": "The standard acceleration due to Earth gravity at sea level is approximately 9.80665 m/s² (commonly rounded to 9.8 m/s² or 32.174 ft/s²).",
+    "answer": "The standard acceleration due to Earth's gravity at sea level is standardly defined as 9.80665 m/s² (commonly rounded to 9.8 m/s² or 32.174 ft/s²).",
     "highlights": [
-      "Standard Value: g = 9.80665 m/s² (or ~9.8 m/s²)",
-      "Formula: g = G * M / r²",
-      "Imperial Units: ~32.174 ft/s²"
+      "Standard Value: g = 9.80665 m/s² (≈ 9.8 m/s²)",
+      "Formula: g = G · M / R² (where M is Earth's mass, R is Earth's radius)",
+      "Variation: Stronger at the poles (~9.832 m/s²) and weaker at the equator (~9.780 m/s²) due to Earth's oblateness"
     ],
     "url": "https://en.wikipedia.org/wiki/Standard_gravity"
+  },
+  {
+    "id": "sci-boltzmann-constant",
+    "keywords": [
+      "boltzmann constant",
+      "value of k",
+      "boltzmann constant value",
+      "k_b value"
+    ],
+    "title": "Boltzmann Constant (k or k_B)",
+    "category": "Science",
+    "answer": "The Boltzmann constant (k_B) is exactly 1.380649 × 10⁻²³ Joules per Kelvin (J/K). It relates the average relative thermal kinetic energy of particles in a gas with the thermodynamic temperature.",
+    "highlights": [
+      "Exact SI Value: k_B = 1.380649 × 10⁻²³ J·K⁻¹",
+      "Ideal Gas Law Relation: R = N_A · k_B",
+      "Entropy Equation: S = k_B · ln(Ω) (engraved on Ludwig Boltzmann's tombstone)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Boltzmann_constant"
+  },
+  {
+    "id": "sci-electron-charge",
+    "keywords": [
+      "charge of electron",
+      "elementary charge",
+      "value of e",
+      "electron charge coulombs",
+      "proton charge"
+    ],
+    "title": "Elementary Charge (e)",
+    "category": "Science",
+    "answer": "The elementary charge (e) is exactly 1.602176634 × 10⁻¹⁹ Coulombs (C). An electron has a charge of -e, and a proton has a charge of +e.",
+    "highlights": [
+      "Exact SI Value: e = 1.602176634 × 10⁻¹⁹ C",
+      "Electron Charge: -1.602176634 × 10⁻¹⁹ C",
+      "Proton Charge: +1.602176634 × 10⁻¹⁹ C",
+      "First Measured By: Robert A. Millikan in the oil drop experiment (1909)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Elementary_charge"
+  },
+  {
+    "id": "sci-newton-laws",
+    "keywords": [
+      "newton laws of motion",
+      "newton first law",
+      "newton second law",
+      "newton third law",
+      "f=ma",
+      "action and reaction"
+    ],
+    "title": "Newton's Three Laws of Motion",
+    "category": "Science",
+    "answer": "Newton's Laws of Motion state: 1st Law (Inertia): An object remains at rest or in uniform motion unless acted upon by a net external force. 2nd Law: Force equals mass times acceleration (F = ma). 3rd Law: For every action, there is an equal and opposite reaction.",
+    "highlights": [
+      "1st Law (Law of Inertia): Objects resist changes in their state of motion",
+      "2nd Law (Force Law): F = dp/dt = m · a (Force = mass × acceleration)",
+      "3rd Law (Action-Reaction): F_AB = -F_BA (Forces always occur in matched action-reaction pairs)",
+      "Published: In Principia Mathematica (1687)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion"
+  },
+  {
+    "id": "sci-ohm-law",
+    "keywords": [
+      "ohm law",
+      "ohm's law",
+      "v=ir",
+      "voltage current resistance",
+      "ohm law formula"
+    ],
+    "title": "Ohm's Law (V = I · R)",
+    "category": "Science",
+    "answer": "Ohm's law states that the electrical current (I) flowing through a conductor between two points is directly proportional to the voltage (V) across the two points and inversely proportional to the resistance (R): V = I · R.",
+    "highlights": [
+      "Formula: V = I · R (Voltage = Current × Resistance)",
+      "Current: I = V / R (measured in Amperes, A)",
+      "Resistance: R = V / I (measured in Ohms, Ω)",
+      "Power Equations: P = V · I = I² · R = V² / R (measured in Watts, W)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Ohm%27s_law"
+  },
+  {
+    "id": "sci-thermodynamics",
+    "keywords": [
+      "laws of thermodynamics",
+      "first law of thermodynamics",
+      "second law of thermodynamics",
+      "entropy law",
+      "zeroth law of thermodynamics"
+    ],
+    "title": "Four Laws of Thermodynamics",
+    "category": "Science",
+    "answer": "The Four Laws of Thermodynamics govern energy and heat transfer: Zeroth Law (Thermal equilibrium / temperature definition), First Law (Energy conservation: ΔU = Q - W), Second Law (Entropy of an isolated system always increases: ΔS ≥ 0), and Third Law (Entropy approaches a constant zero as temperature reaches absolute zero: T → 0 K).",
+    "highlights": [
+      "Zeroth Law: If systems A and B are in thermal equilibrium with C, then A and B are in equilibrium with each other",
+      "First Law: Conservation of Energy (ΔU = Q - W)",
+      "Second Law: Total entropy of an isolated system never decreases (Heat flows spontaneously only from hotter to colder)",
+      "Third Law: Absolute zero (0 Kelvin / -273.15 °C) cannot be reached in a finite number of steps"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Laws_of_thermodynamics"
+  },
+  {
+    "id": "sci-mass-energy",
+    "keywords": [
+      "e=mc2",
+      "mass energy equivalence",
+      "einstein formula",
+      "energy equals mc squared",
+      "e equals mc2"
+    ],
+    "title": "Einstein's Mass-Energy Equivalence (E = mc²)",
+    "category": "Science",
+    "answer": "Einstein's mass-energy equivalence equation E = mc² asserts that mass and energy are interchangeable. The energy (E) of a physical system is equal to its relativistic mass (m) multiplied by the square of the speed of light (c²).",
+    "highlights": [
+      "Formula: E = mc² (where E = Energy in Joules, m = Mass in kg, c = Speed of light ≈ 3 × 10⁸ m/s)",
+      "Factor: c² ≈ 9 × 10¹⁶ m²/s² (explaining why tiny amounts of mass release immense energy in nuclear reactions)",
+      "Published: By Albert Einstein in his 1905 Annus Mirabilis paper"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Mass%E2%80%93energy_equivalence"
   },
   {
     "id": "sci-photosynthesis",
@@ -68,14 +246,31 @@
     ],
     "title": "Photosynthesis — Biological Process & Chemical Equation",
     "category": "Science",
-    "answer": "Photosynthesis is the biological process by which green plants, algae, and cyanobacteria convert light energy, water (H2O), and carbon dioxide (CO2) into chemical energy (glucose) and oxygen (O2).",
+    "answer": "Photosynthesis is the biological process by which green plants, algae, and cyanobacteria convert sunlight, water (H2O), and carbon dioxide (CO2) into glucose (C6H12O6) and oxygen (O2).",
     "highlights": [
-      "Chemical Equation: 6CO2 + 6H2O + Light Energy -> C6H12O6 + 6O2",
-      "Organelle: Chloroplasts containing green pigment Chlorophyll",
-      "By-product: Oxygen (O2) released into atmosphere",
-      "Phases: Light-dependent reactions and Light-independent Calvin Cycle"
+      "Balanced Chemical Equation: 6CO₂ + 6H₂O + Light Energy → C₆H₁₂O₆ + 6O₂",
+      "Organelle: Chloroplasts containing the green pigment Chlorophyll",
+      "Two Stages: Light-dependent reactions (Thylakoid membrane) and Calvin Cycle (Stroma)"
     ],
     "url": "https://en.wikipedia.org/wiki/Photosynthesis"
+  },
+  {
+    "id": "sci-cellular-respiration",
+    "keywords": [
+      "cellular respiration",
+      "respiration formula",
+      "cellular respiration equation",
+      "aerobic respiration equation"
+    ],
+    "title": "Cellular Respiration — Chemical Equation & ATP Generation",
+    "category": "Science",
+    "answer": "Cellular respiration is the metabolic process that breaks down glucose in the presence of oxygen to release energy stored in ATP molecules: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + ~36–38 ATP.",
+    "highlights": [
+      "Chemical Equation: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + Energy (~36–38 ATP)",
+      "Three Main Stages: 1) Glycolysis (Cytoplasm), 2) Krebs / Citric Acid Cycle (Mitochondrial Matrix), 3) Electron Transport Chain (Inner Mitochondrial Membrane)",
+      "Powerhouse of the Cell: Mitochondria"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Cellular_respiration"
   },
   {
     "id": "sci-water-formula",
@@ -83,18 +278,238 @@
       "chemical formula of water",
       "water formula",
       "pani ka formula",
-      "water chemical name"
+      "water chemical name",
+      "h2o"
     ],
-    "title": "Water (H2O) — Chemical Formula & Properties",
+    "title": "Water (H₂O) — Chemical Formula & Properties",
     "category": "Science",
-    "answer": "The chemical formula of water is H2O (two hydrogen atoms bonded covalently to one oxygen atom). Its chemical name is Dihydrogen Monoxide.",
+    "answer": "The chemical formula of water is H₂O (two hydrogen atoms covalently bonded to one oxygen atom). Its systematic IUPAC name is Oxidane or Dihydrogen Monoxide.",
     "highlights": [
-      "Chemical Formula: H2O",
+      "Chemical Formula: H₂O",
       "Molar Mass: 18.01528 g/mol",
-      "Freezing Point: 0 C (32 F / 273.15 K)",
-      "Boiling Point: 100 C (212 F / 373.15 K) at standard 1 atm pressure",
-      "Universal Solvent: Dissolves more substances than any other liquid"
+      "Freezing Point: 0 °C (32 °F / 273.15 K)",
+      "Boiling Point: 100 °C (212 °F / 373.15 K) at 1 atm",
+      "Density: Maximum density of 1.000 g/cm³ at 3.98 °C (anomalous expansion of water)"
     ],
     "url": "https://en.wikipedia.org/wiki/Properties_of_water"
+  },
+  {
+    "id": "sci-salt-formula",
+    "keywords": [
+      "chemical formula of salt",
+      "table salt formula",
+      "namak ka formula",
+      "sodium chloride formula",
+      "nacl"
+    ],
+    "title": "Common Salt (NaCl / Sodium Chloride) — Chemical Formula",
+    "category": "Science",
+    "answer": "The chemical formula of common table salt is NaCl (Sodium Chloride). It is an ionic compound composed of a 1:1 ratio of sodium cations (Na⁺) and chloride anions (Cl⁻).",
+    "highlights": [
+      "Chemical Formula: NaCl",
+      "Chemical Name: Sodium Chloride",
+      "Molar Mass: 58.44 g/mol",
+      "Crystal Structure: Face-centered cubic (FCC) lattice",
+      "Melting Point: 801 °C (1,474 °F)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sodium_chloride"
+  },
+  {
+    "id": "sci-glucose-formula",
+    "keywords": [
+      "chemical formula of glucose",
+      "glucose formula",
+      "sugar chemical formula",
+      "c6h12o6"
+    ],
+    "title": "Glucose (C₆H₁₂O₆) — Chemical Formula & Structure",
+    "category": "Science",
+    "answer": "The chemical formula of glucose is C₆H₁₂O₆. It is a simple monosaccharide sugar and the primary energy source for cellular metabolism in living organisms.",
+    "highlights": [
+      "Chemical Formula: C₆H₁₂O₆",
+      "Molar Mass: 180.156 g/mol",
+      "Type: Aldohexose (6-carbon monosaccharide with an aldehyde group)",
+      "Role in Body: Circulates in blood as blood sugar; stored as glycogen in liver and muscles"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Glucose"
+  },
+  {
+    "id": "sci-baking-soda",
+    "keywords": [
+      "chemical formula of baking soda",
+      "baking soda formula",
+      "sodium bicarbonate formula",
+      "meetha soda formula",
+      "nahco3"
+    ],
+    "title": "Baking Soda (NaHCO₃ / Sodium Bicarbonate)",
+    "category": "Science",
+    "answer": "The chemical formula of baking soda is NaHCO₃ (Sodium Bicarbonate or Sodium Hydrogen Carbonate). It is a white crystalline chemical compound widely used as a leavening agent.",
+    "highlights": [
+      "Chemical Formula: NaHCO₃",
+      "Chemical Name: Sodium Hydrogen Carbonate / Sodium Bicarbonate",
+      "Molar Mass: 84.007 g/mol",
+      "Reaction with Acid: NaHCO₃ + H⁺ → Na⁺ + H₂O + CO₂↑ (releases carbon dioxide gas which causes dough to rise)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sodium_bicarbonate"
+  },
+  {
+    "id": "sci-washing-soda",
+    "keywords": [
+      "chemical formula of washing soda",
+      "washing soda formula",
+      "sodium carbonate formula",
+      "dhone ka soda",
+      "na2co3"
+    ],
+    "title": "Washing Soda (Na₂CO₃·10H₂O / Sodium Carbonate Decahydrate)",
+    "category": "Science",
+    "answer": "The chemical formula of washing soda is Na₂CO₃·10H₂O (Sodium Carbonate Decahydrate). Anhydrous sodium carbonate is commonly known as soda ash (Na₂CO₃).",
+    "highlights": [
+      "Chemical Formula: Na₂CO₃·10H₂O",
+      "Chemical Name: Sodium Carbonate Decahydrate",
+      "Industrial Process: Manufactured via the Solvay Process",
+      "Use: Water softening, detergent booster, glass and paper manufacturing"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sodium_carbonate"
+  },
+  {
+    "id": "sci-sulfuric-acid",
+    "keywords": [
+      "chemical formula of sulfuric acid",
+      "sulfuric acid formula",
+      "king of chemicals",
+      "oil of vitriol",
+      "h2so4"
+    ],
+    "title": "Sulfuric Acid (H₂SO₄) — The King of Chemicals",
+    "category": "Science",
+    "answer": "The chemical formula of sulfuric acid is H₂SO₄. It is a strong mineral acid with strong hygroscopic and oxidizing properties, widely referred to as the 'King of Chemicals' due to its vast industrial applications.",
+    "highlights": [
+      "Chemical Formula: H₂SO₄",
+      "Molar Mass: 98.079 g/mol",
+      "Historical Name: Oil of Vitriol",
+      "Industrial Production: Contact Process",
+      "Applications: Lead-acid battery electrolyte, fertilizer (superphosphate) manufacturing"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sulfuric_acid"
+  },
+  {
+    "id": "sci-hydrochloric-acid",
+    "keywords": [
+      "chemical formula of hydrochloric acid",
+      "hydrochloric acid formula",
+      "stomach acid formula",
+      "muriatic acid",
+      "hcl formula"
+    ],
+    "title": "Hydrochloric Acid (HCl / Muriatic Acid)",
+    "category": "Science",
+    "answer": "The chemical formula of hydrochloric acid is HCl (an aqueous solution of hydrogen chloride). It is a strong acid naturally found in gastric juice (stomach acid) with a pH of 1.5 to 3.5.",
+    "highlights": [
+      "Chemical Formula: HCl (aq)",
+      "Molar Mass: 36.46 g/mol",
+      "Traditional Name: Muriatic Acid / Spirits of Salt",
+      "Biological Role: Produced by parietal cells in gastric glands to aid digestion and kill bacteria"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Hydrochloric_acid"
+  },
+  {
+    "id": "sci-nitric-acid",
+    "keywords": [
+      "chemical formula of nitric acid",
+      "nitric acid formula",
+      "aqua fortis",
+      "hno3"
+    ],
+    "title": "Nitric Acid (HNO₃ / Aqua Fortis)",
+    "category": "Science",
+    "answer": "The chemical formula of nitric acid is HNO₃. It is a highly corrosive, toxic mineral acid, historically called aqua fortis (strong water), used extensively in manufacturing explosives (TNT, nitroglycerin) and fertilizers.",
+    "highlights": [
+      "Chemical Formula: HNO₃",
+      "Molar Mass: 63.01 g/mol",
+      "Industrial Synthesis: Ostwald Process (oxidation of ammonia)",
+      "Aqua Regia Mixture: 1 part concentrated HNO₃ to 3 parts concentrated HCl dissolves gold and platinum"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Nitric_acid"
+  },
+  {
+    "id": "sci-methane",
+    "keywords": [
+      "chemical formula of methane",
+      "methane formula",
+      "natural gas formula",
+      "marsh gas",
+      "ch4"
+    ],
+    "title": "Methane (CH₄) — Structure & Natural Gas Component",
+    "category": "Science",
+    "answer": "The chemical formula of methane is CH₄ (one carbon atom bonded covalently to four hydrogen atoms in a tetrahedral geometry). It is the simplest alkane and the main constituent of natural gas and biogas.",
+    "highlights": [
+      "Chemical Formula: CH₄",
+      "Molecular Geometry: Tetrahedral (bond angle 109.5°)",
+      "Molar Mass: 16.04 g/mol",
+      "Greenhouse Gas: Potent greenhouse gas with a global warming potential ~28–36 times that of CO₂ over a 100-year timescale"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Methane"
+  },
+  {
+    "id": "sci-bleaching-powder",
+    "keywords": [
+      "chemical formula of bleaching powder",
+      "bleaching powder formula",
+      "calcium hypochlorite formula",
+      "caocl2"
+    ],
+    "title": "Bleaching Powder (CaOCl₂ / Calcium Hypochlorite)",
+    "category": "Science",
+    "answer": "The chemical formula of bleaching powder is CaOCl₂ (Calcium Oxychloride or Calcium Hypochlorite, Ca(OCl)₂). It is widely used as a disinfectant and water purification agent.",
+    "highlights": [
+      "Chemical Formula: CaOCl₂ [or Ca(OCl)₂]",
+      "Chemical Name: Calcium Hypochlorite / Calcium Oxychloride",
+      "Preparation: Action of chlorine gas on dry slaked lime: Ca(OH)₂ + Cl₂ → CaOCl₂ + H₂O",
+      "Uses: Disinfecting drinking water, bleaching cotton and linen in textile industry"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Calcium_hypochlorite"
+  },
+  {
+    "id": "sci-plaster-of-paris",
+    "keywords": [
+      "chemical formula of plaster of paris",
+      "plaster of paris formula",
+      "pop formula",
+      "gypsum formula",
+      "caso4"
+    ],
+    "title": "Plaster of Paris (CaSO₄·½H₂O) & Gypsum (CaSO₄·2H₂O)",
+    "category": "Science",
+    "answer": "The chemical formula of Plaster of Paris (POP) is CaSO₄·½H₂O (Calcium Sulfate Hemihydrate). It is produced by heating gypsum (CaSO₄·2H₂O / Calcium Sulfate Dihydrate) to 373 K (100 °C).",
+    "highlights": [
+      "Plaster of Paris Formula: CaSO₄·½H₂O (or 2CaSO₄·H₂O)",
+      "Gypsum Formula: CaSO₄·2H₂O (Calcium Sulfate Dihydrate)",
+      "Setting Reaction: CaSO₄·½H₂O + 1½H₂O → CaSO₄·2H₂O (hardens into solid gypsum)",
+      "Uses: Bone fracture casts, sculpture making, decorative ceiling designs"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Plaster#Gypsum_plaster"
+  },
+  {
+    "id": "sci-dna-structure",
+    "keywords": [
+      "dna structure",
+      "dna base pairs",
+      "dna full form",
+      "watson and crick model",
+      "adenine thymine guanine cytosine"
+    ],
+    "title": "DNA (Deoxyribonucleic Acid) — Structure & Base Pairing",
+    "category": "Science",
+    "answer": "DNA (Deoxyribonucleic Acid) is the molecule carrying genetic instructions in all known living organisms. It consists of a double helix of two polynucleotide chains paired via hydrogen bonds: Adenine pairs with Thymine (A=T with 2 hydrogen bonds), and Guanine pairs with Cytosine (G≡C with 3 hydrogen bonds).",
+    "highlights": [
+      "Full Form: Deoxyribonucleic Acid",
+      "Structure: Double Helix discovered by James Watson and Francis Crick (1953) with Rosalind Franklin's Photo 51",
+      "Nitrogenous Bases: Adenine (A), Thymine (T), Guanine (G), Cytosine (C)",
+      "Chargaff's Rule: Amount of Adenine equals Thymine (A=T), and Guanine equals Cytosine (G=C)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/DNA"
   }
 ]

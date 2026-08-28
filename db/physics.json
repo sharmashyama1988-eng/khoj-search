@@ -1,0 +1,99 @@
+[
+  {
+    "id": "phys-newton-laws",
+    "keywords": [
+      "newton laws of motion",
+      "newton first law",
+      "newton second law",
+      "newton third law",
+      "laws of motion",
+      "f=ma"
+    ],
+    "title": "Newton's Three Laws of Motion",
+    "category": "Physics",
+    "answer": "Newton's Three Laws of Motion describe the relationship between an object's motion and the forces acting on it. First Law: Inertia; Second Law: F = ma; Third Law: Action and equal/opposite reaction.",
+    "highlights": [
+      "1st Law (Inertia): An object remains at rest or in uniform motion unless acted upon by an external net force.",
+      "2nd Law (F = ma): The acceleration of an object is directly proportional to net force and inversely proportional to its mass.",
+      "3rd Law (Action-Reaction): For every action, there is an equal and opposite reaction (F_AB = -F_BA)."
+    ],
+    "url": "https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion"
+  },
+  {
+    "id": "phys-thermodynamics",
+    "keywords": [
+      "laws of thermodynamics",
+      "first law of thermodynamics",
+      "second law of thermodynamics",
+      "entropy",
+      "zeroth law"
+    ],
+    "title": "The Four Laws of Thermodynamics",
+    "category": "Physics",
+    "answer": "The laws of thermodynamics define fundamental physical quantities (temperature, energy, entropy) that characterize thermodynamic systems at thermal equilibrium.",
+    "highlights": [
+      "Zeroth Law: Defines temperature and thermal equilibrium transitivity (If A=B and B=C, then A=C).",
+      "1st Law (Energy Conservation): Energy cannot be created or destroyed, only transformed (Delta U = Q - W).",
+      "2nd Law (Entropy): The total entropy of an isolated system always increases over time (Delta S_total >= 0).",
+      "3rd Law (Absolute Zero): As temperature approaches absolute zero (0 K or -273.15 C), entropy approaches a constant minimum."
+    ],
+    "url": "https://en.wikipedia.org/wiki/Laws_of_thermodynamics"
+  },
+  {
+    "id": "phys-relativity",
+    "keywords": [
+      "theory of relativity",
+      "special relativity",
+      "general relativity",
+      "e=mc2",
+      "einstein relativity",
+      "spacetime"
+    ],
+    "title": "Einstein's Theory of Relativity (Special & General)",
+    "category": "Physics",
+    "answer": "Albert Einstein's Theory of Relativity encompasses Special Relativity (1905, establishing that speed of light is constant in all frames and E = mc²) and General Relativity (1915, explaining gravity as curvature of spacetime by mass/energy).",
+    "highlights": [
+      "Special Relativity (1905): Time dilation, length contraction, and mass-energy equivalence (E = mc²).",
+      "General Relativity (1915): Gravity is not a force but geometric curvature of 4D spacetime caused by mass.",
+      "Key Predictions: Gravitational lensing, gravitational time dilation, black holes, gravitational waves (confirmed by LIGO)."
+    ],
+    "url": "https://en.wikipedia.org/wiki/Theory_of_relativity"
+  },
+  {
+    "id": "phys-quantum-mechanics",
+    "keywords": [
+      "quantum mechanics",
+      "schrodinger equation",
+      "heisenberg uncertainty principle",
+      "wave particle duality",
+      "quantum physics"
+    ],
+    "title": "Quantum Mechanics & Fundamental Principles",
+    "category": "Physics",
+    "answer": "Quantum mechanics is the fundamental theory in physics describing nature at atomic and subatomic scales, where energy, momentum, and angular momentum are quantized.",
+    "highlights": [
+      "Wave-Particle Duality: Matter and light exhibit behaviors of both waves and particles (De Broglie relation lambda = h/p).",
+      "Heisenberg Uncertainty Principle: It is impossible to simultaneously measure position (x) and momentum (p) with arbitrary precision (Delta x * Delta p >= h_bar / 2).",
+      "Schrodinger Equation: Governs the time evolution of a quantum wave function Psi(x, t)."
+    ],
+    "url": "https://en.wikipedia.org/wiki/Quantum_mechanics"
+  },
+  {
+    "id": "phys-planck-constant",
+    "keywords": [
+      "planck constant",
+      "value of h",
+      "plancks constant value",
+      "planck constant joule seconds"
+    ],
+    "title": "Planck Constant (h)",
+    "category": "Physics",
+    "answer": "The Planck constant (h) is a fundamental physical constant defined exactly as 6.62607015 * 10^-34 Joule-seconds (J*s). It relates the energy of a photon to its frequency (E = h*f).",
+    "highlights": [
+      "Exact Value: h = 6.62607015 * 10^-34 J*s (or m²*kg/s)",
+      "Reduced Planck Constant: h_bar = h / (2*pi) approx 1.054571817 * 10^-34 J*s",
+      "Formula: E = h * nu (Energy of a photon = Planck constant * frequency)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Planck_constant"
+  }
+]

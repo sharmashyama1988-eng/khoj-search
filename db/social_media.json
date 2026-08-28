@@ -1,0 +1,62 @@
+[
+  {
+    "id": "sm-youtube",
+    "keywords": [
+      "who founded youtube",
+      "youtube founded date",
+      "youtube founders",
+      "most subscribed youtube channel",
+      "mrbeast youtube"
+    ],
+    "title": "YouTube — Online Video Platform",
+    "category": "Social Media",
+    "answer": "YouTube was founded on February 14, 2005 by Steve Chen, Chad Hurley, and Jawed Karim. Acquired by Google in November 2006 for $1.65 billion. It is the world's largest video-sharing platform.",
+    "highlights": [
+      "Founded: February 14, 2005 (San Mateo, California)",
+      "Founders: Steve Chen, Chad Hurley, Jawed Karim",
+      "First Video: 'Me at the zoo' uploaded by Jawed Karim on April 23, 2005",
+      "Parent Company: Alphabet Inc. / Google"
+    ],
+    "url": "https://en.wikipedia.org/wiki/YouTube"
+  },
+  {
+    "id": "sm-instagram",
+    "keywords": [
+      "who founded instagram",
+      "instagram founded date",
+      "instagram founders",
+      "meta instagram",
+      "kevin systrom"
+    ],
+    "title": "Instagram — Photo & Video Sharing Platform",
+    "category": "Social Media",
+    "answer": "Instagram was founded on October 6, 2010 by Kevin Systrom and Mike Krieger. Acquired by Facebook (now Meta) in April 2012 for approximately $1 billion.",
+    "highlights": [
+      "Launched: October 6, 2010 (iOS) and April 3, 2012 (Android)",
+      "Founders: Kevin Systrom and Mike Krieger",
+      "Parent Company: Meta Platforms, Inc.",
+      "Key Features: Stories, Reels, Direct Messaging, IGTV"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Instagram"
+  },
+  {
+    "id": "sm-twitter-x",
+    "keywords": [
+      "who founded twitter",
+      "twitter x",
+      "elon musk twitter",
+      "jack dorsey",
+      "when was twitter founded"
+    ],
+    "title": "X (formerly Twitter) — Microblogging Platform",
+    "category": "Social Media",
+    "answer": "Twitter was created in March 2006 by Jack Dorsey, Noah Glass, Biz Stone, and Evan Williams, launching in July 2006. Acquired by Elon Musk in October 2022 for $44 billion and rebranded to X in July 2023.",
+    "highlights": [
+      "Founded: March 21, 2006",
+      "Rebranded: Rebranded to 'X' in July 2023 by Elon Musk",
+      "Original Character Limit: 140 characters (later expanded to 280, and long-form for premium)",
+      "Key Features: Real-time trends, Spaces audio, Grok AI integration"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Twitter"
+  }
+]

@@ -9,7 +9,8 @@
       "modi birth",
       "prime minister of india",
       "modi ji",
-      "modi date of birth"
+      "modi date of birth",
+      "who is narendra modi"
     ],
     "title": "Narendra Modi — Prime Minister of India",
     "category": "Biography",
@@ -23,6 +24,397 @@
     "url": "https://en.wikipedia.org/wiki/Narendra_Modi"
   },
   {
+    "id": "bio-rahul-gandhi",
+    "keywords": [
+      "rahul gandhi",
+      "rahul gandhi age",
+      "rahul age",
+      "leader of opposition india",
+      "rahul birth",
+      "who is rahul gandhi"
+    ],
+    "title": "Rahul Gandhi — Leader of the Opposition (Lok Sabha)",
+    "category": "Biography",
+    "answer": "Rahul Gandhi is 56 years old (born 19 June 1970 in New Delhi). He is an Indian politician and currently serves as the Leader of the Opposition in the 18th Lok Sabha.",
+    "highlights": [
+      "Current Age: 56 years old (Born 19 June 1970 in New Delhi)",
+      "Current Office: Leader of the Opposition in Lok Sabha (since June 2024)",
+      "Constituency: Member of Parliament for Rae Bareli (previously Wayanad and Amethi)",
+      "Political Party: Indian National Congress (INC)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Rahul_Gandhi"
+  },
+  {
+    "id": "bio-apj-abdul-kalam",
+    "keywords": [
+      "apj abdul kalam",
+      "abdul kalam",
+      "dr apj abdul kalam",
+      "kalam age",
+      "missile man of india",
+      "11th president of india",
+      "kalam birth",
+      "kalam death",
+      "who is abdul kalam"
+    ],
+    "title": "Dr. A.P.J. Abdul Kalam — 11th President of India & Missile Man",
+    "category": "Biography",
+    "answer": "Dr. A.P.J. Abdul Kalam (15 October 1931 – 27 July 2015) was an Indian aerospace scientist and statesman who served as the 11th President of India from 2002 to 2007. Known as the Missile Man of India.",
+    "highlights": [
+      "Lifespan: 15 October 1931 – 27 July 2015 (Aged 83)",
+      "Known As: Missile Man of India & People's President",
+      "Major Projects: Integrated Guided Missile Development Programme (Agni & Prithvi), Pokhran-II nuclear tests",
+      "Highest Civilian Honor: Bharat Ratna (1997)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam"
+  },
+  {
+    "id": "bio-mahatma-gandhi",
+    "keywords": [
+      "mahatma gandhi",
+      "gandhi",
+      "bapu",
+      "father of the nation",
+      "mohandas karamchand gandhi",
+      "gandhi birth",
+      "gandhi death",
+      "gandhi ji",
+      "who is mahatma gandhi"
+    ],
+    "title": "Mahatma Gandhi — Father of the Indian Nation",
+    "category": "Biography",
+    "answer": "Mahatma Gandhi (Mohandas Karamchand Gandhi; 2 October 1869 – 30 January 1948) was an Indian lawyer, anti-colonial nationalist, and political ethicist who led the successful campaign for India's independence from British rule using nonviolent resistance (Satyagraha).",
+    "highlights": [
+      "Lifespan: 2 October 1869 (Porbandar, Gujarat) – 30 January 1948 (New Delhi)",
+      "Title: Father of the Nation (Rashtrapita), Mahatma (Great Soul)",
+      "Key Movements: Non-Cooperation Movement (1920), Dandi Salt March (1930), Quit India Movement (1942)",
+      "International Day of Non-Violence: Celebrated globally on 2 October (his birthday)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Mahatma_Gandhi"
+  },
+  {
+    "id": "bio-bhagat-singh",
+    "keywords": [
+      "bhagat singh",
+      "shaheed bhagat singh",
+      "bhagat singh age",
+      "bhagat singh birth",
+      "bhagat singh martyrdom",
+      "inquilab zindabad",
+      "who is bhagat singh"
+    ],
+    "title": "Shaheed Bhagat Singh — Indian Revolutionary Freedom Fighter",
+    "category": "Biography",
+    "answer": "Bhagat Singh (28 September 1907 – 23 March 1931) was a charismatic Indian revolutionary freedom fighter who sacrificed his life at the age of 23 for India's independence from British colonial rule.",
+    "highlights": [
+      "Lifespan: 28 September 1907 (Banga, Punjab) – 23 March 1931 (Lahore Jail, Aged 23)",
+      "Organization: Hindustan Socialist Republican Association (HSRA)",
+      "Famous Actions: Central Legislative Assembly bombing (1929), Saunders assassination",
+      "Popular Slogan: Inquilab Zindabad (Long Live the Revolution)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Bhagat_Singh"
+  },
+  {
+    "id": "bio-subhas-chandra-bose",
+    "keywords": [
+      "subhas chandra bose",
+      "netaji",
+      "netaji subhas chandra bose",
+      "azad hind fauj",
+      "subhash chandra bose",
+      "jai hind",
+      "give me blood and i will give you freedom"
+    ],
+    "title": "Netaji Subhas Chandra Bose — Nationalist Leader & Commander of INA",
+    "category": "Biography",
+    "answer": "Netaji Subhas Chandra Bose (23 January 1897 – 18 August 1945) was a prominent Indian nationalist leader who led the Indian National Army (Azad Hind Fauj) to overthrow British rule in India.",
+    "highlights": [
+      "Lifespan: 23 January 1897 (Cuttack, Odisha) – 18 August 1945",
+      "Leadership: Supreme Commander of the Indian National Army (INA / Azad Hind Fauj)",
+      "Parakram Diwas: Celebrated annually in India on 23 January to honor his courage",
+      "Famous Slogans: 'Jai Hind' and 'Give me blood, and I shall give you freedom!'"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Subhas_Chandra_Bose"
+  },
+  {
+    "id": "bio-br-ambedkar",
+    "keywords": [
+      "dr br ambedkar",
+      "bhimrao ambedkar",
+      "babasaheb ambedkar",
+      "father of indian constitution",
+      "ambedkar birth",
+      "ambedkar jayanti"
+    ],
+    "title": "Dr. B.R. Ambedkar — Father of the Indian Constitution",
+    "category": "Biography",
+    "answer": "Dr. Bhimrao Ramji Ambedkar (14 April 1891 – 6 December 1956) was an Indian jurist, economist, social reformer, and political leader who served as the Chairman of the Constitution Drafting Committee and India's first Minister of Law and Justice.",
+    "highlights": [
+      "Lifespan: 14 April 1891 (Mhow, MP) – 6 December 1956 (New Delhi, Aged 65)",
+      "Key Role: Chairman of the Drafting Committee of the Constitution of India",
+      "Offices: First Minister of Law and Justice of Independent India",
+      "Highest Civilian Honor: Bharat Ratna (Posthumously awarded in 1990)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/B._R._Ambedkar"
+  },
+  {
+    "id": "bio-albert-einstein",
+    "keywords": [
+      "albert einstein",
+      "einstein",
+      "einstein theory",
+      "theory of relativity",
+      "einstein birth",
+      "einstein nobel prize",
+      "e=mc2"
+    ],
+    "title": "Albert Einstein — Theoretical Physicist & Father of Modern Physics",
+    "category": "Biography",
+    "answer": "Albert Einstein (14 March 1879 – 18 April 1955) was a German-born theoretical physicist widely acknowledged as one of the greatest physicists in history, best known for developing the Theory of Relativity and the mass-energy equivalence formula E = mc².",
+    "highlights": [
+      "Lifespan: 14 March 1879 (Ulm, Germany) – 18 April 1955 (Princeton, NJ, USA, Aged 76)",
+      "Major Discoveries: General & Special Relativity, Photoelectric Effect, Mass-Energy Equivalence (E = mc²)",
+      "Nobel Prize: 1921 Nobel Prize in Physics for his explanation of the Photoelectric Effect",
+      "Impact: Revolutionized the scientific understanding of space, time, gravity, and quantum mechanics"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+  },
+  {
+    "id": "bio-isaac-newton",
+    "keywords": [
+      "isaac newton",
+      "sir isaac newton",
+      "newton",
+      "laws of motion newton",
+      "newton gravity",
+      "who is isaac newton",
+      "newton birth"
+    ],
+    "title": "Sir Isaac Newton — Polymath & Classical Physics Pioneer",
+    "category": "Biography",
+    "answer": "Sir Isaac Newton (4 January 1643 – 31 March 1727) was an English mathematician, physicist, astronomer, and author who established classical mechanics, formulated the Three Laws of Motion and Universal Gravitation, and co-invented infinitesimal calculus.",
+    "highlights": [
+      "Lifespan: 4 January 1643 (Woolsthorpe, England) – 31 March 1727 (London, Aged 84)",
+      "Masterpiece: Philosophiæ Naturalis Principia Mathematica (1687)",
+      "Key Formulations: Laws of Motion, Law of Universal Gravitation, Calculus, Optics & Refracting Telescope",
+      "Burial Site: Westminster Abbey, London"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Isaac_Newton"
+  },
+  {
+    "id": "bio-nikola-tesla",
+    "keywords": [
+      "nikola tesla",
+      "tesla inventor",
+      "tesla ac current",
+      "nikola tesla birth",
+      "who is nikola tesla",
+      "tesla inventions"
+    ],
+    "title": "Nikola Tesla — Electrical Engineer & AC Pioneer",
+    "category": "Biography",
+    "answer": "Nikola Tesla (10 July 1856 – 7 January 1943) was a Serbian-American engineer and futurist best known for his contributions to the design of the modern alternating current (AC) electricity supply system.",
+    "highlights": [
+      "Lifespan: 10 July 1856 (Smiljan, Austrian Empire) – 7 January 1943 (New York City, Aged 86)",
+      "Major Inventions: AC induction motor, Tesla coil, wireless power transmission concepts, radio control",
+      "War of the Currents: Partnered with George Westinghouse against Thomas Edison's direct current (DC)",
+      "Unit of Magnetism: SI derived unit of magnetic flux density 'Tesla' (T) named in his honour"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Nikola_Tesla"
+  },
+  {
+    "id": "bio-marie-curie",
+    "keywords": [
+      "marie curie",
+      "madam curie",
+      "curie radioactivity",
+      "marie curie nobel prize",
+      "who is marie curie",
+      "radium discoverer"
+    ],
+    "title": "Marie Curie — Pioneer of Radioactivity & Double Nobel Laureate",
+    "category": "Biography",
+    "answer": "Marie Curie (7 November 1867 – 4 July 1934) was a Polish-French physicist and chemist who conducted pioneering research on radioactivity. She was the first woman to win a Nobel Prize and remains the only person to win Nobel Prizes in two different scientific fields (Physics and Chemistry).",
+    "highlights": [
+      "Lifespan: 7 November 1867 (Warsaw, Poland) – 4 July 1934 (Passy, France, Aged 66)",
+      "Nobel Prizes: 1903 Nobel Prize in Physics (Radioactivity) & 1911 Nobel Prize in Chemistry (Radium & Polonium)",
+      "Elements Discovered: Polonium (named after Poland) and Radium",
+      "Legacy: First female professor at the University of Paris (Sorbonne)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Marie_Curie"
+  },
+  {
+    "id": "bio-stephen-hawking",
+    "keywords": [
+      "stephen hawking",
+      "hawking",
+      "hawking radiation",
+      "brief history of time",
+      "who is stephen hawking",
+      "black hole radiation"
+    ],
+    "title": "Stephen Hawking — Theoretical Physicist & Cosmologist",
+    "category": "Biography",
+    "answer": "Stephen Hawking (8 January 1942 – 14 March 2018) was an English theoretical physicist and cosmologist renowned for his work on black hole thermodynamics, gravitational singularities, and his theoretical prediction that black holes emit radiation (Hawking radiation).",
+    "highlights": [
+      "Lifespan: 8 January 1942 (Oxford, England) – 14 March 2018 (Cambridge, England, Aged 76)",
+      "Scientific Breakthrough: Hawking Radiation (quantum effects causing black holes to emit thermal radiation)",
+      "Bestselling Book: 'A Brief History of Time' (1988) — sold over 25 million copies",
+      "Academic Chair: Lucasian Professor of Mathematics at Cambridge University (1979 – 2009)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Stephen_Hawking"
+  },
+  {
+    "id": "bio-steve-jobs",
+    "keywords": [
+      "steve jobs",
+      "jobs apple",
+      "steve jobs age",
+      "apple co-founder",
+      "iphone creator",
+      "who is steve jobs",
+      "steve jobs death"
+    ],
+    "title": "Steve Jobs — Co-Founder & Iconic CEO of Apple Inc.",
+    "category": "Biography",
+    "answer": "Steve Jobs (24 February 1955 – 5 October 2011) was an American business magnate, industrial designer, and visionary co-founder and CEO of Apple Inc. He transformed personal computing, music, animated films, and mobile technology.",
+    "highlights": [
+      "Lifespan: 24 February 1955 (San Francisco, CA) – 5 October 2011 (Palo Alto, CA, Aged 56)",
+      "Iconic Products: Apple II, Macintosh, iMac, iPod, iPhone, iPad, App Store",
+      "Ventures: Co-founder of Apple Inc. (1976), Founder of NeXT, Majority Shareholder & CEO of Pixar Animation Studios",
+      "Legacy: Widely recognized as one of the greatest innovators and design visionaries in modern history"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Steve_Jobs"
+  },
+  {
+    "id": "bio-bill-gates",
+    "keywords": [
+      "bill gates",
+      "bill gates age",
+      "founder of microsoft",
+      "gates microsoft",
+      "bill gates net worth",
+      "who is bill gates"
+    ],
+    "title": "Bill Gates — Co-Founder of Microsoft & Philanthropist",
+    "category": "Biography",
+    "answer": "Bill Gates is 70 years old (born October 28, 1955 in Seattle, Washington). He is an American business magnate, software developer, and philanthropist who co-founded Microsoft Corporation in 1975 with Paul Allen.",
+    "highlights": [
+      "Current Age: 70 years old (Born October 28, 1955 in Seattle, Washington)",
+      "Office: Co-founder & former CEO/Chairman of Microsoft; Co-chair of Bill & Melinda Gates Foundation",
+      "Key Software: MS-DOS, Microsoft Windows, Microsoft Office",
+      "Philanthropy: Donated tens of billions of dollars towards global disease eradication (polio, malaria) and climate tech (Breakthrough Energy)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Bill_Gates"
+  },
+  {
+    "id": "bio-jeff-bezos",
+    "keywords": [
+      "jeff bezos",
+      "bezos",
+      "jeff bezos age",
+      "founder of amazon",
+      "amazon ceo",
+      "blue origin founder",
+      "who is jeff bezos"
+    ],
+    "title": "Jeff Bezos — Founder of Amazon & Blue Origin",
+    "category": "Biography",
+    "answer": "Jeff Bezos is 62 years old (born January 12, 1964 in Albuquerque, New Mexico). He is an American businessman, media proprietor, and investor who founded Amazon in 1994 and aerospace company Blue Origin in 2000.",
+    "highlights": [
+      "Current Age: 62 years old (Born January 12, 1964 in Albuquerque, NM)",
+      "Ventures: Founder & Executive Chairman of Amazon; Founder of Blue Origin; Owner of The Washington Post",
+      "Education: Princeton University (Electrical Engineering and Computer Science)",
+      "Significance: Pioneered modern e-commerce, cloud computing (AWS), and commercial spaceflight"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Jeff_Bezos"
+  },
+  {
+    "id": "bio-mark-zuckerberg",
+    "keywords": [
+      "mark zuckerberg",
+      "zuckerberg",
+      "mark zuckerberg age",
+      "founder of facebook",
+      "ceo of meta",
+      "who is mark zuckerberg"
+    ],
+    "title": "Mark Zuckerberg — Founder & CEO of Meta (Facebook)",
+    "category": "Biography",
+    "answer": "Mark Zuckerberg is 42 years old (born May 14, 1984 in White Plains, New York). He is an American business magnate and software engineer who co-founded Facebook (now Meta Platforms) in 2004.",
+    "highlights": [
+      "Current Age: 42 years old (Born May 14, 1984 in White Plains, NY)",
+      "Office: Chairman and CEO of Meta Platforms (Facebook, Instagram, WhatsApp, Threads, Meta Quest)",
+      "Alma Mater: Harvard University (attended)",
+      "Philanthropy: Chan Zuckerberg Initiative (pledged 99% of Meta shares over lifetime)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Mark_Zuckerberg"
+  },
+  {
+    "id": "bio-sundar-pichai",
+    "keywords": [
+      "sundar pichai",
+      "sundar pichai age",
+      "ceo of google",
+      "ceo of alphabet",
+      "pichai age",
+      "who is sundar pichai",
+      "pichai birth"
+    ],
+    "title": "Sundar Pichai — CEO of Alphabet & Google",
+    "category": "Biography",
+    "answer": "Sundar Pichai is 54 years old (born 10 June 1972 in Madurai, Tamil Nadu, India). He is an Indian-American business executive serving as the Chief Executive Officer (CEO) of Alphabet Inc. and Google.",
+    "highlights": [
+      "Current Age: 54 years old (Born 10 June 1972 in Madurai, Tamil Nadu)",
+      "Office: CEO of Google (since 2015) & Alphabet Inc. (since 2019)",
+      "Alma Mater: IIT Kharagpur (B.Tech), Stanford University (MS), Wharton School (MBA)",
+      "Padma Bhushan: Awarded in 2022 by the Government of India in Trade and Industry"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sundar_Pichai"
+  },
+  {
+    "id": "bio-satya-nadella",
+    "keywords": [
+      "satya nadella",
+      "satya nadella age",
+      "ceo of microsoft",
+      "chairman of microsoft",
+      "nadella age",
+      "who is satya nadella"
+    ],
+    "title": "Satya Nadella — Chairman & CEO of Microsoft",
+    "category": "Biography",
+    "answer": "Satya Nadella is 59 years old (born 19 August 1967 in Hyderabad, India). He is an Indian-American business executive who has been the CEO of Microsoft since 2014 and Executive Chairman since 2021.",
+    "highlights": [
+      "Current Age: 59 years old (Born 19 August 1967 in Hyderabad, India)",
+      "Office: CEO and Executive Chairman of Microsoft",
+      "Alma Mater: Manipal Institute of Technology (B.E.), University of Wisconsin-Milwaukee (MS), University of Chicago Booth (MBA)",
+      "Padma Bhushan: Awarded in 2022 by the Government of India"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Satya_Nadella"
+  },
+  {
+    "id": "bio-sam-altman",
+    "keywords": [
+      "sam altman",
+      "sam altman age",
+      "ceo of openai",
+      "openai founder",
+      "chatgpt creator",
+      "who is sam altman"
+    ],
+    "title": "Sam Altman — CEO of OpenAI & AI Entrepreneur",
+    "category": "Biography",
+    "answer": "Sam Altman is 41 years old (born April 22, 1985 in Chicago, Illinois). He is an American entrepreneur, investor, and the Chief Executive Officer of OpenAI, the artificial intelligence research organization behind ChatGPT and GPT models.",
+    "highlights": [
+      "Current Age: 41 years old (Born April 22, 1985 in Chicago, IL)",
+      "Offices: CEO of OpenAI; former President of Y Combinator (2014 – 2019)",
+      "Key Projects: ChatGPT, GPT-4, DALL-E, Sora, Worldcoin (Tools for Humanity)",
+      "Investments: Early investor in Stripe, Reddit, Helion Energy, Retro Biosciences"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sam_Altman"
+  },
+  {
     "id": "bio-elon-musk",
     "keywords": [
       "elon musk",
@@ -31,84 +423,19 @@
       "ceo of tesla",
       "owner of twitter",
       "owner of x",
-      "spacex founder"
+      "spacex founder",
+      "who is elon musk"
     ],
     "title": "Elon Musk — Tech Entrepreneur & Innovator",
     "category": "Biography",
-    "answer": "Elon Musk is 55 years old (born June 28, 1971 in Pretoria, South Africa). He is the CEO of Tesla and SpaceX, founder of xAI and Neuralink, and owner/CTO of X (formerly Twitter).",
+    "answer": "Elon Musk is 55 years old (born June 28, 1971 in Pretoria, South Africa). He is the CEO and product architect of Tesla, CEO and Chief Engineer of SpaceX, founder of xAI and Neuralink, and owner/CTO of X (formerly Twitter).",
     "highlights": [
       "Current Age: 55 years old (Born June 28, 1971 in Pretoria, South Africa)",
-      "Companies: Tesla, SpaceX, xAI, Neuralink, The Boring Company, X",
-      "Net Worth: Leading global entrepreneur by valuation",
-      "Education: University of Pennsylvania"
+      "Companies: Tesla, SpaceX, xAI, Neuralink, The Boring Company, X Corp",
+      "Net Worth: Leading global entrepreneur and business magnate",
+      "Education: University of Pennsylvania (Physics and Economics)"
     ],
     "url": "https://en.wikipedia.org/wiki/Elon_Musk"
-  },
-  {
-    "id": "bio-virat-kohli",
-    "keywords": [
-      "virat kohli",
-      "virat kohli age",
-      "kohli age",
-      "king kohli",
-      "virat birth",
-      "virat runs",
-      "virat centuries"
-    ],
-    "title": "Virat Kohli — Indian International Cricketer",
-    "category": "Biography",
-    "answer": "Virat Kohli is 37 years old (born 5 November 1988 in Delhi, India). He is an Indian international cricketer and former all-format captain of the Indian national cricket team.",
-    "highlights": [
-      "Current Age: 37 years old (Born 5 November 1988 in Delhi)",
-      "Role: Right-handed top-order batsman",
-      "Centuries: 80+ international centuries across Test, ODI, and T20I cricket",
-      "Major Honors: 2011 ICC Cricket World Cup, 2013 ICC Champions Trophy, 2024 ICC Men's T20 World Cup"
-    ],
-    "url": "https://en.wikipedia.org/wiki/Virat_Kohli"
-  },
-  {
-    "id": "bio-shah-rukh-khan",
-    "keywords": [
-      "shah rukh khan",
-      "shahrukh khan",
-      "srk",
-      "srk age",
-      "shahrukh age",
-      "king khan",
-      "king of bollywood"
-    ],
-    "title": "Shah Rukh Khan (SRK) — Actor & Film Producer",
-    "category": "Biography",
-    "answer": "Shah Rukh Khan (SRK) is 60 years old (born 2 November 1965 in New Delhi). Referred to in the media as the King of Bollywood and King Khan, he has appeared in more than 90 films.",
-    "highlights": [
-      "Current Age: 60 years old (Born 2 November 1965 in New Delhi)",
-      "Production House: Red Chillies Entertainment",
-      "Padma Shri: Awarded in 2005 by the Government of India",
-      "Notable Works: DDLJ, Swades, Chak De! India, Jawan, Pathaan"
-    ],
-    "url": "https://en.wikipedia.org/wiki/Shah_Rukh_Khan"
-  },
-  {
-    "id": "bio-ms-dhoni",
-    "keywords": [
-      "ms dhoni",
-      "dhoni",
-      "dhoni age",
-      "ms dhoni age",
-      "mahendra singh dhoni",
-      "captain cool",
-      "dhoni trophies"
-    ],
-    "title": "MS Dhoni (Mahendra Singh Dhoni) — Cricket Legend",
-    "category": "Biography",
-    "answer": "MS Dhoni is 45 years old (born 7 July 1981 in Ranchi, Jharkhand). He is the legendary former captain of the Indian national cricket team who led India to 3 major ICC world titles.",
-    "highlights": [
-      "Current Age: 45 years old (Born 7 July 1981 in Ranchi)",
-      "ICC Trophies: 2007 T20 World Cup, 2011 ODI World Cup, 2013 Champions Trophy",
-      "IPL Team: Chennai Super Kings (CSK) — 5-time IPL Champion",
-      "Padma Bhushan: Awarded in 2018 by the Government of India"
-    ],
-    "url": "https://en.wikipedia.org/wiki/MS_Dhoni"
   },
   {
     "id": "bio-donald-trump",
@@ -118,7 +445,8 @@
       "trump age",
       "donald trump age",
       "president trump",
-      "47th president"
+      "47th president",
+      "who is donald trump"
     ],
     "title": "Donald Trump — President of the United States",
     "category": "Biography",
@@ -132,86 +460,179 @@
     "url": "https://en.wikipedia.org/wiki/Donald_Trump"
   },
   {
-    "id": "bio-sundar-pichai",
+    "id": "bio-virat-kohli",
     "keywords": [
-      "sundar pichai",
-      "sundar pichai age",
-      "ceo of google",
-      "ceo of alphabet",
-      "pichai age"
+      "virat kohli",
+      "virat kohli age",
+      "kohli age",
+      "king kohli",
+      "virat birth",
+      "virat runs",
+      "virat centuries",
+      "who is virat kohli"
     ],
-    "title": "Sundar Pichai — CEO of Alphabet & Google",
+    "title": "Virat Kohli — Indian International Cricketer",
     "category": "Biography",
-    "answer": "Sundar Pichai is 54 years old (born 10 June 1972 in Madurai, Tamil Nadu, India). He is an Indian-American business executive serving as the Chief Executive Officer (CEO) of Alphabet Inc. and Google.",
+    "answer": "Virat Kohli is 37 years old (born 5 November 1988 in Delhi, India). He is an Indian international cricketer and former all-format captain of the Indian national cricket team.",
     "highlights": [
-      "Current Age: 54 years old (Born 10 June 1972 in Madurai, Tamil Nadu)",
-      "Office: CEO of Google (since 2015) & Alphabet Inc. (since 2019)",
-      "Alma Mater: IIT Kharagpur, Stanford University, Wharton School",
-      "Padma Bhushan: Awarded in 2022 by the Government of India"
+      "Current Age: 37 years old (Born 5 November 1988 in Delhi)",
+      "Role: Right-handed top-order batsman",
+      "Centuries: 80+ international centuries across Test, ODI, and T20I cricket",
+      "Major Honors: 2011 ICC Cricket World Cup, 2013 ICC Champions Trophy, 2024 ICC Men's T20 World Cup, Khel Ratna & Padma Shri"
     ],
-    "url": "https://en.wikipedia.org/wiki/Sundar_Pichai"
+    "url": "https://en.wikipedia.org/wiki/Virat_Kohli"
   },
   {
-    "id": "bio-satya-nadella",
+    "id": "bio-ms-dhoni",
     "keywords": [
-      "satya nadella",
-      "satya nadella age",
-      "ceo of microsoft",
-      "chairman of microsoft",
-      "nadella age"
+      "ms dhoni",
+      "dhoni",
+      "dhoni age",
+      "ms dhoni age",
+      "mahendra singh dhoni",
+      "captain cool",
+      "dhoni trophies",
+      "who is ms dhoni"
     ],
-    "title": "Satya Nadella — Chairman & CEO of Microsoft",
+    "title": "MS Dhoni (Mahendra Singh Dhoni) — Cricket Legend",
     "category": "Biography",
-    "answer": "Satya Nadella is 59 years old (born 19 August 1967 in Hyderabad, India). He is an Indian-American business executive who has been the CEO of Microsoft since 2014 and Executive Chairman since 2021.",
+    "answer": "MS Dhoni is 45 years old (born 7 July 1981 in Ranchi, Jharkhand). He is the legendary former captain of the Indian national cricket team who led India to 3 major ICC world titles.",
     "highlights": [
-      "Current Age: 59 years old (Born 19 August 1967 in Hyderabad, India)",
-      "Office: CEO and Chairman of Microsoft",
-      "Alma Mater: Manipal Institute of Technology, Univ of Wisconsin-Milwaukee, Univ of Chicago",
-      "Transformation: Led Microsoft massive growth in Azure Cloud and OpenAI partnership"
+      "Current Age: 45 years old (Born 7 July 1981 in Ranchi)",
+      "ICC Trophies: 2007 T20 World Cup, 2011 ODI World Cup, 2013 Champions Trophy",
+      "IPL Team: Chennai Super Kings (CSK) — 5-time IPL Champion Captain",
+      "Padma Bhushan: Awarded in 2018 by the Government of India"
     ],
-    "url": "https://en.wikipedia.org/wiki/Satya_Nadella"
+    "url": "https://en.wikipedia.org/wiki/MS_Dhoni"
   },
   {
-    "id": "bio-apj-abdul-kalam",
+    "id": "bio-sachin-tendulkar",
     "keywords": [
-      "apj abdul kalam",
-      "abdul kalam",
-      "kalam age",
-      "missile man of india",
-      "11th president of india",
-      "kalam birth",
-      "kalam death"
+      "sachin tendulkar",
+      "sachin",
+      "sachin tendulkar age",
+      "god of cricket",
+      "master blaster",
+      "sachin centuries",
+      "who is sachin tendulkar"
     ],
-    "title": "Dr. A.P.J. Abdul Kalam — 11th President of India & Missile Man",
+    "title": "Sachin Tendulkar — Master Blaster & Bharat Ratna",
     "category": "Biography",
-    "answer": "Dr. A.P.J. Abdul Kalam (15 October 1931 – 27 July 2015) was an Indian aerospace scientist and statesman who served as the 11th President of India from 2002 to 2007. Known as the Missile Man of India.",
+    "answer": "Sachin Tendulkar is 53 years old (born 24 April 1973 in Mumbai, Maharashtra). Widely acknowledged as one of the greatest batsmen in cricket history, he is the all-time leading run-scorer in international cricket with 100 international centuries.",
     "highlights": [
-      "Lifespan: 15 October 1931 – 27 July 2015 (Aged 83)",
-      "Known As: Missile Man of India & People's President",
-      "Major Projects: Integrated Guided Missile Development Programme, Pokhran-II nuclear tests",
-      "Highest Civilian Honor: Bharat Ratna (1997)"
+      "Current Age: 53 years old (Born 24 April 1973 in Mumbai)",
+      "World Records: Most runs in international cricket (34,357 runs), only player with 100 international centuries",
+      "Major Honor: Bharat Ratna (2014) — youngest recipient and first sportsperson",
+      "World Cup: 2011 ICC Cricket World Cup Champion with India"
     ],
-    "url": "https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam"
+    "url": "https://en.wikipedia.org/wiki/Sachin_Tendulkar"
   },
   {
-    "id": "bio-albert-einstein",
+    "id": "bio-rohit-sharma",
     "keywords": [
-      "albert einstein",
-      "einstein",
-      "einstein theory",
-      "theory of relativity",
-      "einstein birth",
-      "einstein nobel prize"
+      "rohit sharma",
+      "rohit sharma age",
+      "hitman",
+      "rohit 264",
+      "rohit sharma captain",
+      "who is rohit sharma"
     ],
-    "title": "Albert Einstein — Theoretical Physicist",
+    "title": "Rohit Sharma — Captain of the Indian Cricket Team & Hitman",
     "category": "Biography",
-    "answer": "Albert Einstein (14 March 1879 – 18 April 1955) was a German-born theoretical physicist widely acknowledged as one of the greatest and most influential physicists of all time. Best known for the Theory of Relativity and E = mc².",
+    "answer": "Rohit Sharma is 39 years old (born 30 April 1987 in Bansod, Nagpur, Maharashtra). He is an Indian international cricketer and captain who led India to the 2024 ICC Men's T20 World Cup title and holds the highest individual score in ODI history (264 runs).",
     "highlights": [
-      "Lifespan: 14 March 1879 – 18 April 1955 (Aged 76)",
-      "Major Discoveries: General & Special Relativity, Photoelectric Effect, Mass-Energy Equivalence (E = mc²)",
-      "Nobel Prize: 1921 Nobel Prize in Physics",
-      "Born: Ulm, Kingdom of Wurttemberg, German Empire"
+      "Current Age: 39 years old (Born 30 April 1987 in Nagpur, Maharashtra)",
+      "World Record: Highest individual score in One Day Internationals (264 off 173 balls vs Sri Lanka)",
+      "ODI Double Centuries: Only player in history to score three ODI double centuries (209, 264, 208*)",
+      "Major Honors: 2007 & 2024 T20 World Cup Champion, 5-time IPL Champion Captain (Mumbai Indians)"
     ],
-    "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    "url": "https://en.wikipedia.org/wiki/Rohit_Sharma"
+  },
+  {
+    "id": "bio-lionel-messi",
+    "keywords": [
+      "lionel messi",
+      "messi",
+      "messi age",
+      "messi ballon d'or",
+      "messi world cup",
+      "who is lionel messi",
+      "leo messi"
+    ],
+    "title": "Lionel Messi — Argentine Football Legend",
+    "category": "Biography",
+    "answer": "Lionel Messi is 39 years old (born 24 June 1987 in Rosario, Argentina). Widely regarded as one of the greatest football players of all time, he has won a record 8 Ballon d'Or awards and captained Argentina to victory in the 2022 FIFA World Cup.",
+    "highlights": [
+      "Current Age: 39 years old (Born 24 June 1987 in Rosario, Argentina)",
+      "Major Trophies: 2022 FIFA World Cup, 2021 & 2024 Copa América, 4 UEFA Champions League titles",
+      "Individual Honors: Record 8 Ballon d'Or awards, 6 European Golden Shoes",
+      "Clubs: FC Barcelona, Paris Saint-Germain (PSG), Inter Miami CF"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Lionel_Messi"
+  },
+  {
+    "id": "bio-cristiano-ronaldo",
+    "keywords": [
+      "cristiano ronaldo",
+      "cr7",
+      "ronaldo age",
+      "cristiano ronaldo age",
+      "ronaldo goals",
+      "who is cristiano ronaldo"
+    ],
+    "title": "Cristiano Ronaldo (CR7) — Portuguese Football Icon",
+    "category": "Biography",
+    "answer": "Cristiano Ronaldo is 41 years old (born 5 February 1985 in Funchal, Madeira, Portugal). He is the all-time leading international goalscorer in football history and has won 5 Ballon d'Or awards and 5 UEFA Champions League titles.",
+    "highlights": [
+      "Current Age: 41 years old (Born 5 February 1985 in Funchal, Madeira, Portugal)",
+      "Records: All-time top international goalscorer (130+ goals) and all-time UEFA Champions League top scorer (140 goals)",
+      "Major Honors: 5 Ballon d'Or awards, UEFA Euro 2016 Champion, 5 UEFA Champions League titles",
+      "Clubs: Sporting CP, Manchester United, Real Madrid, Juventus, Al Nassr"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo"
+  },
+  {
+    "id": "bio-shah-rukh-khan",
+    "keywords": [
+      "shah rukh khan",
+      "shahrukh khan",
+      "srk",
+      "srk age",
+      "shahrukh age",
+      "king khan",
+      "king of bollywood",
+      "who is shah rukh khan"
+    ],
+    "title": "Shah Rukh Khan (SRK) — Actor & Film Producer",
+    "category": "Biography",
+    "answer": "Shah Rukh Khan (SRK) is 60 years old (born 2 November 1965 in New Delhi). Referred to in the media as the King of Bollywood and King Khan, he has appeared in more than 90 films.",
+    "highlights": [
+      "Current Age: 60 years old (Born 2 November 1965 in New Delhi)",
+      "Production House: Red Chillies Entertainment",
+      "Padma Shri: Awarded in 2005 by the Government of India",
+      "Notable Works: DDLJ, Swades, Chak De! India, Jawan, Pathaan, Dunki"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Shah_Rukh_Khan"
+  },
+  {
+    "id": "bio-amitabh-bachchan",
+    "keywords": [
+      "amitabh bachchan",
+      "big b",
+      "amitabh bachchan age",
+      "amitabh age",
+      "shahenshah of bollywood",
+      "who is amitabh bachchan"
+    ],
+    "title": "Amitabh Bachchan (Big B) — Shahenshah of Indian Cinema",
+    "category": "Biography",
+    "answer": "Amitabh Bachchan is 83 years old (born 11 October 1942 in Prayagraj / Allahabad, Uttar Pradesh). Known as the Shahenshah of Bollywood and Big B, he is widely regarded as one of the greatest and most influential actors in Indian cinema history.",
+    "highlights": [
+      "Current Age: 83 years old (Born 11 October 1942 in Prayagraj, UP)",
+      "National Honors: Padma Shri (1984), Padma Bhushan (2001), Padma Vibhushan (2015), Dadasaheb Phalke Award (2018)",
+      "Notable Films: Sholay, Deewaar, Zanjeer, Don, Black, Piku, Pink, Kalki 2898 AD",
+      "Television: Long-running host of 'Kaun Banega Crorepati' (KBC)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Amitabh_Bachchan"
   }
 ]

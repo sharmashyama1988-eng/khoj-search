@@ -1,0 +1,40 @@
+[
+  {
+    "id": "tech-cloud-computing",
+    "keywords": [
+      "what is cloud computing",
+      "aws vs azure vs gcp",
+      "cloud service models",
+      "iaas paas saas",
+      "cloud computing definition"
+    ],
+    "title": "Cloud Computing (IaaS, PaaS, SaaS)",
+    "category": "Technology",
+    "answer": "Cloud computing is the on-demand availability of computer system resources—especially data storage and computing power—over the internet without direct active management by the user.",
+    "highlights": [
+      "IaaS (Infrastructure as a Service): Renting raw virtual servers and storage (AWS EC2, Google Compute Engine).",
+      "PaaS (Platform as a Service): Hardware and software tools provided over internet for building apps (AWS Elastic Beanstalk, Vercel, Heroku).",
+      "SaaS (Software as a Service): Complete software accessible via browser (Google Workspace, Microsoft 365, Salesforce)."
+    ],
+    "url": "https://en.wikipedia.org/wiki/Cloud_computing"
+  },
+  {
+    "id": "tech-semiconductor",
+    "keywords": [
+      "what is semiconductor",
+      "semiconductor chips",
+      "moore law",
+      "tsmc",
+      "nanometer chip"
+    ],
+    "title": "Semiconductor Chips & Moore's Law",
+    "category": "Technology",
+    "answer": "Semiconductors (primarily Silicon) are materials with electrical conductivity between conductors and insulators. They form the basis of all modern microchips, CPUs, GPUs, and solar cells.",
+    "highlights": [
+      "Moore's Law: Observation by Gordon Moore that the number of transistors on a microchip doubles roughly every two years.",
+      "Modern Process Nodes: 3nm and 2nm gate-all-around (GAA) semiconductor nodes.",
+      "Leading Foundry: TSMC (Taiwan Semiconductor Manufacturing Company) produces over 90% of advanced global chips."
+    ],
+    "url": "https://en.wikipedia.org/wiki/Semiconductor"
+  }
+]

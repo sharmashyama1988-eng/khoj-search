@@ -10,14 +10,73 @@
     ],
     "title": "How to Undo the Last Git Commit (Keeping Changes)",
     "category": "Technology",
-    "answer": "To undo your last Git commit while keeping all your code changes in the staging area / working directory, run: `git reset --soft HEAD~1`.",
+    "answer": "To undo your last Git commit while keeping all your changes staged in the working directory, run: `git reset --soft HEAD~1`. To unstage the changes as well, use `git reset HEAD~1`.",
     "highlights": [
       "Keep Changes Staged: git reset --soft HEAD~1",
-      "Keep Changes Unstaged: git reset HEAD~1",
-      "Discard All Changes Completely: git reset --hard HEAD~1",
-      "Already Pushed to Remote: git revert HEAD"
+      "Keep Changes Unstaged: git reset HEAD~1 (or git reset --mixed HEAD~1)",
+      "Discard Changes Permanently: git reset --hard HEAD~1",
+      "Undo Already-Pushed Commit: git revert HEAD (creates a new safe commit that inverts changes)"
     ],
     "url": "https://git-scm.com/docs/git-reset"
+  },
+  {
+    "id": "tech-git-rebase-merge",
+    "keywords": [
+      "git rebase vs merge",
+      "difference between git rebase and merge",
+      "git rebase command",
+      "when to rebase",
+      "git merge"
+    ],
+    "title": "Git Rebase vs Git Merge — Key Differences & Best Practices",
+    "category": "Technology",
+    "answer": "Git merge creates a new merge commit preserving exact history and branch topology. Git rebase rewrites project history by moving or applying your feature branch commits sequentially on top of the target base branch, creating a clean, linear commit log.",
+    "highlights": [
+      "Git Merge: git merge feature_branch (Non-destructive, creates merge commit, preserves exact timeline)",
+      "Git Rebase: git rebase main (Linear history, rewrites commit SHA hashes)",
+      "Golden Rule: Never rebase commits that have been pushed to a public/shared branch"
+    ],
+    "url": "https://git-scm.com/book/en/v2/Git-Branching-Rebasing"
+  },
+  {
+    "id": "tech-git-stash",
+    "keywords": [
+      "git stash",
+      "git stash pop",
+      "git stash apply",
+      "how to stash in git",
+      "git stash list"
+    ],
+    "title": "Git Stash Commands — Saving & Restoring Uncommitted Work",
+    "category": "Technology",
+    "answer": "Git stash temporarily shelves (or stashes) changes you've made to your working copy so you can switch branches without committing unfinished work: `git stash` saves changes, and `git stash pop` restores and removes the most recent stash.",
+    "highlights": [
+      "Save Changes: git stash (or git stash save \"message\")",
+      "Save Untracked Files: git stash -u (or --include-untracked)",
+      "Restore & Delete from Stash: git stash pop",
+      "Restore & Keep in Stash: git stash apply",
+      "List Stashes: git stash list | Delete All: git stash clear"
+    ],
+    "url": "https://git-scm.com/docs/git-stash"
+  },
+  {
+    "id": "tech-git-cherry-pick",
+    "keywords": [
+      "git cherry-pick",
+      "git cherry pick commit",
+      "how to cherry pick git",
+      "git apply single commit"
+    ],
+    "title": "Git Cherry-Pick — Applying Specific Commits Across Branches",
+    "category": "Technology",
+    "answer": "Git cherry-pick applies the changes introduced by one or more existing commits to your current HEAD branch: `git cherry-pick <commit-hash>`. It is useful for porting bug fixes across release branches.",
+    "highlights": [
+      "Single Commit: git cherry-pick <commit-hash>",
+      "Multiple Commits: git cherry-pick <hash1> <hash2>",
+      "Range of Commits: git cherry-pick <start-hash>..<end-hash>",
+      "Abort on Conflict: git cherry-pick --abort | Continue: git cherry-pick --continue"
+    ],
+    "url": "https://git-scm.com/docs/git-cherry-pick"
   },
   {
     "id": "tech-http-status-codes",
@@ -28,16 +87,17 @@
       "http 500",
       "http 403",
       "http 301",
+      "http 502",
+      "http 503",
       "list of http codes"
     ],
     "title": "HTTP Status Code Reference (1xx, 2xx, 3xx, 4xx, 5xx)",
     "category": "Technology",
-    "answer": "HTTP status codes indicate whether a specific HTTP request has been successfully completed. Grouped into 5 classes: 1xx (Informational), 2xx (Success), 3xx (Redirection), 4xx (Client Errors), and 5xx (Server Errors).",
+    "answer": "HTTP status codes indicate the result of a client request. Categorized into: 1xx (Informational), 2xx (Success), 3xx (Redirection), 4xx (Client Errors), and 5xx (Server Errors).",
     "highlights": [
-      "200 OK: Request succeeded",
-      "201 Created: New resource created successfully",
-      "301 Moved Permanently: URL has permanently changed",
-      "400 Bad Request / 401 Unauthorized / 403 Forbidden / 404 Not Found",
+      "200 OK / 201 Created / 204 No Content: Successful request execution",
+      "301 Moved Permanently / 302 Found (Temporary Redirect) / 304 Not Modified: Cache validation",
+      "400 Bad Request / 401 Unauthorized (unauthenticated) / 403 Forbidden (no permission) / 404 Not Found / 429 Too Many Requests",
       "500 Internal Server Error / 502 Bad Gateway / 503 Service Unavailable / 504 Gateway Timeout"
     ],
     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status"
@@ -48,17 +108,220 @@
       "difference between let and var",
       "let vs var vs const",
       "var let const difference",
-      "javascript variable scope"
+      "javascript variable scope",
+      "temporal dead zone"
     ],
     "title": "Difference Between var, let, and const in JavaScript",
     "category": "Technology",
-    "answer": "var is function-scoped and hoisted with undefined. let and const are block-scoped and live in a Temporal Dead Zone (TDZ) before declaration. const prevents re-assignment of the variable identifier.",
+    "answer": "var is function-scoped and hoisted with undefined. let and const are block-scoped ({}) and reside in a Temporal Dead Zone (TDZ) before declaration. const cannot be reassigned after initialization.",
     "highlights": [
-      "var: Function-scoped, can be redeclared and updated, hoisted with undefined",
-      "let: Block-scoped, cannot be redeclared in same scope, can be updated",
-      "const: Block-scoped, cannot be redeclared or re-assigned",
-      "Best Practice: Use const by default; use let only when reassignment is needed; avoid var"
+      "var: Function-scoped, hoisted to top with undefined, can be redeclared and updated in same scope",
+      "let: Block-scoped, hoisted into TDZ (throws ReferenceError if accessed early), reassignable",
+      "const: Block-scoped, TDZ protected, cannot be reassigned (though object properties can still be mutated)",
+      "Modern Standard: Prefer const by default; use let when value must mutate; avoid var"
     ],
     "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declaring_variables"
+  },
+  {
+    "id": "tech-js-closures",
+    "keywords": [
+      "javascript closure",
+      "what is a closure",
+      "js closures explained",
+      "lexical scope javascript",
+      "closure examples"
+    ],
+    "title": "JavaScript Closures — Definition, Scope & Practical Applications",
+    "category": "Technology",
+    "answer": "A closure is the combination of a function bundled together with references to its surrounding state (lexical environment). In JavaScript, closures give an inner function access to an outer function's scope even after the outer function has executed and returned.",
+    "highlights": [
+      "Definition: Inner function retains access to outer variables via lexical scoping chain",
+      "Primary Uses: Data privacy/encapsulation (private variables), function factories, currying, event handlers and callbacks",
+      "Memory Note: Retains references to outer scope variables, preventing garbage collection until closure is released"
+    ],
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures"
+  },
+  {
+    "id": "tech-js-event-loop",
+    "keywords": [
+      "javascript event loop",
+      "how event loop works",
+      "microtask vs macrotask",
+      "call stack event loop",
+      "js concurrency model"
+    ],
+    "title": "JavaScript Event Loop — Call Stack, Microtasks & Macrotasks",
+    "category": "Technology",
+    "answer": "The JavaScript Event Loop is a single-threaded concurrency mechanism that continuously monitors the Call Stack and Task Queues. If the Call Stack is empty, it flushes all Microtasks (Promises, queueMicrotask) before executing the next Macrotask (setTimeout, setInterval, I/O).",
+    "highlights": [
+      "Call Stack: Executes synchronous JavaScript code frame by frame (LIFO)",
+      "Microtask Queue (High Priority): Promise.then/catch/finally, async/await continuations, MutationObserver",
+      "Macrotask Queue / Task Queue: setTimeout, setInterval, setImmediate, I/O, UI rendering",
+      "Execution Order: Synchronous code → All microtasks in queue → Single macrotask → Repeat"
+    ],
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop"
+  },
+  {
+    "id": "tech-js-promises-async",
+    "keywords": [
+      "javascript promises",
+      "async await in javascript",
+      "promise.all vs promise.race",
+      "promise states",
+      "promise allsettled"
+    ],
+    "title": "JavaScript Promises & Async/Await Reference",
+    "category": "Technology",
+    "answer": "A Promise represents the eventual completion or failure of an asynchronous operation and has 3 states: Pending, Fulfilled, or Rejected. Async/await provides synchronous-looking syntax over Promises.",
+    "highlights": [
+      "Promise.all([p1, p2]): Resolves when all resolve; rejects immediately if any promise rejects (fail-fast)",
+      "Promise.allSettled([p1, p2]): Waits for all promises to settle and returns an array of results with status and value/reason",
+      "Promise.race([p1, p2]): Settles with the outcome (resolve or reject) of the first promise to settle",
+      "Promise.any([p1, p2]): Resolves with first fulfilled promise; rejects only if all reject (AggregateError)"
+    ],
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+  },
+  {
+    "id": "tech-py-list-comprehension",
+    "keywords": [
+      "python list comprehension",
+      "list comprehension syntax",
+      "how to write list comprehension python",
+      "python dictionary comprehension"
+    ],
+    "title": "Python List Comprehension — Syntax & Examples",
+    "category": "Technology",
+    "answer": "List comprehension in Python offers a concise way to create lists based on existing iterables: `[expression for item in iterable if condition]`. It is faster and more readable than standard for-loops with append.",
+    "highlights": [
+      "Basic Syntax: [x**2 for x in range(10)]",
+      "With Filter Condition: [x for x in numbers if x % 2 == 0]",
+      "If-Else Conditional: [x if x > 0 else 0 for x in numbers]",
+      "Dict Comprehension: {k: v for k, v in zip(keys, values)} | Set: {x for x in data}"
+    ],
+    "url": "https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions"
+  },
+  {
+    "id": "tech-py-gil",
+    "keywords": [
+      "python gil",
+      "global interpreter lock",
+      "what is python gil",
+      "gil multithreading python"
+    ],
+    "title": "Python Global Interpreter Lock (GIL)",
+    "category": "Technology",
+    "answer": "The Python Global Interpreter Lock (GIL) is a mutex used by the CPython interpreter to synchronize thread execution so that only one native thread executes Python bytecode at a time, preventing memory race conditions in CPython's reference counting.",
+    "highlights": [
+      "Mechanism: Mutex lock ensuring thread safety in CPython memory management",
+      "CPU-bound Tasks: Standard threading does not achieve multi-core parallelism (use `multiprocessing` or native C-extensions instead)",
+      "I/O-bound Tasks: Threading works well because GIL is released during I/O operations (network, disk, sleep)",
+      "Python 3.13+: Introduction of experimental free-threaded mode (PEP 703: disabling the GIL)"
+    ],
+    "url": "https://wiki.python.org/moin/GlobalInterpreterLock"
+  },
+  {
+    "id": "tech-py-decorators",
+    "keywords": [
+      "python decorators",
+      "what is a decorator python",
+      "how decorators work python",
+      "@decorator python",
+      "functools wraps"
+    ],
+    "title": "Python Decorators — Syntax & Implementation",
+    "category": "Technology",
+    "answer": "A decorator in Python is a higher-order function that takes another function as an argument, extends or alters its behavior without modifying its source code, and returns the modified function: `@decorator_name` above a `def` definition.",
+    "highlights": [
+      "Syntax Sugar: `@my_decorator def func(): ...` is equivalent to `func = my_decorator(func)`",
+      "Pattern: Takes `func`, returns `wrapper(*args, **kwargs)`",
+      "Preserving Metadata: Use `@functools.wraps(func)` on wrapper to preserve original `__name__` and `__doc__`",
+      "Common Built-ins: `@staticmethod`, `@classmethod`, `@property`, `@lru_cache`"
+    ],
+    "url": "https://docs.python.org/3/glossary.html#term-decorator"
+  },
+  {
+    "id": "tech-docker-commands",
+    "keywords": [
+      "docker commands",
+      "docker cheat sheet",
+      "docker build command",
+      "docker run command",
+      "docker exec command",
+      "docker ps"
+    ],
+    "title": "Docker Essential CLI Commands Cheat Sheet",
+    "category": "Technology",
+    "answer": "Docker provides containerization tools to build, ship, and run applications in isolated environments. Essential commands include: `docker run`, `docker build`, `docker ps`, `docker exec`, and `docker-compose`.",
+    "highlights": [
+      "Run Container: docker run -d -p 8080:80 --name my_app image_name",
+      "Build Image: docker build -t image_name:tag .",
+      "List Running Containers: docker ps (or docker ps -a for all)",
+      "Interactive Shell in Container: docker exec -it <container_id> /bin/sh (or bash)",
+      "Stop & Remove: docker stop <id> && docker rm <id>",
+      "Prune Unused Data: docker system prune -af"
+    ],
+    "url": "https://docs.docker.com/reference/cli/docker/"
+  },
+  {
+    "id": "tech-sql-joins",
+    "keywords": [
+      "sql joins",
+      "inner join vs left join",
+      "sql join types",
+      "left outer join sql",
+      "full outer join"
+    ],
+    "title": "SQL Joins Explained (INNER, LEFT, RIGHT, FULL OUTER, CROSS)",
+    "category": "Technology",
+    "answer": "SQL joins combine columns from one or more tables based on related columns: INNER JOIN (matches in both tables), LEFT JOIN (all left rows + matched right rows), RIGHT JOIN (all right rows + matched left rows), FULL OUTER JOIN (all rows when match in either), and CROSS JOIN (Cartesian product).",
+    "highlights": [
+      "INNER JOIN: Returns rows where join condition matches in both Table A and Table B",
+      "LEFT (OUTER) JOIN: Returns all rows from Table A and matching rows from Table B (NULL if no match)",
+      "RIGHT (OUTER) JOIN: Returns all rows from Table B and matching rows from Table A",
+      "FULL (OUTER) JOIN: Returns rows when there is a match in either Table A or Table B",
+      "CROSS JOIN: Produces Cartesian product (Row count = A × B)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Join_(SQL)"
+  },
+  {
+    "id": "tech-sql-acid",
+    "keywords": [
+      "acid properties",
+      "acid in database",
+      "what is acid",
+      "atomicity consistency isolation durability",
+      "database transactions acid"
+    ],
+    "title": "ACID Properties in Database Management Systems (DBMS)",
+    "category": "Technology",
+    "answer": "ACID is a set of four key properties that guarantee database transactions are processed reliably: Atomicity (all-or-nothing), Consistency (preserves database rules and constraints), Isolation (concurrent transactions execute independently), and Durability (committed changes survive system crashes).",
+    "highlights": [
+      "A - Atomicity: Entire transaction succeeds or entirely rolls back (no partial commits)",
+      "C - Consistency: Transaction transforms database from one valid state to another satisfying all schema constraints",
+      "I - Isolation: Intermediate state of a transaction is invisible to other concurrent transactions (Isolation levels: Read Uncommitted, Read Committed, Repeatable Read, Serializable)",
+      "D - Durability: Once a transaction is committed, data persists permanently even after power loss (WAL/logging)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/ACID"
+  },
+  {
+    "id": "tech-solid-principles",
+    "keywords": [
+      "solid principles",
+      "what is solid in oop",
+      "solid principles explained",
+      "single responsibility principle",
+      "dependency inversion"
+    ],
+    "title": "SOLID Principles in Object-Oriented Software Design",
+    "category": "Technology",
+    "answer": "SOLID is an acronym for five design principles for maintainable, scalable software: S (Single Responsibility), O (Open/Closed), L (Liskov Substitution), I (Interface Segregation), and D (Dependency Inversion).",
+    "highlights": [
+      "S - Single Responsibility Principle (SRP): A class should have only one reason to change",
+      "O - Open/Closed Principle (OCP): Software entities should be open for extension but closed for modification",
+      "L - Liskov Substitution Principle (LSP): Subtypes must be substitutable for their base types without altering program correctness",
+      "I - Interface Segregation Principle (ISP): Many client-specific interfaces are better than one general-purpose interface",
+      "D - Dependency Inversion Principle (DIP): Depend upon abstractions (interfaces), not concretions"
+    ],
+    "url": "https://en.wikipedia.org/wiki/SOLID"
   }
 ]

@@ -1,0 +1,397 @@
+[
+  {
+    "id": "hist-indian-independence",
+    "keywords": [
+      "indian independence",
+      "india independence day",
+      "15 august 1947",
+      "tryst with destiny",
+      "when did india get freedom",
+      "swatantrata diwas"
+    ],
+    "title": "Indian Independence (15 August 1947)",
+    "category": "History",
+    "answer": "India achieved independence from British colonial rule on 15 August 1947, marking the end of nearly 200 years of the British Raj. Jawaharlal Nehru became the first Prime Minister of Independent India and delivered his famous 'Tryst with Destiny' speech at midnight.",
+    "highlights": [
+      "Date: 15 August 1947 (Midnight)",
+      "First Prime Minister: Pandit Jawaharlal Nehru ('Tryst with Destiny' speech)",
+      "Legislation: Indian Independence Act 1947 passed by UK Parliament",
+      "First Governor-General of Independent India: Lord Louis Mountbatten (followed by C. Rajagopalachari)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Independence_Day_(India)"
+  },
+  {
+    "id": "hist-indian-republic-day",
+    "keywords": [
+      "indian republic day",
+      "republic day of india",
+      "26 january 1950",
+      "constitution of india commencement",
+      "gantantra diwas"
+    ],
+    "title": "Indian Republic Day & Adoption of Constitution (26 January 1950)",
+    "category": "History",
+    "answer": "The Constitution of India came into legal effect on 26 January 1950, establishing India as a sovereign democratic republic and replacing the Government of India Act 1935. Dr. Rajendra Prasad took oath as the first President of India.",
+    "highlights": [
+      "Date: 26 January 1950 (Chosen to honor the 1930 Purna Swaraj declaration)",
+      "First President: Dr. Rajendra Prasad",
+      "Chief Architect of Constitution: Dr. B.R. Ambedkar (Chairman of Drafting Committee)",
+      "Significance: Replaced colonial constitutional framework with the world's longest written constitution"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Republic_Day_(India)"
+  },
+  {
+    "id": "hist-revolt-1857",
+    "keywords": [
+      "revolt of 1857",
+      "sepoy mutiny",
+      "first war of indian independence",
+      "1857 revolt",
+      "mangal pandey revolt"
+    ],
+    "title": "Revolt of 1857 — First War of Indian Independence",
+    "category": "History",
+    "answer": "The Revolt of 1857 began on 10 May 1857 in the garrison town of Meerut as a mutiny of sepoys of the British East India Company's army and quickly escalated into a widespread rebellion across northern and central India.",
+    "highlights": [
+      "Start Date: 10 May 1857 at Meerut (triggered earlier by Mangal Pandey at Barrackpore on 29 March 1857)",
+      "Nominal Leader: Mughal Emperor Bahadur Shah Zafar (proclaimed Shahenshah-e-Hindustan)",
+      "Key Leaders: Rani Lakshmibai of Jhansi, Tatya Tope, Kunwar Singh, Nana Saheb, Begum Hazrat Mahal",
+      "Outcome: Direct transfer of Indian administration from the East India Company to the British Crown via Government of India Act 1858"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Indian_Rebellion_of_1857"
+  },
+  {
+    "id": "hist-battle-of-plassey",
+    "keywords": [
+      "battle of plassey",
+      "plassey war",
+      "1757 plassey",
+      "robert clive plassey",
+      "siraj ud daulah"
+    ],
+    "title": "Battle of Plassey (23 June 1757)",
+    "category": "History",
+    "answer": "The Battle of Plassey was fought on 23 June 1757 at Palashi on the banks of the Bhagirathi River in Bengal. British East India Company troops led by Robert Clive decisively defeated the last independent Nawab of Bengal, Siraj-ud-Daulah, through the betrayal of Mir Jafar.",
+    "highlights": [
+      "Date: 23 June 1757 (Palashi, Bengal)",
+      "Belligerents: British East India Company (Robert Clive) vs Nawab of Bengal (Siraj-ud-Daulah) and French allies",
+      "Decisive Treason: Mir Jafar (commander of Nawab's army) defected in exchange for the Nawabship",
+      "Historical Impact: Established British East India Company political dominance and taxation hegemony in India"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Plassey"
+  },
+  {
+    "id": "hist-battle-of-buxar",
+    "keywords": [
+      "battle of buxar",
+      "1764 buxar",
+      "treaty of allahabad",
+      "diwani rights 1765"
+    ],
+    "title": "Battle of Buxar (22 October 1764)",
+    "category": "History",
+    "answer": "The Battle of Buxar was fought on 22 October 1764 near Buxar (Bihar). The British East India Company army led by Hector Munro defeated the combined forces of Mir Qasim (Nawab of Bengal), Shuja-ud-Daula (Nawab of Awadh), and Mughal Emperor Shah Alam II.",
+    "highlights": [
+      "Date: 22 October 1764 (Buxar, Bihar)",
+      "Result: Decisive British victory leading to the Treaty of Allahabad (1765)",
+      "Outcome: East India Company gained 'Diwani' rights (right to collect taxes directly across Bengal, Bihar, and Orissa)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Buxar"
+  },
+  {
+    "id": "hist-dandi-march",
+    "keywords": [
+      "dandi march",
+      "salt satyagraha",
+      "salt march",
+      "1930 dandi march",
+      "gandhi salt march"
+    ],
+    "title": "Dandi March (Salt Satyagraha) (12 March – 6 April 1930)",
+    "category": "History",
+    "answer": "The Dandi March was an act of nonviolent civil disobedience led by Mahatma Gandhi from 12 March to 6 April 1930. Gandhi and 78 followers marched 240 miles (390 km) from Sabarmati Ashram to the coastal village of Dandi (Gujarat) to produce salt in defiance of the British salt tax monopoly.",
+    "highlights": [
+      "Duration: 12 March 1930 to 6 April 1930 (24 days, ~240 miles / 390 km)",
+      "Route: Sabarmati Ashram (Ahmedabad) to Dandi seashore",
+      "Action: Gandhi broke the salt law by picking up a lump of natural salt from the beach on 6 April 1930",
+      "Impact: Triggered the nationwide Civil Disobedience Movement with over 60,000 Indians arrested"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Salt_March"
+  },
+  {
+    "id": "hist-quit-india",
+    "keywords": [
+      "quit india movement",
+      "bharat chhoro andolan",
+      "do or die speech",
+      "august kranti",
+      "1942 quit india"
+    ],
+    "title": "Quit India Movement (August Kranti) (8 August 1942)",
+    "category": "History",
+    "answer": "The Quit India Movement was launched at the Bombay session of the All India Congress Committee by Mahatma Gandhi on 8 August 1942 during World War II, demanding an immediate end to British rule in India under the clarion call 'Do or Die' (Karo ya Maro).",
+    "highlights": [
+      "Date: Launched 8 August 1942 at Gowalia Tank Maidan (August Kranti Maidan), Bombay",
+      "Iconic Slogan: 'Do or Die' (Karo ya Maro) and 'Quit India'",
+      "British Reaction: Arrested entire top Congress leadership including Gandhi, Nehru, and Patel within hours",
+      "Leadership in Underground Resistance: Aruna Asaf Ali, Jayaprakash Narayan, Ram Manohar Lohia, Usha Mehta"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Quit_India_Movement"
+  },
+  {
+    "id": "hist-jallianwala-bagh",
+    "keywords": [
+      "jallianwala bagh massacre",
+      "amritsar massacre 1919",
+      "general dyer massacre",
+      "13 april 1919"
+    ],
+    "title": "Jallianwala Bagh Massacre (13 April 1919)",
+    "category": "History",
+    "answer": "On 13 April 1919 (Baisakhi Day), British troops under the command of Colonel Reginald Dyer blocked the sole exit and opened unprovoked gunfire on a crowd of thousands of unarmed men, women, and children gathered at Jallianwala Bagh in Amritsar, Punjab.",
+    "highlights": [
+      "Date: 13 April 1919 (Amritsar, Punjab)",
+      "Casualties: Hundreds killed (over 1,000 estimated) and over 1,200 severely injured",
+      "Purpose of Gathering: Peaceful protest against the arrest of Dr. Saifuddin Kitchlew and Dr. Satyapal under the repressive Rowlatt Act",
+      "Reaction: Rabindranath Tagore renounced his British Knighthood in protest; Udham Singh later assassinated Michael O'Dwyer in London in 1940"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Jallianwala_Bagh_massacre"
+  },
+  {
+    "id": "hist-world-war-1",
+    "keywords": [
+      "world war 1",
+      "ww1",
+      "first world war",
+      "great war",
+      "1914 to 1918",
+      "treaty of versailles"
+    ],
+    "title": "World War I (The Great War) (1914 – 1918)",
+    "category": "History",
+    "answer": "World War I was a global military conflict originating in Europe that lasted from 28 July 1914 to 11 November 1918. It pitted the Allied Powers (UK, France, Russia, Italy, USA, Japan) against the Central Powers (Germany, Austria-Hungary, Ottoman Empire, Bulgaria).",
+    "highlights": [
+      "Span: 28 July 1914 – 11 November 1918 (Armistice of 11 November)",
+      "Trigger: Assassination of Archduke Franz Ferdinand of Austria in Sarajevo on 28 June 1914",
+      "Casualties: Over 20 million deaths (military and civilian) and 21 million wounded",
+      "Consequences: Collapse of four major empires (Russian, German, Austro-Hungarian, Ottoman) and League of Nations creation via 1919 Treaty of Versailles"
+    ],
+    "url": "https://en.wikipedia.org/wiki/World_War_I"
+  },
+  {
+    "id": "hist-world-war-2",
+    "keywords": [
+      "world war 2",
+      "ww2",
+      "second world war",
+      "1939 to 1945",
+      "hiroshima nagasaki war",
+      "holocaust ww2"
+    ],
+    "title": "World War II (1939 – 1945)",
+    "category": "History",
+    "answer": "World War II was the deadliest conflict in human history, lasting from 1 September 1939 to 2 September 1945. It involved more than 30 nations in two opposing military alliances: the Axis Powers (Germany, Japan, Italy) and the Allies (USA, Soviet Union, UK, China, France).",
+    "highlights": [
+      "Span: 1 September 1939 (German invasion of Poland) – 2 September 1945 (Japanese surrender aboard USS Missouri)",
+      "Casualties: Estimated 70–85 million fatalities (~3% of the 1940 world population)",
+      "Major Events: Holocaust, Battle of Stalingrad, D-Day Normandy landings (6 June 1944), Atomic bombings of Hiroshima and Nagasaki (August 1945)",
+      "Outcome: Allied victory, founding of the United Nations (UN), start of the Cold War between USA and USSR"
+    ],
+    "url": "https://en.wikipedia.org/wiki/World_War_II"
+  },
+  {
+    "id": "hist-berlin-wall",
+    "keywords": [
+      "fall of berlin wall",
+      "berlin wall fall date",
+      "9 november 1989",
+      "german reunification"
+    ],
+    "title": "Fall of the Berlin Wall (9 November 1989)",
+    "category": "History",
+    "answer": "The Berlin Wall fell on the night of 9 November 1989, marking the collapse of the Iron Curtain in Eastern Europe, leading directly to the reunification of Germany on 3 October 1990 and the eventual dissolution of the Soviet Union.",
+    "highlights": [
+      "Date of Fall: 9 November 1989",
+      "Wall Construction: Built by East Germany (GDR) in August 1961 to prevent emigration to West Berlin",
+      "Famous Speech: US President Ronald Reagan at Brandenburg Gate (1987): 'Mr. Gorbachev, tear down this wall!'",
+      "Significance: Symbol of the end of the Cold War and communist totalitarianism in Eastern Europe"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+  },
+  {
+    "id": "hist-moon-landing",
+    "keywords": [
+      "moon landing",
+      "apollo 11",
+      "first man on the moon",
+      "neil armstrong moon",
+      "20 july 1969",
+      "giant leap for mankind"
+    ],
+    "title": "Apollo 11 Moon Landing (20 July 1969)",
+    "category": "History",
+    "answer": "On 20 July 1969, American astronauts Neil Armstrong and Buzz Aldrin landed the Apollo 11 Lunar Module Eagle on the Moon. Armstrong became the first person to walk on the lunar surface, uttering the iconic phrase: 'That's one small step for man, one giant leap for mankind.'",
+    "highlights": [
+      "Landing Date: 20 July 1969 at 20:17 UTC (Mare Tranquillitatis / Sea of Tranquility)",
+      "Astronauts: Neil Armstrong (Commander), Buzz Aldrin (Lunar Module Pilot), Michael Collins (Command Module Pilot)",
+      "Spacecraft: Saturn V rocket launched from Kennedy Space Center, Florida",
+      "Significance: Fulfilled President John F. Kennedy's 1961 goal and won the Space Race for the United States"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Apollo_11"
+  },
+  {
+    "id": "hist-french-revolution",
+    "keywords": [
+      "french revolution",
+      "storming of the bastille",
+      "14 july 1789",
+      "liberty equality fraternity",
+      "french revolution year"
+    ],
+    "title": "French Revolution (1789 – 1799)",
+    "category": "History",
+    "answer": "The French Revolution was a period of radical social and political transformation in France that began with the Storming of the Bastille on 14 July 1789 and ended in 1799 with the rise of Napoleon Bonaparte. It abolished the feudal monarchy and proclaimed Liberty, Equality, and Fraternity.",
+    "highlights": [
+      "Key Date: 14 July 1789 (Storming of the Bastille — French National Day / Bastille Day)",
+      "Key Slogan: Liberté, égalité, fraternité (Liberty, Equality, Fraternity)",
+      "Landmark Document: Declaration of the Rights of Man and of the Citizen (August 1789)",
+      "Milestones: Execution of King Louis XVI and Marie Antoinette (1793), Reign of Terror, Rise of Napoleon"
+    ],
+    "url": "https://en.wikipedia.org/wiki/French_Revolution"
+  },
+  {
+    "id": "hist-american-independence",
+    "keywords": [
+      "american independence",
+      "us declaration of independence",
+      "4 july 1776",
+      "fourth of july",
+      "founding fathers usa"
+    ],
+    "title": "United States Declaration of Independence (4 July 1776)",
+    "category": "History",
+    "answer": "On 4 July 1776, the Second Continental Congress meeting in Philadelphia unanimously adopted the Declaration of Independence, severing the 13 American colonies' political ties to the Kingdom of Great Britain and founding the United States of America.",
+    "highlights": [
+      "Date: 4 July 1776 (Celebrated annually as US Independence Day / 4th of July)",
+      "Principal Author: Thomas Jefferson",
+      "Key Phrase: 'All men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.'",
+      "Commander-in-Chief: George Washington (first US President)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence"
+  },
+  {
+    "id": "hist-russian-revolution",
+    "keywords": [
+      "russian revolution",
+      "bolshevik revolution",
+      "october revolution 1917",
+      "vladimir lenin revolution",
+      "fall of romanov"
+    ],
+    "title": "Russian Revolution & Rise of the Bolsheviks (1917)",
+    "category": "History",
+    "answer": "The Russian Revolution of 1917 dismantled the Tsarist autocracy under Tsar Nicholas II and led to the rise of the Soviet Union (USSR). It consisted of the February Revolution (overthrowing the monarchy) and the October/Bolshevik Revolution led by Vladimir Lenin.",
+    "highlights": [
+      "Two Stages: February 1917 (Abdication of Tsar Nicholas II) and October/November 1917 (Bolshevik seizure of power)",
+      "Leader: Vladimir Lenin and Leon Trotsky (Bolshevik Party)",
+      "Outcome: Withdrawal of Russia from World War I (Treaty of Brest-Litovsk) and founding of the Soviet Union in 1922"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Russian_Revolution"
+  },
+  {
+    "id": "hist-fall-of-constantinople",
+    "keywords": [
+      "fall of constantinople",
+      "1453 constantinople",
+      "mehmed ii constantinople",
+      "end of byzantine empire"
+    ],
+    "title": "Fall of Constantinople (29 May 1453)",
+    "category": "History",
+    "answer": "The Fall of Constantinople occurred on 29 May 1453 when the Ottoman Empire, commanded by 21-year-old Sultan Mehmed II (Mehmed the Conqueror), captured the capital of the Byzantine (Eastern Roman) Empire.",
+    "highlights": [
+      "Date: 29 May 1453",
+      "Conqueror: Ottoman Sultan Mehmed II (Fatih)",
+      "Impact: Ended the Byzantine Empire (and the last remnant of the Roman Empire after 1,500 years)",
+      "Consequences: Cut European overland trade routes to Asia, triggering the Age of Discovery (Vasco da Gama, Columbus) and European Renaissance"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+  },
+  {
+    "id": "hist-kalinga-war",
+    "keywords": [
+      "kalinga war",
+      "ashoka kalinga",
+      "261 bce kalinga",
+      "emperor ashoka transformation"
+    ],
+    "title": "Kalinga War (c. 261 BCE) & Ashoka's Conversion to Buddhism",
+    "category": "History",
+    "answer": "The Kalinga War was fought c. 261 BCE between the Mauryan Empire under Emperor Ashoka the Great and the state of Kalinga (modern Odisha). The immense bloodshed and destruction filled Ashoka with deep remorse, prompting him to renounce warfare and embrace Buddhism and Ahimsa (nonviolence).",
+    "highlights": [
+      "Date: c. 261 BCE (Modern Odisha region)",
+      "Casualties: Over 100,000 dead and 150,000 displaced (described in Major Rock Edict XIII)",
+      "Historical Impact: Ashoka adopted Dhamma/Dharma, propagated Buddhism across Asia (sending emissaries to Sri Lanka, Greece, Egypt), and established the Lion Capital of Ashoka (India's national emblem)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Kalinga_War"
+  },
+  {
+    "id": "hist-first-battle-panipat",
+    "keywords": [
+      "first battle of panipat",
+      "1526 panipat",
+      "babur ibrahim lodi",
+      "foundation of mughal empire"
+    ],
+    "title": "First Battle of Panipat (21 April 1526)",
+    "category": "History",
+    "answer": "The First Battle of Panipat was fought on 21 April 1526 near Panipat (Haryana). Zahir-ud-din Babur defeated Ibrahim Lodi, the Sultan of Delhi, marking the end of the Delhi Sultanate (Lodi dynasty) and the foundation of the Mughal Empire in India.",
+    "highlights": [
+      "Date: 21 April 1526 (Panipat, Haryana)",
+      "Combatants: Babur (Timurid prince of Fergana) vs Ibrahim Lodi (Delhi Sultanate)",
+      "Military Innovation: First battle in Northern India to effectively deploy field gunpowder firearms and wheeled artillery (Tulghuma and Araba tactics)",
+      "Outcome: Established the Mughal Empire which ruled India for over three centuries"
+    ],
+    "url": "https://en.wikipedia.org/wiki/First_Battle_of_Panipat"
+  },
+  {
+    "id": "hist-united-nations",
+    "keywords": [
+      "formation of united nations",
+      "un foundation date",
+      "24 october 1945",
+      "un charter",
+      "united nations day"
+    ],
+    "title": "Founding of the United Nations (24 October 1945)",
+    "category": "History",
+    "answer": "The United Nations (UN) was officially founded on 24 October 1945 following the ratification of the UN Charter by the five permanent members of the Security Council (USA, USSR, UK, China, France) and a majority of other signatories to preserve international peace.",
+    "highlights": [
+      "Foundation Date: 24 October 1945 (Celebrated worldwide as United Nations Day)",
+      "Headquarters: New York City, USA (International territory)",
+      "Predecessor: League of Nations (dissolved after failing to prevent WWII)",
+      "Founding Members: 51 sovereign countries (expanded to 193 member states today)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/United_Nations"
+  },
+  {
+    "id": "hist-dissolution-ussr",
+    "keywords": [
+      "dissolution of soviet union",
+      "fall of ussr",
+      "26 december 1991",
+      "end of soviet union",
+      "gorbachev ussr"
+    ],
+    "title": "Dissolution of the Soviet Union (26 December 1991)",
+    "category": "History",
+    "answer": "The Soviet Union (USSR) was formally dissolved on 26 December 1991 by Declaration 142-H of the Supreme Soviet, ending 69 years of existence and officially concluding the Cold War. It gave rise to 15 independent post-Soviet states, with the Russian Federation succeeding its international status.",
+    "highlights": [
+      "Formal Dissolution: 26 December 1991 (Mikhail Gorbachev resigned as President on 25 December 1991)",
+      "Preceding Pacts: Belovezha Accords and Alma-Ata Protocol",
+      "15 Independent Republics: Russia, Ukraine, Belarus, Kazakhstan, Uzbekistan, Georgia, Azerbaijan, Armenia, Lithuania, Latvia, Estonia, Moldova, Kyrgyzstan, Tajikistan, Turkmenistan",
+      "Global Impact: Ended bipolar Cold War dynamics, leaving the United States as the world's sole superpower"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union"
+  }
+]
