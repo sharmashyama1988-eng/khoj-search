@@ -1,0 +1,142 @@
+﻿[
+  {
+    "id": "bio-modi",
+    "keywords": ["modi", "narendra modi", "pm modi", "modi age", "modi birth", "prime minister of india", "modi ji", "modi date of birth"],
+    "title": "Narendra Modi — Prime Minister of India",
+    "category": "Biography",
+    "answer": "Narendra Modi is 75 years old (born 17 September 1950 in Vadnagar, Gujarat). He has been serving as the 14th Prime Minister of India since May 2014.",
+    "highlights": [
+      "Current Age: 75 years old (Born 17 September 1950 in Vadnagar, Gujarat)",
+      "Office: 14th Prime Minister of India (2014 – Present)",
+      "Previous Office: Chief Minister of Gujarat (2001 – 2014)",
+      "Political Party: Bharatiya Janata Party (BJP)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Narendra_Modi"
+  },
+  {
+    "id": "bio-elon-musk",
+    "keywords": ["elon musk", "elon musk age", "musk age", "ceo of tesla", "owner of twitter", "owner of x", "spacex founder"],
+    "title": "Elon Musk — Tech Entrepreneur & Innovator",
+    "category": "Biography",
+    "answer": "Elon Musk is 55 years old (born June 28, 1971 in Pretoria, South Africa). He is the CEO of Tesla and SpaceX, founder of xAI and Neuralink, and owner/CTO of X (formerly Twitter).",
+    "highlights": [
+      "Current Age: 55 years old (Born June 28, 1971 in Pretoria, South Africa)",
+      "Companies: Tesla, SpaceX, xAI, Neuralink, The Boring Company, X",
+      "Net Worth: World's leading entrepreneur by enterprise valuation",
+      "Education: University of Pennsylvania (Physics and Economics)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Elon_Musk"
+  },
+  {
+    "id": "bio-virat-kohli",
+    "keywords": ["virat kohli", "virat kohli age", "kohli age", "king kohli", "virat birth", "virat runs", "virat centuries"],
+    "title": "Virat Kohli — Indian International Cricketer",
+    "category": "Biography",
+    "answer": "Virat Kohli is 37 years old (born 5 November 1988 in Delhi, India). He is an Indian international cricketer and former all-format captain of the Indian national cricket team.",
+    "highlights": [
+      "Current Age: 37 years old (Born 5 November 1988 in Delhi)",
+      "Role: Right-handed top-order batsman",
+      "Centuries: 80+ international centuries across Test, ODI, and T20I cricket",
+      "Major Honors: 2011 ICC Cricket World Cup, 2013 ICC Champions Trophy, 2024 ICC Men's T20 World Cup"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Virat_Kohli"
+  },
+  {
+    "id": "bio-shah-rukh-khan",
+    "keywords": ["shah rukh khan", "shahrukh khan", "srk", "srk age", "shahrukh age", "king khan", "king of bollywood"],
+    "title": "Shah Rukh Khan (SRK) — Actor & Film Producer",
+    "category": "Biography",
+    "answer": "Shah Rukh Khan (SRK) is 60 years old (born 2 November 1965 in New Delhi). Referred to in the media as the 'Baadshah of Bollywood' and 'King Khan', he has appeared in more than 90 films.",
+    "highlights": [
+      "Current Age: 60 years old (Born 2 November 1965 in New Delhi)",
+      "Production House: Red Chillies Entertainment",
+      "Padma Shri: Awarded in 2005 by the Government of India",
+      "Notable Works: DDLJ, Swades, Chak De! India, Jawan, Pathaan"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Shah_Rukh_Khan"
+  },
+  {
+    "id": "bio-ms-dhoni",
+    "keywords": ["ms dhoni", "dhoni", "dhoni age", "ms dhoni age", "mahendra singh dhoni", "captain cool", "dhoni trophies"],
+    "title": "MS Dhoni (Mahendra Singh Dhoni) — Cricket Legend",
+    "category": "Biography",
+    "answer": "MS Dhoni is 45 years old (born 7 July 1981 in Ranchi, Jharkhand). He is the legendary former captain of the Indian national cricket team who led India to 3 major ICC world titles.",
+    "highlights": [
+      "Current Age: 45 years old (Born 7 July 1981 in Ranchi)",
+      "ICC Trophies: 2007 T20 World Cup, 2011 ODI World Cup, 2013 Champions Trophy",
+      "IPL Team: Chennai Super Kings (CSK) — 5-time IPL Champion",
+      "Padma Bhushan: Awarded in 2018 by the Government of India"
+    ],
+    "url": "https://en.wikipedia.org/wiki/MS_Dhoni"
+  },
+  {
+    "id": "bio-donald-trump",
+    "keywords": ["donald trump", "trump", "trump age", "donald trump age", "president trump", "47th president"],
+    "title": "Donald Trump — President of the United States",
+    "category": "Biography",
+    "answer": "Donald Trump is 80 years old (born June 14, 1946 in Queens, New York City). He is an American politician, media personality, and businessman who serves as the 45th and 47th President of the United States.",
+    "highlights": [
+      "Current Age: 80 years old (Born June 14, 1946 in Queens, NY)",
+      "Offices: 45th President (2017–2021) and 47th President of the United States",
+      "Political Party: Republican Party",
+      "Business: The Trump Organization"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Donald_Trump"
+  },
+  {
+    "id": "bio-sundar-pichai",
+    "keywords": ["sundar pichai", "sundar pichai age", "ceo of google", "ceo of alphabet", "pichai age"],
+    "title": "Sundar Pichai — CEO of Alphabet & Google",
+    "category": "Biography",
+    "answer": "Sundar Pichai is 54 years old (born 10 June 1972 in Madurai, Tamil Nadu, India). He is an Indian-American business executive serving as the Chief Executive Officer (CEO) of Alphabet Inc. and Google.",
+    "highlights": [
+      "Current Age: 54 years old (Born 10 June 1972 in Madurai, Tamil Nadu)",
+      "Office: CEO of Google (since 2015) & Alphabet Inc. (since 2019)",
+      "Alma Mater: IIT Kharagpur (B.Tech), Stanford University (MS), Wharton School (MBA)",
+      "Padma Bhushan: Awarded in 2022 by the Government of India"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sundar_Pichai"
+  },
+  {
+    "id": "bio-satya-nadella",
+    "keywords": ["satya nadella", "satya nadella age", "ceo of microsoft", "chairman of microsoft", "nadella age"],
+    "title": "Satya Nadella — Chairman & CEO of Microsoft",
+    "category": "Biography",
+    "answer": "Satya Nadella is 59 years old (born 19 August 1967 in Hyderabad, India). He is an Indian-American business executive who has been the CEO of Microsoft since 2014 and Executive Chairman since 2021.",
+    "highlights": [
+      "Current Age: 59 years old (Born 19 August 1967 in Hyderabad, India)",
+      "Office: CEO and Chairman of Microsoft",
+      "Alma Mater: Manipal Institute of Technology (B.E.), University of Wisconsin–Milwaukee (MS), University of Chicago (MBA)",
+      "Transformation: Led Microsoft's massive growth in Azure Cloud and OpenAI partnership"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Satya_Nadella"
+  },
+  {
+    "id": "bio-apj-abdul-kalam",
+    "keywords": ["apj abdul kalam", "abdul kalam", "kalam age", "missile man of india", "11th president of india", "kalam birth", "kalam death"],
+    "title": "Dr. A.P.J. Abdul Kalam — 11th President of India & Missile Man",
+    "category": "Biography",
+    "answer": "Dr. A.P.J. Abdul Kalam (15 October 1931 – 27 July 2015) was an Indian aerospace scientist and statesman who served as the 11th President of India from 2002 to 2007. Known as the 'Missile Man of India'.",
+    "highlights": [
+      "Lifespan: 15 October 1931 – 27 July 2015 (Aged 83)",
+      "Known As: 'Missile Man of India' & 'People\'s President'",
+      "Major Projects: Integrated Guided Missile Development Programme (Agni and Prithvi missiles), Pokhran-II nuclear tests",
+      "Highest Civilian Honor: Bharat Ratna (1997)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam"
+  },
+  {
+    "id": "bio-albert-einstein",
+    "keywords": ["albert einstein", "einstein", "einstein theory", "theory of relativity", "einstein birth", "einstein nobel prize"],
+    "title": "Albert Einstein — Theoretical Physicist",
+    "category": "Biography",
+    "answer": "Albert Einstein (14 March 1879 – 18 April 1955) was a German-born theoretical physicist widely acknowledged as one of the greatest and most influential physicists of all time. Best known for the Theory of Relativity and E = mc².",
+    "highlights": [
+      "Lifespan: 14 March 1879 – 18 April 1955 (Aged 76)",
+      "Major Discoveries: General & Special Relativity, Photoelectric Effect, Mass-Energy Equivalence (E = mc²)",
+      "Nobel Prize: 1921 Nobel Prize in Physics (for discovery of the law of the photoelectric effect)",
+      "Born: Ulm, Kingdom of Württemberg, German Empire"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+  }
+]

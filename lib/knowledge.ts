@@ -1,4 +1,6 @@
-﻿export interface KnowledgeAnswer {
+import { searchKnowledgeDB } from '@/lib/knowledge_db';
+
+export interface KnowledgeAnswer {
   title: string;
   extract: string;
   keyPoints?: string[];
@@ -7,6 +9,18 @@
 }
 
 export function resolveInstantMathOrFact(query: string, lang = 'en'): KnowledgeAnswer | null {
+  // 0. Search local high-density /db knowledge store
+  const dbMatch = searchKnowledgeDB(query);
+  if (dbMatch) {
+    return {
+      title: dbMatch.title,
+      extract: dbMatch.answer,
+      keyPoints: dbMatch.highlights,
+      type: dbMatch.category.toLowerCase(),
+      source: `Khoj Knowledge DB (${dbMatch.category})`,
+    };
+  }
+
   const rawQ = query.trim().toLowerCase();
   const q = rawQ.replace(/[\s\-\_\(\)\^]+/g, ' ').trim();
 
