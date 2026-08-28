@@ -55,5 +55,81 @@
       "Safety Research: Alignment, interpretability, reinforcement learning from human feedback (RLHF)."
     ],
     "url": "https://en.wikipedia.org/wiki/Artificial_general_intelligence"
+  },
+  {
+    "id": "ai-transformer-architecture",
+    "keywords": [
+      "transformer architecture attention is all you need",
+      "multi head self attention mechanism",
+      "transformer encoder decoder",
+      "vaswani 2017 transformer"
+    ],
+    "title": "Transformer Neural Network Architecture (2017)",
+    "category": "Artificial Intelligence",
+    "answer": "The Transformer architecture (introduced by Vaswani et al. in \"Attention Is All You Need\", 2017) discarded recurrent and convolutional networks in favor of Multi-Head Self-Attention. Attention formula: Attention(Q,K,V) = softmax((Q K^T) / √d_k) V. It forms the computational foundation of modern LLMs including GPT, Claude, Gemini, BERT, and Llama.",
+    "highlights": [
+      "Self-Attention scales computation across all tokens simultaneously in O(N²) sequence complexity via parallel matrix multiplications",
+      "Positional Encoding (sinusoidal or RoPE - Rotary Position Embedding) injects sequence order information",
+      "Encoder-Decoder (original Vaswani, T5); Decoder-Only (GPT-4, Claude, Gemini, Llama); Encoder-Only (BERT)",
+      "Multi-Head Attention allows model to jointly attend to information from different representation subspaces at different positions"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)"
+  },
+  {
+    "id": "ai-llm-fine-tuning-lora-rlhf",
+    "keywords": [
+      "lora low rank adaptation llm",
+      "rlhf reinforcement learning from human feedback",
+      "dpo direct preference optimization",
+      "quantization gguf awq"
+    ],
+    "title": "LLM Fine-Tuning — LoRA, QLoRA, RLHF, and DPO",
+    "category": "Artificial Intelligence",
+    "answer": "Modern LLM training consists of Pre-training (predicting next token on trillions of words), Supervised Fine-Tuning (SFT on instruction pairs), and Alignment via RLHF (Reinforcement Learning from Human Feedback using PPO) or DPO (Direct Preference Optimization). LoRA (Low-Rank Adaptation) freezes base weights W₀ and trains low-rank decomposition matrices ΔW = B · A (rank r ≪ d), reducing trainable parameters by 99%+. QLoRA quantizes base model to 4-bit NormalFloat (NF4).",
+    "highlights": [
+      "Pre-training: Self-supervised causal language modeling minimizing cross-entropy loss",
+      "LoRA: W = W₀ + (α/r) · BA where B ∈ R^(d×r) and A ∈ R^(r×k) — requires <1% GPU VRAM for fine-tuning",
+      "RLHF: Trains reward model on human comparisons, then uses PPO (Proximal Policy Optimization) with KL-divergence penalty",
+      "DPO: Directly optimizes policy on preference pairs (chosen vs rejected) using closed-form implicit reward, eliminating separate reward model"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Large_language_model"
+  },
+  {
+    "id": "ai-diffusion-models-image-generation",
+    "keywords": [
+      "diffusion models stable diffusion dall-e",
+      "forward and reverse diffusion process score based generative modeling",
+      "classifier free guidance u-net noise predictor",
+      "text to image generative ai"
+    ],
+    "title": "Diffusion Models & Latent Diffusion Architecture",
+    "category": "Artificial Intelligence",
+    "answer": "Diffusion Models (DDPM, Score-based SDEs, Stable Diffusion) generate high-fidelity images, audio, and video via a two-stage process: (1) Forward Process adds Gaussian noise incrementally to data until it becomes pure isotropic Gaussian noise, (2) Reverse Process trains a U-Net / Diffusion Transformer (DiT) with cross-attention to iteratively predict and remove noise conditioned on text prompts. Latent Diffusion Models (LDMs) run the diffusion process in compressed latent space using a VQ-VAE / autoencoder, reducing compute costs by orders of magnitude.",
+    "highlights": [
+      "Forward SDE / Markov Chain: q(x_t | x_{t-1}) = N(x_t; √(1 - β_t) x_{t-1}, β_t I)",
+      "Reverse Denoising: Trained U-Net / DiT predicts added noise ε_θ(x_t, t, c) parameterized by timestep t and text conditioning c",
+      "Classifier-Free Guidance (CFG): Linearly extrapolates conditioned prediction away from unconditioned prediction: ε_guided = ε_uncond + w · (ε_cond - ε_uncond)",
+      "Powers state-of-the-art generators: Midjourney, Stable Diffusion, DALL-E 3, Sora video generator, Imagen"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Diffusion_model"
+  },
+  {
+    "id": "ai-reinforcement-learning-ppo-mcts",
+    "keywords": [
+      "reinforcement learning ppo proximal policy optimization",
+      "monte carlo tree search mcts alphago",
+      "markov decision process mdp bellman equation",
+      "q learning policy gradient"
+    ],
+    "title": "Reinforcement Learning — Bellman Equation, PPO & MCTS",
+    "category": "Artificial Intelligence",
+    "answer": "Reinforcement Learning (RL) trains agents to maximize cumulative rewards in a Markov Decision Process (MDP: S, A, P, R, γ) via the Bellman Equation: V(s) = max_a [R(s,a) + γ Σ P(s'|s,a) V(s')]. Proximal Policy Optimization (PPO, Schulman 2017) stabilizes policy gradient updates using a clipped surrogate objective to prevent destructively large policy changes. Monte Carlo Tree Search (MCTS) combined with deep neural networks enabled AlphaGo to defeat world champions in Go.",
+    "highlights": [
+      "PPO Clipped Objective: L_CLIP(θ) = E [ min( r_t(θ) A_t, clip(r_t(θ), 1 - ε, 1 + ε) A_t ) ] where r_t(θ) = π_θ(a_t|s_t) / π_old(a_t|s_t)",
+      "Actor-Critic Architecture: Actor updates action policy π(a|s); Critic estimates state-value function V(s) to compute advantage A(s,a) = Q(s,a) - V(s)",
+      "MCTS 4 Steps: (1) Selection (UCB1 tree traversal), (2) Expansion, (3) Simulation / Evaluation (neural network rollout), (4) Backpropagation",
+      "Foundation of AlphaGo, AlphaZero, OpenAI o1/o3 reasoning models, and LLM RLHF alignment"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Reinforcement_learning"
   }
 ]

@@ -12,6 +12,18 @@ import techProgramming from '../db/tech_programming.json';
 import history from '../db/history.json';
 import sports from '../db/sports.json';
 import inventions from '../db/inventions.json';
+import ncertClass6_10 from '../db/ncert_class6_10.json';
+import ncertClass11_12 from '../db/ncert_class11_12.json';
+import generalKnowledge from '../db/general_knowledge.json';
+import worldGeographyAdv from '../db/world_geography_advanced.json';
+import chemistryAdv from '../db/chemistry_advanced.json';
+import mathematicsAdv from '../db/mathematics_advanced.json';
+import currentAffairsEvergreen from '../db/current_affairs_evergreen.json';
+import languagesLiterature from '../db/languages_literature.json';
+import computerScienceAdv from '../db/computer_science_advanced.json';
+import healthMedicine from '../db/health_medicine.json';
+import philosophyEthics from '../db/philosophy_ethics.json';
+import artCultureIndia from '../db/art_culture_india.json';
 
 export interface KnowledgeDBEntry {
   id: string;
@@ -24,7 +36,7 @@ export interface KnowledgeDBEntry {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Unified High-Density Knowledge Database (/db) - 250+ Verified Entries
+// Unified Universal Knowledge Database (/db) - 440+ Verified High-Density Entries
 // ─────────────────────────────────────────────────────────────────────────────
 export const ALL_ENTRIES: KnowledgeDBEntry[] = [
   ...(biographies as unknown as KnowledgeDBEntry[]),
@@ -41,6 +53,18 @@ export const ALL_ENTRIES: KnowledgeDBEntry[] = [
   ...(history as unknown as KnowledgeDBEntry[]),
   ...(sports as unknown as KnowledgeDBEntry[]),
   ...(inventions as unknown as KnowledgeDBEntry[]),
+  ...(ncertClass6_10 as unknown as KnowledgeDBEntry[]),
+  ...(ncertClass11_12 as unknown as KnowledgeDBEntry[]),
+  ...(generalKnowledge as unknown as KnowledgeDBEntry[]),
+  ...(worldGeographyAdv as unknown as KnowledgeDBEntry[]),
+  ...(chemistryAdv as unknown as KnowledgeDBEntry[]),
+  ...(mathematicsAdv as unknown as KnowledgeDBEntry[]),
+  ...(currentAffairsEvergreen as unknown as KnowledgeDBEntry[]),
+  ...(languagesLiterature as unknown as KnowledgeDBEntry[]),
+  ...(computerScienceAdv as unknown as KnowledgeDBEntry[]),
+  ...(healthMedicine as unknown as KnowledgeDBEntry[]),
+  ...(philosophyEthics as unknown as KnowledgeDBEntry[]),
+  ...(artCultureIndia as unknown as KnowledgeDBEntry[]),
 ];
 
 function tokenize(text: string): string[] {
@@ -69,45 +93,53 @@ export function searchKnowledgeDB(query: string): KnowledgeDBEntry | null {
   for (const entry of ALL_ENTRIES) {
     let score = 0;
 
-    // 1. Exact or Substring Keyword Match (+700 / +450 / +350 points)
+    // 1. Exact or Phrase Keyword Match
+    let hasExactKeyword = false;
     for (const kw of entry.keywords) {
       const kwClean = kw.toLowerCase().trim();
       if (rawClean === kwClean) {
-        score += 700;
+        score += 1000;
+        hasExactKeyword = true;
         break;
-      } else if (rawClean.includes(kwClean) || kwClean.includes(rawClean)) {
-        score += 450;
+      } else if (kwClean.length >= 4 && rawClean.includes(kwClean)) {
+        // Query fully contains this specific keyword phrase
+        score += Math.max(score, 400 + kwClean.length * 15);
+      } else if (rawClean.length >= 4 && kwClean.includes(rawClean)) {
+        // Keyword fully contains user query
+        score += Math.max(score, 300 + rawClean.length * 10);
       }
     }
 
-    // 2. Token Overlap Score
+    // 2. Full Token Overlap Score
     const kwTokens = entry.keywords.flatMap(tokenize);
-    const kwSet = new Set(kwTokens);
-    let matchedTokens = 0;
+    const titleTokens = tokenize(entry.title);
+    const combinedTokens = new Set([...kwTokens, ...titleTokens]);
 
+    let matchedTokens = 0;
     queryTokens.forEach((t) => {
-      if (kwSet.has(t)) matchedTokens++;
+      if (combinedTokens.has(t)) matchedTokens++;
     });
 
     const tokenRatio = matchedTokens / queryTokens.length;
-    if (tokenRatio >= 0.75) {
-      score += Math.round(tokenRatio * 250);
+    if (tokenRatio === 1.0) {
+      score += 450;
+    } else if (tokenRatio >= 0.75) {
+      score += 250;
     } else if (tokenRatio >= 0.5) {
-      score += Math.round(tokenRatio * 150);
+      score += 120;
     }
 
-    // 3. Title Token Match
-    const titleTokens = tokenize(entry.title);
+    // 3. Title Specific Token Match Bonus
     const titleSet = new Set(titleTokens);
     let titleMatches = 0;
     queryTokens.forEach((t) => {
       if (titleSet.has(t)) titleMatches++;
     });
     if (titleMatches > 0) {
-      score += titleMatches * 40;
+      score += titleMatches * 50;
     }
 
-    if (score > highestScore && score >= 200) {
+    if (score > highestScore && score >= 220) {
       highestScore = score;
       bestMatch = entry;
     }
@@ -115,3 +147,16 @@ export function searchKnowledgeDB(query: string): KnowledgeDBEntry | null {
 
   return bestMatch;
 }
+
+export function getAllEntriesCount(): number {
+  return ALL_ENTRIES.length;
+}
+
+export function getEntriesByCategory(): Record<string, number> {
+  const counts: Record<string, number> = {};
+  for (const entry of ALL_ENTRIES) {
+    counts[entry.category] = (counts[entry.category] || 0) + 1;
+  }
+  return counts;
+}
+

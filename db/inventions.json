@@ -398,5 +398,43 @@
       "Global Spread: Transmitted to the Islamic world by Al-Khwarizmi and into Europe by Fibonacci"
     ],
     "url": "https://en.wikipedia.org/wiki/0"
+  },
+  {
+    "id": "inv-transistor-point-contact-bipolar",
+    "keywords": [
+      "who invented transistor shockley bardeen brattain",
+      "bell labs 1947 transistor invention",
+      "point contact transistor silicon revolution",
+      "nobel prize physics 1956 transistor"
+    ],
+    "title": "The Transistor (1947) — Foundation of Modern Electronics",
+    "category": "Inventions",
+    "answer": "The Transistor was invented in December 1947 at Bell Labs by John Bardeen, Walter Brattain, and William Shockley, earning them the 1956 Nobel Prize in Physics. Replacing bulky, fragile, power-hungry vacuum tubes, the solid-state semiconductor transistor amplifies electrical signals and acts as a binary electronic switch, making modern computers, smartphones, microprocessors, and the digital information age possible.",
+    "highlights": [
+      "Invented at Bell Telephone Laboratories (Murray Hill, New Jersey) on 23 December 1947 (Point-contact transistor using germanium crystal)",
+      "Shockley later developed the Bipolar Junction Transistor (BJT) and founded Shockley Semiconductor in Mountain View, spawning Silicon Valley",
+      "Integrated Circuit (IC): Invented independently by Jack Kilby (Texas Instruments, 1958) and Robert Noyce (Fairchild Semiconductor, 1959)",
+      "Moore's Law (Gordon Moore, 1965): Number of transistors on a microchip doubles roughly every two years; modern chips (e.g. Apple M-series, Nvidia H100/Blackwell) pack over 100 to 200 billion transistors on a single silicon die"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Transistor"
+  },
+  {
+    "id": "inv-optical-fiber-narinder-singh-kapany",
+    "keywords": [
+      "father of fiber optics narinder singh kapany",
+      "optical fiber total internal reflection",
+      "high speed internet submarine cables",
+      "laser optical communication"
+    ],
+    "title": "Fiber Optics & High-Speed Optical Communications",
+    "category": "Inventions",
+    "answer": "Dr. Narinder Singh Kapany (31 October 1926 – 4 December 2020), an Indian-American physicist, is widely acknowledged as the \"Father of Fiber Optics\", having coined the term in a 1960 Scientific American article and demonstrated high-quality image transmission through flexible glass fibers at Imperial College London in 1953. Optical fibers transmit digital information as light pulses via Total Internal Reflection (TIR) with minimal attenuation, powering over 99% of global internet traffic across undersea submarine fiber cables.",
+    "highlights": [
+      "Dr. Narinder Singh Kapany: Born in Moga, Punjab; awarded Padma Vibhushan (posthumous) in 2021 for pioneering fiber optics",
+      "Physics Principle: Total Internal Reflection occurs when light in dense core (higher refractive index n₁) strikes cladding (lower n₂) at angle exceeding Critical Angle: θ_c = arcsin(n₂ / n₁)",
+      "Core diameter of Single-Mode Fiber (SMF) is tiny (~9 μm), carrying laser signals at 1550 nm wavelength over hundreds of kilometers without repeaters",
+      "Submarine optical fiber cables cross all oceans carrying petabits of data per second worldwide"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Optical_fiber"
   }
 ]

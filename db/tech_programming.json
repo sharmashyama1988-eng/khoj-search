@@ -423,5 +423,765 @@
       "D - Dependency Inversion Principle (DIP): Depend upon abstractions (interfaces), not concretions"
     ],
     "url": "https://en.wikipedia.org/wiki/SOLID"
+  },
+  {
+    "id": "tech-linux-kernel-operating-system",
+    "keywords": [
+      "linux kernel architecture linus torvalds",
+      "monolithic vs microkernel os",
+      "posix standard gnu linux",
+      "process management memory management vfs"
+    ],
+    "title": "Linux Kernel Architecture & Operating System Internals",
+    "category": "Technology",
+    "answer": "The Linux Kernel (created by Linus Torvalds in 1991) is a free, open-source, POSIX-compliant, monolithic operating system kernel with modular runtime loadable kernel modules (LKMs). It directly manages hardware resources via Process Management (CFS - Completely Fair Scheduler), Memory Management (Virtual memory with demand paging), Virtual File System (VFS: ext4, btrfs, ZFS), Network Stack (Netfilter / iptables / eBPF), and Device Drivers. It powers 100% of the world's top 500 supercomputers, Android devices, cloud servers, and IoT systems.",
+    "highlights": [
+      "Created by Linus Torvalds as a student in Helsinki, Finland; announced on comp.os.minix newsgroup on 25 August 1991",
+      "Monolithic with dynamically Loadable Kernel Modules (`modprobe`, `insmod`, `lsmod`)",
+      "Virtual File System (VFS): Abstract layer unifying all storage filesystems under a single hierarchical tree rooted at `/` (\"Everything is a file\" philosophy)",
+      "eBPF (Extended Berkeley Packet Filter): Allows running sandboxed programmable bytecode inside the Linux kernel at native speed for tracing, observability, and networking security",
+      "Powers the entire modern cloud infrastructure (AWS, Google Cloud, Azure, Kubernetes, Docker)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "id": "tech-linux-cmd-ls",
+    "keywords": [
+      "ls command linux",
+      "how to use ls command",
+      "ls options linux",
+      "what is ls command",
+      "linux ls command syntax"
+    ],
+    "title": "ls Command (Linux / Unix) — List directory contents",
+    "category": "Technology",
+    "answer": "The `ls` command in Linux is used to list directory contents. Options: -l (long listing with permissions/owner/size), -a (show hidden files starting with .), -h (human readable sizes), -R (recursive), -t (sort by modification time).",
+    "highlights": [
+      "Command: ls",
+      "Purpose: List directory contents",
+      "Syntax & Options: Options: -l (long listing with permissions/owner/size), -a (show hidden files starting with .), -h (human readable sizes), -R (recursive), -t (sort by modification time)",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/ls.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-cd",
+    "keywords": [
+      "cd command linux",
+      "how to use cd command",
+      "cd options linux",
+      "what is cd command",
+      "linux cd command syntax"
+    ],
+    "title": "cd Command (Linux / Unix) — Change working directory",
+    "category": "Technology",
+    "answer": "The `cd` command in Linux is used to change working directory. Usage: cd ~ (home), cd .. (parent directory), cd - (previous directory), cd / (root directory).",
+    "highlights": [
+      "Command: cd",
+      "Purpose: Change working directory",
+      "Syntax & Options: Usage: cd ~ (home), cd .. (parent directory), cd - (previous directory), cd / (root directory)",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/cd.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-pwd",
+    "keywords": [
+      "pwd command linux",
+      "how to use pwd command",
+      "pwd options linux",
+      "what is pwd command",
+      "linux pwd command syntax"
+    ],
+    "title": "pwd Command (Linux / Unix) — Print working directory",
+    "category": "Technology",
+    "answer": "The `pwd` command in Linux is used to print working directory. Displays absolute full pathname of current directory from root /.",
+    "highlights": [
+      "Command: pwd",
+      "Purpose: Print working directory",
+      "Syntax & Options: Displays absolute full pathname of current directory from root /",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/pwd.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-mkdir",
+    "keywords": [
+      "mkdir command linux",
+      "how to use mkdir command",
+      "mkdir options linux",
+      "what is mkdir command",
+      "linux mkdir command syntax"
+    ],
+    "title": "mkdir Command (Linux / Unix) — Make directory",
+    "category": "Technology",
+    "answer": "The `mkdir` command in Linux is used to make directory. Options: -p (create parent directories without error if they already exist, e.g. mkdir -p a/b/c).",
+    "highlights": [
+      "Command: mkdir",
+      "Purpose: Make directory",
+      "Syntax & Options: Options: -p (create parent directories without error if they already exist, e.g. mkdir -p a/b/c)",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/mkdir.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-rm",
+    "keywords": [
+      "rm command linux",
+      "how to use rm command",
+      "rm options linux",
+      "what is rm command",
+      "linux rm command syntax"
+    ],
+    "title": "rm Command (Linux / Unix) — Remove files or directories",
+    "category": "Technology",
+    "answer": "The `rm` command in Linux is used to remove files or directories. Options: -r / -R (recursive for folders), -f (force without prompt), -rf (force recursive removal).",
+    "highlights": [
+      "Command: rm",
+      "Purpose: Remove files or directories",
+      "Syntax & Options: Options: -r / -R (recursive for folders), -f (force without prompt), -rf (force recursive removal)",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/rm.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-cp",
+    "keywords": [
+      "cp command linux",
+      "how to use cp command",
+      "cp options linux",
+      "what is cp command",
+      "linux cp command syntax"
+    ],
+    "title": "cp Command (Linux / Unix) — Copy files and directories",
+    "category": "Technology",
+    "answer": "The `cp` command in Linux is used to copy files and directories. Options: -r (recursive for directories), -p (preserve file attributes/timestamps), -v (verbose).",
+    "highlights": [
+      "Command: cp",
+      "Purpose: Copy files and directories",
+      "Syntax & Options: Options: -r (recursive for directories), -p (preserve file attributes/timestamps), -v (verbose)",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/cp.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-mv",
+    "keywords": [
+      "mv command linux",
+      "how to use mv command",
+      "mv options linux",
+      "what is mv command",
+      "linux mv command syntax"
+    ],
+    "title": "mv Command (Linux / Unix) — Move or rename files and directories",
+    "category": "Technology",
+    "answer": "The `mv` command in Linux is used to move or rename files and directories. Usage: mv old_name new_name (rename) or mv file.txt /target/dir/ (move).",
+    "highlights": [
+      "Command: mv",
+      "Purpose: Move or rename files and directories",
+      "Syntax & Options: Usage: mv old_name new_name (rename) or mv file.txt /target/dir/ (move)",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/mv.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-touch",
+    "keywords": [
+      "touch command linux",
+      "how to use touch command",
+      "touch options linux",
+      "what is touch command",
+      "linux touch command syntax"
+    ],
+    "title": "touch Command (Linux / Unix) — Create empty file or update timestamps",
+    "category": "Technology",
+    "answer": "The `touch` command in Linux is used to create empty file or update timestamps. Creates new 0-byte file if non-existent, or updates access/modification time to current timestamp.",
+    "highlights": [
+      "Command: touch",
+      "Purpose: Create empty file or update timestamps",
+      "Syntax & Options: Creates new 0-byte file if non-existent, or updates access/modification time to current timestamp",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/touch.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-cat",
+    "keywords": [
+      "cat command linux",
+      "how to use cat command",
+      "cat options linux",
+      "what is cat command",
+      "linux cat command syntax"
+    ],
+    "title": "cat Command (Linux / Unix) — Concatenate and display file content",
+    "category": "Technology",
+    "answer": "The `cat` command in Linux is used to concatenate and display file content. Usage: cat file.txt; cat f1.txt f2.txt > combined.txt; -n (show line numbers).",
+    "highlights": [
+      "Command: cat",
+      "Purpose: Concatenate and display file content",
+      "Syntax & Options: Usage: cat file.txt; cat f1.txt f2.txt > combined.txt; -n (show line numbers)",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/cat.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-grep",
+    "keywords": [
+      "grep command linux",
+      "how to use grep command",
+      "grep options linux",
+      "what is grep command",
+      "linux grep command syntax"
+    ],
+    "title": "grep Command (Linux / Unix) — Global regular expression print / Search text pattern",
+    "category": "Technology",
+    "answer": "The `grep` command in Linux is used to global regular expression print / search text pattern. Options: -i (case-insensitive), -r / -R (recursive), -n (show line number), -v (invert match), -E (extended regex), -c (count matches).",
+    "highlights": [
+      "Command: grep",
+      "Purpose: Global regular expression print / Search text pattern",
+      "Syntax & Options: Options: -i (case-insensitive), -r / -R (recursive), -n (show line number), -v (invert match), -E (extended regex), -c (count matches)",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/grep.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-find",
+    "keywords": [
+      "find command linux",
+      "how to use find command",
+      "find options linux",
+      "what is find command",
+      "linux find command syntax"
+    ],
+    "title": "find Command (Linux / Unix) — Search for files in a directory hierarchy",
+    "category": "Technology",
+    "answer": "The `find` command in Linux is used to search for files in a directory hierarchy. Usage: find /path -name '*.js' -type f; find . -mtime -7 (modified in last 7 days); find . -size +100M.",
+    "highlights": [
+      "Command: find",
+      "Purpose: Search for files in a directory hierarchy",
+      "Syntax & Options: Usage: find /path -name '*.js' -type f; find . -mtime -7 (modified in last 7 days); find . -size +100M",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/find.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-awk",
+    "keywords": [
+      "awk command linux",
+      "how to use awk command",
+      "awk options linux",
+      "what is awk command",
+      "linux awk command syntax"
+    ],
+    "title": "awk Command (Linux / Unix) — Pattern scanning and text processing language",
+    "category": "Technology",
+    "answer": "The `awk` command in Linux is used to pattern scanning and text processing language. Usage: awk '{print $1, $3}' file.txt (print columns 1 and 3); awk -F',' '{sum += $2} END {print sum}' (sum CSV column).",
+    "highlights": [
+      "Command: awk",
+      "Purpose: Pattern scanning and text processing language",
+      "Syntax & Options: Usage: awk '{print $1, $3}' file.txt (print columns 1 and 3); awk -F',' '{sum += $2} END {print sum}' (sum CSV column)",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/awk.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-sed",
+    "keywords": [
+      "sed command linux",
+      "how to use sed command",
+      "sed options linux",
+      "what is sed command",
+      "linux sed command syntax"
+    ],
+    "title": "sed Command (Linux / Unix) — Stream editor for filtering and transforming text",
+    "category": "Technology",
+    "answer": "The `sed` command in Linux is used to stream editor for filtering and transforming text. Usage: sed 's/old_text/new_text/g' file.txt (replace all occurrences globally); sed -i (in-place edit).",
+    "highlights": [
+      "Command: sed",
+      "Purpose: Stream editor for filtering and transforming text",
+      "Syntax & Options: Usage: sed 's/old_text/new_text/g' file.txt (replace all occurrences globally); sed -i (in-place edit)",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/sed.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-tar",
+    "keywords": [
+      "tar command linux",
+      "how to use tar command",
+      "tar options linux",
+      "what is tar command",
+      "linux tar command syntax"
+    ],
+    "title": "tar Command (Linux / Unix) — Tape archive utility for tarballs",
+    "category": "Technology",
+    "answer": "The `tar` command in Linux is used to tape archive utility for tarballs. Usage: tar -czvf archive.tar.gz /folder (create compressed); tar -xzvf archive.tar.gz (extract); tar -tvf (list contents).",
+    "highlights": [
+      "Command: tar",
+      "Purpose: Tape archive utility for tarballs",
+      "Syntax & Options: Usage: tar -czvf archive.tar.gz /folder (create compressed); tar -xzvf archive.tar.gz (extract); tar -tvf (list contents)",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/tar.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-chmod",
+    "keywords": [
+      "chmod command linux",
+      "how to use chmod command",
+      "chmod options linux",
+      "what is chmod command",
+      "linux chmod command syntax"
+    ],
+    "title": "chmod Command (Linux / Unix) — Change file access permissions",
+    "category": "Technology",
+    "answer": "The `chmod` command in Linux is used to change file access permissions. Usage: chmod 755 script.sh (rwxr-xr-x); chmod +x file (make executable); chmod -R (recursive); Octal: 4=Read, 2=Write, 1=Execute.",
+    "highlights": [
+      "Command: chmod",
+      "Purpose: Change file access permissions",
+      "Syntax & Options: Usage: chmod 755 script.sh (rwxr-xr-x); chmod +x file (make executable); chmod -R (recursive); Octal: 4=Read, 2=Write, 1=Execute",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/chmod.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-chown",
+    "keywords": [
+      "chown command linux",
+      "how to use chown command",
+      "chown options linux",
+      "what is chown command",
+      "linux chown command syntax"
+    ],
+    "title": "chown Command (Linux / Unix) — Change file owner and group",
+    "category": "Technology",
+    "answer": "The `chown` command in Linux is used to change file owner and group. Usage: chown user:group file.txt; chown -R www-data:www-data /var/www/html (recursive web server ownership).",
+    "highlights": [
+      "Command: chown",
+      "Purpose: Change file owner and group",
+      "Syntax & Options: Usage: chown user:group file.txt; chown -R www-data:www-data /var/www/html (recursive web server ownership)",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/chown.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-curl",
+    "keywords": [
+      "curl command linux",
+      "how to use curl command",
+      "curl options linux",
+      "what is curl command",
+      "linux curl command syntax"
+    ],
+    "title": "curl Command (Linux / Unix) — Command-line tool to transfer data with URLs",
+    "category": "Technology",
+    "answer": "The `curl` command in Linux is used to command-line tool to transfer data with urls. Usage: curl -X POST https://api.com/v1 -H 'Content-Type: application/json' -d '{\"key\":\"val\"}' -o out.json; -I (fetch headers only); -L (follow redirects).",
+    "highlights": [
+      "Command: curl",
+      "Purpose: Command-line tool to transfer data with URLs",
+      "Syntax & Options: Usage: curl -X POST https://api.com/v1 -H 'Content-Type: application/json' -d '{\"key\":\"val\"}' -o out.json; -I (fetch headers only); -L (follow redirects)",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/curl.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-wget",
+    "keywords": [
+      "wget command linux",
+      "how to use wget command",
+      "wget options linux",
+      "what is wget command",
+      "linux wget command syntax"
+    ],
+    "title": "wget Command (Linux / Unix) — Non-interactive network downloader",
+    "category": "Technology",
+    "answer": "The `wget` command in Linux is used to non-interactive network downloader. Usage: wget -c URL (resume broken download); wget -r (recursive website mirroring); wget -O custom_name URL.",
+    "highlights": [
+      "Command: wget",
+      "Purpose: Non-interactive network downloader",
+      "Syntax & Options: Usage: wget -c URL (resume broken download); wget -r (recursive website mirroring); wget -O custom_name URL",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/wget.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-ssh",
+    "keywords": [
+      "ssh command linux",
+      "how to use ssh command",
+      "ssh options linux",
+      "what is ssh command",
+      "linux ssh command syntax"
+    ],
+    "title": "ssh Command (Linux / Unix) — Secure Shell remote login client",
+    "category": "Technology",
+    "answer": "The `ssh` command in Linux is used to secure shell remote login client. Usage: ssh -i key.pem user@hostname -p 22; ssh-copy-id user@host (copy public key for passwordless auth).",
+    "highlights": [
+      "Command: ssh",
+      "Purpose: Secure Shell remote login client",
+      "Syntax & Options: Usage: ssh -i key.pem user@hostname -p 22; ssh-copy-id user@host (copy public key for passwordless auth)",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/ssh.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-scp",
+    "keywords": [
+      "scp command linux",
+      "how to use scp command",
+      "scp options linux",
+      "what is scp command",
+      "linux scp command syntax"
+    ],
+    "title": "scp Command (Linux / Unix) — Secure copy file over SSH",
+    "category": "Technology",
+    "answer": "The `scp` command in Linux is used to secure copy file over ssh. Usage: scp -i key.pem file.txt user@host:/remote/path/; scp -r /local/dir user@host:/remote/dir.",
+    "highlights": [
+      "Command: scp",
+      "Purpose: Secure copy file over SSH",
+      "Syntax & Options: Usage: scp -i key.pem file.txt user@host:/remote/path/; scp -r /local/dir user@host:/remote/dir",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/scp.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-rsync",
+    "keywords": [
+      "rsync command linux",
+      "how to use rsync command",
+      "rsync options linux",
+      "what is rsync command",
+      "linux rsync command syntax"
+    ],
+    "title": "rsync Command (Linux / Unix) — Fast, versatile remote file-copying and sync tool",
+    "category": "Technology",
+    "answer": "The `rsync` command in Linux is used to fast, versatile remote file-copying and sync tool. Usage: rsync -avz --progress /source/ user@host:/dest/ (-a archive, -v verbose, -z compression); delta-transfer sends only modified bytes.",
+    "highlights": [
+      "Command: rsync",
+      "Purpose: Fast, versatile remote file-copying and sync tool",
+      "Syntax & Options: Usage: rsync -avz --progress /source/ user@host:/dest/ (-a archive, -v verbose, -z compression); delta-transfer sends only modified bytes",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/rsync.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-top---htop",
+    "keywords": [
+      "top / htop command linux",
+      "how to use top / htop command",
+      "top / htop options linux",
+      "what is top / htop command",
+      "linux top / htop command syntax"
+    ],
+    "title": "top / htop Command (Linux / Unix) — Interactive process viewer and system resource monitor",
+    "category": "Technology",
+    "answer": "The `top / htop` command in Linux is used to interactive process viewer and system resource monitor. Displays real-time CPU usage per core, RAM, load averages (1/5/15 min), running tasks, and thread tree.",
+    "highlights": [
+      "Command: top / htop",
+      "Purpose: Interactive process viewer and system resource monitor",
+      "Syntax & Options: Displays real-time CPU usage per core, RAM, load averages (1/5/15 min), running tasks, and thread tree",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/top.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-ps",
+    "keywords": [
+      "ps command linux",
+      "how to use ps command",
+      "ps options linux",
+      "what is ps command",
+      "linux ps command syntax"
+    ],
+    "title": "ps Command (Linux / Unix) — Report snapshot of current processes",
+    "category": "Technology",
+    "answer": "The `ps` command in Linux is used to report snapshot of current processes. Usage: ps aux (all processes BSD style); ps -ef (standard full listing); ps aux | grep node.",
+    "highlights": [
+      "Command: ps",
+      "Purpose: Report snapshot of current processes",
+      "Syntax & Options: Usage: ps aux (all processes BSD style); ps -ef (standard full listing); ps aux | grep node",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/ps.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-kill",
+    "keywords": [
+      "kill command linux",
+      "how to use kill command",
+      "kill options linux",
+      "what is kill command",
+      "linux kill command syntax"
+    ],
+    "title": "kill Command (Linux / Unix) — Send signal to process by PID",
+    "category": "Technology",
+    "answer": "The `kill` command in Linux is used to send signal to process by pid. Usage: kill -9 PID (SIGKILL force kill); kill -15 PID (SIGTERM graceful shutdown); killall node (kill by process name).",
+    "highlights": [
+      "Command: kill",
+      "Purpose: Send signal to process by PID",
+      "Syntax & Options: Usage: kill -9 PID (SIGKILL force kill); kill -15 PID (SIGTERM graceful shutdown); killall node (kill by process name)",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/kill.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-systemctl",
+    "keywords": [
+      "systemctl command linux",
+      "how to use systemctl command",
+      "systemctl options linux",
+      "what is systemctl command",
+      "linux systemctl command syntax"
+    ],
+    "title": "systemctl Command (Linux / Unix) — Control the systemd system and service manager",
+    "category": "Technology",
+    "answer": "The `systemctl` command in Linux is used to control the systemd system and service manager. Usage: systemctl start nginx; systemctl stop service; systemctl restart service; systemctl enable service (start on boot); systemctl status service.",
+    "highlights": [
+      "Command: systemctl",
+      "Purpose: Control the systemd system and service manager",
+      "Syntax & Options: Usage: systemctl start nginx; systemctl stop service; systemctl restart service; systemctl enable service (start on boot); systemctl status service",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/systemctl.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-journalctl",
+    "keywords": [
+      "journalctl command linux",
+      "how to use journalctl command",
+      "journalctl options linux",
+      "what is journalctl command",
+      "linux journalctl command syntax"
+    ],
+    "title": "journalctl Command (Linux / Unix) — Query the systemd logging journal",
+    "category": "Technology",
+    "answer": "The `journalctl` command in Linux is used to query the systemd logging journal. Usage: journalctl -u nginx.service -f (follow live logs); journalctl -xe (detailed error context); journalctl --since '1 hour ago'.",
+    "highlights": [
+      "Command: journalctl",
+      "Purpose: Query the systemd logging journal",
+      "Syntax & Options: Usage: journalctl -u nginx.service -f (follow live logs); journalctl -xe (detailed error context); journalctl --since '1 hour ago'",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/journalctl.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-netstat---ss",
+    "keywords": [
+      "netstat / ss command linux",
+      "how to use netstat / ss command",
+      "netstat / ss options linux",
+      "what is netstat / ss command",
+      "linux netstat / ss command syntax"
+    ],
+    "title": "netstat / ss Command (Linux / Unix) — Print network connections, routing tables, interface stats",
+    "category": "Technology",
+    "answer": "The `netstat / ss` command in Linux is used to print network connections, routing tables, interface stats. Usage: ss -tuln (display listening TCP and UDP sockets with numeric ports); ss -tulpn (show process PIDs owning ports).",
+    "highlights": [
+      "Command: netstat / ss",
+      "Purpose: Print network connections, routing tables, interface stats",
+      "Syntax & Options: Usage: ss -tuln (display listening TCP and UDP sockets with numeric ports); ss -tulpn (show process PIDs owning ports)",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/netstat.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-lsof",
+    "keywords": [
+      "lsof command linux",
+      "how to use lsof command",
+      "lsof options linux",
+      "what is lsof command",
+      "linux lsof command syntax"
+    ],
+    "title": "lsof Command (Linux / Unix) — List open files and network sockets",
+    "category": "Technology",
+    "answer": "The `lsof` command in Linux is used to list open files and network sockets. Usage: lsof -i :8080 (find which process is using port 8080); lsof -u username; lsof /path/to/file.",
+    "highlights": [
+      "Command: lsof",
+      "Purpose: List open files and network sockets",
+      "Syntax & Options: Usage: lsof -i :8080 (find which process is using port 8080); lsof -u username; lsof /path/to/file",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/lsof.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-df",
+    "keywords": [
+      "df command linux",
+      "how to use df command",
+      "df options linux",
+      "what is df command",
+      "linux df command syntax"
+    ],
+    "title": "df Command (Linux / Unix) — Report file system disk space usage",
+    "category": "Technology",
+    "answer": "The `df` command in Linux is used to report file system disk space usage. Usage: df -h (human-readable GB/MB); df -T (show filesystem type: ext4, xfs, nfs).",
+    "highlights": [
+      "Command: df",
+      "Purpose: Report file system disk space usage",
+      "Syntax & Options: Usage: df -h (human-readable GB/MB); df -T (show filesystem type: ext4, xfs, nfs)",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/df.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-du",
+    "keywords": [
+      "du command linux",
+      "how to use du command",
+      "du options linux",
+      "what is du command",
+      "linux du command syntax"
+    ],
+    "title": "du Command (Linux / Unix) — Estimate file space usage of directory",
+    "category": "Technology",
+    "answer": "The `du` command in Linux is used to estimate file space usage of directory. Usage: du -sh * (summary human-readable size of each item in folder); du -h --max-depth=1 /var/log | sort -hr.",
+    "highlights": [
+      "Command: du",
+      "Purpose: Estimate file space usage of directory",
+      "Syntax & Options: Usage: du -sh * (summary human-readable size of each item in folder); du -h --max-depth=1 /var/log | sort -hr",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/du.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-free",
+    "keywords": [
+      "free command linux",
+      "how to use free command",
+      "free options linux",
+      "what is free command",
+      "linux free command syntax"
+    ],
+    "title": "free Command (Linux / Unix) — Display total, used and free physical memory (RAM)",
+    "category": "Technology",
+    "answer": "The `free` command in Linux is used to display total, used and free physical memory (ram). Usage: free -h (human readable in MB/GB); shows Total, Used, Free, Shared, Buff/Cache, and Available memory.",
+    "highlights": [
+      "Command: free",
+      "Purpose: Display total, used and free physical memory (RAM)",
+      "Syntax & Options: Usage: free -h (human readable in MB/GB); shows Total, Used, Free, Shared, Buff/Cache, and Available memory",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/free.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-cron---crontab",
+    "keywords": [
+      "cron / crontab command linux",
+      "how to use cron / crontab command",
+      "cron / crontab options linux",
+      "what is cron / crontab command",
+      "linux cron / crontab command syntax"
+    ],
+    "title": "cron / crontab Command (Linux / Unix) — Schedule periodic background jobs",
+    "category": "Technology",
+    "answer": "The `cron / crontab` command in Linux is used to schedule periodic background jobs. Syntax: * * * * * command (minute 0-59, hour 0-23, day of month 1-31, month 1-12, day of week 0-6); crontab -e (edit), crontab -l (list).",
+    "highlights": [
+      "Command: cron / crontab",
+      "Purpose: Schedule periodic background jobs",
+      "Syntax & Options: Syntax: * * * * * command (minute 0-59, hour 0-23, day of month 1-31, month 1-12, day of week 0-6); crontab -e (edit), crontab -l (list)",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/cron.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-iptables---ufw",
+    "keywords": [
+      "iptables / ufw command linux",
+      "how to use iptables / ufw command",
+      "iptables / ufw options linux",
+      "what is iptables / ufw command",
+      "linux iptables / ufw command syntax"
+    ],
+    "title": "iptables / ufw Command (Linux / Unix) — Linux firewall configuration tools",
+    "category": "Technology",
+    "answer": "The `iptables / ufw` command in Linux is used to linux firewall configuration tools. UFW (Uncomplicated Firewall): ufw allow 22/tcp; ufw allow 80/tcp; ufw allow 443/tcp; ufw enable; ufw status numbered.",
+    "highlights": [
+      "Command: iptables / ufw",
+      "Purpose: Linux firewall configuration tools",
+      "Syntax & Options: UFW (Uncomplicated Firewall): ufw allow 22/tcp; ufw allow 80/tcp; ufw allow 443/tcp; ufw enable; ufw status numbered",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/iptables.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-head---tail",
+    "keywords": [
+      "head / tail command linux",
+      "how to use head / tail command",
+      "head / tail options linux",
+      "what is head / tail command",
+      "linux head / tail command syntax"
+    ],
+    "title": "head / tail Command (Linux / Unix) — Output the first or last part of files",
+    "category": "Technology",
+    "answer": "The `head / tail` command in Linux is used to output the first or last part of files. Usage: tail -f /var/log/syslog (follow live stream); head -n 20 file.txt (first 20 lines); tail -n 50 (last 50 lines).",
+    "highlights": [
+      "Command: head / tail",
+      "Purpose: Output the first or last part of files",
+      "Syntax & Options: Usage: tail -f /var/log/syslog (follow live stream); head -n 20 file.txt (first 20 lines); tail -n 50 (last 50 lines)",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/head.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-sort---uniq",
+    "keywords": [
+      "sort / uniq command linux",
+      "how to use sort / uniq command",
+      "sort / uniq options linux",
+      "what is sort / uniq command",
+      "linux sort / uniq command syntax"
+    ],
+    "title": "sort / uniq Command (Linux / Unix) — Sort lines of text and report/omit repeated lines",
+    "category": "Technology",
+    "answer": "The `sort / uniq` command in Linux is used to sort lines of text and report/omit repeated lines. Usage: sort file.txt | uniq -c | sort -nr (frequency count sorted descending); sort -k2 -n (sort numerically on column 2).",
+    "highlights": [
+      "Command: sort / uniq",
+      "Purpose: Sort lines of text and report/omit repeated lines",
+      "Syntax & Options: Usage: sort file.txt | uniq -c | sort -nr (frequency count sorted descending); sort -k2 -n (sort numerically on column 2)",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/sort.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-wc",
+    "keywords": [
+      "wc command linux",
+      "how to use wc command",
+      "wc options linux",
+      "what is wc command",
+      "linux wc command syntax"
+    ],
+    "title": "wc Command (Linux / Unix) — Print newline, word, and byte counts for files",
+    "category": "Technology",
+    "answer": "The `wc` command in Linux is used to print newline, word, and byte counts for files. Usage: wc -l file.txt (count lines); wc -w (count words); wc -c (count bytes).",
+    "highlights": [
+      "Command: wc",
+      "Purpose: Print newline, word, and byte counts for files",
+      "Syntax & Options: Usage: wc -l file.txt (count lines); wc -w (count words); wc -c (count bytes)",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/wc.1.html"
+  },
+  {
+    "id": "tech-linux-cmd-xargs",
+    "keywords": [
+      "xargs command linux",
+      "how to use xargs command",
+      "xargs options linux",
+      "what is xargs command",
+      "linux xargs command syntax"
+    ],
+    "title": "xargs Command (Linux / Unix) — Build and execute command lines from standard input",
+    "category": "Technology",
+    "answer": "The `xargs` command in Linux is used to build and execute command lines from standard input. Usage: find . -name '*.log' | xargs rm -f; cat urls.txt | xargs -n 1 -P 4 curl -O (download 4 in parallel).",
+    "highlights": [
+      "Command: xargs",
+      "Purpose: Build and execute command lines from standard input",
+      "Syntax & Options: Usage: find . -name '*.log' | xargs rm -f; cat urls.txt | xargs -n 1 -P 4 curl -O (download 4 in parallel)",
+      "OS Environment: Linux, macOS, Unix, WSL"
+    ],
+    "url": "https://man7.org/linux/man-pages/man1/xargs.1.html"
   }
 ]

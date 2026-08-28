@@ -165,569 +165,2681 @@
   },
   {
     "id": "geo-in-state-ap",
-    "keywords": ["capital of andhra pradesh", "andhra pradesh capital", "andhra ki rajdhani", "amaravati capital"],
+    "keywords": [
+      "capital of andhra pradesh",
+      "andhra pradesh capital",
+      "andhra ki rajdhani",
+      "amaravati capital"
+    ],
     "title": "Capital of Andhra Pradesh — Amaravati",
     "category": "Geography",
     "answer": "Amaravati is the capital of the Indian state of Andhra Pradesh, located on the southern banks of the Krishna River.",
-    "highlights": ["Capital: Amaravati", "State: Andhra Pradesh (Southern India)", "Major Cities: Visakhapatnam, Vijayawada, Guntur", "Official Language: Telugu"],
+    "highlights": [
+      "Capital: Amaravati",
+      "State: Andhra Pradesh (Southern India)",
+      "Major Cities: Visakhapatnam, Vijayawada, Guntur",
+      "Official Language: Telugu"
+    ],
     "url": "https://en.wikipedia.org/wiki/Amaravati"
   },
   {
     "id": "geo-in-state-ar",
-    "keywords": ["capital of arunachal pradesh", "arunachal pradesh capital", "itanagar capital"],
+    "keywords": [
+      "capital of arunachal pradesh",
+      "arunachal pradesh capital",
+      "itanagar capital"
+    ],
     "title": "Capital of Arunachal Pradesh — Itanagar",
     "category": "Geography",
     "answer": "Itanagar is the capital of Arunachal Pradesh, India's northeasternmost state known as the 'Land of the Dawn-Lit Mountains'.",
-    "highlights": ["Capital: Itanagar", "State: Arunachal Pradesh (Northeast India)", "Landmark: Ita Fort (14th-century fort)", "Official Language: English"],
+    "highlights": [
+      "Capital: Itanagar",
+      "State: Arunachal Pradesh (Northeast India)",
+      "Landmark: Ita Fort (14th-century fort)",
+      "Official Language: English"
+    ],
     "url": "https://en.wikipedia.org/wiki/Itanagar"
   },
   {
     "id": "geo-in-state-as",
-    "keywords": ["capital of assam", "assam capital", "dispur capital", "assam ki rajdhani"],
+    "keywords": [
+      "capital of assam",
+      "assam capital",
+      "dispur capital",
+      "assam ki rajdhani"
+    ],
     "title": "Capital of Assam — Dispur",
     "category": "Geography",
     "answer": "Dispur is the capital of the northeastern Indian state of Assam, situated as a locality within the city of Guwahati.",
-    "highlights": ["Capital: Dispur", "State: Assam", "Largest City: Guwahati", "Famous For: Assam Tea, One-horned Rhinoceros (Kaziranga National Park)"],
+    "highlights": [
+      "Capital: Dispur",
+      "State: Assam",
+      "Largest City: Guwahati",
+      "Famous For: Assam Tea, One-horned Rhinoceros (Kaziranga National Park)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Dispur"
   },
   {
     "id": "geo-in-state-br",
-    "keywords": ["capital of bihar", "bihar capital", "patna capital", "bihar ki rajdhani"],
+    "keywords": [
+      "capital of bihar",
+      "bihar capital",
+      "patna capital",
+      "bihar ki rajdhani"
+    ],
     "title": "Capital of Bihar — Patna",
     "category": "Geography",
     "answer": "Patna (historically Pataliputra) is the capital and largest city of the Indian state of Bihar, situated along the south bank of the Ganges River.",
-    "highlights": ["Capital: Patna", "Historical Name: Pataliputra (capital of Maurya and Gupta empires)", "State: Bihar", "Official Languages: Hindi, Urdu"],
+    "highlights": [
+      "Capital: Patna",
+      "Historical Name: Pataliputra (capital of Maurya and Gupta empires)",
+      "State: Bihar",
+      "Official Languages: Hindi, Urdu"
+    ],
     "url": "https://en.wikipedia.org/wiki/Patna"
   },
   {
     "id": "geo-in-state-cg",
-    "keywords": ["capital of chhattisgarh", "chhattisgarh capital", "raipur capital"],
+    "keywords": [
+      "capital of chhattisgarh",
+      "chhattisgarh capital",
+      "raipur capital"
+    ],
     "title": "Capital of Chhattisgarh — Raipur",
     "category": "Geography",
     "answer": "Raipur is the capital and largest city of the central Indian state of Chhattisgarh.",
-    "highlights": ["Capital: Raipur (with administrative hub Nava Raipur / Atal Nagar)", "State: Chhattisgarh", "Formed: 1 November 2000 (carved from Madhya Pradesh)", "Official Language: Chhattisgarhi, Hindi"],
+    "highlights": [
+      "Capital: Raipur (with administrative hub Nava Raipur / Atal Nagar)",
+      "State: Chhattisgarh",
+      "Formed: 1 November 2000 (carved from Madhya Pradesh)",
+      "Official Language: Chhattisgarhi, Hindi"
+    ],
     "url": "https://en.wikipedia.org/wiki/Raipur"
   },
   {
     "id": "geo-in-state-ga",
-    "keywords": ["capital of goa", "goa capital", "panaji capital", "panjim"],
+    "keywords": [
+      "capital of goa",
+      "goa capital",
+      "panaji capital",
+      "panjim"
+    ],
     "title": "Capital of Goa — Panaji",
     "category": "Geography",
     "answer": "Panaji (Panjim) is the capital of Goa, situated on the banks of the Mandovi River estuary.",
-    "highlights": ["Capital: Panaji (Panjim)", "State: Goa (India's smallest state by area)", "Largest City: Vasco da Gama", "Official Language: Konkani"],
+    "highlights": [
+      "Capital: Panaji (Panjim)",
+      "State: Goa (India's smallest state by area)",
+      "Largest City: Vasco da Gama",
+      "Official Language: Konkani"
+    ],
     "url": "https://en.wikipedia.org/wiki/Panaji"
   },
   {
     "id": "geo-in-state-gj",
-    "keywords": ["capital of gujarat", "gujarat capital", "gandhinagar capital", "gujarat ki rajdhani"],
+    "keywords": [
+      "capital of gujarat",
+      "gujarat capital",
+      "gandhinagar capital",
+      "gujarat ki rajdhani"
+    ],
     "title": "Capital of Gujarat — Gandhinagar",
     "category": "Geography",
     "answer": "Gandhinagar is the planned capital city of the western Indian state of Gujarat, named after Mahatma Gandhi.",
-    "highlights": ["Capital: Gandhinagar", "State: Gujarat", "Largest City & Financial Hub: Ahmedabad", "Official Language: Gujarati"],
+    "highlights": [
+      "Capital: Gandhinagar",
+      "State: Gujarat",
+      "Largest City & Financial Hub: Ahmedabad",
+      "Official Language: Gujarati"
+    ],
     "url": "https://en.wikipedia.org/wiki/Gandhinagar"
   },
   {
     "id": "geo-in-state-hr",
-    "keywords": ["capital of haryana", "haryana capital", "chandigarh capital haryana"],
+    "keywords": [
+      "capital of haryana",
+      "haryana capital",
+      "chandigarh capital haryana"
+    ],
     "title": "Capital of Haryana — Chandigarh",
     "category": "Geography",
     "answer": "Chandigarh serves as the joint capital of Haryana and Punjab, administered separately as a Union Territory.",
-    "highlights": ["Capital: Chandigarh (Joint capital with Punjab)", "State: Haryana", "Major Economic Hub: Gurugram (Gurgaon)", "Official Language: Hindi"],
+    "highlights": [
+      "Capital: Chandigarh (Joint capital with Punjab)",
+      "State: Haryana",
+      "Major Economic Hub: Gurugram (Gurgaon)",
+      "Official Language: Hindi"
+    ],
     "url": "https://en.wikipedia.org/wiki/Chandigarh"
   },
   {
     "id": "geo-in-state-hp",
-    "keywords": ["capital of himachal pradesh", "himachal capital", "shimla capital", "dharamshala capital"],
+    "keywords": [
+      "capital of himachal pradesh",
+      "himachal capital",
+      "shimla capital",
+      "dharamshala capital"
+    ],
     "title": "Capital of Himachal Pradesh — Shimla (Summer) / Dharamshala (Winter)",
     "category": "Geography",
     "answer": "Shimla is the summer capital and Dharamshala is the second / winter capital of the northern Indian state of Himachal Pradesh.",
-    "highlights": ["Summer Capital: Shimla (historic summer capital of British India)", "Winter Capital: Dharamshala", "State: Himachal Pradesh", "Official Language: Hindi"],
+    "highlights": [
+      "Summer Capital: Shimla (historic summer capital of British India)",
+      "Winter Capital: Dharamshala",
+      "State: Himachal Pradesh",
+      "Official Language: Hindi"
+    ],
     "url": "https://en.wikipedia.org/wiki/Shimla"
   },
   {
     "id": "geo-in-state-jh",
-    "keywords": ["capital of jharkhand", "jharkhand capital", "ranchi capital", "jharkhand ki rajdhani"],
+    "keywords": [
+      "capital of jharkhand",
+      "jharkhand capital",
+      "ranchi capital",
+      "jharkhand ki rajdhani"
+    ],
     "title": "Capital of Jharkhand — Ranchi",
     "category": "Geography",
     "answer": "Ranchi is the capital of the eastern Indian state of Jharkhand, known as the 'City of Waterfalls'.",
-    "highlights": ["Capital: Ranchi", "State: Jharkhand", "Formed: 15 November 2000 (carved from southern Bihar)", "Official Language: Hindi"],
+    "highlights": [
+      "Capital: Ranchi",
+      "State: Jharkhand",
+      "Formed: 15 November 2000 (carved from southern Bihar)",
+      "Official Language: Hindi"
+    ],
     "url": "https://en.wikipedia.org/wiki/Ranchi"
   },
   {
     "id": "geo-in-state-ka",
-    "keywords": ["capital of karnataka", "karnataka capital", "bengaluru capital", "bangalore capital"],
+    "keywords": [
+      "capital of karnataka",
+      "karnataka capital",
+      "bengaluru capital",
+      "bangalore capital"
+    ],
     "title": "Capital of Karnataka — Bengaluru",
     "category": "Geography",
     "answer": "Bengaluru (Bangalore) is the capital and largest city of Karnataka, widely known as the 'Silicon Valley of India'.",
-    "highlights": ["Capital: Bengaluru (Bangalore)", "State: Karnataka", "Nickname: Silicon Valley of India / IT Capital", "Official Language: Kannada"],
+    "highlights": [
+      "Capital: Bengaluru (Bangalore)",
+      "State: Karnataka",
+      "Nickname: Silicon Valley of India / IT Capital",
+      "Official Language: Kannada"
+    ],
     "url": "https://en.wikipedia.org/wiki/Bengaluru"
   },
   {
     "id": "geo-in-state-kl",
-    "keywords": ["capital of kerala", "kerala capital", "thiruvananthapuram capital", "trivandrum capital"],
+    "keywords": [
+      "capital of kerala",
+      "kerala capital",
+      "thiruvananthapuram capital",
+      "trivandrum capital"
+    ],
     "title": "Capital of Kerala — Thiruvananthapuram",
     "category": "Geography",
     "answer": "Thiruvananthapuram (formerly Trivandrum) is the capital and largest city of the southwestern coastal state of Kerala.",
-    "highlights": ["Capital: Thiruvananthapuram (Trivandrum)", "State: Kerala (God's Own Country)", "Major Landmarks: Padmanabhaswamy Temple, Technopark", "Official Language: Malayalam"],
+    "highlights": [
+      "Capital: Thiruvananthapuram (Trivandrum)",
+      "State: Kerala (God's Own Country)",
+      "Major Landmarks: Padmanabhaswamy Temple, Technopark",
+      "Official Language: Malayalam"
+    ],
     "url": "https://en.wikipedia.org/wiki/Thiruvananthapuram"
   },
   {
     "id": "geo-in-state-mp",
-    "keywords": ["capital of madhya pradesh", "madhya pradesh capital", "mp capital", "bhopal capital"],
+    "keywords": [
+      "capital of madhya pradesh",
+      "madhya pradesh capital",
+      "mp capital",
+      "bhopal capital"
+    ],
     "title": "Capital of Madhya Pradesh — Bhopal",
     "category": "Geography",
     "answer": "Bhopal is the capital of Madhya Pradesh, known as the 'City of Lakes' due to its numerous natural and artificial water bodies.",
-    "highlights": ["Capital: Bhopal", "State: Madhya Pradesh", "Largest City & Cleanest City of India: Indore", "Official Language: Hindi"],
+    "highlights": [
+      "Capital: Bhopal",
+      "State: Madhya Pradesh",
+      "Largest City & Cleanest City of India: Indore",
+      "Official Language: Hindi"
+    ],
     "url": "https://en.wikipedia.org/wiki/Bhopal"
   },
   {
     "id": "geo-in-state-mh",
-    "keywords": ["capital of maharashtra", "maharashtra capital", "mumbai capital", "maharashtra ki rajdhani"],
+    "keywords": [
+      "capital of maharashtra",
+      "maharashtra capital",
+      "mumbai capital",
+      "maharashtra ki rajdhani"
+    ],
     "title": "Capital of Maharashtra — Mumbai",
     "category": "Geography",
     "answer": "Mumbai (formerly Bombay) is the capital of Maharashtra and the financial, commercial, and entertainment capital of India.",
-    "highlights": ["Capital: Mumbai (Winter Capital: Nagpur)", "State: Maharashtra", "Financial Hub: Seat of Reserve Bank of India (RBI), BSE, NSE, Bollywood", "Official Language: Marathi"],
+    "highlights": [
+      "Capital: Mumbai (Winter Capital: Nagpur)",
+      "State: Maharashtra",
+      "Financial Hub: Seat of Reserve Bank of India (RBI), BSE, NSE, Bollywood",
+      "Official Language: Marathi"
+    ],
     "url": "https://en.wikipedia.org/wiki/Mumbai"
   },
   {
     "id": "geo-in-state-mn",
-    "keywords": ["capital of manipur", "manipur capital", "imphal capital"],
+    "keywords": [
+      "capital of manipur",
+      "manipur capital",
+      "imphal capital"
+    ],
     "title": "Capital of Manipur — Imphal",
     "category": "Geography",
     "answer": "Imphal is the capital city of Manipur, situated in the northeastern region of India.",
-    "highlights": ["Capital: Imphal", "State: Manipur", "Landmark: Kangla Fort, Loktak Lake (Keibul Lamjao floating national park)", "Official Language: Meitei (Manipuri)"],
+    "highlights": [
+      "Capital: Imphal",
+      "State: Manipur",
+      "Landmark: Kangla Fort, Loktak Lake (Keibul Lamjao floating national park)",
+      "Official Language: Meitei (Manipuri)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Imphal"
   },
   {
     "id": "geo-in-state-ml",
-    "keywords": ["capital of meghalaya", "meghalaya capital", "shillong capital"],
+    "keywords": [
+      "capital of meghalaya",
+      "meghalaya capital",
+      "shillong capital"
+    ],
     "title": "Capital of Meghalaya — Shillong",
     "category": "Geography",
     "answer": "Shillong is the capital of Meghalaya, popularly known as the 'Scotland of the East' for its rolling hills and waterfalls.",
-    "highlights": ["Capital: Shillong", "State: Meghalaya (Abode of Clouds)", "Wettest Place on Earth: Mawsynram / Cherrapunji in Meghalaya", "Official Language: English"],
+    "highlights": [
+      "Capital: Shillong",
+      "State: Meghalaya (Abode of Clouds)",
+      "Wettest Place on Earth: Mawsynram / Cherrapunji in Meghalaya",
+      "Official Language: English"
+    ],
     "url": "https://en.wikipedia.org/wiki/Shillong"
   },
   {
     "id": "geo-in-state-mz",
-    "keywords": ["capital of mizoram", "mizoram capital", "aizawl capital"],
+    "keywords": [
+      "capital of mizoram",
+      "mizoram capital",
+      "aizawl capital"
+    ],
     "title": "Capital of Mizoram — Aizawl",
     "category": "Geography",
     "answer": "Aizawl is the capital and largest city of the northeastern Indian state of Mizoram.",
-    "highlights": ["Capital: Aizawl", "State: Mizoram", "Elevation: 1,132 metres above sea level on a ridge", "Official Language: Mizo, English"],
+    "highlights": [
+      "Capital: Aizawl",
+      "State: Mizoram",
+      "Elevation: 1,132 metres above sea level on a ridge",
+      "Official Language: Mizo, English"
+    ],
     "url": "https://en.wikipedia.org/wiki/Aizawl"
   },
   {
     "id": "geo-in-state-nl",
-    "keywords": ["capital of nagaland", "nagaland capital", "kohima capital"],
+    "keywords": [
+      "capital of nagaland",
+      "nagaland capital",
+      "kohima capital"
+    ],
     "title": "Capital of Nagaland — Kohima",
     "category": "Geography",
     "answer": "Kohima is the hilly capital city of the northeastern Indian state of Nagaland.",
-    "highlights": ["Capital: Kohima", "State: Nagaland", "Famous Event: Hornbill Festival (celebrated annually in December)", "Official Language: English"],
+    "highlights": [
+      "Capital: Kohima",
+      "State: Nagaland",
+      "Famous Event: Hornbill Festival (celebrated annually in December)",
+      "Official Language: English"
+    ],
     "url": "https://en.wikipedia.org/wiki/Kohima"
   },
   {
     "id": "geo-in-state-od",
-    "keywords": ["capital of odisha", "odisha capital", "bhubaneswar capital", "orissa capital"],
+    "keywords": [
+      "capital of odisha",
+      "odisha capital",
+      "bhubaneswar capital",
+      "orissa capital"
+    ],
     "title": "Capital of Odisha — Bhubaneswar",
     "category": "Geography",
     "answer": "Bhubaneswar is the capital and largest city of the eastern Indian state of Odisha, known as the 'Temple City of India'.",
-    "highlights": ["Capital: Bhubaneswar", "State: Odisha (formerly Orissa)", "Famous Temples: Lingaraj Temple, Mukteshvara Temple", "Official Language: Odia"],
+    "highlights": [
+      "Capital: Bhubaneswar",
+      "State: Odisha (formerly Orissa)",
+      "Famous Temples: Lingaraj Temple, Mukteshvara Temple",
+      "Official Language: Odia"
+    ],
     "url": "https://en.wikipedia.org/wiki/Bhubaneswar"
   },
   {
     "id": "geo-in-state-pb",
-    "keywords": ["capital of punjab", "punjab capital", "punjab ki rajdhani"],
+    "keywords": [
+      "capital of punjab",
+      "punjab capital",
+      "punjab ki rajdhani"
+    ],
     "title": "Capital of Punjab — Chandigarh",
     "category": "Geography",
     "answer": "Chandigarh serves as the capital of Punjab and Haryana, designed by renowned French architect Le Corbusier.",
-    "highlights": ["Capital: Chandigarh", "State: Punjab (Land of Five Rivers)", "Major Cultural City: Amritsar (Golden Temple / Harmandir Sahib)", "Official Language: Punjabi"],
+    "highlights": [
+      "Capital: Chandigarh",
+      "State: Punjab (Land of Five Rivers)",
+      "Major Cultural City: Amritsar (Golden Temple / Harmandir Sahib)",
+      "Official Language: Punjabi"
+    ],
     "url": "https://en.wikipedia.org/wiki/Chandigarh"
   },
   {
     "id": "geo-in-state-rj",
-    "keywords": ["capital of rajasthan", "rajasthan capital", "jaipur capital", "pink city"],
+    "keywords": [
+      "capital of rajasthan",
+      "rajasthan capital",
+      "jaipur capital",
+      "pink city"
+    ],
     "title": "Capital of Rajasthan — Jaipur",
     "category": "Geography",
     "answer": "Jaipur, famously known as the 'Pink City', is the capital and largest city of Rajasthan, India's largest state by land area.",
-    "highlights": ["Capital: Jaipur (Pink City — UNESCO World Heritage Site)", "State: Rajasthan", "Landmarks: Hawa Mahal, Amer Fort, City Palace, Jantar Mantar", "Official Language: Hindi, Rajasthani"],
+    "highlights": [
+      "Capital: Jaipur (Pink City — UNESCO World Heritage Site)",
+      "State: Rajasthan",
+      "Landmarks: Hawa Mahal, Amer Fort, City Palace, Jantar Mantar",
+      "Official Language: Hindi, Rajasthani"
+    ],
     "url": "https://en.wikipedia.org/wiki/Jaipur"
   },
   {
     "id": "geo-in-state-sk",
-    "keywords": ["capital of sikkim", "sikkim capital", "gangtok capital"],
+    "keywords": [
+      "capital of sikkim",
+      "sikkim capital",
+      "gangtok capital"
+    ],
     "title": "Capital of Sikkim — Gangtok",
     "category": "Geography",
     "answer": "Gangtok is the capital and largest city of the Himalayan state of Sikkim, nestled in the Eastern Himalayas.",
-    "highlights": ["Capital: Gangtok", "State: Sikkim (First 100% Organic State in the world)", "Highest Peak: Kangchenjunga (8,586 m, 3rd highest in world)", "Official Languages: Nepali, Sikkimese, Lepcha, English"],
+    "highlights": [
+      "Capital: Gangtok",
+      "State: Sikkim (First 100% Organic State in the world)",
+      "Highest Peak: Kangchenjunga (8,586 m, 3rd highest in world)",
+      "Official Languages: Nepali, Sikkimese, Lepcha, English"
+    ],
     "url": "https://en.wikipedia.org/wiki/Gangtok"
   },
   {
     "id": "geo-in-state-tn",
-    "keywords": ["capital of tamil nadu", "tamil nadu capital", "chennai capital", "madras capital"],
+    "keywords": [
+      "capital of tamil nadu",
+      "tamil nadu capital",
+      "chennai capital",
+      "madras capital"
+    ],
     "title": "Capital of Tamil Nadu — Chennai",
     "category": "Geography",
     "answer": "Chennai (formerly Madras) is the capital of Tamil Nadu, located on the Coromandel Coast of the Bay of Bengal, known as the 'Detroit of South Asia' for its automobile industry.",
-    "highlights": ["Capital: Chennai (Madras)", "State: Tamil Nadu", "Landmarks: Marina Beach, Kapaleeshwarar Temple, Fort St. George", "Official Language: Tamil"],
+    "highlights": [
+      "Capital: Chennai (Madras)",
+      "State: Tamil Nadu",
+      "Landmarks: Marina Beach, Kapaleeshwarar Temple, Fort St. George",
+      "Official Language: Tamil"
+    ],
     "url": "https://en.wikipedia.org/wiki/Chennai"
   },
   {
     "id": "geo-in-state-ts",
-    "keywords": ["capital of telangana", "telangana capital", "hyderabad capital"],
+    "keywords": [
+      "capital of telangana",
+      "telangana capital",
+      "hyderabad capital"
+    ],
     "title": "Capital of Telangana — Hyderabad",
     "category": "Geography",
     "answer": "Hyderabad is the capital and largest city of Telangana, known as the 'City of Pearls' and a major global IT and pharmaceutical hub.",
-    "highlights": ["Capital: Hyderabad", "State: Telangana (formed 2 June 2014)", "Landmarks: Charminar, Golconda Fort, HITEC City (Cyberabad)", "Official Language: Telugu, Urdu"],
+    "highlights": [
+      "Capital: Hyderabad",
+      "State: Telangana (formed 2 June 2014)",
+      "Landmarks: Charminar, Golconda Fort, HITEC City (Cyberabad)",
+      "Official Language: Telugu, Urdu"
+    ],
     "url": "https://en.wikipedia.org/wiki/Hyderabad"
   },
   {
     "id": "geo-in-state-tr",
-    "keywords": ["capital of tripura", "tripura capital", "agartala capital"],
+    "keywords": [
+      "capital of tripura",
+      "tripura capital",
+      "agartala capital"
+    ],
     "title": "Capital of Tripura — Agartala",
     "category": "Geography",
     "answer": "Agartala is the capital city of Tripura in northeastern India, situated along the Howrah River near the Bangladesh border.",
-    "highlights": ["Capital: Agartala", "State: Tripura", "Landmark: Ujjayanta Palace", "Official Languages: Bengali, Kokborok, English"],
+    "highlights": [
+      "Capital: Agartala",
+      "State: Tripura",
+      "Landmark: Ujjayanta Palace",
+      "Official Languages: Bengali, Kokborok, English"
+    ],
     "url": "https://en.wikipedia.org/wiki/Agartala"
   },
   {
     "id": "geo-in-state-up",
-    "keywords": ["capital of uttar pradesh", "uttar pradesh capital", "up capital", "lucknow capital", "up ki rajdhani"],
+    "keywords": [
+      "capital of uttar pradesh",
+      "uttar pradesh capital",
+      "up capital",
+      "lucknow capital",
+      "up ki rajdhani"
+    ],
     "title": "Capital of Uttar Pradesh — Lucknow",
     "category": "Geography",
     "answer": "Lucknow, known as the 'City of Nawabs', is the capital city of Uttar Pradesh, India's most populous state.",
-    "highlights": ["Capital: Lucknow", "State: Uttar Pradesh", "Landmarks: Bara Imambara, Rumi Darwaza, Ambedkar Memorial Park", "Official Languages: Hindi, Urdu"],
+    "highlights": [
+      "Capital: Lucknow",
+      "State: Uttar Pradesh",
+      "Landmarks: Bara Imambara, Rumi Darwaza, Ambedkar Memorial Park",
+      "Official Languages: Hindi, Urdu"
+    ],
     "url": "https://en.wikipedia.org/wiki/Lucknow"
   },
   {
     "id": "geo-in-state-uk",
-    "keywords": ["capital of uttarakhand", "uttarakhand capital", "dehradun capital", "gairsain capital"],
+    "keywords": [
+      "capital of uttarakhand",
+      "uttarakhand capital",
+      "dehradun capital",
+      "gairsain capital"
+    ],
     "title": "Capital of Uttarakhand — Dehradun (Winter) / Gairsain (Summer)",
     "category": "Geography",
     "answer": "Dehradun is the winter capital and Gairsain (Bhararisain) is the summer capital of Uttarakhand in northern India.",
-    "highlights": ["Winter Capital: Dehradun", "Summer Capital: Gairsain (Bhararisain)", "State: Uttarakhand (Devbhumi — Land of the Gods)", "Official Language: Hindi, Sanskrit"],
+    "highlights": [
+      "Winter Capital: Dehradun",
+      "Summer Capital: Gairsain (Bhararisain)",
+      "State: Uttarakhand (Devbhumi — Land of the Gods)",
+      "Official Language: Hindi, Sanskrit"
+    ],
     "url": "https://en.wikipedia.org/wiki/Dehradun"
   },
   {
     "id": "geo-in-state-wb",
-    "keywords": ["capital of west bengal", "west bengal capital", "kolkata capital", "calcutta capital"],
+    "keywords": [
+      "capital of west bengal",
+      "west bengal capital",
+      "kolkata capital",
+      "calcutta capital"
+    ],
     "title": "Capital of West Bengal — Kolkata",
     "category": "Geography",
     "answer": "Kolkata (formerly Calcutta) is the capital of West Bengal and the primary cultural, commercial, and educational hub of Eastern India.",
-    "highlights": ["Capital: Kolkata (Calcutta — former capital of British India until 1911)", "State: West Bengal", "Landmarks: Howrah Bridge, Victoria Memorial, Dakshineswar Kali Temple", "Official Language: Bengali, English"],
+    "highlights": [
+      "Capital: Kolkata (Calcutta — former capital of British India until 1911)",
+      "State: West Bengal",
+      "Landmarks: Howrah Bridge, Victoria Memorial, Dakshineswar Kali Temple",
+      "Official Language: Bengali, English"
+    ],
     "url": "https://en.wikipedia.org/wiki/Kolkata"
   },
   {
     "id": "geo-in-ut-delhi",
-    "keywords": ["capital of delhi", "capital of india", "national capital territory", "new delhi capital", "bharat ki rajdhani"],
+    "keywords": [
+      "capital of delhi",
+      "capital of india",
+      "national capital territory",
+      "new delhi capital",
+      "bharat ki rajdhani"
+    ],
     "title": "Capital of India & NCT — New Delhi",
     "category": "Geography",
     "answer": "New Delhi is the national capital of India and the administrative centre of the National Capital Territory (NCT) of Delhi.",
-    "highlights": ["National Capital: New Delhi", "Seat of Government: Rashtrapati Bhavan, Parliament House (Sansad Bhavan), Supreme Court", "Status: Union Territory with Legislative Assembly"],
+    "highlights": [
+      "National Capital: New Delhi",
+      "Seat of Government: Rashtrapati Bhavan, Parliament House (Sansad Bhavan), Supreme Court",
+      "Status: Union Territory with Legislative Assembly"
+    ],
     "url": "https://en.wikipedia.org/wiki/New_Delhi"
   },
   {
     "id": "geo-in-ut-jk",
-    "keywords": ["capital of jammu and kashmir", "jammu and kashmir capital", "srinagar capital", "jammu capital"],
+    "keywords": [
+      "capital of jammu and kashmir",
+      "jammu and kashmir capital",
+      "srinagar capital",
+      "jammu capital"
+    ],
     "title": "Capital of Jammu and Kashmir — Srinagar (Summer) / Jammu (Winter)",
     "category": "Geography",
     "answer": "Srinagar is the summer capital and Jammu is the winter capital of the Union Territory of Jammu and Kashmir.",
-    "highlights": ["Summer Capital: Srinagar (Dal Lake, Mughal Gardens)", "Winter Capital: Jammu (City of Temples)", "Status: Union Territory (reorganized October 2019)"],
+    "highlights": [
+      "Summer Capital: Srinagar (Dal Lake, Mughal Gardens)",
+      "Winter Capital: Jammu (City of Temples)",
+      "Status: Union Territory (reorganized October 2019)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Srinagar"
   },
   {
     "id": "geo-in-ut-ladakh",
-    "keywords": ["capital of ladakh", "ladakh capital", "leh capital", "kargil capital"],
+    "keywords": [
+      "capital of ladakh",
+      "ladakh capital",
+      "leh capital",
+      "kargil capital"
+    ],
     "title": "Capital of Ladakh — Leh (Summer) / Kargil (Winter)",
     "category": "Geography",
     "answer": "Leh is the summer capital and Kargil is the winter capital of the Union Territory of Ladakh, India's high-altitude cold desert region.",
-    "highlights": ["Summer Capital: Leh", "Winter Capital: Kargil", "Status: Union Territory created on 31 October 2019", "Geography: High altitude Himalayan cold desert"],
+    "highlights": [
+      "Summer Capital: Leh",
+      "Winter Capital: Kargil",
+      "Status: Union Territory created on 31 October 2019",
+      "Geography: High altitude Himalayan cold desert"
+    ],
     "url": "https://en.wikipedia.org/wiki/Leh"
   },
   {
     "id": "geo-in-ut-an",
-    "keywords": ["capital of andaman and nicobar", "andaman capital", "port blair capital", "sri vijaya puram"],
+    "keywords": [
+      "capital of andaman and nicobar",
+      "andaman capital",
+      "port blair capital",
+      "sri vijaya puram"
+    ],
     "title": "Capital of Andaman and Nicobar Islands — Sri Vijaya Puram (Port Blair)",
     "category": "Geography",
     "answer": "Sri Vijaya Puram (formerly Port Blair) is the capital city of the Union Territory of the Andaman and Nicobar Islands.",
-    "highlights": ["Capital: Sri Vijaya Puram (Port Blair)", "Historic Landmark: Cellular Jail (Kala Pani)", "Location: South Andaman Island, Bay of Bengal"],
+    "highlights": [
+      "Capital: Sri Vijaya Puram (Port Blair)",
+      "Historic Landmark: Cellular Jail (Kala Pani)",
+      "Location: South Andaman Island, Bay of Bengal"
+    ],
     "url": "https://en.wikipedia.org/wiki/Port_Blair"
   },
   {
     "id": "geo-in-ut-ch",
-    "keywords": ["capital of chandigarh", "chandigarh ut capital"],
+    "keywords": [
+      "capital of chandigarh",
+      "chandigarh ut capital"
+    ],
     "title": "Capital of Chandigarh — Chandigarh",
     "category": "Geography",
     "answer": "Chandigarh is a Union Territory that serves as its own capital as well as the joint capital for Punjab and Haryana.",
-    "highlights": ["Type: Union Territory & Planned City", "Architect: Le Corbusier", "Landmarks: Rock Garden, Sukhna Lake"],
+    "highlights": [
+      "Type: Union Territory & Planned City",
+      "Architect: Le Corbusier",
+      "Landmarks: Rock Garden, Sukhna Lake"
+    ],
     "url": "https://en.wikipedia.org/wiki/Chandigarh"
   },
   {
     "id": "geo-in-ut-dd",
-    "keywords": ["capital of dadra and nagar haveli and daman and diu", "daman capital", "daman and diu capital"],
+    "keywords": [
+      "capital of dadra and nagar haveli and daman and diu",
+      "daman capital",
+      "daman and diu capital"
+    ],
     "title": "Capital of Dadra and Nagar Haveli and Daman and Diu — Daman",
     "category": "Geography",
     "answer": "Daman is the capital of the merged Union Territory of Dadra and Nagar Haveli and Daman and Diu.",
-    "highlights": ["Capital: Daman", "Merger Date: 26 January 2020", "Coast: Arabian Sea coastal enclaves"],
+    "highlights": [
+      "Capital: Daman",
+      "Merger Date: 26 January 2020",
+      "Coast: Arabian Sea coastal enclaves"
+    ],
     "url": "https://en.wikipedia.org/wiki/Daman,_India"
   },
   {
     "id": "geo-in-ut-lk",
-    "keywords": ["capital of lakshadweep", "lakshadweep capital", "kavaratti capital"],
+    "keywords": [
+      "capital of lakshadweep",
+      "lakshadweep capital",
+      "kavaratti capital"
+    ],
     "title": "Capital of Lakshadweep — Kavaratti",
     "category": "Geography",
     "answer": "Kavaratti is the capital of the Union Territory of Lakshadweep, an archipelago in the Arabian Sea.",
-    "highlights": ["Capital: Kavaratti", "Geography: 36 coral atolls and islands in the Arabian Sea", "Smallest UT: Land area of only 32 km²"],
+    "highlights": [
+      "Capital: Kavaratti",
+      "Geography: 36 coral atolls and islands in the Arabian Sea",
+      "Smallest UT: Land area of only 32 km²"
+    ],
     "url": "https://en.wikipedia.org/wiki/Kavaratti"
   },
   {
     "id": "geo-in-ut-py",
-    "keywords": ["capital of puducherry", "puducherry capital", "pondicherry capital"],
+    "keywords": [
+      "capital of puducherry",
+      "puducherry capital",
+      "pondicherry capital"
+    ],
     "title": "Capital of Puducherry — Pondicherry (Puducherry)",
     "category": "Geography",
     "answer": "Puducherry (Pondicherry) is the capital of the Union Territory of Puducherry, known for its French colonial heritage and Auroville.",
-    "highlights": ["Capital: Pondicherry (Puducherry)", "Former Rule: French India colony until 1954", "Enclaves: Puducherry, Karaikal, Mahé, Yanam"],
+    "highlights": [
+      "Capital: Pondicherry (Puducherry)",
+      "Former Rule: French India colony until 1954",
+      "Enclaves: Puducherry, Karaikal, Mahé, Yanam"
+    ],
     "url": "https://en.wikipedia.org/wiki/Pondicherry"
   },
   {
     "id": "geo-cap-france",
-    "keywords": ["capital of france", "france capital", "france ki rajdhani", "paris capital"],
+    "keywords": [
+      "capital of france",
+      "france capital",
+      "france ki rajdhani",
+      "paris capital"
+    ],
     "title": "Capital of France — Paris",
     "category": "Geography",
     "answer": "Paris is the capital and largest city of France, situated along the Seine River.",
-    "highlights": ["Capital: Paris", "Country: France (Western Europe)", "Landmarks: Eiffel Tower, Louvre, Notre-Dame, Arc de Triomphe", "Currency: Euro (EUR)"],
+    "highlights": [
+      "Capital: Paris",
+      "Country: France (Western Europe)",
+      "Landmarks: Eiffel Tower, Louvre, Notre-Dame, Arc de Triomphe",
+      "Currency: Euro (EUR)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Paris"
   },
   {
     "id": "geo-cap-japan",
-    "keywords": ["capital of japan", "japan capital", "japan ki rajdhani", "tokyo capital"],
+    "keywords": [
+      "capital of japan",
+      "japan capital",
+      "japan ki rajdhani",
+      "tokyo capital"
+    ],
     "title": "Capital of Japan — Tokyo",
     "category": "Geography",
     "answer": "Tokyo is the capital of Japan and the world's most populous metropolitan area.",
-    "highlights": ["Capital: Tokyo", "Country: Japan (East Asia)", "Metropolitan Population: Over 37 million people", "Currency: Japanese Yen (JPY)"],
+    "highlights": [
+      "Capital: Tokyo",
+      "Country: Japan (East Asia)",
+      "Metropolitan Population: Over 37 million people",
+      "Currency: Japanese Yen (JPY)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Tokyo"
   },
   {
     "id": "geo-cap-usa",
-    "keywords": ["capital of usa", "capital of united states", "capital of america", "america capital", "washington dc capital"],
+    "keywords": [
+      "capital of usa",
+      "capital of united states",
+      "capital of america",
+      "america capital",
+      "washington dc capital"
+    ],
     "title": "Capital of the United States — Washington, D.C.",
     "category": "Geography",
     "answer": "Washington, D.C. (District of Columbia) is the federal capital of the United States of America.",
-    "highlights": ["Capital: Washington, D.C.", "Country: United States of America", "Seat of Government: White House, Capitol Hill, Supreme Court", "Currency: US Dollar (USD)"],
+    "highlights": [
+      "Capital: Washington, D.C.",
+      "Country: United States of America",
+      "Seat of Government: White House, Capitol Hill, Supreme Court",
+      "Currency: US Dollar (USD)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Washington,_D.C."
   },
   {
     "id": "geo-cap-uk",
-    "keywords": ["capital of uk", "capital of united kingdom", "capital of england", "england capital", "london capital"],
+    "keywords": [
+      "capital of uk",
+      "capital of united kingdom",
+      "capital of england",
+      "england capital",
+      "london capital"
+    ],
     "title": "Capital of the United Kingdom — London",
     "category": "Geography",
     "answer": "London is the capital and largest city of England and the United Kingdom, standing on the River Thames.",
-    "highlights": ["Capital: London", "Country: United Kingdom", "Landmarks: Big Ben, Tower of London, Buckingham Palace, British Museum", "Currency: British Pound (GBP)"],
+    "highlights": [
+      "Capital: London",
+      "Country: United Kingdom",
+      "Landmarks: Big Ben, Tower of London, Buckingham Palace, British Museum",
+      "Currency: British Pound (GBP)"
+    ],
     "url": "https://en.wikipedia.org/wiki/London"
   },
   {
     "id": "geo-cap-australia",
-    "keywords": ["capital of australia", "australia capital", "australia ki rajdhani", "canberra capital"],
+    "keywords": [
+      "capital of australia",
+      "australia capital",
+      "australia ki rajdhani",
+      "canberra capital"
+    ],
     "title": "Capital of Australia — Canberra",
     "category": "Geography",
     "answer": "Canberra is the capital city of Australia, situated within the Australian Capital Territory (ACT).",
-    "highlights": ["Capital: Canberra", "Country: Australia", "Chosen In: 1908 as a compromise between Sydney and Melbourne", "Currency: Australian Dollar (AUD)"],
+    "highlights": [
+      "Capital: Canberra",
+      "Country: Australia",
+      "Chosen In: 1908 as a compromise between Sydney and Melbourne",
+      "Currency: Australian Dollar (AUD)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Canberra"
   },
   {
     "id": "geo-cap-germany",
-    "keywords": ["capital of germany", "germany capital", "germany ki rajdhani", "berlin capital"],
+    "keywords": [
+      "capital of germany",
+      "germany capital",
+      "germany ki rajdhani",
+      "berlin capital"
+    ],
     "title": "Capital of Germany — Berlin",
     "category": "Geography",
     "answer": "Berlin is the capital and largest city of Germany by both area and population.",
-    "highlights": ["Capital: Berlin", "Country: Federal Republic of Germany", "Landmarks: Brandenburg Gate, Reichstag Building, Berlin Wall Memorial", "Currency: Euro (EUR)"],
+    "highlights": [
+      "Capital: Berlin",
+      "Country: Federal Republic of Germany",
+      "Landmarks: Brandenburg Gate, Reichstag Building, Berlin Wall Memorial",
+      "Currency: Euro (EUR)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Berlin"
   },
   {
     "id": "geo-cap-canada",
-    "keywords": ["capital of canada", "canada capital", "canada ki rajdhani", "ottawa capital"],
+    "keywords": [
+      "capital of canada",
+      "canada capital",
+      "canada ki rajdhani",
+      "ottawa capital"
+    ],
     "title": "Capital of Canada — Ottawa",
     "category": "Geography",
     "answer": "Ottawa is the capital city of Canada, located in the province of Ontario on the south bank of the Ottawa River.",
-    "highlights": ["Capital: Ottawa", "Country: Canada", "Seat of Government: Parliament Hill", "Currency: Canadian Dollar (CAD)"],
+    "highlights": [
+      "Capital: Ottawa",
+      "Country: Canada",
+      "Seat of Government: Parliament Hill",
+      "Currency: Canadian Dollar (CAD)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Ottawa"
   },
   {
     "id": "geo-cap-russia",
-    "keywords": ["capital of russia", "russia capital", "moscow capital", "russia ki rajdhani"],
+    "keywords": [
+      "capital of russia",
+      "russia capital",
+      "moscow capital",
+      "russia ki rajdhani"
+    ],
     "title": "Capital of Russia — Moscow",
     "category": "Geography",
     "answer": "Moscow is the capital and largest city of the Russian Federation, situated along the Moskva River.",
-    "highlights": ["Capital: Moscow", "Country: Russia (largest country in world by area)", "Landmarks: Red Square, Kremlin, Saint Basil's Cathedral", "Currency: Russian Ruble (RUB)"],
+    "highlights": [
+      "Capital: Moscow",
+      "Country: Russia (largest country in world by area)",
+      "Landmarks: Red Square, Kremlin, Saint Basil's Cathedral",
+      "Currency: Russian Ruble (RUB)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Moscow"
   },
   {
     "id": "geo-cap-china",
-    "keywords": ["capital of china", "china capital", "beijing capital", "china ki rajdhani"],
+    "keywords": [
+      "capital of china",
+      "china capital",
+      "beijing capital",
+      "china ki rajdhani"
+    ],
     "title": "Capital of China — Beijing",
     "category": "Geography",
     "answer": "Beijing (Peking) is the capital city of the People's Republic of China, with over 3,000 years of rich history.",
-    "highlights": ["Capital: Beijing", "Country: People's Republic of China", "Landmarks: Forbidden City, Tiananmen Square, Great Wall of China", "Currency: Chinese Yuan (RMB)"],
+    "highlights": [
+      "Capital: Beijing",
+      "Country: People's Republic of China",
+      "Landmarks: Forbidden City, Tiananmen Square, Great Wall of China",
+      "Currency: Chinese Yuan (RMB)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Beijing"
   },
   {
     "id": "geo-cap-italy",
-    "keywords": ["capital of italy", "italy capital", "rome capital", "italy ki rajdhani"],
+    "keywords": [
+      "capital of italy",
+      "italy capital",
+      "rome capital",
+      "italy ki rajdhani"
+    ],
     "title": "Capital of Italy — Rome",
     "category": "Geography",
     "answer": "Rome is the capital city of Italy, known as the 'Eternal City' and home to the Vatican City enclave.",
-    "highlights": ["Capital: Rome", "Country: Italy", "Landmarks: Colosseum, Roman Forum, Trevi Fountain, Pantheon", "Currency: Euro (EUR)"],
+    "highlights": [
+      "Capital: Rome",
+      "Country: Italy",
+      "Landmarks: Colosseum, Roman Forum, Trevi Fountain, Pantheon",
+      "Currency: Euro (EUR)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Rome"
   },
   {
     "id": "geo-cap-brazil",
-    "keywords": ["capital of brazil", "brazil capital", "brasilia capital"],
+    "keywords": [
+      "capital of brazil",
+      "brazil capital",
+      "brasilia capital"
+    ],
     "title": "Capital of Brazil — Brasília",
     "category": "Geography",
     "answer": "Brasília is the federal capital of Brazil, inaugurated in 1960 as a planned city designed by Oscar Niemeyer and Lúcio Costa.",
-    "highlights": ["Capital: Brasília", "Country: Brazil", "Design: Planned city shaped like an airplane", "Currency: Brazilian Real (BRL)"],
+    "highlights": [
+      "Capital: Brasília",
+      "Country: Brazil",
+      "Design: Planned city shaped like an airplane",
+      "Currency: Brazilian Real (BRL)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Bras%C3%ADlia"
   },
   {
     "id": "geo-cap-saudi",
-    "keywords": ["capital of saudi arabia", "saudi arabia capital", "riyadh capital"],
+    "keywords": [
+      "capital of saudi arabia",
+      "saudi arabia capital",
+      "riyadh capital"
+    ],
     "title": "Capital of Saudi Arabia — Riyadh",
     "category": "Geography",
     "answer": "Riyadh is the capital and largest city of the Kingdom of Saudi Arabia.",
-    "highlights": ["Capital: Riyadh", "Country: Saudi Arabia", "Region: Arabian Peninsula", "Currency: Saudi Riyal (SAR)"],
+    "highlights": [
+      "Capital: Riyadh",
+      "Country: Saudi Arabia",
+      "Region: Arabian Peninsula",
+      "Currency: Saudi Riyal (SAR)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Riyadh"
   },
   {
     "id": "geo-cap-uae",
-    "keywords": ["capital of uae", "capital of united arab emirates", "uae capital", "abu dhabi capital"],
+    "keywords": [
+      "capital of uae",
+      "capital of united arab emirates",
+      "uae capital",
+      "abu dhabi capital"
+    ],
     "title": "Capital of the United Arab Emirates — Abu Dhabi",
     "category": "Geography",
     "answer": "Abu Dhabi is the capital and second-most populous city of the United Arab Emirates (after Dubai).",
-    "highlights": ["Capital: Abu Dhabi", "Country: United Arab Emirates (UAE)", "Landmarks: Sheikh Zayed Grand Mosque, Louvre Abu Dhabi", "Currency: UAE Dirham (AED)"],
+    "highlights": [
+      "Capital: Abu Dhabi",
+      "Country: United Arab Emirates (UAE)",
+      "Landmarks: Sheikh Zayed Grand Mosque, Louvre Abu Dhabi",
+      "Currency: UAE Dirham (AED)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Abu_Dhabi"
   },
   {
     "id": "geo-cap-pakistan",
-    "keywords": ["capital of pakistan", "pakistan capital", "islamabad capital"],
+    "keywords": [
+      "capital of pakistan",
+      "pakistan capital",
+      "islamabad capital"
+    ],
     "title": "Capital of Pakistan — Islamabad",
     "category": "Geography",
     "answer": "Islamabad is the federal capital city of Pakistan, located in the Islamabad Capital Territory in the foothills of the Margalla Hills.",
-    "highlights": ["Capital: Islamabad", "Country: Pakistan", "Built In: 1960s to replace Karachi as capital", "Currency: Pakistani Rupee (PKR)"],
+    "highlights": [
+      "Capital: Islamabad",
+      "Country: Pakistan",
+      "Built In: 1960s to replace Karachi as capital",
+      "Currency: Pakistani Rupee (PKR)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Islamabad"
   },
   {
     "id": "geo-cap-bangladesh",
-    "keywords": ["capital of bangladesh", "bangladesh capital", "dhaka capital"],
+    "keywords": [
+      "capital of bangladesh",
+      "bangladesh capital",
+      "dhaka capital"
+    ],
     "title": "Capital of Bangladesh — Dhaka",
     "category": "Geography",
     "answer": "Dhaka is the capital and largest megacity of Bangladesh, situated along the Buriganga River.",
-    "highlights": ["Capital: Dhaka", "Country: Bangladesh", "Nickname: City of Mosques / Rickshaw Capital of the World", "Currency: Bangladeshi Taka (BDT)"],
+    "highlights": [
+      "Capital: Dhaka",
+      "Country: Bangladesh",
+      "Nickname: City of Mosques / Rickshaw Capital of the World",
+      "Currency: Bangladeshi Taka (BDT)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Dhaka"
   },
   {
     "id": "geo-cap-nepal",
-    "keywords": ["capital of nepal", "nepal capital", "kathmandu capital"],
+    "keywords": [
+      "capital of nepal",
+      "nepal capital",
+      "kathmandu capital"
+    ],
     "title": "Capital of Nepal — Kathmandu",
     "category": "Geography",
     "answer": "Kathmandu is the capital and largest city of Nepal, set in the Kathmandu Valley in the Himalayas.",
-    "highlights": ["Capital: Kathmandu", "Country: Nepal", "Landmarks: Pashupatinath Temple, Swayambhunath (Monkey Temple), Boudhanath", "Currency: Nepalese Rupee (NPR)"],
+    "highlights": [
+      "Capital: Kathmandu",
+      "Country: Nepal",
+      "Landmarks: Pashupatinath Temple, Swayambhunath (Monkey Temple), Boudhanath",
+      "Currency: Nepalese Rupee (NPR)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Kathmandu"
   },
   {
     "id": "geo-cap-srilanka",
-    "keywords": ["capital of sri lanka", "sri lanka capital", "colombo capital", "sri jayawardenepura kotte"],
+    "keywords": [
+      "capital of sri lanka",
+      "sri lanka capital",
+      "colombo capital",
+      "sri jayawardenepura kotte"
+    ],
     "title": "Capital of Sri Lanka — Sri Jayawardenepura Kotte / Colombo",
     "category": "Geography",
     "answer": "Sri Jayawardenepura Kotte is the legislative capital and Colombo is the executive, judicial, and commercial capital of Sri Lanka.",
-    "highlights": ["Legislative Capital: Sri Jayawardenepura Kotte", "Commercial / Judicial Capital: Colombo", "Country: Sri Lanka", "Currency: Sri Lankan Rupee (LKR)"],
+    "highlights": [
+      "Legislative Capital: Sri Jayawardenepura Kotte",
+      "Commercial / Judicial Capital: Colombo",
+      "Country: Sri Lanka",
+      "Currency: Sri Lankan Rupee (LKR)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Sri_Jayawardenepura_Kotte"
   },
   {
     "id": "geo-cap-spain",
-    "keywords": ["capital of spain", "spain capital", "madrid capital", "spain ki rajdhani"],
+    "keywords": [
+      "capital of spain",
+      "spain capital",
+      "madrid capital",
+      "spain ki rajdhani"
+    ],
     "title": "Capital of Spain — Madrid",
     "category": "Geography",
     "answer": "Madrid is the capital and largest city of Spain, located in the central part of the Iberian Peninsula on the Manzanares River.",
-    "highlights": ["Capital: Madrid", "Country: Kingdom of Spain", "Landmarks: Royal Palace of Madrid, Prado Museum", "Currency: Euro (EUR)"],
+    "highlights": [
+      "Capital: Madrid",
+      "Country: Kingdom of Spain",
+      "Landmarks: Royal Palace of Madrid, Prado Museum",
+      "Currency: Euro (EUR)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Madrid"
   },
   {
     "id": "geo-cap-southkorea",
-    "keywords": ["capital of south korea", "south korea capital", "seoul capital", "korea capital"],
+    "keywords": [
+      "capital of south korea",
+      "south korea capital",
+      "seoul capital",
+      "korea capital"
+    ],
     "title": "Capital of South Korea — Seoul",
     "category": "Geography",
     "answer": "Seoul is the capital and largest metropolis of South Korea, located on the Han River.",
-    "highlights": ["Capital: Seoul", "Country: Republic of Korea (South Korea)", "Landmarks: Gyeongbokgung Palace, N Seoul Tower, Lotte World Tower", "Currency: South Korean Won (KRW)"],
+    "highlights": [
+      "Capital: Seoul",
+      "Country: Republic of Korea (South Korea)",
+      "Landmarks: Gyeongbokgung Palace, N Seoul Tower, Lotte World Tower",
+      "Currency: South Korean Won (KRW)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Seoul"
   },
   {
     "id": "geo-cap-southafrica",
-    "keywords": ["capital of south africa", "south africa capital", "pretoria capital", "cape town capital"],
+    "keywords": [
+      "capital of south africa",
+      "south africa capital",
+      "pretoria capital",
+      "cape town capital"
+    ],
     "title": "Capitals of South Africa — Pretoria / Cape Town / Bloemfontein",
     "category": "Geography",
     "answer": "South Africa has three official capital cities: Pretoria (Executive / Administrative), Cape Town (Legislative), and Bloemfontein (Judicial).",
-    "highlights": ["Executive Capital: Pretoria", "Legislative Capital: Cape Town", "Judicial Capital: Bloemfontein", "Currency: South African Rand (ZAR)"],
+    "highlights": [
+      "Executive Capital: Pretoria",
+      "Legislative Capital: Cape Town",
+      "Judicial Capital: Bloemfontein",
+      "Currency: South African Rand (ZAR)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Capitals_of_South_Africa"
   },
   {
     "id": "geo-cap-egypt",
-    "keywords": ["capital of egypt", "egypt capital", "cairo capital", "egypt ki rajdhani"],
+    "keywords": [
+      "capital of egypt",
+      "egypt capital",
+      "cairo capital",
+      "egypt ki rajdhani"
+    ],
     "title": "Capital of Egypt — Cairo",
     "category": "Geography",
     "answer": "Cairo is the capital and largest city of Egypt and the Arab world, situated near the Nile River Delta.",
-    "highlights": ["Capital: Cairo", "Country: Arab Republic of Egypt", "Landmarks: Giza Pyramids, Great Sphinx, Grand Egyptian Museum", "Currency: Egyptian Pound (EGP)"],
+    "highlights": [
+      "Capital: Cairo",
+      "Country: Arab Republic of Egypt",
+      "Landmarks: Giza Pyramids, Great Sphinx, Grand Egyptian Museum",
+      "Currency: Egyptian Pound (EGP)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Cairo"
   },
   {
     "id": "geo-cap-mexico",
-    "keywords": ["capital of mexico", "mexico capital", "mexico city capital"],
+    "keywords": [
+      "capital of mexico",
+      "mexico capital",
+      "mexico city capital"
+    ],
     "title": "Capital of Mexico — Mexico City",
     "category": "Geography",
     "answer": "Mexico City is the capital and largest city of Mexico, built on the historic ruins of Tenochtitlan in the Valley of Mexico.",
-    "highlights": ["Capital: Mexico City (CDMX)", "Country: United Mexican States", "Elevation: ~2,240 metres above sea level", "Currency: Mexican Peso (MXN)"],
+    "highlights": [
+      "Capital: Mexico City (CDMX)",
+      "Country: United Mexican States",
+      "Elevation: ~2,240 metres above sea level",
+      "Currency: Mexican Peso (MXN)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Mexico_City"
   },
   {
     "id": "geo-cap-argentina",
-    "keywords": ["capital of argentina", "argentina capital", "buenos aires capital"],
+    "keywords": [
+      "capital of argentina",
+      "argentina capital",
+      "buenos aires capital"
+    ],
     "title": "Capital of Argentina — Buenos Aires",
     "category": "Geography",
     "answer": "Buenos Aires is the capital and largest city of Argentina, located on the western shore of the Río de la Plata estuary.",
-    "highlights": ["Capital: Buenos Aires", "Country: Argentine Republic", "Landmarks: Casa Rosada, Plaza de Mayo, Teatro Colón, Obelisco", "Currency: Argentine Peso (ARS)"],
+    "highlights": [
+      "Capital: Buenos Aires",
+      "Country: Argentine Republic",
+      "Landmarks: Casa Rosada, Plaza de Mayo, Teatro Colón, Obelisco",
+      "Currency: Argentine Peso (ARS)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Buenos_Aires"
   },
   {
     "id": "geo-cap-indonesia",
-    "keywords": ["capital of indonesia", "indonesia capital", "jakarta capital", "nusantara capital"],
+    "keywords": [
+      "capital of indonesia",
+      "indonesia capital",
+      "jakarta capital",
+      "nusantara capital"
+    ],
     "title": "Capital of Indonesia — Jakarta (transitioning to Nusantara)",
     "category": "Geography",
     "answer": "Jakarta is the current capital and largest city of Indonesia, with Nusantara in East Kalimantan designated as the future planned administrative capital.",
-    "highlights": ["Current Capital: Jakarta (Java Island)", "Planned Capital: Nusantara (East Kalimantan / Borneo)", "Country: Republic of Indonesia", "Currency: Indonesian Rupiah (IDR)"],
+    "highlights": [
+      "Current Capital: Jakarta (Java Island)",
+      "Planned Capital: Nusantara (East Kalimantan / Borneo)",
+      "Country: Republic of Indonesia",
+      "Currency: Indonesian Rupiah (IDR)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Jakarta"
   },
   {
     "id": "geo-cap-turkey",
-    "keywords": ["capital of turkey", "turkey capital", "turkiye capital", "ankara capital"],
+    "keywords": [
+      "capital of turkey",
+      "turkey capital",
+      "turkiye capital",
+      "ankara capital"
+    ],
     "title": "Capital of Turkey (Türkiye) — Ankara",
     "category": "Geography",
     "answer": "Ankara is the capital city of Turkey (Türkiye), situated in the central Anatolia region, while Istanbul is its largest city.",
-    "highlights": ["Capital: Ankara", "Largest City & Cultural Hub: Istanbul", "Country: Republic of Türkiye", "Currency: Turkish Lira (TRY)"],
+    "highlights": [
+      "Capital: Ankara",
+      "Largest City & Cultural Hub: Istanbul",
+      "Country: Republic of Türkiye",
+      "Currency: Turkish Lira (TRY)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Ankara"
   },
   {
     "id": "geo-cap-switzerland",
-    "keywords": ["capital of switzerland", "switzerland capital", "bern capital", "swiss capital"],
+    "keywords": [
+      "capital of switzerland",
+      "switzerland capital",
+      "bern capital",
+      "swiss capital"
+    ],
     "title": "De Facto Capital of Switzerland — Bern",
     "category": "Geography",
     "answer": "Bern is the de facto capital (Federal City) and seat of government of Switzerland.",
-    "highlights": ["Federal City / De Facto Capital: Bern", "Country: Swiss Confederation (Switzerland)", "Major Financial Cities: Zurich, Geneva", "Currency: Swiss Franc (CHF)"],
+    "highlights": [
+      "Federal City / De Facto Capital: Bern",
+      "Country: Swiss Confederation (Switzerland)",
+      "Major Financial Cities: Zurich, Geneva",
+      "Currency: Swiss Franc (CHF)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Bern"
   },
   {
     "id": "geo-cap-netherlands",
-    "keywords": ["capital of netherlands", "netherlands capital", "holland capital", "amsterdam capital"],
+    "keywords": [
+      "capital of netherlands",
+      "netherlands capital",
+      "holland capital",
+      "amsterdam capital"
+    ],
     "title": "Capital of the Netherlands — Amsterdam (The Hague seat of govt)",
     "category": "Geography",
     "answer": "Amsterdam is the constitutional capital of the Netherlands, while The Hague is the seat of its government, parliament, and Supreme Court.",
-    "highlights": ["Official Capital: Amsterdam", "Seat of Government & International Courts: The Hague", "Country: Kingdom of the Netherlands", "Currency: Euro (EUR)"],
+    "highlights": [
+      "Official Capital: Amsterdam",
+      "Seat of Government & International Courts: The Hague",
+      "Country: Kingdom of the Netherlands",
+      "Currency: Euro (EUR)"
+    ],
     "url": "https://en.wikipedia.org/wiki/Amsterdam"
+  },
+  {
+    "id": "geo-metro-tokyo",
+    "keywords": [
+      "population of tokyo",
+      "where is tokyo",
+      "tokyo japan facts",
+      "about tokyo"
+    ],
+    "title": "Tokyo, Japan — Population ~37.4 Million | Key Facts",
+    "category": "Geography",
+    "answer": "Tokyo is a major global metropolitan center in Japan with a population of approximately 37.4 Million. Key facts: World's most populous metropolitan area, Mount Fuji views, Shibuya crossing, Shinjuku.",
+    "highlights": [
+      "City: Tokyo | Country: Japan",
+      "Metropolitan Population: ~37.4 Million",
+      "Notable Attributes: World's most populous metropolitan area, Mount Fuji views, Shibuya crossing, Shinjuku"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Tokyo"
+  },
+  {
+    "id": "geo-metro-delhi",
+    "keywords": [
+      "population of delhi",
+      "where is delhi",
+      "delhi india facts",
+      "about delhi"
+    ],
+    "title": "Delhi, India — Population ~33.0 Million | Key Facts",
+    "category": "Geography",
+    "answer": "Delhi is a major global metropolitan center in India with a population of approximately 33.0 Million. Key facts: National Capital Region of India, historic monuments (Red Fort, Qutub Minar, India Gate).",
+    "highlights": [
+      "City: Delhi | Country: India",
+      "Metropolitan Population: ~33.0 Million",
+      "Notable Attributes: National Capital Region of India, historic monuments (Red Fort, Qutub Minar, India Gate)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Delhi"
+  },
+  {
+    "id": "geo-metro-shanghai",
+    "keywords": [
+      "population of shanghai",
+      "where is shanghai",
+      "shanghai china facts",
+      "about shanghai"
+    ],
+    "title": "Shanghai, China — Population ~29.0 Million | Key Facts",
+    "category": "Geography",
+    "answer": "Shanghai is a major global metropolitan center in China with a population of approximately 29.0 Million. Key facts: Global financial hub, world's busiest container port, The Bund, Oriental Pearl Tower.",
+    "highlights": [
+      "City: Shanghai | Country: China",
+      "Metropolitan Population: ~29.0 Million",
+      "Notable Attributes: Global financial hub, world's busiest container port, The Bund, Oriental Pearl Tower"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Shanghai"
+  },
+  {
+    "id": "geo-metro-são-paulo",
+    "keywords": [
+      "population of são paulo",
+      "where is são paulo",
+      "são paulo brazil facts",
+      "about são paulo"
+    ],
+    "title": "São Paulo, Brazil — Population ~22.5 Million | Key Facts",
+    "category": "Geography",
+    "answer": "São Paulo is a major global metropolitan center in Brazil with a population of approximately 22.5 Million. Key facts: Largest metropolis in the Americas and Southern Hemisphere, financial center of Latin America.",
+    "highlights": [
+      "City: São Paulo | Country: Brazil",
+      "Metropolitan Population: ~22.5 Million",
+      "Notable Attributes: Largest metropolis in the Americas and Southern Hemisphere, financial center of Latin America"
+    ],
+    "url": "https://en.wikipedia.org/wiki/São_Paulo"
+  },
+  {
+    "id": "geo-metro-mexico-city",
+    "keywords": [
+      "population of mexico city",
+      "where is mexico city",
+      "mexico city mexico facts",
+      "about mexico city"
+    ],
+    "title": "Mexico City, Mexico — Population ~22.0 Million | Key Facts",
+    "category": "Geography",
+    "answer": "Mexico City is a major global metropolitan center in Mexico with a population of approximately 22.0 Million. Key facts: Built on ancient Aztec capital Tenochtitlan, historic Zócalo, high altitude basin (2,240 m).",
+    "highlights": [
+      "City: Mexico City | Country: Mexico",
+      "Metropolitan Population: ~22.0 Million",
+      "Notable Attributes: Built on ancient Aztec capital Tenochtitlan, historic Zócalo, high altitude basin (2,240 m)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Mexico_City"
+  },
+  {
+    "id": "geo-metro-cairo",
+    "keywords": [
+      "population of cairo",
+      "where is cairo",
+      "cairo egypt facts",
+      "about cairo"
+    ],
+    "title": "Cairo, Egypt — Population ~22.0 Million | Key Facts",
+    "category": "Geography",
+    "answer": "Cairo is a major global metropolitan center in Egypt with a population of approximately 22.0 Million. Key facts: Largest city in Africa and Arab world, Pyramids of Giza, Nile River valley.",
+    "highlights": [
+      "City: Cairo | Country: Egypt",
+      "Metropolitan Population: ~22.0 Million",
+      "Notable Attributes: Largest city in Africa and Arab world, Pyramids of Giza, Nile River valley"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Cairo"
+  },
+  {
+    "id": "geo-metro-mumbai",
+    "keywords": [
+      "population of mumbai",
+      "where is mumbai",
+      "mumbai india facts",
+      "about mumbai"
+    ],
+    "title": "Mumbai, India — Population ~21.5 Million | Key Facts",
+    "category": "Geography",
+    "answer": "Mumbai is a major global metropolitan center in India with a population of approximately 21.5 Million. Key facts: Financial capital of India, Bombay Stock Exchange, Bollywood film industry, Gateway of India.",
+    "highlights": [
+      "City: Mumbai | Country: India",
+      "Metropolitan Population: ~21.5 Million",
+      "Notable Attributes: Financial capital of India, Bombay Stock Exchange, Bollywood film industry, Gateway of India"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Mumbai"
+  },
+  {
+    "id": "geo-metro-beijing",
+    "keywords": [
+      "population of beijing",
+      "where is beijing",
+      "beijing china facts",
+      "about beijing"
+    ],
+    "title": "Beijing, China — Population ~21.5 Million | Key Facts",
+    "category": "Geography",
+    "answer": "Beijing is a major global metropolitan center in China with a population of approximately 21.5 Million. Key facts: Capital of China, Forbidden City, Temple of Heaven, Summer Palace, Great Wall access.",
+    "highlights": [
+      "City: Beijing | Country: China",
+      "Metropolitan Population: ~21.5 Million",
+      "Notable Attributes: Capital of China, Forbidden City, Temple of Heaven, Summer Palace, Great Wall access"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Beijing"
+  },
+  {
+    "id": "geo-metro-dhaka",
+    "keywords": [
+      "population of dhaka",
+      "where is dhaka",
+      "dhaka bangladesh facts",
+      "about dhaka"
+    ],
+    "title": "Dhaka, Bangladesh — Population ~23.0 Million | Key Facts",
+    "category": "Geography",
+    "answer": "Dhaka is a major global metropolitan center in Bangladesh with a population of approximately 23.0 Million. Key facts: Capital of Bangladesh on Buriganga river, historic City of Mosques, textile manufacturing hub.",
+    "highlights": [
+      "City: Dhaka | Country: Bangladesh",
+      "Metropolitan Population: ~23.0 Million",
+      "Notable Attributes: Capital of Bangladesh on Buriganga river, historic City of Mosques, textile manufacturing hub"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Dhaka"
+  },
+  {
+    "id": "geo-metro-osaka",
+    "keywords": [
+      "population of osaka",
+      "where is osaka",
+      "osaka japan facts",
+      "about osaka"
+    ],
+    "title": "Osaka, Japan — Population ~19.0 Million | Key Facts",
+    "category": "Geography",
+    "answer": "Osaka is a major global metropolitan center in Japan with a population of approximately 19.0 Million. Key facts: Kansai commercial center, Dotonbori food culture, Osaka Castle, industrial powerhouse.",
+    "highlights": [
+      "City: Osaka | Country: Japan",
+      "Metropolitan Population: ~19.0 Million",
+      "Notable Attributes: Kansai commercial center, Dotonbori food culture, Osaka Castle, industrial powerhouse"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Osaka"
+  },
+  {
+    "id": "geo-metro-new-york-city",
+    "keywords": [
+      "population of new york city",
+      "where is new york city",
+      "new york city united states facts",
+      "about new york city"
+    ],
+    "title": "New York City, United States — Population ~19.5 Million | Key Facts",
+    "category": "Geography",
+    "answer": "New York City is a major global metropolitan center in United States with a population of approximately 19.5 Million. Key facts: Global capital of finance, media, and diplomacy; Wall Street, UN Headquarters, Broadway, Statue of Liberty.",
+    "highlights": [
+      "City: New York City | Country: United States",
+      "Metropolitan Population: ~19.5 Million",
+      "Notable Attributes: Global capital of finance, media, and diplomacy; Wall Street, UN Headquarters, Broadway, Statue of Liberty"
+    ],
+    "url": "https://en.wikipedia.org/wiki/New_York_City"
+  },
+  {
+    "id": "geo-metro-london",
+    "keywords": [
+      "population of london",
+      "where is london",
+      "london united kingdom facts",
+      "about london"
+    ],
+    "title": "London, United Kingdom — Population ~9.5 Million (Metro 14.5M) | Key Facts",
+    "category": "Geography",
+    "answer": "London is a major global metropolitan center in United Kingdom with a population of approximately 9.5 Million (Metro 14.5M). Key facts: Historic capital on River Thames, Big Ben, Tower Bridge, British Museum, global financial center.",
+    "highlights": [
+      "City: London | Country: United Kingdom",
+      "Metropolitan Population: ~9.5 Million (Metro 14.5M)",
+      "Notable Attributes: Historic capital on River Thames, Big Ben, Tower Bridge, British Museum, global financial center"
+    ],
+    "url": "https://en.wikipedia.org/wiki/London"
+  },
+  {
+    "id": "geo-metro-paris",
+    "keywords": [
+      "population of paris",
+      "where is paris",
+      "paris france facts",
+      "about paris"
+    ],
+    "title": "Paris, France — Population ~2.1 Million (Metro 12.3M) | Key Facts",
+    "category": "Geography",
+    "answer": "Paris is a major global metropolitan center in France with a population of approximately 2.1 Million (Metro 12.3M). Key facts: City of Light on Seine River, Eiffel Tower, Louvre Museum, Notre-Dame, haute couture fashion.",
+    "highlights": [
+      "City: Paris | Country: France",
+      "Metropolitan Population: ~2.1 Million (Metro 12.3M)",
+      "Notable Attributes: City of Light on Seine River, Eiffel Tower, Louvre Museum, Notre-Dame, haute couture fashion"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Paris"
+  },
+  {
+    "id": "geo-metro-istanbul",
+    "keywords": [
+      "population of istanbul",
+      "where is istanbul",
+      "istanbul turkey facts",
+      "about istanbul"
+    ],
+    "title": "Istanbul, Turkey — Population ~15.5 Million | Key Facts",
+    "category": "Geography",
+    "answer": "Istanbul is a major global metropolitan center in Turkey with a population of approximately 15.5 Million. Key facts: Historic transcontinental bridge between Europe and Asia across Bosphorus Strait, Hagia Sophia, Blue Mosque.",
+    "highlights": [
+      "City: Istanbul | Country: Turkey",
+      "Metropolitan Population: ~15.5 Million",
+      "Notable Attributes: Historic transcontinental bridge between Europe and Asia across Bosphorus Strait, Hagia Sophia, Blue Mosque"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Istanbul"
+  },
+  {
+    "id": "geo-metro-seoul",
+    "keywords": [
+      "population of seoul",
+      "where is seoul",
+      "seoul south korea facts",
+      "about seoul"
+    ],
+    "title": "Seoul, South Korea — Population ~9.7 Million (Metro 26M) | Key Facts",
+    "category": "Geography",
+    "answer": "Seoul is a major global metropolitan center in South Korea with a population of approximately 9.7 Million (Metro 26M). Key facts: Capital along Han River, Gangnam district, Gyeongbokgung Palace, global K-culture and semiconductor hub.",
+    "highlights": [
+      "City: Seoul | Country: South Korea",
+      "Metropolitan Population: ~9.7 Million (Metro 26M)",
+      "Notable Attributes: Capital along Han River, Gangnam district, Gyeongbokgung Palace, global K-culture and semiconductor hub"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Seoul"
+  },
+  {
+    "id": "geo-metro-dubai",
+    "keywords": [
+      "population of dubai",
+      "where is dubai",
+      "dubai united arab emirates facts",
+      "about dubai"
+    ],
+    "title": "Dubai, United Arab Emirates — Population ~3.6 Million | Key Facts",
+    "category": "Geography",
+    "answer": "Dubai is a major global metropolitan center in United Arab Emirates with a population of approximately 3.6 Million. Key facts: Ultra-modern global aviation and tourism hub, Burj Khalifa (828m tallest building), Palm Jumeirah islands.",
+    "highlights": [
+      "City: Dubai | Country: United Arab Emirates",
+      "Metropolitan Population: ~3.6 Million",
+      "Notable Attributes: Ultra-modern global aviation and tourism hub, Burj Khalifa (828m tallest building), Palm Jumeirah islands"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Dubai"
+  },
+  {
+    "id": "geo-india-state-1-andhra-pradesh",
+    "keywords": [
+      "capital of andhra pradesh",
+      "andhra pradesh capital",
+      "language of andhra pradesh",
+      "about andhra pradesh",
+      "andhra pradesh state facts"
+    ],
+    "title": "Andhra Pradesh — Capital: Amaravati | Key Facts",
+    "category": "Geography",
+    "answer": "Andhra Pradesh is an Indian State with capital Amaravati and official language(s): Telugu. Key highlights: Kuchipudi dance, Tirupati Balaji temple, Visakhapatnam port, Godavari and Krishna rivers.",
+    "highlights": [
+      "State / UT: Andhra Pradesh",
+      "Capital: Amaravati",
+      "Official Language(s): Telugu",
+      "Key Landmarks & Features: Kuchipudi dance, Tirupati Balaji temple, Visakhapatnam port, Godavari and Krishna rivers"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Andhra"
+  },
+  {
+    "id": "geo-india-state-2-arunachal-pradesh",
+    "keywords": [
+      "capital of arunachal pradesh",
+      "arunachal pradesh capital",
+      "language of arunachal pradesh",
+      "about arunachal pradesh",
+      "arunachal pradesh state facts"
+    ],
+    "title": "Arunachal Pradesh — Capital: Itanagar | Key Facts",
+    "category": "Geography",
+    "answer": "Arunachal Pradesh is an Indian State with capital Itanagar and official language(s): English, tribal languages. Key highlights: Land of the Dawn-Lit Mountains, Tawang Monastery, borders China, Myanmar, Bhutan.",
+    "highlights": [
+      "State / UT: Arunachal Pradesh",
+      "Capital: Itanagar",
+      "Official Language(s): English, tribal languages",
+      "Key Landmarks & Features: Land of the Dawn-Lit Mountains, Tawang Monastery, borders China, Myanmar, Bhutan"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Arunachal"
+  },
+  {
+    "id": "geo-india-state-3-assam",
+    "keywords": [
+      "capital of assam",
+      "assam capital",
+      "language of assam",
+      "about assam",
+      "assam state facts"
+    ],
+    "title": "Assam — Capital: Dispur (Guwahati largest) | Key Facts",
+    "category": "Geography",
+    "answer": "Assam is an Indian State with capital Dispur (Guwahati largest) and official language(s): Assamese. Key highlights: Kaziranga National Park (One-horned rhino), Assam tea, Brahmaputra river, Bihu dance.",
+    "highlights": [
+      "State / UT: Assam",
+      "Capital: Dispur (Guwahati largest)",
+      "Official Language(s): Assamese",
+      "Key Landmarks & Features: Kaziranga National Park (One-horned rhino), Assam tea, Brahmaputra river, Bihu dance"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Assam"
+  },
+  {
+    "id": "geo-india-state-4-bihar",
+    "keywords": [
+      "capital of bihar",
+      "bihar capital",
+      "language of bihar",
+      "about bihar",
+      "bihar state facts"
+    ],
+    "title": "Bihar — Capital: Patna | Key Facts",
+    "category": "Geography",
+    "answer": "Bihar is an Indian State with capital Patna and official language(s): Hindi, Maithili, Bhojpuri. Key highlights: Ancient Nalanda and Vikramshila universities, Bodh Gaya (Buddha enlightenment), Mahavira birth, Ganga river.",
+    "highlights": [
+      "State / UT: Bihar",
+      "Capital: Patna",
+      "Official Language(s): Hindi, Maithili, Bhojpuri",
+      "Key Landmarks & Features: Ancient Nalanda and Vikramshila universities, Bodh Gaya (Buddha enlightenment), Mahavira birth, Ganga river"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Bihar"
+  },
+  {
+    "id": "geo-india-state-5-chhattisgarh",
+    "keywords": [
+      "capital of chhattisgarh",
+      "chhattisgarh capital",
+      "language of chhattisgarh",
+      "about chhattisgarh",
+      "chhattisgarh state facts"
+    ],
+    "title": "Chhattisgarh — Capital: Raipur | Key Facts",
+    "category": "Geography",
+    "answer": "Chhattisgarh is an Indian State with capital Raipur and official language(s): Chhattisgarhi, Hindi. Key highlights: Rice bowl of central India, Chitrakote Falls (Niagara of India), mineral-rich, Bastar tribal craft.",
+    "highlights": [
+      "State / UT: Chhattisgarh",
+      "Capital: Raipur",
+      "Official Language(s): Chhattisgarhi, Hindi",
+      "Key Landmarks & Features: Rice bowl of central India, Chitrakote Falls (Niagara of India), mineral-rich, Bastar tribal craft"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Chhattisgarh"
+  },
+  {
+    "id": "geo-india-state-6-goa",
+    "keywords": [
+      "capital of goa",
+      "goa capital",
+      "language of goa",
+      "about goa",
+      "goa state facts"
+    ],
+    "title": "Goa — Capital: Panaji | Key Facts",
+    "category": "Geography",
+    "answer": "Goa is an Indian State with capital Panaji and official language(s): Konkani. Key highlights: Smallest Indian state by area, Dudhsagar Falls, UNESCO churches of Old Goa, Calangute beach, former Portuguese territory.",
+    "highlights": [
+      "State / UT: Goa",
+      "Capital: Panaji",
+      "Official Language(s): Konkani",
+      "Key Landmarks & Features: Smallest Indian state by area, Dudhsagar Falls, UNESCO churches of Old Goa, Calangute beach, former Portuguese territory"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Goa"
+  },
+  {
+    "id": "geo-india-state-7-gujarat",
+    "keywords": [
+      "capital of gujarat",
+      "gujarat capital",
+      "language of gujarat",
+      "about gujarat",
+      "gujarat state facts"
+    ],
+    "title": "Gujarat — Capital: Gandhinagar (Ahmedabad largest) | Key Facts",
+    "category": "Geography",
+    "answer": "Gujarat is an Indian State with capital Gandhinagar (Ahmedabad largest) and official language(s): Gujarati. Key highlights: Statue of Unity (182m tallest in world), Gir National Park (Asiatic lions), Rann of Kutch white salt desert.",
+    "highlights": [
+      "State / UT: Gujarat",
+      "Capital: Gandhinagar (Ahmedabad largest)",
+      "Official Language(s): Gujarati",
+      "Key Landmarks & Features: Statue of Unity (182m tallest in world), Gir National Park (Asiatic lions), Rann of Kutch white salt desert"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Gujarat"
+  },
+  {
+    "id": "geo-india-state-8-haryana",
+    "keywords": [
+      "capital of haryana",
+      "haryana capital",
+      "language of haryana",
+      "about haryana",
+      "haryana state facts"
+    ],
+    "title": "Haryana — Capital: Chandigarh | Key Facts",
+    "category": "Geography",
+    "answer": "Haryana is an Indian State with capital Chandigarh and official language(s): Hindi, Haryanvi. Key highlights: Kurukshetra (Mahabharata battle), historic Panipat battlefields, leading agricultural and industrial hub.",
+    "highlights": [
+      "State / UT: Haryana",
+      "Capital: Chandigarh",
+      "Official Language(s): Hindi, Haryanvi",
+      "Key Landmarks & Features: Kurukshetra (Mahabharata battle), historic Panipat battlefields, leading agricultural and industrial hub"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Haryana"
+  },
+  {
+    "id": "geo-india-state-9-himachal-pradesh",
+    "keywords": [
+      "capital of himachal pradesh",
+      "himachal pradesh capital",
+      "language of himachal pradesh",
+      "about himachal pradesh",
+      "himachal pradesh state facts"
+    ],
+    "title": "Himachal Pradesh — Capital: Shimla (summer), Dharamshala (winter) | Key Facts",
+    "category": "Geography",
+    "answer": "Himachal Pradesh is an Indian State with capital Shimla (summer), Dharamshala (winter) and official language(s): Hindi, Pahari. Key highlights: Himalayan hill stations (Manali, Kullu), Rohtang Pass, apple orchards, Dalai Lama residence in McLeod Ganj.",
+    "highlights": [
+      "State / UT: Himachal Pradesh",
+      "Capital: Shimla (summer), Dharamshala (winter)",
+      "Official Language(s): Hindi, Pahari",
+      "Key Landmarks & Features: Himalayan hill stations (Manali, Kullu), Rohtang Pass, apple orchards, Dalai Lama residence in McLeod Ganj"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Himachal"
+  },
+  {
+    "id": "geo-india-state-10-jharkhand",
+    "keywords": [
+      "capital of jharkhand",
+      "jharkhand capital",
+      "language of jharkhand",
+      "about jharkhand",
+      "jharkhand state facts"
+    ],
+    "title": "Jharkhand — Capital: Ranchi | Key Facts",
+    "category": "Geography",
+    "answer": "Jharkhand is an Indian State with capital Ranchi and official language(s): Hindi, Santali. Key highlights: Mineral hub of India (coal, iron ore, mica in Chota Nagpur plateau), Jamshedpur steel city, Betla National Park.",
+    "highlights": [
+      "State / UT: Jharkhand",
+      "Capital: Ranchi",
+      "Official Language(s): Hindi, Santali",
+      "Key Landmarks & Features: Mineral hub of India (coal, iron ore, mica in Chota Nagpur plateau), Jamshedpur steel city, Betla National Park"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Jharkhand"
+  },
+  {
+    "id": "geo-india-state-11-karnataka",
+    "keywords": [
+      "capital of karnataka",
+      "karnataka capital",
+      "language of karnataka",
+      "about karnataka",
+      "karnataka state facts"
+    ],
+    "title": "Karnataka — Capital: Bengaluru | Key Facts",
+    "category": "Geography",
+    "answer": "Karnataka is an Indian State with capital Bengaluru and official language(s): Kannada. Key highlights: Silicon Valley of India (Bengaluru), Hampi ruins (Vijayanagara Empire), Mysore Palace, Western Ghats coffee estates.",
+    "highlights": [
+      "State / UT: Karnataka",
+      "Capital: Bengaluru",
+      "Official Language(s): Kannada",
+      "Key Landmarks & Features: Silicon Valley of India (Bengaluru), Hampi ruins (Vijayanagara Empire), Mysore Palace, Western Ghats coffee estates"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Karnataka"
+  },
+  {
+    "id": "geo-india-state-12-kerala",
+    "keywords": [
+      "capital of kerala",
+      "kerala capital",
+      "language of kerala",
+      "about kerala",
+      "kerala state facts"
+    ],
+    "title": "Kerala — Capital: Thiruvananthapuram | Key Facts",
+    "category": "Geography",
+    "answer": "Kerala is an Indian State with capital Thiruvananthapuram and official language(s): Malayalam. Key highlights: God's Own Country, highest literacy rate in India, Alleppey backwaters, Kathakali and Mohiniyattam dances, spice coast.",
+    "highlights": [
+      "State / UT: Kerala",
+      "Capital: Thiruvananthapuram",
+      "Official Language(s): Malayalam",
+      "Key Landmarks & Features: God's Own Country, highest literacy rate in India, Alleppey backwaters, Kathakali and Mohiniyattam dances, spice coast"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Kerala"
+  },
+  {
+    "id": "geo-india-state-13-madhya-pradesh",
+    "keywords": [
+      "capital of madhya pradesh",
+      "madhya pradesh capital",
+      "language of madhya pradesh",
+      "about madhya pradesh",
+      "madhya pradesh state facts"
+    ],
+    "title": "Madhya Pradesh — Capital: Bhopal (Indore largest) | Key Facts",
+    "category": "Geography",
+    "answer": "Madhya Pradesh is an Indian State with capital Bhopal (Indore largest) and official language(s): Hindi. Key highlights: Heart of India, Khajuraho temples, Sanchi Stupa, Kanha and Bandhavgarh Tiger Reserves (highest tiger population).",
+    "highlights": [
+      "State / UT: Madhya Pradesh",
+      "Capital: Bhopal (Indore largest)",
+      "Official Language(s): Hindi",
+      "Key Landmarks & Features: Heart of India, Khajuraho temples, Sanchi Stupa, Kanha and Bandhavgarh Tiger Reserves (highest tiger population)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Madhya"
+  },
+  {
+    "id": "geo-india-state-14-maharashtra",
+    "keywords": [
+      "capital of maharashtra",
+      "maharashtra capital",
+      "language of maharashtra",
+      "about maharashtra",
+      "maharashtra state facts"
+    ],
+    "title": "Maharashtra — Capital: Mumbai (financial capital), Nagpur (winter) | Key Facts",
+    "category": "Geography",
+    "answer": "Maharashtra is an Indian State with capital Mumbai (financial capital), Nagpur (winter) and official language(s): Marathi. Key highlights: Ajanta & Ellora caves, Western Ghats, Chhatrapati Shivaji forts, Bollywood, Gateway of India.",
+    "highlights": [
+      "State / UT: Maharashtra",
+      "Capital: Mumbai (financial capital), Nagpur (winter)",
+      "Official Language(s): Marathi",
+      "Key Landmarks & Features: Ajanta & Ellora caves, Western Ghats, Chhatrapati Shivaji forts, Bollywood, Gateway of India"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Maharashtra"
+  },
+  {
+    "id": "geo-india-state-15-manipur",
+    "keywords": [
+      "capital of manipur",
+      "manipur capital",
+      "language of manipur",
+      "about manipur",
+      "manipur state facts"
+    ],
+    "title": "Manipur — Capital: Imphal | Key Facts",
+    "category": "Geography",
+    "answer": "Manipur is an Indian State with capital Imphal and official language(s): Meitei (Manipuri). Key highlights: Loktak Lake (world's only floating national park Keibul Lamjao with Sangai deer), Manipuri classical dance.",
+    "highlights": [
+      "State / UT: Manipur",
+      "Capital: Imphal",
+      "Official Language(s): Meitei (Manipuri)",
+      "Key Landmarks & Features: Loktak Lake (world's only floating national park Keibul Lamjao with Sangai deer), Manipuri classical dance"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Manipur"
+  },
+  {
+    "id": "geo-india-state-16-meghalaya",
+    "keywords": [
+      "capital of meghalaya",
+      "meghalaya capital",
+      "language of meghalaya",
+      "about meghalaya",
+      "meghalaya state facts"
+    ],
+    "title": "Meghalaya — Capital: Shillong | Key Facts",
+    "category": "Geography",
+    "answer": "Meghalaya is an Indian State with capital Shillong and official language(s): English, Khasi, Garo. Key highlights: Abode of Clouds, Mawsynram and Cherrapunji (wettest places on Earth), living root bridges, cleanest village Mawlynnong.",
+    "highlights": [
+      "State / UT: Meghalaya",
+      "Capital: Shillong",
+      "Official Language(s): English, Khasi, Garo",
+      "Key Landmarks & Features: Abode of Clouds, Mawsynram and Cherrapunji (wettest places on Earth), living root bridges, cleanest village Mawlynnong"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Meghalaya"
+  },
+  {
+    "id": "geo-india-state-17-mizoram",
+    "keywords": [
+      "capital of mizoram",
+      "mizoram capital",
+      "language of mizoram",
+      "about mizoram",
+      "mizoram state facts"
+    ],
+    "title": "Mizoram — Capital: Aizawl | Key Facts",
+    "category": "Geography",
+    "answer": "Mizoram is an Indian State with capital Aizawl and official language(s): Mizo, English. Key highlights: Land of rolling hills, Cheraw bamboo dance, high literacy rate, Blue Mountain (Phawngpui).",
+    "highlights": [
+      "State / UT: Mizoram",
+      "Capital: Aizawl",
+      "Official Language(s): Mizo, English",
+      "Key Landmarks & Features: Land of rolling hills, Cheraw bamboo dance, high literacy rate, Blue Mountain (Phawngpui)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Mizoram"
+  },
+  {
+    "id": "geo-india-state-18-nagaland",
+    "keywords": [
+      "capital of nagaland",
+      "nagaland capital",
+      "language of nagaland",
+      "about nagaland",
+      "nagaland state facts"
+    ],
+    "title": "Nagaland — Capital: Kohima (Dimapur largest) | Key Facts",
+    "category": "Geography",
+    "answer": "Nagaland is an Indian State with capital Kohima (Dimapur largest) and official language(s): English, Naga languages. Key highlights: Land of Festivals, annual Hornbill Festival, Dzukou Valley, Naga tribal culture.",
+    "highlights": [
+      "State / UT: Nagaland",
+      "Capital: Kohima (Dimapur largest)",
+      "Official Language(s): English, Naga languages",
+      "Key Landmarks & Features: Land of Festivals, annual Hornbill Festival, Dzukou Valley, Naga tribal culture"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Nagaland"
+  },
+  {
+    "id": "geo-india-state-19-odisha",
+    "keywords": [
+      "capital of odisha",
+      "odisha capital",
+      "language of odisha",
+      "about odisha",
+      "odisha state facts"
+    ],
+    "title": "Odisha — Capital: Bhubaneswar | Key Facts",
+    "category": "Geography",
+    "answer": "Odisha is an Indian State with capital Bhubaneswar and official language(s): Odia. Key highlights: Jagannath Temple Puri, Konark Sun Temple (Black Pagoda), Chilika Lake (largest coastal lagoon in India), Odissi classical dance.",
+    "highlights": [
+      "State / UT: Odisha",
+      "Capital: Bhubaneswar",
+      "Official Language(s): Odia",
+      "Key Landmarks & Features: Jagannath Temple Puri, Konark Sun Temple (Black Pagoda), Chilika Lake (largest coastal lagoon in India), Odissi classical dance"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Odisha"
+  },
+  {
+    "id": "geo-india-state-20-punjab",
+    "keywords": [
+      "capital of punjab",
+      "punjab capital",
+      "language of punjab",
+      "about punjab",
+      "punjab state facts"
+    ],
+    "title": "Punjab — Capital: Chandigarh | Key Facts",
+    "category": "Geography",
+    "answer": "Punjab is an Indian State with capital Chandigarh and official language(s): Punjabi. Key highlights: Golden Temple (Harmandir Sahib) in Amritsar, Land of Five Rivers, Bhangra dance, Green Revolution agricultural leader.",
+    "highlights": [
+      "State / UT: Punjab",
+      "Capital: Chandigarh",
+      "Official Language(s): Punjabi",
+      "Key Landmarks & Features: Golden Temple (Harmandir Sahib) in Amritsar, Land of Five Rivers, Bhangra dance, Green Revolution agricultural leader"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Punjab"
+  },
+  {
+    "id": "geo-india-state-21-rajasthan",
+    "keywords": [
+      "capital of rajasthan",
+      "rajasthan capital",
+      "language of rajasthan",
+      "about rajasthan",
+      "rajasthan state facts"
+    ],
+    "title": "Rajasthan — Capital: Jaipur (Pink City) | Key Facts",
+    "category": "Geography",
+    "answer": "Rajasthan is an Indian State with capital Jaipur (Pink City) and official language(s): Hindi, Rajasthani. Key highlights: Largest Indian state by area, Thar Desert, historic forts (Amer, Mehrangarh, Jaisalmer), Lake Palace Udaipur.",
+    "highlights": [
+      "State / UT: Rajasthan",
+      "Capital: Jaipur (Pink City)",
+      "Official Language(s): Hindi, Rajasthani",
+      "Key Landmarks & Features: Largest Indian state by area, Thar Desert, historic forts (Amer, Mehrangarh, Jaisalmer), Lake Palace Udaipur"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Rajasthan"
+  },
+  {
+    "id": "geo-india-state-22-sikkim",
+    "keywords": [
+      "capital of sikkim",
+      "sikkim capital",
+      "language of sikkim",
+      "about sikkim",
+      "sikkim state facts"
+    ],
+    "title": "Sikkim — Capital: Gangtok | Key Facts",
+    "category": "Geography",
+    "answer": "Sikkim is an Indian State with capital Gangtok and official language(s): Nepali, Sikkimese, English. Key highlights: Least populous Indian state, Mount Kangchenjunga (3rd highest in world), first 100% organic state in the world.",
+    "highlights": [
+      "State / UT: Sikkim",
+      "Capital: Gangtok",
+      "Official Language(s): Nepali, Sikkimese, English",
+      "Key Landmarks & Features: Least populous Indian state, Mount Kangchenjunga (3rd highest in world), first 100% organic state in the world"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sikkim"
+  },
+  {
+    "id": "geo-india-state-23-tamil-nadu",
+    "keywords": [
+      "capital of tamil nadu",
+      "tamil nadu capital",
+      "language of tamil nadu",
+      "about tamil nadu",
+      "tamil nadu state facts"
+    ],
+    "title": "Tamil Nadu — Capital: Chennai | Key Facts",
+    "category": "Geography",
+    "answer": "Tamil Nadu is an Indian State with capital Chennai and official language(s): Tamil. Key highlights: Dravidian temple architecture (Brihadisvara, Meenakshi), Bharatanatyam classical dance, Nilgiri hills, Marina Beach.",
+    "highlights": [
+      "State / UT: Tamil Nadu",
+      "Capital: Chennai",
+      "Official Language(s): Tamil",
+      "Key Landmarks & Features: Dravidian temple architecture (Brihadisvara, Meenakshi), Bharatanatyam classical dance, Nilgiri hills, Marina Beach"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Tamil"
+  },
+  {
+    "id": "geo-india-state-24-telangana",
+    "keywords": [
+      "capital of telangana",
+      "telangana capital",
+      "language of telangana",
+      "about telangana",
+      "telangana state facts"
+    ],
+    "title": "Telangana — Capital: Hyderabad | Key Facts",
+    "category": "Geography",
+    "answer": "Telangana is an Indian State with capital Hyderabad and official language(s): Telugu, Urdu. Key highlights: Formed 2 June 2014, Charminar, Golconda Fort, Ramappa Temple (UNESCO), major global IT and pharma hub.",
+    "highlights": [
+      "State / UT: Telangana",
+      "Capital: Hyderabad",
+      "Official Language(s): Telugu, Urdu",
+      "Key Landmarks & Features: Formed 2 June 2014, Charminar, Golconda Fort, Ramappa Temple (UNESCO), major global IT and pharma hub"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Telangana"
+  },
+  {
+    "id": "geo-india-state-25-tripura",
+    "keywords": [
+      "capital of tripura",
+      "tripura capital",
+      "language of tripura",
+      "about tripura",
+      "tripura state facts"
+    ],
+    "title": "Tripura — Capital: Agartala | Key Facts",
+    "category": "Geography",
+    "answer": "Tripura is an Indian State with capital Agartala and official language(s): Bengali, Kokborok. Key highlights: Ujjayanta Palace, Neermahal water palace, Tripura Sundari temple, bordered on 3 sides by Bangladesh.",
+    "highlights": [
+      "State / UT: Tripura",
+      "Capital: Agartala",
+      "Official Language(s): Bengali, Kokborok",
+      "Key Landmarks & Features: Ujjayanta Palace, Neermahal water palace, Tripura Sundari temple, bordered on 3 sides by Bangladesh"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Tripura"
+  },
+  {
+    "id": "geo-india-state-26-uttar-pradesh",
+    "keywords": [
+      "capital of uttar pradesh",
+      "uttar pradesh capital",
+      "language of uttar pradesh",
+      "about uttar pradesh",
+      "uttar pradesh state facts"
+    ],
+    "title": "Uttar Pradesh — Capital: Lucknow | Key Facts",
+    "category": "Geography",
+    "answer": "Uttar Pradesh is an Indian State with capital Lucknow and official language(s): Hindi, Urdu. Key highlights: Most populous Indian state (~240M), Taj Mahal Agra, holy city of Varanasi, Prayagraj Kumbh Mela, Ayodhya Ram Mandir.",
+    "highlights": [
+      "State / UT: Uttar Pradesh",
+      "Capital: Lucknow",
+      "Official Language(s): Hindi, Urdu",
+      "Key Landmarks & Features: Most populous Indian state (~240M), Taj Mahal Agra, holy city of Varanasi, Prayagraj Kumbh Mela, Ayodhya Ram Mandir"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Uttar"
+  },
+  {
+    "id": "geo-india-state-27-uttarakhand",
+    "keywords": [
+      "capital of uttarakhand",
+      "uttarakhand capital",
+      "language of uttarakhand",
+      "about uttarakhand",
+      "uttarakhand state facts"
+    ],
+    "title": "Uttarakhand — Capital: Dehradun (winter), Gairsain (summer) | Key Facts",
+    "category": "Geography",
+    "answer": "Uttarakhand is an Indian State with capital Dehradun (winter), Gairsain (summer) and official language(s): Hindi, Garhwali, Kumaoni. Key highlights: Devbhoomi (Land of Gods), Char Dham (Badrinath, Kedarnath, Gangotri, Yamunotri), Jim Corbett National Park, Valley of Flowers.",
+    "highlights": [
+      "State / UT: Uttarakhand",
+      "Capital: Dehradun (winter), Gairsain (summer)",
+      "Official Language(s): Hindi, Garhwali, Kumaoni",
+      "Key Landmarks & Features: Devbhoomi (Land of Gods), Char Dham (Badrinath, Kedarnath, Gangotri, Yamunotri), Jim Corbett National Park, Valley of Flowers"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Uttarakhand"
+  },
+  {
+    "id": "geo-india-state-28-west-bengal",
+    "keywords": [
+      "capital of west bengal",
+      "west bengal capital",
+      "language of west bengal",
+      "about west bengal",
+      "west bengal state facts"
+    ],
+    "title": "West Bengal — Capital: Kolkata | Key Facts",
+    "category": "Geography",
+    "answer": "West Bengal is an Indian State with capital Kolkata and official language(s): Bengali. Key highlights: Sundarbans (Royal Bengal Tigers), Darjeeling tea, Victoria Memorial, Durga Puja festival, Rabindranath Tagore heritage.",
+    "highlights": [
+      "State / UT: West Bengal",
+      "Capital: Kolkata",
+      "Official Language(s): Bengali",
+      "Key Landmarks & Features: Sundarbans (Royal Bengal Tigers), Darjeeling tea, Victoria Memorial, Durga Puja festival, Rabindranath Tagore heritage"
+    ],
+    "url": "https://en.wikipedia.org/wiki/West"
+  },
+  {
+    "id": "geo-india-state-29-andaman-and-nicobar-islands-ut",
+    "keywords": [
+      "capital of andaman and nicobar islands (ut)",
+      "andaman and nicobar islands (ut) capital",
+      "language of andaman and nicobar islands (ut)",
+      "about andaman and nicobar islands (ut)",
+      "andaman and nicobar islands (ut) state facts"
+    ],
+    "title": "Andaman and Nicobar Islands (UT) — Capital: Port Blair | Key Facts",
+    "category": "Geography",
+    "answer": "Andaman and Nicobar Islands (UT) is an Indian Union Territory with capital Port Blair and official language(s): Hindi, English, Bengali. Key highlights: Cellular Jail (Kala Pani), Radhanagar Beach Havelock, Barren Island (India's only active volcano).",
+    "highlights": [
+      "State / UT: Andaman and Nicobar Islands (UT)",
+      "Capital: Port Blair",
+      "Official Language(s): Hindi, English, Bengali",
+      "Key Landmarks & Features: Cellular Jail (Kala Pani), Radhanagar Beach Havelock, Barren Island (India's only active volcano)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Andaman"
+  },
+  {
+    "id": "geo-india-state-30-chandigarh-ut",
+    "keywords": [
+      "capital of chandigarh (ut)",
+      "chandigarh (ut) capital",
+      "language of chandigarh (ut)",
+      "about chandigarh (ut)",
+      "chandigarh (ut) state facts"
+    ],
+    "title": "Chandigarh (UT) — Capital: Chandigarh | Key Facts",
+    "category": "Geography",
+    "answer": "Chandigarh (UT) is an Indian Union Territory with capital Chandigarh and official language(s): English, Hindi, Punjabi. Key highlights: Planned city designed by French architect Le Corbusier, Rock Garden by Nek Chand, joint capital of Punjab and Haryana.",
+    "highlights": [
+      "State / UT: Chandigarh (UT)",
+      "Capital: Chandigarh",
+      "Official Language(s): English, Hindi, Punjabi",
+      "Key Landmarks & Features: Planned city designed by French architect Le Corbusier, Rock Garden by Nek Chand, joint capital of Punjab and Haryana"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Chandigarh"
+  },
+  {
+    "id": "geo-india-state-31-dadra-and-nagar-haveli-and-daman-and-diu-ut",
+    "keywords": [
+      "capital of dadra and nagar haveli and daman and diu (ut)",
+      "dadra and nagar haveli and daman and diu (ut) capital",
+      "language of dadra and nagar haveli and daman and diu (ut)",
+      "about dadra and nagar haveli and daman and diu (ut)",
+      "dadra and nagar haveli and daman and diu (ut) state facts"
+    ],
+    "title": "Dadra and Nagar Haveli and Daman and Diu (UT) — Capital: Daman | Key Facts",
+    "category": "Geography",
+    "answer": "Dadra and Nagar Haveli and Daman and Diu (UT) is an Indian Union Territory with capital Daman and official language(s): Gujarati, Hindi. Key highlights: Merged UT (2020), coastal Portuguese colonial forts, Nagoa Beach Diu.",
+    "highlights": [
+      "State / UT: Dadra and Nagar Haveli and Daman and Diu (UT)",
+      "Capital: Daman",
+      "Official Language(s): Gujarati, Hindi",
+      "Key Landmarks & Features: Merged UT (2020), coastal Portuguese colonial forts, Nagoa Beach Diu"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Dadra"
+  },
+  {
+    "id": "geo-india-state-32-delhi-nct",
+    "keywords": [
+      "capital of delhi (nct)",
+      "delhi (nct) capital",
+      "language of delhi (nct)",
+      "about delhi (nct)",
+      "delhi (nct) state facts"
+    ],
+    "title": "Delhi (NCT) — Capital: New Delhi | Key Facts",
+    "category": "Geography",
+    "answer": "Delhi (NCT) is an Indian Union Territory with capital New Delhi and official language(s): Hindi, English. Key highlights: National Capital Territory of India, India Gate, Red Fort, Qutub Minar, Parliament House.",
+    "highlights": [
+      "State / UT: Delhi (NCT)",
+      "Capital: New Delhi",
+      "Official Language(s): Hindi, English",
+      "Key Landmarks & Features: National Capital Territory of India, India Gate, Red Fort, Qutub Minar, Parliament House"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Delhi"
+  },
+  {
+    "id": "geo-india-state-33-jammu-and-kashmir-ut",
+    "keywords": [
+      "capital of jammu and kashmir (ut)",
+      "jammu and kashmir (ut) capital",
+      "language of jammu and kashmir (ut)",
+      "about jammu and kashmir (ut)",
+      "jammu and kashmir (ut) state facts"
+    ],
+    "title": "Jammu and Kashmir (UT) — Capital: Srinagar (summer), Jammu (winter) | Key Facts",
+    "category": "Geography",
+    "answer": "Jammu and Kashmir (UT) is an Indian Union Territory with capital Srinagar (summer), Jammu (winter) and official language(s): Kashmiri, Dogri, Urdu, Hindi. Key highlights: Dal Lake shikaras, Gulmarg skiing, Vaishno Devi temple, saffron cultivation in Pampore.",
+    "highlights": [
+      "State / UT: Jammu and Kashmir (UT)",
+      "Capital: Srinagar (summer), Jammu (winter)",
+      "Official Language(s): Kashmiri, Dogri, Urdu, Hindi",
+      "Key Landmarks & Features: Dal Lake shikaras, Gulmarg skiing, Vaishno Devi temple, saffron cultivation in Pampore"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Jammu"
+  },
+  {
+    "id": "geo-india-state-34-ladakh-ut",
+    "keywords": [
+      "capital of ladakh (ut)",
+      "ladakh (ut) capital",
+      "language of ladakh (ut)",
+      "about ladakh (ut)",
+      "ladakh (ut) state facts"
+    ],
+    "title": "Ladakh (UT) — Capital: Leh | Key Facts",
+    "category": "Geography",
+    "answer": "Ladakh (UT) is an Indian Union Territory with capital Leh and official language(s): Ladakhi, Tibetan, Hindi. Key highlights: Cold desert high-altitude plateau, Pangong Tso lake, Khardung La pass, Hemis Monastery.",
+    "highlights": [
+      "State / UT: Ladakh (UT)",
+      "Capital: Leh",
+      "Official Language(s): Ladakhi, Tibetan, Hindi",
+      "Key Landmarks & Features: Cold desert high-altitude plateau, Pangong Tso lake, Khardung La pass, Hemis Monastery"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Ladakh"
+  },
+  {
+    "id": "geo-india-state-35-lakshadweep-ut",
+    "keywords": [
+      "capital of lakshadweep (ut)",
+      "lakshadweep (ut) capital",
+      "language of lakshadweep (ut)",
+      "about lakshadweep (ut)",
+      "lakshadweep (ut) state facts"
+    ],
+    "title": "Lakshadweep (UT) — Capital: Kavaratti | Key Facts",
+    "category": "Geography",
+    "answer": "Lakshadweep (UT) is an Indian Union Territory with capital Kavaratti and official language(s): Malayalam, Jeseri. Key highlights: Coral island archipelago in Arabian Sea (36 islands), Bangaram atoll, lagoon marine life.",
+    "highlights": [
+      "State / UT: Lakshadweep (UT)",
+      "Capital: Kavaratti",
+      "Official Language(s): Malayalam, Jeseri",
+      "Key Landmarks & Features: Coral island archipelago in Arabian Sea (36 islands), Bangaram atoll, lagoon marine life"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Lakshadweep"
+  },
+  {
+    "id": "geo-india-state-36-puducherry-ut",
+    "keywords": [
+      "capital of puducherry (ut)",
+      "puducherry (ut) capital",
+      "language of puducherry (ut)",
+      "about puducherry (ut)",
+      "puducherry (ut) state facts"
+    ],
+    "title": "Puducherry (UT) — Capital: Puducherry | Key Facts",
+    "category": "Geography",
+    "answer": "Puducherry (UT) is an Indian Union Territory with capital Puducherry and official language(s): Tamil, French, English. Key highlights: Former French colonial enclave, Auroville international township, Promenade Beach, Sri Aurobindo Ashram.",
+    "highlights": [
+      "State / UT: Puducherry (UT)",
+      "Capital: Puducherry",
+      "Official Language(s): Tamil, French, English",
+      "Key Landmarks & Features: Former French colonial enclave, Auroville international township, Promenade Beach, Sri Aurobindo Ashram"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Puducherry"
+  },
+  {
+    "id": "gk-dam-1-tehri-dam",
+    "keywords": [
+      "tehri dam",
+      "tehri dam river",
+      "tehri dam state",
+      "which river is tehri dam built on",
+      "where is tehri dam"
+    ],
+    "title": "Tehri Dam — Built on Bhagirathi River (Uttarakhand)",
+    "category": "Geography",
+    "answer": "Tehri Dam is located in Uttarakhand across the Bhagirathi River. Tallest dam in India (height 260.5 m / 855 ft); rock and earth-fill embankment dam; 2,400 MW hydroelectric capacity.",
+    "highlights": [
+      "Dam Name: Tehri Dam",
+      "River: Bhagirathi River",
+      "State / Location: Uttarakhand",
+      "Key Technical Details: Tallest dam in India (height 260.5 m / 855 ft); rock and earth-fill embankment dam; 2,400 MW hydroelectric capacity"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Tehri"
+  },
+  {
+    "id": "gk-dam-2-bhakra-nangal-dam",
+    "keywords": [
+      "bhakra nangal dam",
+      "bhakra nangal dam river",
+      "bhakra nangal dam state",
+      "which river is bhakra nangal dam built on",
+      "where is bhakra nangal dam"
+    ],
+    "title": "Bhakra Nangal Dam — Built on Sutlej River (Himachal Pradesh & Punjab)",
+    "category": "Geography",
+    "answer": "Bhakra Nangal Dam is located in Himachal Pradesh & Punjab across the Sutlej River. Second tallest dam in India (height 226 m); highest straight gravity dam in Asia; forms Gobind Sagar reservoir.",
+    "highlights": [
+      "Dam Name: Bhakra Nangal Dam",
+      "River: Sutlej River",
+      "State / Location: Himachal Pradesh & Punjab",
+      "Key Technical Details: Second tallest dam in India (height 226 m); highest straight gravity dam in Asia; forms Gobind Sagar reservoir"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Bhakra"
+  },
+  {
+    "id": "gk-dam-3-hirakud-dam",
+    "keywords": [
+      "hirakud dam",
+      "hirakud dam river",
+      "hirakud dam state",
+      "which river is hirakud dam built on",
+      "where is hirakud dam"
+    ],
+    "title": "Hirakud Dam — Built on Mahanadi River (Odisha (Sambalpur))",
+    "category": "Geography",
+    "answer": "Hirakud Dam is located in Odisha (Sambalpur) across the Mahanadi River. Longest major earthen dam in India and world (total length 25.8 km; main dam 4.8 km); forms 743 km² Hirakud reservoir.",
+    "highlights": [
+      "Dam Name: Hirakud Dam",
+      "River: Mahanadi River",
+      "State / Location: Odisha (Sambalpur)",
+      "Key Technical Details: Longest major earthen dam in India and world (total length 25.8 km; main dam 4.8 km); forms 743 km² Hirakud reservoir"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Hirakud"
+  },
+  {
+    "id": "gk-dam-4-sardar-sarovar-dam",
+    "keywords": [
+      "sardar sarovar dam",
+      "sardar sarovar dam river",
+      "sardar sarovar dam state",
+      "which river is sardar sarovar dam built on",
+      "where is sardar sarovar dam"
+    ],
+    "title": "Sardar Sarovar Dam — Built on Narmada River (Gujarat (Navagam))",
+    "category": "Geography",
+    "answer": "Sardar Sarovar Dam is located in Gujarat (Navagam) across the Narmada River. Gravity dam providing water to Gujarat, MP, Maharashtra, Rajasthan; Statue of Unity located 3.2 km downstream.",
+    "highlights": [
+      "Dam Name: Sardar Sarovar Dam",
+      "River: Narmada River",
+      "State / Location: Gujarat (Navagam)",
+      "Key Technical Details: Gravity dam providing water to Gujarat, MP, Maharashtra, Rajasthan; Statue of Unity located 3.2 km downstream"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sardar"
+  },
+  {
+    "id": "gk-dam-5-nagarjuna-sagar-dam",
+    "keywords": [
+      "nagarjuna sagar dam",
+      "nagarjuna sagar dam river",
+      "nagarjuna sagar dam state",
+      "which river is nagarjuna sagar dam built on",
+      "where is nagarjuna sagar dam"
+    ],
+    "title": "Nagarjuna Sagar Dam — Built on Krishna River (Andhra Pradesh & Telangana)",
+    "category": "Geography",
+    "answer": "Nagarjuna Sagar Dam is located in Andhra Pradesh & Telangana across the Krishna River. World's largest masonry dam built with stone mortar; 124 m high with 26 crest gates.",
+    "highlights": [
+      "Dam Name: Nagarjuna Sagar Dam",
+      "River: Krishna River",
+      "State / Location: Andhra Pradesh & Telangana",
+      "Key Technical Details: World's largest masonry dam built with stone mortar; 124 m high with 26 crest gates"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Nagarjuna"
+  },
+  {
+    "id": "gk-dam-6-idukki-dam",
+    "keywords": [
+      "idukki dam",
+      "idukki dam river",
+      "idukki dam state",
+      "which river is idukki dam built on",
+      "where is idukki dam"
+    ],
+    "title": "Idukki Dam — Built on Periyar River (Kerala)",
+    "category": "Geography",
+    "answer": "Idukki Dam is located in Kerala across the Periyar River. Double curvature parabolic concrete arch dam (height 168.9 m) constructed between Kuravan and Kurathi hills.",
+    "highlights": [
+      "Dam Name: Idukki Dam",
+      "River: Periyar River",
+      "State / Location: Kerala",
+      "Key Technical Details: Double curvature parabolic concrete arch dam (height 168.9 m) constructed between Kuravan and Kurathi hills"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Idukki"
+  },
+  {
+    "id": "gk-dam-7-koyna-dam",
+    "keywords": [
+      "koyna dam",
+      "koyna dam river",
+      "koyna dam state",
+      "which river is koyna dam built on",
+      "where is koyna dam"
+    ],
+    "title": "Koyna Dam — Built on Koyna River (Maharashtra (Satara))",
+    "category": "Geography",
+    "answer": "Koyna Dam is located in Maharashtra (Satara) across the Koyna River. Largest completed hydroelectric plant in Maharashtra (1,960 MW capacity); rubble-concrete dam in seismic zone.",
+    "highlights": [
+      "Dam Name: Koyna Dam",
+      "River: Koyna River",
+      "State / Location: Maharashtra (Satara)",
+      "Key Technical Details: Largest completed hydroelectric plant in Maharashtra (1,960 MW capacity); rubble-concrete dam in seismic zone"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Koyna"
+  },
+  {
+    "id": "gk-dam-8-rihand-dam-govind-ballabh-pant-sagar",
+    "keywords": [
+      "rihand dam (govind ballabh pant sagar)",
+      "rihand dam (govind ballabh pant sagar) river",
+      "rihand dam (govind ballabh pant sagar) state",
+      "which river is rihand dam (govind ballabh pant sagar) built on",
+      "where is rihand dam (govind ballabh pant sagar)"
+    ],
+    "title": "Rihand Dam (Govind Ballabh Pant Sagar) — Built on Rihand River (Uttar Pradesh (Sonbhadra))",
+    "category": "Geography",
+    "answer": "Rihand Dam (Govind Ballabh Pant Sagar) is located in Uttar Pradesh (Sonbhadra) across the Rihand River. Largest artificial reservoir lake by volume in India (Govind Ballabh Pant Sagar).",
+    "highlights": [
+      "Dam Name: Rihand Dam (Govind Ballabh Pant Sagar)",
+      "River: Rihand River",
+      "State / Location: Uttar Pradesh (Sonbhadra)",
+      "Key Technical Details: Largest artificial reservoir lake by volume in India (Govind Ballabh Pant Sagar)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Rihand"
+  },
+  {
+    "id": "gk-dam-9-mettur-dam-stanley-reservoir",
+    "keywords": [
+      "mettur dam (stanley reservoir)",
+      "mettur dam (stanley reservoir) river",
+      "mettur dam (stanley reservoir) state",
+      "which river is mettur dam (stanley reservoir) built on",
+      "where is mettur dam (stanley reservoir)"
+    ],
+    "title": "Mettur Dam (Stanley Reservoir) — Built on Kaveri (Cauvery) River (Tamil Nadu (Salem))",
+    "category": "Geography",
+    "answer": "Mettur Dam (Stanley Reservoir) is located in Tamil Nadu (Salem) across the Kaveri (Cauvery) River. One of the oldest large dams in India (built 1934); main irrigation source for fertile Cauvery Delta.",
+    "highlights": [
+      "Dam Name: Mettur Dam (Stanley Reservoir)",
+      "River: Kaveri (Cauvery) River",
+      "State / Location: Tamil Nadu (Salem)",
+      "Key Technical Details: One of the oldest large dams in India (built 1934); main irrigation source for fertile Cauvery Delta"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Mettur"
+  },
+  {
+    "id": "gk-dam-10-almatti-dam-lal-bahadur-shastri-dam",
+    "keywords": [
+      "almatti dam (lal bahadur shastri dam)",
+      "almatti dam (lal bahadur shastri dam) river",
+      "almatti dam (lal bahadur shastri dam) state",
+      "which river is almatti dam (lal bahadur shastri dam) built on",
+      "where is almatti dam (lal bahadur shastri dam)"
+    ],
+    "title": "Almatti Dam (Lal Bahadur Shastri Dam) — Built on Krishna River (Karnataka (Bagalkot))",
+    "category": "Geography",
+    "answer": "Almatti Dam (Lal Bahadur Shastri Dam) is located in Karnataka (Bagalkot) across the Krishna River. Main reservoir of Upper Krishna Irrigation Project with 290 MW hydroelectric generation.",
+    "highlights": [
+      "Dam Name: Almatti Dam (Lal Bahadur Shastri Dam)",
+      "River: Krishna River",
+      "State / Location: Karnataka (Bagalkot)",
+      "Key Technical Details: Main reservoir of Upper Krishna Irrigation Project with 290 MW hydroelectric generation"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Almatti"
+  },
+  {
+    "id": "gk-dam-11-tungabhadra-dam-pampa-sagar",
+    "keywords": [
+      "tungabhadra dam (pampa sagar)",
+      "tungabhadra dam (pampa sagar) river",
+      "tungabhadra dam (pampa sagar) state",
+      "which river is tungabhadra dam (pampa sagar) built on",
+      "where is tungabhadra dam (pampa sagar)"
+    ],
+    "title": "Tungabhadra Dam (Pampa Sagar) — Built on Tungabhadra River (Karnataka (Hosapete))",
+    "category": "Geography",
+    "answer": "Tungabhadra Dam (Pampa Sagar) is located in Karnataka (Hosapete) across the Tungabhadra River. Multipurpose composite gravity and earthen dam near historic Hampi ruins.",
+    "highlights": [
+      "Dam Name: Tungabhadra Dam (Pampa Sagar)",
+      "River: Tungabhadra River",
+      "State / Location: Karnataka (Hosapete)",
+      "Key Technical Details: Multipurpose composite gravity and earthen dam near historic Hampi ruins"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Tungabhadra"
+  },
+  {
+    "id": "gk-dam-12-indira-sagar-dam",
+    "keywords": [
+      "indira sagar dam",
+      "indira sagar dam river",
+      "indira sagar dam state",
+      "which river is indira sagar dam built on",
+      "where is indira sagar dam"
+    ],
+    "title": "Indira Sagar Dam — Built on Narmada River (Madhya Pradesh (Khandwa))",
+    "category": "Geography",
+    "answer": "Indira Sagar Dam is located in Madhya Pradesh (Khandwa) across the Narmada River. Largest water storage capacity reservoir in India (12.22 billion cubic metres) with 1,000 MW hydro capacity.",
+    "highlights": [
+      "Dam Name: Indira Sagar Dam",
+      "River: Narmada River",
+      "State / Location: Madhya Pradesh (Khandwa)",
+      "Key Technical Details: Largest water storage capacity reservoir in India (12.22 billion cubic metres) with 1,000 MW hydro capacity"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Indira"
+  },
+  {
+    "id": "gk-dam-13-maithon-dam",
+    "keywords": [
+      "maithon dam",
+      "maithon dam river",
+      "maithon dam state",
+      "which river is maithon dam built on",
+      "where is maithon dam"
+    ],
+    "title": "Maithon Dam — Built on Barakar River (Jharkhand (Dhanbad))",
+    "category": "Geography",
+    "answer": "Maithon Dam is located in Jharkhand (Dhanbad) across the Barakar River. Damodar Valley Corporation (DVC) dam with unique underground hydroelectric power station.",
+    "highlights": [
+      "Dam Name: Maithon Dam",
+      "River: Barakar River",
+      "State / Location: Jharkhand (Dhanbad)",
+      "Key Technical Details: Damodar Valley Corporation (DVC) dam with unique underground hydroelectric power station"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Maithon"
+  },
+  {
+    "id": "gk-dam-14-panchet-dam",
+    "keywords": [
+      "panchet dam",
+      "panchet dam river",
+      "panchet dam state",
+      "which river is panchet dam built on",
+      "where is panchet dam"
+    ],
+    "title": "Panchet Dam — Built on Damodar River (Jharkhand & West Bengal border)",
+    "category": "Geography",
+    "answer": "Panchet Dam is located in Jharkhand & West Bengal border across the Damodar River. Damodar Valley Corporation flood control dam built in 1959.",
+    "highlights": [
+      "Dam Name: Panchet Dam",
+      "River: Damodar River",
+      "State / Location: Jharkhand & West Bengal border",
+      "Key Technical Details: Damodar Valley Corporation flood control dam built in 1959"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Panchet"
+  },
+  {
+    "id": "gk-dam-15-farakka-barrage",
+    "keywords": [
+      "farakka barrage",
+      "farakka barrage river",
+      "farakka barrage state",
+      "which river is farakka barrage built on",
+      "where is farakka barrage"
+    ],
+    "title": "Farakka Barrage — Built on Ganga (Ganges) River (West Bengal (Murshidabad))",
+    "category": "Geography",
+    "answer": "Farakka Barrage is located in West Bengal (Murshidabad) across the Ganga (Ganges) River. Feeder canal diverting 40,000 cusecs water into Hooghly River to flush silt from Kolkata Port.",
+    "highlights": [
+      "Dam Name: Farakka Barrage",
+      "River: Ganga (Ganges) River",
+      "State / Location: West Bengal (Murshidabad)",
+      "Key Technical Details: Feeder canal diverting 40,000 cusecs water into Hooghly River to flush silt from Kolkata Port"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Farakka"
+  },
+  {
+    "id": "gk-dam-16-pravarsagar-dam-bhandardara",
+    "keywords": [
+      "pravarsagar dam / bhandardara",
+      "pravarsagar dam / bhandardara river",
+      "pravarsagar dam / bhandardara state",
+      "which river is pravarsagar dam / bhandardara built on",
+      "where is pravarsagar dam / bhandardara"
+    ],
+    "title": "Pravarsagar Dam / Bhandardara — Built on Pravara River (Maharashtra (Ahmednagar))",
+    "category": "Geography",
+    "answer": "Pravarsagar Dam / Bhandardara is located in Maharashtra (Ahmednagar) across the Pravara River. One of the oldest stone dams in India; Arthur Lake reservoir and Wilson Dam.",
+    "highlights": [
+      "Dam Name: Pravarsagar Dam / Bhandardara",
+      "River: Pravara River",
+      "State / Location: Maharashtra (Ahmednagar)",
+      "Key Technical Details: One of the oldest stone dams in India; Arthur Lake reservoir and Wilson Dam"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Pravarsagar"
+  },
+  {
+    "id": "gk-dam-17-ujjani-dam-bhima-dam",
+    "keywords": [
+      "ujjani dam (bhima dam)",
+      "ujjani dam (bhima dam) river",
+      "ujjani dam (bhima dam) state",
+      "which river is ujjani dam (bhima dam) built on",
+      "where is ujjani dam (bhima dam)"
+    ],
+    "title": "Ujjani Dam (Bhima Dam) — Built on Bhima River (Maharashtra (Solapur))",
+    "category": "Geography",
+    "answer": "Ujjani Dam (Bhima Dam) is located in Maharashtra (Solapur) across the Bhima River. Earthfill-cum-masonry gravity dam supporting extensive sugarcane irrigation in western Maharashtra.",
+    "highlights": [
+      "Dam Name: Ujjani Dam (Bhima Dam)",
+      "River: Bhima River",
+      "State / Location: Maharashtra (Solapur)",
+      "Key Technical Details: Earthfill-cum-masonry gravity dam supporting extensive sugarcane irrigation in western Maharashtra"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Ujjani"
+  },
+  {
+    "id": "gk-dam-18-ranjit-sagar-dam-thein-dam",
+    "keywords": [
+      "ranjit sagar dam (thein dam)",
+      "ranjit sagar dam (thein dam) river",
+      "ranjit sagar dam (thein dam) state",
+      "which river is ranjit sagar dam (thein dam) built on",
+      "where is ranjit sagar dam (thein dam)"
+    ],
+    "title": "Ranjit Sagar Dam (Thein Dam) — Built on Ravi River (Punjab & Jammu and Kashmir border)",
+    "category": "Geography",
+    "answer": "Ranjit Sagar Dam (Thein Dam) is located in Punjab & Jammu and Kashmir border across the Ravi River. Highest earth-core gravel shell dam in India (160 m high); 600 MW hydroelectric capacity.",
+    "highlights": [
+      "Dam Name: Ranjit Sagar Dam (Thein Dam)",
+      "River: Ravi River",
+      "State / Location: Punjab & Jammu and Kashmir border",
+      "Key Technical Details: Highest earth-core gravel shell dam in India (160 m high); 600 MW hydroelectric capacity"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Ranjit"
+  },
+  {
+    "id": "gk-dam-19-baglihar-dam",
+    "keywords": [
+      "baglihar dam",
+      "baglihar dam river",
+      "baglihar dam state",
+      "which river is baglihar dam built on",
+      "where is baglihar dam"
+    ],
+    "title": "Baglihar Dam — Built on Chenab River (Jammu and Kashmir (Ramban))",
+    "category": "Geography",
+    "answer": "Baglihar Dam is located in Jammu and Kashmir (Ramban) across the Chenab River. Run-of-the-river hydroelectric power project (900 MW) on Chenab River built under Indus Waters Treaty provisions.",
+    "highlights": [
+      "Dam Name: Baglihar Dam",
+      "River: Chenab River",
+      "State / Location: Jammu and Kashmir (Ramban)",
+      "Key Technical Details: Run-of-the-river hydroelectric power project (900 MW) on Chenab River built under Indus Waters Treaty provisions"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Baglihar"
+  },
+  {
+    "id": "gk-dam-20-salal-dam",
+    "keywords": [
+      "salal dam",
+      "salal dam river",
+      "salal dam state",
+      "which river is salal dam built on",
+      "where is salal dam"
+    ],
+    "title": "Salal Dam — Built on Chenab River (Jammu and Kashmir (Reasi))",
+    "category": "Geography",
+    "answer": "Salal Dam is located in Jammu and Kashmir (Reasi) across the Chenab River. Run-of-the-river power project (690 MW) on Chenab River near Dhyangarh rock.",
+    "highlights": [
+      "Dam Name: Salal Dam",
+      "River: Chenab River",
+      "State / Location: Jammu and Kashmir (Reasi)",
+      "Key Technical Details: Run-of-the-river power project (690 MW) on Chenab River near Dhyangarh rock"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Salal"
+  },
+  {
+    "id": "gk-dam-21-kallanai-dam-grand-anicut",
+    "keywords": [
+      "kallanai dam (grand anicut)",
+      "kallanai dam (grand anicut) river",
+      "kallanai dam (grand anicut) state",
+      "which river is kallanai dam (grand anicut) built on",
+      "where is kallanai dam (grand anicut)"
+    ],
+    "title": "Kallanai Dam (Grand Anicut) — Built on Kaveri (Cauvery) River (Tamil Nadu (Thanjavur))",
+    "category": "Geography",
+    "answer": "Kallanai Dam (Grand Anicut) is located in Tamil Nadu (Thanjavur) across the Kaveri (Cauvery) River. World's oldest functional water-diversion water-regulator structure; built by Chola King Karikalan in 2nd century CE.",
+    "highlights": [
+      "Dam Name: Kallanai Dam (Grand Anicut)",
+      "River: Kaveri (Cauvery) River",
+      "State / Location: Tamil Nadu (Thanjavur)",
+      "Key Technical Details: World's oldest functional water-diversion water-regulator structure; built by Chola King Karikalan in 2nd century CE"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Kallanai"
+  },
+  {
+    "id": "gk-dam-22-bisalpur-dam",
+    "keywords": [
+      "bisalpur dam",
+      "bisalpur dam river",
+      "bisalpur dam state",
+      "which river is bisalpur dam built on",
+      "where is bisalpur dam"
+    ],
+    "title": "Bisalpur Dam — Built on Banas River (Rajasthan (Tonk))",
+    "category": "Geography",
+    "answer": "Bisalpur Dam is located in Rajasthan (Tonk) across the Banas River. Gravity dam serving as primary drinking water lifeline for Jaipur, Ajmer, and Tonk cities.",
+    "highlights": [
+      "Dam Name: Bisalpur Dam",
+      "River: Banas River",
+      "State / Location: Rajasthan (Tonk)",
+      "Key Technical Details: Gravity dam serving as primary drinking water lifeline for Jaipur, Ajmer, and Tonk cities"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Bisalpur"
+  },
+  {
+    "id": "gk-dam-23-gandhi-sagar-dam",
+    "keywords": [
+      "gandhi sagar dam",
+      "gandhi sagar dam river",
+      "gandhi sagar dam state",
+      "which river is gandhi sagar dam built on",
+      "where is gandhi sagar dam"
+    ],
+    "title": "Gandhi Sagar Dam — Built on Chambal River (Madhya Pradesh (Mandsaur))",
+    "category": "Geography",
+    "answer": "Gandhi Sagar Dam is located in Madhya Pradesh (Mandsaur) across the Chambal River. One of four major dams on Chambal River; masonry gravity dam built in 1960.",
+    "highlights": [
+      "Dam Name: Gandhi Sagar Dam",
+      "River: Chambal River",
+      "State / Location: Madhya Pradesh (Mandsaur)",
+      "Key Technical Details: One of four major dams on Chambal River; masonry gravity dam built in 1960"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Gandhi"
+  },
+  {
+    "id": "gk-dam-24-ukai-dam-vallabh-sagar",
+    "keywords": [
+      "ukai dam (vallabh sagar)",
+      "ukai dam (vallabh sagar) river",
+      "ukai dam (vallabh sagar) state",
+      "which river is ukai dam (vallabh sagar) built on",
+      "where is ukai dam (vallabh sagar)"
+    ],
+    "title": "Ukai Dam (Vallabh Sagar) — Built on Tapti (Tapi) River (Gujarat (Surat))",
+    "category": "Geography",
+    "answer": "Ukai Dam (Vallabh Sagar) is located in Gujarat (Surat) across the Tapti (Tapi) River. Second largest reservoir in Gujarat after Sardar Sarovar; earth-cum-masonry dam.",
+    "highlights": [
+      "Dam Name: Ukai Dam (Vallabh Sagar)",
+      "River: Tapti (Tapi) River",
+      "State / Location: Gujarat (Surat)",
+      "Key Technical Details: Second largest reservoir in Gujarat after Sardar Sarovar; earth-cum-masonry dam"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Ukai"
+  },
+  {
+    "id": "gk-dam-25-jayakwadi-dam-nath-sagar",
+    "keywords": [
+      "jayakwadi dam (nath sagar)",
+      "jayakwadi dam (nath sagar) river",
+      "jayakwadi dam (nath sagar) state",
+      "which river is jayakwadi dam (nath sagar) built on",
+      "where is jayakwadi dam (nath sagar)"
+    ],
+    "title": "Jayakwadi Dam (Nath Sagar) — Built on Godavari River (Maharashtra (Chhatrapati Sambhajinagar / Paithan))",
+    "category": "Geography",
+    "answer": "Jayakwadi Dam (Nath Sagar) is located in Maharashtra (Chhatrapati Sambhajinagar / Paithan) across the Godavari River. One of the largest earthen irrigation dams in Asia (earthen embankment length ~10 km) on holy Godavari River.",
+    "highlights": [
+      "Dam Name: Jayakwadi Dam (Nath Sagar)",
+      "River: Godavari River",
+      "State / Location: Maharashtra (Chhatrapati Sambhajinagar / Paithan)",
+      "Key Technical Details: One of the largest earthen irrigation dams in Asia (earthen embankment length ~10 km) on holy Godavari River"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Jayakwadi"
   }
 ]

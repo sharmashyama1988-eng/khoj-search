@@ -1,4 +1,5 @@
 import { searchKnowledgeDB } from '@/lib/knowledge_db';
+import { understandQuery, retrieveKnowledgeCandidates } from '@/lib/information_retrieval';
 
 export interface KnowledgeAnswer {
   title: string;
@@ -9,7 +10,20 @@ export interface KnowledgeAnswer {
 }
 
 export function resolveInstantMathOrFact(query: string, lang = 'en'): KnowledgeAnswer | null {
-  // 0. Search local high-density /db knowledge store
+  // 0. Stage 1 & 2: Google-Style Query Understanding & Knowledge DB Candidate Retrieval
+  const analysis = understandQuery(query);
+  const irCandidate = retrieveKnowledgeCandidates(analysis);
+  if (irCandidate) {
+    return {
+      title: irCandidate.title,
+      extract: irCandidate.answer,
+      keyPoints: irCandidate.highlights,
+      type: irCandidate.category.toLowerCase(),
+      source: `Khoj Knowledge Engine (${irCandidate.category})`,
+    };
+  }
+
+  // Fallback direct DB search
   const dbMatch = searchKnowledgeDB(query);
   if (dbMatch) {
     return {

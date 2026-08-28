@@ -95,5 +95,385 @@
       "Formula: E = h * nu (Energy of a photon = Planck constant * frequency)"
     ],
     "url": "https://en.wikipedia.org/wiki/Planck_constant"
+  },
+  {
+    "id": "phys-const-speed-of-light-in-vacuum-c",
+    "keywords": [
+      "value of speed of light in vacuum (c)",
+      "speed of light in vacuum (c) value formula",
+      "what is speed of light in vacuum (c)",
+      "constant speed of light in vacuum (c)"
+    ],
+    "title": "Speed of Light in Vacuum (c) — Verified Value & Significance",
+    "category": "Physics",
+    "answer": "Speed of Light in Vacuum (c) has the fundamental physical value of 299,792,458 m/s (~3.0 × 10⁸ m/s). Exact SI definition of metre; universal cosmic speed limit.",
+    "highlights": [
+      "Constant Name: Speed of Light in Vacuum (c)",
+      "Standard Value: 299,792,458 m/s (~3.0 × 10⁸ m/s)",
+      "Physical Significance: Exact SI definition of metre; universal cosmic speed limit",
+      "Reference: CODATA Internationally Recommended Values of the Fundamental Physical Constants"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Physical_constant"
+  },
+  {
+    "id": "phys-const-planck-constant-h",
+    "keywords": [
+      "value of planck constant (h)",
+      "planck constant (h) value formula",
+      "what is planck constant (h)",
+      "constant planck constant (h)"
+    ],
+    "title": "Planck Constant (h) — Verified Value & Significance",
+    "category": "Physics",
+    "answer": "Planck Constant (h) has the fundamental physical value of 6.62607015 × 10⁻³⁴ J·s. Defines quantum of action and energy of photon: E = hν = hc/λ.",
+    "highlights": [
+      "Constant Name: Planck Constant (h)",
+      "Standard Value: 6.62607015 × 10⁻³⁴ J·s",
+      "Physical Significance: Defines quantum of action and energy of photon: E = hν = hc/λ",
+      "Reference: CODATA Internationally Recommended Values of the Fundamental Physical Constants"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Physical_constant"
+  },
+  {
+    "id": "phys-const-reduced-planck-constant-hbar",
+    "keywords": [
+      "value of reduced planck constant (ℏ / h-bar)",
+      "reduced planck constant (ℏ / h-bar) value formula",
+      "what is reduced planck constant (ℏ / h-bar)",
+      "constant reduced planck constant (ℏ / h-bar)"
+    ],
+    "title": "Reduced Planck Constant (ℏ / h-bar) — Verified Value & Significance",
+    "category": "Physics",
+    "answer": "Reduced Planck Constant (ℏ / h-bar) has the fundamental physical value of 1.054571817 × 10⁻³⁴ J·s. Used in quantum mechanics, Schrödinger equation, and Heisenberg uncertainty: Δx·Δp ≥ ℏ/2.",
+    "highlights": [
+      "Constant Name: Reduced Planck Constant (ℏ / h-bar)",
+      "Standard Value: 1.054571817 × 10⁻³⁴ J·s",
+      "Physical Significance: Used in quantum mechanics, Schrödinger equation, and Heisenberg uncertainty: Δx·Δp ≥ ℏ/2",
+      "Reference: CODATA Internationally Recommended Values of the Fundamental Physical Constants"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Physical_constant"
+  },
+  {
+    "id": "phys-const-universal-gravitational-constant-g",
+    "keywords": [
+      "value of universal gravitational constant (g)",
+      "universal gravitational constant (g) value formula",
+      "what is universal gravitational constant (g)",
+      "constant universal gravitational constant (g)"
+    ],
+    "title": "Universal Gravitational Constant (G) — Verified Value & Significance",
+    "category": "Physics",
+    "answer": "Universal Gravitational Constant (G) has the fundamental physical value of 6.67430 × 10⁻¹¹ N·m²/kg². Newton's law of gravitation F = G(m₁m₂)/r² and Einstein's field equations.",
+    "highlights": [
+      "Constant Name: Universal Gravitational Constant (G)",
+      "Standard Value: 6.67430 × 10⁻¹¹ N·m²/kg²",
+      "Physical Significance: Newton's law of gravitation F = G(m₁m₂)/r² and Einstein's field equations",
+      "Reference: CODATA Internationally Recommended Values of the Fundamental Physical Constants"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Physical_constant"
+  },
+  {
+    "id": "phys-const-avogadro-constant-n_a",
+    "keywords": [
+      "value of avogadro constant (n_a)",
+      "avogadro constant (n_a) value formula",
+      "what is avogadro constant (n_a)",
+      "constant avogadro constant (n_a)"
+    ],
+    "title": "Avogadro Constant (N_A) — Verified Value & Significance",
+    "category": "Physics",
+    "answer": "Avogadro Constant (N_A) has the fundamental physical value of 6.02214076 × 10²³ mol⁻¹. Number of constituent particles (atoms/molecules) in 1 mole of substance.",
+    "highlights": [
+      "Constant Name: Avogadro Constant (N_A)",
+      "Standard Value: 6.02214076 × 10²³ mol⁻¹",
+      "Physical Significance: Number of constituent particles (atoms/molecules) in 1 mole of substance",
+      "Reference: CODATA Internationally Recommended Values of the Fundamental Physical Constants"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Physical_constant"
+  },
+  {
+    "id": "phys-const-elementary-charge-e",
+    "keywords": [
+      "value of elementary charge (e)",
+      "elementary charge (e) value formula",
+      "what is elementary charge (e)",
+      "constant elementary charge (e)"
+    ],
+    "title": "Elementary Charge (e) — Verified Value & Significance",
+    "category": "Physics",
+    "answer": "Elementary Charge (e) has the fundamental physical value of 1.602176634 × 10⁻¹⁹ Coulombs. Magnitude of electric charge carried by a single proton or electron.",
+    "highlights": [
+      "Constant Name: Elementary Charge (e)",
+      "Standard Value: 1.602176634 × 10⁻¹⁹ Coulombs",
+      "Physical Significance: Magnitude of electric charge carried by a single proton or electron",
+      "Reference: CODATA Internationally Recommended Values of the Fundamental Physical Constants"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Physical_constant"
+  },
+  {
+    "id": "phys-const-boltzmann-constant-k_b",
+    "keywords": [
+      "value of boltzmann constant (k_b)",
+      "boltzmann constant (k_b) value formula",
+      "what is boltzmann constant (k_b)",
+      "constant boltzmann constant (k_b)"
+    ],
+    "title": "Boltzmann Constant (k_B) — Verified Value & Significance",
+    "category": "Physics",
+    "answer": "Boltzmann Constant (k_B) has the fundamental physical value of 1.380649 × 10⁻²³ J/K. Relates average kinetic energy of gas particles to absolute temperature: E = (3/2)k_B T.",
+    "highlights": [
+      "Constant Name: Boltzmann Constant (k_B)",
+      "Standard Value: 1.380649 × 10⁻²³ J/K",
+      "Physical Significance: Relates average kinetic energy of gas particles to absolute temperature: E = (3/2)k_B T",
+      "Reference: CODATA Internationally Recommended Values of the Fundamental Physical Constants"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Physical_constant"
+  },
+  {
+    "id": "phys-const-universal-gas-constant-r",
+    "keywords": [
+      "value of universal gas constant (r)",
+      "universal gas constant (r) value formula",
+      "what is universal gas constant (r)",
+      "constant universal gas constant (r)"
+    ],
+    "title": "Universal Gas Constant (R) — Verified Value & Significance",
+    "category": "Physics",
+    "answer": "Universal Gas Constant (R) has the fundamental physical value of 8.314462618 J/(mol·K) = 0.0821 L·atm/(mol·K). Ideal gas law constant: PV = nRT (R = N_A · k_B).",
+    "highlights": [
+      "Constant Name: Universal Gas Constant (R)",
+      "Standard Value: 8.314462618 J/(mol·K) = 0.0821 L·atm/(mol·K)",
+      "Physical Significance: Ideal gas law constant: PV = nRT (R = N_A · k_B)",
+      "Reference: CODATA Internationally Recommended Values of the Fundamental Physical Constants"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Physical_constant"
+  },
+  {
+    "id": "phys-const-permittivity-of-free-space-",
+    "keywords": [
+      "value of permittivity of free space (ε₀)",
+      "permittivity of free space (ε₀) value formula",
+      "what is permittivity of free space (ε₀)",
+      "constant permittivity of free space (ε₀)"
+    ],
+    "title": "Permittivity of Free Space (ε₀) — Verified Value & Significance",
+    "category": "Physics",
+    "answer": "Permittivity of Free Space (ε₀) has the fundamental physical value of 8.8541878128 × 10⁻¹² C²/(N·m²) (F/m). Vacuum permittivity in Coulomb's Law and Gauss's Law.",
+    "highlights": [
+      "Constant Name: Permittivity of Free Space (ε₀)",
+      "Standard Value: 8.8541878128 × 10⁻¹² C²/(N·m²) (F/m)",
+      "Physical Significance: Vacuum permittivity in Coulomb's Law and Gauss's Law",
+      "Reference: CODATA Internationally Recommended Values of the Fundamental Physical Constants"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Physical_constant"
+  },
+  {
+    "id": "phys-const-permeability-of-free-space-",
+    "keywords": [
+      "value of permeability of free space (μ₀)",
+      "permeability of free space (μ₀) value formula",
+      "what is permeability of free space (μ₀)",
+      "constant permeability of free space (μ₀)"
+    ],
+    "title": "Permeability of Free Space (μ₀) — Verified Value & Significance",
+    "category": "Physics",
+    "answer": "Permeability of Free Space (μ₀) has the fundamental physical value of 1.256637062 × 10⁻⁶ N/A² (T·m/A). Vacuum magnetic permeability relating electric current to magnetic field.",
+    "highlights": [
+      "Constant Name: Permeability of Free Space (μ₀)",
+      "Standard Value: 1.256637062 × 10⁻⁶ N/A² (T·m/A)",
+      "Physical Significance: Vacuum magnetic permeability relating electric current to magnetic field",
+      "Reference: CODATA Internationally Recommended Values of the Fundamental Physical Constants"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Physical_constant"
+  },
+  {
+    "id": "phys-const-electron-rest-mass-m_e",
+    "keywords": [
+      "value of electron rest mass (m_e)",
+      "electron rest mass (m_e) value formula",
+      "what is electron rest mass (m_e)",
+      "constant electron rest mass (m_e)"
+    ],
+    "title": "Electron Rest Mass (m_e) — Verified Value & Significance",
+    "category": "Physics",
+    "answer": "Electron Rest Mass (m_e) has the fundamental physical value of 9.1093837 × 10⁻³¹ kg = 0.5109989 MeV/c². Mass of an electron (~1/1836 the mass of a proton).",
+    "highlights": [
+      "Constant Name: Electron Rest Mass (m_e)",
+      "Standard Value: 9.1093837 × 10⁻³¹ kg = 0.5109989 MeV/c²",
+      "Physical Significance: Mass of an electron (~1/1836 the mass of a proton)",
+      "Reference: CODATA Internationally Recommended Values of the Fundamental Physical Constants"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Physical_constant"
+  },
+  {
+    "id": "phys-const-proton-rest-mass-m_p",
+    "keywords": [
+      "value of proton rest mass (m_p)",
+      "proton rest mass (m_p) value formula",
+      "what is proton rest mass (m_p)",
+      "constant proton rest mass (m_p)"
+    ],
+    "title": "Proton Rest Mass (m_p) — Verified Value & Significance",
+    "category": "Physics",
+    "answer": "Proton Rest Mass (m_p) has the fundamental physical value of 1.67262192 × 10⁻²⁷ kg = 938.272 MeV/c². Mass of a proton (consists of two up quarks and one down quark: uud).",
+    "highlights": [
+      "Constant Name: Proton Rest Mass (m_p)",
+      "Standard Value: 1.67262192 × 10⁻²⁷ kg = 938.272 MeV/c²",
+      "Physical Significance: Mass of a proton (consists of two up quarks and one down quark: uud)",
+      "Reference: CODATA Internationally Recommended Values of the Fundamental Physical Constants"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Physical_constant"
+  },
+  {
+    "id": "phys-const-neutron-rest-mass-m_n",
+    "keywords": [
+      "value of neutron rest mass (m_n)",
+      "neutron rest mass (m_n) value formula",
+      "what is neutron rest mass (m_n)",
+      "constant neutron rest mass (m_n)"
+    ],
+    "title": "Neutron Rest Mass (m_n) — Verified Value & Significance",
+    "category": "Physics",
+    "answer": "Neutron Rest Mass (m_n) has the fundamental physical value of 1.674927498 × 10⁻²⁷ kg = 939.565 MeV/c². Mass of a free neutron (decays via beta decay with half-life ~14.7 minutes).",
+    "highlights": [
+      "Constant Name: Neutron Rest Mass (m_n)",
+      "Standard Value: 1.674927498 × 10⁻²⁷ kg = 939.565 MeV/c²",
+      "Physical Significance: Mass of a free neutron (decays via beta decay with half-life ~14.7 minutes)",
+      "Reference: CODATA Internationally Recommended Values of the Fundamental Physical Constants"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Physical_constant"
+  },
+  {
+    "id": "phys-const-stefanboltzmann-constant-",
+    "keywords": [
+      "value of stefan-boltzmann constant (σ)",
+      "stefan-boltzmann constant (σ) value formula",
+      "what is stefan-boltzmann constant (σ)",
+      "constant stefan-boltzmann constant (σ)"
+    ],
+    "title": "Stefan-Boltzmann Constant (σ) — Verified Value & Significance",
+    "category": "Physics",
+    "answer": "Stefan-Boltzmann Constant (σ) has the fundamental physical value of 5.670374419 × 10⁻⁸ W/(m²·K⁴). Blackbody radiation radiant exitance: j* = σ T⁴.",
+    "highlights": [
+      "Constant Name: Stefan-Boltzmann Constant (σ)",
+      "Standard Value: 5.670374419 × 10⁻⁸ W/(m²·K⁴)",
+      "Physical Significance: Blackbody radiation radiant exitance: j* = σ T⁴",
+      "Reference: CODATA Internationally Recommended Values of the Fundamental Physical Constants"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Physical_constant"
+  },
+  {
+    "id": "phys-const-rydberg-constant-r_",
+    "keywords": [
+      "value of rydberg constant (r_∞)",
+      "rydberg constant (r_∞) value formula",
+      "what is rydberg constant (r_∞)",
+      "constant rydberg constant (r_∞)"
+    ],
+    "title": "Rydberg Constant (R_∞) — Verified Value & Significance",
+    "category": "Physics",
+    "answer": "Rydberg Constant (R_∞) has the fundamental physical value of 10,973,731.568 m⁻¹ (~1.097 × 10⁷ m⁻¹). Fundamental constant in Rydberg formula for atomic spectral lines.",
+    "highlights": [
+      "Constant Name: Rydberg Constant (R_∞)",
+      "Standard Value: 10,973,731.568 m⁻¹ (~1.097 × 10⁷ m⁻¹)",
+      "Physical Significance: Fundamental constant in Rydberg formula for atomic spectral lines",
+      "Reference: CODATA Internationally Recommended Values of the Fundamental Physical Constants"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Physical_constant"
+  },
+  {
+    "id": "phys-const-faraday-constant-f",
+    "keywords": [
+      "value of faraday constant (f)",
+      "faraday constant (f) value formula",
+      "what is faraday constant (f)",
+      "constant faraday constant (f)"
+    ],
+    "title": "Faraday Constant (F) — Verified Value & Significance",
+    "category": "Physics",
+    "answer": "Faraday Constant (F) has the fundamental physical value of 96,485.332 C/mol. Total electric charge carried by one mole of electrons: F = e · N_A.",
+    "highlights": [
+      "Constant Name: Faraday Constant (F)",
+      "Standard Value: 96,485.332 C/mol",
+      "Physical Significance: Total electric charge carried by one mole of electrons: F = e · N_A",
+      "Reference: CODATA Internationally Recommended Values of the Fundamental Physical Constants"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Physical_constant"
+  },
+  {
+    "id": "phys-const-standard-acceleration-of-gravity-on-earth-g",
+    "keywords": [
+      "value of standard acceleration of gravity on earth (g)",
+      "standard acceleration of gravity on earth (g) value formula",
+      "what is standard acceleration of gravity on earth (g)",
+      "constant standard acceleration of gravity on earth (g)"
+    ],
+    "title": "Standard Acceleration of Gravity on Earth (g) — Verified Value & Significance",
+    "category": "Physics",
+    "answer": "Standard Acceleration of Gravity on Earth (g) has the fundamental physical value of 9.80665 m/s² (~9.8 m/s² or 32.174 ft/s²). Nominal gravitational acceleration at Earth's sea level.",
+    "highlights": [
+      "Constant Name: Standard Acceleration of Gravity on Earth (g)",
+      "Standard Value: 9.80665 m/s² (~9.8 m/s² or 32.174 ft/s²)",
+      "Physical Significance: Nominal gravitational acceleration at Earth's sea level",
+      "Reference: CODATA Internationally Recommended Values of the Fundamental Physical Constants"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Physical_constant"
+  },
+  {
+    "id": "phys-const-standard-atmospheric-pressure-1-atm",
+    "keywords": [
+      "value of standard atmospheric pressure (1 atm)",
+      "standard atmospheric pressure (1 atm) value formula",
+      "what is standard atmospheric pressure (1 atm)",
+      "constant standard atmospheric pressure (1 atm)"
+    ],
+    "title": "Standard Atmospheric Pressure (1 atm) — Verified Value & Significance",
+    "category": "Physics",
+    "answer": "Standard Atmospheric Pressure (1 atm) has the fundamental physical value of 101,325 Pascals (Pa) = 1.01325 bar = 760 mmHg = 14.696 psi. Reference air pressure at sea level.",
+    "highlights": [
+      "Constant Name: Standard Atmospheric Pressure (1 atm)",
+      "Standard Value: 101,325 Pascals (Pa) = 1.01325 bar = 760 mmHg = 14.696 psi",
+      "Physical Significance: Reference air pressure at sea level",
+      "Reference: CODATA Internationally Recommended Values of the Fundamental Physical Constants"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Physical_constant"
+  },
+  {
+    "id": "phys-const-absolute-zero-temperature-0-k",
+    "keywords": [
+      "value of absolute zero temperature (0 k)",
+      "absolute zero temperature (0 k) value formula",
+      "what is absolute zero temperature (0 k)",
+      "constant absolute zero temperature (0 k)"
+    ],
+    "title": "Absolute Zero Temperature (0 K) — Verified Value & Significance",
+    "category": "Physics",
+    "answer": "Absolute Zero Temperature (0 K) has the fundamental physical value of -273.15°C = -459.67°F. Theoretical lowest possible temperature where thermodynamic entropy reaches minimum.",
+    "highlights": [
+      "Constant Name: Absolute Zero Temperature (0 K)",
+      "Standard Value: -273.15°C = -459.67°F",
+      "Physical Significance: Theoretical lowest possible temperature where thermodynamic entropy reaches minimum",
+      "Reference: CODATA Internationally Recommended Values of the Fundamental Physical Constants"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Physical_constant"
+  },
+  {
+    "id": "phys-const-hubble-constant-h",
+    "keywords": [
+      "value of hubble constant (h₀)",
+      "hubble constant (h₀) value formula",
+      "what is hubble constant (h₀)",
+      "constant hubble constant (h₀)"
+    ],
+    "title": "Hubble Constant (H₀) — Verified Value & Significance",
+    "category": "Physics",
+    "answer": "Hubble Constant (H₀) has the fundamental physical value of ~70 (km/s)/Mpc. Expansion rate of the universe (velocity per megaparsec distance).",
+    "highlights": [
+      "Constant Name: Hubble Constant (H₀)",
+      "Standard Value: ~70 (km/s)/Mpc",
+      "Physical Significance: Expansion rate of the universe (velocity per megaparsec distance)",
+      "Reference: CODATA Internationally Recommended Values of the Fundamental Physical Constants"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Physical_constant"
   }
 ]

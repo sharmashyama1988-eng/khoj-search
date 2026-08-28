@@ -1,0 +1,1410 @@
+[
+  {
+    "id": "ncert12-kinematics-equations",
+    "keywords": [
+      "equations of motion",
+      "kinematics formulas class 11",
+      "v=u+at",
+      "s=ut+1/2at2",
+      "uniformly accelerated motion"
+    ],
+    "title": "Kinematics: Equations of Uniformly Accelerated Motion (NCERT Class 11)",
+    "category": "NCERT Class 11-12",
+    "answer": "For an object moving in a straight line with constant acceleration a, the three fundamental kinematic equations of motion are: 1) v = u + at, 2) s = ut + ½at², and 3) v² = u² + 2as (where u is initial velocity, v is final velocity, s is displacement, and t is time).",
+    "highlights": [
+      "First Equation (Velocity-Time): v = u + at",
+      "Second Equation (Position-Time): s = ut + ½at²",
+      "Third Equation (Position-Velocity): v² = u² + 2as",
+      "Displacement in nth second: s_n = u + ½a(2n - 1)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Equations_of_motion"
+  },
+  {
+    "id": "ncert12-work-energy-power",
+    "keywords": [
+      "work energy theorem class 11",
+      "kinetic energy formula",
+      "potential energy",
+      "conservation of mechanical energy",
+      "karya urja pramey"
+    ],
+    "title": "Work-Energy Theorem & Conservation of Energy (NCERT Class 11)",
+    "category": "NCERT Class 11-12",
+    "answer": "The Work-Energy Theorem states that the net work done by all forces acting on a body equals the change in its kinetic energy: W_net = ΔK = ½mv² - ½mu². In a conservative force field, total mechanical energy (Kinetic + Potential) remains constant.",
+    "highlights": [
+      "Work Done Formula: W = F · d = F · d · cos(θ) (in Joules)",
+      "Work-Energy Theorem: W_net = K_final - K_initial = ½m(v² - u²)",
+      "Potential Energy: Gravitational PE = mgh; Elastic Spring PE = ½kx²",
+      "Power: Instantaneous Power P = dW/dt = F · v (measured in Watts, W)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Work-energy_principle"
+  },
+  {
+    "id": "ncert12-rotational-motion",
+    "keywords": [
+      "moment of inertia class 11",
+      "torque formula",
+      "angular momentum conservation",
+      "rotational kinetic energy",
+      "ghoornan gati"
+    ],
+    "title": "Rotational Motion, Torque & Moment of Inertia (NCERT Class 11)",
+    "category": "NCERT Class 11-12",
+    "answer": "Moment of Inertia (I = Σ m_i·r_i²) is the rotational analogue of mass, measuring an object's resistance to rotational acceleration. Torque is the rotational analogue of force (τ = I·α = r × F), and angular momentum (L = I·ω) is conserved in the absence of external torque.",
+    "highlights": [
+      "Torque: τ = r × F = rF sin(θ) = I·α (in N·m)",
+      "Angular Momentum: L = r × p = I·ω (Conservation: If τ_ext = 0, then I₁ω₁ = I₂ω₂)",
+      "Rotational Kinetic Energy: K_rot = ½Iω²",
+      "Theorems of Moment of Inertia: Parallel Axes Theorem (I = I_cm + Md²) and Perpendicular Axes Theorem (I_z = I_x + I_y for planar lamina)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Moment_of_inertia"
+  },
+  {
+    "id": "ncert12-keplers-laws",
+    "keywords": [
+      "kepler's laws of planetary motion",
+      "kepler first second third law",
+      "law of periods t2 proportional to r3",
+      "grahon ki gati ke niyam"
+    ],
+    "title": "Kepler's Three Laws of Planetary Motion (NCERT Class 11)",
+    "category": "NCERT Class 11-12",
+    "answer": "Johannes Kepler formulated three empirical laws of planetary motion: 1) Law of Orbits (All planets move in elliptical orbits with the Sun at one focus); 2) Law of Areas (A line segment joining a planet and the Sun sweeps out equal areas in equal intervals of time, confirming conservation of angular momentum); 3) Law of Periods (The square of orbital period T is proportional to the cube of the semi-major axis a: T² ∝ a³).",
+    "highlights": [
+      "1st Law (Elliptical Orbits): Planet orbits are ellipses with the Sun at one of the two foci",
+      "2nd Law (Equal Areas): Areal velocity dA/dt = L / (2m) = Constant (Planet moves fastest at perihelion and slowest at aphelion)",
+      "3rd Law (Harmonic Law): T² / a³ = (4π²) / (G·M_sun) = Constant",
+      "Newton's Synthesis: Isaac Newton used Kepler's third law to deduce the inverse-square law of Universal Gravitation (F = G·m₁m₂/r²)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion"
+  },
+  {
+    "id": "ncert12-simple-harmonic-motion",
+    "keywords": [
+      "simple harmonic motion shm",
+      "time period of simple pendulum",
+      "shm equation class 11",
+      "saral avart gati"
+    ],
+    "title": "Simple Harmonic Motion (SHM) & Simple Pendulum (NCERT Class 11)",
+    "category": "NCERT Class 11-12",
+    "answer": "Simple Harmonic Motion (SHM) is a periodic oscillatory motion where the restoring force is directly proportional to displacement from the mean position and acts in the opposite direction: F = -kx (or a = -ω²x). The time period of a simple pendulum of length l is T = 2π√(l / g).",
+    "highlights": [
+      "Differential Equation: d²x/dt² + ω²x = 0 (Displacement x(t) = A·sin(ωt + φ))",
+      "Velocity in SHM: v(x) = ±ω√(A² - x²) (Maximum velocity v_max = Aω at mean position x = 0)",
+      "Total Energy in SHM: E = K + U = ½mω²A² = Constant at all points of oscillation",
+      "Simple Pendulum: T = 2π√(l / g) (independent of the mass of the bob and depends only on length and gravity)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Simple_harmonic_motion"
+  },
+  {
+    "id": "ncert12-carnot-engine-thermodynamics",
+    "keywords": [
+      "carnot engine efficiency",
+      "carnot cycle class 11",
+      "first and second law of thermodynamics",
+      "carnot pramey"
+    ],
+    "title": "Carnot Engine & Thermodynamic Efficiency (NCERT Class 11)",
+    "category": "NCERT Class 11-12",
+    "answer": "A Carnot engine is an idealized reversible heat engine operating between two temperatures (source at T₁ and sink at T₂). Its maximum theoretical thermal efficiency is given by η = 1 - (T₂ / T₁) = 1 - (Q₂ / Q₁), proving that no engine can be 100% efficient without a sink at absolute zero.",
+    "highlights": [
+      "Carnot Efficiency Formula: η = 1 - (T_sink / T_source) = (T₁ - T₂) / T₁ (Temperatures in Kelvin)",
+      "Four Reversible Steps of Carnot Cycle: 1) Isothermal expansion at T₁, 2) Adiabatic expansion from T₁ to T₂, 3) Isothermal compression at T₂, 4) Adiabatic compression from T₂ to T₁",
+      "Carnot's Theorem: No real heat engine operating between two given heat reservoirs can be more efficient than a reversible Carnot engine operating between the same reservoirs"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Carnot_heat_engine"
+  },
+  {
+    "id": "ncert12-coulomb-gauss-law",
+    "keywords": [
+      "coulomb's law",
+      "gauss's law electrostatics",
+      "electric flux formula",
+      "electric field of point charge class 12"
+    ],
+    "title": "Coulomb's Law & Gauss's Law in Electrostatics (NCERT Class 12)",
+    "category": "NCERT Class 11-12",
+    "answer": "Coulomb's Law states that electrostatic force between two stationary point charges is F = (1 / 4πε₀) · (|q₁q₂| / r²). Gauss's Law states that the total electric flux through any closed Gaussian surface equals the enclosed net electric charge divided by the permittivity of free space: Φ_E = ∮ E · dA = Q_enclosed / ε₀.",
+    "highlights": [
+      "Coulomb's Constant: k = 1 / (4πε₀) ≈ 8.98755 × 10⁹ N·m²/C²",
+      "Permittivity of Free Space: ε₀ = 8.854 × 10⁻¹² C²·N⁻¹·m⁻²",
+      "Gauss's Law Equation: Φ_E = ∮ E · dA = Q_enclosed / ε₀",
+      "Applications of Gauss's Law: Electric field due to infinite line charge (E = λ / 2πε₀r), infinite planar sheet (E = σ / 2ε₀), and spherical charged shell"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Gauss%27s_law"
+  },
+  {
+    "id": "ncert12-kirchhoff-laws",
+    "keywords": [
+      "kirchhoff's laws",
+      "kirchhoff current law kcl",
+      "kirchhoff voltage law kvl",
+      "wheatstone bridge class 12"
+    ],
+    "title": "Kirchhoff's Circuit Laws & Wheatstone Bridge (NCERT Class 12)",
+    "category": "NCERT Class 11-12",
+    "answer": "Kirchhoff's First Law (Current Law / KCL / Junction Rule) states that the algebraic sum of currents entering a junction is zero (Σ I = 0, based on conservation of charge). Kirchhoff's Second Law (Voltage Law / KVL / Loop Rule) states that the sum of all potential differences around any closed circuit loop is zero (Σ ΔV = 0, based on conservation of energy).",
+    "highlights": [
+      "Kirchhoff's Current Law (KCL): Σ I_in = Σ I_out (Conservation of Electric Charge)",
+      "Kirchhoff's Voltage Law (KVL): Σ V + Σ (IR) = 0 around any closed loop (Conservation of Energy)",
+      "Wheatstone Bridge Principle: When bridge is balanced (galvanometer deflection = 0), ratio of resistances is P / Q = R / S",
+      "Metre Bridge: Practical laboratory application of balanced Wheatstone bridge to measure unknown resistance"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Kirchhoff%27s_circuit_laws"
+  },
+  {
+    "id": "ncert12-faraday-lenz-law",
+    "keywords": [
+      "faradays laws of electromagnetic induction",
+      "lenzs law direction",
+      "induced emf formula",
+      "e=-dphi/dt emi"
+    ],
+    "title": "Faraday's and Lenz's Laws of Electromagnetic Induction",
+    "category": "NCERT Physics",
+    "answer": "Faraday's Law states that the magnitude of induced electromotive force (EMF) is proportional to the time rate of change of magnetic flux: ε = -dΦ_B/dt. Lenz's Law (represented by the negative sign) states that the induced current always flows in such a direction as to oppose the change in flux producing it (consequence of conservation of energy).",
+    "highlights": [
+      "Magnetic Flux: Φ_B = B · A · cosθ (measured in Webers; 1 Wb = 1 T·m²)",
+      "Induced EMF in a rotating coil: ε = NBAω sin(ωt) (foundation of AC generators)",
+      "Self-inductance (L): Induced EMF ε = -L(dI/dt) (measured in Henrys)",
+      "Mutual inductance (M): ε₂ = -M(dI₁/dt) (foundation of electrical transformers)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Faraday%27s_law_of_induction"
+  },
+  {
+    "id": "ncert12-photoelectric-effect",
+    "keywords": [
+      "photoelectric effect equation",
+      "einsteins photoelectric equation",
+      "work function threshold frequency",
+      "photon energy hf",
+      "nobel prize einstein"
+    ],
+    "title": "Einstein's Photoelectric Effect & Equation",
+    "category": "NCERT Physics",
+    "answer": "Einstein's Photoelectric Equation: K_max = hν - Φ₀ = hc/λ - hν₀, where hν is photon energy, Φ₀ = hν₀ is the work function of the metal, and K_max is the maximum kinetic energy of emitted photoelectrons. Albert Einstein won the 1921 Nobel Prize in Physics for explaining this phenomenon.",
+    "highlights": [
+      "Emission occurs instantaneously (< 10⁻⁹ s) if light frequency ν ≥ threshold frequency ν₀",
+      "Number of photoelectrons emitted per second is directly proportional to light INTENSITY",
+      "Maximum kinetic energy depends strictly on light FREQUENCY, completely independent of intensity",
+      "Provides definitive experimental proof of the particle/photon nature of light (E = hν, where h = 6.626 × 10⁻³⁴ J·s)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Photoelectric_effect"
+  },
+  {
+    "id": "ncert12-bohr-hydrogen-model",
+    "keywords": [
+      "bohr model of hydrogen atom",
+      "bohr radius and energy formula",
+      "rydberg formula class 12",
+      "spectral lines lyman balmer paschen"
+    ],
+    "title": "Bohr's Model of the Hydrogen Atom (NCERT Class 12)",
+    "category": "NCERT Class 11-12",
+    "answer": "Niels Bohr's atomic model (1913) postulates that electrons revolve around the nucleus only in non-radiating stable orbits with quantized angular momentum (L = mvr = nh / 2π). The energy of an electron in the nth orbit of hydrogen is E_n = -13.6 / n² eV.",
+    "highlights": [
+      "Angular Momentum Quantization: L = mvr = n·(h / 2π) (where n = 1, 2, 3... is principal quantum number)",
+      "Radius of nth Orbit: r_n = n²·a₀ = 0.529 × n² Å (Bohr radius a₀ = 0.529 Å)",
+      "Energy Levels: E_n = -13.6 / n² eV (Ground state E₁ = -13.6 eV; Ionization energy = +13.6 eV)",
+      "Hydrogen Spectral Series: Lyman (UV: n₁=1), Balmer (Visible: n₁=2), Paschen (Infrared: n₁=3), Brackett (IR: n₁=4), Pfund (Far-IR: n₁=5)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Bohr_model"
+  },
+  {
+    "id": "ncert12-quantum-numbers-aufbau",
+    "keywords": [
+      "quantum numbers class 11",
+      "aufbau principle",
+      "pauli exclusion principle",
+      "hund's rule of maximum multiplicity"
+    ],
+    "title": "Quantum Numbers, Aufbau Principle & Electronic Configuration (NCERT Class 11)",
+    "category": "NCERT Class 11-12",
+    "answer": "Four quantum numbers uniquely specify the state of an electron in an atom: Principal (n), Azimuthal/Orbital (l = 0 to n-1), Magnetic (m_l = -l to +l), and Spin (m_s = ±½). Electrons fill atomic orbitals in order of increasing energy according to the Aufbau (n + l) rule.",
+    "highlights": [
+      "Four Quantum Numbers: 1) n (Shell size & energy: 1,2,3...), 2) l (Subshell shape: s=0, p=1, d=2, f=3), 3) m_l (Orbital spatial orientation: 2l+1 values), 4) m_s (Electron spin: +½, -½)",
+      "Aufbau Principle: Orbitals with lower (n + l) value are filled first; if (n + l) is identical, the orbital with lower n fills first",
+      "Pauli Exclusion Principle: No two electrons in an atom can have identical values for all four quantum numbers (max 2 electrons per orbital with opposite spins)",
+      "Hund's Rule: Pairing of electrons in degenerate orbitals (p, d, f) does not occur until each orbital is singly occupied with parallel spins"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Quantum_number"
+  },
+  {
+    "id": "ncert12-chemical-bonding-vsepr-mot",
+    "keywords": [
+      "vsepr theory",
+      "hybridization sp sp2 sp3",
+      "molecular orbital theory mot class 11",
+      "bond order formula"
+    ],
+    "title": "Chemical Bonding: VSEPR, Hybridization & Molecular Orbital Theory (NCERT Class 11)",
+    "category": "NCERT Class 11-12",
+    "answer": "VSEPR theory predicts molecular geometries by minimizing electrostatic repulsion between valence shell electron pairs (Lone pair-Lone pair > Lone pair-Bond pair > Bond pair-Bond pair). Molecular Orbital Theory (MOT) calculates bond order as: Bond Order = ½(N_b - N_a), where N_b and N_a are electrons in bonding and antibonding orbitals.",
+    "highlights": [
+      "Hybridization & Shapes: sp (Linear, 180°, BeCl₂/C₂H₂), sp² (Trigonal planar, 120°, BF₃/C₂H₄), sp³ (Tetrahedral, 109.5°, CH₄), sp³d (Trigonal bipyramidal, PCl₅), sp³d² (Octahedral, SF₆)",
+      "Repulsion Hierarchy: Lone Pair–Lone Pair > Lone Pair–Bond Pair > Bond Pair–Bond Pair (e.g., NH₃ is pyramidal 107°, H₂O is bent 104.5° due to lone pair repulsion)",
+      "Bond Order (MOT): Bond Order = ½(N_b - N_a) (Higher bond order = greater stability and shorter bond length; O₂ has bond order 2 and is paramagnetic due to 2 unpaired electrons in π*2p orbitals)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Molecular_orbital_theory"
+  },
+  {
+    "id": "ncert12-le-chatelier-equilibrium",
+    "keywords": [
+      "le chatelier's principle class 11",
+      "chemical equilibrium kp and kc",
+      "haber process equilibrium",
+      "samya avastha"
+    ],
+    "title": "Chemical Equilibrium & Le Chatelier's Principle (NCERT Class 11)",
+    "category": "NCERT Class 11-12",
+    "answer": "Le Chatelier's Principle states that if a dynamic equilibrium system is subjected to a change in concentration, temperature, or pressure, the equilibrium will shift in the direction that counteracts and relieves the applied change.",
+    "highlights": [
+      "Concentration Effect: Increasing reactant concentration shifts equilibrium in forward direction (towards products)",
+      "Pressure Effect: Increasing pressure shifts equilibrium towards the side with fewer moles of gaseous molecules (e.g., Haber's N₂ + 3H₂ ⇌ 2NH₃ shifts forward under high pressure)",
+      "Temperature Effect: Increasing temperature favors endothermic reactions (ΔH > 0); decreasing temperature favors exothermic reactions (ΔH < 0)",
+      "Relation between K_p and K_c: K_p = K_c · (RT)^(Δn_g) (where Δn_g = moles of gaseous products - moles of gaseous reactants)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Le_Chatelier%27s_principle"
+  },
+  {
+    "id": "ncert12-nernst-equation-electrochemistry",
+    "keywords": [
+      "nernst equation class 12",
+      "kohlrausch law",
+      "standard electrode potential",
+      "galvanic cell emf",
+      "vidyut rasayan"
+    ],
+    "title": "Electrochemistry: Nernst Equation & Kohlrausch's Law (NCERT Class 12)",
+    "category": "NCERT Class 11-12",
+    "answer": "The Nernst equation relates the cell potential of an electrochemical cell to standard electrode potential and reaction quotient Q at 298 K: E_cell = E°_cell - (0.0591 / n) · log₁₀(Q). Kohlrausch's Law states that the limiting molar conductivity of an electrolyte is the sum of the individual limiting ionic conductivities of its cations and anions.",
+    "highlights": [
+      "Nernst Equation at 298 K: E_cell = E°_cell - (0.0591 / n) · log₁₀([Anode] / [Cathode])",
+      "Standard Gibbs Free Energy: ΔG° = -nFE°_cell = -RT ln(K_c)",
+      "Kohlrausch's Law of Independent Migration: Λ°_m(NaCl) = λ°(Na⁺) + λ°(Cl⁻) (enables determination of Λ°_m for weak electrolytes like CH₃COOH)",
+      "Faraday's Laws of Electrolysis: 1st Law: Mass deposited m = Z·I·t (Z is electrochemical equivalent); 2nd Law: m ∝ Equivalent weight for identical current"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Nernst_equation"
+  },
+  {
+    "id": "ncert12-chemical-kinetics-arrhenius",
+    "keywords": [
+      "chemical kinetics class 12",
+      "rate of reaction order and molecularity",
+      "arrhenius equation",
+      "half life first order reaction"
+    ],
+    "title": "Chemical Kinetics, Reaction Order & Arrhenius Equation (NCERT Class 12)",
+    "category": "NCERT Class 11-12",
+    "answer": "Chemical kinetics investigates reaction rates, mechanisms, and activation energy. For a first-order reaction, the integrated rate equation is k = (2.303 / t) · log₁₀([R]₀ / [R]), with a half-life t_½ = 0.693 / k independent of initial concentration. The Arrhenius Equation governs temperature dependence: k = A·e^(-E_a / RT).",
+    "highlights": [
+      "First-Order Integrated Rate Law: k = (2.303 / t) · log₁₀([A]₀ / [A])",
+      "Half-Life Formulas: Zero order: t_½ = [A]₀ / 2k; First order: t_½ = 0.693 / k (independent of initial concentration)",
+      "Arrhenius Equation: ln(k₂ / k₁) = (E_a / R) · [(1 / T₁) - (1 / T₂)]",
+      "Order vs Molecularity: Order is experimentally determined and can be fractional/zero; Molecularity is a theoretical count of colliding reactant species in an elementary step and is always a non-zero positive integer (1, 2, 3)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Chemical_kinetics"
+  },
+  {
+    "id": "ncert12-sn1-sn2-mechanisms",
+    "keywords": [
+      "sn1 vs sn2 mechanism",
+      "nucleophilic substitution reaction class 12",
+      "walden inversion",
+      "carbocation stability organic chemistry"
+    ],
+    "title": "Nucleophilic Substitution Mechanisms: SN1 vs SN2 (NCERT Class 12)",
+    "category": "NCERT Class 11-12",
+    "answer": "SN1 (Unimolecular Nucleophilic Substitution) is a two-step mechanism proceeding via a planar carbocation intermediate yielding racemic products (reactivity: 3° > 2° > 1° alkyl halides, favored by polar protic solvents). SN2 (Bimolecular) is a concerted single-step backside attack with a pentacoordinated transition state resulting in 100% Walden inversion of configuration (reactivity: 1° > 2° > 3°, favored by polar aprotic solvents).",
+    "highlights": [
+      "SN1 Mechanism: Rate = k[Alkyl Halide] (Two steps: slow carbocation formation followed by fast nucleophile attack; tertiary alkyl halides most reactive due to 3° carbocation stability)",
+      "SN2 Mechanism: Rate = k[Alkyl Halide][Nucleophile] (Single-step backside attack causing complete Walden inversion; methyl & primary halides most reactive due to low steric hindrance)",
+      "Stereochemistry: SN1 leads to racemization (d + l mixture); SN2 leads to complete stereochemical inversion"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Nucleophilic_substitution"
+  },
+  {
+    "id": "ncert12-aldol-cannizzaro",
+    "keywords": [
+      "aldol condensation",
+      "cannizzaro reaction",
+      "aldehydes ketones carboxylic acids class 12",
+      "alpha hydrogen organic chemistry"
+    ],
+    "title": "Aldol Condensation & Cannizzaro Reaction (NCERT Class 12)",
+    "category": "NCERT Class 11-12",
+    "answer": "Aldol condensation occurs when aldehydes or ketones possessing at least one α-hydrogen react with dilute alkali (NaOH) to form β-hydroxy aldehydes (aldols), which upon heating lose water to yield α,β-unsaturated carbonyls. The Cannizzaro reaction occurs in aldehydes lacking α-hydrogen (e.g., formaldehyde, benzaldehyde) with concentrated alkali, undergoing self-redox (disproportionation) into an alcohol and a carboxylate salt.",
+    "highlights": [
+      "Aldol Condensation: Requires α-hydrogen; 2 CH₃CHO + dil. NaOH → CH₃-CH(OH)-CH₂-CHO (Aldol) → CH₃-CH=CH-CHO (Crotonaldehyde + H₂O)",
+      "Cannizzaro Reaction: Lacks α-hydrogen; 2 HCHO + 50% conc. NaOH → CH₃OH (Methanol) + HCOONa (Sodium Formate)",
+      "Cross-Aldol Condensation: Carried out between two different carbonyl compounds yielding a mixture of four distinct condensation products"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Aldol_condensation"
+  },
+  {
+    "id": "ncert12-permutations-combinations",
+    "keywords": [
+      "permutation and combination formulas",
+      "npr formula",
+      "ncr formula",
+      "p and c class 11",
+      "kramchay sanchay"
+    ],
+    "title": "Permutations (nPr) & Combinations (nCr) (NCERT Class 11)",
+    "category": "NCERT Class 11-12",
+    "answer": "Permutation represents ordered arrangements of r items chosen from n distinct items: nPr = n! / (n - r)!. Combination represents unordered selections of r items from n distinct items: nCr = n! / [r! · (n - r)!].",
+    "highlights": [
+      "Permutation (Order matters): nPr = n! / (n - r)! (e.g., arranging letters in words, seating arrangements)",
+      "Combination (Order does not matter): nCr = n! / [r!(n - r)!] = nPr / r! (e.g., forming committees, selecting teams)",
+      "Symmetry Property: nCr = nC(n - r)",
+      "Pascal's Identity: nCr + nC(r - 1) = (n + 1)Cr"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Combination"
+  },
+  {
+    "id": "ncert12-binomial-theorem",
+    "keywords": [
+      "binomial theorem class 11",
+      "general term binomial expansion",
+      "tr+1 formula",
+      "dvipad pramey"
+    ],
+    "title": "Binomial Theorem for Positive Integral Index (NCERT Class 11)",
+    "category": "NCERT Class 11-12",
+    "answer": "The Binomial Theorem expands any positive integer power of a binomial (a + b)ⁿ as: (a + b)ⁿ = Σₖ₌₀ⁿ [ⁿCₖ · aⁿ⁻ᵏ · bᵏ] = ⁿC₀·aⁿ + ⁿC₁·aⁿ⁻¹b + ... + ⁿCₙ·bⁿ. The expansion contains exactly (n + 1) terms.",
+    "highlights": [
+      "Standard Formula: (a + b)ⁿ = ⁿC₀ aⁿ + ⁿC₁ aⁿ⁻¹b + ⁿC₂ aⁿ⁻²b² + ... + ⁿCₙ bⁿ",
+      "General Term: T_(r+1) = ⁿC_r · aⁿ⁻ʳ · bʳ",
+      "Middle Term: If n is even, one middle term at T_((n/2)+1); If n is odd, two middle terms at T_((n+1)/2) and T_((n+3)/2)",
+      "Sum of Binomial Coefficients: ⁿC₀ + ⁿC₁ + ⁿC₂ + ... + ⁿCₙ = 2ⁿ"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Binomial_theorem"
+  },
+  {
+    "id": "ncert12-matrices-determinants",
+    "keywords": [
+      "inverse of a matrix formula",
+      "adjoint of matrix",
+      "cramer's rule",
+      "determinant properties class 12",
+      "avyooh aur sarnik"
+    ],
+    "title": "Matrices, Determinants & Inverse Matrix (NCERT Class 12)",
+    "category": "NCERT Class 11-12",
+    "answer": "The inverse of a square non-singular matrix A (where |A| ≠ 0) is calculated as A⁻¹ = (1 / |A|) · adj(A), satisfying A · A⁻¹ = A⁻¹ · A = I. A matrix is singular if its determinant is zero (|A| = 0), in which case its inverse does not exist.",
+    "highlights": [
+      "Matrix Inverse Formula: A⁻¹ = adj(A) / |A| (where adj(A) is the transpose of the matrix of cofactors)",
+      "Inversion Properties: (AB)⁻¹ = B⁻¹A⁻¹; (A^T)⁻¹ = (A⁻¹)^T; |A⁻¹| = 1 / |A|",
+      "Determinant Properties: |AB| = |A|·|B|; |kA| = kⁿ|A| for an n×n square matrix; |adj(A)| = |A|ⁿ⁻¹",
+      "Solving Systems of Linear Equations: Matrix Method X = A⁻¹B"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Invertible_matrix"
+  },
+  {
+    "id": "ncert12-bayes-theorem",
+    "keywords": [
+      "bayes theorem class 12",
+      "conditional probability formula",
+      "law of total probability",
+      "pramap pramikta"
+    ],
+    "title": "Bayes' Theorem & Conditional Probability (NCERT Class 12)",
+    "category": "NCERT Class 11-12",
+    "answer": "Bayes' Theorem calculates the posterior probability of an event E_i given that an outcome A has occurred: P(E_i | A) = [P(E_i) · P(A | E_i)] / [Σⱼ P(E_j) · P(A | E_j)]. Conditional probability is defined as P(A | B) = P(A ∩ B) / P(B).",
+    "highlights": [
+      "Bayes' Formula: P(E_i | A) = [P(E_i) · P(A | E_i)] / [Σₖ P(E_k) · P(A | E_k)]",
+      "Conditional Probability: P(A | B) = P(A ∩ B) / P(B) (where P(B) > 0)",
+      "Independent Events: Two events A and B are independent if and only if P(A ∩ B) = P(A) · P(B)",
+      "Applications: Medical diagnostic test evaluation (false positive/negative rates), machine learning spam classification"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Bayes%27_theorem"
+  },
+  {
+    "id": "ncert12-mitosis-meiosis",
+    "keywords": [
+      "mitosis vs meiosis",
+      "stages of cell division class 11",
+      "crossing over pachytene",
+      "koshika vibhajan"
+    ],
+    "title": "Cell Cycle & Cell Division: Mitosis vs Meiosis (NCERT Class 11)",
+    "category": "NCERT Class 11-12",
+    "answer": "Mitosis is equational cell division in somatic cells yielding 2 genetically identical diploid (2n) daughter cells through Prophase, Metaphase, Anaphase, and Telophase. Meiosis is reductional division in germ cells producing 4 genetically varied haploid (n) gametes via two successive nuclear divisions (Meiosis I and Meiosis II), with genetic crossing-over occurring during Pachytene of Prophase I.",
+    "highlights": [
+      "Mitosis (Equational): 1 cell division → 2 identical diploid (2n) daughter cells (responsible for growth and tissue repair)",
+      "Meiosis (Reductional): 2 cell divisions → 4 genetically unique haploid (n) daughter cells (produces sperm and egg gametes)",
+      "Meiosis I Prophase I Sub-stages: Leptotene → Zygotene (Synapsis / Synaptonemal complex) → Pachytene (Crossing Over mediated by recombinase enzyme) → Diplotene (Chiasmata formation) → Diakinesis (Terminalization)",
+      "Anaphase Distinction: In Mitosis Anaphase, sister chromatids split; In Meiosis Anaphase I, homologous chromosome pairs separate while sister chromatids remain attached"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Meiosis"
+  },
+  {
+    "id": "ncert12-mendelian-genetics",
+    "keywords": [
+      "mendel's laws of inheritance",
+      "law of segregation and independent assortment",
+      "monohybrid and dihybrid cross ratio class 12",
+      "anuvanshiki ncert"
+    ],
+    "title": "Mendelian Genetics & Laws of Inheritance (NCERT Class 12)",
+    "category": "NCERT Class 11-12",
+    "answer": "Gregor Johann Mendel established classical genetics through experiments on garden peas (Pisum sativum), formulating three fundamental laws: 1) Law of Dominance, 2) Law of Segregation (purity of gametes: alleles separate during gametogenesis), and 3) Law of Independent Assortment (genes for different traits sort independently).",
+    "highlights": [
+      "Monohybrid Cross (One trait): Phenotypic ratio = 3:1 (Tall:Dwarf); Genotypic ratio = 1:2:1 (TT:Tt:tt)",
+      "Dihybrid Cross (Two traits): Phenotypic ratio = 9:3:3:1 (Round Yellow : Round Green : Wrinkled Yellow : Wrinkled Green)",
+      "Law of Segregation: The two alleles of a gene separate during meiosis so that each gamete carries only one allele",
+      "Exceptions to Mendelism: Incomplete dominance (Mirabilis jalapa 1:2:1 pink flowers), Co-dominance (ABO blood groups / AB allele expression), Pleiotropy, Polygenic inheritance"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Mendelian_inheritance"
+  },
+  {
+    "id": "ncert12-dna-transcription-translation",
+    "keywords": [
+      "central dogma of molecular biology",
+      "dna replication transcription translation class 12",
+      "genetic code features"
+    ],
+    "title": "Central Dogma: DNA Replication, Transcription & Translation (NCERT Class 12)",
+    "category": "NCERT Class 11-12",
+    "answer": "The Central Dogma of Molecular Biology (proposed by Francis Crick) states the directional flow of genetic information: DNA → (Transcription) → mRNA → (Translation) → Protein. DNA replication is semi-conservative (proved by Meselson and Stahl in 1958 using ¹⁵N isotope in E. coli).",
+    "highlights": [
+      "DNA Replication: Semi-conservative and semi-discontinuous; DNA Polymerase synthesizes 5'→3' (Leading strand continuous, Lagging strand produces Okazaki fragments joined by DNA ligase)",
+      "Transcription: Synthesis of RNA from DNA template by RNA Polymerase (Promoter → Structural gene → Terminator)",
+      "Genetic Code: 64 triplet codons (61 code for 20 amino acids, 3 Stop codons: UAA, UAG, UGA; Start codon AUG codes for Methionine); Universal, Degenerate, Unambiguous, and Non-overlapping",
+      "Translation: Protein synthesis at ribosomes where tRNA anticodons read mRNA codons to assemble polypeptide chains"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Central_dogma_of_molecular_biology"
+  },
+  {
+    "id": "ncert12-biotechnology-pcr",
+    "keywords": [
+      "biotechnology recombinant dna technology",
+      "polymerase chain reaction pcr steps",
+      "restriction endonuclease molecular scissors class 12",
+      "gel electrophoresis"
+    ],
+    "title": "Biotechnology: Recombinant DNA & PCR (NCERT Class 12)",
+    "category": "NCERT Class 11-12",
+    "answer": "Recombinant DNA (rDNA) technology constructs hybrid DNA using restriction endonucleases ('molecular scissors' that cut at specific palindromic recognition sequences) and DNA ligase. The Polymerase Chain Reaction (PCR), invented by Kary Mullis in 1983, amplifies a specific DNA segment billion-fold in vitro in three thermal cycles: Denaturation (94°C), Annealing (54°C), and Extension (72°C using thermostable Taq polymerase).",
+    "highlights": [
+      "Three PCR Steps: 1) Denaturation (~94°C — separates double strands), 2) Annealing (~50–60°C — primers bind), 3) Extension (72°C — Taq DNA polymerase from thermophilic bacterium Thermus aquaticus synthesizes complementary strands)",
+      "Restriction Enzymes: Cut DNA at palindromic sequences generating sticky or blunt ends (e.g., EcoRI cuts at 5'-GAATTC-3')",
+      "Gel Electrophoresis: Separates negatively charged DNA fragments by size towards the positive anode in an agarose gel matrix, visualized under UV light with Ethidium Bromide (EtBr)",
+      "Cloning Vectors: Plasmids (e.g., pBR322 with ori, amp^R, tet^R selectable markers) and bacteriophages"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Polymerase_chain_reaction"
+  },
+  {
+    "id": "ncert12-human-endocrine-hormones",
+    "keywords": [
+      "human endocrine system",
+      "pituitary thyroid pancreas adrenal hormones",
+      "insulin glucagon thyroxine class 11",
+      "antah sravi tantra"
+    ],
+    "title": "Human Endocrine System & Major Hormones (NCERT Class 11)",
+    "category": "NCERT Class 11-12",
+    "answer": "The endocrine system consists of ductless glands that secrete chemical messenger hormones directly into the bloodstream. The Pituitary Gland is the 'Master Gland' controlled by the Hypothalamus, the Thyroid produces Thyroxine (regulating basal metabolic rate), the Pancreas secretes Insulin and Glucagon (regulating blood glucose), and the Adrenals release Adrenaline ('fight-or-flight' hormone).",
+    "highlights": [
+      "Hypothalamus & Pituitary: Hypothalamus secretes releasing/inhibiting hormones; Pituitary secretes GH (Growth Hormone), TSH, ACTH, LH, FSH, Prolactin, Oxytocin, and ADH/Vasopressin",
+      "Thyroid Gland: Secretes Thyroxine (T₄) and Triiodothyronine (T₃) containing iodine; deficiency causes Goitre (swelling of neck)",
+      "Pancreas (Islets of Langerhans): β-cells secrete Insulin (lowers blood sugar); α-cells secrete Glucagon (raises blood sugar); insulin deficiency causes Diabetes Mellitus",
+      "Adrenal Glands: Adrenal medulla secretes Adrenaline (Epinephrine) and Noradrenaline for emergency stress responses (increases heart rate, respiration, alertness)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Endocrine_system"
+  },
+  {
+    "id": "ncert12-price-elasticity-demand",
+    "keywords": [
+      "price elasticity of demand microeconomics",
+      "elasticity formula class 12",
+      "perfectly elastic inelastic demand",
+      "mang ki loch"
+    ],
+    "title": "Microeconomics: Price Elasticity of Demand (NCERT Class 12)",
+    "category": "NCERT Class 11-12",
+    "answer": "Price Elasticity of Demand (E_d) measures the percentage responsiveness of the quantity demanded of a good to a change in its price: E_d = (% Change in Quantity Demanded) / (% Change in Price) = (ΔQ / ΔP) · (P / Q).",
+    "highlights": [
+      "Elasticity Degrees: Perfectly Inelastic (E_d = 0, vertical demand curve), Inelastic (0 < E_d < 1, necessities like medicines/salt), Unitary Elastic (E_d = 1, rectangular hyperbola), Elastic (E_d > 1, luxury goods), Perfectly Elastic (E_d = ∞, horizontal line)",
+      "Determinants: Availability of close substitutes, nature of the good (necessity vs luxury), proportion of consumer income spent, and time horizon",
+      "Total Outlay Method: If price and total expenditure move in opposite directions, E_d > 1; if they move in same direction, E_d < 1; if expenditure remains constant, E_d = 1"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Price_elasticity_of_demand"
+  },
+  {
+    "id": "ncert12-national-income-macroeconomics",
+    "keywords": [
+      "national income accounting",
+      "gdp vs gnp vs nnp",
+      "gdp at market price factor cost class 12",
+      "rashtriya aay ncert"
+    ],
+    "title": "Macroeconomics: National Income Accounting (GDP, GNP, NNP) (NCERT Class 12)",
+    "category": "NCERT Class 11-12",
+    "answer": "Gross Domestic Product (GDP) is the total monetary value of all final goods and services produced within the domestic geographic boundary of a country during a financial year. National Income is formally defined as Net National Product at Factor Cost (NNP_FC = GNP - Depreciation - Net Indirect Taxes).",
+    "highlights": [
+      "GDP Formula (Expenditure Method): GDP = C + I + G + (X - M) [Consumption + Investment + Government Spending + Net Exports]",
+      "GNP: GDP + NFIA (Net Factor Income from Abroad)",
+      "NNP at Market Price: GNP - Depreciation (Consumption of Fixed Capital)",
+      "National Income (NNP_FC): NNP_MP - Net Indirect Taxes (Indirect Taxes - Subsidies)",
+      "Real vs Nominal GDP: Real GDP is evaluated at constant base-year prices (adjusted for inflation); Nominal GDP is evaluated at current market prices"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Measures_of_national_income_and_output"
+  },
+  {
+    "id": "ncert12-coulombs-law",
+    "keywords": [
+      "coulombs law formula",
+      "electrostatic force constant",
+      "permittivity of free space epsilon naught",
+      "electrostatics class 12"
+    ],
+    "title": "Coulomb's Law of Electrostatics",
+    "category": "NCERT Physics",
+    "answer": "Coulomb's Law states that the electrostatic force (F) between two point charges q₁ and q₂ separated by distance r is F = (1 / 4πε₀) · (|q₁q₂| / r²), where ε₀ = 8.854 × 10⁻¹² C²/(N·m²) and 1/(4πε₀) ≈ 8.988 × 10⁹ N·m²/C².",
+    "highlights": [
+      "Inverse square law: Force is directly proportional to product of charges and inversely proportional to r²",
+      "Vector form: F₁₂ = -F₂₁ (obeys Newton's Third Law)",
+      "Dielectric medium of constant K reduces force by factor K: F_med = F_vac / K",
+      "Valid strictly for static point charges in vacuum or uniform dielectric"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Coulomb%27s_law"
+  },
+  {
+    "id": "ncert12-gauss-law",
+    "keywords": [
+      "gauss law electrostatics",
+      "electric flux formula",
+      "closed surface integral electric field",
+      "gauss theorem applications"
+    ],
+    "title": "Gauss's Law in Electrostatics",
+    "category": "NCERT Physics",
+    "answer": "Gauss's Law states that the total electric flux (Φ_E) through any closed Gaussian surface equals the net charge enclosed (q_enc) divided by the permittivity of free space: ∮ E · dA = q_enc / ε₀.",
+    "highlights": [
+      "One of Maxwell's four fundamental equations of electromagnetism",
+      "Electric field due to infinite line charge: E = λ / (2πε₀r)",
+      "Electric field due to infinite plane sheet of charge: E = σ / (2ε₀) (independent of distance)",
+      "Electric field inside a uniformly charged conducting sphere or hollow shell is ZERO (E = 0)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Gauss%27s_law"
+  },
+  {
+    "id": "ncert12-bohr-model",
+    "keywords": [
+      "bohr model of hydrogen atom",
+      "bohr radius 0.529 angstrom",
+      "rydberg formula hydrogen spectrum",
+      "quantized angular momentum nh/2pi"
+    ],
+    "title": "Bohr's Model of the Hydrogen Atom (1913)",
+    "category": "NCERT Physics",
+    "answer": "Niels Bohr postulated that electrons revolve in non-radiating discrete circular orbits where orbital angular momentum is quantized: L = mvr = nh / 2π (n = 1, 2, 3...). Energy of electron in nth orbit: E_n = -13.6 / n² eV. Radius of nth orbit: r_n = 0.529 · n² / Z Å.",
+    "highlights": [
+      "Bohr radius for hydrogen (n=1, Z=1): a₀ = 0.529 Å (0.0529 nm)",
+      "Ground state energy of hydrogen: E₁ = -13.6 eV; Ionization energy = +13.6 eV",
+      "Hydrogen Spectral Series: Lyman (UV, n₁=1), Balmer (Visible, n₁=2), Paschen (IR, n₁=3), Brackett (IR, n₁=4), Pfund (IR, n₁=5)",
+      "Rydberg formula: 1/λ = R_H · Z² · (1/n₁² - 1/n₂²), where R_H ≈ 1.097 × 10⁷ m⁻¹"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Bohr_model"
+  },
+  {
+    "id": "ncert12-pn-junction-transistor",
+    "keywords": [
+      "pn junction diode working",
+      "forward and reverse bias",
+      "npn pnp transistor operation",
+      "rectifier half wave full wave"
+    ],
+    "title": "Semiconductor Devices — P-N Junctions and Transistors",
+    "category": "NCERT Physics",
+    "answer": "A P-N junction diode forms a depletion region with a barrier potential (~0.7 V for Si, ~0.3 V for Ge). Forward bias reduces the barrier allowing high current; reverse bias widens the barrier, blocking current (used for rectification). A BJT (Bipolar Junction Transistor) has Emitter, Base, and Collector terminals functioning as an amplifier or electronic switch.",
+    "highlights": [
+      "Forward bias: P to positive terminal, N to negative — conducts with exponential current rise",
+      "Reverse bias: P to negative, N to positive — only tiny microampere leakage current flows until Zener breakdown",
+      "Zener diode: Operates in reverse breakdown as a precise voltage regulator",
+      "Half-wave rectifier efficiency = 40.6%; Full-wave center-tapped/bridge rectifier efficiency = 81.2%"
+    ],
+    "url": "https://en.wikipedia.org/wiki/P%E2%80%93n_junction"
+  },
+  {
+    "id": "ncert12-chemical-equilibrium",
+    "keywords": [
+      "le chateliers principle",
+      "chemical equilibrium constant kc kp",
+      "equilibrium reaction conditions",
+      "haber process equilibrium"
+    ],
+    "title": "Chemical Equilibrium and Le Chatelier's Principle",
+    "category": "NCERT Chemistry",
+    "answer": "Chemical equilibrium is a dynamic state where the rate of forward reaction equals the rate of reverse reaction. Le Chatelier's Principle states that if a dynamic equilibrium is disturbed by changing temperature, pressure, or concentration, the system adjusts to counteract the change.",
+    "highlights": [
+      "Equilibrium constant relation: K_p = K_c · (RT)^(Δn_g), where Δn_g = moles of gaseous products - moles of gaseous reactants",
+      "Haber Process for Ammonia: N₂(g) + 3H₂(g) ⇌ 2NH₃(g) + 92.4 kJ (exothermic; favored by high pressure ~200 atm and moderate temp ~450°C with Fe catalyst)",
+      "Catalyst accelerates rate of both forward and backward reactions equally without shifting equilibrium position K_eq",
+      "Adding inert gas at constant volume has NO effect on equilibrium"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Le_Chatelier%27s_principle"
+  },
+  {
+    "id": "ncert12-electrochemistry-nernst",
+    "keywords": [
+      "nernst equation formula",
+      "standard electrode potential",
+      "galvanic cell emf",
+      "faradays laws of electrolysis"
+    ],
+    "title": "Electrochemistry — Nernst Equation and Galvanic Cells",
+    "category": "NCERT Chemistry",
+    "answer": "The Nernst Equation calculates cell potential under non-standard conditions: E_cell = E°_cell - (2.303 RT / nF) · log₁₀(Q). At 298 K (25°C): E_cell = E°_cell - (0.0591 / n) · log₁₀(Q). Standard hydrogen electrode (SHE) is assigned E° = 0.00 V as universal reference.",
+    "highlights": [
+      "Galvanic cell converts chemical energy to electrical energy: Anode is negative (Oxidation), Cathode is positive (Reduction) [AnOx - RedCat]",
+      "Gibbs Free Energy relation: ΔG° = -nFE°_cell = -2.303 RT log₁₀(K_eq)",
+      "Faraday's First Law: Mass deposited m = Z · I · t, where Z is electrochemical equivalent (Z = M / (nF))",
+      "1 Faraday (F) = 96,485 Coulombs (charge on 1 mole of electrons)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Nernst_equation"
+  },
+  {
+    "id": "ncert12-chemical-kinetics",
+    "keywords": [
+      "chemical kinetics order of reaction",
+      "rate law rate constant k",
+      "arrhenius equation activation energy",
+      "half life first order reaction"
+    ],
+    "title": "Chemical Kinetics — Rate Laws and Arrhenius Equation",
+    "category": "NCERT Chemistry",
+    "answer": "Chemical kinetics studies reaction rates and mechanisms. For a First Order reaction: Rate = k[A]¹, integrated rate law k = (2.303/t) · log₁₀([A]₀/[A]), and half-life t₁/₂ = 0.693 / k (independent of initial concentration). Arrhenius Equation: k = A · e^(-E_a / RT).",
+    "highlights": [
+      "Zero order: Rate = k; t₁/₂ = [A]₀ / (2k) (half-life directly proportional to initial concentration)",
+      "First order: Half-life t₁/₂ = ln(2)/k ≈ 0.693/k (constant, used in radioactive decay)",
+      "Arrhenius equation linear form: ln(k₂/k₁) = (E_a / R) · (1/T₁ - 1/T₂)",
+      "Pseudo-first-order: High excess of one reactant makes second-order reaction behave as first-order (e.g. acid hydrolysis of ester)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Chemical_kinetics"
+  },
+  {
+    "id": "ncert12-coordination-compounds",
+    "keywords": [
+      "coordination compounds werners theory",
+      "crystal field theory cft",
+      "spectrochemical series ligands",
+      "iupac naming coordination complexes"
+    ],
+    "title": "Coordination Compounds and Crystal Field Theory",
+    "category": "NCERT Chemistry",
+    "answer": "Coordination compounds consist of a central transition metal atom or ion bonded to surrounding electron-donating ligands via coordinate covalent bonds. Crystal Field Theory (CFT) explains colour and magnetism via d-orbital splitting in octahedral (t₂g and e_g) and tetrahedral geometries.",
+    "highlights": [
+      "Werner's Theory (1893): Primary valency is ionizable (oxidation state); Secondary valency is non-ionizable (coordination number)",
+      "Octahedral splitting: Five d-orbitals split into lower energy triplet t₂g (d_xy, d_yz, d_zx) and higher energy doublet e_g (d_x²-y², d_z²)",
+      "Spectrochemical series (increasing ligand field strength): I⁻ < Br⁻ < Cl⁻ < F⁻ < OH⁻ < H₂O < NH₃ < en < CN⁻ < CO",
+      "Strong field ligands (CN⁻, CO) cause pairing of electrons (low spin complexes); weak field ligands form high spin complexes"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Coordination_complex"
+  },
+  {
+    "id": "ncert12-organic-reactions-named",
+    "keywords": [
+      "aldol condensation mechanism",
+      "cannizzaro reaction",
+      "wurtz reaction",
+      "reimer tiemann reaction",
+      "kolbe reaction organic chemistry"
+    ],
+    "title": "Key Named Reactions in Organic Chemistry",
+    "category": "NCERT Chemistry",
+    "answer": "Crucial organic named reactions include: (1) Aldol Condensation (aldehydes/ketones with α-hydrogen in dilute base form β-hydroxy aldehydes), (2) Cannizzaro Reaction (aldehydes without α-hydrogen in conc. base undergo disproportionation), (3) Reimer-Tiemann Reaction (phenol + CHCl3 + aq NaOH yields salicylaldehyde), (4) Kolbe Reaction (phenol + CO2 + NaOH yields salicylic acid).",
+    "highlights": [
+      "Wurtz Reaction: 2R-X + 2Na (in dry ether) → R-R + 2NaX (synthesizes symmetrical higher alkanes)",
+      "Clemmensen Reduction: Carbonyl (C=O) + Zn-Hg/conc. HCl → CH₂ (methylene group)",
+      "Wolff-Kishner Reduction: Carbonyl + Hydrazine (NH₂NH₂) + KOH/ethylene glycol → CH₂",
+      "Friedel-Crafts Alkylation/Acylation: Benzene + R-X (with anhydrous AlCl₃ catalyst) → Alkylbenzene / Acylbenzene"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_organic_reactions"
+  },
+  {
+    "id": "ncert12-dna-structure-replication",
+    "keywords": [
+      "watson and crick dna double helix",
+      "dna replication semiconservative",
+      "chargaffs rule base pairing",
+      "central dogma of molecular biology"
+    ],
+    "title": "DNA Double Helix, Chargaff's Rule & Replication",
+    "category": "NCERT Biology",
+    "answer": "James Watson and Francis Crick (1953) elucidated the DNA double helix based on Rosalind Franklin's X-ray diffraction. Chargaff's Rules state: [A] = [T] and [G] = [C] with purines = pyrimidines. DNA replicates semi-conservatively (demonstrated by Meselson and Stahl in 1958 using ¹⁵N isotope).",
+    "highlights": [
+      "Double helix has right-handed antiparallel strands (5'→3' and 3'→5') with pitch = 3.4 nm and 10 bp per turn",
+      "Adenine pairs with Thymine via 2 hydrogen bonds (A=T); Guanine pairs with Cytosine via 3 hydrogen bonds (G≡C)",
+      "Central Dogma (Crick): DNA → (Transcription) → mRNA → (Translation) → Protein; Reverse transcription occurs in retroviruses",
+      "Key replication enzymes: Helicase (unwinds DNA), Primase (RNA primer), DNA Polymerase III (synthesizes 5'→3'), Ligase (joins Okazaki fragments)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Molecular_biology"
+  },
+  {
+    "id": "ncert12-biotechnology-pcr-r-dna",
+    "keywords": [
+      "pcr polymerase chain reaction steps",
+      "restriction enzymes molecular scissors",
+      "recombinant dna technology",
+      "gel electrophoresis dna"
+    ],
+    "title": "Biotechnology — Recombinant DNA and PCR",
+    "category": "NCERT Biology",
+    "answer": "Recombinant DNA technology uses Restriction Endonucleases (\"molecular scissors\" discovering palindromic recognition sequences) and DNA ligase to insert foreign genes into cloning vectors (e.g. pBR322). Polymerase Chain Reaction (PCR, invented by Kary Mullis in 1983) amplifies DNA billions of times using Taq polymerase across 3 steps: Denaturation (94°C), Annealing (~54°C), and Extension (72°C).",
+    "highlights": [
+      "Restriction endonucleases cut specific palindromic sequences (e.g. EcoRI cuts 5'-GAATTC-3') producing sticky ends",
+      "Agarose gel electrophoresis separates DNA fragments by size toward positive anode (DNA is negatively charged)",
+      "PCR cycles: Denaturation (strands separate at 94°C) → Annealing (primers bind at ~55°C) → Extension (Taq polymerase from Thermus aquaticus extends at 72°C)",
+      "Applications: Bt cotton (pest resistance via cry genes), recombinant human insulin (Humulin by Eli Lilly in 1983), Gene therapy for ADA deficiency (1990)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Polymerase_chain_reaction"
+  },
+  {
+    "id": "ncert12-human-reproduction",
+    "keywords": [
+      "human reproduction gametogenesis",
+      "spermatogenesis oogenesis",
+      "menstrual cycle hormones lh surge",
+      "fertilization blastocyst implantation"
+    ],
+    "title": "Human Reproduction and Menstrual Cycle Hormones",
+    "category": "NCERT Biology",
+    "answer": "Human reproduction is viviparous and sexual. Spermatogenesis in testes seminiferous tubules produces 4 viable spermatozoa from 1 spermatogonium. Oogenesis produces 1 ovum and 2-3 polar bodies. The 28-day menstrual cycle is regulated by GnRH, FSH, LH, Estrogen, and Progesterone; LH surge on day 14 triggers ovulation.",
+    "highlights": [
+      "Follicular phase (days 1-13): FSH stimulates follicle growth; Estrogen thickens endometrium",
+      "Ovulatory phase (day 14): Rapid LH surge causes rupture of Graafian follicle and release of secondary oocyte",
+      "Luteal phase (days 15-28): Corpus luteum secretes high Progesterone to maintain uterine lining for pregnancy",
+      "Fertilization occurs in the Ampullary-isthmic junction of Fallopian tube; Blastocyst implants in endometrium ~7 days post-fertilization"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_reproduction"
+  },
+  {
+    "id": "ncert12-calculus-continuity-differentiability",
+    "keywords": [
+      "continuity differentiability definition",
+      "rolles theorem mean value theorem lmvt",
+      "limits continuity calculus class 12"
+    ],
+    "title": "Continuity, Differentiability, and Mean Value Theorems",
+    "category": "NCERT Mathematics",
+    "answer": "A function f(x) is continuous at x=c if lim(x→c) f(x) = f(c). Differentiability implies continuity (converse is not true, e.g. f(x)=|x| is continuous but not differentiable at x=0). Rolle's Theorem states if f is continuous on [a,b], differentiable on (a,b), and f(a)=f(b), then ∃ c ∈ (a,b) where f'(c) = 0. Lagrange's Mean Value Theorem (LMVT): f'(c) = [f(b) - f(a)] / (b - a).",
+    "highlights": [
+      "Differentiability test: Left-hand derivative (LHD) must equal Right-hand derivative (RHD)",
+      "LMVT: Geometrically means tangent at some point c is parallel to the secant joining (a,f(a)) and (b,f(b))",
+      "Indeterminate forms: 0/0, ∞/∞, 0·∞, ∞-∞, 0⁰, ∞⁰, 1^∞ — evaluated using L'Hôpital's Rule: lim f(x)/g(x) = lim f'(x)/g'(x)",
+      "Intermediate Value Theorem: Continuous function on [a,b] takes every value between f(a) and f(b)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Mean_value_theorem"
+  },
+  {
+    "id": "ncert12-vector-3d-geometry",
+    "keywords": [
+      "dot product cross product vector algebra",
+      "direction cosines ratios 3d line",
+      "shortest distance between skew lines",
+      "plane equation 3d geometry"
+    ],
+    "title": "Vector Algebra and Three-Dimensional (3D) Geometry",
+    "category": "NCERT Mathematics",
+    "answer": "Vectors: Dot product a · b = |a||b| cosθ (scalar; zero if perpendicular); Cross product a × b = |a||b| sinθ n̂ (vector; magnitude gives area of parallelogram). In 3D geometry, direction cosines satisfy l² + m² + n² = 1. Shortest distance between two skew lines r = a₁ + λb₁ and r = a₂ + μb₂ is d = |(a₂ - a₁) · (b₁ × b₂)| / |b₁ × b₂|.",
+    "highlights": [
+      "Vector triple product: a × (b × c) = (a · c)b - (a · b)c",
+      "Scalar triple product: [a b c] = a · (b × c) represents volume of parallelepiped",
+      "Equation of line passing through (x₁,y₁,z₁) with direction ratios (a,b,c): (x-x₁)/a = (y-y₁)/b = (z-z₁)/c",
+      "Angle between two lines with direction ratios a₁,b₁,c₁ and a₂,b₂,c₂: cosθ = (a₁a₂ + b₁b₂ + c₁c₂) / (√(Σa₁²) √(Σa₂²))"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Euclidean_vector"
+  },
+  {
+    "id": "ncert12-maxwells-equations",
+    "keywords": [
+      "maxwells four equations electromagnetism",
+      "gauss law magnetism amperes circuital law displacement current",
+      "electromagnetic waves speed c=1/sqrt(mu0 epsilon0)"
+    ],
+    "title": "Maxwell's Four Equations of Electromagnetism",
+    "category": "NCERT Physics",
+    "answer": "James Clerk Maxwell unified electricity and magnetism into 4 fundamental differential/integral equations: (1) Gauss's Law for Electricity: ∮ E·dA = q/ε₀, (2) Gauss's Law for Magnetism: ∮ B·dA = 0 (no magnetic monopoles exist), (3) Faraday's Law: ∮ E·dl = -dΦ_B/dt, (4) Ampère-Maxwell Law with Displacement Current (I_d = ε₀ dΦ_E/dt): ∮ B·dl = μ₀(I_c + ε₀ dΦ_E/dt).",
+    "highlights": [
+      "Predicted existence of Electromagnetic Waves propagating at speed of light: c = 1 / √(μ₀ε₀) ≈ 3.0 × 10⁸ m/s",
+      "Displacement Current (I_d = ε₀ dΦ_E/dt) resolved Ampère's law contradiction during capacitor charging",
+      "EM waves are transverse waves with E and B oscillating perpendicular to each other and to the direction of propagation (S = (1/μ₀) E × B Poynting Vector)",
+      "Heinrich Hertz experimentally verified EM waves in 1887; J.C. Bose generated millimeter microwaves in Kolkata in 1895"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Maxwell%27s_equations"
+  },
+  {
+    "id": "ncert12-huygens-wave-theory-optics",
+    "keywords": [
+      "huygens wave theory of light",
+      "wavefront secondary wavelets",
+      "youngs double slit experiment ydse interference",
+      "diffraction single slit central maxima"
+    ],
+    "title": "Wave Optics — Huygens' Principle, Interference & Diffraction",
+    "category": "NCERT Physics",
+    "answer": "Huygens' Principle states that every point on a wavefront acts as a secondary source of spherical wavelets spreading in all directions at the wave speed. Young's Double Slit Experiment (YDSE) demonstrates wave interference: Fringe width β = λD / d. Single-slit diffraction produces a central maximum of angular width 2λ/a.",
+    "highlights": [
+      "YDSE Fringe Width: β = λD/d (where λ=wavelength, D=screen distance, d=slit separation; bright and dark fringes have equal width)",
+      "YDSE Constructive Interference (Bright): Path difference Δx = nλ (n = 0, 1, 2...); Destructive (Dark): Δx = (2n-1)λ/2",
+      "Single-slit Diffraction Minima condition: a sinθ = nλ; Central maximum width = 2λD/a (twice the width of secondary maxima)",
+      "Brewster's Law (Polarization by Reflection): tan(i_p) = μ (reflected ray is 100% plane-polarized and perpendicular to refracted ray)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Wave_optics"
+  },
+  {
+    "id": "ncert12-thermodynamics-carnot-engine",
+    "keywords": [
+      "carnot engine efficiency formula",
+      "second law of thermodynamics entropy",
+      "reversible heat engine carnot cycle",
+      "kelvin planck clausius statement"
+    ],
+    "title": "Thermodynamics — Carnot Engine Efficiency & Second Law",
+    "category": "NCERT Physics",
+    "answer": "The Carnot Cycle is an idealized reversible thermodynamic cycle operating between two temperatures (Hot source T_H and Cold sink T_C). Carnot Efficiency: η = 1 - (T_C / T_H) = (T_H - T_C) / T_H (using absolute temperatures in Kelvin). Carnot's Theorem proves that no heat engine operating between two given temperatures can be more efficient than a Carnot engine.",
+    "highlights": [
+      "Carnot Cycle 4 Steps: (1) Isothermal Expansion at T_H, (2) Reversible Adiabatic Expansion, (3) Isothermal Compression at T_C, (4) Reversible Adiabatic Compression",
+      "Carnot Efficiency η depends strictly on source and sink temperatures: η = 1 - T_C/T_H < 100% (100% efficiency requires T_C = 0 K / Absolute Zero)",
+      "Kelvin-Planck Statement: It is impossible to construct a heat engine that absorbs heat and converts 100% of it into work with no other effect",
+      "Clausius Statement: Heat cannot spontaneously flow from a cooler body to a warmer body without external work input",
+      "Entropy (S): Measure of molecular disorder; for any spontaneous irreversible process, universe entropy increases: ΔS_universe > 0"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Carnot_heat_engine"
+  },
+  {
+    "id": "ncert12-nuclear-physics-fission-fusion",
+    "keywords": [
+      "nuclear fission vs nuclear fusion",
+      "mass defect binding energy per nucleon curve",
+      "einstein mass energy equivalence e=mc2",
+      "uranium fission chain reaction"
+    ],
+    "title": "Nuclear Physics — Binding Energy Curve, Fission & Fusion",
+    "category": "NCERT Physics",
+    "answer": "Nuclear binding energy is the energy required to disassemble a nucleus into constituent protons and neutrons, calculated from mass defect Δm via Einstein's mass-energy equation: E = Δm · c² (where 1 amu = 931.5 MeV). Binding Energy per Nucleon (BE/A) peaks at Iron-56 (Fe-56, ~8.75 MeV/nucleon), making it the most stable nucleus. Nuclear Fission (splitting heavy nuclei like U-235) and Nuclear Fusion (merging light nuclei like H-2 + H-3 → He-4 + n + 17.6 MeV in the Sun) both release immense energy by moving toward the Fe-56 stability peak.",
+    "highlights": [
+      "Mass Defect: Δm = [Z·m_p + (A-Z)·m_n] - M_nucleus; Binding Energy BE = Δm · 931.5 MeV",
+      "Nuclear Fission of Uranium-235: ²³⁵U + n → ¹⁴⁴Ba + ⁸⁹Kr + 3n + ~200 MeV energy (multiplies exponentially in uncontrolled chain reaction)",
+      "Controlled Fission in Nuclear Reactors: Control rods (Cadmium/Boron absorb neutrons) and Moderator (Heavy water D₂O / Graphite slows neutrons to thermal speeds)",
+      "Nuclear Fusion in Stars: Proton-Proton chain and CNO cycle fuse hydrogen into helium at core temperatures > 15 million K"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Nuclear_physics"
+  },
+  {
+    "id": "ncert11-12-chapter-1-units-and-measurements-in-physics",
+    "keywords": [
+      "units and measurements in physics",
+      "notes on units and measurements in physics",
+      "chapter units and measurements in physics",
+      "summary of units and measurements in physics",
+      "ncert class 11 12 units and measurements in physics"
+    ],
+    "title": "Units and Measurements in Physics — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Units and Measurements in Physics\" covers in-depth principles: SI base units (metre, kilogram, second, ampere, kelvin, mole, candela), dimensional analysis, principle of homogeneity of dimensions, errors in measurement (systematic, random, least count error, percentage error).",
+    "highlights": [
+      "Subject & Level: NCERT Class 11 Physics",
+      "Topics: SI base units (metre, kilogram, second, ampere, kelvin, mole, candela), dimensional analysis, principle of homogeneity of dimensions, errors in measurement (systematic, random, least count error, percentage error)",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-2-motion-in-a-straight-line-class-11",
+    "keywords": [
+      "motion in a straight line class 11",
+      "notes on motion in a straight line class 11",
+      "chapter motion in a straight line class 11",
+      "summary of motion in a straight line class 11",
+      "ncert class 11 12 motion in a straight line class 11"
+    ],
+    "title": "Motion in a Straight Line Class 11 — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Motion in a Straight Line Class 11\" covers in-depth principles: Position, path length, displacement, instantaneous velocity, acceleration, kinematic equations for uniformly accelerated motion using calculus: v = u + at, s = ut + 0.5at^2, v^2 = u^2 + 2as.",
+    "highlights": [
+      "Subject & Level: NCERT Class 11 Physics",
+      "Topics: Position, path length, displacement, instantaneous velocity, acceleration, kinematic equations for uniformly accelerated motion using calculus: v = u + at, s = ut + 0.5at^2, v^2 = u^2 + 2as",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-3-motion-in-a-plane-and-vectors",
+    "keywords": [
+      "motion in a plane and vectors",
+      "notes on motion in a plane and vectors",
+      "chapter motion in a plane and vectors",
+      "summary of motion in a plane and vectors",
+      "ncert class 11 12 motion in a plane and vectors"
+    ],
+    "title": "Motion in a Plane and Vectors — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Motion in a Plane and Vectors\" covers in-depth principles: Scalars vs vectors, vector addition (triangle law, parallelogram law), unit vectors (i, j, k), dot and cross products, projectile motion (Time of flight T = 2u sin theta / g, Max height H = u^2 sin^2 theta / 2g, Range R = u^2 sin 2theta / g), uniform circular motion.",
+    "highlights": [
+      "Subject & Level: NCERT Class 11 Physics",
+      "Topics: Scalars vs vectors, vector addition (triangle law, parallelogram law), unit vectors (i, j, k), dot and cross products, projectile motion (Time of flight T = 2u sin theta / g, Max height H = u^2 sin^2 theta / 2g, Range R = u^2 sin 2theta / g), uniform circular motion",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-4-laws-of-motion-class-11",
+    "keywords": [
+      "laws of motion class 11",
+      "notes on laws of motion class 11",
+      "chapter laws of motion class 11",
+      "summary of laws of motion class 11",
+      "ncert class 11 12 laws of motion class 11"
+    ],
+    "title": "Laws of Motion Class 11 — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Laws of Motion Class 11\" covers in-depth principles: Newton's laws of motion, impulse, momentum conservation, static and kinetic friction (f_s <= mu_s * N, f_k = mu_k * N), banking of roads (v_max = sqrt(r * g * tan theta)), motion in vertical circle.",
+    "highlights": [
+      "Subject & Level: NCERT Class 11 Physics",
+      "Topics: Newton's laws of motion, impulse, momentum conservation, static and kinetic friction (f_s <= mu_s * N, f_k = mu_k * N), banking of roads (v_max = sqrt(r * g * tan theta)), motion in vertical circle",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-5-work-energy-and-power-class-11",
+    "keywords": [
+      "work, energy and power class 11",
+      "notes on work, energy and power class 11",
+      "chapter work, energy and power class 11",
+      "summary of work, energy and power class 11",
+      "ncert class 11 12 work, energy and power class 11"
+    ],
+    "title": "Work, Energy and Power Class 11 — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Work, Energy and Power Class 11\" covers in-depth principles: Work-energy theorem, kinetic energy, potential energy of spring (PE = 0.5 * k * x^2), conservative and non-conservative forces, elastic and inelastic collisions in 1D and 2D.",
+    "highlights": [
+      "Subject & Level: NCERT Class 11 Physics",
+      "Topics: Work-energy theorem, kinetic energy, potential energy of spring (PE = 0.5 * k * x^2), conservative and non-conservative forces, elastic and inelastic collisions in 1D and 2D",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-6-system-of-particles-and-rotational-motion",
+    "keywords": [
+      "system of particles and rotational motion",
+      "notes on system of particles and rotational motion",
+      "chapter system of particles and rotational motion",
+      "summary of system of particles and rotational motion",
+      "ncert class 11 12 system of particles and rotational motion"
+    ],
+    "title": "System of Particles and Rotational Motion — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"System of Particles and Rotational Motion\" covers in-depth principles: Centre of mass, torque (tau = r x F), angular momentum (L = r x p = I * omega), moment of inertia (I = sum(m_i * r_i^2)), parallel and perpendicular axes theorems, rolling motion kinetic energy KE = 0.5*m*v^2 + 0.5*I*omega^2.",
+    "highlights": [
+      "Subject & Level: NCERT Class 11 Physics",
+      "Topics: Centre of mass, torque (tau = r x F), angular momentum (L = r x p = I * omega), moment of inertia (I = sum(m_i * r_i^2)), parallel and perpendicular axes theorems, rolling motion kinetic energy KE = 0.5*m*v^2 + 0.5*I*omega^2",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-7-gravitation-class-11",
+    "keywords": [
+      "gravitation class 11",
+      "notes on gravitation class 11",
+      "chapter gravitation class 11",
+      "summary of gravitation class 11",
+      "ncert class 11 12 gravitation class 11"
+    ],
+    "title": "Gravitation Class 11 — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Gravitation Class 11\" covers in-depth principles: Kepler's three laws of planetary motion (T^2 proportional to a^3), Universal law of gravitation, variation of g with altitude (g' = g(1 - 2h/R)) and depth (g' = g(1 - d/R)), gravitational potential energy, escape speed (v_e = sqrt(2gR) = 11.2 km/s), orbital velocity, geostationary satellites.",
+    "highlights": [
+      "Subject & Level: NCERT Class 11 Physics",
+      "Topics: Kepler's three laws of planetary motion (T^2 proportional to a^3), Universal law of gravitation, variation of g with altitude (g' = g(1 - 2h/R)) and depth (g' = g(1 - d/R)), gravitational potential energy, escape speed (v_e = sqrt(2gR) = 11.2 km/s), orbital velocity, geostationary satellites",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-8-mechanical-properties-of-solids",
+    "keywords": [
+      "mechanical properties of solids",
+      "notes on mechanical properties of solids",
+      "chapter mechanical properties of solids",
+      "summary of mechanical properties of solids",
+      "ncert class 11 12 mechanical properties of solids"
+    ],
+    "title": "Mechanical Properties of Solids — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Mechanical Properties of Solids\" covers in-depth principles: Stress (tensile, compressive, shear), Strain, Hooke's Law (Stress = Young's modulus * Strain), Young's modulus (Y = FL / A*deltaL), Bulk modulus (B = -V * deltaP / deltaV), Shear modulus, Poisson's ratio, stress-strain curve.",
+    "highlights": [
+      "Subject & Level: NCERT Class 11 Physics",
+      "Topics: Stress (tensile, compressive, shear), Strain, Hooke's Law (Stress = Young's modulus * Strain), Young's modulus (Y = FL / A*deltaL), Bulk modulus (B = -V * deltaP / deltaV), Shear modulus, Poisson's ratio, stress-strain curve",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-9-mechanical-properties-of-fluids",
+    "keywords": [
+      "mechanical properties of fluids",
+      "notes on mechanical properties of fluids",
+      "chapter mechanical properties of fluids",
+      "summary of mechanical properties of fluids",
+      "ncert class 11 12 mechanical properties of fluids"
+    ],
+    "title": "Mechanical Properties of Fluids — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Mechanical Properties of Fluids\" covers in-depth principles: Pascal's law (hydraulic lift), Archimedes' principle, streamline and turbulent flow, equation of continuity (A1*v1 = A2*v2), Bernoulli's principle (P + 0.5*rho*v^2 + rho*g*h = constant), Torricelli's law of efflux, Venturi meter, viscosity, Stokes' law (F = 6*pi*eta*r*v), terminal velocity, surface tension and capillarity.",
+    "highlights": [
+      "Subject & Level: NCERT Class 11 Physics",
+      "Topics: Pascal's law (hydraulic lift), Archimedes' principle, streamline and turbulent flow, equation of continuity (A1*v1 = A2*v2), Bernoulli's principle (P + 0.5*rho*v^2 + rho*g*h = constant), Torricelli's law of efflux, Venturi meter, viscosity, Stokes' law (F = 6*pi*eta*r*v), terminal velocity, surface tension and capillarity",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-10-thermal-properties-of-matter",
+    "keywords": [
+      "thermal properties of matter",
+      "notes on thermal properties of matter",
+      "chapter thermal properties of matter",
+      "summary of thermal properties of matter",
+      "ncert class 11 12 thermal properties of matter"
+    ],
+    "title": "Thermal Properties of Matter — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Thermal Properties of Matter\" covers in-depth principles: Heat and temperature, thermal expansion (linear, area, volume expansion alpha, beta, gamma), specific heat capacity (Q = m*c*deltaT), calorimetry, latent heat, heat transfer (conduction Fourier law, convection, radiation Stefan-Boltzmann law j* = sigma*T^4, Wien's displacement law lambda_max * T = b, Newton's law of cooling).",
+    "highlights": [
+      "Subject & Level: NCERT Class 11 Physics",
+      "Topics: Heat and temperature, thermal expansion (linear, area, volume expansion alpha, beta, gamma), specific heat capacity (Q = m*c*deltaT), calorimetry, latent heat, heat transfer (conduction Fourier law, convection, radiation Stefan-Boltzmann law j* = sigma*T^4, Wien's displacement law lambda_max * T = b, Newton's law of cooling)",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-11-thermodynamics-class-11",
+    "keywords": [
+      "thermodynamics class 11",
+      "notes on thermodynamics class 11",
+      "chapter thermodynamics class 11",
+      "summary of thermodynamics class 11",
+      "ncert class 11 12 thermodynamics class 11"
+    ],
+    "title": "Thermodynamics Class 11 — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Thermodynamics Class 11\" covers in-depth principles: Zeroth law (temperature concept), First law of thermodynamics (deltaQ = deltaU + deltaW = nCv deltaT + P deltaV), isothermal (PV=const, W = nRT ln(V2/V1)), adiabatic (PV^gamma = const, W = (P1V1 - P2V2)/(gamma - 1)), isobaric, isochoric processes, Second law, Carnot engine efficiency.",
+    "highlights": [
+      "Subject & Level: NCERT Class 11 Physics",
+      "Topics: Zeroth law (temperature concept), First law of thermodynamics (deltaQ = deltaU + deltaW = nCv deltaT + P deltaV), isothermal (PV=const, W = nRT ln(V2/V1)), adiabatic (PV^gamma = const, W = (P1V1 - P2V2)/(gamma - 1)), isobaric, isochoric processes, Second law, Carnot engine efficiency",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-12-kinetic-theory-of-gases",
+    "keywords": [
+      "kinetic theory of gases",
+      "notes on kinetic theory of gases",
+      "chapter kinetic theory of gases",
+      "summary of kinetic theory of gases",
+      "ncert class 11 12 kinetic theory of gases"
+    ],
+    "title": "Kinetic Theory of Gases — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Kinetic Theory of Gases\" covers in-depth principles: Molecular nature of matter, ideal gas equation PV = nRT, kinetic interpretation of pressure P = (1/3) * rho * v_rms^2, kinetic energy per molecule = (3/2) * k_B * T, degrees of freedom, law of equipartition of energy, specific heats of gases (Cp - Cv = R Mayer's relation), mean free path.",
+    "highlights": [
+      "Subject & Level: NCERT Class 11 Physics",
+      "Topics: Molecular nature of matter, ideal gas equation PV = nRT, kinetic interpretation of pressure P = (1/3) * rho * v_rms^2, kinetic energy per molecule = (3/2) * k_B * T, degrees of freedom, law of equipartition of energy, specific heats of gases (Cp - Cv = R Mayer's relation), mean free path",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-13-oscillations-and-waves-class-11",
+    "keywords": [
+      "oscillations and waves class 11",
+      "notes on oscillations and waves class 11",
+      "chapter oscillations and waves class 11",
+      "summary of oscillations and waves class 11",
+      "ncert class 11 12 oscillations and waves class 11"
+    ],
+    "title": "Oscillations and Waves Class 11 — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Oscillations and Waves Class 11\" covers in-depth principles: Periodic and oscillatory motion, Simple Harmonic Motion (SHM: F = -kx, d^2x/dt^2 + omega^2 * x = 0), displacement x = A sin(omega*t + phi), velocity, acceleration, energy in SHM (Total E = 0.5 * k * A^2), simple pendulum (T = 2*pi*sqrt(L/g)), spring mass system (T = 2*pi*sqrt(m/k)), damped and forced oscillations, resonance.",
+    "highlights": [
+      "Subject & Level: NCERT Class 11 Physics",
+      "Topics: Periodic and oscillatory motion, Simple Harmonic Motion (SHM: F = -kx, d^2x/dt^2 + omega^2 * x = 0), displacement x = A sin(omega*t + phi), velocity, acceleration, energy in SHM (Total E = 0.5 * k * A^2), simple pendulum (T = 2*pi*sqrt(L/g)), spring mass system (T = 2*pi*sqrt(m/k)), damped and forced oscillations, resonance",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-14-some-basic-concepts-of-chemistry-class-11",
+    "keywords": [
+      "some basic concepts of chemistry class 11",
+      "notes on some basic concepts of chemistry class 11",
+      "chapter some basic concepts of chemistry class 11",
+      "summary of some basic concepts of chemistry class 11",
+      "ncert class 11 12 some basic concepts of chemistry class 11"
+    ],
+    "title": "Some Basic Concepts of Chemistry Class 11 — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Some Basic Concepts of Chemistry Class 11\" covers in-depth principles: Matter, Dalton's atomic theory, atomic and molecular mass, mole concept, empirical and molecular formula determination, stoichiometry, limiting reagent, concentration units: molarity (M), molality (m), mole fraction (x), normality (N).",
+    "highlights": [
+      "Subject & Level: NCERT Class 11 Chemistry",
+      "Topics: Matter, Dalton's atomic theory, atomic and molecular mass, mole concept, empirical and molecular formula determination, stoichiometry, limiting reagent, concentration units: molarity (M), molality (m), mole fraction (x), normality (N)",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-15-structure-of-atom-class-11",
+    "keywords": [
+      "structure of atom class 11",
+      "notes on structure of atom class 11",
+      "chapter structure of atom class 11",
+      "summary of structure of atom class 11",
+      "ncert class 11 12 structure of atom class 11"
+    ],
+    "title": "Structure of Atom Class 11 — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Structure of Atom Class 11\" covers in-depth principles: Subatomic particles, Thomson/Rutherford/Bohr atomic models, dual nature of matter (de Broglie wavelength lambda = h / mv), Heisenberg Uncertainty Principle (deltax * deltap >= h / 4pi), quantum mechanical model, quantum numbers (n, l, m_l, m_s), Aufbau principle, Pauli exclusion principle, Hund's rule of maximum multiplicity.",
+    "highlights": [
+      "Subject & Level: NCERT Class 11 Chemistry",
+      "Topics: Subatomic particles, Thomson/Rutherford/Bohr atomic models, dual nature of matter (de Broglie wavelength lambda = h / mv), Heisenberg Uncertainty Principle (deltax * deltap >= h / 4pi), quantum mechanical model, quantum numbers (n, l, m_l, m_s), Aufbau principle, Pauli exclusion principle, Hund's rule of maximum multiplicity",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-16-chemical-bonding-and-molecular-structure",
+    "keywords": [
+      "chemical bonding and molecular structure",
+      "notes on chemical bonding and molecular structure",
+      "chapter chemical bonding and molecular structure",
+      "summary of chemical bonding and molecular structure",
+      "ncert class 11 12 chemical bonding and molecular structure"
+    ],
+    "title": "Chemical Bonding and Molecular Structure — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Chemical Bonding and Molecular Structure\" covers in-depth principles: Ionic bond, Covalent bond (Lewis structures, formal charge), VSEPR theory (molecular geometry), Valence Bond Theory (sigma and pi bonds), Hybridization (sp, sp2, sp3, sp3d, sp3d2), Molecular Orbital Theory (MOT: bonding and antibonding orbitals, bond order = (N_b - N_a)/2, paramagnetism of O2), Hydrogen bonding.",
+    "highlights": [
+      "Subject & Level: NCERT Class 11 Chemistry",
+      "Topics: Ionic bond, Covalent bond (Lewis structures, formal charge), VSEPR theory (molecular geometry), Valence Bond Theory (sigma and pi bonds), Hybridization (sp, sp2, sp3, sp3d, sp3d2), Molecular Orbital Theory (MOT: bonding and antibonding orbitals, bond order = (N_b - N_a)/2, paramagnetism of O2), Hydrogen bonding",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-17-thermodynamics-and-energetics-class-11",
+    "keywords": [
+      "thermodynamics and energetics class 11",
+      "notes on thermodynamics and energetics class 11",
+      "chapter thermodynamics and energetics class 11",
+      "summary of thermodynamics and energetics class 11",
+      "ncert class 11 12 thermodynamics and energetics class 11"
+    ],
+    "title": "Thermodynamics and Energetics Class 11 — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Thermodynamics and Energetics Class 11\" covers in-depth principles: System, surroundings, state functions, internal energy U, enthalpy H = U + PV, First law of thermodynamics deltaU = q + w, Hess's Law of constant heat summation, entropy S, Gibbs Free Energy deltaG = deltaH - T*deltaS, spontaneity condition deltaG < 0.",
+    "highlights": [
+      "Subject & Level: NCERT Class 11 Chemistry",
+      "Topics: System, surroundings, state functions, internal energy U, enthalpy H = U + PV, First law of thermodynamics deltaU = q + w, Hess's Law of constant heat summation, entropy S, Gibbs Free Energy deltaG = deltaH - T*deltaS, spontaneity condition deltaG < 0",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-18-equilibrium-class-11-chemistry",
+    "keywords": [
+      "equilibrium class 11 chemistry",
+      "notes on equilibrium class 11 chemistry",
+      "chapter equilibrium class 11 chemistry",
+      "summary of equilibrium class 11 chemistry",
+      "ncert class 11 12 equilibrium class 11 chemistry"
+    ],
+    "title": "Equilibrium Class 11 Chemistry — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Equilibrium Class 11 Chemistry\" covers in-depth principles: Chemical equilibrium (Law of mass action, Kc, Kp, relation Kp = Kc(RT)^deltan), Le Chatelier's principle. Ionic equilibrium: Arrhenius, Bronsted-Lowry, Lewis acid-base theories, pH and pOH, buffer solutions (Henderson-Hasselbalch equation), solubility product Ksp, common ion effect.",
+    "highlights": [
+      "Subject & Level: NCERT Class 11 Chemistry",
+      "Topics: Chemical equilibrium (Law of mass action, Kc, Kp, relation Kp = Kc(RT)^deltan), Le Chatelier's principle. Ionic equilibrium: Arrhenius, Bronsted-Lowry, Lewis acid-base theories, pH and pOH, buffer solutions (Henderson-Hasselbalch equation), solubility product Ksp, common ion effect",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-19-redox-reactions-class-11",
+    "keywords": [
+      "redox reactions class 11",
+      "notes on redox reactions class 11",
+      "chapter redox reactions class 11",
+      "summary of redox reactions class 11",
+      "ncert class 11 12 redox reactions class 11"
+    ],
+    "title": "Redox Reactions Class 11 — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Redox Reactions Class 11\" covers in-depth principles: Oxidation number calculation rules, balancing redox reactions by ion-electron / half-reaction method in acidic and basic mediums, electrochemical series, displacement reactions.",
+    "highlights": [
+      "Subject & Level: NCERT Class 11 Chemistry",
+      "Topics: Oxidation number calculation rules, balancing redox reactions by ion-electron / half-reaction method in acidic and basic mediums, electrochemical series, displacement reactions",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-20-organic-chemistry-principles-and-techniques",
+    "keywords": [
+      "organic chemistry principles and techniques",
+      "notes on organic chemistry principles and techniques",
+      "chapter organic chemistry principles and techniques",
+      "summary of organic chemistry principles and techniques",
+      "ncert class 11 12 organic chemistry principles and techniques"
+    ],
+    "title": "Organic Chemistry Principles and Techniques — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Organic Chemistry Principles and Techniques\" covers in-depth principles: Tetravalency and shapes of organic molecules, IUPAC nomenclature rules, isomerism (structural: chain, position, functional, metamerism, tautomerism; stereoisomerism: geometrical cis/trans, optical enantiomers/diastereomers), electronic effects (inductive effect, electromeric effect, resonance / mesomeric effect, hyperconjugation), carbocations, carbanions, free radicals, nucleophiles and electrophiles.",
+    "highlights": [
+      "Subject & Level: NCERT Class 11 Chemistry",
+      "Topics: Tetravalency and shapes of organic molecules, IUPAC nomenclature rules, isomerism (structural: chain, position, functional, metamerism, tautomerism; stereoisomerism: geometrical cis/trans, optical enantiomers/diastereomers), electronic effects (inductive effect, electromeric effect, resonance / mesomeric effect, hyperconjugation), carbocations, carbanions, free radicals, nucleophiles and electrophiles",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-21-hydrocarbons-class-11",
+    "keywords": [
+      "hydrocarbons class 11",
+      "notes on hydrocarbons class 11",
+      "chapter hydrocarbons class 11",
+      "summary of hydrocarbons class 11",
+      "ncert class 11 12 hydrocarbons class 11"
+    ],
+    "title": "Hydrocarbons Class 11 — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Hydrocarbons Class 11\" covers in-depth principles: Alkanes (conformations of ethane: eclipsed, staggered), preparation via Wurtz reaction, Corey-House, Kolbe electrolysis. Alkenes: preparation, electrophilic addition, Markovnikov's rule, anti-Markovnikov peroxide Kharasch effect, ozonolysis. Alkynes: acidity of terminal alkynes, addition reactions. Aromatic hydrocarbons: Huckel's rule (4n+2 pi electrons), electrophilic aromatic substitution of benzene (halogenation, nitration, sulfonation, Friedel-Crafts).",
+    "highlights": [
+      "Subject & Level: NCERT Class 11 Chemistry",
+      "Topics: Alkanes (conformations of ethane: eclipsed, staggered), preparation via Wurtz reaction, Corey-House, Kolbe electrolysis. Alkenes: preparation, electrophilic addition, Markovnikov's rule, anti-Markovnikov peroxide Kharasch effect, ozonolysis. Alkynes: acidity of terminal alkynes, addition reactions. Aromatic hydrocarbons: Huckel's rule (4n+2 pi electrons), electrophilic aromatic substitution of benzene (halogenation, nitration, sulfonation, Friedel-Crafts)",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-22-reproduction-in-organisms-and-flowering-plants",
+    "keywords": [
+      "reproduction in organisms and flowering plants",
+      "notes on reproduction in organisms and flowering plants",
+      "chapter reproduction in organisms and flowering plants",
+      "summary of reproduction in organisms and flowering plants",
+      "ncert class 11 12 reproduction in organisms and flowering plants"
+    ],
+    "title": "Reproduction in Organisms and Flowering Plants — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Reproduction in Organisms and Flowering Plants\" covers in-depth principles: Asexual reproduction vs sexual reproduction. Flower structure: microsporogenesis (pollen grains), megasporogenesis (embryo sac, 7-celled 8-nucleate structure), pollination mechanisms (anemophily, hydrophily, entomophily), pollen-pistil interaction, double fertilisation (syngamy + triple fusion forming 3n endosperm), seed and fruit development, apomixis and polyembryony.",
+    "highlights": [
+      "Subject & Level: NCERT Class 12 Biology",
+      "Topics: Asexual reproduction vs sexual reproduction. Flower structure: microsporogenesis (pollen grains), megasporogenesis (embryo sac, 7-celled 8-nucleate structure), pollination mechanisms (anemophily, hydrophily, entomophily), pollen-pistil interaction, double fertilisation (syngamy + triple fusion forming 3n endosperm), seed and fruit development, apomixis and polyembryony",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-23-human-reproduction-and-reproductive-health",
+    "keywords": [
+      "human reproduction and reproductive health",
+      "notes on human reproduction and reproductive health",
+      "chapter human reproduction and reproductive health",
+      "summary of human reproduction and reproductive health",
+      "ncert class 11 12 human reproduction and reproductive health"
+    ],
+    "title": "Human Reproduction and Reproductive Health — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Human Reproduction and Reproductive Health\" covers in-depth principles: Male reproductive system (testes, seminiferous tubules, Leydig cells, Sertoli cells), Female reproductive system (ovaries, Fallopian tubes, uterus), gametogenesis (spermatogenesis vs oogenesis), menstrual cycle phases and hormones, fertilisation in ampulla, blastocyst implantation, placenta, parturition (oxytocin), lactation (prolactin). Reproductive health: contraception methods, MTP, STIs, ART (IVF, ZIFT, GIFT, ICSI).",
+    "highlights": [
+      "Subject & Level: NCERT Class 12 Biology",
+      "Topics: Male reproductive system (testes, seminiferous tubules, Leydig cells, Sertoli cells), Female reproductive system (ovaries, Fallopian tubes, uterus), gametogenesis (spermatogenesis vs oogenesis), menstrual cycle phases and hormones, fertilisation in ampulla, blastocyst implantation, placenta, parturition (oxytocin), lactation (prolactin). Reproductive health: contraception methods, MTP, STIs, ART (IVF, ZIFT, GIFT, ICSI)",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-24-principles-of-inheritance-and-molecular-genetics",
+    "keywords": [
+      "principles of inheritance and molecular genetics",
+      "notes on principles of inheritance and molecular genetics",
+      "chapter principles of inheritance and molecular genetics",
+      "summary of principles of inheritance and molecular genetics",
+      "ncert class 11 12 principles of inheritance and molecular genetics"
+    ],
+    "title": "Principles of Inheritance and Molecular Genetics — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Principles of Inheritance and Molecular Genetics\" covers in-depth principles: Mendelian genetics, incomplete dominance (Mirabilis jalapa), co-dominance (ABO blood groups), multiple alleles, chromosomal theory of inheritance (Sutton and Boveri), linkage and recombination (T.H. Morgan Drosophila), sex determination, genetic disorders (Mendelian: Haemophilia, Sickle-cell anaemia, Phenylketonuria, Thalassemia; Chromosomal: Down syndrome, Turner syndrome, Klinefelter syndrome). DNA structure (Watson-Crick), packaging (nucleosomes), Meselson-Stahl experiment, transcription, translation (lac operon in E. coli), Human Genome Project, DNA fingerprinting.",
+    "highlights": [
+      "Subject & Level: NCERT Class 12 Biology",
+      "Topics: Mendelian genetics, incomplete dominance (Mirabilis jalapa), co-dominance (ABO blood groups), multiple alleles, chromosomal theory of inheritance (Sutton and Boveri), linkage and recombination (T.H. Morgan Drosophila), sex determination, genetic disorders (Mendelian: Haemophilia, Sickle-cell anaemia, Phenylketonuria, Thalassemia; Chromosomal: Down syndrome, Turner syndrome, Klinefelter syndrome). DNA structure (Watson-Crick), packaging (nucleosomes), Meselson-Stahl experiment, transcription, translation (lac operon in E. coli), Human Genome Project, DNA fingerprinting",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-25-evolution-class-12-biology",
+    "keywords": [
+      "evolution class 12 biology",
+      "notes on evolution class 12 biology",
+      "chapter evolution class 12 biology",
+      "summary of evolution class 12 biology",
+      "ncert class 11 12 evolution class 12 biology"
+    ],
+    "title": "Evolution Class 12 Biology — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Evolution Class 12 Biology\" covers in-depth principles: Origin of life (Miller-Urey experiment, chemical evolution of Oparin-Haldane), theories of evolution (Lamarckism, Darwin's natural selection, Mutation theory of Hugo de Vries), Hardy-Weinberg equilibrium (p^2 + 2pq + q^2 = 1), natural selection types (stabilizing, directional, disruptive), adaptive radiation (Darwin's finches), human evolution timeline (Dryopithecus -> Australopithecus -> Homo habilis -> Homo erectus -> Neanderthal -> Homo sapiens).",
+    "highlights": [
+      "Subject & Level: NCERT Class 12 Biology",
+      "Topics: Origin of life (Miller-Urey experiment, chemical evolution of Oparin-Haldane), theories of evolution (Lamarckism, Darwin's natural selection, Mutation theory of Hugo de Vries), Hardy-Weinberg equilibrium (p^2 + 2pq + q^2 = 1), natural selection types (stabilizing, directional, disruptive), adaptive radiation (Darwin's finches), human evolution timeline (Dryopithecus -> Australopithecus -> Homo habilis -> Homo erectus -> Neanderthal -> Homo sapiens)",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-26-human-health-disease-and-microbes-in-welfare",
+    "keywords": [
+      "human health, disease and microbes in welfare",
+      "notes on human health, disease and microbes in welfare",
+      "chapter human health, disease and microbes in welfare",
+      "summary of human health, disease and microbes in welfare",
+      "ncert class 11 12 human health, disease and microbes in welfare"
+    ],
+    "title": "Human Health, Disease and Microbes in Welfare — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Human Health, Disease and Microbes in Welfare\" covers in-depth principles: Common infectious diseases: Typhoid (Widal test, Salmonella typhi), Pneumonia, Common cold, Malaria (Plasmodium life cycle in Anopheles and human), Amoebiasis, Ascariasis, Ringworm. Immunity: innate vs adaptive, B and T lymphocytes, antibodies (IgA, IgG, IgM, IgE), autoimmune diseases, AIDS (HIV retrovirus life cycle, ELISA, Western blot), Cancer (oncogenes, contact inhibition loss, metastasis, treatments). Microbes in household (curd, bread, cheese), industrial (antibiotics, fermented beverages), sewage treatment (WWTP BOD reduction), biogas production, biocontrol agents (Bacillus thuringiensis / Bt, Trichoderma), biofertilisers (Rhizobium, Mycorrhiza, Azospirillum).",
+    "highlights": [
+      "Subject & Level: NCERT Class 12 Biology",
+      "Topics: Common infectious diseases: Typhoid (Widal test, Salmonella typhi), Pneumonia, Common cold, Malaria (Plasmodium life cycle in Anopheles and human), Amoebiasis, Ascariasis, Ringworm. Immunity: innate vs adaptive, B and T lymphocytes, antibodies (IgA, IgG, IgM, IgE), autoimmune diseases, AIDS (HIV retrovirus life cycle, ELISA, Western blot), Cancer (oncogenes, contact inhibition loss, metastasis, treatments). Microbes in household (curd, bread, cheese), industrial (antibiotics, fermented beverages), sewage treatment (WWTP BOD reduction), biogas production, biocontrol agents (Bacillus thuringiensis / Bt, Trichoderma), biofertilisers (Rhizobium, Mycorrhiza, Azospirillum)",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert11-12-chapter-27-biotechnology-principles-processes-and-applications",
+    "keywords": [
+      "biotechnology principles, processes and applications",
+      "notes on biotechnology principles, processes and applications",
+      "chapter biotechnology principles, processes and applications",
+      "summary of biotechnology principles, processes and applications",
+      "ncert class 11 12 biotechnology principles, processes and applications"
+    ],
+    "title": "Biotechnology Principles, Processes and Applications — Complete NCERT Concept Summary",
+    "category": "NCERT Class 11-12",
+    "answer": "NCERT Curriculum chapter \"Biotechnology Principles, Processes and Applications\" covers in-depth principles: Recombinant DNA technology tools: Restriction endonucleases (palindromic sequences, EcoRI), DNA ligase, vectors (pBR322 plasmid, ori, selectable markers ampR, tetR), competent host transformation (heat shock, micro-injection, gene gun), bioreactors (stirred-tank). Applications: Bt crops (Bt cotton, cryIAc, cryIIAb against bollworms), RNA interference (RNAi in tobacco nematode Meloidegyne incognita), genetically engineered insulin (Humulin by Eli Lilly 1982), Gene therapy (ADA deficiency treatment 1990 in 4-year-old girl), transgenic animals, ethical issues and GEAC.",
+    "highlights": [
+      "Subject & Level: NCERT Class 12 Biology",
+      "Topics: Recombinant DNA technology tools: Restriction endonucleases (palindromic sequences, EcoRI), DNA ligase, vectors (pBR322 plasmid, ori, selectable markers ampR, tetR), competent host transformation (heat shock, micro-injection, gene gun), bioreactors (stirred-tank). Applications: Bt crops (Bt cotton, cryIAc, cryIIAb against bollworms), RNA interference (RNAi in tobacco nematode Meloidegyne incognita), genetically engineered insulin (Humulin by Eli Lilly 1982), Gene therapy (ADA deficiency treatment 1990 in 4-year-old girl), transgenic animals, ethical issues and GEAC",
+      "Standard Reference for CBSE Class 11-12, JEE Main/Advanced, NEET"
+    ],
+    "url": "https://ncert.nic.in/"
+  }
+]

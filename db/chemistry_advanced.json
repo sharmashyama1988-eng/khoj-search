@@ -1,0 +1,3576 @@
+[
+  {
+    "id": "chem-periodic-table-groups",
+    "keywords": [
+      "periodic table groups",
+      "alkali metals alkaline earth halogens noble gases",
+      "118 elements periodic table",
+      "modern periodic table moseley"
+    ],
+    "title": "Modern Periodic Table — Groups, Periods & Trends",
+    "category": "Chemistry",
+    "answer": "The Modern Periodic Table organizes 118 confirmed chemical elements into 18 vertical Groups and 7 horizontal Periods in order of increasing atomic number (Z), formulated by Henry Moseley in 1913. Elements in the same group possess identical valence electron configurations and similar chemical reactivities.",
+    "highlights": [
+      "Group 1 (Alkali Metals: Li, Na, K, Rb, Cs, Fr): Highly reactive, 1 valence electron (ns¹), form +1 cations",
+      "Group 2 (Alkaline Earth Metals: Be, Mg, Ca, Sr, Ba, Ra): 2 valence electrons (ns²), form +2 cations",
+      "Groups 3–12 (Transition Metals / d-block): Variable oxidation states, form colored ions and complexes, act as catalysts",
+      "Group 16 (Chalcogens / Oxygen Family: O, S, Se, Te, Po)",
+      "Group 17 (Halogens: F, Cl, Br, I, At): Highly electronegative salt-formers, 7 valence electrons (ns²np⁵), form -1 halide anions",
+      "Group 18 (Noble Gases: He, Ne, Ar, Kr, Xe, Rn): Chemically inert with complete octet (ns²np⁶, except He with 1s² duplet)",
+      "Periodic Trends: Electronegativity and Ionization Energy increase across a period (left to right) and decrease down a group; Atomic Radius decreases across a period and increases down a group"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Periodic_table"
+  },
+  {
+    "id": "chem-everyday-compounds-formulas",
+    "keywords": [
+      "chemical formulas of everyday substances",
+      "quicklime slaked lime limestone formulas",
+      "blue vitriol green vitriol",
+      "common chemical formulas chemistry"
+    ],
+    "title": "Chemical Formulas of Common Everyday Substances",
+    "category": "Chemistry",
+    "answer": "Common commercial chemical formulas include: Quicklime (CaO / Calcium Oxide), Slaked Lime / Lime Water (Ca(OH)₂ / Calcium Hydroxide), Limestone / Marble / Chalk (CaCO₃ / Calcium Carbonate), Caustic Soda (NaOH), Caustic Potash (KOH), and Blue Vitriol (CuSO₄·5H₂O).",
+    "highlights": [
+      "Quicklime: CaO (Calcium Oxide — reacts vigorously with water to release heat)",
+      "Slaked Lime: Ca(OH)₂ (Calcium Hydroxide — used in whitewashing and mortar)",
+      "Limestone / Marble: CaCO₃ (Calcium Carbonate — precipitates when CO₂ is bubbled through limewater)",
+      "Caustic Soda: NaOH (Sodium Hydroxide) | Caustic Potash: KOH (Potassium Hydroxide)",
+      "Blue Vitriol: CuSO₄·5H₂O (Copper(II) Sulfate Pentahydrate — bright blue crystals)",
+      "Green Vitriol: FeSO₄·7H₂O (Iron(II) Sulfate Heptahydrate) | White Vitriol: ZnSO₄·7H₂O (Zinc Sulfate Heptahydrate)",
+      "Dry Ice: Solid CO₂ (sublimes at -78.5 °C without passing through a liquid phase)",
+      "Laughing Gas: N₂O (Nitrous Oxide — dental anesthetic and propellant)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_chemical_compounds_with_common_names"
+  },
+  {
+    "id": "chem-reaction-types",
+    "keywords": [
+      "types of chemical reactions",
+      "combination decomposition displacement double displacement redox",
+      "esterification saponification",
+      "rasayanik abhikriya"
+    ],
+    "title": "Major Classes of Chemical Reactions",
+    "category": "Chemistry",
+    "answer": "Fundamental chemical reaction types include: Combination (A + B → AB), Decomposition (AB → A + B), Single Displacement (A + BC → AC + B), Double Displacement / Precipitation (AB + CD → AD + CB), Redox (simultaneous oxidation and reduction via electron transfer), Esterification (Carboxylic Acid + Alcohol ⇌ Ester + Water), and Saponification (Alkaline hydrolysis of fats into soap and glycerol).",
+    "highlights": [
+      "Combination: 2 Mg + O₂ → 2 MgO (Two or more reactants combine to form a single product)",
+      "Decomposition: 2 FeSO₄ + Heat → Fe₂O₃ + SO₂↑ + SO₃↑; 2 Pb(NO₃)₂ + Heat → 2 PbO + 4 NO₂↑ (brown fumes) + O₂↑",
+      "Displacement: Fe + CuSO₄(aq, blue) → FeSO₄(aq, light green) + Cu(s, reddish-brown)",
+      "Esterification: CH₃COOH + C₂H₅OH (in presence of conc. H₂SO₄) ⇌ CH₃COOC₂H₅ (Ethyl Acetate, fruity sweet aroma) + H₂O",
+      "Saponification: Fat/Triglyceride + 3 NaOH → Glycerol + 3 Soap molecules (Sodium salts of fatty acids)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Chemical_reaction"
+  },
+  {
+    "id": "chem-buffer-solutions-ph",
+    "keywords": [
+      "buffer solutions chemistry",
+      "henderson hasselbalch equation",
+      "acidic buffer basic buffer",
+      "ph buffer formula"
+    ],
+    "title": "Buffer Solutions & The Henderson-Hasselbalch Equation",
+    "category": "Chemistry",
+    "answer": "A buffer solution resists changes in its pH upon the addition of small quantities of an acid or a base. For an acidic buffer (weak acid + its conjugate salt, e.g., CH₃COOH + CH₃COONa), the pH is calculated via the Henderson-Hasselbalch Equation: pH = pK_a + log₁₀([Salt] / [Acid]).",
+    "highlights": [
+      "Henderson-Hasselbalch Equation (Acidic Buffer): pH = pK_a + log₁₀([A⁻] / [HA]) = pK_a + log₁₀([Conjugate Base / Salt] / [Weak Acid])",
+      "Basic Buffer Formula: pOH = pK_b + log₁₀([Conjugate Acid / Salt] / [Weak Base]), and pH = 14 - pOH at 25 °C (e.g., NH₄OH + NH₄Cl)",
+      "Blood Buffer System: Human blood maintains a tight physiological pH of 7.35–7.45 using the carbonic acid-bicarbonate buffer system (H₂CO₃ / HCO₃⁻)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Buffer_solution"
+  },
+  {
+    "id": "chem-grignard-reagents",
+    "keywords": [
+      "grignard reagent",
+      "rmgx organomagnesium",
+      "grignard reaction mechanisms",
+      "victor grignard nobel"
+    ],
+    "title": "Grignard Reagents (RMgX) — Organometallic Synthesis",
+    "category": "Chemistry",
+    "answer": "A Grignard reagent is an organomagnesium compound with the general formula R-Mg-X (where R is an alkyl/aryl group and X is a halogen), synthesized by reacting an organic halide with magnesium metal in anhydrous diethyl ether. Discovered by François Auguste Victor Grignard (1912 Nobel Prize in Chemistry), it serves as an exceptionally strong carbon nucleophile (carbanion source).",
+    "highlights": [
+      "Preparation: R-X + Mg (in dry ether / THF) → R-Mg-X",
+      "Synthesis of Alcohols: 1) Formaldehyde (HCHO) + RMgX → 1° Primary Alcohol; 2) Other Aldehydes (R'CHO) + RMgX → 2° Secondary Alcohol; 3) Ketones (R'COR'') + RMgX → 3° Tertiary Alcohol",
+      "Reaction with CO₂: RMgX + CO₂ → R-COOMgX → (H₃O⁺) → R-COOH (Carboxylic Acid)",
+      "Moisture Sensitivity: Reacts instantly with water, alcohols, or any acidic proton to yield alkanes (R-Mg-X + H₂O → R-H + Mg(OH)X)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Grignard_reagent"
+  },
+  {
+    "id": "chem-electrophilic-aromatic-substitution",
+    "keywords": [
+      "electrophilic aromatic substitution eas",
+      "benzene nitration halogenation",
+      "friedel crafts alkylation acylation",
+      "benzene reactions class 12"
+    ],
+    "title": "Electrophilic Aromatic Substitution (EAS) in Benzene",
+    "category": "Chemistry",
+    "answer": "Electrophilic Aromatic Substitution (EAS) is the fundamental reaction mechanism where an electrophile (E⁺) replaces a hydrogen atom on an aromatic benzene ring, preserving the stable aromatic π-electron sextet (Hückel's 4n+2 rule). Major EAS reactions include Nitration, Halogenation, Sulfonation, Friedel-Crafts Alkylation, and Friedel-Crafts Acylation.",
+    "highlights": [
+      "Nitration: Benzene + conc. HNO₃ + conc. H₂SO₄ (50–60 °C) → Nitrobenzene + H₂O (Electrophile is Nitronium ion: NO₂⁺)",
+      "Halogenation: Benzene + Cl₂ (in presence of anhydrous FeCl₃ or AlCl₃ Lewis acid catalyst) → Chlorobenzene + HCl (Electrophile: Cl⁺)",
+      "Friedel-Crafts Alkylation: Benzene + CH₃Cl (anh. AlCl₃) → Toluene + HCl (Electrophile: Carbocation CH₃⁺)",
+      "Friedel-Crafts Acylation: Benzene + CH₃COCl (anh. AlCl₃) → Acetophenone + HCl (Electrophile: Acylium ion CH₃-C⁺=O)",
+      "Activating vs Deactivating Groups: -OH, -NH₂, -OCH₃, -CH₃ are ortho/para-directing activators; -NO₂, -COOH, -CHO, -SO₃H are meta-directing deactivators (Halogens are deactivating but ortho/para-directing due to resonance)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Electrophilic_aromatic_substitution"
+  },
+  {
+    "id": "chem-periodic-table-trends",
+    "keywords": [
+      "periodic table trends atomic radius ionization energy",
+      "electronegativity electron affinity trend",
+      "pauling electronegativity scale",
+      "lanthanide contraction"
+    ],
+    "title": "Periodic Table Trends — Radius, IE, and Electronegativity",
+    "category": "Chemistry",
+    "answer": "Across a Period (left to right): Atomic radius decreases (effective nuclear charge Z_eff increases), Ionization Energy increases, Electronegativity increases (Fluorine is most electronegative at 4.0 on Pauling scale). Down a Group (top to bottom): Atomic radius increases (new shells added), Ionization Energy decreases, Electronegativity decreases (Francium/Cesium are least electronegative).",
+    "highlights": [
+      "Most electronegative element: Fluorine (F, 4.0) > Oxygen (O, 3.5) > Nitrogen (N, 3.0) ≈ Chlorine (Cl, 3.0)",
+      "Highest electron gain enthalpy (electron affinity): Chlorine (Cl, -349 kJ/mol, higher than F due to less inter-electronic repulsion)",
+      "Highest first ionization energy: Helium (He, 2372 kJ/mol)",
+      "Lanthanide Contraction: Steady decrease in ionic radii across lanthanides due to poor shielding by 4f electrons, making 4d and 5d transition series (e.g. Zr/Hf) nearly identical in size"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Periodic_trends"
+  },
+  {
+    "id": "chem-hybridization-vsepr",
+    "keywords": [
+      "vsepr theory molecular geometry",
+      "hybridization sp sp2 sp3 sp3d sp3d2",
+      "bond angles shapes molecules",
+      "methane water ammonia shape"
+    ],
+    "title": "VSEPR Theory and Orbital Hybridization",
+    "category": "Chemistry",
+    "answer": "VSEPR (Valence Shell Electron Pair Repulsion) theory predicts 3D molecular geometry based on minimizing electrostatic repulsion between electron pairs: Lone Pair-Lone Pair > Lone Pair-Bond Pair > Bond Pair-Bond Pair. Hybridization combines atomic orbitals into equivalent hybrid orbitals: sp (linear, 180°), sp² (trigonal planar, 120°), sp³ (tetrahedral, 109.5°), sp³d (trigonal bipyramidal), sp³d² (octahedral, 90°).",
+    "highlights": [
+      "CH₄ (Methane): sp³ hybridized, 0 lone pairs → Perfect Tetrahedral, 109.5° bond angle",
+      "NH₃ (Ammonia): sp³ hybridized, 1 lone pair → Trigonal Pyramidal, 107° bond angle (repulsion compresses angle)",
+      "H₂O (Water): sp³ hybridized, 2 lone pairs → Bent / V-shaped, 104.5° bond angle",
+      "PCl₅: sp³d hybridized → Trigonal Bipyramidal with axial bonds longer than equatorial bonds; SF₆: sp³d² → Octahedral (all bonds 90°)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/VSEPR_theory"
+  },
+  {
+    "id": "chem-elem-1-h",
+    "keywords": [
+      "hydrogen element",
+      "atomic number 1",
+      "symbol h",
+      "chemical element h",
+      "properties of hydrogen",
+      "hydrogen facts"
+    ],
+    "title": "Hydrogen (H, Atomic No. 1) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Hydrogen (chemical symbol H, atomic number 1, standard atomic weight 1.008 u) is a nonmetal with electron configuration 1s1. Discovered by Henry Cavendish (1766). Key uses: Most abundant element in universe; fuel, ammonia synthesis, fuel cells.",
+    "highlights": [
+      "Atomic Number: 1 | Symbol: H | Standard Atomic Weight: 1.008 u",
+      "Classification: Nonmetal | Electron Configuration: 1s1",
+      "Melting Point: -259.1°C | Boiling Point: -252.9°C",
+      "Discovered by: Henry Cavendish (1766)",
+      "Primary Applications: Most abundant element in universe; fuel, ammonia synthesis, fuel cells"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Hydrogen"
+  },
+  {
+    "id": "chem-elem-2-he",
+    "keywords": [
+      "helium element",
+      "atomic number 2",
+      "symbol he",
+      "chemical element he",
+      "properties of helium",
+      "helium facts"
+    ],
+    "title": "Helium (He, Atomic No. 2) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Helium (chemical symbol He, atomic number 2, standard atomic weight 4.0026 u) is a noble gas with electron configuration 1s2. Discovered by Pierre Janssen (1868). Key uses: Inert gas; cryogenics, MRI magnets, balloons, deep-sea diving breathing mixtures.",
+    "highlights": [
+      "Atomic Number: 2 | Symbol: He | Standard Atomic Weight: 4.0026 u",
+      "Classification: Noble gas | Electron Configuration: 1s2",
+      "Melting Point: -272.2°C | Boiling Point: -268.9°C",
+      "Discovered by: Pierre Janssen (1868)",
+      "Primary Applications: Inert gas; cryogenics, MRI magnets, balloons, deep-sea diving breathing mixtures"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Helium"
+  },
+  {
+    "id": "chem-elem-3-li",
+    "keywords": [
+      "lithium element",
+      "atomic number 3",
+      "symbol li",
+      "chemical element li",
+      "properties of lithium",
+      "lithium facts"
+    ],
+    "title": "Lithium (Li, Atomic No. 3) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Lithium (chemical symbol Li, atomic number 3, standard atomic weight 6.94 u) is a alkali metal with electron configuration [He] 2s1. Discovered by Johan August Arfwedson (1817). Key uses: Lightest metal; rechargeable lithium-ion batteries, mood stabilizing medication.",
+    "highlights": [
+      "Atomic Number: 3 | Symbol: Li | Standard Atomic Weight: 6.94 u",
+      "Classification: Alkali metal | Electron Configuration: [He] 2s1",
+      "Melting Point: 180.5°C | Boiling Point: 1342°C",
+      "Discovered by: Johan August Arfwedson (1817)",
+      "Primary Applications: Lightest metal; rechargeable lithium-ion batteries, mood stabilizing medication"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Lithium"
+  },
+  {
+    "id": "chem-elem-4-be",
+    "keywords": [
+      "beryllium element",
+      "atomic number 4",
+      "symbol be",
+      "chemical element be",
+      "properties of beryllium",
+      "beryllium facts"
+    ],
+    "title": "Beryllium (Be, Atomic No. 4) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Beryllium (chemical symbol Be, atomic number 4, standard atomic weight 9.0122 u) is a alkaline earth metal with electron configuration [He] 2s2. Discovered by Louis-Nicolas Vauquelin (1798). Key uses: Lightweight aerospace alloys, X-ray tube windows, copper-beryllium springs.",
+    "highlights": [
+      "Atomic Number: 4 | Symbol: Be | Standard Atomic Weight: 9.0122 u",
+      "Classification: Alkaline earth metal | Electron Configuration: [He] 2s2",
+      "Melting Point: 1287°C | Boiling Point: 2470°C",
+      "Discovered by: Louis-Nicolas Vauquelin (1798)",
+      "Primary Applications: Lightweight aerospace alloys, X-ray tube windows, copper-beryllium springs"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Beryllium"
+  },
+  {
+    "id": "chem-elem-5-b",
+    "keywords": [
+      "boron element",
+      "atomic number 5",
+      "symbol b",
+      "chemical element b",
+      "properties of boron",
+      "boron facts"
+    ],
+    "title": "Boron (B, Atomic No. 5) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Boron (chemical symbol B, atomic number 5, standard atomic weight 10.81 u) is a metalloid with electron configuration [He] 2s2 2p1. Discovered by Joseph Louis Gay-Lussac (1808). Key uses: Borosilicate glass (Pyrex), semiconductor dopant, fiberglass, bulletproof vests.",
+    "highlights": [
+      "Atomic Number: 5 | Symbol: B | Standard Atomic Weight: 10.81 u",
+      "Classification: Metalloid | Electron Configuration: [He] 2s2 2p1",
+      "Melting Point: 2076°C | Boiling Point: 3927°C",
+      "Discovered by: Joseph Louis Gay-Lussac (1808)",
+      "Primary Applications: Borosilicate glass (Pyrex), semiconductor dopant, fiberglass, bulletproof vests"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Boron"
+  },
+  {
+    "id": "chem-elem-6-c",
+    "keywords": [
+      "carbon element",
+      "atomic number 6",
+      "symbol c",
+      "chemical element c",
+      "properties of carbon",
+      "carbon facts"
+    ],
+    "title": "Carbon (C, Atomic No. 6) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Carbon (chemical symbol C, atomic number 6, standard atomic weight 12.011 u) is a nonmetal with electron configuration [He] 2s2 2p2. Discovered by Ancient antiquity. Key uses: Basis of all organic life; allotropes include diamond, graphite, graphene, fullerenes.",
+    "highlights": [
+      "Atomic Number: 6 | Symbol: C | Standard Atomic Weight: 12.011 u",
+      "Classification: Nonmetal | Electron Configuration: [He] 2s2 2p2",
+      "Melting Point: 3550°C | Boiling Point: 4827°C",
+      "Discovered by: Ancient antiquity",
+      "Primary Applications: Basis of all organic life; allotropes include diamond, graphite, graphene, fullerenes"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Carbon"
+  },
+  {
+    "id": "chem-elem-7-n",
+    "keywords": [
+      "nitrogen element",
+      "atomic number 7",
+      "symbol n",
+      "chemical element n",
+      "properties of nitrogen",
+      "nitrogen facts"
+    ],
+    "title": "Nitrogen (N, Atomic No. 7) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Nitrogen (chemical symbol N, atomic number 7, standard atomic weight 14.007 u) is a nonmetal with electron configuration [He] 2s2 2p3. Discovered by Daniel Rutherford (1772). Key uses: Makes up 78% of Earth's atmosphere; fertilizers (Haber process ammonia), cryogenic freezing.",
+    "highlights": [
+      "Atomic Number: 7 | Symbol: N | Standard Atomic Weight: 14.007 u",
+      "Classification: Nonmetal | Electron Configuration: [He] 2s2 2p3",
+      "Melting Point: -210°C | Boiling Point: -195.8°C",
+      "Discovered by: Daniel Rutherford (1772)",
+      "Primary Applications: Makes up 78% of Earth's atmosphere; fertilizers (Haber process ammonia), cryogenic freezing"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Nitrogen"
+  },
+  {
+    "id": "chem-elem-8-o",
+    "keywords": [
+      "oxygen element",
+      "atomic number 8",
+      "symbol o",
+      "chemical element o",
+      "properties of oxygen",
+      "oxygen facts"
+    ],
+    "title": "Oxygen (O, Atomic No. 8) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Oxygen (chemical symbol O, atomic number 8, standard atomic weight 15.999 u) is a nonmetal with electron configuration [He] 2s2 2p4. Discovered by Carl Wilhelm Scheele & Joseph Priestley (1774). Key uses: Essential for aerobic respiration and combustion; 21% of Earth's atmosphere, 46% of Earth's crust.",
+    "highlights": [
+      "Atomic Number: 8 | Symbol: O | Standard Atomic Weight: 15.999 u",
+      "Classification: Nonmetal | Electron Configuration: [He] 2s2 2p4",
+      "Melting Point: -218.8°C | Boiling Point: -183°C",
+      "Discovered by: Carl Wilhelm Scheele & Joseph Priestley (1774)",
+      "Primary Applications: Essential for aerobic respiration and combustion; 21% of Earth's atmosphere, 46% of Earth's crust"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Oxygen"
+  },
+  {
+    "id": "chem-elem-9-f",
+    "keywords": [
+      "fluorine element",
+      "atomic number 9",
+      "symbol f",
+      "chemical element f",
+      "properties of fluorine",
+      "fluorine facts"
+    ],
+    "title": "Fluorine (F, Atomic No. 9) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Fluorine (chemical symbol F, atomic number 9, standard atomic weight 18.998 u) is a halogen with electron configuration [He] 2s2 2p5. Discovered by Henri Moissan (1886). Key uses: Most electronegative and reactive element; Teflon (PTFE), toothpaste fluoridation, uranium enrichment.",
+    "highlights": [
+      "Atomic Number: 9 | Symbol: F | Standard Atomic Weight: 18.998 u",
+      "Classification: Halogen | Electron Configuration: [He] 2s2 2p5",
+      "Melting Point: -219.7°C | Boiling Point: -188.1°C",
+      "Discovered by: Henri Moissan (1886)",
+      "Primary Applications: Most electronegative and reactive element; Teflon (PTFE), toothpaste fluoridation, uranium enrichment"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Fluorine"
+  },
+  {
+    "id": "chem-elem-10-ne",
+    "keywords": [
+      "neon element",
+      "atomic number 10",
+      "symbol ne",
+      "chemical element ne",
+      "properties of neon",
+      "neon facts"
+    ],
+    "title": "Neon (Ne, Atomic No. 10) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Neon (chemical symbol Ne, atomic number 10, standard atomic weight 20.18 u) is a noble gas with electron configuration [He] 2s2 2p6. Discovered by William Ramsay & Morris Travers (1898). Key uses: Inert gas; reddish-orange glow in high-voltage neon discharge signs, cryogenic refrigerant.",
+    "highlights": [
+      "Atomic Number: 10 | Symbol: Ne | Standard Atomic Weight: 20.18 u",
+      "Classification: Noble gas | Electron Configuration: [He] 2s2 2p6",
+      "Melting Point: -248.6°C | Boiling Point: -246.1°C",
+      "Discovered by: William Ramsay & Morris Travers (1898)",
+      "Primary Applications: Inert gas; reddish-orange glow in high-voltage neon discharge signs, cryogenic refrigerant"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Neon"
+  },
+  {
+    "id": "chem-elem-11-na",
+    "keywords": [
+      "sodium element",
+      "atomic number 11",
+      "symbol na",
+      "chemical element na",
+      "properties of sodium",
+      "sodium facts"
+    ],
+    "title": "Sodium (Na, Atomic No. 11) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Sodium (chemical symbol Na, atomic number 11, standard atomic weight 22.99 u) is a alkali metal with electron configuration [Ne] 3s1. Discovered by Humphry Davy (1807). Key uses: Soft reactive metal; table salt (NaCl), nerve transmission electrolyte, street vapor lamps.",
+    "highlights": [
+      "Atomic Number: 11 | Symbol: Na | Standard Atomic Weight: 22.99 u",
+      "Classification: Alkali metal | Electron Configuration: [Ne] 3s1",
+      "Melting Point: 97.8°C | Boiling Point: 883°C",
+      "Discovered by: Humphry Davy (1807)",
+      "Primary Applications: Soft reactive metal; table salt (NaCl), nerve transmission electrolyte, street vapor lamps"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sodium"
+  },
+  {
+    "id": "chem-elem-12-mg",
+    "keywords": [
+      "magnesium element",
+      "atomic number 12",
+      "symbol mg",
+      "chemical element mg",
+      "properties of magnesium",
+      "magnesium facts"
+    ],
+    "title": "Magnesium (Mg, Atomic No. 12) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Magnesium (chemical symbol Mg, atomic number 12, standard atomic weight 24.305 u) is a alkaline earth metal with electron configuration [Ne] 3s2. Discovered by Joseph Black (1755). Key uses: Lightweight structural alloys, chlorophyll central atom in plants, flares, antacids.",
+    "highlights": [
+      "Atomic Number: 12 | Symbol: Mg | Standard Atomic Weight: 24.305 u",
+      "Classification: Alkaline earth metal | Electron Configuration: [Ne] 3s2",
+      "Melting Point: 650°C | Boiling Point: 1090°C",
+      "Discovered by: Joseph Black (1755)",
+      "Primary Applications: Lightweight structural alloys, chlorophyll central atom in plants, flares, antacids"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Magnesium"
+  },
+  {
+    "id": "chem-elem-13-al",
+    "keywords": [
+      "aluminum element",
+      "atomic number 13",
+      "symbol al",
+      "chemical element al",
+      "properties of aluminum",
+      "aluminum facts"
+    ],
+    "title": "Aluminum (Al, Atomic No. 13) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Aluminum (chemical symbol Al, atomic number 13, standard atomic weight 26.982 u) is a post-transition metal with electron configuration [Ne] 3s2 3p1. Discovered by Hans Christian Ørsted (1825). Key uses: Most abundant metal in Earth's crust; aircraft, beverage cans, construction, electrical cables.",
+    "highlights": [
+      "Atomic Number: 13 | Symbol: Al | Standard Atomic Weight: 26.982 u",
+      "Classification: Post-transition metal | Electron Configuration: [Ne] 3s2 3p1",
+      "Melting Point: 660.3°C | Boiling Point: 2470°C",
+      "Discovered by: Hans Christian Ørsted (1825)",
+      "Primary Applications: Most abundant metal in Earth's crust; aircraft, beverage cans, construction, electrical cables"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Aluminum"
+  },
+  {
+    "id": "chem-elem-14-si",
+    "keywords": [
+      "silicon element",
+      "atomic number 14",
+      "symbol si",
+      "chemical element si",
+      "properties of silicon",
+      "silicon facts"
+    ],
+    "title": "Silicon (Si, Atomic No. 14) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Silicon (chemical symbol Si, atomic number 14, standard atomic weight 28.085 u) is a metalloid with electron configuration [Ne] 3s2 3p2. Discovered by Jöns Jacob Berzelius (1824). Key uses: Semiconductor chip industry foundation, quartz, solar panels, silicones, glass.",
+    "highlights": [
+      "Atomic Number: 14 | Symbol: Si | Standard Atomic Weight: 28.085 u",
+      "Classification: Metalloid | Electron Configuration: [Ne] 3s2 3p2",
+      "Melting Point: 1414°C | Boiling Point: 3265°C",
+      "Discovered by: Jöns Jacob Berzelius (1824)",
+      "Primary Applications: Semiconductor chip industry foundation, quartz, solar panels, silicones, glass"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Silicon"
+  },
+  {
+    "id": "chem-elem-15-p",
+    "keywords": [
+      "phosphorus element",
+      "atomic number 15",
+      "symbol p",
+      "chemical element p",
+      "properties of phosphorus",
+      "phosphorus facts"
+    ],
+    "title": "Phosphorus (P, Atomic No. 15) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Phosphorus (chemical symbol P, atomic number 15, standard atomic weight 30.974 u) is a nonmetal with electron configuration [Ne] 3s2 3p3. Discovered by Hennig Brand (1669). Key uses: DNA and ATP backbone, bones and teeth, agricultural fertilizers (NPK), matchsticks.",
+    "highlights": [
+      "Atomic Number: 15 | Symbol: P | Standard Atomic Weight: 30.974 u",
+      "Classification: Nonmetal | Electron Configuration: [Ne] 3s2 3p3",
+      "Melting Point: 44.1°C | Boiling Point: 280.5°C",
+      "Discovered by: Hennig Brand (1669)",
+      "Primary Applications: DNA and ATP backbone, bones and teeth, agricultural fertilizers (NPK), matchsticks"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Phosphorus"
+  },
+  {
+    "id": "chem-elem-16-s",
+    "keywords": [
+      "sulfur element",
+      "atomic number 16",
+      "symbol s",
+      "chemical element s",
+      "properties of sulfur",
+      "sulfur facts"
+    ],
+    "title": "Sulfur (S, Atomic No. 16) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Sulfur (chemical symbol S, atomic number 16, standard atomic weight 32.06 u) is a nonmetal with electron configuration [Ne] 3s2 3p4. Discovered by Ancient antiquity. Key uses: Sulfuric acid production (H2SO4 - #1 chemical worldwide), rubber vulcanization, gunpowder.",
+    "highlights": [
+      "Atomic Number: 16 | Symbol: S | Standard Atomic Weight: 32.06 u",
+      "Classification: Nonmetal | Electron Configuration: [Ne] 3s2 3p4",
+      "Melting Point: 115.2°C | Boiling Point: 444.6°C",
+      "Discovered by: Ancient antiquity",
+      "Primary Applications: Sulfuric acid production (H2SO4 - #1 chemical worldwide), rubber vulcanization, gunpowder"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sulfur"
+  },
+  {
+    "id": "chem-elem-17-cl",
+    "keywords": [
+      "chlorine element",
+      "atomic number 17",
+      "symbol cl",
+      "chemical element cl",
+      "properties of chlorine",
+      "chlorine facts"
+    ],
+    "title": "Chlorine (Cl, Atomic No. 17) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Chlorine (chemical symbol Cl, atomic number 17, standard atomic weight 35.45 u) is a halogen with electron configuration [Ne] 3s2 3p5. Discovered by Carl Wilhelm Scheele (1774). Key uses: Water purification/disinfection, PVC plastics, bleaches, table salt (NaCl), stomach acid (HCl).",
+    "highlights": [
+      "Atomic Number: 17 | Symbol: Cl | Standard Atomic Weight: 35.45 u",
+      "Classification: Halogen | Electron Configuration: [Ne] 3s2 3p5",
+      "Melting Point: -101.5°C | Boiling Point: -34°C",
+      "Discovered by: Carl Wilhelm Scheele (1774)",
+      "Primary Applications: Water purification/disinfection, PVC plastics, bleaches, table salt (NaCl), stomach acid (HCl)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Chlorine"
+  },
+  {
+    "id": "chem-elem-18-ar",
+    "keywords": [
+      "argon element",
+      "atomic number 18",
+      "symbol ar",
+      "chemical element ar",
+      "properties of argon",
+      "argon facts"
+    ],
+    "title": "Argon (Ar, Atomic No. 18) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Argon (chemical symbol Ar, atomic number 18, standard atomic weight 39.948 u) is a noble gas with electron configuration [Ne] 3s2 3p6. Discovered by Lord Rayleigh & William Ramsay (1894). Key uses: Most abundant noble gas in atmosphere (~0.93%); inert shielding gas in TIG/MIG welding and incandescent bulbs.",
+    "highlights": [
+      "Atomic Number: 18 | Symbol: Ar | Standard Atomic Weight: 39.948 u",
+      "Classification: Noble gas | Electron Configuration: [Ne] 3s2 3p6",
+      "Melting Point: -189.3°C | Boiling Point: -185.8°C",
+      "Discovered by: Lord Rayleigh & William Ramsay (1894)",
+      "Primary Applications: Most abundant noble gas in atmosphere (~0.93%); inert shielding gas in TIG/MIG welding and incandescent bulbs"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Argon"
+  },
+  {
+    "id": "chem-elem-19-k",
+    "keywords": [
+      "potassium element",
+      "atomic number 19",
+      "symbol k",
+      "chemical element k",
+      "properties of potassium",
+      "potassium facts"
+    ],
+    "title": "Potassium (K, Atomic No. 19) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Potassium (chemical symbol K, atomic number 19, standard atomic weight 39.098 u) is a alkali metal with electron configuration [Ar] 4s1. Discovered by Humphry Davy (1807). Key uses: Essential intracellular electrolyte, cellular sodium-potassium pump, NPK fertilizers, soap making.",
+    "highlights": [
+      "Atomic Number: 19 | Symbol: K | Standard Atomic Weight: 39.098 u",
+      "Classification: Alkali metal | Electron Configuration: [Ar] 4s1",
+      "Melting Point: 63.5°C | Boiling Point: 759°C",
+      "Discovered by: Humphry Davy (1807)",
+      "Primary Applications: Essential intracellular electrolyte, cellular sodium-potassium pump, NPK fertilizers, soap making"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Potassium"
+  },
+  {
+    "id": "chem-elem-20-ca",
+    "keywords": [
+      "calcium element",
+      "atomic number 20",
+      "symbol ca",
+      "chemical element ca",
+      "properties of calcium",
+      "calcium facts"
+    ],
+    "title": "Calcium (Ca, Atomic No. 20) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Calcium (chemical symbol Ca, atomic number 20, standard atomic weight 40.078 u) is a alkaline earth metal with electron configuration [Ar] 4s2. Discovered by Humphry Davy (1808). Key uses: Major component of bones, teeth, limestone (CaCO3), cement, cement concrete, muscle contraction signaling.",
+    "highlights": [
+      "Atomic Number: 20 | Symbol: Ca | Standard Atomic Weight: 40.078 u",
+      "Classification: Alkaline earth metal | Electron Configuration: [Ar] 4s2",
+      "Melting Point: 842°C | Boiling Point: 1484°C",
+      "Discovered by: Humphry Davy (1808)",
+      "Primary Applications: Major component of bones, teeth, limestone (CaCO3), cement, cement concrete, muscle contraction signaling"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Calcium"
+  },
+  {
+    "id": "chem-elem-21-sc",
+    "keywords": [
+      "scandium element",
+      "atomic number 21",
+      "symbol sc",
+      "chemical element sc",
+      "properties of scandium",
+      "scandium facts"
+    ],
+    "title": "Scandium (Sc, Atomic No. 21) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Scandium (chemical symbol Sc, atomic number 21, standard atomic weight 44.956 u) is a transition metal with electron configuration [Ar] 3d1 4s2. Discovered by Lars Fredrik Nilson (1879). Key uses: High-strength aerospace aluminum alloys, sports equipment (baseball bats, bicycle frames).",
+    "highlights": [
+      "Atomic Number: 21 | Symbol: Sc | Standard Atomic Weight: 44.956 u",
+      "Classification: Transition metal | Electron Configuration: [Ar] 3d1 4s2",
+      "Melting Point: 1541°C | Boiling Point: 2836°C",
+      "Discovered by: Lars Fredrik Nilson (1879)",
+      "Primary Applications: High-strength aerospace aluminum alloys, sports equipment (baseball bats, bicycle frames)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Scandium"
+  },
+  {
+    "id": "chem-elem-22-ti",
+    "keywords": [
+      "titanium element",
+      "atomic number 22",
+      "symbol ti",
+      "chemical element ti",
+      "properties of titanium",
+      "titanium facts"
+    ],
+    "title": "Titanium (Ti, Atomic No. 22) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Titanium (chemical symbol Ti, atomic number 22, standard atomic weight 47.867 u) is a transition metal with electron configuration [Ar] 3d2 4s2. Discovered by William Gregor (1791). Key uses: High strength-to-weight ratio, corrosion resistance; aerospace, dental/joint implants, TiO2 white pigment.",
+    "highlights": [
+      "Atomic Number: 22 | Symbol: Ti | Standard Atomic Weight: 47.867 u",
+      "Classification: Transition metal | Electron Configuration: [Ar] 3d2 4s2",
+      "Melting Point: 1668°C | Boiling Point: 3287°C",
+      "Discovered by: William Gregor (1791)",
+      "Primary Applications: High strength-to-weight ratio, corrosion resistance; aerospace, dental/joint implants, TiO2 white pigment"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Titanium"
+  },
+  {
+    "id": "chem-elem-23-v",
+    "keywords": [
+      "vanadium element",
+      "atomic number 23",
+      "symbol v",
+      "chemical element v",
+      "properties of vanadium",
+      "vanadium facts"
+    ],
+    "title": "Vanadium (V, Atomic No. 23) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Vanadium (chemical symbol V, atomic number 23, standard atomic weight 50.942 u) is a transition metal with electron configuration [Ar] 3d3 4s2. Discovered by Andrés Manuel del Río (1801). Key uses: Vanadium-steel alloys for high-strength tools, vanadium redox flow batteries for grid storage.",
+    "highlights": [
+      "Atomic Number: 23 | Symbol: V | Standard Atomic Weight: 50.942 u",
+      "Classification: Transition metal | Electron Configuration: [Ar] 3d3 4s2",
+      "Melting Point: 1910°C | Boiling Point: 3407°C",
+      "Discovered by: Andrés Manuel del Río (1801)",
+      "Primary Applications: Vanadium-steel alloys for high-strength tools, vanadium redox flow batteries for grid storage"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Vanadium"
+  },
+  {
+    "id": "chem-elem-24-cr",
+    "keywords": [
+      "chromium element",
+      "atomic number 24",
+      "symbol cr",
+      "chemical element cr",
+      "properties of chromium",
+      "chromium facts"
+    ],
+    "title": "Chromium (Cr, Atomic No. 24) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Chromium (chemical symbol Cr, atomic number 24, standard atomic weight 51.996 u) is a transition metal with electron configuration [Ar] 3d5 4s1. Discovered by Louis-Nicolas Vauquelin (1797). Key uses: Stainless steel (>10.5% Cr content prevents rust), decorative chrome plating, refractory bricks.",
+    "highlights": [
+      "Atomic Number: 24 | Symbol: Cr | Standard Atomic Weight: 51.996 u",
+      "Classification: Transition metal | Electron Configuration: [Ar] 3d5 4s1",
+      "Melting Point: 1907°C | Boiling Point: 2671°C",
+      "Discovered by: Louis-Nicolas Vauquelin (1797)",
+      "Primary Applications: Stainless steel (>10.5% Cr content prevents rust), decorative chrome plating, refractory bricks"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Chromium"
+  },
+  {
+    "id": "chem-elem-25-mn",
+    "keywords": [
+      "manganese element",
+      "atomic number 25",
+      "symbol mn",
+      "chemical element mn",
+      "properties of manganese",
+      "manganese facts"
+    ],
+    "title": "Manganese (Mn, Atomic No. 25) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Manganese (chemical symbol Mn, atomic number 25, standard atomic weight 54.938 u) is a transition metal with electron configuration [Ar] 3d5 4s2. Discovered by Johan Gottlieb Gahn (1774). Key uses: Essential steel additive (deoxidizer/desulfurizer), dry cell alkaline batteries (MnO2), photosynthesis enzyme.",
+    "highlights": [
+      "Atomic Number: 25 | Symbol: Mn | Standard Atomic Weight: 54.938 u",
+      "Classification: Transition metal | Electron Configuration: [Ar] 3d5 4s2",
+      "Melting Point: 1246°C | Boiling Point: 2061°C",
+      "Discovered by: Johan Gottlieb Gahn (1774)",
+      "Primary Applications: Essential steel additive (deoxidizer/desulfurizer), dry cell alkaline batteries (MnO2), photosynthesis enzyme"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Manganese"
+  },
+  {
+    "id": "chem-elem-26-fe",
+    "keywords": [
+      "iron element",
+      "atomic number 26",
+      "symbol fe",
+      "chemical element fe",
+      "properties of iron",
+      "iron facts"
+    ],
+    "title": "Iron (Fe, Atomic No. 26) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Iron (chemical symbol Fe, atomic number 26, standard atomic weight 55.845 u) is a transition metal with electron configuration [Ar] 3d6 4s2. Discovered by Ancient antiquity. Key uses: Most used metal on Earth (>90% of global metal production); steel, hemoglobin oxygen carrier in blood.",
+    "highlights": [
+      "Atomic Number: 26 | Symbol: Fe | Standard Atomic Weight: 55.845 u",
+      "Classification: Transition metal | Electron Configuration: [Ar] 3d6 4s2",
+      "Melting Point: 1538°C | Boiling Point: 2862°C",
+      "Discovered by: Ancient antiquity",
+      "Primary Applications: Most used metal on Earth (>90% of global metal production); steel, hemoglobin oxygen carrier in blood"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Iron"
+  },
+  {
+    "id": "chem-elem-27-co",
+    "keywords": [
+      "cobalt element",
+      "atomic number 27",
+      "symbol co",
+      "chemical element co",
+      "properties of cobalt",
+      "cobalt facts"
+    ],
+    "title": "Cobalt (Co, Atomic No. 27) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Cobalt (chemical symbol Co, atomic number 27, standard atomic weight 58.933 u) is a transition metal with electron configuration [Ar] 3d7 4s2. Discovered by Georg Brandt (1735). Key uses: Lithium-ion battery cathodes (NMC/LCO), superalloys for jet engines, Vitamin B12 (cobalamin), blue pigment.",
+    "highlights": [
+      "Atomic Number: 27 | Symbol: Co | Standard Atomic Weight: 58.933 u",
+      "Classification: Transition metal | Electron Configuration: [Ar] 3d7 4s2",
+      "Melting Point: 1495°C | Boiling Point: 2927°C",
+      "Discovered by: Georg Brandt (1735)",
+      "Primary Applications: Lithium-ion battery cathodes (NMC/LCO), superalloys for jet engines, Vitamin B12 (cobalamin), blue pigment"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Cobalt"
+  },
+  {
+    "id": "chem-elem-28-ni",
+    "keywords": [
+      "nickel element",
+      "atomic number 28",
+      "symbol ni",
+      "chemical element ni",
+      "properties of nickel",
+      "nickel facts"
+    ],
+    "title": "Nickel (Ni, Atomic No. 28) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Nickel (chemical symbol Ni, atomic number 28, standard atomic weight 58.693 u) is a transition metal with electron configuration [Ar] 3d8 4s2. Discovered by Axel Fredrik Cronstedt (1751). Key uses: Stainless steel alloys, EV batteries, electroplating, coins, corrosion-resistant Monel/Inconel alloys.",
+    "highlights": [
+      "Atomic Number: 28 | Symbol: Ni | Standard Atomic Weight: 58.693 u",
+      "Classification: Transition metal | Electron Configuration: [Ar] 3d8 4s2",
+      "Melting Point: 1455°C | Boiling Point: 2913°C",
+      "Discovered by: Axel Fredrik Cronstedt (1751)",
+      "Primary Applications: Stainless steel alloys, EV batteries, electroplating, coins, corrosion-resistant Monel/Inconel alloys"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Nickel"
+  },
+  {
+    "id": "chem-elem-29-cu",
+    "keywords": [
+      "copper element",
+      "atomic number 29",
+      "symbol cu",
+      "chemical element cu",
+      "properties of copper",
+      "copper facts"
+    ],
+    "title": "Copper (Cu, Atomic No. 29) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Copper (chemical symbol Cu, atomic number 29, standard atomic weight 63.546 u) is a transition metal with electron configuration [Ar] 3d10 4s1. Discovered by Ancient antiquity. Key uses: Exceptional electrical and thermal conductivity; wiring, plumbing, brass (Cu+Zn) and bronze (Cu+Sn) alloys.",
+    "highlights": [
+      "Atomic Number: 29 | Symbol: Cu | Standard Atomic Weight: 63.546 u",
+      "Classification: Transition metal | Electron Configuration: [Ar] 3d10 4s1",
+      "Melting Point: 1084.6°C | Boiling Point: 2562°C",
+      "Discovered by: Ancient antiquity",
+      "Primary Applications: Exceptional electrical and thermal conductivity; wiring, plumbing, brass (Cu+Zn) and bronze (Cu+Sn) alloys"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Copper"
+  },
+  {
+    "id": "chem-elem-30-zn",
+    "keywords": [
+      "zinc element",
+      "atomic number 30",
+      "symbol zn",
+      "chemical element zn",
+      "properties of zinc",
+      "zinc facts"
+    ],
+    "title": "Zinc (Zn, Atomic No. 30) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Zinc (chemical symbol Zn, atomic number 30, standard atomic weight 65.38 u) is a transition metal with electron configuration [Ar] 3d10 4s2. Discovered by Andreas Sigismund Marggraf (1746). Key uses: Galvanizing iron/steel against corrosion, brass alloy, die casting, human immune enzyme cofactor.",
+    "highlights": [
+      "Atomic Number: 30 | Symbol: Zn | Standard Atomic Weight: 65.38 u",
+      "Classification: Transition metal | Electron Configuration: [Ar] 3d10 4s2",
+      "Melting Point: 419.5°C | Boiling Point: 907°C",
+      "Discovered by: Andreas Sigismund Marggraf (1746)",
+      "Primary Applications: Galvanizing iron/steel against corrosion, brass alloy, die casting, human immune enzyme cofactor"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Zinc"
+  },
+  {
+    "id": "chem-elem-31-ga",
+    "keywords": [
+      "gallium element",
+      "atomic number 31",
+      "symbol ga",
+      "chemical element ga",
+      "properties of gallium",
+      "gallium facts"
+    ],
+    "title": "Gallium (Ga, Atomic No. 31) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Gallium (chemical symbol Ga, atomic number 31, standard atomic weight 69.723 u) is a post-transition metal with electron configuration [Ar] 3d10 4s2 4p1. Discovered by Paul-Émile Lecoq de Boisbaudran (1875). Key uses: Melts in human hand (29.8°C); Gallium Arsenide (GaAs) and Gallium Nitride (GaN) high-speed/power semiconductors and blue LEDs.",
+    "highlights": [
+      "Atomic Number: 31 | Symbol: Ga | Standard Atomic Weight: 69.723 u",
+      "Classification: Post-transition metal | Electron Configuration: [Ar] 3d10 4s2 4p1",
+      "Melting Point: 29.76°C | Boiling Point: 2204°C",
+      "Discovered by: Paul-Émile Lecoq de Boisbaudran (1875)",
+      "Primary Applications: Melts in human hand (29.8°C); Gallium Arsenide (GaAs) and Gallium Nitride (GaN) high-speed/power semiconductors and blue LEDs"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Gallium"
+  },
+  {
+    "id": "chem-elem-32-ge",
+    "keywords": [
+      "germanium element",
+      "atomic number 32",
+      "symbol ge",
+      "chemical element ge",
+      "properties of germanium",
+      "germanium facts"
+    ],
+    "title": "Germanium (Ge, Atomic No. 32) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Germanium (chemical symbol Ge, atomic number 32, standard atomic weight 72.63 u) is a metalloid with electron configuration [Ar] 3d10 4s2 4p2. Discovered by Clemens Winkler (1886). Key uses: Early transistor material, infrared optics, fiber-optic communication cables, solar cells.",
+    "highlights": [
+      "Atomic Number: 32 | Symbol: Ge | Standard Atomic Weight: 72.63 u",
+      "Classification: Metalloid | Electron Configuration: [Ar] 3d10 4s2 4p2",
+      "Melting Point: 938.2°C | Boiling Point: 2833°C",
+      "Discovered by: Clemens Winkler (1886)",
+      "Primary Applications: Early transistor material, infrared optics, fiber-optic communication cables, solar cells"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Germanium"
+  },
+  {
+    "id": "chem-elem-33-as",
+    "keywords": [
+      "arsenic element",
+      "atomic number 33",
+      "symbol as",
+      "chemical element as",
+      "properties of arsenic",
+      "arsenic facts"
+    ],
+    "title": "Arsenic (As, Atomic No. 33) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Arsenic (chemical symbol As, atomic number 33, standard atomic weight 74.922 u) is a metalloid with electron configuration [Ar] 3d10 4s2 4p3. Discovered by Albertus Magnus (1250). Key uses: Semiconductor dopant, gallium arsenide circuits, historical wood preservative and toxic compound.",
+    "highlights": [
+      "Atomic Number: 33 | Symbol: As | Standard Atomic Weight: 74.922 u",
+      "Classification: Metalloid | Electron Configuration: [Ar] 3d10 4s2 4p3",
+      "Melting Point: 817°C | Boiling Point: 614°C",
+      "Discovered by: Albertus Magnus (1250)",
+      "Primary Applications: Semiconductor dopant, gallium arsenide circuits, historical wood preservative and toxic compound"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Arsenic"
+  },
+  {
+    "id": "chem-elem-34-se",
+    "keywords": [
+      "selenium element",
+      "atomic number 34",
+      "symbol se",
+      "chemical element se",
+      "properties of selenium",
+      "selenium facts"
+    ],
+    "title": "Selenium (Se, Atomic No. 34) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Selenium (chemical symbol Se, atomic number 34, standard atomic weight 78.971 u) is a nonmetal with electron configuration [Ar] 3d10 4s2 4p4. Discovered by Jöns Jacob Berzelius (1817). Key uses: Photocopying photoreceptors, solar cells, glass decolorization, essential trace dietary antioxidant.",
+    "highlights": [
+      "Atomic Number: 34 | Symbol: Se | Standard Atomic Weight: 78.971 u",
+      "Classification: Nonmetal | Electron Configuration: [Ar] 3d10 4s2 4p4",
+      "Melting Point: 221°C | Boiling Point: 685°C",
+      "Discovered by: Jöns Jacob Berzelius (1817)",
+      "Primary Applications: Photocopying photoreceptors, solar cells, glass decolorization, essential trace dietary antioxidant"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Selenium"
+  },
+  {
+    "id": "chem-elem-35-br",
+    "keywords": [
+      "bromine element",
+      "atomic number 35",
+      "symbol br",
+      "chemical element br",
+      "properties of bromine",
+      "bromine facts"
+    ],
+    "title": "Bromine (Br, Atomic No. 35) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Bromine (chemical symbol Br, atomic number 35, standard atomic weight 79.904 u) is a halogen with electron configuration [Ar] 3d10 4s2 4p5. Discovered by Antoine Jérôme Balard (1826). Key uses: Only liquid nonmetallic element at room temp (red-brown fuming liquid); flame retardants, pharmaceuticals.",
+    "highlights": [
+      "Atomic Number: 35 | Symbol: Br | Standard Atomic Weight: 79.904 u",
+      "Classification: Halogen | Electron Configuration: [Ar] 3d10 4s2 4p5",
+      "Melting Point: -7.2°C | Boiling Point: 58.8°C",
+      "Discovered by: Antoine Jérôme Balard (1826)",
+      "Primary Applications: Only liquid nonmetallic element at room temp (red-brown fuming liquid); flame retardants, pharmaceuticals"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Bromine"
+  },
+  {
+    "id": "chem-elem-36-kr",
+    "keywords": [
+      "krypton element",
+      "atomic number 36",
+      "symbol kr",
+      "chemical element kr",
+      "properties of krypton",
+      "krypton facts"
+    ],
+    "title": "Krypton (Kr, Atomic No. 36) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Krypton (chemical symbol Kr, atomic number 36, standard atomic weight 83.798 u) is a noble gas with electron configuration [Ar] 3d10 4s2 4p6. Discovered by William Ramsay & Morris Travers (1898). Key uses: Fluorescent lighting, high-speed photography flash lamps, insulated window panes.",
+    "highlights": [
+      "Atomic Number: 36 | Symbol: Kr | Standard Atomic Weight: 83.798 u",
+      "Classification: Noble gas | Electron Configuration: [Ar] 3d10 4s2 4p6",
+      "Melting Point: -157.4°C | Boiling Point: -153.2°C",
+      "Discovered by: William Ramsay & Morris Travers (1898)",
+      "Primary Applications: Fluorescent lighting, high-speed photography flash lamps, insulated window panes"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Krypton"
+  },
+  {
+    "id": "chem-elem-47-ag",
+    "keywords": [
+      "silver element",
+      "atomic number 47",
+      "symbol ag",
+      "chemical element ag",
+      "properties of silver",
+      "silver facts"
+    ],
+    "title": "Silver (Ag, Atomic No. 47) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Silver (chemical symbol Ag, atomic number 47, standard atomic weight 107.868 u) is a transition metal with electron configuration [Kr] 4d10 5s1. Discovered by Ancient antiquity. Key uses: Highest electrical and thermal conductivity and highest optical reflectivity of all metals; jewelry, solar panels, electronics.",
+    "highlights": [
+      "Atomic Number: 47 | Symbol: Ag | Standard Atomic Weight: 107.868 u",
+      "Classification: Transition metal | Electron Configuration: [Kr] 4d10 5s1",
+      "Melting Point: 961.8°C | Boiling Point: 2162°C",
+      "Discovered by: Ancient antiquity",
+      "Primary Applications: Highest electrical and thermal conductivity and highest optical reflectivity of all metals; jewelry, solar panels, electronics"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Silver"
+  },
+  {
+    "id": "chem-elem-50-sn",
+    "keywords": [
+      "tin element",
+      "atomic number 50",
+      "symbol sn",
+      "chemical element sn",
+      "properties of tin",
+      "tin facts"
+    ],
+    "title": "Tin (Sn, Atomic No. 50) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Tin (chemical symbol Sn, atomic number 50, standard atomic weight 118.71 u) is a post-transition metal with electron configuration [Kr] 4d10 5s2 5p2. Discovered by Ancient antiquity. Key uses: Tin plating (tin cans), solder alloy for electronics (Sn-Pb / lead-free Sn-Ag-Cu), bronze alloy.",
+    "highlights": [
+      "Atomic Number: 50 | Symbol: Sn | Standard Atomic Weight: 118.71 u",
+      "Classification: Post-transition metal | Electron Configuration: [Kr] 4d10 5s2 5p2",
+      "Melting Point: 231.9°C | Boiling Point: 2602°C",
+      "Discovered by: Ancient antiquity",
+      "Primary Applications: Tin plating (tin cans), solder alloy for electronics (Sn-Pb / lead-free Sn-Ag-Cu), bronze alloy"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Tin"
+  },
+  {
+    "id": "chem-elem-53-i",
+    "keywords": [
+      "iodine element",
+      "atomic number 53",
+      "symbol i",
+      "chemical element i",
+      "properties of iodine",
+      "iodine facts"
+    ],
+    "title": "Iodine (I, Atomic No. 53) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Iodine (chemical symbol I, atomic number 53, standard atomic weight 126.904 u) is a halogen with electron configuration [Kr] 4d10 5s2 5p5. Discovered by Bernard Courtois (1811). Key uses: Essential for thyroid hormone synthesis (preventing goitre), antiseptic disinfectant (tincture of iodine), X-ray contrast media.",
+    "highlights": [
+      "Atomic Number: 53 | Symbol: I | Standard Atomic Weight: 126.904 u",
+      "Classification: Halogen | Electron Configuration: [Kr] 4d10 5s2 5p5",
+      "Melting Point: 113.7°C | Boiling Point: 184.3°C",
+      "Discovered by: Bernard Courtois (1811)",
+      "Primary Applications: Essential for thyroid hormone synthesis (preventing goitre), antiseptic disinfectant (tincture of iodine), X-ray contrast media"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Iodine"
+  },
+  {
+    "id": "chem-elem-74-w",
+    "keywords": [
+      "tungsten element",
+      "atomic number 74",
+      "symbol w",
+      "chemical element w",
+      "properties of tungsten",
+      "tungsten facts"
+    ],
+    "title": "Tungsten (W, Atomic No. 74) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Tungsten (chemical symbol W, atomic number 74, standard atomic weight 183.84 u) is a transition metal with electron configuration [Xe] 4f14 5d4 6s2. Discovered by Carl Wilhelm Scheele (1781). Key uses: Highest melting point of all metals (3,422°C); incandescent light bulb filaments, tungsten carbide cutting tools, rocket nozzles.",
+    "highlights": [
+      "Atomic Number: 74 | Symbol: W | Standard Atomic Weight: 183.84 u",
+      "Classification: Transition metal | Electron Configuration: [Xe] 4f14 5d4 6s2",
+      "Melting Point: 3422°C | Boiling Point: 5555°C",
+      "Discovered by: Carl Wilhelm Scheele (1781)",
+      "Primary Applications: Highest melting point of all metals (3,422°C); incandescent light bulb filaments, tungsten carbide cutting tools, rocket nozzles"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Tungsten"
+  },
+  {
+    "id": "chem-elem-78-pt",
+    "keywords": [
+      "platinum element",
+      "atomic number 78",
+      "symbol pt",
+      "chemical element pt",
+      "properties of platinum",
+      "platinum facts"
+    ],
+    "title": "Platinum (Pt, Atomic No. 78) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Platinum (chemical symbol Pt, atomic number 78, standard atomic weight 195.084 u) is a transition metal with electron configuration [Xe] 4f14 5d9 6s1. Discovered by Antonio de Ulloa (1735). Key uses: Precious catalyst for automotive catalytic converters, laboratory equipment, jewelry, anticancer chemotherapy drugs (cisplatin).",
+    "highlights": [
+      "Atomic Number: 78 | Symbol: Pt | Standard Atomic Weight: 195.084 u",
+      "Classification: Transition metal | Electron Configuration: [Xe] 4f14 5d9 6s1",
+      "Melting Point: 1768.3°C | Boiling Point: 3825°C",
+      "Discovered by: Antonio de Ulloa (1735)",
+      "Primary Applications: Precious catalyst for automotive catalytic converters, laboratory equipment, jewelry, anticancer chemotherapy drugs (cisplatin)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Platinum"
+  },
+  {
+    "id": "chem-elem-79-au",
+    "keywords": [
+      "gold element",
+      "atomic number 79",
+      "symbol au",
+      "chemical element au",
+      "properties of gold",
+      "gold facts"
+    ],
+    "title": "Gold (Au, Atomic No. 79) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Gold (chemical symbol Au, atomic number 79, standard atomic weight 196.967 u) is a transition metal with electron configuration [Xe] 4f14 5d10 6s1. Discovered by Ancient antiquity. Key uses: Most malleable and ductile metal (1 gram can be beaten into 1 square meter sheet); monetary standard, jewelry, corrosion-free electronics.",
+    "highlights": [
+      "Atomic Number: 79 | Symbol: Au | Standard Atomic Weight: 196.967 u",
+      "Classification: Transition metal | Electron Configuration: [Xe] 4f14 5d10 6s1",
+      "Melting Point: 1064.2°C | Boiling Point: 2970°C",
+      "Discovered by: Ancient antiquity",
+      "Primary Applications: Most malleable and ductile metal (1 gram can be beaten into 1 square meter sheet); monetary standard, jewelry, corrosion-free electronics"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Gold"
+  },
+  {
+    "id": "chem-elem-80-hg",
+    "keywords": [
+      "mercury element",
+      "atomic number 80",
+      "symbol hg",
+      "chemical element hg",
+      "properties of mercury",
+      "mercury facts"
+    ],
+    "title": "Mercury (Hg, Atomic No. 80) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Mercury (chemical symbol Hg, atomic number 80, standard atomic weight 200.592 u) is a transition metal with electron configuration [Xe] 4f14 5d10 6s2. Discovered by Ancient antiquity. Key uses: Only metal that is liquid at room temperature (quicksilver); historical thermometers, barometers, dental amalgams, fluorescent lamps.",
+    "highlights": [
+      "Atomic Number: 80 | Symbol: Hg | Standard Atomic Weight: 200.592 u",
+      "Classification: Transition metal | Electron Configuration: [Xe] 4f14 5d10 6s2",
+      "Melting Point: -38.83°C | Boiling Point: 356.73°C",
+      "Discovered by: Ancient antiquity",
+      "Primary Applications: Only metal that is liquid at room temperature (quicksilver); historical thermometers, barometers, dental amalgams, fluorescent lamps"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Mercury"
+  },
+  {
+    "id": "chem-elem-82-pb",
+    "keywords": [
+      "lead element",
+      "atomic number 82",
+      "symbol pb",
+      "chemical element pb",
+      "properties of lead",
+      "lead facts"
+    ],
+    "title": "Lead (Pb, Atomic No. 82) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Lead (chemical symbol Pb, atomic number 82, standard atomic weight 207.2 u) is a post-transition metal with electron configuration [Xe] 4f14 5d10 6s2 6p2. Discovered by Ancient antiquity. Key uses: Dense, soft metal; lead-acid car batteries, radiation shielding (X-rays, nuclear reactors), historical weights and plumbing.",
+    "highlights": [
+      "Atomic Number: 82 | Symbol: Pb | Standard Atomic Weight: 207.2 u",
+      "Classification: Post-transition metal | Electron Configuration: [Xe] 4f14 5d10 6s2 6p2",
+      "Melting Point: 327.5°C | Boiling Point: 1749°C",
+      "Discovered by: Ancient antiquity",
+      "Primary Applications: Dense, soft metal; lead-acid car batteries, radiation shielding (X-rays, nuclear reactors), historical weights and plumbing"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Lead"
+  },
+  {
+    "id": "chem-elem-92-u",
+    "keywords": [
+      "uranium element",
+      "atomic number 92",
+      "symbol u",
+      "chemical element u",
+      "properties of uranium",
+      "uranium facts"
+    ],
+    "title": "Uranium (U, Atomic No. 92) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Uranium (chemical symbol U, atomic number 92, standard atomic weight 238.029 u) is a actinide with electron configuration [Rn] 5f3 6d1 7s2. Discovered by Martin Heinrich Klaproth (1789). Key uses: Primary fissile fuel for nuclear power plants (fission of U-235) and nuclear weapons; dense armor-piercing depleted uranium munitions.",
+    "highlights": [
+      "Atomic Number: 92 | Symbol: U | Standard Atomic Weight: 238.029 u",
+      "Classification: Actinide | Electron Configuration: [Rn] 5f3 6d1 7s2",
+      "Melting Point: 1132.2°C | Boiling Point: 4131°C",
+      "Discovered by: Martin Heinrich Klaproth (1789)",
+      "Primary Applications: Primary fissile fuel for nuclear power plants (fission of U-235) and nuclear weapons; dense armor-piercing depleted uranium munitions"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Uranium"
+  },
+  {
+    "id": "chem-elem-94-pu",
+    "keywords": [
+      "plutonium element",
+      "atomic number 94",
+      "symbol pu",
+      "chemical element pu",
+      "properties of plutonium",
+      "plutonium facts"
+    ],
+    "title": "Plutonium (Pu, Atomic No. 94) — Properties & Applications",
+    "category": "Chemistry",
+    "answer": "Plutonium (chemical symbol Pu, atomic number 94, standard atomic weight 244 u) is a actinide with electron configuration [Rn] 5f6 7s2. Discovered by Glenn T. Seaborg (1940). Key uses: Fissile isotope Pu-239 used in nuclear weapons and breeder reactors; Pu-238 radioisotope thermoelectric generators (RTGs) powering deep space probes (Voyager, Perseverance rover).",
+    "highlights": [
+      "Atomic Number: 94 | Symbol: Pu | Standard Atomic Weight: 244 u",
+      "Classification: Actinide | Electron Configuration: [Rn] 5f6 7s2",
+      "Melting Point: 639.4°C | Boiling Point: 3228°C",
+      "Discovered by: Glenn T. Seaborg (1940)",
+      "Primary Applications: Fissile isotope Pu-239 used in nuclear weapons and breeder reactors; Pu-238 radioisotope thermoelectric generators (RTGs) powering deep space probes (Voyager, Perseverance rover)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Plutonium"
+  },
+  {
+    "id": "chem-cmpd-water",
+    "keywords": [
+      "water chemical formula h2o",
+      "properties of water",
+      "density of water at 4c",
+      "structure of water molecule"
+    ],
+    "title": "Water (H₂O) — Chemical Properties & Universal Solvent",
+    "category": "Chemistry",
+    "answer": "Water (H₂O, molar mass 18.015 g/mol) is a polar molecule with bent geometry (104.5° bond angle) and extensive hydrogen bonding. Known as the universal solvent, it exhibits maximum density at 3.98°C (~4°C) of 1.000 g/cm³, high specific heat capacity (4.184 J/g·K), and high latent heat of vaporization (2260 J/g).",
+    "highlights": [
+      "Molecular Formula: H₂O | Molar Mass: 18.015 g/mol | Polar covalent bonds with 104.5° angle",
+      "Hydrogen bonding gives water high boiling point (100°C), surface tension, and heat capacity",
+      "Anomalous expansion: Water expands when freezing into ice, making ice less dense than liquid water",
+      "Autoionization of water: 2H₂O ⇌ H₃O⁺ + OH⁻ with Kw = 1.0 × 10⁻¹⁴ at 25°C (pH 7 = neutral)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Properties_of_water"
+  },
+  {
+    "id": "chem-cmpd-sulfuric-acid",
+    "keywords": [
+      "sulfuric acid chemical formula h2so4",
+      "king of chemicals sulfuric acid",
+      "contact process sulfuric acid",
+      "uses of sulfuric acid"
+    ],
+    "title": "Sulfuric Acid (H₂SO₄) — King of Chemicals",
+    "category": "Chemistry",
+    "answer": "Sulfuric acid (H₂SO₄, molar mass 98.079 g/mol) is a dense, colorless, highly corrosive mineral acid known as the King of Chemicals. Manufactured industrially via the Contact Process (oxidizing SO₂ to SO₃ over V₂O₅ catalyst), it is the single most produced chemical worldwide, primarily used in phosphate fertilizer manufacturing.",
+    "highlights": [
+      "Molecular Formula: H₂SO₄ | Molar Mass: 98.079 g/mol | Strong diprotic acid (pKa1 ≈ -3, pKa2 = 1.99)",
+      "Manufactured via Contact Process: S + O₂ → SO₂; 2SO₂ + O₂ (V₂O₅ catalyst) ⇌ 2SO₃; SO₃ + H₂SO₄ → H₂S₂O₇ (Oleum); Oleum + H₂O → 2H₂SO₄",
+      "Strong dehydrating agent (charring sugar C₁₂H₂₂O₁₁ into pure black carbon foam)",
+      "Key uses: Phosphate fertilizers (superphosphate), petroleum refining, lead-acid car battery electrolyte, chemical synthesis"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sulfuric_acid"
+  },
+  {
+    "id": "chem-cmpd-sodium-chloride",
+    "keywords": [
+      "sodium chloride formula nacl",
+      "table salt crystal lattice structure",
+      "fcc lattice sodium chloride",
+      "electrolysis of brine chloralkali"
+    ],
+    "title": "Sodium Chloride (NaCl) — Table Salt & Crystal Lattice",
+    "category": "Chemistry",
+    "answer": "Sodium Chloride (NaCl, molar mass 58.44 g/mol), commonly known as table salt, is an ionic compound forming a Face-Centered Cubic (FCC / Rock Salt) crystal lattice where each Na⁺ ion is octahedrally coordinated by 6 Cl⁻ ions and vice-versa. Chloralkali electrolysis of aqueous brine produces chlorine gas (Cl₂), sodium hydroxide (NaOH), and hydrogen gas (H₂).",
+    "highlights": [
+      "Formula: NaCl | Molar Mass: 58.44 g/mol | Ionic lattice with 6:6 coordination number",
+      "Lattice enthalpy: 787 kJ/mol; Melting point: 801°C; Boiling point: 1,465°C",
+      "Chloralkali Process (Electrolysis of Brine): 2NaCl + 2H₂O → 2NaOH + Cl₂↑ (anode) + H₂↑ (cathode)",
+      "Essential physiological electrolyte regulating osmotic pressure, blood volume, and action potentials in nerves"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sodium_chloride"
+  },
+  {
+    "id": "chem-cmpd-baking-soda-washing-soda",
+    "keywords": [
+      "baking soda formula nahco3",
+      "washing soda formula na2co3 10h2o",
+      "solvay process sodium bicarbonate",
+      "difference between baking soda and washing soda"
+    ],
+    "title": "Baking Soda (NaHCO₃) and Washing Soda (Na₂CO₃·10H₂O)",
+    "category": "Chemistry",
+    "answer": "Baking soda is Sodium Bicarbonate (NaHCO₃, mildly alkaline, produces CO₂ bubbles with acids/heat for leavening). Washing soda is Sodium Carbonate Decahydrate (Na₂CO₃·10H₂O, strongly alkaline, used for water softening and laundry). Both are produced industrially via the Solvay Process using brine (NaCl), ammonia (NH₃), and limestone (CaCO₃).",
+    "highlights": [
+      "Baking Soda: NaHCO₃ (Sodium hydrogen carbonate) — antacid, fire extinguisher, leavening agent",
+      "Washing Soda: Na₂CO₃·10H₂O (Sodium carbonate decahydrate) — softens hard water by precipitating Ca²⁺ and Mg²⁺ as carbonates",
+      "Thermal decomposition of baking soda: 2NaHCO₃ → Na₂CO₃ + H₂O + CO₂↑",
+      "Solvay Process reaction: NaCl + NH₃ + CO₂ + H₂O → NaHCO₃↓ + NH₄Cl"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sodium_bicarbonate"
+  },
+  {
+    "id": "chem-cmpd-calcium-carbonate",
+    "keywords": [
+      "calcium carbonate formula caco3",
+      "limestone marble chalk quicklime slaked lime",
+      "calcium cycle limestone thermal decomposition"
+    ],
+    "title": "Calcium Carbonate (CaCO₃) and Lime Cycle",
+    "category": "Chemistry",
+    "answer": "Calcium Carbonate (CaCO₃, molar mass 100.086 g/mol) occurs naturally as limestone, marble, chalk, and seashells. Heating limestone produces Quicklime (Calcium Oxide, CaO) and CO₂ in calcination. Adding water to quicklime yields Slaked Lime (Calcium Hydroxide, Ca(OH)₂), completing the industrial Lime Cycle.",
+    "highlights": [
+      "1. Calcination: CaCO₃ (Limestone) + Heat (900°C) → CaO (Quicklime) + CO₂↑",
+      "2. Slaking: CaO + H₂O → Ca(OH)₂ (Slaked lime) + Heat (strongly exothermic)",
+      "3. Carbonation: Ca(OH)₂ + CO₂ → CaCO₃ (Limestone) + H₂O (lime water turns milky due to insoluble CaCO₃ precipitate)",
+      "Used extensively in Portland cement production, iron smelting flux in blast furnace, antacids, and paper coating"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Calcium_carbonate"
+  },
+  {
+    "id": "chem-element-1-h",
+    "keywords": [
+      "hydrogen element",
+      "atomic number 1",
+      "symbol of hydrogen",
+      "element h",
+      "uses of hydrogen",
+      "atomic mass of hydrogen",
+      "who discovered hydrogen"
+    ],
+    "title": "Hydrogen (H) — Atomic No. 1 | Nonmetal",
+    "category": "Chemistry",
+    "answer": "Hydrogen (Symbol: H, Atomic Number: 1, Atomic Weight: 1.008 u) is a nonmetal in Period 1, Group 1 with electron configuration 1s1. Discovered by Henry Cavendish (1766). Key applications: Most abundant cosmic element, stars, water, fuel cells, ammonia.",
+    "highlights": [
+      "Atomic Number: 1 | Symbol: H | Atomic Weight: 1.008 u",
+      "Group: 1 (Nonmetal) | Period: 1 | Configuration: 1s1",
+      "Discovered by: Henry Cavendish in 1766",
+      "Primary Uses: Most abundant cosmic element, stars, water, fuel cells, ammonia"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Hydrogen"
+  },
+  {
+    "id": "chem-element-2-he",
+    "keywords": [
+      "helium element",
+      "atomic number 2",
+      "symbol of helium",
+      "element he",
+      "uses of helium",
+      "atomic mass of helium",
+      "who discovered helium"
+    ],
+    "title": "Helium (He) — Atomic No. 2 | Noble gas",
+    "category": "Chemistry",
+    "answer": "Helium (Symbol: He, Atomic Number: 2, Atomic Weight: 4.0026 u) is a noble gas in Period 1, Group 18 with electron configuration 1s2. Discovered by Pierre Janssen (1868). Key applications: Inert gas, cryogenics, MRI cooling, airships, fusion fuel in stars.",
+    "highlights": [
+      "Atomic Number: 2 | Symbol: He | Atomic Weight: 4.0026 u",
+      "Group: 18 (Noble gas) | Period: 1 | Configuration: 1s2",
+      "Discovered by: Pierre Janssen in 1868",
+      "Primary Uses: Inert gas, cryogenics, MRI cooling, airships, fusion fuel in stars"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Helium"
+  },
+  {
+    "id": "chem-element-3-li",
+    "keywords": [
+      "lithium element",
+      "atomic number 3",
+      "symbol of lithium",
+      "element li",
+      "uses of lithium",
+      "atomic mass of lithium",
+      "who discovered lithium"
+    ],
+    "title": "Lithium (Li) — Atomic No. 3 | Alkali metal",
+    "category": "Chemistry",
+    "answer": "Lithium (Symbol: Li, Atomic Number: 3, Atomic Weight: 6.94 u) is a alkali metal in Period 2, Group 1 with electron configuration [He] 2s1. Discovered by Johan August Arfwedson (1817). Key applications: Lithium-ion batteries, EV batteries, ceramics, mood stabilizers.",
+    "highlights": [
+      "Atomic Number: 3 | Symbol: Li | Atomic Weight: 6.94 u",
+      "Group: 1 (Alkali metal) | Period: 2 | Configuration: [He] 2s1",
+      "Discovered by: Johan August Arfwedson in 1817",
+      "Primary Uses: Lithium-ion batteries, EV batteries, ceramics, mood stabilizers"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Lithium"
+  },
+  {
+    "id": "chem-element-4-be",
+    "keywords": [
+      "beryllium element",
+      "atomic number 4",
+      "symbol of beryllium",
+      "element be",
+      "uses of beryllium",
+      "atomic mass of beryllium",
+      "who discovered beryllium"
+    ],
+    "title": "Beryllium (Be) — Atomic No. 4 | Alkaline earth metal",
+    "category": "Chemistry",
+    "answer": "Beryllium (Symbol: Be, Atomic Number: 4, Atomic Weight: 9.0122 u) is a alkaline earth metal in Period 2, Group 2 with electron configuration [He] 2s2. Discovered by Louis-Nicolas Vauquelin (1798). Key applications: Aerospace alloys, X-ray windows, missile gyroscopes.",
+    "highlights": [
+      "Atomic Number: 4 | Symbol: Be | Atomic Weight: 9.0122 u",
+      "Group: 2 (Alkaline earth metal) | Period: 2 | Configuration: [He] 2s2",
+      "Discovered by: Louis-Nicolas Vauquelin in 1798",
+      "Primary Uses: Aerospace alloys, X-ray windows, missile gyroscopes"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Beryllium"
+  },
+  {
+    "id": "chem-element-5-b",
+    "keywords": [
+      "boron element",
+      "atomic number 5",
+      "symbol of boron",
+      "element b",
+      "uses of boron",
+      "atomic mass of boron",
+      "who discovered boron"
+    ],
+    "title": "Boron (B) — Atomic No. 5 | Metalloid",
+    "category": "Chemistry",
+    "answer": "Boron (Symbol: B, Atomic Number: 5, Atomic Weight: 10.81 u) is a metalloid in Period 2, Group 13 with electron configuration [He] 2s2 2p1. Discovered by Joseph Louis Gay-Lussac (1808). Key applications: Pyrex borosilicate glass, semiconductors, fiberglass, bleach.",
+    "highlights": [
+      "Atomic Number: 5 | Symbol: B | Atomic Weight: 10.81 u",
+      "Group: 13 (Metalloid) | Period: 2 | Configuration: [He] 2s2 2p1",
+      "Discovered by: Joseph Louis Gay-Lussac in 1808",
+      "Primary Uses: Pyrex borosilicate glass, semiconductors, fiberglass, bleach"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Boron"
+  },
+  {
+    "id": "chem-element-6-c",
+    "keywords": [
+      "carbon element",
+      "atomic number 6",
+      "symbol of carbon",
+      "element c",
+      "uses of carbon",
+      "atomic mass of carbon",
+      "who discovered carbon"
+    ],
+    "title": "Carbon (C) — Atomic No. 6 | Nonmetal",
+    "category": "Chemistry",
+    "answer": "Carbon (Symbol: C, Atomic Number: 6, Atomic Weight: 12.011 u) is a nonmetal in Period 2, Group 14 with electron configuration [He] 2s2 2p2. Discovered by Ancient (Antiquity). Key applications: Basis of all organic chemistry, diamond, graphite, carbon fiber, life.",
+    "highlights": [
+      "Atomic Number: 6 | Symbol: C | Atomic Weight: 12.011 u",
+      "Group: 14 (Nonmetal) | Period: 2 | Configuration: [He] 2s2 2p2",
+      "Discovered by: Ancient in Antiquity",
+      "Primary Uses: Basis of all organic chemistry, diamond, graphite, carbon fiber, life"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Carbon"
+  },
+  {
+    "id": "chem-element-7-n",
+    "keywords": [
+      "nitrogen element",
+      "atomic number 7",
+      "symbol of nitrogen",
+      "element n",
+      "uses of nitrogen",
+      "atomic mass of nitrogen",
+      "who discovered nitrogen"
+    ],
+    "title": "Nitrogen (N) — Atomic No. 7 | Nonmetal",
+    "category": "Chemistry",
+    "answer": "Nitrogen (Symbol: N, Atomic Number: 7, Atomic Weight: 14.007 u) is a nonmetal in Period 2, Group 15 with electron configuration [He] 2s2 2p3. Discovered by Daniel Rutherford (1772). Key applications: 78% of atmosphere, amino acids, DNA, fertilizers, liquid N2 cryogenics.",
+    "highlights": [
+      "Atomic Number: 7 | Symbol: N | Atomic Weight: 14.007 u",
+      "Group: 15 (Nonmetal) | Period: 2 | Configuration: [He] 2s2 2p3",
+      "Discovered by: Daniel Rutherford in 1772",
+      "Primary Uses: 78% of atmosphere, amino acids, DNA, fertilizers, liquid N2 cryogenics"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Nitrogen"
+  },
+  {
+    "id": "chem-element-8-o",
+    "keywords": [
+      "oxygen element",
+      "atomic number 8",
+      "symbol of oxygen",
+      "element o",
+      "uses of oxygen",
+      "atomic mass of oxygen",
+      "who discovered oxygen"
+    ],
+    "title": "Oxygen (O) — Atomic No. 8 | Nonmetal",
+    "category": "Chemistry",
+    "answer": "Oxygen (Symbol: O, Atomic Number: 8, Atomic Weight: 15.999 u) is a nonmetal in Period 2, Group 16 with electron configuration [He] 2s2 2p4. Discovered by Priestley & Scheele (1774). Key applications: Respiration, combustion, ozone layer (O3), water, 21% of atmosphere.",
+    "highlights": [
+      "Atomic Number: 8 | Symbol: O | Atomic Weight: 15.999 u",
+      "Group: 16 (Nonmetal) | Period: 2 | Configuration: [He] 2s2 2p4",
+      "Discovered by: Priestley & Scheele in 1774",
+      "Primary Uses: Respiration, combustion, ozone layer (O3), water, 21% of atmosphere"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Oxygen"
+  },
+  {
+    "id": "chem-element-9-f",
+    "keywords": [
+      "fluorine element",
+      "atomic number 9",
+      "symbol of fluorine",
+      "element f",
+      "uses of fluorine",
+      "atomic mass of fluorine",
+      "who discovered fluorine"
+    ],
+    "title": "Fluorine (F) — Atomic No. 9 | Halogen",
+    "category": "Chemistry",
+    "answer": "Fluorine (Symbol: F, Atomic Number: 9, Atomic Weight: 18.998 u) is a halogen in Period 2, Group 17 with electron configuration [He] 2s2 2p5. Discovered by Henri Moissan (1886). Key applications: Most electronegative element (4.0), Teflon, toothpaste, refrigerants.",
+    "highlights": [
+      "Atomic Number: 9 | Symbol: F | Atomic Weight: 18.998 u",
+      "Group: 17 (Halogen) | Period: 2 | Configuration: [He] 2s2 2p5",
+      "Discovered by: Henri Moissan in 1886",
+      "Primary Uses: Most electronegative element (4.0), Teflon, toothpaste, refrigerants"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Fluorine"
+  },
+  {
+    "id": "chem-element-10-ne",
+    "keywords": [
+      "neon element",
+      "atomic number 10",
+      "symbol of neon",
+      "element ne",
+      "uses of neon",
+      "atomic mass of neon",
+      "who discovered neon"
+    ],
+    "title": "Neon (Ne) — Atomic No. 10 | Noble gas",
+    "category": "Chemistry",
+    "answer": "Neon (Symbol: Ne, Atomic Number: 10, Atomic Weight: 20.18 u) is a noble gas in Period 2, Group 18 with electron configuration [He] 2s2 2p6. Discovered by Ramsay & Travers (1898). Key applications: Red-orange neon signs, high-voltage indicators, cryogenic refrigerant.",
+    "highlights": [
+      "Atomic Number: 10 | Symbol: Ne | Atomic Weight: 20.18 u",
+      "Group: 18 (Noble gas) | Period: 2 | Configuration: [He] 2s2 2p6",
+      "Discovered by: Ramsay & Travers in 1898",
+      "Primary Uses: Red-orange neon signs, high-voltage indicators, cryogenic refrigerant"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Neon"
+  },
+  {
+    "id": "chem-element-11-na",
+    "keywords": [
+      "sodium element",
+      "atomic number 11",
+      "symbol of sodium",
+      "element na",
+      "uses of sodium",
+      "atomic mass of sodium",
+      "who discovered sodium"
+    ],
+    "title": "Sodium (Na) — Atomic No. 11 | Alkali metal",
+    "category": "Chemistry",
+    "answer": "Sodium (Symbol: Na, Atomic Number: 11, Atomic Weight: 22.99 u) is a alkali metal in Period 3, Group 1 with electron configuration [Ne] 3s1. Discovered by Humphry Davy (1807). Key applications: Table salt (NaCl), nerve action potentials, street vapor lamps, cooling.",
+    "highlights": [
+      "Atomic Number: 11 | Symbol: Na | Atomic Weight: 22.99 u",
+      "Group: 1 (Alkali metal) | Period: 3 | Configuration: [Ne] 3s1",
+      "Discovered by: Humphry Davy in 1807",
+      "Primary Uses: Table salt (NaCl), nerve action potentials, street vapor lamps, cooling"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sodium"
+  },
+  {
+    "id": "chem-element-12-mg",
+    "keywords": [
+      "magnesium element",
+      "atomic number 12",
+      "symbol of magnesium",
+      "element mg",
+      "uses of magnesium",
+      "atomic mass of magnesium",
+      "who discovered magnesium"
+    ],
+    "title": "Magnesium (Mg) — Atomic No. 12 | Alkaline earth metal",
+    "category": "Chemistry",
+    "answer": "Magnesium (Symbol: Mg, Atomic Number: 12, Atomic Weight: 24.305 u) is a alkaline earth metal in Period 3, Group 2 with electron configuration [Ne] 3s2. Discovered by Joseph Black (1755). Key applications: Chlorophyll central atom, lightweight structural alloys, fireworks.",
+    "highlights": [
+      "Atomic Number: 12 | Symbol: Mg | Atomic Weight: 24.305 u",
+      "Group: 2 (Alkaline earth metal) | Period: 3 | Configuration: [Ne] 3s2",
+      "Discovered by: Joseph Black in 1755",
+      "Primary Uses: Chlorophyll central atom, lightweight structural alloys, fireworks"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Magnesium"
+  },
+  {
+    "id": "chem-element-13-al",
+    "keywords": [
+      "aluminum element",
+      "atomic number 13",
+      "symbol of aluminum",
+      "element al",
+      "uses of aluminum",
+      "atomic mass of aluminum",
+      "who discovered aluminum"
+    ],
+    "title": "Aluminum (Al) — Atomic No. 13 | Post-transition metal",
+    "category": "Chemistry",
+    "answer": "Aluminum (Symbol: Al, Atomic Number: 13, Atomic Weight: 26.982 u) is a post-transition metal in Period 3, Group 13 with electron configuration [Ne] 3s2 3p1. Discovered by Hans Christian Ørsted (1825). Key applications: Aircraft frames, beverage cans, construction, power lines, foil.",
+    "highlights": [
+      "Atomic Number: 13 | Symbol: Al | Atomic Weight: 26.982 u",
+      "Group: 13 (Post-transition metal) | Period: 3 | Configuration: [Ne] 3s2 3p1",
+      "Discovered by: Hans Christian Ørsted in 1825",
+      "Primary Uses: Aircraft frames, beverage cans, construction, power lines, foil"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Aluminum"
+  },
+  {
+    "id": "chem-element-14-si",
+    "keywords": [
+      "silicon element",
+      "atomic number 14",
+      "symbol of silicon",
+      "element si",
+      "uses of silicon",
+      "atomic mass of silicon",
+      "who discovered silicon"
+    ],
+    "title": "Silicon (Si) — Atomic No. 14 | Metalloid",
+    "category": "Chemistry",
+    "answer": "Silicon (Symbol: Si, Atomic Number: 14, Atomic Weight: 28.085 u) is a metalloid in Period 3, Group 14 with electron configuration [Ne] 3s2 3p2. Discovered by Jöns Jacob Berzelius (1824). Key applications: Computer chips, microprocessors, solar cells, silicones, glass, quartz.",
+    "highlights": [
+      "Atomic Number: 14 | Symbol: Si | Atomic Weight: 28.085 u",
+      "Group: 14 (Metalloid) | Period: 3 | Configuration: [Ne] 3s2 3p2",
+      "Discovered by: Jöns Jacob Berzelius in 1824",
+      "Primary Uses: Computer chips, microprocessors, solar cells, silicones, glass, quartz"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Silicon"
+  },
+  {
+    "id": "chem-element-15-p",
+    "keywords": [
+      "phosphorus element",
+      "atomic number 15",
+      "symbol of phosphorus",
+      "element p",
+      "uses of phosphorus",
+      "atomic mass of phosphorus",
+      "who discovered phosphorus"
+    ],
+    "title": "Phosphorus (P) — Atomic No. 15 | Nonmetal",
+    "category": "Chemistry",
+    "answer": "Phosphorus (Symbol: P, Atomic Number: 15, Atomic Weight: 30.974 u) is a nonmetal in Period 3, Group 15 with electron configuration [Ne] 3s2 3p3. Discovered by Hennig Brand (1669). Key applications: DNA/RNA backbone, ATP energy carrier, cell membranes, fertilizers, matches.",
+    "highlights": [
+      "Atomic Number: 15 | Symbol: P | Atomic Weight: 30.974 u",
+      "Group: 15 (Nonmetal) | Period: 3 | Configuration: [Ne] 3s2 3p3",
+      "Discovered by: Hennig Brand in 1669",
+      "Primary Uses: DNA/RNA backbone, ATP energy carrier, cell membranes, fertilizers, matches"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Phosphorus"
+  },
+  {
+    "id": "chem-element-16-s",
+    "keywords": [
+      "sulfur element",
+      "atomic number 16",
+      "symbol of sulfur",
+      "element s",
+      "uses of sulfur",
+      "atomic mass of sulfur",
+      "who discovered sulfur"
+    ],
+    "title": "Sulfur (S) — Atomic No. 16 | Nonmetal",
+    "category": "Chemistry",
+    "answer": "Sulfur (Symbol: S, Atomic Number: 16, Atomic Weight: 32.06 u) is a nonmetal in Period 3, Group 16 with electron configuration [Ne] 3s2 3p4. Discovered by Ancient (Antiquity). Key applications: Sulfuric acid (H2SO4), rubber vulcanization, gunpowder, amino acids.",
+    "highlights": [
+      "Atomic Number: 16 | Symbol: S | Atomic Weight: 32.06 u",
+      "Group: 16 (Nonmetal) | Period: 3 | Configuration: [Ne] 3s2 3p4",
+      "Discovered by: Ancient in Antiquity",
+      "Primary Uses: Sulfuric acid (H2SO4), rubber vulcanization, gunpowder, amino acids"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sulfur"
+  },
+  {
+    "id": "chem-element-17-cl",
+    "keywords": [
+      "chlorine element",
+      "atomic number 17",
+      "symbol of chlorine",
+      "element cl",
+      "uses of chlorine",
+      "atomic mass of chlorine",
+      "who discovered chlorine"
+    ],
+    "title": "Chlorine (Cl) — Atomic No. 17 | Halogen",
+    "category": "Chemistry",
+    "answer": "Chlorine (Symbol: Cl, Atomic Number: 17, Atomic Weight: 35.45 u) is a halogen in Period 3, Group 17 with electron configuration [Ne] 3s2 3p5. Discovered by Carl Wilhelm Scheele (1774). Key applications: Drinking water purification, PVC plastics, bleaches, table salt, HCl.",
+    "highlights": [
+      "Atomic Number: 17 | Symbol: Cl | Atomic Weight: 35.45 u",
+      "Group: 17 (Halogen) | Period: 3 | Configuration: [Ne] 3s2 3p5",
+      "Discovered by: Carl Wilhelm Scheele in 1774",
+      "Primary Uses: Drinking water purification, PVC plastics, bleaches, table salt, HCl"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Chlorine"
+  },
+  {
+    "id": "chem-element-18-ar",
+    "keywords": [
+      "argon element",
+      "atomic number 18",
+      "symbol of argon",
+      "element ar",
+      "uses of argon",
+      "atomic mass of argon",
+      "who discovered argon"
+    ],
+    "title": "Argon (Ar) — Atomic No. 18 | Noble gas",
+    "category": "Chemistry",
+    "answer": "Argon (Symbol: Ar, Atomic Number: 18, Atomic Weight: 39.948 u) is a noble gas in Period 3, Group 18 with electron configuration [Ne] 3s2 3p6. Discovered by Rayleigh & Ramsay (1894). Key applications: 0.93% of atmosphere, inert welding shield gas, double-pane insulation.",
+    "highlights": [
+      "Atomic Number: 18 | Symbol: Ar | Atomic Weight: 39.948 u",
+      "Group: 18 (Noble gas) | Period: 3 | Configuration: [Ne] 3s2 3p6",
+      "Discovered by: Rayleigh & Ramsay in 1894",
+      "Primary Uses: 0.93% of atmosphere, inert welding shield gas, double-pane insulation"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Argon"
+  },
+  {
+    "id": "chem-element-19-k",
+    "keywords": [
+      "potassium element",
+      "atomic number 19",
+      "symbol of potassium",
+      "element k",
+      "uses of potassium",
+      "atomic mass of potassium",
+      "who discovered potassium"
+    ],
+    "title": "Potassium (K) — Atomic No. 19 | Alkali metal",
+    "category": "Chemistry",
+    "answer": "Potassium (Symbol: K, Atomic Number: 19, Atomic Weight: 39.098 u) is a alkali metal in Period 4, Group 1 with electron configuration [Ar] 4s1. Discovered by Humphry Davy (1807). Key applications: Cellular electrolyte, Na+/K+ ATPase pump, NPK plant fertilizer, soap.",
+    "highlights": [
+      "Atomic Number: 19 | Symbol: K | Atomic Weight: 39.098 u",
+      "Group: 1 (Alkali metal) | Period: 4 | Configuration: [Ar] 4s1",
+      "Discovered by: Humphry Davy in 1807",
+      "Primary Uses: Cellular electrolyte, Na+/K+ ATPase pump, NPK plant fertilizer, soap"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Potassium"
+  },
+  {
+    "id": "chem-element-20-ca",
+    "keywords": [
+      "calcium element",
+      "atomic number 20",
+      "symbol of calcium",
+      "element ca",
+      "uses of calcium",
+      "atomic mass of calcium",
+      "who discovered calcium"
+    ],
+    "title": "Calcium (Ca) — Atomic No. 20 | Alkaline earth metal",
+    "category": "Chemistry",
+    "answer": "Calcium (Symbol: Ca, Atomic Number: 20, Atomic Weight: 40.078 u) is a alkaline earth metal in Period 4, Group 2 with electron configuration [Ar] 4s2. Discovered by Humphry Davy (1808). Key applications: Bones, teeth, limestone (CaCO3), cement, muscle contraction signaling.",
+    "highlights": [
+      "Atomic Number: 20 | Symbol: Ca | Atomic Weight: 40.078 u",
+      "Group: 2 (Alkaline earth metal) | Period: 4 | Configuration: [Ar] 4s2",
+      "Discovered by: Humphry Davy in 1808",
+      "Primary Uses: Bones, teeth, limestone (CaCO3), cement, muscle contraction signaling"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Calcium"
+  },
+  {
+    "id": "chem-element-21-sc",
+    "keywords": [
+      "scandium element",
+      "atomic number 21",
+      "symbol of scandium",
+      "element sc",
+      "uses of scandium",
+      "atomic mass of scandium",
+      "who discovered scandium"
+    ],
+    "title": "Scandium (Sc) — Atomic No. 21 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Scandium (Symbol: Sc, Atomic Number: 21, Atomic Weight: 44.956 u) is a transition metal in Period 4, Group 3 with electron configuration [Ar] 3d1 4s2. Discovered by Lars Fredrik Nilson (1879). Key applications: Aerospace aluminum-scandium alloys, stadium lighting, metal halide lamps.",
+    "highlights": [
+      "Atomic Number: 21 | Symbol: Sc | Atomic Weight: 44.956 u",
+      "Group: 3 (Transition metal) | Period: 4 | Configuration: [Ar] 3d1 4s2",
+      "Discovered by: Lars Fredrik Nilson in 1879",
+      "Primary Uses: Aerospace aluminum-scandium alloys, stadium lighting, metal halide lamps"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Scandium"
+  },
+  {
+    "id": "chem-element-22-ti",
+    "keywords": [
+      "titanium element",
+      "atomic number 22",
+      "symbol of titanium",
+      "element ti",
+      "uses of titanium",
+      "atomic mass of titanium",
+      "who discovered titanium"
+    ],
+    "title": "Titanium (Ti) — Atomic No. 22 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Titanium (Symbol: Ti, Atomic Number: 22, Atomic Weight: 47.867 u) is a transition metal in Period 4, Group 4 with electron configuration [Ar] 3d2 4s2. Discovered by William Gregor (1791). Key applications: High strength-to-weight ratio, jet engines, prosthetic implants, TiO2 paint.",
+    "highlights": [
+      "Atomic Number: 22 | Symbol: Ti | Atomic Weight: 47.867 u",
+      "Group: 4 (Transition metal) | Period: 4 | Configuration: [Ar] 3d2 4s2",
+      "Discovered by: William Gregor in 1791",
+      "Primary Uses: High strength-to-weight ratio, jet engines, prosthetic implants, TiO2 paint"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Titanium"
+  },
+  {
+    "id": "chem-element-23-v",
+    "keywords": [
+      "vanadium element",
+      "atomic number 23",
+      "symbol of vanadium",
+      "element v",
+      "uses of vanadium",
+      "atomic mass of vanadium",
+      "who discovered vanadium"
+    ],
+    "title": "Vanadium (V) — Atomic No. 23 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Vanadium (Symbol: V, Atomic Number: 23, Atomic Weight: 50.942 u) is a transition metal in Period 4, Group 5 with electron configuration [Ar] 3d3 4s2. Discovered by Andrés Manuel del Río (1801). Key applications: High-strength alloy steel, vanadium redox flow batteries, jet parts.",
+    "highlights": [
+      "Atomic Number: 23 | Symbol: V | Atomic Weight: 50.942 u",
+      "Group: 5 (Transition metal) | Period: 4 | Configuration: [Ar] 3d3 4s2",
+      "Discovered by: Andrés Manuel del Río in 1801",
+      "Primary Uses: High-strength alloy steel, vanadium redox flow batteries, jet parts"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Vanadium"
+  },
+  {
+    "id": "chem-element-24-cr",
+    "keywords": [
+      "chromium element",
+      "atomic number 24",
+      "symbol of chromium",
+      "element cr",
+      "uses of chromium",
+      "atomic mass of chromium",
+      "who discovered chromium"
+    ],
+    "title": "Chromium (Cr) — Atomic No. 24 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Chromium (Symbol: Cr, Atomic Number: 24, Atomic Weight: 51.996 u) is a transition metal in Period 4, Group 6 with electron configuration [Ar] 3d5 4s1. Discovered by Louis-Nicolas Vauquelin (1797). Key applications: Stainless steel corrosion resistance (>10.5% Cr), chrome plating, dyes.",
+    "highlights": [
+      "Atomic Number: 24 | Symbol: Cr | Atomic Weight: 51.996 u",
+      "Group: 6 (Transition metal) | Period: 4 | Configuration: [Ar] 3d5 4s1",
+      "Discovered by: Louis-Nicolas Vauquelin in 1797",
+      "Primary Uses: Stainless steel corrosion resistance (>10.5% Cr), chrome plating, dyes"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Chromium"
+  },
+  {
+    "id": "chem-element-25-mn",
+    "keywords": [
+      "manganese element",
+      "atomic number 25",
+      "symbol of manganese",
+      "element mn",
+      "uses of manganese",
+      "atomic mass of manganese",
+      "who discovered manganese"
+    ],
+    "title": "Manganese (Mn) — Atomic No. 25 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Manganese (Symbol: Mn, Atomic Number: 25, Atomic Weight: 54.938 u) is a transition metal in Period 4, Group 7 with electron configuration [Ar] 3d5 4s2. Discovered by Johan Gottlieb Gahn (1774). Key applications: Essential steel alloying element, alkaline dry batteries (MnO2).",
+    "highlights": [
+      "Atomic Number: 25 | Symbol: Mn | Atomic Weight: 54.938 u",
+      "Group: 7 (Transition metal) | Period: 4 | Configuration: [Ar] 3d5 4s2",
+      "Discovered by: Johan Gottlieb Gahn in 1774",
+      "Primary Uses: Essential steel alloying element, alkaline dry batteries (MnO2)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Manganese"
+  },
+  {
+    "id": "chem-element-26-fe",
+    "keywords": [
+      "iron element",
+      "atomic number 26",
+      "symbol of iron",
+      "element fe",
+      "uses of iron",
+      "atomic mass of iron",
+      "who discovered iron"
+    ],
+    "title": "Iron (Fe) — Atomic No. 26 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Iron (Symbol: Fe, Atomic Number: 26, Atomic Weight: 55.845 u) is a transition metal in Period 4, Group 8 with electron configuration [Ar] 3d6 4s2. Discovered by Ancient (Antiquity). Key applications: Most used metal on Earth, steel, hemoglobin oxygen transport, magnets.",
+    "highlights": [
+      "Atomic Number: 26 | Symbol: Fe | Atomic Weight: 55.845 u",
+      "Group: 8 (Transition metal) | Period: 4 | Configuration: [Ar] 3d6 4s2",
+      "Discovered by: Ancient in Antiquity",
+      "Primary Uses: Most used metal on Earth, steel, hemoglobin oxygen transport, magnets"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Iron"
+  },
+  {
+    "id": "chem-element-27-co",
+    "keywords": [
+      "cobalt element",
+      "atomic number 27",
+      "symbol of cobalt",
+      "element co",
+      "uses of cobalt",
+      "atomic mass of cobalt",
+      "who discovered cobalt"
+    ],
+    "title": "Cobalt (Co) — Atomic No. 27 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Cobalt (Symbol: Co, Atomic Number: 27, Atomic Weight: 58.933 u) is a transition metal in Period 4, Group 9 with electron configuration [Ar] 3d7 4s2. Discovered by Georg Brandt (1735). Key applications: Li-ion battery cathodes (NMC/LCO), superalloys, Vitamin B12, blue glass.",
+    "highlights": [
+      "Atomic Number: 27 | Symbol: Co | Atomic Weight: 58.933 u",
+      "Group: 9 (Transition metal) | Period: 4 | Configuration: [Ar] 3d7 4s2",
+      "Discovered by: Georg Brandt in 1735",
+      "Primary Uses: Li-ion battery cathodes (NMC/LCO), superalloys, Vitamin B12, blue glass"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Cobalt"
+  },
+  {
+    "id": "chem-element-28-ni",
+    "keywords": [
+      "nickel element",
+      "atomic number 28",
+      "symbol of nickel",
+      "element ni",
+      "uses of nickel",
+      "atomic mass of nickel",
+      "who discovered nickel"
+    ],
+    "title": "Nickel (Ni) — Atomic No. 28 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Nickel (Symbol: Ni, Atomic Number: 28, Atomic Weight: 58.693 u) is a transition metal in Period 4, Group 10 with electron configuration [Ar] 3d8 4s2. Discovered by Axel Fredrik Cronstedt (1751). Key applications: Stainless steel, EV batteries, electroplating, coinage, Inconel superalloys.",
+    "highlights": [
+      "Atomic Number: 28 | Symbol: Ni | Atomic Weight: 58.693 u",
+      "Group: 10 (Transition metal) | Period: 4 | Configuration: [Ar] 3d8 4s2",
+      "Discovered by: Axel Fredrik Cronstedt in 1751",
+      "Primary Uses: Stainless steel, EV batteries, electroplating, coinage, Inconel superalloys"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Nickel"
+  },
+  {
+    "id": "chem-element-29-cu",
+    "keywords": [
+      "copper element",
+      "atomic number 29",
+      "symbol of copper",
+      "element cu",
+      "uses of copper",
+      "atomic mass of copper",
+      "who discovered copper"
+    ],
+    "title": "Copper (Cu) — Atomic No. 29 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Copper (Symbol: Cu, Atomic Number: 29, Atomic Weight: 63.546 u) is a transition metal in Period 4, Group 11 with electron configuration [Ar] 3d10 4s1. Discovered by Ancient (Antiquity). Key applications: Electrical wiring, plumbing, brass (Cu+Zn), bronze (Cu+Sn), electronics.",
+    "highlights": [
+      "Atomic Number: 29 | Symbol: Cu | Atomic Weight: 63.546 u",
+      "Group: 11 (Transition metal) | Period: 4 | Configuration: [Ar] 3d10 4s1",
+      "Discovered by: Ancient in Antiquity",
+      "Primary Uses: Electrical wiring, plumbing, brass (Cu+Zn), bronze (Cu+Sn), electronics"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Copper"
+  },
+  {
+    "id": "chem-element-30-zn",
+    "keywords": [
+      "zinc element",
+      "atomic number 30",
+      "symbol of zinc",
+      "element zn",
+      "uses of zinc",
+      "atomic mass of zinc",
+      "who discovered zinc"
+    ],
+    "title": "Zinc (Zn) — Atomic No. 30 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Zinc (Symbol: Zn, Atomic Number: 30, Atomic Weight: 65.38 u) is a transition metal in Period 4, Group 12 with electron configuration [Ar] 3d10 4s2. Discovered by Marggraf (1746). Key applications: Galvanizing steel, die casting, brass, essential immune enzyme cofactor.",
+    "highlights": [
+      "Atomic Number: 30 | Symbol: Zn | Atomic Weight: 65.38 u",
+      "Group: 12 (Transition metal) | Period: 4 | Configuration: [Ar] 3d10 4s2",
+      "Discovered by: Marggraf in 1746",
+      "Primary Uses: Galvanizing steel, die casting, brass, essential immune enzyme cofactor"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Zinc"
+  },
+  {
+    "id": "chem-element-31-ga",
+    "keywords": [
+      "gallium element",
+      "atomic number 31",
+      "symbol of gallium",
+      "element ga",
+      "uses of gallium",
+      "atomic mass of gallium",
+      "who discovered gallium"
+    ],
+    "title": "Gallium (Ga) — Atomic No. 31 | Post-transition metal",
+    "category": "Chemistry",
+    "answer": "Gallium (Symbol: Ga, Atomic Number: 31, Atomic Weight: 69.723 u) is a post-transition metal in Period 4, Group 13 with electron configuration [Ar] 3d10 4s2 4p1. Discovered by Lecoq de Boisbaudran (1875). Key applications: Melts at 29.8°C, GaAs & GaN high-power semiconductors, blue LEDs.",
+    "highlights": [
+      "Atomic Number: 31 | Symbol: Ga | Atomic Weight: 69.723 u",
+      "Group: 13 (Post-transition metal) | Period: 4 | Configuration: [Ar] 3d10 4s2 4p1",
+      "Discovered by: Lecoq de Boisbaudran in 1875",
+      "Primary Uses: Melts at 29.8°C, GaAs & GaN high-power semiconductors, blue LEDs"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Gallium"
+  },
+  {
+    "id": "chem-element-32-ge",
+    "keywords": [
+      "germanium element",
+      "atomic number 32",
+      "symbol of germanium",
+      "element ge",
+      "uses of germanium",
+      "atomic mass of germanium",
+      "who discovered germanium"
+    ],
+    "title": "Germanium (Ge) — Atomic No. 32 | Metalloid",
+    "category": "Chemistry",
+    "answer": "Germanium (Symbol: Ge, Atomic Number: 32, Atomic Weight: 72.63 u) is a metalloid in Period 4, Group 14 with electron configuration [Ar] 3d10 4s2 4p2. Discovered by Clemens Winkler (1886). Key applications: Infrared optics, fiber-optic communication cables, solar cells.",
+    "highlights": [
+      "Atomic Number: 32 | Symbol: Ge | Atomic Weight: 72.63 u",
+      "Group: 14 (Metalloid) | Period: 4 | Configuration: [Ar] 3d10 4s2 4p2",
+      "Discovered by: Clemens Winkler in 1886",
+      "Primary Uses: Infrared optics, fiber-optic communication cables, solar cells"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Germanium"
+  },
+  {
+    "id": "chem-element-33-as",
+    "keywords": [
+      "arsenic element",
+      "atomic number 33",
+      "symbol of arsenic",
+      "element as",
+      "uses of arsenic",
+      "atomic mass of arsenic",
+      "who discovered arsenic"
+    ],
+    "title": "Arsenic (As) — Atomic No. 33 | Metalloid",
+    "category": "Chemistry",
+    "answer": "Arsenic (Symbol: As, Atomic Number: 33, Atomic Weight: 74.922 u) is a metalloid in Period 4, Group 15 with electron configuration [Ar] 3d10 4s2 4p3. Discovered by Albertus Magnus (1250). Key applications: GaAs semiconductors, wood preservation, toxic historical poison.",
+    "highlights": [
+      "Atomic Number: 33 | Symbol: As | Atomic Weight: 74.922 u",
+      "Group: 15 (Metalloid) | Period: 4 | Configuration: [Ar] 3d10 4s2 4p3",
+      "Discovered by: Albertus Magnus in 1250",
+      "Primary Uses: GaAs semiconductors, wood preservation, toxic historical poison"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Arsenic"
+  },
+  {
+    "id": "chem-element-34-se",
+    "keywords": [
+      "selenium element",
+      "atomic number 34",
+      "symbol of selenium",
+      "element se",
+      "uses of selenium",
+      "atomic mass of selenium",
+      "who discovered selenium"
+    ],
+    "title": "Selenium (Se) — Atomic No. 34 | Nonmetal",
+    "category": "Chemistry",
+    "answer": "Selenium (Symbol: Se, Atomic Number: 34, Atomic Weight: 78.971 u) is a nonmetal in Period 4, Group 16 with electron configuration [Ar] 3d10 4s2 4p4. Discovered by Jöns Jacob Berzelius (1817). Key applications: Solar cells, photocopiers, glass decolorizing, essential dietary antioxidant.",
+    "highlights": [
+      "Atomic Number: 34 | Symbol: Se | Atomic Weight: 78.971 u",
+      "Group: 16 (Nonmetal) | Period: 4 | Configuration: [Ar] 3d10 4s2 4p4",
+      "Discovered by: Jöns Jacob Berzelius in 1817",
+      "Primary Uses: Solar cells, photocopiers, glass decolorizing, essential dietary antioxidant"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Selenium"
+  },
+  {
+    "id": "chem-element-35-br",
+    "keywords": [
+      "bromine element",
+      "atomic number 35",
+      "symbol of bromine",
+      "element br",
+      "uses of bromine",
+      "atomic mass of bromine",
+      "who discovered bromine"
+    ],
+    "title": "Bromine (Br) — Atomic No. 35 | Halogen",
+    "category": "Chemistry",
+    "answer": "Bromine (Symbol: Br, Atomic Number: 35, Atomic Weight: 79.904 u) is a halogen in Period 4, Group 17 with electron configuration [Ar] 3d10 4s2 4p5. Discovered by Antoine Jérôme Balard (1826). Key applications: Only liquid nonmetal at room temp, flame retardants, water treatment.",
+    "highlights": [
+      "Atomic Number: 35 | Symbol: Br | Atomic Weight: 79.904 u",
+      "Group: 17 (Halogen) | Period: 4 | Configuration: [Ar] 3d10 4s2 4p5",
+      "Discovered by: Antoine Jérôme Balard in 1826",
+      "Primary Uses: Only liquid nonmetal at room temp, flame retardants, water treatment"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Bromine"
+  },
+  {
+    "id": "chem-element-36-kr",
+    "keywords": [
+      "krypton element",
+      "atomic number 36",
+      "symbol of krypton",
+      "element kr",
+      "uses of krypton",
+      "atomic mass of krypton",
+      "who discovered krypton"
+    ],
+    "title": "Krypton (Kr) — Atomic No. 36 | Noble gas",
+    "category": "Chemistry",
+    "answer": "Krypton (Symbol: Kr, Atomic Number: 36, Atomic Weight: 83.798 u) is a noble gas in Period 4, Group 18 with electron configuration [Ar] 3d10 4s2 4p6. Discovered by Ramsay & Travers (1898). Key applications: Fluorescent lighting, high-speed photography flash lamps, lasers.",
+    "highlights": [
+      "Atomic Number: 36 | Symbol: Kr | Atomic Weight: 83.798 u",
+      "Group: 18 (Noble gas) | Period: 4 | Configuration: [Ar] 3d10 4s2 4p6",
+      "Discovered by: Ramsay & Travers in 1898",
+      "Primary Uses: Fluorescent lighting, high-speed photography flash lamps, lasers"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Krypton"
+  },
+  {
+    "id": "chem-element-37-rb",
+    "keywords": [
+      "rubidium element",
+      "atomic number 37",
+      "symbol of rubidium",
+      "element rb",
+      "uses of rubidium",
+      "atomic mass of rubidium",
+      "who discovered rubidium"
+    ],
+    "title": "Rubidium (Rb) — Atomic No. 37 | Alkali metal",
+    "category": "Chemistry",
+    "answer": "Rubidium (Symbol: Rb, Atomic Number: 37, Atomic Weight: 85.468 u) is a alkali metal in Period 5, Group 1 with electron configuration [Kr] 5s1. Discovered by Bunsen & Kirchhoff (1861). Key applications: Atomic clocks, vapor cell magnetometers, photocells, fireworks.",
+    "highlights": [
+      "Atomic Number: 37 | Symbol: Rb | Atomic Weight: 85.468 u",
+      "Group: 1 (Alkali metal) | Period: 5 | Configuration: [Kr] 5s1",
+      "Discovered by: Bunsen & Kirchhoff in 1861",
+      "Primary Uses: Atomic clocks, vapor cell magnetometers, photocells, fireworks"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Rubidium"
+  },
+  {
+    "id": "chem-element-38-sr",
+    "keywords": [
+      "strontium element",
+      "atomic number 38",
+      "symbol of strontium",
+      "element sr",
+      "uses of strontium",
+      "atomic mass of strontium",
+      "who discovered strontium"
+    ],
+    "title": "Strontium (Sr) — Atomic No. 38 | Alkaline earth metal",
+    "category": "Chemistry",
+    "answer": "Strontium (Symbol: Sr, Atomic Number: 38, Atomic Weight: 87.62 u) is a alkaline earth metal in Period 5, Group 2 with electron configuration [Kr] 5s2. Discovered by Adair Crawford (1790). Key applications: Crimson red fireworks and flares, strontium atomic clocks, ferrites.",
+    "highlights": [
+      "Atomic Number: 38 | Symbol: Sr | Atomic Weight: 87.62 u",
+      "Group: 2 (Alkaline earth metal) | Period: 5 | Configuration: [Kr] 5s2",
+      "Discovered by: Adair Crawford in 1790",
+      "Primary Uses: Crimson red fireworks and flares, strontium atomic clocks, ferrites"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Strontium"
+  },
+  {
+    "id": "chem-element-39-y",
+    "keywords": [
+      "yttrium element",
+      "atomic number 39",
+      "symbol of yttrium",
+      "element y",
+      "uses of yttrium",
+      "atomic mass of yttrium",
+      "who discovered yttrium"
+    ],
+    "title": "Yttrium (Y) — Atomic No. 39 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Yttrium (Symbol: Y, Atomic Number: 39, Atomic Weight: 88.906 u) is a transition metal in Period 5, Group 3 with electron configuration [Kr] 4d1 5s2. Discovered by Johan Gadolin (1794). Key applications: YBCO high-temperature superconductors, YAG lasers, LED phosphors.",
+    "highlights": [
+      "Atomic Number: 39 | Symbol: Y | Atomic Weight: 88.906 u",
+      "Group: 3 (Transition metal) | Period: 5 | Configuration: [Kr] 4d1 5s2",
+      "Discovered by: Johan Gadolin in 1794",
+      "Primary Uses: YBCO high-temperature superconductors, YAG lasers, LED phosphors"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Yttrium"
+  },
+  {
+    "id": "chem-element-40-zr",
+    "keywords": [
+      "zirconium element",
+      "atomic number 40",
+      "symbol of zirconium",
+      "element zr",
+      "uses of zirconium",
+      "atomic mass of zirconium",
+      "who discovered zirconium"
+    ],
+    "title": "Zirconium (Zr) — Atomic No. 40 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Zirconium (Symbol: Zr, Atomic Number: 40, Atomic Weight: 91.224 u) is a transition metal in Period 5, Group 4 with electron configuration [Kr] 4d2 5s2. Discovered by Martin Heinrich Klaproth (1789). Key applications: Nuclear reactor fuel cladding (low neutron absorption), cubic zirconia gemstones.",
+    "highlights": [
+      "Atomic Number: 40 | Symbol: Zr | Atomic Weight: 91.224 u",
+      "Group: 4 (Transition metal) | Period: 5 | Configuration: [Kr] 4d2 5s2",
+      "Discovered by: Martin Heinrich Klaproth in 1789",
+      "Primary Uses: Nuclear reactor fuel cladding (low neutron absorption), cubic zirconia gemstones"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Zirconium"
+  },
+  {
+    "id": "chem-element-41-nb",
+    "keywords": [
+      "niobium element",
+      "atomic number 41",
+      "symbol of niobium",
+      "element nb",
+      "uses of niobium",
+      "atomic mass of niobium",
+      "who discovered niobium"
+    ],
+    "title": "Niobium (Nb) — Atomic No. 41 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Niobium (Symbol: Nb, Atomic Number: 41, Atomic Weight: 92.906 u) is a transition metal in Period 5, Group 5 with electron configuration [Kr] 4d4 5s1. Discovered by Charles Hatchett (1801). Key applications: Superconducting magnets for MRI and particle accelerators (Nb-Ti), steel.",
+    "highlights": [
+      "Atomic Number: 41 | Symbol: Nb | Atomic Weight: 92.906 u",
+      "Group: 5 (Transition metal) | Period: 5 | Configuration: [Kr] 4d4 5s1",
+      "Discovered by: Charles Hatchett in 1801",
+      "Primary Uses: Superconducting magnets for MRI and particle accelerators (Nb-Ti), steel"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Niobium"
+  },
+  {
+    "id": "chem-element-42-mo",
+    "keywords": [
+      "molybdenum element",
+      "atomic number 42",
+      "symbol of molybdenum",
+      "element mo",
+      "uses of molybdenum",
+      "atomic mass of molybdenum",
+      "who discovered molybdenum"
+    ],
+    "title": "Molybdenum (Mo) — Atomic No. 42 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Molybdenum (Symbol: Mo, Atomic Number: 42, Atomic Weight: 95.95 u) is a transition metal in Period 5, Group 6 with electron configuration [Kr] 4d5 5s1. Discovered by Carl Wilhelm Scheele (1778). Key applications: Ultra-high strength steel alloys, lubricants (MoS2), petroleum catalysts.",
+    "highlights": [
+      "Atomic Number: 42 | Symbol: Mo | Atomic Weight: 95.95 u",
+      "Group: 6 (Transition metal) | Period: 5 | Configuration: [Kr] 4d5 5s1",
+      "Discovered by: Carl Wilhelm Scheele in 1778",
+      "Primary Uses: Ultra-high strength steel alloys, lubricants (MoS2), petroleum catalysts"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Molybdenum"
+  },
+  {
+    "id": "chem-element-43-tc",
+    "keywords": [
+      "technetium element",
+      "atomic number 43",
+      "symbol of technetium",
+      "element tc",
+      "uses of technetium",
+      "atomic mass of technetium",
+      "who discovered technetium"
+    ],
+    "title": "Technetium (Tc) — Atomic No. 43 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Technetium (Symbol: Tc, Atomic Number: 43, Atomic Weight: 98 u) is a transition metal in Period 5, Group 7 with electron configuration [Kr] 4d5 5s2. Discovered by Perrier & Segrè (1937). Key applications: First artificially produced element, Tc-99m used in 80% of medical nuclear scans.",
+    "highlights": [
+      "Atomic Number: 43 | Symbol: Tc | Atomic Weight: 98 u",
+      "Group: 7 (Transition metal) | Period: 5 | Configuration: [Kr] 4d5 5s2",
+      "Discovered by: Perrier & Segrè in 1937",
+      "Primary Uses: First artificially produced element, Tc-99m used in 80% of medical nuclear scans"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Technetium"
+  },
+  {
+    "id": "chem-element-44-ru",
+    "keywords": [
+      "ruthenium element",
+      "atomic number 44",
+      "symbol of ruthenium",
+      "element ru",
+      "uses of ruthenium",
+      "atomic mass of ruthenium",
+      "who discovered ruthenium"
+    ],
+    "title": "Ruthenium (Ru) — Atomic No. 44 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Ruthenium (Symbol: Ru, Atomic Number: 44, Atomic Weight: 101.07 u) is a transition metal in Period 5, Group 8 with electron configuration [Kr] 4d7 5s1. Discovered by Karl Ernst Claus (1844). Key applications: Wear-resistant electrical contacts, chip resistors, organic catalysts.",
+    "highlights": [
+      "Atomic Number: 44 | Symbol: Ru | Atomic Weight: 101.07 u",
+      "Group: 8 (Transition metal) | Period: 5 | Configuration: [Kr] 4d7 5s1",
+      "Discovered by: Karl Ernst Claus in 1844",
+      "Primary Uses: Wear-resistant electrical contacts, chip resistors, organic catalysts"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Ruthenium"
+  },
+  {
+    "id": "chem-element-45-rh",
+    "keywords": [
+      "rhodium element",
+      "atomic number 45",
+      "symbol of rhodium",
+      "element rh",
+      "uses of rhodium",
+      "atomic mass of rhodium",
+      "who discovered rhodium"
+    ],
+    "title": "Rhodium (Rh) — Atomic No. 45 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Rhodium (Symbol: Rh, Atomic Number: 45, Atomic Weight: 102.91 u) is a transition metal in Period 5, Group 9 with electron configuration [Kr] 4d8 5s1. Discovered by William Hyde Wollaston (1803). Key applications: Automotive catalytic converters (NOx reduction), jewelry plating, optics.",
+    "highlights": [
+      "Atomic Number: 45 | Symbol: Rh | Atomic Weight: 102.91 u",
+      "Group: 9 (Transition metal) | Period: 5 | Configuration: [Kr] 4d8 5s1",
+      "Discovered by: William Hyde Wollaston in 1803",
+      "Primary Uses: Automotive catalytic converters (NOx reduction), jewelry plating, optics"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Rhodium"
+  },
+  {
+    "id": "chem-element-46-pd",
+    "keywords": [
+      "palladium element",
+      "atomic number 46",
+      "symbol of palladium",
+      "element pd",
+      "uses of palladium",
+      "atomic mass of palladium",
+      "who discovered palladium"
+    ],
+    "title": "Palladium (Pd) — Atomic No. 46 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Palladium (Symbol: Pd, Atomic Number: 46, Atomic Weight: 106.42 u) is a transition metal in Period 5, Group 10 with electron configuration [Kr] 4d10. Discovered by William Hyde Wollaston (1803). Key applications: Catalytic converters, hydrogen purification/storage, multilayer ceramic capacitors.",
+    "highlights": [
+      "Atomic Number: 46 | Symbol: Pd | Atomic Weight: 106.42 u",
+      "Group: 10 (Transition metal) | Period: 5 | Configuration: [Kr] 4d10",
+      "Discovered by: William Hyde Wollaston in 1803",
+      "Primary Uses: Catalytic converters, hydrogen purification/storage, multilayer ceramic capacitors"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Palladium"
+  },
+  {
+    "id": "chem-element-47-ag",
+    "keywords": [
+      "silver element",
+      "atomic number 47",
+      "symbol of silver",
+      "element ag",
+      "uses of silver",
+      "atomic mass of silver",
+      "who discovered silver"
+    ],
+    "title": "Silver (Ag) — Atomic No. 47 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Silver (Symbol: Ag, Atomic Number: 47, Atomic Weight: 107.87 u) is a transition metal in Period 5, Group 11 with electron configuration [Kr] 4d10 5s1. Discovered by Ancient (Antiquity). Key applications: Highest electrical and thermal conductivity of all metals, solar cells, jewelry.",
+    "highlights": [
+      "Atomic Number: 47 | Symbol: Ag | Atomic Weight: 107.87 u",
+      "Group: 11 (Transition metal) | Period: 5 | Configuration: [Kr] 4d10 5s1",
+      "Discovered by: Ancient in Antiquity",
+      "Primary Uses: Highest electrical and thermal conductivity of all metals, solar cells, jewelry"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Silver"
+  },
+  {
+    "id": "chem-element-48-cd",
+    "keywords": [
+      "cadmium element",
+      "atomic number 48",
+      "symbol of cadmium",
+      "element cd",
+      "uses of cadmium",
+      "atomic mass of cadmium",
+      "who discovered cadmium"
+    ],
+    "title": "Cadmium (Cd) — Atomic No. 48 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Cadmium (Symbol: Cd, Atomic Number: 48, Atomic Weight: 112.41 u) is a transition metal in Period 5, Group 12 with electron configuration [Kr] 4d10 5s2. Discovered by Karl Samuel Leberecht Hermann (1817). Key applications: Ni-Cd rechargeable batteries, electroplating, solar cells (CdTe), pigments.",
+    "highlights": [
+      "Atomic Number: 48 | Symbol: Cd | Atomic Weight: 112.41 u",
+      "Group: 12 (Transition metal) | Period: 5 | Configuration: [Kr] 4d10 5s2",
+      "Discovered by: Karl Samuel Leberecht Hermann in 1817",
+      "Primary Uses: Ni-Cd rechargeable batteries, electroplating, solar cells (CdTe), pigments"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Cadmium"
+  },
+  {
+    "id": "chem-element-49-in",
+    "keywords": [
+      "indium element",
+      "atomic number 49",
+      "symbol of indium",
+      "element in",
+      "uses of indium",
+      "atomic mass of indium",
+      "who discovered indium"
+    ],
+    "title": "Indium (In) — Atomic No. 49 | Post-transition metal",
+    "category": "Chemistry",
+    "answer": "Indium (Symbol: In, Atomic Number: 49, Atomic Weight: 114.82 u) is a post-transition metal in Period 5, Group 13 with electron configuration [Kr] 4d10 5s2 5p1. Discovered by Reich & Richter (1863). Key applications: Indium Tin Oxide (ITO) transparent conductive coatings for touchscreens/LCDs.",
+    "highlights": [
+      "Atomic Number: 49 | Symbol: In | Atomic Weight: 114.82 u",
+      "Group: 13 (Post-transition metal) | Period: 5 | Configuration: [Kr] 4d10 5s2 5p1",
+      "Discovered by: Reich & Richter in 1863",
+      "Primary Uses: Indium Tin Oxide (ITO) transparent conductive coatings for touchscreens/LCDs"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Indium"
+  },
+  {
+    "id": "chem-element-50-sn",
+    "keywords": [
+      "tin element",
+      "atomic number 50",
+      "symbol of tin",
+      "element sn",
+      "uses of tin",
+      "atomic mass of tin",
+      "who discovered tin"
+    ],
+    "title": "Tin (Sn) — Atomic No. 50 | Post-transition metal",
+    "category": "Chemistry",
+    "answer": "Tin (Symbol: Sn, Atomic Number: 50, Atomic Weight: 118.71 u) is a post-transition metal in Period 5, Group 14 with electron configuration [Kr] 4d10 5s2 5p2. Discovered by Ancient (Antiquity). Key applications: Tin plating (cans), electronics solder (Sn-Ag-Cu), bronze alloys.",
+    "highlights": [
+      "Atomic Number: 50 | Symbol: Sn | Atomic Weight: 118.71 u",
+      "Group: 14 (Post-transition metal) | Period: 5 | Configuration: [Kr] 4d10 5s2 5p2",
+      "Discovered by: Ancient in Antiquity",
+      "Primary Uses: Tin plating (cans), electronics solder (Sn-Ag-Cu), bronze alloys"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Tin"
+  },
+  {
+    "id": "chem-element-51-sb",
+    "keywords": [
+      "antimony element",
+      "atomic number 51",
+      "symbol of antimony",
+      "element sb",
+      "uses of antimony",
+      "atomic mass of antimony",
+      "who discovered antimony"
+    ],
+    "title": "Antimony (Sb) — Atomic No. 51 | Metalloid",
+    "category": "Chemistry",
+    "answer": "Antimony (Symbol: Sb, Atomic Number: 51, Atomic Weight: 121.76 u) is a metalloid in Period 5, Group 15 with electron configuration [Kr] 4d10 5s2 5p3. Discovered by Ancient (Antiquity). Key applications: Flame retardants (Sb2O3), lead-acid battery grid hardener, infrared detectors.",
+    "highlights": [
+      "Atomic Number: 51 | Symbol: Sb | Atomic Weight: 121.76 u",
+      "Group: 15 (Metalloid) | Period: 5 | Configuration: [Kr] 4d10 5s2 5p3",
+      "Discovered by: Ancient in Antiquity",
+      "Primary Uses: Flame retardants (Sb2O3), lead-acid battery grid hardener, infrared detectors"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Antimony"
+  },
+  {
+    "id": "chem-element-52-te",
+    "keywords": [
+      "tellurium element",
+      "atomic number 52",
+      "symbol of tellurium",
+      "element te",
+      "uses of tellurium",
+      "atomic mass of tellurium",
+      "who discovered tellurium"
+    ],
+    "title": "Tellurium (Te) — Atomic No. 52 | Metalloid",
+    "category": "Chemistry",
+    "answer": "Tellurium (Symbol: Te, Atomic Number: 52, Atomic Weight: 127.6 u) is a metalloid in Period 5, Group 16 with electron configuration [Kr] 4d10 5s2 5p4. Discovered by Franz-Joseph Müller von Reichenstein (1782). Key applications: Cadmium Telluride (CdTe) thin-film solar panels, thermoelectric cooling devices.",
+    "highlights": [
+      "Atomic Number: 52 | Symbol: Te | Atomic Weight: 127.6 u",
+      "Group: 16 (Metalloid) | Period: 5 | Configuration: [Kr] 4d10 5s2 5p4",
+      "Discovered by: Franz-Joseph Müller von Reichenstein in 1782",
+      "Primary Uses: Cadmium Telluride (CdTe) thin-film solar panels, thermoelectric cooling devices"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Tellurium"
+  },
+  {
+    "id": "chem-element-53-i",
+    "keywords": [
+      "iodine element",
+      "atomic number 53",
+      "symbol of iodine",
+      "element i",
+      "uses of iodine",
+      "atomic mass of iodine",
+      "who discovered iodine"
+    ],
+    "title": "Iodine (I) — Atomic No. 53 | Halogen",
+    "category": "Chemistry",
+    "answer": "Iodine (Symbol: I, Atomic Number: 53, Atomic Weight: 126.9 u) is a halogen in Period 5, Group 17 with electron configuration [Kr] 4d10 5s2 5p5. Discovered by Bernard Courtois (1811). Key applications: Thyroid hormone synthesis (prevents goitre), disinfectant, medical X-ray contrast.",
+    "highlights": [
+      "Atomic Number: 53 | Symbol: I | Atomic Weight: 126.9 u",
+      "Group: 17 (Halogen) | Period: 5 | Configuration: [Kr] 4d10 5s2 5p5",
+      "Discovered by: Bernard Courtois in 1811",
+      "Primary Uses: Thyroid hormone synthesis (prevents goitre), disinfectant, medical X-ray contrast"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Iodine"
+  },
+  {
+    "id": "chem-element-54-xe",
+    "keywords": [
+      "xenon element",
+      "atomic number 54",
+      "symbol of xenon",
+      "element xe",
+      "uses of xenon",
+      "atomic mass of xenon",
+      "who discovered xenon"
+    ],
+    "title": "Xenon (Xe) — Atomic No. 54 | Noble gas",
+    "category": "Chemistry",
+    "answer": "Xenon (Symbol: Xe, Atomic Number: 54, Atomic Weight: 131.29 u) is a noble gas in Period 5, Group 18 with electron configuration [Kr] 4d10 5s2 5p6. Discovered by Ramsay & Travers (1898). Key applications: Ion propulsion engines for spacecraft, intense car headlights, anesthesia.",
+    "highlights": [
+      "Atomic Number: 54 | Symbol: Xe | Atomic Weight: 131.29 u",
+      "Group: 18 (Noble gas) | Period: 5 | Configuration: [Kr] 4d10 5s2 5p6",
+      "Discovered by: Ramsay & Travers in 1898",
+      "Primary Uses: Ion propulsion engines for spacecraft, intense car headlights, anesthesia"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Xenon"
+  },
+  {
+    "id": "chem-element-55-cs",
+    "keywords": [
+      "cesium element",
+      "atomic number 55",
+      "symbol of cesium",
+      "element cs",
+      "uses of cesium",
+      "atomic mass of cesium",
+      "who discovered cesium"
+    ],
+    "title": "Cesium (Cs) — Atomic No. 55 | Alkali metal",
+    "category": "Chemistry",
+    "answer": "Cesium (Symbol: Cs, Atomic Number: 55, Atomic Weight: 132.91 u) is a alkali metal in Period 6, Group 1 with electron configuration [Xe] 6s1. Discovered by Bunsen & Kirchhoff (1860). Key applications: Cesium atomic clocks defining the SI second (9,192,631,770 Hz), drilling fluids.",
+    "highlights": [
+      "Atomic Number: 55 | Symbol: Cs | Atomic Weight: 132.91 u",
+      "Group: 1 (Alkali metal) | Period: 6 | Configuration: [Xe] 6s1",
+      "Discovered by: Bunsen & Kirchhoff in 1860",
+      "Primary Uses: Cesium atomic clocks defining the SI second (9,192,631,770 Hz), drilling fluids"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Cesium"
+  },
+  {
+    "id": "chem-element-56-ba",
+    "keywords": [
+      "barium element",
+      "atomic number 56",
+      "symbol of barium",
+      "element ba",
+      "uses of barium",
+      "atomic mass of barium",
+      "who discovered barium"
+    ],
+    "title": "Barium (Ba) — Atomic No. 56 | Alkaline earth metal",
+    "category": "Chemistry",
+    "answer": "Barium (Symbol: Ba, Atomic Number: 56, Atomic Weight: 137.33 u) is a alkaline earth metal in Period 6, Group 2 with electron configuration [Xe] 6s2. Discovered by Carl Wilhelm Scheele (1772). Key applications: Barium swallow X-ray gastrointestinal imaging (BaSO4), green fireworks.",
+    "highlights": [
+      "Atomic Number: 56 | Symbol: Ba | Atomic Weight: 137.33 u",
+      "Group: 2 (Alkaline earth metal) | Period: 6 | Configuration: [Xe] 6s2",
+      "Discovered by: Carl Wilhelm Scheele in 1772",
+      "Primary Uses: Barium swallow X-ray gastrointestinal imaging (BaSO4), green fireworks"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Barium"
+  },
+  {
+    "id": "chem-element-74-w",
+    "keywords": [
+      "tungsten element",
+      "atomic number 74",
+      "symbol of tungsten",
+      "element w",
+      "uses of tungsten",
+      "atomic mass of tungsten",
+      "who discovered tungsten"
+    ],
+    "title": "Tungsten (W) — Atomic No. 74 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Tungsten (Symbol: W, Atomic Number: 74, Atomic Weight: 183.84 u) is a transition metal in Period 6, Group 6 with electron configuration [Xe] 4f14 5d4 6s2. Discovered by Carl Wilhelm Scheele (1781). Key applications: Highest melting point of all elements (3,422°C), incandescent filaments, cutting tools.",
+    "highlights": [
+      "Atomic Number: 74 | Symbol: W | Atomic Weight: 183.84 u",
+      "Group: 6 (Transition metal) | Period: 6 | Configuration: [Xe] 4f14 5d4 6s2",
+      "Discovered by: Carl Wilhelm Scheele in 1781",
+      "Primary Uses: Highest melting point of all elements (3,422°C), incandescent filaments, cutting tools"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Tungsten"
+  },
+  {
+    "id": "chem-element-78-pt",
+    "keywords": [
+      "platinum element",
+      "atomic number 78",
+      "symbol of platinum",
+      "element pt",
+      "uses of platinum",
+      "atomic mass of platinum",
+      "who discovered platinum"
+    ],
+    "title": "Platinum (Pt) — Atomic No. 78 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Platinum (Symbol: Pt, Atomic Number: 78, Atomic Weight: 195.08 u) is a transition metal in Period 6, Group 10 with electron configuration [Xe] 4f14 5d9 6s1. Discovered by Antonio de Ulloa (1735). Key applications: Catalytic converters, jewelry, laboratory crucibles, anticancer cisplatin drugs.",
+    "highlights": [
+      "Atomic Number: 78 | Symbol: Pt | Atomic Weight: 195.08 u",
+      "Group: 10 (Transition metal) | Period: 6 | Configuration: [Xe] 4f14 5d9 6s1",
+      "Discovered by: Antonio de Ulloa in 1735",
+      "Primary Uses: Catalytic converters, jewelry, laboratory crucibles, anticancer cisplatin drugs"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Platinum"
+  },
+  {
+    "id": "chem-element-79-au",
+    "keywords": [
+      "gold element",
+      "atomic number 79",
+      "symbol of gold",
+      "element au",
+      "uses of gold",
+      "atomic mass of gold",
+      "who discovered gold"
+    ],
+    "title": "Gold (Au) — Atomic No. 79 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Gold (Symbol: Au, Atomic Number: 79, Atomic Weight: 196.97 u) is a transition metal in Period 6, Group 11 with electron configuration [Xe] 4f14 5d10 6s1. Discovered by Ancient (Antiquity). Key applications: Most malleable and ductile metal, monetary gold reserves, corrosion-free contacts.",
+    "highlights": [
+      "Atomic Number: 79 | Symbol: Au | Atomic Weight: 196.97 u",
+      "Group: 11 (Transition metal) | Period: 6 | Configuration: [Xe] 4f14 5d10 6s1",
+      "Discovered by: Ancient in Antiquity",
+      "Primary Uses: Most malleable and ductile metal, monetary gold reserves, corrosion-free contacts"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Gold"
+  },
+  {
+    "id": "chem-element-80-hg",
+    "keywords": [
+      "mercury element",
+      "atomic number 80",
+      "symbol of mercury",
+      "element hg",
+      "uses of mercury",
+      "atomic mass of mercury",
+      "who discovered mercury"
+    ],
+    "title": "Mercury (Hg) — Atomic No. 80 | Transition metal",
+    "category": "Chemistry",
+    "answer": "Mercury (Symbol: Hg, Atomic Number: 80, Atomic Weight: 200.59 u) is a transition metal in Period 6, Group 12 with electron configuration [Xe] 4f14 5d10 6s2. Discovered by Ancient (Antiquity). Key applications: Only liquid metal at room temperature, barometers, fluorescent lamps, switches.",
+    "highlights": [
+      "Atomic Number: 80 | Symbol: Hg | Atomic Weight: 200.59 u",
+      "Group: 12 (Transition metal) | Period: 6 | Configuration: [Xe] 4f14 5d10 6s2",
+      "Discovered by: Ancient in Antiquity",
+      "Primary Uses: Only liquid metal at room temperature, barometers, fluorescent lamps, switches"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Mercury"
+  },
+  {
+    "id": "chem-element-82-pb",
+    "keywords": [
+      "lead element",
+      "atomic number 82",
+      "symbol of lead",
+      "element pb",
+      "uses of lead",
+      "atomic mass of lead",
+      "who discovered lead"
+    ],
+    "title": "Lead (Pb) — Atomic No. 82 | Post-transition metal",
+    "category": "Chemistry",
+    "answer": "Lead (Symbol: Pb, Atomic Number: 82, Atomic Weight: 207.2 u) is a post-transition metal in Period 6, Group 14 with electron configuration [Xe] 4f14 5d10 6s2 6p2. Discovered by Ancient (Antiquity). Key applications: Lead-acid batteries, radiation shielding for X-rays and nuclear power, weights.",
+    "highlights": [
+      "Atomic Number: 82 | Symbol: Pb | Atomic Weight: 207.2 u",
+      "Group: 14 (Post-transition metal) | Period: 6 | Configuration: [Xe] 4f14 5d10 6s2 6p2",
+      "Discovered by: Ancient in Antiquity",
+      "Primary Uses: Lead-acid batteries, radiation shielding for X-rays and nuclear power, weights"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Lead"
+  },
+  {
+    "id": "chem-element-86-rn",
+    "keywords": [
+      "radon element",
+      "atomic number 86",
+      "symbol of radon",
+      "element rn",
+      "uses of radon",
+      "atomic mass of radon",
+      "who discovered radon"
+    ],
+    "title": "Radon (Rn) — Atomic No. 86 | Noble gas",
+    "category": "Chemistry",
+    "answer": "Radon (Symbol: Rn, Atomic Number: 86, Atomic Weight: 222 u) is a noble gas in Period 6, Group 18 with electron configuration [Xe] 4f14 5d10 6s2 6p6. Discovered by Friedrich Ernst Dorn (1900). Key applications: Radioactive noble gas from radium decay, second leading cause of lung cancer.",
+    "highlights": [
+      "Atomic Number: 86 | Symbol: Rn | Atomic Weight: 222 u",
+      "Group: 18 (Noble gas) | Period: 6 | Configuration: [Xe] 4f14 5d10 6s2 6p6",
+      "Discovered by: Friedrich Ernst Dorn in 1900",
+      "Primary Uses: Radioactive noble gas from radium decay, second leading cause of lung cancer"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Radon"
+  },
+  {
+    "id": "chem-element-92-u",
+    "keywords": [
+      "uranium element",
+      "atomic number 92",
+      "symbol of uranium",
+      "element u",
+      "uses of uranium",
+      "atomic mass of uranium",
+      "who discovered uranium"
+    ],
+    "title": "Uranium (U) — Atomic No. 92 | Actinide",
+    "category": "Chemistry",
+    "answer": "Uranium (Symbol: U, Atomic Number: 92, Atomic Weight: 238.03 u) is a actinide in Period 7, Group 3 with electron configuration [Rn] 5f3 6d1 7s2. Discovered by Martin Heinrich Klaproth (1789). Key applications: Nuclear reactor fuel (fission of U-235), nuclear energy, armor-piercing depleted uranium.",
+    "highlights": [
+      "Atomic Number: 92 | Symbol: U | Atomic Weight: 238.03 u",
+      "Group: 3 (Actinide) | Period: 7 | Configuration: [Rn] 5f3 6d1 7s2",
+      "Discovered by: Martin Heinrich Klaproth in 1789",
+      "Primary Uses: Nuclear reactor fuel (fission of U-235), nuclear energy, armor-piercing depleted uranium"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Uranium"
+  },
+  {
+    "id": "chem-element-94-pu",
+    "keywords": [
+      "plutonium element",
+      "atomic number 94",
+      "symbol of plutonium",
+      "element pu",
+      "uses of plutonium",
+      "atomic mass of plutonium",
+      "who discovered plutonium"
+    ],
+    "title": "Plutonium (Pu) — Atomic No. 94 | Actinide",
+    "category": "Chemistry",
+    "answer": "Plutonium (Symbol: Pu, Atomic Number: 94, Atomic Weight: 244 u) is a actinide in Period 7, Group 3 with electron configuration [Rn] 5f6 7s2. Discovered by Glenn T. Seaborg (1940). Key applications: Nuclear power and weapons (Pu-239), RTG power for deep space probes (Voyager, Mars Curiosity).",
+    "highlights": [
+      "Atomic Number: 94 | Symbol: Pu | Atomic Weight: 244 u",
+      "Group: 3 (Actinide) | Period: 7 | Configuration: [Rn] 5f6 7s2",
+      "Discovered by: Glenn T. Seaborg in 1940",
+      "Primary Uses: Nuclear power and weapons (Pu-239), RTG power for deep space probes (Voyager, Mars Curiosity)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Plutonium"
+  },
+  {
+    "id": "chem-compound-1-hydrochloric-acid",
+    "keywords": [
+      "hydrochloric acid formula",
+      "chemical formula of hydrochloric acid",
+      "molar mass of hydrochloric acid",
+      "hcl chemical name",
+      "uses of hydrochloric acid"
+    ],
+    "title": "Hydrochloric Acid (HCl) — Molar Mass: 36.46 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Hydrochloric Acid (Chemical Formula: HCl, Molar Mass: 36.46 g/mol) is an essential chemical substance. Strong monoproteic mineral acid, stomach gastric acid, metal pickling, pH 1.0.",
+    "highlights": [
+      "Compound Name: Hydrochloric Acid",
+      "Molecular Formula: HCl",
+      "Molar Mass: 36.46 g/mol",
+      "Applications & Properties: Strong monoproteic mineral acid, stomach gastric acid, metal pickling, pH 1.0"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Hydrochloric_Acid"
+  },
+  {
+    "id": "chem-compound-2-nitric-acid",
+    "keywords": [
+      "nitric acid formula",
+      "chemical formula of nitric acid",
+      "molar mass of nitric acid",
+      "hno3 chemical name",
+      "uses of nitric acid"
+    ],
+    "title": "Nitric Acid (HNO3) — Molar Mass: 63.01 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Nitric Acid (Chemical Formula: HNO3, Molar Mass: 63.01 g/mol) is an essential chemical substance. Strong oxidizing acid, ammonium nitrate fertilizer synthesis, explosives (TNT, nitroglycerin), aqua regia.",
+    "highlights": [
+      "Compound Name: Nitric Acid",
+      "Molecular Formula: HNO3",
+      "Molar Mass: 63.01 g/mol",
+      "Applications & Properties: Strong oxidizing acid, ammonium nitrate fertilizer synthesis, explosives (TNT, nitroglycerin), aqua regia"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Nitric_Acid"
+  },
+  {
+    "id": "chem-compound-3-acetic-acid-ethanoic-acid",
+    "keywords": [
+      "acetic acid / ethanoic acid formula",
+      "chemical formula of acetic acid / ethanoic acid",
+      "molar mass of acetic acid / ethanoic acid",
+      "ch3cooh chemical name",
+      "uses of acetic acid / ethanoic acid"
+    ],
+    "title": "Acetic Acid / Ethanoic Acid (CH3COOH) — Molar Mass: 60.05 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Acetic Acid / Ethanoic Acid (Chemical Formula: CH3COOH, Molar Mass: 60.05 g/mol) is an essential chemical substance. Vinegar (4-8% solution), precursor to polyvinyl acetate (PVA) glue, pH ~2.4.",
+    "highlights": [
+      "Compound Name: Acetic Acid / Ethanoic Acid",
+      "Molecular Formula: CH3COOH",
+      "Molar Mass: 60.05 g/mol",
+      "Applications & Properties: Vinegar (4-8% solution), precursor to polyvinyl acetate (PVA) glue, pH ~2.4"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Acetic_Acid_/_Ethanoic_Acid"
+  },
+  {
+    "id": "chem-compound-4-ammonia",
+    "keywords": [
+      "ammonia formula",
+      "chemical formula of ammonia",
+      "molar mass of ammonia",
+      "nh3 chemical name",
+      "uses of ammonia"
+    ],
+    "title": "Ammonia (NH3) — Molar Mass: 17.03 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Ammonia (Chemical Formula: NH3, Molar Mass: 17.03 g/mol) is an essential chemical substance. Haber-Bosch industrial synthesis (N2+3H2), nitrogen fertilizers, cleaning agent, refrigerant.",
+    "highlights": [
+      "Compound Name: Ammonia",
+      "Molecular Formula: NH3",
+      "Molar Mass: 17.03 g/mol",
+      "Applications & Properties: Haber-Bosch industrial synthesis (N2+3H2), nitrogen fertilizers, cleaning agent, refrigerant"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Ammonia"
+  },
+  {
+    "id": "chem-compound-5-sodium-hydroxide-caustic-soda",
+    "keywords": [
+      "sodium hydroxide (caustic soda) formula",
+      "chemical formula of sodium hydroxide (caustic soda)",
+      "molar mass of sodium hydroxide (caustic soda)",
+      "naoh chemical name",
+      "uses of sodium hydroxide (caustic soda)"
+    ],
+    "title": "Sodium Hydroxide (Caustic Soda) (NaOH) — Molar Mass: 39.997 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Sodium Hydroxide (Caustic Soda) (Chemical Formula: NaOH, Molar Mass: 39.997 g/mol) is an essential chemical substance. Strong base, soap and detergent manufacturing, paper pulp processing, drain cleaner, pH 14.",
+    "highlights": [
+      "Compound Name: Sodium Hydroxide (Caustic Soda)",
+      "Molecular Formula: NaOH",
+      "Molar Mass: 39.997 g/mol",
+      "Applications & Properties: Strong base, soap and detergent manufacturing, paper pulp processing, drain cleaner, pH 14"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sodium_Hydroxide_(Caustic_Soda)"
+  },
+  {
+    "id": "chem-compound-6-potassium-hydroxide-caustic-potash",
+    "keywords": [
+      "potassium hydroxide (caustic potash) formula",
+      "chemical formula of potassium hydroxide (caustic potash)",
+      "molar mass of potassium hydroxide (caustic potash)",
+      "koh chemical name",
+      "uses of potassium hydroxide (caustic potash)"
+    ],
+    "title": "Potassium Hydroxide (Caustic Potash) (KOH) — Molar Mass: 56.11 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Potassium Hydroxide (Caustic Potash) (Chemical Formula: KOH, Molar Mass: 56.11 g/mol) is an essential chemical substance. Strong base, soft liquid soaps, alkaline battery electrolyte, biodiesel production.",
+    "highlights": [
+      "Compound Name: Potassium Hydroxide (Caustic Potash)",
+      "Molecular Formula: KOH",
+      "Molar Mass: 56.11 g/mol",
+      "Applications & Properties: Strong base, soft liquid soaps, alkaline battery electrolyte, biodiesel production"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Potassium_Hydroxide_(Caustic_Potash)"
+  },
+  {
+    "id": "chem-compound-7-calcium-oxide-quicklime",
+    "keywords": [
+      "calcium oxide (quicklime) formula",
+      "chemical formula of calcium oxide (quicklime)",
+      "molar mass of calcium oxide (quicklime)",
+      "cao chemical name",
+      "uses of calcium oxide (quicklime)"
+    ],
+    "title": "Calcium Oxide (Quicklime) (CaO) — Molar Mass: 56.08 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Calcium Oxide (Quicklime) (Chemical Formula: CaO, Molar Mass: 56.08 g/mol) is an essential chemical substance. Produced by calcination of limestone (CaCO3), cement, steel manufacturing, chemical scrubbing.",
+    "highlights": [
+      "Compound Name: Calcium Oxide (Quicklime)",
+      "Molecular Formula: CaO",
+      "Molar Mass: 56.08 g/mol",
+      "Applications & Properties: Produced by calcination of limestone (CaCO3), cement, steel manufacturing, chemical scrubbing"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Calcium_Oxide_(Quicklime)"
+  },
+  {
+    "id": "chem-compound-8-calcium-hydroxide-slaked-lime",
+    "keywords": [
+      "calcium hydroxide (slaked lime) formula",
+      "chemical formula of calcium hydroxide (slaked lime)",
+      "molar mass of calcium hydroxide (slaked lime)",
+      "ca(oh)2 chemical name",
+      "uses of calcium hydroxide (slaked lime)"
+    ],
+    "title": "Calcium Hydroxide (Slaked Lime) (Ca(OH)2) — Molar Mass: 74.09 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Calcium Hydroxide (Slaked Lime) (Chemical Formula: Ca(OH)2, Molar Mass: 74.09 g/mol) is an essential chemical substance. Limewater, whitewashing, mortar, soil acidity neutralization, flocculant in water treatment.",
+    "highlights": [
+      "Compound Name: Calcium Hydroxide (Slaked Lime)",
+      "Molecular Formula: Ca(OH)2",
+      "Molar Mass: 74.09 g/mol",
+      "Applications & Properties: Limewater, whitewashing, mortar, soil acidity neutralization, flocculant in water treatment"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Calcium_Hydroxide_(Slaked_Lime)"
+  },
+  {
+    "id": "chem-compound-9-copperii-sulfate",
+    "keywords": [
+      "copper(ii) sulfate formula",
+      "chemical formula of copper(ii) sulfate",
+      "molar mass of copper(ii) sulfate",
+      "cuso4 chemical name",
+      "uses of copper(ii) sulfate"
+    ],
+    "title": "Copper(II) Sulfate (CuSO4) — Molar Mass: 159.61 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Copper(II) Sulfate (Chemical Formula: CuSO4, Molar Mass: 159.61 g/mol) is an essential chemical substance. Blue vitriol (pentahydrate CuSO4.5H2O), fungicide (Bordeaux mixture), electroplating, Fehling's reagent.",
+    "highlights": [
+      "Compound Name: Copper(II) Sulfate",
+      "Molecular Formula: CuSO4",
+      "Molar Mass: 159.61 g/mol",
+      "Applications & Properties: Blue vitriol (pentahydrate CuSO4.5H2O), fungicide (Bordeaux mixture), electroplating, Fehling's reagent"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Copper(II)_Sulfate"
+  },
+  {
+    "id": "chem-compound-10-ironiii-oxide-rust",
+    "keywords": [
+      "iron(iii) oxide (rust) formula",
+      "chemical formula of iron(iii) oxide (rust)",
+      "molar mass of iron(iii) oxide (rust)",
+      "fe2o3 chemical name",
+      "uses of iron(iii) oxide (rust)"
+    ],
+    "title": "Iron(III) Oxide (Rust) (Fe2O3) — Molar Mass: 159.69 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Iron(III) Oxide (Rust) (Chemical Formula: Fe2O3, Molar Mass: 159.69 g/mol) is an essential chemical substance. Hematite ore, rust on oxidized iron, polishing rouge, pigment (brown-red).",
+    "highlights": [
+      "Compound Name: Iron(III) Oxide (Rust)",
+      "Molecular Formula: Fe2O3",
+      "Molar Mass: 159.69 g/mol",
+      "Applications & Properties: Hematite ore, rust on oxidized iron, polishing rouge, pigment (brown-red)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Iron(III)_Oxide_(Rust)"
+  },
+  {
+    "id": "chem-compound-11-ironii-sulfate-green-vitriol",
+    "keywords": [
+      "iron(ii) sulfate (green vitriol) formula",
+      "chemical formula of iron(ii) sulfate (green vitriol)",
+      "molar mass of iron(ii) sulfate (green vitriol)",
+      "feso4 chemical name",
+      "uses of iron(ii) sulfate (green vitriol)"
+    ],
+    "title": "Iron(II) Sulfate (Green Vitriol) (FeSO4) — Molar Mass: 151.91 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Iron(II) Sulfate (Green Vitriol) (Chemical Formula: FeSO4, Molar Mass: 151.91 g/mol) is an essential chemical substance. Heptahydrate FeSO4.7H2O, iron deficiency anaemia treatment, ink manufacturing, water treatment.",
+    "highlights": [
+      "Compound Name: Iron(II) Sulfate (Green Vitriol)",
+      "Molecular Formula: FeSO4",
+      "Molar Mass: 151.91 g/mol",
+      "Applications & Properties: Heptahydrate FeSO4.7H2O, iron deficiency anaemia treatment, ink manufacturing, water treatment"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Iron(II)_Sulfate_(Green_Vitriol)"
+  },
+  {
+    "id": "chem-compound-12-ethanol",
+    "keywords": [
+      "ethanol formula",
+      "chemical formula of ethanol",
+      "molar mass of ethanol",
+      "c2h5oh chemical name",
+      "uses of ethanol"
+    ],
+    "title": "Ethanol (C2H5OH) — Molar Mass: 46.07 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Ethanol (Chemical Formula: C2H5OH, Molar Mass: 46.07 g/mol) is an essential chemical substance. Alcoholic beverages, biofuel (E10/E20/E85), universal solvent, hand sanitizers, antiseptic.",
+    "highlights": [
+      "Compound Name: Ethanol",
+      "Molecular Formula: C2H5OH",
+      "Molar Mass: 46.07 g/mol",
+      "Applications & Properties: Alcoholic beverages, biofuel (E10/E20/E85), universal solvent, hand sanitizers, antiseptic"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Ethanol"
+  },
+  {
+    "id": "chem-compound-13-methanol-wood-alcohol",
+    "keywords": [
+      "methanol (wood alcohol) formula",
+      "chemical formula of methanol (wood alcohol)",
+      "molar mass of methanol (wood alcohol)",
+      "ch3oh chemical name",
+      "uses of methanol (wood alcohol)"
+    ],
+    "title": "Methanol (Wood Alcohol) (CH3OH) — Molar Mass: 32.04 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Methanol (Wood Alcohol) (Chemical Formula: CH3OH, Molar Mass: 32.04 g/mol) is an essential chemical substance. Toxic industrial solvent, formaldehyde feedstock, racing fuel, causes blindness upon ingestion.",
+    "highlights": [
+      "Compound Name: Methanol (Wood Alcohol)",
+      "Molecular Formula: CH3OH",
+      "Molar Mass: 32.04 g/mol",
+      "Applications & Properties: Toxic industrial solvent, formaldehyde feedstock, racing fuel, causes blindness upon ingestion"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Methanol_(Wood_Alcohol)"
+  },
+  {
+    "id": "chem-compound-14-acetone-propanone",
+    "keywords": [
+      "acetone (propanone) formula",
+      "chemical formula of acetone (propanone)",
+      "molar mass of acetone (propanone)",
+      "ch3coch3 chemical name",
+      "uses of acetone (propanone)"
+    ],
+    "title": "Acetone (Propanone) (CH3COCH3) — Molar Mass: 58.08 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Acetone (Propanone) (Chemical Formula: CH3COCH3, Molar Mass: 58.08 g/mol) is an essential chemical substance. Simplest ketone, nail polish remover, laboratory solvent, fiberglass resin cleaner.",
+    "highlights": [
+      "Compound Name: Acetone (Propanone)",
+      "Molecular Formula: CH3COCH3",
+      "Molar Mass: 58.08 g/mol",
+      "Applications & Properties: Simplest ketone, nail polish remover, laboratory solvent, fiberglass resin cleaner"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Acetone_(Propanone)"
+  },
+  {
+    "id": "chem-compound-15-methane",
+    "keywords": [
+      "methane formula",
+      "chemical formula of methane",
+      "molar mass of methane",
+      "ch4 chemical name",
+      "uses of methane"
+    ],
+    "title": "Methane (CH4) — Molar Mass: 16.04 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Methane (Chemical Formula: CH4, Molar Mass: 16.04 g/mol) is an essential chemical substance. Simplest alkane, principal component of Natural Gas and Biogas (~70-90%), potent greenhouse gas.",
+    "highlights": [
+      "Compound Name: Methane",
+      "Molecular Formula: CH4",
+      "Molar Mass: 16.04 g/mol",
+      "Applications & Properties: Simplest alkane, principal component of Natural Gas and Biogas (~70-90%), potent greenhouse gas"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Methane"
+  },
+  {
+    "id": "chem-compound-16-propane",
+    "keywords": [
+      "propane formula",
+      "chemical formula of propane",
+      "molar mass of propane",
+      "c3h8 chemical name",
+      "uses of propane"
+    ],
+    "title": "Propane (C3H8) — Molar Mass: 44.1 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Propane (Chemical Formula: C3H8, Molar Mass: 44.1 g/mol) is an essential chemical substance. LPG (Liquefied Petroleum Gas) component with butane, portable heating, barbecue grills.",
+    "highlights": [
+      "Compound Name: Propane",
+      "Molecular Formula: C3H8",
+      "Molar Mass: 44.1 g/mol",
+      "Applications & Properties: LPG (Liquefied Petroleum Gas) component with butane, portable heating, barbecue grills"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Propane"
+  },
+  {
+    "id": "chem-compound-17-butane",
+    "keywords": [
+      "butane formula",
+      "chemical formula of butane",
+      "molar mass of butane",
+      "c4h10 chemical name",
+      "uses of butane"
+    ],
+    "title": "Butane (C4H10) — Molar Mass: 58.12 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Butane (Chemical Formula: C4H10, Molar Mass: 58.12 g/mol) is an essential chemical substance. LPG fuel, cigarette lighter refill fluid, aerosol propellant.",
+    "highlights": [
+      "Compound Name: Butane",
+      "Molecular Formula: C4H10",
+      "Molar Mass: 58.12 g/mol",
+      "Applications & Properties: LPG fuel, cigarette lighter refill fluid, aerosol propellant"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Butane"
+  },
+  {
+    "id": "chem-compound-18-benzene",
+    "keywords": [
+      "benzene formula",
+      "chemical formula of benzene",
+      "molar mass of benzene",
+      "c6h6 chemical name",
+      "uses of benzene"
+    ],
+    "title": "Benzene (C6H6) — Molar Mass: 78.11 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Benzene (Chemical Formula: C6H6, Molar Mass: 78.11 g/mol) is an essential chemical substance. Aromatic hydrocarbon, Kekulé resonance ring with 6 delocalized pi electrons, polystyrene precursor.",
+    "highlights": [
+      "Compound Name: Benzene",
+      "Molecular Formula: C6H6",
+      "Molar Mass: 78.11 g/mol",
+      "Applications & Properties: Aromatic hydrocarbon, Kekulé resonance ring with 6 delocalized pi electrons, polystyrene precursor"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Benzene"
+  },
+  {
+    "id": "chem-compound-19-toluene-methylbenzene",
+    "keywords": [
+      "toluene (methylbenzene) formula",
+      "chemical formula of toluene (methylbenzene)",
+      "molar mass of toluene (methylbenzene)",
+      "c7h8 chemical name",
+      "uses of toluene (methylbenzene)"
+    ],
+    "title": "Toluene (Methylbenzene) (C7H8) — Molar Mass: 92.14 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Toluene (Methylbenzene) (Chemical Formula: C7H8, Molar Mass: 92.14 g/mol) is an essential chemical substance. Industrial solvent for paints, glues, TNT (trinitrotoluene) precursor.",
+    "highlights": [
+      "Compound Name: Toluene (Methylbenzene)",
+      "Molecular Formula: C7H8",
+      "Molar Mass: 92.14 g/mol",
+      "Applications & Properties: Industrial solvent for paints, glues, TNT (trinitrotoluene) precursor"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Toluene_(Methylbenzene)"
+  },
+  {
+    "id": "chem-compound-20-glucose",
+    "keywords": [
+      "glucose formula",
+      "chemical formula of glucose",
+      "molar mass of glucose",
+      "c6h12o6 chemical name",
+      "uses of glucose"
+    ],
+    "title": "Glucose (C6H12O6) — Molar Mass: 180.16 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Glucose (Chemical Formula: C6H12O6, Molar Mass: 180.16 g/mol) is an essential chemical substance. Primary cellular energy source, product of photosynthesis, cellular respiration fuel, blood sugar.",
+    "highlights": [
+      "Compound Name: Glucose",
+      "Molecular Formula: C6H12O6",
+      "Molar Mass: 180.16 g/mol",
+      "Applications & Properties: Primary cellular energy source, product of photosynthesis, cellular respiration fuel, blood sugar"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Glucose"
+  },
+  {
+    "id": "chem-compound-21-sucrose-table-sugar",
+    "keywords": [
+      "sucrose (table sugar) formula",
+      "chemical formula of sucrose (table sugar)",
+      "molar mass of sucrose (table sugar)",
+      "c12h22o11 chemical name",
+      "uses of sucrose (table sugar)"
+    ],
+    "title": "Sucrose (Table Sugar) (C12H22O11) — Molar Mass: 342.3 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Sucrose (Table Sugar) (Chemical Formula: C12H22O11, Molar Mass: 342.3 g/mol) is an essential chemical substance. Disaccharide composed of glucose + fructose linked by glycosidic bond, extracted from sugarcane.",
+    "highlights": [
+      "Compound Name: Sucrose (Table Sugar)",
+      "Molecular Formula: C12H22O11",
+      "Molar Mass: 342.3 g/mol",
+      "Applications & Properties: Disaccharide composed of glucose + fructose linked by glycosidic bond, extracted from sugarcane"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sucrose_(Table_Sugar)"
+  },
+  {
+    "id": "chem-compound-22-fructose-fruit-sugar",
+    "keywords": [
+      "fructose (fruit sugar) formula",
+      "chemical formula of fructose (fruit sugar)",
+      "molar mass of fructose (fruit sugar)",
+      "c6h12o6 chemical name",
+      "uses of fructose (fruit sugar)"
+    ],
+    "title": "Fructose (Fruit Sugar) (C6H12O6) — Molar Mass: 180.16 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Fructose (Fruit Sugar) (Chemical Formula: C6H12O6, Molar Mass: 180.16 g/mol) is an essential chemical substance. Sweetest naturally occurring carbohydrate, high-fructose corn syrup, honey component.",
+    "highlights": [
+      "Compound Name: Fructose (Fruit Sugar)",
+      "Molecular Formula: C6H12O6",
+      "Molar Mass: 180.16 g/mol",
+      "Applications & Properties: Sweetest naturally occurring carbohydrate, high-fructose corn syrup, honey component"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Fructose_(Fruit_Sugar)"
+  },
+  {
+    "id": "chem-compound-23-ascorbic-acid-vitamin-c",
+    "keywords": [
+      "ascorbic acid (vitamin c) formula",
+      "chemical formula of ascorbic acid (vitamin c)",
+      "molar mass of ascorbic acid (vitamin c)",
+      "c6h8o6 chemical name",
+      "uses of ascorbic acid (vitamin c)"
+    ],
+    "title": "Ascorbic Acid (Vitamin C) (C6H8O6) — Molar Mass: 176.12 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Ascorbic Acid (Vitamin C) (Chemical Formula: C6H8O6, Molar Mass: 176.12 g/mol) is an essential chemical substance. Water-soluble antioxidant, collagen synthesis cofactor, prevents scurvy, citrus fruits.",
+    "highlights": [
+      "Compound Name: Ascorbic Acid (Vitamin C)",
+      "Molecular Formula: C6H8O6",
+      "Molar Mass: 176.12 g/mol",
+      "Applications & Properties: Water-soluble antioxidant, collagen synthesis cofactor, prevents scurvy, citrus fruits"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Ascorbic_Acid_(Vitamin_C)"
+  },
+  {
+    "id": "chem-compound-24-acetylsalicylic-acid-aspirin",
+    "keywords": [
+      "acetylsalicylic acid (aspirin) formula",
+      "chemical formula of acetylsalicylic acid (aspirin)",
+      "molar mass of acetylsalicylic acid (aspirin)",
+      "c9h8o4 chemical name",
+      "uses of acetylsalicylic acid (aspirin)"
+    ],
+    "title": "Acetylsalicylic Acid (Aspirin) (C9H8O4) — Molar Mass: 180.16 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Acetylsalicylic Acid (Aspirin) (Chemical Formula: C9H8O4, Molar Mass: 180.16 g/mol) is an essential chemical substance. Analgesic, anti-inflammatory (NSAID), antipyretic, irreversible COX-1/COX-2 inhibitor.",
+    "highlights": [
+      "Compound Name: Acetylsalicylic Acid (Aspirin)",
+      "Molecular Formula: C9H8O4",
+      "Molar Mass: 180.16 g/mol",
+      "Applications & Properties: Analgesic, anti-inflammatory (NSAID), antipyretic, irreversible COX-1/COX-2 inhibitor"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Acetylsalicylic_Acid_(Aspirin)"
+  },
+  {
+    "id": "chem-compound-25-paracetamol-acetaminophen",
+    "keywords": [
+      "paracetamol / acetaminophen formula",
+      "chemical formula of paracetamol / acetaminophen",
+      "molar mass of paracetamol / acetaminophen",
+      "c8h9no2 chemical name",
+      "uses of paracetamol / acetaminophen"
+    ],
+    "title": "Paracetamol / Acetaminophen (C8H9NO2) — Molar Mass: 151.16 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Paracetamol / Acetaminophen (Chemical Formula: C8H9NO2, Molar Mass: 151.16 g/mol) is an essential chemical substance. First-line antipyretic and analgesic, safe in pregnancy, metabolized by liver (CYP2E1).",
+    "highlights": [
+      "Compound Name: Paracetamol / Acetaminophen",
+      "Molecular Formula: C8H9NO2",
+      "Molar Mass: 151.16 g/mol",
+      "Applications & Properties: First-line antipyretic and analgesic, safe in pregnancy, metabolized by liver (CYP2E1)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Paracetamol_/_Acetaminophen"
+  },
+  {
+    "id": "chem-compound-26-ibuprofen",
+    "keywords": [
+      "ibuprofen formula",
+      "chemical formula of ibuprofen",
+      "molar mass of ibuprofen",
+      "c13h18o2 chemical name",
+      "uses of ibuprofen"
+    ],
+    "title": "Ibuprofen (C13H18O2) — Molar Mass: 206.29 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Ibuprofen (Chemical Formula: C13H18O2, Molar Mass: 206.29 g/mol) is an essential chemical substance. NSAID painkiller, reversible COX inhibitor, arthritis, dental pain, fever reducer.",
+    "highlights": [
+      "Compound Name: Ibuprofen",
+      "Molecular Formula: C13H18O2",
+      "Molar Mass: 206.29 g/mol",
+      "Applications & Properties: NSAID painkiller, reversible COX inhibitor, arthritis, dental pain, fever reducer"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Ibuprofen"
+  },
+  {
+    "id": "chem-compound-27-caffeine",
+    "keywords": [
+      "caffeine formula",
+      "chemical formula of caffeine",
+      "molar mass of caffeine",
+      "c8h10n4o2 chemical name",
+      "uses of caffeine"
+    ],
+    "title": "Caffeine (C8H10N4O2) — Molar Mass: 194.19 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Caffeine (Chemical Formula: C8H10N4O2, Molar Mass: 194.19 g/mol) is an essential chemical substance. CNS stimulant, adenosine receptor antagonist, coffee, tea, cocoa, energy drinks.",
+    "highlights": [
+      "Compound Name: Caffeine",
+      "Molecular Formula: C8H10N4O2",
+      "Molar Mass: 194.19 g/mol",
+      "Applications & Properties: CNS stimulant, adenosine receptor antagonist, coffee, tea, cocoa, energy drinks"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Caffeine"
+  },
+  {
+    "id": "chem-compound-28-hydrogen-peroxide",
+    "keywords": [
+      "hydrogen peroxide formula",
+      "chemical formula of hydrogen peroxide",
+      "molar mass of hydrogen peroxide",
+      "h2o2 chemical name",
+      "uses of hydrogen peroxide"
+    ],
+    "title": "Hydrogen Peroxide (H2O2) — Molar Mass: 34.01 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Hydrogen Peroxide (Chemical Formula: H2O2, Molar Mass: 34.01 g/mol) is an essential chemical substance. Oxidizing bleaching agent, 3% antiseptic disinfectant, rocket propellant (high test peroxide).",
+    "highlights": [
+      "Compound Name: Hydrogen Peroxide",
+      "Molecular Formula: H2O2",
+      "Molar Mass: 34.01 g/mol",
+      "Applications & Properties: Oxidizing bleaching agent, 3% antiseptic disinfectant, rocket propellant (high test peroxide)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Hydrogen_Peroxide"
+  },
+  {
+    "id": "chem-compound-29-potassium-permanganate",
+    "keywords": [
+      "potassium permanganate formula",
+      "chemical formula of potassium permanganate",
+      "molar mass of potassium permanganate",
+      "kmno4 chemical name",
+      "uses of potassium permanganate"
+    ],
+    "title": "Potassium Permanganate (KMnO4) — Molar Mass: 158.03 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Potassium Permanganate (Chemical Formula: KMnO4, Molar Mass: 158.03 g/mol) is an essential chemical substance. Deep purple crystalline strong oxidizing agent, Baeyer's reagent for alkenes, water disinfectant.",
+    "highlights": [
+      "Compound Name: Potassium Permanganate",
+      "Molecular Formula: KMnO4",
+      "Molar Mass: 158.03 g/mol",
+      "Applications & Properties: Deep purple crystalline strong oxidizing agent, Baeyer's reagent for alkenes, water disinfectant"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Potassium_Permanganate"
+  },
+  {
+    "id": "chem-compound-30-potassium-dichromate",
+    "keywords": [
+      "potassium dichromate formula",
+      "chemical formula of potassium dichromate",
+      "molar mass of potassium dichromate",
+      "k2cr2o7 chemical name",
+      "uses of potassium dichromate"
+    ],
+    "title": "Potassium Dichromate (K2Cr2O7) — Molar Mass: 294.18 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Potassium Dichromate (Chemical Formula: K2Cr2O7, Molar Mass: 294.18 g/mol) is an essential chemical substance. Bright orange crystalline strong oxidizing agent, breathalyzer alcohol test, leather tanning.",
+    "highlights": [
+      "Compound Name: Potassium Dichromate",
+      "Molecular Formula: K2Cr2O7",
+      "Molar Mass: 294.18 g/mol",
+      "Applications & Properties: Bright orange crystalline strong oxidizing agent, breathalyzer alcohol test, leather tanning"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Potassium_Dichromate"
+  },
+  {
+    "id": "chem-compound-31-silver-nitrate",
+    "keywords": [
+      "silver nitrate formula",
+      "chemical formula of silver nitrate",
+      "molar mass of silver nitrate",
+      "agno3 chemical name",
+      "uses of silver nitrate"
+    ],
+    "title": "Silver Nitrate (AgNO3) — Molar Mass: 169.87 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Silver Nitrate (Chemical Formula: AgNO3, Molar Mass: 169.87 g/mol) is an essential chemical substance. Lunar caustic, indelible voting ink in elections, chemical precipitation test for halides (AgCl/AgBr/AgI).",
+    "highlights": [
+      "Compound Name: Silver Nitrate",
+      "Molecular Formula: AgNO3",
+      "Molar Mass: 169.87 g/mol",
+      "Applications & Properties: Lunar caustic, indelible voting ink in elections, chemical precipitation test for halides (AgCl/AgBr/AgI)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Silver_Nitrate"
+  },
+  {
+    "id": "chem-compound-32-sodium-bicarbonate",
+    "keywords": [
+      "sodium bicarbonate formula",
+      "chemical formula of sodium bicarbonate",
+      "molar mass of sodium bicarbonate",
+      "nahco3 chemical name",
+      "uses of sodium bicarbonate"
+    ],
+    "title": "Sodium Bicarbonate (NaHCO3) — Molar Mass: 84.01 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Sodium Bicarbonate (Chemical Formula: NaHCO3, Molar Mass: 84.01 g/mol) is an essential chemical substance. Baking soda, leavening agent releasing CO2 with acids, mild antacid, fire extinguishers.",
+    "highlights": [
+      "Compound Name: Sodium Bicarbonate",
+      "Molecular Formula: NaHCO3",
+      "Molar Mass: 84.01 g/mol",
+      "Applications & Properties: Baking soda, leavening agent releasing CO2 with acids, mild antacid, fire extinguishers"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sodium_Bicarbonate"
+  },
+  {
+    "id": "chem-compound-33-sodium-carbonate",
+    "keywords": [
+      "sodium carbonate formula",
+      "chemical formula of sodium carbonate",
+      "molar mass of sodium carbonate",
+      "na2co3 chemical name",
+      "uses of sodium carbonate"
+    ],
+    "title": "Sodium Carbonate (Na2CO3) — Molar Mass: 105.99 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Sodium Carbonate (Chemical Formula: Na2CO3, Molar Mass: 105.99 g/mol) is an essential chemical substance. Washing soda (decahydrate), glass manufacturing, detergent builder, water softening.",
+    "highlights": [
+      "Compound Name: Sodium Carbonate",
+      "Molecular Formula: Na2CO3",
+      "Molar Mass: 105.99 g/mol",
+      "Applications & Properties: Washing soda (decahydrate), glass manufacturing, detergent builder, water softening"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sodium_Carbonate"
+  },
+  {
+    "id": "chem-compound-34-magnesium-sulfate-epsom-salt",
+    "keywords": [
+      "magnesium sulfate (epsom salt) formula",
+      "chemical formula of magnesium sulfate (epsom salt)",
+      "molar mass of magnesium sulfate (epsom salt)",
+      "mgso4.7h2o chemical name",
+      "uses of magnesium sulfate (epsom salt)"
+    ],
+    "title": "Magnesium Sulfate (Epsom Salt) (MgSO4.7H2O) — Molar Mass: 246.47 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Magnesium Sulfate (Epsom Salt) (Chemical Formula: MgSO4.7H2O, Molar Mass: 246.47 g/mol) is an essential chemical substance. Epsom salt, bath soak for muscle soreness, agricultural magnesium supplement, eclampsia treatment.",
+    "highlights": [
+      "Compound Name: Magnesium Sulfate (Epsom Salt)",
+      "Molecular Formula: MgSO4.7H2O",
+      "Molar Mass: 246.47 g/mol",
+      "Applications & Properties: Epsom salt, bath soak for muscle soreness, agricultural magnesium supplement, eclampsia treatment"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Magnesium_Sulfate_(Epsom_Salt)"
+  },
+  {
+    "id": "chem-compound-35-potassium-nitrate-saltpeter",
+    "keywords": [
+      "potassium nitrate (saltpeter) formula",
+      "chemical formula of potassium nitrate (saltpeter)",
+      "molar mass of potassium nitrate (saltpeter)",
+      "kno3 chemical name",
+      "uses of potassium nitrate (saltpeter)"
+    ],
+    "title": "Potassium Nitrate (Saltpeter) (KNO3) — Molar Mass: 101.1 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Potassium Nitrate (Saltpeter) (Chemical Formula: KNO3, Molar Mass: 101.1 g/mol) is an essential chemical substance. Gunpowder constituent (75% KNO3 + 15% C + 10% S), fertilizer, meat curing.",
+    "highlights": [
+      "Compound Name: Potassium Nitrate (Saltpeter)",
+      "Molecular Formula: KNO3",
+      "Molar Mass: 101.1 g/mol",
+      "Applications & Properties: Gunpowder constituent (75% KNO3 + 15% C + 10% S), fertilizer, meat curing"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Potassium_Nitrate_(Saltpeter)"
+  },
+  {
+    "id": "chem-compound-36-ammonium-nitrate",
+    "keywords": [
+      "ammonium nitrate formula",
+      "chemical formula of ammonium nitrate",
+      "molar mass of ammonium nitrate",
+      "nh4no3 chemical name",
+      "uses of ammonium nitrate"
+    ],
+    "title": "Ammonium Nitrate (NH4NO3) — Molar Mass: 80.04 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Ammonium Nitrate (Chemical Formula: NH4NO3, Molar Mass: 80.04 g/mol) is an essential chemical substance. High-nitrogen fertilizer, industrial mining explosive component (ANFO).",
+    "highlights": [
+      "Compound Name: Ammonium Nitrate",
+      "Molecular Formula: NH4NO3",
+      "Molar Mass: 80.04 g/mol",
+      "Applications & Properties: High-nitrogen fertilizer, industrial mining explosive component (ANFO)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Ammonium_Nitrate"
+  },
+  {
+    "id": "chem-compound-37-carbon-dioxide",
+    "keywords": [
+      "carbon dioxide formula",
+      "chemical formula of carbon dioxide",
+      "molar mass of carbon dioxide",
+      "co2 chemical name",
+      "uses of carbon dioxide"
+    ],
+    "title": "Carbon Dioxide (CO2) — Molar Mass: 44.01 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Carbon Dioxide (Chemical Formula: CO2, Molar Mass: 44.01 g/mol) is an essential chemical substance. Greenhouse gas (~420 ppm), dry ice (solid at -78.5°C), fire extinguisher, carbonated drinks.",
+    "highlights": [
+      "Compound Name: Carbon Dioxide",
+      "Molecular Formula: CO2",
+      "Molar Mass: 44.01 g/mol",
+      "Applications & Properties: Greenhouse gas (~420 ppm), dry ice (solid at -78.5°C), fire extinguisher, carbonated drinks"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Carbon_Dioxide"
+  },
+  {
+    "id": "chem-compound-38-carbon-monoxide",
+    "keywords": [
+      "carbon monoxide formula",
+      "chemical formula of carbon monoxide",
+      "molar mass of carbon monoxide",
+      "co chemical name",
+      "uses of carbon monoxide"
+    ],
+    "title": "Carbon Monoxide (CO) — Molar Mass: 28.01 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Carbon Monoxide (Chemical Formula: CO, Molar Mass: 28.01 g/mol) is an essential chemical substance. Colorless, odorless toxic gas, binds hemoglobin with 200x higher affinity than oxygen forming carboxyhemoglobin.",
+    "highlights": [
+      "Compound Name: Carbon Monoxide",
+      "Molecular Formula: CO",
+      "Molar Mass: 28.01 g/mol",
+      "Applications & Properties: Colorless, odorless toxic gas, binds hemoglobin with 200x higher affinity than oxygen forming carboxyhemoglobin"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Carbon_Monoxide"
+  },
+  {
+    "id": "chem-compound-39-nitrous-oxide-laughing-gas",
+    "keywords": [
+      "nitrous oxide (laughing gas) formula",
+      "chemical formula of nitrous oxide (laughing gas)",
+      "molar mass of nitrous oxide (laughing gas)",
+      "n2o chemical name",
+      "uses of nitrous oxide (laughing gas)"
+    ],
+    "title": "Nitrous Oxide (Laughing Gas) (N2O) — Molar Mass: 44.01 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Nitrous Oxide (Laughing Gas) (Chemical Formula: N2O, Molar Mass: 44.01 g/mol) is an essential chemical substance. Inhalation anesthetic, dental analgesia, rocket oxidizer, automotive engine nitrous boost.",
+    "highlights": [
+      "Compound Name: Nitrous Oxide (Laughing Gas)",
+      "Molecular Formula: N2O",
+      "Molar Mass: 44.01 g/mol",
+      "Applications & Properties: Inhalation anesthetic, dental analgesia, rocket oxidizer, automotive engine nitrous boost"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Nitrous_Oxide_(Laughing_Gas)"
+  },
+  {
+    "id": "chem-compound-40-ozone",
+    "keywords": [
+      "ozone formula",
+      "chemical formula of ozone",
+      "molar mass of ozone",
+      "o3 chemical name",
+      "uses of ozone"
+    ],
+    "title": "Ozone (O3) — Molar Mass: 48 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Ozone (Chemical Formula: O3, Molar Mass: 48 g/mol) is an essential chemical substance. Triatomic oxygen allotrope, stratospheric UV-protective ozone layer, powerful water purification oxidant.",
+    "highlights": [
+      "Compound Name: Ozone",
+      "Molecular Formula: O3",
+      "Molar Mass: 48 g/mol",
+      "Applications & Properties: Triatomic oxygen allotrope, stratospheric UV-protective ozone layer, powerful water purification oxidant"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Ozone"
+  },
+  {
+    "id": "chem-compound-41-sulfur-dioxide",
+    "keywords": [
+      "sulfur dioxide formula",
+      "chemical formula of sulfur dioxide",
+      "molar mass of sulfur dioxide",
+      "so2 chemical name",
+      "uses of sulfur dioxide"
+    ],
+    "title": "Sulfur Dioxide (SO2) — Molar Mass: 64.07 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Sulfur Dioxide (Chemical Formula: SO2, Molar Mass: 64.07 g/mol) is an essential chemical substance. Pungent fuming gas from coal combustion, acid rain precursor (forming H2SO3/H2SO4), wine preservative (E220).",
+    "highlights": [
+      "Compound Name: Sulfur Dioxide",
+      "Molecular Formula: SO2",
+      "Molar Mass: 64.07 g/mol",
+      "Applications & Properties: Pungent fuming gas from coal combustion, acid rain precursor (forming H2SO3/H2SO4), wine preservative (E220)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sulfur_Dioxide"
+  },
+  {
+    "id": "chem-compound-42-titanium-dioxide",
+    "keywords": [
+      "titanium dioxide formula",
+      "chemical formula of titanium dioxide",
+      "molar mass of titanium dioxide",
+      "tio2 chemical name",
+      "uses of titanium dioxide"
+    ],
+    "title": "Titanium Dioxide (TiO2) — Molar Mass: 79.87 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Titanium Dioxide (Chemical Formula: TiO2, Molar Mass: 79.87 g/mol) is an essential chemical substance. Bright white non-toxic pigment, sunscreen physical UV blocker, paints, food additive (E171).",
+    "highlights": [
+      "Compound Name: Titanium Dioxide",
+      "Molecular Formula: TiO2",
+      "Molar Mass: 79.87 g/mol",
+      "Applications & Properties: Bright white non-toxic pigment, sunscreen physical UV blocker, paints, food additive (E171)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Titanium_Dioxide"
+  },
+  {
+    "id": "chem-compound-43-silicon-dioxide-silica-quartz",
+    "keywords": [
+      "silicon dioxide (silica / quartz) formula",
+      "chemical formula of silicon dioxide (silica / quartz)",
+      "molar mass of silicon dioxide (silica / quartz)",
+      "sio2 chemical name",
+      "uses of silicon dioxide (silica / quartz)"
+    ],
+    "title": "Silicon Dioxide (Silica / Quartz) (SiO2) — Molar Mass: 60.08 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Silicon Dioxide (Silica / Quartz) (Chemical Formula: SiO2, Molar Mass: 60.08 g/mol) is an essential chemical substance. Quartz crystal, sand, glass manufacturing, semiconductor gate dielectric, silica gel desiccant.",
+    "highlights": [
+      "Compound Name: Silicon Dioxide (Silica / Quartz)",
+      "Molecular Formula: SiO2",
+      "Molar Mass: 60.08 g/mol",
+      "Applications & Properties: Quartz crystal, sand, glass manufacturing, semiconductor gate dielectric, silica gel desiccant"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Silicon_Dioxide_(Silica_/_Quartz)"
+  },
+  {
+    "id": "chem-compound-44-aluminium-oxide-alumina",
+    "keywords": [
+      "aluminium oxide (alumina) formula",
+      "chemical formula of aluminium oxide (alumina)",
+      "molar mass of aluminium oxide (alumina)",
+      "al2o3 chemical name",
+      "uses of aluminium oxide (alumina)"
+    ],
+    "title": "Aluminium Oxide (Alumina) (Al2O3) — Molar Mass: 101.96 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Aluminium Oxide (Alumina) (Chemical Formula: Al2O3, Molar Mass: 101.96 g/mol) is an essential chemical substance. Bauxite mineral product, corundum gemstone (ruby, sapphire), industrial ceramic, Hall-Héroult smelting.",
+    "highlights": [
+      "Compound Name: Aluminium Oxide (Alumina)",
+      "Molecular Formula: Al2O3",
+      "Molar Mass: 101.96 g/mol",
+      "Applications & Properties: Bauxite mineral product, corundum gemstone (ruby, sapphire), industrial ceramic, Hall-Héroult smelting"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Aluminium_Oxide_(Alumina)"
+  },
+  {
+    "id": "chem-compound-45-bleaching-powder",
+    "keywords": [
+      "bleaching powder formula",
+      "chemical formula of bleaching powder",
+      "molar mass of bleaching powder",
+      "caocl2 chemical name",
+      "uses of bleaching powder"
+    ],
+    "title": "Bleaching Powder (CaOCl2) — Molar Mass: 126.98 g/mol | Properties & Uses",
+    "category": "Chemistry",
+    "answer": "Bleaching Powder (Chemical Formula: CaOCl2, Molar Mass: 126.98 g/mol) is an essential chemical substance. Calcium hypochlorite, municipal water disinfectant, swimming pools, bleaching cotton and linen.",
+    "highlights": [
+      "Compound Name: Bleaching Powder",
+      "Molecular Formula: CaOCl2",
+      "Molar Mass: 126.98 g/mol",
+      "Applications & Properties: Calcium hypochlorite, municipal water disinfectant, swimming pools, bleaching cotton and linen"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Bleaching_Powder"
+  }
+]

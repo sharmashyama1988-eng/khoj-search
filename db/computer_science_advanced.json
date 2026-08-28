@@ -1,0 +1,810 @@
+[
+  {
+    "id": "cs-data-structures-master",
+    "keywords": [
+      "data structures overview",
+      "stack queue linked list hashmap binary tree",
+      "heap vs bst vs trie",
+      "data structures time complexities"
+    ],
+    "title": "Fundamental Data Structures Reference (Array, List, Tree, Graph, Heap, Trie)",
+    "category": "Computer Science",
+    "answer": "Core data structures organize, store, and manage data efficiently: Linear structures include Arrays (contiguous memory, O(1) index access), Linked Lists (node-pointer chains), Stacks (LIFO), and Queues (FIFO). Non-linear structures include Hash Tables (O(1) average lookup), Binary Search Trees (O(log n) search), Binary Heaps (priority queues), Tries (prefix trees), and Graphs (nodes and edges).",
+    "highlights": [
+      "Stack (LIFO — Last In First Out): Push/Pop O(1); used in function call stacks, undo mechanisms, and expression parsing",
+      "Queue (FIFO — First In First Out): Enqueue/Dequeue O(1); used in BFS traversal, task schedulers, and print spooling",
+      "Hash Map: Key-value mapping via hash function; O(1) average lookup/insert/delete; handles collisions via Chaining (linked lists) or Open Addressing (linear/quadratic probing)",
+      "Binary Search Tree (BST): Left subtree < Node < Right subtree; O(log n) balanced search, O(n) degenerate",
+      "Binary Heap: Complete binary tree satisfying heap property (Max-Heap: parent ≥ children; Min-Heap: parent ≤ children); extract root in O(log n), build heap in O(n)",
+      "Trie (Prefix Tree): Tree structure storing string characters along edges; O(L) search/insert where L is string length; used in autocomplete and dictionary lookups"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Data_structure"
+  },
+  {
+    "id": "cs-sorting-algorithms",
+    "keywords": [
+      "sorting algorithms time complexity",
+      "merge sort vs quicksort",
+      "bubble selection insertion heap sort",
+      "fastest sorting algorithm"
+    ],
+    "title": "Sorting Algorithms — Mechanisms & Time Complexities",
+    "category": "Computer Science",
+    "answer": "Sorting algorithms arrange elements in a specific order: Quick Sort is an in-place divide-and-conquer algorithm with an average time complexity of O(n log n) (worst-case O(n²)). Merge Sort guarantees O(n log n) in all cases and is stable (requiring O(n) auxiliary memory). Heap Sort runs in O(n log n) time in-place using a binary heap.",
+    "highlights": [
+      "Merge Sort: Divide-and-conquer; Time: O(n log n) Best/Avg/Worst; Space: O(n); Stable; ideal for linked lists and external sorting",
+      "Quick Sort: Partitioning around a pivot; Time: O(n log n) Best/Avg, O(n²) Worst (when pivot is unbalanced); Space: O(log n) stack; Unstable; cache-friendly",
+      "Heap Sort: Builds max/min heap; Time: O(n log n) Best/Avg/Worst; Space: O(1) in-place; Unstable",
+      "Insertion Sort: Builds sorted array one element at a time; Time: O(n) Best (already sorted), O(n²) Worst; Space: O(1); Stable; efficient for small arrays (n < 20)",
+      "Comparison Sort Lower Bound: Mathematically proven that no comparison-based sort can exceed O(n log n) lower bound; Non-comparison sorts (Counting Sort, Radix Sort) achieve O(n + k) linear time"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sorting_algorithm"
+  },
+  {
+    "id": "cs-graph-algorithms",
+    "keywords": [
+      "graph algorithms bfs dfs",
+      "dijkstra's shortest path algorithm",
+      "bellman ford floyd warshall",
+      "kruskal prim mst"
+    ],
+    "title": "Graph Traversal, Shortest Path & Minimum Spanning Tree Algorithms",
+    "category": "Computer Science",
+    "answer": "Graph algorithms solve pathfinding and connectivity problems: BFS explores level-by-level using a queue (finding shortest paths in unweighted graphs in O(V + E)). DFS explores deep branches using a stack/recursion. Dijkstra's Algorithm finds single-source shortest paths in non-negative weighted graphs in O((V + E) log V) using a priority queue. Bellman-Ford (O(VE)) handles negative edge weights and detects negative cycles.",
+    "highlights": [
+      "BFS (Breadth-First Search): Time: O(V + E); Space: O(V); Uses FIFO queue; finds shortest path on unweighted graphs and detects connected components",
+      "DFS (Depth-First Search): Time: O(V + E); Space: O(V); Uses LIFO stack/recursion; used for topological sorting, cycle detection, and maze solving",
+      "Dijkstra's Algorithm: Greedy single-source shortest path for non-negative edge weights; Time: O((V + E) log V) with min-priority heap",
+      "Bellman-Ford Algorithm: Dynamic programming single-source shortest path; Time: O(V · E); detects negative weight cycles by relaxing all edges (V - 1) times",
+      "Floyd-Warshall Algorithm: All-pairs shortest path dynamic programming; Time: O(V³); Space: O(V²)",
+      "Minimum Spanning Tree (MST): Kruskal's Algorithm (Greedy, sorts edges, uses Disjoint Set Union / DSU in O(E log E)) and Prim's Algorithm (Grows tree from starting vertex in O(E log V))"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Graph_algorithm"
+  },
+  {
+    "id": "cs-operating-systems-deadlock",
+    "keywords": [
+      "deadlock conditions operating systems",
+      "coffman conditions deadlock",
+      "banker's algorithm",
+      "process vs thread os"
+    ],
+    "title": "Operating Systems: Process vs Thread, Deadlocks & Scheduling",
+    "category": "Computer Science",
+    "answer": "A process is an executing program with its own isolated address space, while a thread is a lightweight execution unit within a process sharing code, data, and heap. A Deadlock occurs when processes are unable to proceed because each holds a resource while waiting for another held resource, requiring four simultaneous Coffman conditions: Mutual Exclusion, Hold and Wait, No Preemption, and Circular Wait.",
+    "highlights": [
+      "Process vs Thread: Process has isolated virtual memory (heavyweight creation/context switch); Threads share memory address space and open file descriptors (lightweight switch, requires synchronization locks)",
+      "Four Coffman Deadlock Conditions: 1) Mutual Exclusion (non-shareable resources), 2) Hold and Wait (holding resources while requesting more), 3) No Preemption (resources cannot be forcibly taken), 4) Circular Wait (closed loop of waiting processes)",
+      "Deadlock Handling: Prevention (eliminating at least 1 Coffman condition), Avoidance (Banker's Algorithm checking for a 'Safe State'), Detection & Recovery (resource preemption or process termination)",
+      "CPU Scheduling Algorithms: FCFS (First-Come-First-Served, subject to Convoy effect), SJF / SRTF (Shortest Job First / Remaining Time First — provably optimal average waiting time), Round Robin (time slicing with time quantum q), Priority Scheduling"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Deadlock_(computer_science)"
+  },
+  {
+    "id": "cs-virtual-memory-paging",
+    "keywords": [
+      "virtual memory paging segmentation",
+      "page fault tlb translation lookaside buffer",
+      "lru page replacement algorithm",
+      "thrashing os memory"
+    ],
+    "title": "Virtual Memory, Paging, and Page Faults",
+    "category": "Computer Science",
+    "answer": "Virtual Memory maps contiguous virtual address spaces to non-contiguous physical RAM frames using Page Tables and the CPU's Memory Management Unit (MMU). A Page Fault occurs when a referenced page is not in RAM (Present bit = 0), prompting the OS to fetch it from disk swap. The TLB (Translation Lookaside Buffer) caches virtual-to-physical address mappings for hardware-speed translation.",
+    "highlights": [
+      "Standard page size: 4 KB (huge pages: 2 MB or 1 GB)",
+      "Multi-level page tables (e.g. 4-level paging in x86-64) avoid allocating millions of empty page table entries",
+      "Page replacement algorithms: Optimal (Bélády's), LRU (Least Recently Used), FIFO, Clock (Second Chance)",
+      "Thrashing: High paging activity causing CPU to spend more time swapping pages than executing instructions"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Virtual_memory"
+  },
+  {
+    "id": "cs-database-normalization-bcnf",
+    "keywords": [
+      "database normalization",
+      "1nf 2nf 3nf bcnf",
+      "boyce codd normal form",
+      "functional dependency dbms",
+      "database indexing b-tree"
+    ],
+    "title": "Database Normalization (1NF, 2NF, 3NF, BCNF) & B-Tree Indexing",
+    "category": "Computer Science",
+    "answer": "Database normalization is the systematic process of organizing relational schemas to eliminate data redundancy and prevent insertion, update, and deletion anomalies. Forms progress from 1NF (atomic attributes) → 2NF (no partial functional dependency on composite keys) → 3NF (no transitive dependencies) → BCNF (for every non-trivial dependency X → Y, X must be a super key).",
+    "highlights": [
+      "1NF (First Normal Form): All column values must be atomic (indivisible single values); no repeating groups or arrays",
+      "2NF (Second Normal Form): Table is in 1NF and every non-prime attribute is fully functionally dependent on the entire primary key (eliminates partial dependency)",
+      "3NF (Third Normal Form): Table is in 2NF and no non-prime attribute is transitively dependent on the primary key (X → Y and Y → Z eliminated)",
+      "BCNF (Boyce-Codd Normal Form / 3.5NF): Stricter version of 3NF where for every functional dependency X → Y, the determinant X must be a candidate super key",
+      "B+ Tree Indexing: Self-balancing multi-way search tree where all data/pointers reside in sorted leaf nodes linked as a doubly-linked list (optimizing both point queries in O(log n) and range scans)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Database_normalization"
+  },
+  {
+    "id": "cs-networking-osi-tcpip",
+    "keywords": [
+      "osi 7 layer model",
+      "tcp ip protocol stack",
+      "osi layers functions protocols",
+      "dns http https tcp udp",
+      "networking layers"
+    ],
+    "title": "Computer Networking: The 7-Layer OSI Model & TCP/IP Stack",
+    "category": "Computer Science",
+    "answer": "The OSI (Open Systems Interconnection) reference model standardizes network communication into 7 distinct abstraction layers: 7) Application (HTTP, DNS, SMTP, SSH), 6) Presentation (TLS/SSL, JSON, JPEG), 5) Session (RPC, Sockets), 4) Transport (TCP, UDP), 3) Network (IP, ICMP, Routers), 2) Data Link (Ethernet, MAC, Switches), and 1) Physical (Bits, Cables, Hubs).",
+    "highlights": [
+      "Layer 7 - Application: User interface & network services (HTTP/HTTPS, DNS, FTP, SMTP, SSH)",
+      "Layer 4 - Transport: End-to-end communication, segmentation, error recovery, and port addressing (TCP for reliable delivery via 3-way handshake; UDP for low-latency datagrams)",
+      "Layer 3 - Network: Logical addressing and packet routing across networks (IPv4, IPv6, ICMP, OSPF, BGP; Device: Routers)",
+      "Layer 2 - Data Link: Node-to-node frame delivery, physical MAC addressing, and flow control (Ethernet, Wi-Fi 802.11, ARP; Device: Switches)",
+      "TCP 3-Way Handshake: 1) Client sends SYN, 2) Server responds with SYN-ACK, 3) Client sends ACK (Connection established)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/OSI_model"
+  },
+  {
+    "id": "cs-b-tree-b-plus-tree",
+    "keywords": [
+      "b tree vs b+ tree",
+      "database indexing data structure",
+      "b tree search insert complexity",
+      "b+ tree range queries"
+    ],
+    "title": "B-Trees and B+ Trees in Databases",
+    "category": "Computer Science",
+    "answer": "B-Trees are self-balancing search trees designed for block-based storage with order m where internal nodes store both keys and data records. B+ Trees store all actual record pointers strictly in leaf nodes connected as a doubly linked list, making sequential range scans O(k) and tree traversal faster with higher fanout.",
+    "highlights": [
+      "Search, insert, delete time complexity: O(log_m N) where m is tree order (fanout)",
+      "B+ Trees have higher fanout because internal nodes only store keys, fitting more pointers per disk block",
+      "B+ Trees are standard indexing data structure in relational databases (PostgreSQL, MySQL InnoDB, SQLite)",
+      "LSM (Log-Structured Merge) Trees are used in write-heavy NoSQL databases (Cassandra, RocksDB)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/B%2B_tree"
+  },
+  {
+    "id": "cs-cap-theorem",
+    "keywords": [
+      "cap theorem explained",
+      "consistency availability partition tolerance",
+      "pacelc theorem distributed systems"
+    ],
+    "title": "CAP Theorem in Distributed Systems",
+    "category": "Computer Science",
+    "answer": "Eric Brewer's CAP Theorem proves that any distributed data store can simultaneously provide at most two out of three guarantees: Consistency (every read receives most recent write), Availability (every non-failing node returns non-error response), and Partition Tolerance (system functions despite arbitrary network message loss).",
+    "highlights": [
+      "Network partitions are inevitable in real distributed systems, so systems must choose between CP or AP",
+      "CP Systems (Consistent + Partition Tolerant): MongoDB, HBase, Redis, Spanner (sacrifices availability during partition)",
+      "AP Systems (Available + Partition Tolerant): Cassandra, CouchDB, DynamoDB (sacrifices strong consistency for eventual consistency)",
+      "PACELC Theorem extends CAP: If Partition (P), choose Availability (A) or Consistency (C); Else (E), choose Latency (L) or Consistency (C)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/CAP_theorem"
+  },
+  {
+    "id": "cs-tcp-vs-udp",
+    "keywords": [
+      "tcp vs udp differences",
+      "transmission control protocol user datagram protocol",
+      "tcp 3-way handshake syn ack",
+      "udp connectionless transport"
+    ],
+    "title": "TCP vs UDP — Transport Layer Protocols",
+    "category": "Computer Science",
+    "answer": "TCP (Transmission Control Protocol) is connection-oriented, reliable, byte-stream protocol guaranteeing ordered, error-checked packet delivery using 3-way handshake (SYN, SYN-ACK, ACK), flow control (sliding window), and congestion control (AIMD/CUBIC). UDP (User Datagram Protocol) is lightweight, connectionless, unreliable datagram protocol with minimal header overhead (8 bytes vs 20 bytes) optimized for real-time latency (video streaming, gaming, VoIP, DNS).",
+    "highlights": [
+      "TCP 3-Way Handshake: Client sends SYN → Server replies SYN-ACK → Client sends ACK",
+      "TCP Teardown: 4-way handshake using FIN and ACK flags with TIME_WAIT state",
+      "TCP features: Sequence numbers, cumulative ACKs, retransmission timeout (RTO), Congestion Window (cwnd)",
+      "UDP: No connection setup, no retransmissions, no order guarantees; ideal for DNS, DHCP, WebRTC, QUIC/HTTP/3"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
+  },
+  {
+    "id": "cs-http-versions",
+    "keywords": [
+      "http 1.1 vs http 2 vs http 3",
+      "http2 multiplexing binary framing",
+      "http3 quic udp protocol",
+      "head of line blocking http"
+    ],
+    "title": "Evolution of HTTP (HTTP/1.1, HTTP/2, HTTP/3)",
+    "category": "Computer Science",
+    "answer": "HTTP/1.1 introduced persistent connections and chunked transfers but suffered from Head-of-Line (HoL) blocking at application layer. HTTP/2 introduced binary framing, full stream multiplexing over a single TCP connection, header compression (HPACK), and server push. HTTP/3 replaced TCP with QUIC (UDP-based) to completely eliminate transport-layer HoL blocking and enable zero-RTT connection resumption.",
+    "highlights": [
+      "HTTP/1.1 (1997): Text-based, keep-alive connections, one request-response per socket at a time",
+      "HTTP/2 (2015): Binary format, multiplexed streams on single TCP socket, HPACK header compression",
+      "HTTP/3 (2022): Built on QUIC over UDP, built-in TLS 1.3 encryption, connection migration across IP changes",
+      "Eliminates TCP head-of-line blocking when packets drop on lossy mobile networks"
+    ],
+    "url": "https://en.wikipedia.org/wiki/HTTP/3"
+  },
+  {
+    "id": "cs-concurrency-primitives",
+    "keywords": [
+      "mutex vs semaphore difference",
+      "concurrency primitives deadlock race condition",
+      "counting vs binary semaphore",
+      "spinlocks atomic operations"
+    ],
+    "title": "Concurrency Primitives — Mutex, Semaphore, and Deadlock",
+    "category": "Computer Science",
+    "answer": "A Mutex (Mutual Exclusion) is a locking mechanism owned by a single thread at a time allowing access to a critical section. A Semaphore is a signaling mechanism with an integer counter (Counting Semaphore) allowing up to N concurrent threads. Deadlocks occur when 4 Coffman conditions hold: Mutual Exclusion, Hold & Wait, No Preemption, and Circular Wait.",
+    "highlights": [
+      "Mutex has ownership: only the thread that locked the mutex can unlock it",
+      "Binary Semaphore (0 or 1) can be signaled/unlocked by any thread (signaling primitive)",
+      "Race condition: Undesired situation where program output depends on non-deterministic thread execution timing",
+      "Prevention of Deadlock: Impose strict resource hierarchy/ordering to break Circular Wait condition"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Mutual_exclusion"
+  },
+  {
+    "id": "cs-trie-prefix-tree",
+    "keywords": [
+      "trie data structure prefix tree",
+      "trie insert search autocomplete complexity",
+      "radix tree patricia tree",
+      "trie leetcode"
+    ],
+    "title": "Trie (Prefix Tree) — Autocomplete & Prefix Matching",
+    "category": "Computer Science",
+    "answer": "A Trie (Prefix Tree) is a specialized multi-way tree data structure used for storing strings where each node represents a character. It provides optimal O(L) time complexity for insert, search, and prefix matching (where L is the key length), completely independent of the total number of stored keys N.",
+    "highlights": [
+      "Time Complexity: Insert O(L), Search O(L), Prefix Search O(L) where L is string length",
+      "Space Complexity: O(ALPHABET_SIZE × L × N) where ALPHABET_SIZE is typically 26 (lowercase English)",
+      "Primary Applications: Search engine autocomplete, spell checkers, IP routing longest prefix match (CIDR), dictionary lookups",
+      "Compressed Trie (Radix Tree / Patricia Tree) merges single-child nodes to reduce memory footprint drastically"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Trie"
+  },
+  {
+    "id": "cs-segment-tree-fenwick-bit",
+    "keywords": [
+      "segment tree vs fenwick tree binary indexed tree",
+      "range query point update complexity",
+      "segment tree lazy propagation",
+      "range minimum query rmq"
+    ],
+    "title": "Segment Tree and Fenwick Tree (Binary Indexed Tree)",
+    "category": "Computer Science",
+    "answer": "Segment Trees and Fenwick Trees (BIT) are data structures designed for fast range queries (sum, minimum, maximum, GCD) and point/range updates in O(log N) time on arrays. Segment Trees support arbitrary associative functions with Lazy Propagation for O(log N) range updates, while Fenwick Trees use bitwise least significant bit (LSB = x & -x) operations with minimal O(N) space.",
+    "highlights": [
+      "Segment Tree: Build O(N), Range Query O(log N), Point Update O(log N), Range Update with Lazy Propagation O(log N)",
+      "Fenwick Tree (BIT): Build O(N), Prefix Sum Query O(log N), Point Update O(log N); space is strictly 1× array size",
+      "Fenwick Tree index step: Parent to child uses `i += (i & -i)` for update, and `i -= (i & -i)` for query",
+      "Essential for competitive programming, computational geometry, spatial data indexing, and dynamic statistical rankings"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Segment_tree"
+  },
+  {
+    "id": "cs-disjoint-set-union-dsu",
+    "keywords": [
+      "disjoint set union dsu union find",
+      "path compression union by rank complexity",
+      "inverse ackermann function alpha n",
+      "kruskal algorithm dsu"
+    ],
+    "title": "Disjoint Set Union (DSU / Union-Find) Data Structure",
+    "category": "Computer Science",
+    "answer": "Disjoint Set Union (Union-Find) maintains a collection of disjoint dynamic sets supporting two primary operations: `find(x)` (identifies set representative) and `union(x, y)` (merges two sets). Utilizing Path Compression and Union by Rank/Size, the amortized time complexity per operation is nearly constant O(α(N)), where α is the extremely slow-growing Inverse Ackermann function (α(10⁸⁰) < 5).",
+    "highlights": [
+      "Amortized Time Complexity: O(α(N)) ≈ O(1) per operation with Path Compression + Union by Rank",
+      "Path Compression: Points every visited node directly to the root during `find(x)` traversal: `parent[x] = find(parent[x])`",
+      "Union by Rank/Size: Attaches the shallower/smaller tree under the root of the deeper/larger tree",
+      "Core use cases: Kruskal's Minimum Spanning Tree algorithm, cycle detection in undirected graphs, dynamic connected components"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Disjoint-set_data_structure"
+  },
+  {
+    "id": "cs-dynamic-programming-patterns",
+    "keywords": [
+      "dynamic programming patterns leetcode",
+      "0 1 knapsack longest common subsequence lcs",
+      "kadane algorithm maximum subarray sum",
+      "memoization vs tabulation"
+    ],
+    "title": "Core Dynamic Programming (DP) Patterns & Algorithms",
+    "category": "Computer Science",
+    "answer": "Dynamic Programming solves complex problems by breaking them into overlapping subproblems with optimal substructure using either Top-Down Memoization (recursion + cache) or Bottom-Up Tabulation (iterative table building). Core patterns include: (1) 0/1 Knapsack, (2) Longest Common Subsequence (LCS), (3) Longest Increasing Subsequence (LIS in O(N log N) via patience sorting), and (4) Kadane's Algorithm for Maximum Subarray Sum in O(N) time.",
+    "highlights": [
+      "Kadane's Algorithm (Max Subarray Sum): `current_max = max(arr[i], current_max + arr[i])` in O(N) time and O(1) space",
+      "0/1 Knapsack: DP table `dp[i][w] = max(dp[i-1][w], val[i-1] + dp[i-1][w - wt[i-1]])` in O(N × W) time",
+      "Longest Common Subsequence (LCS): `if (s1[i]==s2[j]) dp[i][j] = 1 + dp[i-1][j-1]; else max(dp[i-1][j], dp[i][j-1])`",
+      "Longest Increasing Subsequence (LIS): Solvable in O(N log N) time using binary search (std::lower_bound) over tails array"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Dynamic_programming"
+  },
+  {
+    "id": "cs-system-design-caching-rate-limiting",
+    "keywords": [
+      "system design caching strategies",
+      "write through write back cache aside",
+      "rate limiting token bucket leaky bucket",
+      "consistent hashing distributed cache"
+    ],
+    "title": "System Design — Caching Strategies & Rate Limiting Algorithms",
+    "category": "Computer Science",
+    "answer": "In high-scale distributed systems, Caching reduces database load and latency across three patterns: (1) Cache-Aside (App queries cache first, reads DB on miss and writes to cache), (2) Write-Through (App writes to cache, cache writes to DB synchronously), (3) Write-Back (App writes to cache, cache flushes asynchronously to DB). Rate Limiting prevents abuse using Token Bucket (allows bursts), Leaky Bucket (smooth constant outflow), Fixed Window, or Sliding Window Log.",
+    "highlights": [
+      "Cache-Aside: Most popular general pattern; resilient to cache node failures",
+      "Write-Through: High data consistency; higher write latency since DB write must complete",
+      "Write-Back (Write-Behind): Ultra-low write latency; risk of data loss if cache crashes before flushing to DB",
+      "Token Bucket Algorithm: Tokens added at constant rate; request consumes token; supports controlled bursts (used in AWS API Gateway, NGINX)",
+      "Consistent Hashing: Maps keys and nodes to a circular hash ring (0 to 2³²-1) with virtual nodes to minimize remapping during node scale out/in"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Cache_(computing)"
+  },
+  {
+    "id": "cs-nextjs-rendering-ssr-ssg-isr",
+    "keywords": [
+      "nextjs rendering methods ssr ssg isr rsc",
+      "server side rendering vs static site generation",
+      "incremental static regeneration nextjs",
+      "react server components rsc"
+    ],
+    "title": "Next.js Rendering Modes — SSR, SSG, ISR, and React Server Components",
+    "category": "Computer Science",
+    "answer": "Next.js supports four rendering paradigms: (1) Static Site Generation (SSG: HTML generated at build time via `generateStaticParams`), (2) Server-Side Rendering (SSR: HTML rendered per request on Edge/Node runtime), (3) Incremental Static Regeneration (ISR: revalidates static pages in background on-demand via `revalidate`), and (4) React Server Components (RSC in App Router: components render strictly on server with zero bundle weight on client).",
+    "highlights": [
+      "Static Site Generation (SSG): Fastest TTFB (Time to First Byte); served instantly from global CDN edges",
+      "Server-Side Rendering (SSR): Ideal for real-time user-personalized data; higher server compute overhead per request",
+      "Incremental Static Regeneration (ISR): Combines speed of SSG with freshness of SSR using stale-while-revalidate caching",
+      "React Server Components (RSC): Default in Next.js App Router; fetch data directly on server without sending JS dependencies to client browser",
+      "Client Components (`\"use client\"`): Required only for browser interactivity (state `useState`, effects `useEffect`, event listeners `onClick`)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Next.js"
+  },
+  {
+    "id": "cs-dsa-1-two-pointers-technique",
+    "keywords": [
+      "two pointers technique leetcode",
+      "how does two pointers technique work",
+      "two pointers technique time complexity",
+      "two pointers technique algorithm explanation",
+      "dsa two pointers technique"
+    ],
+    "title": "Two Pointers Technique — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "Two Pointers Technique: Uses two index pointers moving towards each other or at different speeds to solve array/string problems in O(N) time and O(1) space. E.g. Container With Most Water, 3Sum, Valid Palindrome.",
+    "highlights": [
+      "Algorithm / Pattern: Two Pointers Technique",
+      "Core Principle: Uses two index pointers moving towards each other or at different speeds to solve array/string problems in O(N) time and O(1) space. E.g. Container With Most Water, 3Sum, Valid Palindrome.",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-2-sliding-window-pattern",
+    "keywords": [
+      "sliding window pattern leetcode",
+      "how does sliding window pattern work",
+      "sliding window pattern time complexity",
+      "sliding window pattern algorithm explanation",
+      "dsa sliding window pattern"
+    ],
+    "title": "Sliding Window Pattern — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "Sliding Window Pattern: Maintains a dynamic or fixed-size window subarray over contiguous elements, expanding right pointer and contracting left pointer in O(N) time. E.g. Longest Substring Without Repeating Characters, Minimum Window Substring.",
+    "highlights": [
+      "Algorithm / Pattern: Sliding Window Pattern",
+      "Core Principle: Maintains a dynamic or fixed-size window subarray over contiguous elements, expanding right pointer and contracting left pointer in O(N) time. E.g. Longest Substring Without Repeating Characters, Minimum Window Substring.",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-3-fast-and-slow-pointers-floyds-tortoise-and-hare",
+    "keywords": [
+      "fast and slow pointers (floyd's tortoise and hare) leetcode",
+      "how does fast and slow pointers (floyd's tortoise and hare) work",
+      "fast and slow pointers (floyd's tortoise and hare) time complexity",
+      "fast and slow pointers (floyd's tortoise and hare) algorithm explanation",
+      "dsa fast and slow pointers (floyd's tortoise and hare)"
+    ],
+    "title": "Fast and Slow Pointers (Floyd's Tortoise and Hare) — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "Fast and Slow Pointers (Floyd's Tortoise and Hare): Uses two pointers traversing linked list at different speeds (slow=1 step, fast=2 steps). E.g. Linked List Cycle Detection, Finding Middle Node, Start of Cycle in O(N) time and O(1) space.",
+    "highlights": [
+      "Algorithm / Pattern: Fast and Slow Pointers (Floyd's Tortoise and Hare)",
+      "Core Principle: Uses two pointers traversing linked list at different speeds (slow=1 step, fast=2 steps). E.g. Linked List Cycle Detection, Finding Middle Node, Start of Cycle in O(N) time and O(1) space.",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-4-monotonic-stack-pattern",
+    "keywords": [
+      "monotonic stack pattern leetcode",
+      "how does monotonic stack pattern work",
+      "monotonic stack pattern time complexity",
+      "monotonic stack pattern algorithm explanation",
+      "dsa monotonic stack pattern"
+    ],
+    "title": "Monotonic Stack Pattern — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "Monotonic Stack Pattern: Maintains stack elements strictly in increasing or decreasing order to find the next greater or smaller element in O(N) time. E.g. Next Greater Element, Daily Temperatures, Largest Rectangle in Histogram.",
+    "highlights": [
+      "Algorithm / Pattern: Monotonic Stack Pattern",
+      "Core Principle: Maintains stack elements strictly in increasing or decreasing order to find the next greater or smaller element in O(N) time. E.g. Next Greater Element, Daily Temperatures, Largest Rectangle in Histogram.",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-5-topological-sort-kahns-algorithm",
+    "keywords": [
+      "topological sort (kahn's algorithm) leetcode",
+      "how does topological sort (kahn's algorithm) work",
+      "topological sort (kahn's algorithm) time complexity",
+      "topological sort (kahn's algorithm) algorithm explanation",
+      "dsa topological sort (kahn's algorithm)"
+    ],
+    "title": "Topological Sort (Kahn's Algorithm) — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "Topological Sort (Kahn's Algorithm): Orders vertices in a Directed Acyclic Graph (DAG) such that for every directed edge u->v, u comes before v. Uses in-degree array and Queue in O(V+E) time. E.g. Course Schedule.",
+    "highlights": [
+      "Algorithm / Pattern: Topological Sort (Kahn's Algorithm)",
+      "Core Principle: Orders vertices in a Directed Acyclic Graph (DAG) such that for every directed edge u->v, u comes before v. Uses in-degree array and Queue in O(V+E) time. E.g. Course Schedule.",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-6-dijkstras-shortest-path-algorithm",
+    "keywords": [
+      "dijkstra's shortest path algorithm leetcode",
+      "how does dijkstra's shortest path algorithm work",
+      "dijkstra's shortest path algorithm time complexity",
+      "dijkstra's shortest path algorithm algorithm explanation",
+      "dsa dijkstra's shortest path algorithm"
+    ],
+    "title": "Dijkstra's Shortest Path Algorithm — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "Dijkstra's Shortest Path Algorithm: Finds the shortest path from a single source vertex to all other vertices in a weighted graph with non-negative edge weights using a Min-Priority Queue in O((V + E) log V) time.",
+    "highlights": [
+      "Algorithm / Pattern: Dijkstra's Shortest Path Algorithm",
+      "Core Principle: Finds the shortest path from a single source vertex to all other vertices in a weighted graph with non-negative edge weights using a Min-Priority Queue in O((V + E) log V) time.",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-7-bellmanford-algorithm",
+    "keywords": [
+      "bellman-ford algorithm leetcode",
+      "how does bellman-ford algorithm work",
+      "bellman-ford algorithm time complexity",
+      "bellman-ford algorithm algorithm explanation",
+      "dsa bellman-ford algorithm"
+    ],
+    "title": "Bellman-Ford Algorithm — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "Bellman-Ford Algorithm: Computes shortest paths from single source vertex in graphs with negative edge weights and detects negative weight cycles in O(V * E) time by relaxing all edges V-1 times.",
+    "highlights": [
+      "Algorithm / Pattern: Bellman-Ford Algorithm",
+      "Core Principle: Computes shortest paths from single source vertex in graphs with negative edge weights and detects negative weight cycles in O(V * E) time by relaxing all edges V-1 times.",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-8-floydwarshall-algorithm",
+    "keywords": [
+      "floyd-warshall algorithm leetcode",
+      "how does floyd-warshall algorithm work",
+      "floyd-warshall algorithm time complexity",
+      "floyd-warshall algorithm algorithm explanation",
+      "dsa floyd-warshall algorithm"
+    ],
+    "title": "Floyd-Warshall Algorithm — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "Floyd-Warshall Algorithm: Computes all-pairs shortest paths in a weighted directed graph in O(V^3) time using 3 nested loops: dp[i][j] = min(dp[i][j], dp[i][k] + dp[k][j]).",
+    "highlights": [
+      "Algorithm / Pattern: Floyd-Warshall Algorithm",
+      "Core Principle: Computes all-pairs shortest paths in a weighted directed graph in O(V^3) time using 3 nested loops: dp[i][j] = min(dp[i][j], dp[i][k] + dp[k][j]).",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-9-kruskals-minimum-spanning-tree",
+    "keywords": [
+      "kruskal's minimum spanning tree leetcode",
+      "how does kruskal's minimum spanning tree work",
+      "kruskal's minimum spanning tree time complexity",
+      "kruskal's minimum spanning tree algorithm explanation",
+      "dsa kruskal's minimum spanning tree"
+    ],
+    "title": "Kruskal's Minimum Spanning Tree — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "Kruskal's Minimum Spanning Tree: Greedy algorithm that sorts all edges by weight and adds edges to the spanning tree using Disjoint Set Union (DSU / Union-Find) to prevent cycles in O(E log E) time.",
+    "highlights": [
+      "Algorithm / Pattern: Kruskal's Minimum Spanning Tree",
+      "Core Principle: Greedy algorithm that sorts all edges by weight and adds edges to the spanning tree using Disjoint Set Union (DSU / Union-Find) to prevent cycles in O(E log E) time.",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-10-prims-minimum-spanning-tree",
+    "keywords": [
+      "prim's minimum spanning tree leetcode",
+      "how does prim's minimum spanning tree work",
+      "prim's minimum spanning tree time complexity",
+      "prim's minimum spanning tree algorithm explanation",
+      "dsa prim's minimum spanning tree"
+    ],
+    "title": "Prim's Minimum Spanning Tree — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "Prim's Minimum Spanning Tree: Greedy algorithm that grows a single spanning tree from an initial vertex by repeatedly adding the minimum weight edge connecting the tree to a non-tree vertex using a Min-Heap in O(E log V) time.",
+    "highlights": [
+      "Algorithm / Pattern: Prim's Minimum Spanning Tree",
+      "Core Principle: Greedy algorithm that grows a single spanning tree from an initial vertex by repeatedly adding the minimum weight edge connecting the tree to a non-tree vertex using a Min-Heap in O(E log V) time.",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-11-binary-search-on-answer-range",
+    "keywords": [
+      "binary search on answer range leetcode",
+      "how does binary search on answer range work",
+      "binary search on answer range time complexity",
+      "binary search on answer range algorithm explanation",
+      "dsa binary search on answer range"
+    ],
+    "title": "Binary Search on Answer Range — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "Binary Search on Answer Range: Monotonic predicate search over solution space [low, high] in O(log(range)) time. E.g. Koko Eating Bananas, Capacity To Ship Packages, Split Array Largest Sum.",
+    "highlights": [
+      "Algorithm / Pattern: Binary Search on Answer Range",
+      "Core Principle: Monotonic predicate search over solution space [low, high] in O(log(range)) time. E.g. Koko Eating Bananas, Capacity To Ship Packages, Split Array Largest Sum.",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-12-01-knapsack-problem",
+    "keywords": [
+      "0/1 knapsack problem leetcode",
+      "how does 0/1 knapsack problem work",
+      "0/1 knapsack problem time complexity",
+      "0/1 knapsack problem algorithm explanation",
+      "dsa 0/1 knapsack problem"
+    ],
+    "title": "0/1 Knapsack Problem — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "0/1 Knapsack Problem: Dynamic Programming where each item can be chosen at most once. DP state dp[i][w] = max(dp[i-1][w], val[i-1] + dp[i-1][w-wt[i-1]]) in O(N * W) time and O(W) space.",
+    "highlights": [
+      "Algorithm / Pattern: 0/1 Knapsack Problem",
+      "Core Principle: Dynamic Programming where each item can be chosen at most once. DP state dp[i][w] = max(dp[i-1][w], val[i-1] + dp[i-1][w-wt[i-1]]) in O(N * W) time and O(W) space.",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-13-longest-common-subsequence-lcs",
+    "keywords": [
+      "longest common subsequence (lcs) leetcode",
+      "how does longest common subsequence (lcs) work",
+      "longest common subsequence (lcs) time complexity",
+      "longest common subsequence (lcs) algorithm explanation",
+      "dsa longest common subsequence (lcs)"
+    ],
+    "title": "Longest Common Subsequence (LCS) — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "Longest Common Subsequence (LCS): Finds longest sequence appearing in both strings in the same relative order. DP state: if (s1[i]==s2[j]) dp[i][j]=1+dp[i-1][j-1] else max(dp[i-1][j], dp[i][j-1]) in O(M*N) time.",
+    "highlights": [
+      "Algorithm / Pattern: Longest Common Subsequence (LCS)",
+      "Core Principle: Finds longest sequence appearing in both strings in the same relative order. DP state: if (s1[i]==s2[j]) dp[i][j]=1+dp[i-1][j-1] else max(dp[i-1][j], dp[i][j-1]) in O(M*N) time.",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-14-longest-increasing-subsequence-lis",
+    "keywords": [
+      "longest increasing subsequence (lis) leetcode",
+      "how does longest increasing subsequence (lis) work",
+      "longest increasing subsequence (lis) time complexity",
+      "longest increasing subsequence (lis) algorithm explanation",
+      "dsa longest increasing subsequence (lis)"
+    ],
+    "title": "Longest Increasing Subsequence (LIS) — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "Longest Increasing Subsequence (LIS): Finds length of longest strictly increasing subsequence. Solvable in O(N log N) time using Patience Sorting / Binary Search (std::lower_bound) on a tails array.",
+    "highlights": [
+      "Algorithm / Pattern: Longest Increasing Subsequence (LIS)",
+      "Core Principle: Finds length of longest strictly increasing subsequence. Solvable in O(N log N) time using Patience Sorting / Binary Search (std::lower_bound) on a tails array.",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-15-kadanes-algorithm-for-max-subarray-sum",
+    "keywords": [
+      "kadane's algorithm for max subarray sum leetcode",
+      "how does kadane's algorithm for max subarray sum work",
+      "kadane's algorithm for max subarray sum time complexity",
+      "kadane's algorithm for max subarray sum algorithm explanation",
+      "dsa kadane's algorithm for max subarray sum"
+    ],
+    "title": "Kadane's Algorithm for Max Subarray Sum — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "Kadane's Algorithm for Max Subarray Sum: Computes maximum sum of a contiguous subarray in O(N) time and O(1) space: max_ending_here = max(arr[i], max_ending_here + arr[i]), max_so_far = max(max_so_far, max_ending_here).",
+    "highlights": [
+      "Algorithm / Pattern: Kadane's Algorithm for Max Subarray Sum",
+      "Core Principle: Computes maximum sum of a contiguous subarray in O(N) time and O(1) space: max_ending_here = max(arr[i], max_ending_here + arr[i]), max_so_far = max(max_so_far, max_ending_here).",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-16-a-search-algorithm",
+    "keywords": [
+      "a* search algorithm leetcode",
+      "how does a* search algorithm work",
+      "a* search algorithm time complexity",
+      "a* search algorithm algorithm explanation",
+      "dsa a* search algorithm"
+    ],
+    "title": "A* Search Algorithm — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "A* Search Algorithm: Informed heuristic graph search evaluating f(n) = g(n) + h(n), where g(n) is actual cost from start and h(n) is admissible heuristic estimating cost to goal. Guarantees shortest path.",
+    "highlights": [
+      "Algorithm / Pattern: A* Search Algorithm",
+      "Core Principle: Informed heuristic graph search evaluating f(n) = g(n) + h(n), where g(n) is actual cost from start and h(n) is admissible heuristic estimating cost to goal. Guarantees shortest path.",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-17-kmp-knuthmorrispratt-string-matching",
+    "keywords": [
+      "kmp (knuth-morris-pratt) string matching leetcode",
+      "how does kmp (knuth-morris-pratt) string matching work",
+      "kmp (knuth-morris-pratt) string matching time complexity",
+      "kmp (knuth-morris-pratt) string matching algorithm explanation",
+      "dsa kmp (knuth-morris-pratt) string matching"
+    ],
+    "title": "KMP (Knuth-Morris-Pratt) String Matching — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "KMP (Knuth-Morris-Pratt) String Matching: Fast string pattern search in O(N + M) time using a Longest Proper Prefix which is also Suffix (LPS) π-table to avoid redundant character comparisons.",
+    "highlights": [
+      "Algorithm / Pattern: KMP (Knuth-Morris-Pratt) String Matching",
+      "Core Principle: Fast string pattern search in O(N + M) time using a Longest Proper Prefix which is also Suffix (LPS) π-table to avoid redundant character comparisons.",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-18-rabinkarp-rolling-hash-algorithm",
+    "keywords": [
+      "rabin-karp rolling hash algorithm leetcode",
+      "how does rabin-karp rolling hash algorithm work",
+      "rabin-karp rolling hash algorithm time complexity",
+      "rabin-karp rolling hash algorithm algorithm explanation",
+      "dsa rabin-karp rolling hash algorithm"
+    ],
+    "title": "Rabin-Karp Rolling Hash Algorithm — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "Rabin-Karp Rolling Hash Algorithm: String matching algorithm using polynomial rolling hash functions to match substring hashes in O(N + M) average time and detect duplicate substrings.",
+    "highlights": [
+      "Algorithm / Pattern: Rabin-Karp Rolling Hash Algorithm",
+      "Core Principle: String matching algorithm using polynomial rolling hash functions to match substring hashes in O(N + M) average time and detect duplicate substrings.",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-19-trie-prefix-tree",
+    "keywords": [
+      "trie (prefix tree) leetcode",
+      "how does trie (prefix tree) work",
+      "trie (prefix tree) time complexity",
+      "trie (prefix tree) algorithm explanation",
+      "dsa trie (prefix tree)"
+    ],
+    "title": "Trie (Prefix Tree) — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "Trie (Prefix Tree): Tree data structure for storing strings character by character providing O(L) insert, search, and prefix matching time complexity where L is the string length. Used in autocomplete.",
+    "highlights": [
+      "Algorithm / Pattern: Trie (Prefix Tree)",
+      "Core Principle: Tree data structure for storing strings character by character providing O(L) insert, search, and prefix matching time complexity where L is the string length. Used in autocomplete.",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-20-lru-least-recently-used-cache",
+    "keywords": [
+      "lru (least recently used) cache leetcode",
+      "how does lru (least recently used) cache work",
+      "lru (least recently used) cache time complexity",
+      "lru (least recently used) cache algorithm explanation",
+      "dsa lru (least recently used) cache"
+    ],
+    "title": "LRU (Least Recently Used) Cache — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "LRU (Least Recently Used) Cache: Constant O(1) get and put cache implemented using a Hash Map combined with a Doubly Linked List to keep most recently accessed elements at head and evict from tail.",
+    "highlights": [
+      "Algorithm / Pattern: LRU (Least Recently Used) Cache",
+      "Core Principle: Constant O(1) get and put cache implemented using a Hash Map combined with a Doubly Linked List to keep most recently accessed elements at head and evict from tail.",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-21-lfu-least-frequently-used-cache",
+    "keywords": [
+      "lfu (least frequently used) cache leetcode",
+      "how does lfu (least frequently used) cache work",
+      "lfu (least frequently used) cache time complexity",
+      "lfu (least frequently used) cache algorithm explanation",
+      "dsa lfu (least frequently used) cache"
+    ],
+    "title": "LFU (Least Frequently Used) Cache — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "LFU (Least Frequently Used) Cache: Cache eviction scheme that discards the least frequently accessed items first. Implemented in O(1) time using two hash maps and frequency doubly-linked lists.",
+    "highlights": [
+      "Algorithm / Pattern: LFU (Least Frequently Used) Cache",
+      "Core Principle: Cache eviction scheme that discards the least frequently accessed items first. Implemented in O(1) time using two hash maps and frequency doubly-linked lists.",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-22-fenwick-tree-binary-indexed-tree-bit",
+    "keywords": [
+      "fenwick tree (binary indexed tree / bit) leetcode",
+      "how does fenwick tree (binary indexed tree / bit) work",
+      "fenwick tree (binary indexed tree / bit) time complexity",
+      "fenwick tree (binary indexed tree / bit) algorithm explanation",
+      "dsa fenwick tree (binary indexed tree / bit)"
+    ],
+    "title": "Fenwick Tree (Binary Indexed Tree / BIT) — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "Fenwick Tree (Binary Indexed Tree / BIT): Array-based data structure that supports prefix sum queries and point updates in O(log N) time using bitwise least significant bit operations (x & -x).",
+    "highlights": [
+      "Algorithm / Pattern: Fenwick Tree (Binary Indexed Tree / BIT)",
+      "Core Principle: Array-based data structure that supports prefix sum queries and point updates in O(log N) time using bitwise least significant bit operations (x & -x).",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-23-segment-tree-with-lazy-propagation",
+    "keywords": [
+      "segment tree with lazy propagation leetcode",
+      "how does segment tree with lazy propagation work",
+      "segment tree with lazy propagation time complexity",
+      "segment tree with lazy propagation algorithm explanation",
+      "dsa segment tree with lazy propagation"
+    ],
+    "title": "Segment Tree with Lazy Propagation — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "Segment Tree with Lazy Propagation: Binary tree storing range intervals for O(log N) range queries and O(log N) range updates by deferring update operations to child nodes only when needed.",
+    "highlights": [
+      "Algorithm / Pattern: Segment Tree with Lazy Propagation",
+      "Core Principle: Binary tree storing range intervals for O(log N) range queries and O(log N) range updates by deferring update operations to child nodes only when needed.",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "cs-dsa-24-bloom-filter",
+    "keywords": [
+      "bloom filter leetcode",
+      "how does bloom filter work",
+      "bloom filter time complexity",
+      "bloom filter algorithm explanation",
+      "dsa bloom filter"
+    ],
+    "title": "Bloom Filter — Algorithmic Pattern & Complexity",
+    "category": "Computer Science",
+    "answer": "Bloom Filter: Space-efficient probabilistic data structure using multiple hash functions over a bit array to test set membership with zero false negatives and configurable false positive rate.",
+    "highlights": [
+      "Algorithm / Pattern: Bloom Filter",
+      "Core Principle: Space-efficient probabilistic data structure using multiple hash functions over a bit array to test set membership with zero false negatives and configurable false positive rate.",
+      "Application: Coding interviews, performance optimization, distributed systems"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Algorithm"
+  }
+]

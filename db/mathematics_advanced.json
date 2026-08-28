@@ -1,0 +1,1070 @@
+[
+  {
+    "id": "madv-calculus-derivatives-master",
+    "keywords": [
+      "standard derivatives cheat sheet",
+      "calculus differentiation formulas",
+      "derivative of trigonometric functions",
+      "inverse trig derivatives",
+      "avkalan ke sutra"
+    ],
+    "title": "Master Table of Standard Derivatives & Differentiation Rules",
+    "category": "Mathematics",
+    "answer": "Standard derivatives in differential calculus include: d/dx(xⁿ) = n·xⁿ⁻¹, d/dx(eˣ) = eˣ, d/dx(ln x) = 1/x, d/dx(sin x) = cos x, d/dx(cos x) = -sin x, d/dx(tan x) = sec²x, d/dx(arcsin x) = 1/√(1 - x²), and d/dx(arctan x) = 1/(1 + x²).",
+    "highlights": [
+      "Trigonometric Derivatives: d/dx(sin x) = cos x; d/dx(cos x) = -sin x; d/dx(tan x) = sec²x; d/dx(sec x) = sec x·tan x; d/dx(cot x) = -csc²x; d/dx(csc x) = -csc x·cot x",
+      "Inverse Trigonometric: d/dx(arcsin x) = 1/√(1 - x²); d/dx(arccos x) = -1/√(1 - x²); d/dx(arctan x) = 1/(1 + x²); d/dx(arccot x) = -1/(1 + x²)",
+      "Exponential & Logarithmic: d/dx(eˣ) = eˣ; d/dx(aˣ) = aˣ·ln(a); d/dx(ln x) = 1/x; d/dx(log_a x) = 1/(x·ln a)",
+      "Core Operational Rules: Product Rule (uv)' = u'v + uv'; Quotient Rule (u/v)' = (u'v - uv')/v²; Chain Rule d/dx[f(g(x))] = f'(g(x))·g'(x)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Differentiation_rules"
+  },
+  {
+    "id": "madv-calculus-integrals-master",
+    "keywords": [
+      "standard integrals cheat sheet",
+      "integration by parts formula",
+      "integration by substitution",
+      "calculus integral formulas",
+      "samakalan ke sutra"
+    ],
+    "title": "Master Table of Standard Integrals & Integration by Parts",
+    "category": "Mathematics",
+    "answer": "Integration by Parts is given by: ∫ u dv = u·v - ∫ v du (following the ILATE priority rule: Inverse trig, Logarithmic, Algebraic, Trigonometric, Exponential). Standard indefinite integrals include: ∫ (1 / (a² + x²)) dx = (1/a)·arctan(x/a) + C, and ∫ (1 / √(a² - x²)) dx = arcsin(x/a) + C.",
+    "highlights": [
+      "Integration by Parts: ∫ u·(dv/dx) dx = u·v - ∫ v·(du/dx) dx (ILATE priority for choosing u)",
+      "Trigonometric Integrals: ∫ tan x dx = ln|sec x| + C; ∫ cot x dx = ln|sin x| + C; ∫ sec x dx = ln|sec x + tan x| + C; ∫ csc x dx = ln|csc x - cot x| + C",
+      "Special Algebraic Integrals: ∫ 1/(a² + x²) dx = (1/a)·arctan(x/a) + C; ∫ 1/√(a² - x²) dx = arcsin(x/a) + C; ∫ 1/√(x² ± a²) dx = ln|x + √(x² ± a²)| + C; ∫ 1/(x² - a²) dx = (1/2a)·ln|(x - a)/(x + a)| + C",
+      "Fundamental Theorem of Calculus: If F'(x) = f(x), then ∫ₐᵇ f(x) dx = F(b) - F(a)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Lists_of_integrals"
+  },
+  {
+    "id": "madv-statistics-empirical-rule",
+    "keywords": [
+      "mean median mode variance standard deviation",
+      "empirical relationship mode 3 median 2 mean",
+      "normal distribution 68 95 99.7 rule",
+      "sankhyiki sutra"
+    ],
+    "title": "Statistics: Central Tendency, Standard Deviation & Normal Distribution",
+    "category": "Mathematics",
+    "answer": "In statistics, the empirical relationship between measures of central tendency for moderately skewed distributions is: Mode = 3·Median - 2·Mean. Standard Deviation measures dispersion: σ = √[(Σ (x - μ)²) / N]. For a normal distribution, the 68–95–99.7 rule states that 68.27% of data lies within μ ± 1σ, 95.45% within μ ± 2σ, and 99.73% within μ ± 3σ.",
+    "highlights": [
+      "Empirical Central Tendency Formula: Mode = 3·Median - 2·Mean",
+      "Variance & Standard Deviation: Variance σ² = [Σ(x_i - μ)²] / N; Standard Deviation σ = √(Variance)",
+      "Coefficient of Variation (CV): CV = (σ / Mean) × 100% (measures relative dispersion/consistency)",
+      "Normal Distribution (68–95–99.7 Empirical Rule): 68.27% within ±1σ, 95.45% within ±2σ, 99.73% within ±3σ around mean μ"
+    ],
+    "url": "https://en.wikipedia.org/wiki/68%E2%80%9395%E2%80%9399.7_rule"
+  },
+  {
+    "id": "madv-number-theory-euclid-fermat",
+    "keywords": [
+      "euclidean algorithm gcd hcf",
+      "fermat's little theorem formula",
+      "modular arithmetic number theory",
+      "prime numbers fundamental theorem"
+    ],
+    "title": "Number Theory: Euclidean Algorithm & Fermat's Little Theorem",
+    "category": "Mathematics",
+    "answer": "The Euclidean Algorithm computes the Greatest Common Divisor (GCD / HCF) of two integers by repeated division: gcd(a, b) = gcd(b, a mod b) until remainder is zero. Fermat's Little Theorem states that if p is a prime number and a is an integer not divisible by p, then a^(p-1) ≡ 1 (mod p) [or a^p ≡ a (mod p)].",
+    "highlights": [
+      "Euclidean Algorithm: gcd(a, b) = gcd(b, a % b) (Extremely efficient, logarithmic time complexity O(log(min(a, b))))",
+      "Bézout's Identity: For any integers a and b, there exist integers x and y such that ax + by = gcd(a, b)",
+      "Fermat's Little Theorem: a^(p-1) ≡ 1 (mod p) for prime p and gcd(a, p) = 1 (Foundation of RSA public-key cryptography and primality tests)",
+      "Fundamental Theorem of Arithmetic: Every integer n > 1 can be uniquely represented as a product of prime powers up to the order of factors"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Euclidean_algorithm"
+  },
+  {
+    "id": "madv-conic-sections",
+    "keywords": [
+      "conic sections formulas",
+      "parabola ellipse hyperbola equation",
+      "eccentricity of ellipse hyperbola",
+      "perpendicular distance of line formula"
+    ],
+    "title": "Coordinate Geometry & Conic Sections (Line, Circle, Parabola, Ellipse, Hyperbola)",
+    "category": "Mathematics",
+    "answer": "Conic sections are curves obtained by intersecting a plane with a double right circular cone, classified by eccentricity e: Circle (e = 0), Parabola (e = 1: y² = 4ax), Ellipse (0 < e < 1: x²/a² + y²/b² = 1 where b² = a²(1 - e²)), and Hyperbola (e > 1: x²/a² - y²/b² = 1 where b² = a²(e² - 1)).",
+    "highlights": [
+      "Perpendicular Distance of Point (x₀, y₀) from Line Ax + By + C = 0: d = |Ax₀ + By₀ + C| / √(A² + B²)",
+      "Circle: (x - h)² + (y - k)² = r² (Center (h, k), Radius r)",
+      "Parabola: y² = 4ax (Eccentricity e = 1, Focus (a, 0), Directrix x = -a, Length of Latus Rectum = 4a)",
+      "Ellipse: x²/a² + y²/b² = 1 (0 < e < 1, Foci (±ae, 0), Directrices x = ±a/e, Latus Rectum = 2b²/a)",
+      "Hyperbola: x²/a² - y²/b² = 1 (e > 1, Foci (±ae, 0), Directrices x = ±a/e, Asymptotes y = ±(b/a)x)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Conic_section"
+  },
+  {
+    "id": "madv-vectors-3d-geometry",
+    "keywords": [
+      "vectors dot product and cross product",
+      "scalar triple product volume of parallelepiped",
+      "direction cosines 3d geometry",
+      "vector algebra formulas"
+    ],
+    "title": "Vector Algebra & 3D Geometry Formulas",
+    "category": "Mathematics",
+    "answer": "The Dot Product of two vectors is a scalar a · b = |a||b|cos θ = a₁b₁ + a₂b₂ + a₃b₃ (zero when orthogonal). The Cross Product is a vector a × b = |a||b|sin θ n̂ (magnitude equals the area of a parallelogram). The Scalar Triple Product [a b c] = a · (b × c) equals the volume of the parallelepiped formed by the three vectors.",
+    "highlights": [
+      "Dot Product: a · b = |a||b|cos(θ); Condition for Perpendicularity: a · b = 0",
+      "Cross Product: a × b = det([i, j, k], [a₁, a₂, a₃], [b₁, b₂, b₃]); Area of triangle = ½|a × b|",
+      "Scalar Triple Product: [a b c] = det([a₁, a₂, a₃], [b₁, b₂, b₃], [c₁, c₂, c₃]); Condition for Coplanarity: [a b c] = 0",
+      "3D Line Equation: (x - x₁)/a = (y - y₁)/b = (z - z₁)/c; 3D Plane Equation: A(x - x₁) + B(y - y₁) + C(z - z₁) = 0"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Vector_algebra"
+  },
+  {
+    "id": "madv-complex-numbers-de-moivre",
+    "keywords": [
+      "complex numbers de moivre's theorem",
+      "cube roots of unity 1 omega omega2",
+      "modulus and argument of complex number",
+      "euler formula complex numbers"
+    ],
+    "title": "Complex Numbers, De Moivre's Theorem & Cube Roots of Unity",
+    "category": "Mathematics",
+    "answer": "A complex number is represented in polar form as z = a + ib = r(cos θ + i sin θ) = re^(iθ), with modulus r = √(a² + b²) and argument θ = arctan(b/a). De Moivre's Theorem states that (cos θ + i sin θ)ⁿ = cos(nθ) + i sin(nθ). The three cube roots of unity are 1, ω = (-1 + i√3)/2, and ω² = (-1 - i√3)/2, satisfying 1 + ω + ω² = 0 and ω³ = 1.",
+    "highlights": [
+      "De Moivre's Theorem: [r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ) = rⁿ e^(inθ)",
+      "Cube Roots of Unity: Roots of x³ - 1 = 0 are 1, ω, ω² where ω = e^(i2π/3) = -½ + i(√3/2)",
+      "Key Identities of Unity Roots: 1 + ω + ω² = 0, ω³ = 1, ω^(3k) = 1, ω^(3k+1) = ω, ω^(3k+2) = ω²",
+      "Conjugate Properties: |z| = |z̄|; z · z̄ = |z|²; (z₁ + z₂)̄ = z̄₁ + z̄₂; (z₁z₂)̄ = z̄₁z̄₂"
+    ],
+    "url": "https://en.wikipedia.org/wiki/De_Moivre%27s_formula"
+  },
+  {
+    "id": "math-vector-calculus-theorems",
+    "keywords": [
+      "greens theorem stokes theorem divergence theorem",
+      "vector calculus theorems formulas",
+      "gradient divergence curl",
+      "line surface volume integral"
+    ],
+    "title": "Fundamental Theorems of Vector Calculus",
+    "category": "Mathematics",
+    "answer": "Vector calculus unites field integrals: (1) Green's Theorem: ∮ (L dx + M dy) = ∬ (∂M/∂x - ∂L/∂y) dA, (2) Stokes' Theorem: ∮ F · dr = ∬ (∇ × F) · dS (relates line integral around boundary to surface integral of curl), (3) Divergence Theorem (Gauss): ∬ F · dS = ∭ (∇ · F) dV (relates flux through closed surface to volume integral of divergence).",
+    "highlights": [
+      "Gradient (∇f): Vector of partial derivatives pointing in direction of maximum rate of increase",
+      "Divergence (∇ · F): Scalar measure of field source/sink density (zero for incompressible/solenoidal fields)",
+      "Curl (∇ × F): Vector measure of field rotation (zero for conservative/irrotational fields where F = ∇f)",
+      "Forms mathematical backbone of Maxwell's equations and fluid mechanics (Navier-Stokes)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Stokes%27_theorem"
+  },
+  {
+    "id": "math-fourier-series-transform",
+    "keywords": [
+      "fourier series formula",
+      "fourier transform equation",
+      "frequency domain time domain",
+      "fast fourier transform fft complexity"
+    ],
+    "title": "Fourier Series and Continuous Fourier Transform",
+    "category": "Mathematics",
+    "answer": "Fourier Series decomposes any periodic function f(t) of period T into an infinite sum of sines and cosines: f(t) = a₀/2 + Σ [a_n cos(nω₀t) + b_n sin(nω₀t)]. The continuous Fourier Transform converts non-periodic signals from time to frequency domain: F(ω) = ∫ f(t) e^(-iωt) dt. Fast Fourier Transform (FFT, Cooley-Tukey) computes Discrete FT in O(N log N) instead of O(N²).",
+    "highlights": [
+      "Orthogonality of sinusoidal basis functions enables exact coefficient extraction",
+      "Inverse Fourier Transform: f(t) = (1/2π) ∫ F(ω) e^(iωt) dω",
+      "Parseval's Theorem: Total energy in time domain equals total energy in frequency domain: ∫ |f(t)|² dt = (1/2π) ∫ |F(ω)|² dω",
+      "Ubiquitous in signal processing, image compression (JPEG DCT), quantum wave mechanics, and audio synthesis"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Fourier_transform"
+  },
+  {
+    "id": "math-linear-algebra-eigenvalues",
+    "keywords": [
+      "eigenvalues and eigenvectors formula",
+      "characteristic equation det A - lambda I = 0",
+      "diagonalization matrix",
+      "spectral theorem linear algebra"
+    ],
+    "title": "Eigenvalues, Eigenvectors, and Matrix Diagonalization",
+    "category": "Mathematics",
+    "answer": "For a square matrix A, a non-zero vector v is an eigenvector and λ is its corresponding eigenvalue if Av = λv. Eigenvalues are the roots of the characteristic polynomial det(A - λI) = 0. A matrix is diagonalizable as A = PDP⁻¹ where D is the diagonal matrix of eigenvalues and P is the matrix of eigenvectors.",
+    "highlights": [
+      "Trace of A equals sum of all eigenvalues: Tr(A) = Σ λ_i",
+      "Determinant of A equals product of all eigenvalues: det(A) = Π λ_i",
+      "Symmetric real matrices (A = Aᵀ) always have real eigenvalues and orthogonal eigenvectors (Spectral Theorem)",
+      "Foundational in Principal Component Analysis (PCA), Google PageRank, Quantum state operators, and vibration modes"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors"
+  },
+  {
+    "id": "math-algebra-identities-complete",
+    "keywords": [
+      "algebraic identities list",
+      "a+b whole square formula",
+      "a-b whole cube formula",
+      "a3+b3+c3-3abc identity",
+      "factorization formulas algebra"
+    ],
+    "title": "Standard Algebraic Identities & Factorization Formulas",
+    "category": "Mathematics",
+    "answer": "Essential algebraic identities: (1) (a+b)² = a² + 2ab + b², (2) (a-b)² = a² - 2ab + b², (3) a² - b² = (a-b)(a+b), (4) (a+b)³ = a³ + 3a²b + 3ab² + b³ = a³ + b³ + 3ab(a+b), (5) a³ + b³ = (a+b)(a² - ab + b²), (6) a³ - b³ = (a-b)(a² + ab + b²), (7) a³ + b³ + c³ - 3abc = (a+b+c)(a² + b² + c² - ab - bc - ca).",
+    "highlights": [
+      "(a + b)² = a² + 2ab + b²",
+      "(a - b)² = a² - 2ab + b²",
+      "a² - b² = (a - b)(a + b)",
+      "(a + b + c)² = a² + b² + c² + 2(ab + bc + ca)",
+      "a³ + b³ = (a + b)(a² - ab + b²)",
+      "a³ - b³ = (a - b)(a² + ab + b²)",
+      "Special condition: If a + b + c = 0, then a³ + b³ + c³ = 3abc"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Factorization"
+  },
+  {
+    "id": "math-trigonometry-exact-values-table",
+    "keywords": [
+      "sin cos tan values table",
+      "exact values of sin 0 30 45 60 90",
+      "trigonometric ratios table radians degrees",
+      "tan 45 sin 60 cos 30 value"
+    ],
+    "title": "Standard Trigonometric Ratios Table (0° to 90°)",
+    "category": "Mathematics",
+    "answer": "Standard trigonometric values: sin(0°)=0, sin(30°)=1/2, sin(45°)=1/√2, sin(60°)=√3/2, sin(90°)=1. cos(0°)=1, cos(30°)=√3/2, cos(45°)=1/√2, cos(60°)=1/2, cos(90°)=0. tan(0°)=0, tan(30°)=1/√3, tan(45°)=1, tan(60°)=√3, tan(90°)=Undefined (∞).",
+    "highlights": [
+      "0° (0 rad): sin=0, cos=1, tan=0, csc=Undef, sec=1, cot=Undef",
+      "30° (π/6 rad): sin=1/2 (0.5), cos=√3/2 (~0.866), tan=1/√3 (~0.577)",
+      "45° (π/4 rad): sin=1/√2 (~0.707), cos=1/√2 (~0.707), tan=1",
+      "60° (π/3 rad): sin=√3/2 (~0.866), cos=1/2 (0.5), tan=√3 (~1.732)",
+      "90° (π/2 rad): sin=1, cos=0, tan=Undefined (±∞)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Trigonometric_constants_expressed_in_real_radicals"
+  },
+  {
+    "id": "math-geometry-surface-area-volumes",
+    "keywords": [
+      "surface area and volume formulas",
+      "volume of sphere cylinder cone cuboid",
+      "curved surface area formulas geometry",
+      "total surface area sphere hemisphere"
+    ],
+    "title": "Surface Area and Volume Formulas for 3D Geometric Solids",
+    "category": "Mathematics",
+    "answer": "Key 3D solid formulas: Cube (V = a³, TSA = 6a²), Cuboid (V = lbh, TSA = 2(lb+bh+hl)), Cylinder (V = πr²h, CSA = 2πrh, TSA = 2πr(r+h)), Cone (V = ⅓πr²h, CSA = πrl where l=√(r²+h²), TSA = πr(r+l)), Sphere (V = ⁴⁄₃πr³, TSA = 4πr²), Hemisphere (V = ⅔πr³, CSA = 2πr², TSA = 3πr²).",
+    "highlights": [
+      "Sphere (radius r): Volume = (4/3)πr³ | Surface Area = 4πr²",
+      "Hemisphere: Volume = (2/3)πr³ | Curved Surface = 2πr² | Total Surface Area = 3πr²",
+      "Cylinder (radius r, height h): Volume = πr²h | CSA = 2πrh | TSA = 2πr(r + h)",
+      "Cone (radius r, height h, slant height l=√(r²+h²)): Volume = (1/3)πr²h | CSA = πrl | TSA = πr(r + l)",
+      "Frustum of Cone: Volume = (1/3)πh(r₁² + r₂² + r₁r₂) | CSA = πl(r₁ + r₂)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Volume"
+  },
+  {
+    "id": "math-conic-sections-equations",
+    "keywords": [
+      "conic sections equations standard forms",
+      "circle parabola ellipse hyperbola formula",
+      "eccentricity e of conic sections",
+      "foci directrix vertex conics"
+    ],
+    "title": "Conic Sections — Circle, Parabola, Ellipse, Hyperbola",
+    "category": "Mathematics",
+    "answer": "Conic sections are curves formed by intersecting a plane with a double cone, defined by eccentricity e: Circle (e=0: x²+y²=r²), Parabola (e=1: y²=4ax), Ellipse (0<e<1: x²/a² + y²/b² = 1, e=√(1-b²/a²)), Hyperbola (e>1: x²/a² - y²/b² = 1, e=√(1+b²/a²), rectangular hyperbola xy=c²).",
+    "highlights": [
+      "Circle (center (h,k), radius r): (x - h)² + (y - k)² = r² | Eccentricity e = 0",
+      "Parabola (focus (a,0), directrix x = -a): y² = 4ax | Length of Latus Rectum = 4a | e = 1",
+      "Ellipse (major axis 2a, minor axis 2b): x²/a² + y²/b² = 1 | Foci (±ae, 0) | e = √(1 - b²/a²) < 1",
+      "Hyperbola (transverse axis 2a, conjugate 2b): x²/a² - y²/b² = 1 | Foci (±ae, 0) | e = √(1 + b²/a²) > 1",
+      "Asymptotes of hyperbola: y = ±(b/a)x"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Conic_section"
+  },
+  {
+    "id": "math-calc-1-ddxxn",
+    "keywords": [
+      "d/dx(x^n) formula",
+      "derivative of d/dx(x^n)",
+      "integral of d/dx(x^n)",
+      "calculus d/dx(x^n)"
+    ],
+    "title": "d/dx(x^n) = n * x^(n-1) — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for d/dx(x^n) is n * x^(n-1). Power rule of differentiation for any real exponent n.",
+    "highlights": [
+      "Expression: d/dx(x^n)",
+      "Result: n * x^(n-1)",
+      "Mathematical Rule: Power rule of differentiation for any real exponent n"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-2-ddxsin-x",
+    "keywords": [
+      "d/dx(sin x) formula",
+      "derivative of d/dx(sin x)",
+      "integral of d/dx(sin x)",
+      "calculus d/dx(sin x)"
+    ],
+    "title": "d/dx(sin x) = cos x — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for d/dx(sin x) is cos x. Derivative of sine function.",
+    "highlights": [
+      "Expression: d/dx(sin x)",
+      "Result: cos x",
+      "Mathematical Rule: Derivative of sine function"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-3-ddxcos-x",
+    "keywords": [
+      "d/dx(cos x) formula",
+      "derivative of d/dx(cos x)",
+      "integral of d/dx(cos x)",
+      "calculus d/dx(cos x)"
+    ],
+    "title": "d/dx(cos x) = -sin x — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for d/dx(cos x) is -sin x. Derivative of cosine function.",
+    "highlights": [
+      "Expression: d/dx(cos x)",
+      "Result: -sin x",
+      "Mathematical Rule: Derivative of cosine function"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-4-ddxtan-x",
+    "keywords": [
+      "d/dx(tan x) formula",
+      "derivative of d/dx(tan x)",
+      "integral of d/dx(tan x)",
+      "calculus d/dx(tan x)"
+    ],
+    "title": "d/dx(tan x) = sec^2 x — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for d/dx(tan x) is sec^2 x. Derivative of tangent function.",
+    "highlights": [
+      "Expression: d/dx(tan x)",
+      "Result: sec^2 x",
+      "Mathematical Rule: Derivative of tangent function"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-5-ddxcot-x",
+    "keywords": [
+      "d/dx(cot x) formula",
+      "derivative of d/dx(cot x)",
+      "integral of d/dx(cot x)",
+      "calculus d/dx(cot x)"
+    ],
+    "title": "d/dx(cot x) = -csc^2 x — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for d/dx(cot x) is -csc^2 x. Derivative of cotangent function.",
+    "highlights": [
+      "Expression: d/dx(cot x)",
+      "Result: -csc^2 x",
+      "Mathematical Rule: Derivative of cotangent function"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-6-ddxsec-x",
+    "keywords": [
+      "d/dx(sec x) formula",
+      "derivative of d/dx(sec x)",
+      "integral of d/dx(sec x)",
+      "calculus d/dx(sec x)"
+    ],
+    "title": "d/dx(sec x) = sec x * tan x — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for d/dx(sec x) is sec x * tan x. Derivative of secant function.",
+    "highlights": [
+      "Expression: d/dx(sec x)",
+      "Result: sec x * tan x",
+      "Mathematical Rule: Derivative of secant function"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-7-ddxcsc-x",
+    "keywords": [
+      "d/dx(csc x) formula",
+      "derivative of d/dx(csc x)",
+      "integral of d/dx(csc x)",
+      "calculus d/dx(csc x)"
+    ],
+    "title": "d/dx(csc x) = -csc x * cot x — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for d/dx(csc x) is -csc x * cot x. Derivative of cosecant function.",
+    "highlights": [
+      "Expression: d/dx(csc x)",
+      "Result: -csc x * cot x",
+      "Mathematical Rule: Derivative of cosecant function"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-8-ddxex",
+    "keywords": [
+      "d/dx(e^x) formula",
+      "derivative of d/dx(e^x)",
+      "integral of d/dx(e^x)",
+      "calculus d/dx(e^x)"
+    ],
+    "title": "d/dx(e^x) = e^x — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for d/dx(e^x) is e^x. Derivative of natural exponential function.",
+    "highlights": [
+      "Expression: d/dx(e^x)",
+      "Result: e^x",
+      "Mathematical Rule: Derivative of natural exponential function"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-9-ddxax",
+    "keywords": [
+      "d/dx(a^x) formula",
+      "derivative of d/dx(a^x)",
+      "integral of d/dx(a^x)",
+      "calculus d/dx(a^x)"
+    ],
+    "title": "d/dx(a^x) = a^x * ln(a) — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for d/dx(a^x) is a^x * ln(a). Derivative of general exponential function with base a > 0.",
+    "highlights": [
+      "Expression: d/dx(a^x)",
+      "Result: a^x * ln(a)",
+      "Mathematical Rule: Derivative of general exponential function with base a > 0"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-10-ddxln-x",
+    "keywords": [
+      "d/dx(ln x) formula",
+      "derivative of d/dx(ln x)",
+      "integral of d/dx(ln x)",
+      "calculus d/dx(ln x)"
+    ],
+    "title": "d/dx(ln x) = 1/x — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for d/dx(ln x) is 1/x. Derivative of natural logarithm for x > 0.",
+    "highlights": [
+      "Expression: d/dx(ln x)",
+      "Result: 1/x",
+      "Mathematical Rule: Derivative of natural logarithm for x > 0"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-11-ddxlog_a-x",
+    "keywords": [
+      "d/dx(log_a x) formula",
+      "derivative of d/dx(log_a x)",
+      "integral of d/dx(log_a x)",
+      "calculus d/dx(log_a x)"
+    ],
+    "title": "d/dx(log_a x) = 1 / (x * ln a) — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for d/dx(log_a x) is 1 / (x * ln a). Derivative of logarithm with base a.",
+    "highlights": [
+      "Expression: d/dx(log_a x)",
+      "Result: 1 / (x * ln a)",
+      "Mathematical Rule: Derivative of logarithm with base a"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-12-ddxarcsin-x",
+    "keywords": [
+      "d/dx(arcsin x) formula",
+      "derivative of d/dx(arcsin x)",
+      "integral of d/dx(arcsin x)",
+      "calculus d/dx(arcsin x)"
+    ],
+    "title": "d/dx(arcsin x) = 1 / sqrt(1 - x^2) — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for d/dx(arcsin x) is 1 / sqrt(1 - x^2). Derivative of inverse sine function (|x| < 1).",
+    "highlights": [
+      "Expression: d/dx(arcsin x)",
+      "Result: 1 / sqrt(1 - x^2)",
+      "Mathematical Rule: Derivative of inverse sine function (|x| < 1)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-13-ddxarccos-x",
+    "keywords": [
+      "d/dx(arccos x) formula",
+      "derivative of d/dx(arccos x)",
+      "integral of d/dx(arccos x)",
+      "calculus d/dx(arccos x)"
+    ],
+    "title": "d/dx(arccos x) = -1 / sqrt(1 - x^2) — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for d/dx(arccos x) is -1 / sqrt(1 - x^2). Derivative of inverse cosine function (|x| < 1).",
+    "highlights": [
+      "Expression: d/dx(arccos x)",
+      "Result: -1 / sqrt(1 - x^2)",
+      "Mathematical Rule: Derivative of inverse cosine function (|x| < 1)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-14-ddxarctan-x",
+    "keywords": [
+      "d/dx(arctan x) formula",
+      "derivative of d/dx(arctan x)",
+      "integral of d/dx(arctan x)",
+      "calculus d/dx(arctan x)"
+    ],
+    "title": "d/dx(arctan x) = 1 / (1 + x^2) — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for d/dx(arctan x) is 1 / (1 + x^2). Derivative of inverse tangent function.",
+    "highlights": [
+      "Expression: d/dx(arctan x)",
+      "Result: 1 / (1 + x^2)",
+      "Mathematical Rule: Derivative of inverse tangent function"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-15-ddxarccot-x",
+    "keywords": [
+      "d/dx(arccot x) formula",
+      "derivative of d/dx(arccot x)",
+      "integral of d/dx(arccot x)",
+      "calculus d/dx(arccot x)"
+    ],
+    "title": "d/dx(arccot x) = -1 / (1 + x^2) — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for d/dx(arccot x) is -1 / (1 + x^2). Derivative of inverse cotangent function.",
+    "highlights": [
+      "Expression: d/dx(arccot x)",
+      "Result: -1 / (1 + x^2)",
+      "Mathematical Rule: Derivative of inverse cotangent function"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-16-ddxarcsec-x",
+    "keywords": [
+      "d/dx(arcsec x) formula",
+      "derivative of d/dx(arcsec x)",
+      "integral of d/dx(arcsec x)",
+      "calculus d/dx(arcsec x)"
+    ],
+    "title": "d/dx(arcsec x) = 1 / (|x| * sqrt(x^2 - 1)) — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for d/dx(arcsec x) is 1 / (|x| * sqrt(x^2 - 1)). Derivative of inverse secant function (|x| > 1).",
+    "highlights": [
+      "Expression: d/dx(arcsec x)",
+      "Result: 1 / (|x| * sqrt(x^2 - 1))",
+      "Mathematical Rule: Derivative of inverse secant function (|x| > 1)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-17-ddxarccsc-x",
+    "keywords": [
+      "d/dx(arccsc x) formula",
+      "derivative of d/dx(arccsc x)",
+      "integral of d/dx(arccsc x)",
+      "calculus d/dx(arccsc x)"
+    ],
+    "title": "d/dx(arccsc x) = -1 / (|x| * sqrt(x^2 - 1)) — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for d/dx(arccsc x) is -1 / (|x| * sqrt(x^2 - 1)). Derivative of inverse cosecant function (|x| > 1).",
+    "highlights": [
+      "Expression: d/dx(arccsc x)",
+      "Result: -1 / (|x| * sqrt(x^2 - 1))",
+      "Mathematical Rule: Derivative of inverse cosecant function (|x| > 1)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-18-ddxsinh-x",
+    "keywords": [
+      "d/dx(sinh x) formula",
+      "derivative of d/dx(sinh x)",
+      "integral of d/dx(sinh x)",
+      "calculus d/dx(sinh x)"
+    ],
+    "title": "d/dx(sinh x) = cosh x — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for d/dx(sinh x) is cosh x. Derivative of hyperbolic sine function.",
+    "highlights": [
+      "Expression: d/dx(sinh x)",
+      "Result: cosh x",
+      "Mathematical Rule: Derivative of hyperbolic sine function"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-19-ddxcosh-x",
+    "keywords": [
+      "d/dx(cosh x) formula",
+      "derivative of d/dx(cosh x)",
+      "integral of d/dx(cosh x)",
+      "calculus d/dx(cosh x)"
+    ],
+    "title": "d/dx(cosh x) = sinh x — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for d/dx(cosh x) is sinh x. Derivative of hyperbolic cosine function.",
+    "highlights": [
+      "Expression: d/dx(cosh x)",
+      "Result: sinh x",
+      "Mathematical Rule: Derivative of hyperbolic cosine function"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-20-ddxtanh-x",
+    "keywords": [
+      "d/dx(tanh x) formula",
+      "derivative of d/dx(tanh x)",
+      "integral of d/dx(tanh x)",
+      "calculus d/dx(tanh x)"
+    ],
+    "title": "d/dx(tanh x) = sech^2 x — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for d/dx(tanh x) is sech^2 x. Derivative of hyperbolic tangent function.",
+    "highlights": [
+      "Expression: d/dx(tanh x)",
+      "Result: sech^2 x",
+      "Mathematical Rule: Derivative of hyperbolic tangent function"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-21-integralxn-dx",
+    "keywords": [
+      "integral(x^n dx) formula",
+      "derivative of integral(x^n dx)",
+      "integral of integral(x^n dx)",
+      "calculus integral(x^n dx)"
+    ],
+    "title": "integral(x^n dx) = x^(n+1) / (n+1) + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(x^n dx) is x^(n+1) / (n+1) + C. Power rule of integration (for n != -1).",
+    "highlights": [
+      "Expression: integral(x^n dx)",
+      "Result: x^(n+1) / (n+1) + C",
+      "Mathematical Rule: Power rule of integration (for n != -1)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-22-integral1x-dx",
+    "keywords": [
+      "integral(1/x dx) formula",
+      "derivative of integral(1/x dx)",
+      "integral of integral(1/x dx)",
+      "calculus integral(1/x dx)"
+    ],
+    "title": "integral(1/x dx) = ln|x| + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(1/x dx) is ln|x| + C. Integral of reciprocal function.",
+    "highlights": [
+      "Expression: integral(1/x dx)",
+      "Result: ln|x| + C",
+      "Mathematical Rule: Integral of reciprocal function"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-23-integralex-dx",
+    "keywords": [
+      "integral(e^x dx) formula",
+      "derivative of integral(e^x dx)",
+      "integral of integral(e^x dx)",
+      "calculus integral(e^x dx)"
+    ],
+    "title": "integral(e^x dx) = e^x + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(e^x dx) is e^x + C. Integral of natural exponential function.",
+    "highlights": [
+      "Expression: integral(e^x dx)",
+      "Result: e^x + C",
+      "Mathematical Rule: Integral of natural exponential function"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-24-integralax-dx",
+    "keywords": [
+      "integral(a^x dx) formula",
+      "derivative of integral(a^x dx)",
+      "integral of integral(a^x dx)",
+      "calculus integral(a^x dx)"
+    ],
+    "title": "integral(a^x dx) = a^x / ln(a) + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(a^x dx) is a^x / ln(a) + C. Integral of exponential function with base a.",
+    "highlights": [
+      "Expression: integral(a^x dx)",
+      "Result: a^x / ln(a) + C",
+      "Mathematical Rule: Integral of exponential function with base a"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-25-integralsin-x-dx",
+    "keywords": [
+      "integral(sin x dx) formula",
+      "derivative of integral(sin x dx)",
+      "integral of integral(sin x dx)",
+      "calculus integral(sin x dx)"
+    ],
+    "title": "integral(sin x dx) = -cos x + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(sin x dx) is -cos x + C. Indefinite integral of sine.",
+    "highlights": [
+      "Expression: integral(sin x dx)",
+      "Result: -cos x + C",
+      "Mathematical Rule: Indefinite integral of sine"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-26-integralcos-x-dx",
+    "keywords": [
+      "integral(cos x dx) formula",
+      "derivative of integral(cos x dx)",
+      "integral of integral(cos x dx)",
+      "calculus integral(cos x dx)"
+    ],
+    "title": "integral(cos x dx) = sin x + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(cos x dx) is sin x + C. Indefinite integral of cosine.",
+    "highlights": [
+      "Expression: integral(cos x dx)",
+      "Result: sin x + C",
+      "Mathematical Rule: Indefinite integral of cosine"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-27-integraltan-x-dx",
+    "keywords": [
+      "integral(tan x dx) formula",
+      "derivative of integral(tan x dx)",
+      "integral of integral(tan x dx)",
+      "calculus integral(tan x dx)"
+    ],
+    "title": "integral(tan x dx) = ln|sec x| + C = -ln|cos x| + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(tan x dx) is ln|sec x| + C = -ln|cos x| + C. Indefinite integral of tangent.",
+    "highlights": [
+      "Expression: integral(tan x dx)",
+      "Result: ln|sec x| + C = -ln|cos x| + C",
+      "Mathematical Rule: Indefinite integral of tangent"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-28-integralcot-x-dx",
+    "keywords": [
+      "integral(cot x dx) formula",
+      "derivative of integral(cot x dx)",
+      "integral of integral(cot x dx)",
+      "calculus integral(cot x dx)"
+    ],
+    "title": "integral(cot x dx) = ln|sin x| + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(cot x dx) is ln|sin x| + C. Indefinite integral of cotangent.",
+    "highlights": [
+      "Expression: integral(cot x dx)",
+      "Result: ln|sin x| + C",
+      "Mathematical Rule: Indefinite integral of cotangent"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-29-integralsec-x-dx",
+    "keywords": [
+      "integral(sec x dx) formula",
+      "derivative of integral(sec x dx)",
+      "integral of integral(sec x dx)",
+      "calculus integral(sec x dx)"
+    ],
+    "title": "integral(sec x dx) = ln|sec x + tan x| + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(sec x dx) is ln|sec x + tan x| + C. Indefinite integral of secant.",
+    "highlights": [
+      "Expression: integral(sec x dx)",
+      "Result: ln|sec x + tan x| + C",
+      "Mathematical Rule: Indefinite integral of secant"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-30-integralcsc-x-dx",
+    "keywords": [
+      "integral(csc x dx) formula",
+      "derivative of integral(csc x dx)",
+      "integral of integral(csc x dx)",
+      "calculus integral(csc x dx)"
+    ],
+    "title": "integral(csc x dx) = ln|csc x - cot x| + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(csc x dx) is ln|csc x - cot x| + C. Indefinite integral of cosecant.",
+    "highlights": [
+      "Expression: integral(csc x dx)",
+      "Result: ln|csc x - cot x| + C",
+      "Mathematical Rule: Indefinite integral of cosecant"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-31-integralsec2-x-dx",
+    "keywords": [
+      "integral(sec^2 x dx) formula",
+      "derivative of integral(sec^2 x dx)",
+      "integral of integral(sec^2 x dx)",
+      "calculus integral(sec^2 x dx)"
+    ],
+    "title": "integral(sec^2 x dx) = tan x + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(sec^2 x dx) is tan x + C. Integral of secant squared.",
+    "highlights": [
+      "Expression: integral(sec^2 x dx)",
+      "Result: tan x + C",
+      "Mathematical Rule: Integral of secant squared"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-32-integralcsc2-x-dx",
+    "keywords": [
+      "integral(csc^2 x dx) formula",
+      "derivative of integral(csc^2 x dx)",
+      "integral of integral(csc^2 x dx)",
+      "calculus integral(csc^2 x dx)"
+    ],
+    "title": "integral(csc^2 x dx) = -cot x + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(csc^2 x dx) is -cot x + C. Integral of cosecant squared.",
+    "highlights": [
+      "Expression: integral(csc^2 x dx)",
+      "Result: -cot x + C",
+      "Mathematical Rule: Integral of cosecant squared"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-33-integralsec-x-tan-x-dx",
+    "keywords": [
+      "integral(sec x tan x dx) formula",
+      "derivative of integral(sec x tan x dx)",
+      "integral of integral(sec x tan x dx)",
+      "calculus integral(sec x tan x dx)"
+    ],
+    "title": "integral(sec x tan x dx) = sec x + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(sec x tan x dx) is sec x + C. Integral of secant tangent product.",
+    "highlights": [
+      "Expression: integral(sec x tan x dx)",
+      "Result: sec x + C",
+      "Mathematical Rule: Integral of secant tangent product"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-34-integralcsc-x-cot-x-dx",
+    "keywords": [
+      "integral(csc x cot x dx) formula",
+      "derivative of integral(csc x cot x dx)",
+      "integral of integral(csc x cot x dx)",
+      "calculus integral(csc x cot x dx)"
+    ],
+    "title": "integral(csc x cot x dx) = -csc x + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(csc x cot x dx) is -csc x + C. Integral of cosecant cotangent product.",
+    "highlights": [
+      "Expression: integral(csc x cot x dx)",
+      "Result: -csc x + C",
+      "Mathematical Rule: Integral of cosecant cotangent product"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-35-integral1-1-x2-dx",
+    "keywords": [
+      "integral(1 / (1 + x^2) dx) formula",
+      "derivative of integral(1 / (1 + x^2) dx)",
+      "integral of integral(1 / (1 + x^2) dx)",
+      "calculus integral(1 / (1 + x^2) dx)"
+    ],
+    "title": "integral(1 / (1 + x^2) dx) = arctan(x) + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(1 / (1 + x^2) dx) is arctan(x) + C. Integral producing inverse tangent.",
+    "highlights": [
+      "Expression: integral(1 / (1 + x^2) dx)",
+      "Result: arctan(x) + C",
+      "Mathematical Rule: Integral producing inverse tangent"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-36-integral1-sqrt1-x2-dx",
+    "keywords": [
+      "integral(1 / sqrt(1 - x^2) dx) formula",
+      "derivative of integral(1 / sqrt(1 - x^2) dx)",
+      "integral of integral(1 / sqrt(1 - x^2) dx)",
+      "calculus integral(1 / sqrt(1 - x^2) dx)"
+    ],
+    "title": "integral(1 / sqrt(1 - x^2) dx) = arcsin(x) + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(1 / sqrt(1 - x^2) dx) is arcsin(x) + C. Integral producing inverse sine.",
+    "highlights": [
+      "Expression: integral(1 / sqrt(1 - x^2) dx)",
+      "Result: arcsin(x) + C",
+      "Mathematical Rule: Integral producing inverse sine"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-37-integral1-sqrta2-x2-dx",
+    "keywords": [
+      "integral(1 / sqrt(a^2 - x^2) dx) formula",
+      "derivative of integral(1 / sqrt(a^2 - x^2) dx)",
+      "integral of integral(1 / sqrt(a^2 - x^2) dx)",
+      "calculus integral(1 / sqrt(a^2 - x^2) dx)"
+    ],
+    "title": "integral(1 / sqrt(a^2 - x^2) dx) = arcsin(x/a) + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(1 / sqrt(a^2 - x^2) dx) is arcsin(x/a) + C. Standard integral for inverse sine.",
+    "highlights": [
+      "Expression: integral(1 / sqrt(a^2 - x^2) dx)",
+      "Result: arcsin(x/a) + C",
+      "Mathematical Rule: Standard integral for inverse sine"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-38-integral1-a2-x2-dx",
+    "keywords": [
+      "integral(1 / (a^2 + x^2) dx) formula",
+      "derivative of integral(1 / (a^2 + x^2) dx)",
+      "integral of integral(1 / (a^2 + x^2) dx)",
+      "calculus integral(1 / (a^2 + x^2) dx)"
+    ],
+    "title": "integral(1 / (a^2 + x^2) dx) = (1/a) * arctan(x/a) + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(1 / (a^2 + x^2) dx) is (1/a) * arctan(x/a) + C. Standard integral for inverse tangent.",
+    "highlights": [
+      "Expression: integral(1 / (a^2 + x^2) dx)",
+      "Result: (1/a) * arctan(x/a) + C",
+      "Mathematical Rule: Standard integral for inverse tangent"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-39-integral1-x2-a2-dx",
+    "keywords": [
+      "integral(1 / (x^2 - a^2) dx) formula",
+      "derivative of integral(1 / (x^2 - a^2) dx)",
+      "integral of integral(1 / (x^2 - a^2) dx)",
+      "calculus integral(1 / (x^2 - a^2) dx)"
+    ],
+    "title": "integral(1 / (x^2 - a^2) dx) = (1/(2a)) * ln|(x-a)/(x+a)| + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(1 / (x^2 - a^2) dx) is (1/(2a)) * ln|(x-a)/(x+a)| + C. Standard integral of rational fraction.",
+    "highlights": [
+      "Expression: integral(1 / (x^2 - a^2) dx)",
+      "Result: (1/(2a)) * ln|(x-a)/(x+a)| + C",
+      "Mathematical Rule: Standard integral of rational fraction"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-40-integral1-a2-x2-dx",
+    "keywords": [
+      "integral(1 / (a^2 - x^2) dx) formula",
+      "derivative of integral(1 / (a^2 - x^2) dx)",
+      "integral of integral(1 / (a^2 - x^2) dx)",
+      "calculus integral(1 / (a^2 - x^2) dx)"
+    ],
+    "title": "integral(1 / (a^2 - x^2) dx) = (1/(2a)) * ln|(a+x)/(a-x)| + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(1 / (a^2 - x^2) dx) is (1/(2a)) * ln|(a+x)/(a-x)| + C. Standard integral of rational fraction.",
+    "highlights": [
+      "Expression: integral(1 / (a^2 - x^2) dx)",
+      "Result: (1/(2a)) * ln|(a+x)/(a-x)| + C",
+      "Mathematical Rule: Standard integral of rational fraction"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-41-integralsqrta2-x2-dx",
+    "keywords": [
+      "integral(sqrt(a^2 - x^2) dx) formula",
+      "derivative of integral(sqrt(a^2 - x^2) dx)",
+      "integral of integral(sqrt(a^2 - x^2) dx)",
+      "calculus integral(sqrt(a^2 - x^2) dx)"
+    ],
+    "title": "integral(sqrt(a^2 - x^2) dx) = (x/2)*sqrt(a^2 - x^2) + (a^2/2)*arcsin(x/a) + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(sqrt(a^2 - x^2) dx) is (x/2)*sqrt(a^2 - x^2) + (a^2/2)*arcsin(x/a) + C. Standard integral for circle/ellipse area.",
+    "highlights": [
+      "Expression: integral(sqrt(a^2 - x^2) dx)",
+      "Result: (x/2)*sqrt(a^2 - x^2) + (a^2/2)*arcsin(x/a) + C",
+      "Mathematical Rule: Standard integral for circle/ellipse area"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-42-integralsqrtx2-a2-dx",
+    "keywords": [
+      "integral(sqrt(x^2 + a^2) dx) formula",
+      "derivative of integral(sqrt(x^2 + a^2) dx)",
+      "integral of integral(sqrt(x^2 + a^2) dx)",
+      "calculus integral(sqrt(x^2 + a^2) dx)"
+    ],
+    "title": "integral(sqrt(x^2 + a^2) dx) = (x/2)*sqrt(x^2 + a^2) + (a^2/2)*ln|x + sqrt(x^2 + a^2)| + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(sqrt(x^2 + a^2) dx) is (x/2)*sqrt(x^2 + a^2) + (a^2/2)*ln|x + sqrt(x^2 + a^2)| + C. Standard hyperbolic integral.",
+    "highlights": [
+      "Expression: integral(sqrt(x^2 + a^2) dx)",
+      "Result: (x/2)*sqrt(x^2 + a^2) + (a^2/2)*ln|x + sqrt(x^2 + a^2)| + C",
+      "Mathematical Rule: Standard hyperbolic integral"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-43-integralsqrtx2-a2-dx",
+    "keywords": [
+      "integral(sqrt(x^2 - a^2) dx) formula",
+      "derivative of integral(sqrt(x^2 - a^2) dx)",
+      "integral of integral(sqrt(x^2 - a^2) dx)",
+      "calculus integral(sqrt(x^2 - a^2) dx)"
+    ],
+    "title": "integral(sqrt(x^2 - a^2) dx) = (x/2)*sqrt(x^2 - a^2) - (a^2/2)*ln|x + sqrt(x^2 - a^2)| + C — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for integral(sqrt(x^2 - a^2) dx) is (x/2)*sqrt(x^2 - a^2) - (a^2/2)*ln|x + sqrt(x^2 - a^2)| + C. Standard hyperbola integral.",
+    "highlights": [
+      "Expression: integral(sqrt(x^2 - a^2) dx)",
+      "Result: (x/2)*sqrt(x^2 - a^2) - (a^2/2)*ln|x + sqrt(x^2 - a^2)| + C",
+      "Mathematical Rule: Standard hyperbola integral"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  },
+  {
+    "id": "math-calc-44-integration-by-parts",
+    "keywords": [
+      "integration by parts formula",
+      "derivative of integration by parts",
+      "integral of integration by parts",
+      "calculus integration by parts"
+    ],
+    "title": "Integration by Parts = integral(u dv) = u*v - integral(v du) — Calculus Formula",
+    "category": "Mathematics",
+    "answer": "The standard calculus result for Integration by Parts is integral(u dv) = u*v - integral(v du). ILATE rule: Inverse, Log, Algebraic, Trig, Exponential.",
+    "highlights": [
+      "Expression: Integration by Parts",
+      "Result: integral(u dv) = u*v - integral(v du)",
+      "Mathematical Rule: ILATE rule: Inverse, Log, Algebraic, Trig, Exponential"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_integrals"
+  }
+]

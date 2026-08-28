@@ -1,0 +1,2575 @@
+[
+  {
+    "id": "ncert-cell-structure",
+    "keywords": [
+      "cell structure",
+      "plant cell vs animal cell",
+      "cell organelles",
+      "powerhouse of the cell",
+      "koshika",
+      "cell biology class 8 9"
+    ],
+    "title": "Cell Structure & Organelles (NCERT Class 8–9)",
+    "category": "NCERT Class 6-10",
+    "answer": "The cell is the fundamental structural and functional unit of life, first discovered by Robert Hooke in 1665. Mitochondria generate ATP and are termed the 'powerhouse of the cell', while chloroplasts conduct photosynthesis in plant cells.",
+    "highlights": [
+      "Discovery: Robert Hooke (1665 in cork tissue); Antonie van Leeuwenhoek (first live cells, 1674)",
+      "Key Organelles: Nucleus (control center / DNA), Mitochondria (ATP synthesis / Powerhouse), Chloroplast (photosynthesis in plants), Ribosomes (protein synthesis), Lysosomes (suicide bags)",
+      "Plant vs Animal: Plant cells have a rigid cellulose cell wall, large central vacuole, and plastids (chloroplasts); animal cells lack cell walls and chloroplasts"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Cell_(biology)"
+  },
+  {
+    "id": "ncert-plant-animal-tissues",
+    "keywords": [
+      "plant tissues",
+      "xylem and phloem",
+      "animal tissues",
+      "epithelial tissue",
+      "utak",
+      "meristematic tissue class 9"
+    ],
+    "title": "Plant and Animal Tissues (NCERT Class 9)",
+    "category": "NCERT Class 6-10",
+    "answer": "Plant tissues are divided into meristematic (dividing) and permanent tissues (complex vascular tissues: Xylem transports water/minerals unidirectionally, Phloem transports food bidirectionally). Animal tissues comprise epithelial, connective (blood, bone, cartilage), muscular, and nervous tissues.",
+    "highlights": [
+      "Xylem: Composed of tracheids, vessels, xylem parenchyma, and xylem fibres; conducts water and dissolved minerals from roots to leaves",
+      "Phloem: Composed of sieve tubes, companion cells, phloem fibres, and phloem parenchyma; translocates sucrose bidirectionally",
+      "Animal Tissues: 1) Epithelial (protective covering), 2) Connective (Blood - fluid matrix with RBCs/WBCs/platelets, Bone, Cartilage, Areolar), 3) Muscular (striated, smooth, cardiac), 4) Nervous (neurons)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Tissue_(biology)"
+  },
+  {
+    "id": "ncert-photosynthesis",
+    "keywords": [
+      "photosynthesis ncert",
+      "photosynthesis chemical equation class 10",
+      "chlorophyll function",
+      "light reaction dark reaction"
+    ],
+    "title": "Photosynthesis — Mechanism & Chemical Equation (NCERT Class 7 & 10)",
+    "category": "NCERT Class 6-10",
+    "answer": "Photosynthesis is the autotrophic process where green plants synthesize glucose and release oxygen from carbon dioxide and water using sunlight absorbed by chlorophyll: 6CO₂ + 6H₂O + Sunlight → C₆H₁₂O₆ + 6O₂.",
+    "highlights": [
+      "Balanced Equation: 6CO₂ + 6H₂O + Sunlight (Chlorophyll) → C₆H₁₂O₆ + 6O₂",
+      "Three Main Steps: 1) Absorption of light energy by chlorophyll, 2) Conversion of light to chemical energy and splitting of water into hydrogen and oxygen (photolysis), 3) Reduction of carbon dioxide to carbohydrates",
+      "Site: Chloroplasts (specifically thylakoids for light reactions and stroma for dark/Calvin cycle)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Photosynthesis"
+  },
+  {
+    "id": "ncert-respiration",
+    "keywords": [
+      "aerobic vs anaerobic respiration",
+      "cellular respiration ncert",
+      "fermentation in yeast",
+      "shwasan kriya"
+    ],
+    "title": "Aerobic vs Anaerobic Respiration (NCERT Class 7 & 10)",
+    "category": "NCERT Class 6-10",
+    "answer": "Aerobic respiration breaks down glucose completely in the presence of oxygen to yield CO₂, H₂O, and 36–38 ATP in mitochondria. Anaerobic respiration occurs without oxygen in yeast (yielding ethanol + CO₂ + 2 ATP) or in human muscle cells under intense exercise (yielding lactic acid + 2 ATP, causing muscle cramps).",
+    "highlights": [
+      "Aerobic: Glucose → Pyruvate (in cytoplasm) → CO₂ + H₂O + Energy (in mitochondria)",
+      "Anaerobic in Yeast: Glucose → Pyruvate → Ethanol + CO₂ + Energy (Fermentation)",
+      "Anaerobic in Human Muscle: Glucose → Pyruvate → Lactic Acid + Energy (causes muscle fatigue/cramps)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Cellular_respiration"
+  },
+  {
+    "id": "ncert-reproduction-organisms",
+    "keywords": [
+      "reproduction in organisms class 10",
+      "asexual vs sexual reproduction",
+      "binary fission budding",
+      "fertilization in plants"
+    ],
+    "title": "Modes of Reproduction — Asexual & Sexual (NCERT Class 8 & 10)",
+    "category": "NCERT Class 6-10",
+    "answer": "Asexual reproduction involves a single parent producing genetically identical offspring (Binary fission in Amoeba, Budding in Hydra/Yeast, Regeneration in Planaria, Spore formation in Rhizopus). Sexual reproduction involves the fusion of male and female gametes to produce genetic variation.",
+    "highlights": [
+      "Asexual Modes: Binary Fission (Amoeba, Leishmania), Multiple Fission (Plasmodium), Budding (Hydra, Yeast), Fragmentation (Spirogyra), Vegetative Propagation (Bryophyllum leaf buds, Rose cuttings)",
+      "Plant Sexual Reproduction: Pollination (transfer of pollen from anther to stigma) followed by double fertilization forming zygote and endosperm",
+      "Human Reproduction: Male gamete (sperm produced in testes) fertilizes female gamete (ovum released from ovary) in the fallopian tube"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Reproduction"
+  },
+  {
+    "id": "ncert-light-reflection-refraction",
+    "keywords": [
+      "laws of reflection",
+      "laws of refraction",
+      "snell's law",
+      "concave vs convex mirror",
+      "lens formula class 10",
+      "prakash ka pravartan"
+    ],
+    "title": "Light: Reflection & Refraction (NCERT Class 10)",
+    "category": "NCERT Class 6-10",
+    "answer": "The laws of reflection state that the angle of incidence equals the angle of reflection (∠i = ∠r). Refraction is the bending of light when transitioning between media, governed by Snell's Law: sin(i) / sin(r) = n (refractive index). Mirror formula is 1/f = 1/v + 1/u, and Lens formula is 1/f = 1/v - 1/u.",
+    "highlights": [
+      "Mirror Formula: 1/f = 1/v + 1/u (Magnification m = -v/u = h'/h)",
+      "Lens Formula: 1/f = 1/v - 1/u (Magnification m = v/u = h'/h)",
+      "Power of a Lens: P = 1/f (in metres), expressed in Dioptres (D); Convex lens has +P, Concave lens has -P",
+      "Applications: Concave mirror in dentist tools & solar furnaces; Convex mirror as vehicle rear-view mirror (erect, diminished, wide field of view)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Refraction"
+  },
+  {
+    "id": "ncert-electricity",
+    "keywords": [
+      "ohm's law class 10",
+      "resistors in series and parallel",
+      "electric power formula",
+      "joule's law of heating",
+      "vidyut dhara"
+    ],
+    "title": "Electricity & Ohm's Law (NCERT Class 10)",
+    "category": "NCERT Class 6-10",
+    "answer": "Ohm's Law states that electric current (I) is directly proportional to potential difference (V) at constant temperature: V = I·R. For series resistors R_eq = R₁ + R₂ + ..., while for parallel resistors 1/R_eq = 1/R₁ + 1/R₂ + ...",
+    "highlights": [
+      "Ohm's Law: V = IR (Resistance unit: Ohm, Ω)",
+      "Resistivity Formula: R = ρ·(l / A) (where ρ is resistivity in Ω·m, l is length, A is cross-sectional area)",
+      "Joule's Law of Heating: H = I²Rt (Heat in Joules)",
+      "Electric Power: P = VI = I²R = V²/R (Commercial unit of electrical energy: 1 kWh = 1 Unit = 3.6 × 10⁶ Joules)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Ohm%27s_law"
+  },
+  {
+    "id": "ncert-magnetic-effects",
+    "keywords": [
+      "magnetic effects of electric current",
+      "fleming's left hand rule",
+      "right hand thumb rule",
+      "solenoid class 10",
+      "electromagnetic induction"
+    ],
+    "title": "Magnetic Effects of Electric Current (NCERT Class 10)",
+    "category": "NCERT Class 6-10",
+    "answer": "An electric current produces a magnetic field around it, first discovered by Hans Christian Oersted in 1820. The direction of magnetic field lines around a straight current conductor is given by Maxwell's Right-Hand Thumb Rule, while the direction of mechanical force on a current-carrying conductor in a magnetic field is determined by Fleming's Left-Hand Rule.",
+    "highlights": [
+      "Right-Hand Thumb Rule: Thumb points in direction of current; curled fingers give direction of magnetic field lines",
+      "Solenoid: A coil of many circular turns of insulated copper wire wrapped closely in a cylinder; produces uniform internal magnetic field like a bar magnet",
+      "Fleming's Left-Hand Rule (Electric Motor): Thumb = Motion/Force, Forefinger = Magnetic Field, Center finger = Current",
+      "Fleming's Right-Hand Rule (Electric Generator / Induced Current): Determines direction of induced current from electromagnetic induction"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Electromagnetism"
+  },
+  {
+    "id": "ncert-acids-bases-salts",
+    "keywords": [
+      "acids bases and salts",
+      "ph scale ncert",
+      "litmus paper",
+      "neutralization reaction",
+      "amla kshar l发现"
+    ],
+    "title": "Acids, Bases and Salts & pH Scale (NCERT Class 7 & 10)",
+    "category": "NCERT Class 6-10",
+    "answer": "Acids release H⁺ (or H₃O⁺) ions in aqueous solution and turn blue litmus red (pH < 7). Bases release OH⁻ ions and turn red litmus blue (pH > 7). Neutralization occurs when an acid reacts with a base to form salt and water: Acid + Base → Salt + Water.",
+    "highlights": [
+      "pH Scale: Developed by Soren Sorensen (1909); ranges from 0 (strongly acidic) to 14 (strongly basic), with 7 being neutral (pure water)",
+      "Common Indicators: Litmus (Blue to Red in acid), Phenolphthalein (colorless in acid, pink in base), Methyl orange (red in acid, yellow in base)",
+      "Important Salts: Bleaching powder (CaOCl₂), Baking soda (NaHCO₃), Washing soda (Na₂CO₃·10H₂O), Plaster of Paris (CaSO₄·½H₂O)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Acid%E2%80%93base_reaction"
+  },
+  {
+    "id": "ncert-metals-nonmetals",
+    "keywords": [
+      "metals and non metals",
+      "reactivity series of metals",
+      "malleability and ductility",
+      "amphoteric oxides",
+      "dhatu adhatu"
+    ],
+    "title": "Metals, Non-Metals & Reactivity Series (NCERT Class 8 & 10)",
+    "category": "NCERT Class 6-10",
+    "answer": "Metals are electropositive elements characterized by malleability, ductility, high electrical conductivity, and sonority, whereas non-metals are electronegative. The metal reactivity series lists metals in descending order of reactivity: K > Na > Ca > Mg > Al > Zn > Fe > Pb > [H] > Cu > Hg > Ag > Au.",
+    "highlights": [
+      "Reactivity Series: Potassium (most reactive) > Sodium > Calcium > Magnesium > Aluminium > Zinc > Iron > Lead > Hydrogen > Copper > Silver > Gold (least reactive)",
+      "Exceptions: Mercury is a liquid metal at room temperature; Bromine is a liquid non-metal; Iodine is a lustrous non-metal; Diamond is a non-metal with high melting point and thermal conductivity",
+      "Amphoteric Oxides: Metal oxides that react with both acids and bases to produce salt and water (e.g., Al₂O₃, ZnO)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Reactivity_series"
+  },
+  {
+    "id": "ncert-carbon-compounds",
+    "keywords": [
+      "carbon and its compounds",
+      "allotropes of carbon",
+      "tetravalency and catenation",
+      "homologous series",
+      "functional groups class 10"
+    ],
+    "title": "Carbon & Its Compounds (NCERT Class 10)",
+    "category": "NCERT Class 6-10",
+    "answer": "Carbon forms versatile covalent bonds due to tetravalency (valency of 4) and catenation (ability to form long chains with itself). Its main allotropes are diamond (3D tetrahedral lattice), graphite (hexagonal layered lattice), and buckminsterfullerene (C₆₀).",
+    "highlights": [
+      "Two Unique Properties: 1) Catenation (self-linking capability), 2) Tetravalency (forms 4 covalent bonds)",
+      "Allotropes: Diamond (hardest natural substance, electrical insulator), Graphite (soft, slippery, good electrical conductor due to free delocalized electrons), Fullerene (C₆₀ football cage)",
+      "Functional Groups: Alcohol (-OH), Aldehyde (-CHO), Ketone (-CO-), Carboxylic Acid (-COOH), Halogens (-Cl, -Br)",
+      "Homologous Series: Family of organic compounds with same functional group and a constant -CH₂- difference between successive members (14 u mass difference)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Carbon"
+  },
+  {
+    "id": "ncert-human-digestive-system",
+    "keywords": [
+      "human digestive system",
+      "alimentary canal organs",
+      "digestive enzymes",
+      "pepsin amylase lipase",
+      "pachan tantra"
+    ],
+    "title": "Human Digestive System & Enzymes (NCERT Class 7 & 10)",
+    "category": "NCERT Class 6-10",
+    "answer": "The human digestive system consists of the alimentary canal (mouth, esophagus, stomach, small intestine, large intestine, rectum) and associated glands (salivary glands, liver, pancreas). Salivary amylase begins starch digestion in the mouth, pepsin breaks down proteins in the acidic stomach, and bile emulsifies fats in the alkaline small intestine.",
+    "highlights": [
+      "Mouth: Salivary amylase (ptyalin) digests starch into maltose",
+      "Stomach: Gastric glands secrete HCl (kills bacteria, creates acidic pH ~1.5–2.0), Pepsin (digests proteins into peptones), and Mucus (protects stomach lining)",
+      "Small Intestine: Site of complete digestion of carbohydrates, proteins, and fats; absorbs nutrients via finger-like projections called Villi",
+      "Pancreatic Enzymes: Trypsin (digests proteins), Pancreatic amylase (carbohydrates), Lipase (emulsified fats)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_digestive_system"
+  },
+  {
+    "id": "ncert-circulatory-system",
+    "keywords": [
+      "human circulatory system",
+      "double circulation",
+      "heart chambers",
+      "arteries vs veins",
+      "raktsanchar tantra"
+    ],
+    "title": "Human Circulatory System & Double Circulation (NCERT Class 10)",
+    "category": "NCERT Class 6-10",
+    "answer": "The human heart is a four-chambered muscular organ (two atria and two ventricles) that operates a double circulation system where blood flows through the heart twice during each complete cycle (pulmonary circulation to lungs and systemic circulation to body tissues).",
+    "highlights": [
+      "Four Chambers: Right Atrium (receives deoxygenated blood from body), Right Ventricle (pumps blood to lungs via pulmonary artery), Left Atrium (receives oxygenated blood from lungs via pulmonary vein), Left Ventricle (pumps oxygenated blood to body via aorta)",
+      "Double Circulation: Consists of Pulmonary Circulation (Heart → Lungs → Heart) and Systemic Circulation (Heart → Body Tissues → Heart)",
+      "Arteries vs Veins: Arteries have thick, elastic walls and carry oxygenated blood away from heart under high pressure (exception: pulmonary artery); Veins have thin walls with valves to prevent backflow and carry deoxygenated blood toward heart (exception: pulmonary vein)",
+      "Blood Components: Plasma, RBCs (Hemoglobin carries O₂), WBCs (immunity), Platelets (blood clotting)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Circulatory_system"
+  },
+  {
+    "id": "ncert-nervous-system",
+    "keywords": [
+      "human nervous system",
+      "neuron structure",
+      "reflex arc",
+      "brain parts cerebrum cerebellum",
+      "tantrika tantra"
+    ],
+    "title": "Human Nervous System, Neurons & Reflex Arc (NCERT Class 10)",
+    "category": "NCERT Class 6-10",
+    "answer": "The nervous system comprises the Central Nervous System (Brain and Spinal Cord) and Peripheral Nervous System (cranial and spinal nerves). The structural and functional unit of the nervous system is the Neuron, consisting of a cell body (cyton), dendrites, axon, and synapse.",
+    "highlights": [
+      "Neuron Parts: Dendrites (receive chemical signals), Cyton/Cell Body, Axon (transmits electrical nerve impulse), Synapse (microscopic junction between two neurons where neurotransmitters transmit chemical signals)",
+      "Reflex Arc: Pathway of automatic, instantaneous involuntary response to a stimulus: Receptor → Sensory Neuron → Relay Neuron in Spinal Cord → Motor Neuron → Effector Muscle",
+      "Brain Regions: Forebrain (Cerebrum — thinking, voluntary actions, memory), Midbrain (visual and auditory reflexes), Hindbrain (Cerebellum — posture and balance; Medulla oblongata — involuntary actions like breathing, blood pressure; Pons)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Nervous_system"
+  },
+  {
+    "id": "ncert-excretory-system",
+    "keywords": [
+      "human excretory system",
+      "nephron structure and function",
+      "kidney filtration",
+      "urine formation class 10",
+      "utsarjan tantra"
+    ],
+    "title": "Human Excretory System & Nephron (NCERT Class 10)",
+    "category": "NCERT Class 6-10",
+    "answer": "The human excretory system consists of a pair of kidneys, a pair of ureters, a urinary bladder, and a urethra. The structural and functional filtration unit of the kidney is the Nephron, which filters metabolic nitrogenous waste (urea, uric acid) from the blood.",
+    "highlights": [
+      "Nephron Structure: Bowman's capsule enclosing the Glomerulus (filtration unit), followed by Proximal Convoluted Tubule (PCT), Loop of Henle, Distal Convoluted Tubule (DCT), and Collecting Duct",
+      "Three Steps of Urine Formation: 1) Glomerular Ultrafiltration (filters water, glucose, amino acids, salts, urea), 2) Selective Reabsorption (essential glucose, amino acids, and water reabsorbed into capillaries), 3) Tubular Secretion (active secretion of excess ions into filtrate)",
+      "Artificial Kidney (Hemodialysis): Device used to clean nitrogenous metabolic wastes from blood in patients with renal failure"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Urinary_system"
+  },
+  {
+    "id": "ncert-ecosystem-food-chain",
+    "keywords": [
+      "ecosystem components",
+      "food chain and food web",
+      "10 percent law lindeman",
+      "trophic levels class 10",
+      "paryavaran ncert"
+    ],
+    "title": "Ecosystem, Trophic Levels & 10% Energy Law (NCERT Class 10)",
+    "category": "NCERT Class 6-10",
+    "answer": "An ecosystem consists of biotic (producers, consumers, decomposers) and abiotic components (temperature, water, soil). According to Lindeman's 10% Law of Energy Transfer (1942), only about 10% of the energy available at one trophic level is transferred to the next higher level, while 90% is lost as metabolic heat.",
+    "highlights": [
+      "Trophic Levels: Producers (Autotrophs: T1) → Primary Consumers (Herbivores: T2) → Secondary Consumers (Carnivores: T3) → Tertiary Consumers (Apex predators: T4)",
+      "Lindeman's 10% Law: If producers capture 10,000 J of solar energy, herbivores receive 1,000 J, primary carnivores receive 100 J, and apex predators receive 10 J",
+      "Biological Magnification: Progressive accumulation of non-biodegradable toxic chemicals (like DDT) in higher trophic levels of a food chain",
+      "Ozone Layer Depletion: Ozone (O₃) in stratosphere shields Earth from UV-B radiation; depleted by Chlorofluorocarbons (CFCs), addressed by the 1987 Montreal Protocol"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Ecosystem"
+  },
+  {
+    "id": "ncert-indus-valley-civilization",
+    "keywords": [
+      "indus valley civilization",
+      "harappan civilization",
+      "mohenjo daro great bath",
+      "ivc bronze age",
+      "sindhu ghati sabhyata"
+    ],
+    "title": "Indus Valley Civilization / Harappan Culture (NCERT Class 6 & 12)",
+    "category": "NCERT Class 6-10",
+    "answer": "The Indus Valley Civilization (c. 2600 – 1900 BCE) was a Bronze Age urban civilization in northwestern South Asia renowned for its advanced town planning, grid street layout, baked-brick architecture, and covered drainage systems. Key sites include Harappa (discovered by Daya Ram Sahni in 1921) and Mohenjo-daro (discovered by RD Banerji in 1922).",
+    "highlights": [
+      "Key Sites: Harappa (Ravi river, Punjab, Pakistan), Mohenjo-daro (Indus river, Sindh — Great Bath, Bronze Dancing Girl, Priest-King), Lothal (Gujarat — artificial dockyard/port), Kalibangan (Rajasthan — ploughed field), Dholavira (Gujarat — water harvesting reservoirs)",
+      "Town Planning: Citadel (elevated western public sector) and Lower Town (residential grid system); drainage pipes running beneath streets",
+      "Economy & Trade: Traded with Mesopotamia (known as Meluhha in cuneiform texts); standardized stone weights (chert cubical weights based on binary/decimal system)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
+  },
+  {
+    "id": "ncert-vedic-period",
+    "keywords": [
+      "vedic period rigveda",
+      "four vedas names",
+      "early vs later vedic period",
+      "upanishads epics"
+    ],
+    "title": "The Vedic Period and Four Vedas",
+    "category": "NCERT History",
+    "answer": "The Vedic Period (~1500–500 BCE) is divided into Early Vedic (Rigvedic, ~1500–1000 BCE) and Later Vedic (~1000–500 BCE). The four Vedas are: Rigveda (oldest, 1,028 hymns), Samaveda (music/chants), Yajurveda (rituals/sacrifices), and Atharvaveda (charms, medicine, spells).",
+    "highlights": [
+      "Rigveda: Oldest religious text, contains Gayatri Mantra (dedicated to Savitr)",
+      "Upanishads: Philosophical commentaries (108 total); Satyameva Jayate taken from Mundaka Upanishad",
+      "Early Vedic society was pastoral and egalitarian; Sabha and Samiti were popular assemblies",
+      "Later Vedic saw rise of Janapadas, iron usage (Krishna Ayas), and rigid Varna system"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Vedic_period"
+  },
+  {
+    "id": "ncert-maurya-empire-ashoka",
+    "keywords": [
+      "maurya empire",
+      "emperor ashoka",
+      "chandragupta maurya",
+      "chanakya arthashastra",
+      "kalinga war ashoka",
+      "maurya vansh"
+    ],
+    "title": "Mauryan Empire & Emperor Ashoka (NCERT Class 6 & 12)",
+    "category": "NCERT Class 6-10",
+    "answer": "The Mauryan Empire (322 – 185 BCE) was founded by Chandragupta Maurya with the strategic counsel of Chanakya (Kautilya, author of the Arthashastra). Its greatest emperor, Ashoka the Great (ruled c. 268–232 BCE), renounced war following the catastrophic Kalinga War (261 BCE) and adopted Buddhism and Dhamma.",
+    "highlights": [
+      "Capital: Pataliputra (modern Patna, Bihar)",
+      "Founder: Chandragupta Maurya (defeated the Nanda dynasty and Seleucus I Nicator; Megasthenes wrote 'Indica')",
+      "Ashoka's Edicts: Inscribed in Prakrit (Brahmi and Kharosthi scripts), Greek, and Aramaic on rock faces and polished monolithic sandstone pillars across the subcontinent",
+      "Emblem of India: The Lion Capital of Ashoka at Sarnath was adopted as the National Emblem of India on 26 January 1950"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Maurya_Empire"
+  },
+  {
+    "id": "ncert-gupta-empire",
+    "keywords": [
+      "gupta empire golden age",
+      "chandragupta samudragupta vikramaditya",
+      "kalidasa aryabhata gupta period"
+    ],
+    "title": "Gupta Empire — Golden Age of Ancient India (320–550 CE)",
+    "category": "NCERT History",
+    "answer": "The Gupta Empire (320–550 CE) founded by Sri Gupta and consolidated by Chandragupta I, Samudragupta (Napoleon of India), and Chandragupta II (Vikramaditya), is known as the Golden Age of India for revolutionary achievements in science, mathematics, astronomy, and Sanskrit literature.",
+    "highlights": [
+      "Samudragupta: Prayag Prashasti (Allahabad Pillar inscription by Harisena) records his unbroken conquests",
+      "Chandragupta II (Vikramaditya): Court had Navratnas including great poet Kalidasa and physician Dhanvantari",
+      "Aryabhata (Aryabhatiya): Computed π ≈ 3.1416, proposed Earth rotates on axis and eclipses are shadows",
+      "Ajanta cave paintings and Mehrauli Iron Pillar (rustless metallurgy) belong to this era"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Gupta_Empire"
+  },
+  {
+    "id": "ncert-mughal-empire",
+    "keywords": [
+      "mughal empire",
+      "akbar the great",
+      "shah jahan taj mahal",
+      "din i ilahi",
+      "mansabdari system",
+      "mughal kaal"
+    ],
+    "title": "Mughal Empire — Akbar, Shah Jahan & Governance (NCERT Class 7)",
+    "category": "NCERT Class 6-10",
+    "answer": "The Mughal Empire was founded in India by Babur after defeating Ibrahim Lodi in the First Battle of Panipat (1526). Its greatest ruler, Jalal-ud-din Muhammad Akbar (ruled 1556–1605), established a centralized administrative framework (Mansabdari and Todar Mal's Zabt revenue systems) and promoted religious tolerance (Sulh-i-Kul).",
+    "highlights": [
+      "Key Emperors: Babur (1526–1530) → Humayun (1530–1556) → Akbar (1556–1605) → Jahangir (1605–1627) → Shah Jahan (1628–1658) → Aurangzeb (1658–1707)",
+      "Akbar's Reforms: Abolished Jizya tax on non-Muslims, established Ibadat Khana at Fatehpur Sikri, formulated synthetic religious philosophy 'Din-i-Ilahi' (1582), and instituted Navratnas (Birbal, Tansen, Todar Mal, Abul Fazl)",
+      "Shah Jahan's Architecture: Golden age of Mughal architecture — built Taj Mahal (UNESCO World Heritage Site), Red Fort, and Jama Masjid in Delhi",
+      "Aurangzeb: Re-imposed Jizya, expanded empire to maximum geographic extent across Deccan, faced intense resistance from Chhatrapati Shivaji Maharaj"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Mughal_Empire"
+  },
+  {
+    "id": "ncert-indian-constitution-civics",
+    "keywords": [
+      "fundamental rights in indian constitution",
+      "directive principles of state policy dpsp",
+      "constitution of india class 8 9 10",
+      "dr ambedkar constitution",
+      "samvidhan"
+    ],
+    "title": "Indian Constitution — Fundamental Rights & Governance (NCERT Class 8–10)",
+    "category": "NCERT Class 6-10",
+    "answer": "The Constitution of India was drafted by the Constituent Assembly under Drafting Committee Chairman Dr. B.R. Ambedkar and came into effect on 26 January 1950. Part III guarantees six Fundamental Rights (Articles 12–35) protected by constitutional remedies under Article 32.",
+    "highlights": [
+      "Six Fundamental Rights: 1) Right to Equality (Arts. 14–18), 2) Right to Freedom (Arts. 19–22), 3) Right against Exploitation (Arts. 23–24), 4) Right to Freedom of Religion (Arts. 25–28), 5) Cultural and Educational Rights (Arts. 29–30), 6) Right to Constitutional Remedies (Art. 32 — termed 'Heart and Soul of Constitution' by Ambedkar)",
+      "Directive Principles (DPSP): Part IV (Articles 36–51) borrowed from the Irish Constitution; non-justiciable guidelines for establishing a welfare state",
+      "Fundamental Duties: Part IV-A (Article 51A) added by 42nd Amendment (1976) on recommendations of Swaran Singh Committee (11 duties today)",
+      "Preamble: Declares India to be a 'Sovereign Socialist Secular Democratic Republic'"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Constitution_of_India"
+  },
+  {
+    "id": "ncert-types-of-rocks",
+    "keywords": [
+      "types of rocks",
+      "igneous sedimentary metamorphic rocks",
+      "rock cycle ncert",
+      "chattan ke prakar"
+    ],
+    "title": "Types of Rocks & The Rock Cycle (NCERT Class 7 & 11)",
+    "category": "NCERT Class 6-10",
+    "answer": "Rocks are classified into three major groups based on their mode of formation: Igneous (formed by cooling and solidification of magma/lava, e.g., granite, basalt), Sedimentary (formed by deposition and lithification of mineral sediments, e.g., sandstone, limestone), and Metamorphic (formed by alteration of existing rocks under intense heat and pressure, e.g., marble, slate).",
+    "highlights": [
+      "Igneous Rocks (Primary Rocks): Intrusive (cools slowly underground forming large crystals, e.g., Granite) and Extrusive (cools rapidly on surface, e.g., Basalt of Deccan Traps)",
+      "Sedimentary Rocks: Layered strata containing fossils and fuel deposits (Sandstone, Limestone, Shale, Coal)",
+      "Metamorphic Rocks: Limestone transforms into Marble; Sandstone transforms into Quartzite; Clay/Shale transforms into Slate/Schist",
+      "Rock Cycle: Continuous geological transformation of rocks through melting, cooling, weathering, sedimentation, and metamorphism"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Rock_(geology)"
+  },
+  {
+    "id": "ncert-major-rivers-india",
+    "keywords": [
+      "rivers of india",
+      "ganga yamuna godavari krishna",
+      "himalayan vs peninsular rivers",
+      "bharat ki nadiya"
+    ],
+    "title": "Major Rivers of India — Himalayan & Peninsular Systems (NCERT Class 9)",
+    "category": "NCERT Class 6-10",
+    "answer": "India's drainage is divided into Himalayan rivers (perennial, snow-fed: Ganga, Indus, Brahmaputra) and Peninsular rivers (seasonal, rain-fed: Godavari, Krishna, Kaveri, Mahanadi flowing east into Bay of Bengal; Narmada, Tapi flowing west into Arabian Sea).",
+    "highlights": [
+      "Ganga (2,525 km): Originates as Bhagirathi from Gangotri Glacier (Gaumukh); joins Alaknanda at Devprayag; forms Sundarbans Delta with Brahmaputra",
+      "Indus (3,180 km): Originates near Lake Mansarovar in Tibet; major tributaries: Jhelum, Chenab, Ravi, Beas, Sutlej (Panjnad)",
+      "Brahmaputra (2,900 km): Originates as Tsangpo in Tibet; enters India in Arunachal Pradesh as Dihang; contains world's largest inhabited river island Majuli (Assam)",
+      "Godavari (1,465 km): Known as 'Dakshin Ganga' (Ganges of the South) and Vriddha Ganga; longest peninsular river originating at Trimbakeshwar (Maharashtra)",
+      "West-Flowing Rivers: Narmada (originates at Amarkantak) and Tapi flow through rift valleys into the Arabian Sea without forming deltas (form estuaries)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_rivers_of_India"
+  },
+  {
+    "id": "ncert-soils-of-india",
+    "keywords": [
+      "soils of india",
+      "alluvial soil black soil red soil laterite soil",
+      "regur soil cotton",
+      "bharat ki mitti ncert"
+    ],
+    "title": "Major Soil Types of India (NCERT Class 10)",
+    "category": "NCERT Class 6-10",
+    "answer": "India features six major soil groups mapped by ICAR: Alluvial soil (most widespread and fertile, 40% area in northern plains), Black soil (Regur soil, rich in clay, ideal for cotton cultivation in Deccan Traps), Red and Yellow soil, Laterite soil (leached soil ideal for tea, coffee, cashew), Arid/Desert soil, and Forest/Mountain soil.",
+    "highlights": [
+      "Alluvial Soil: Deposited by Himalayan rivers; divided into Khadar (new, fine, highly fertile flood plain soil) and Bhangar (older, coarser alluvial soil with kankar nodules)",
+      "Black Soil (Regur): Formed by weathering of basaltic lava in Deccan Plateau (Maharashtra, Gujarat, MP); self-aerating with high moisture retention; optimal for cotton",
+      "Laterite Soil: Formed in areas of high temperature and heavy rainfall due to intense leaching; rich in iron oxide and aluminium; ideal for plantation crops (tea, coffee, rubber)",
+      "Soil Conservation Techniques: Contour ploughing, terrace farming, strip cropping, and shelter belts"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Types_of_soil_in_India"
+  },
+  {
+    "id": "ncert-crops-india",
+    "keywords": [
+      "major crops of india",
+      "kharif vs rabi vs zaid",
+      "rice wheat cotton sugarcane",
+      "fasal ke prakar"
+    ],
+    "title": "Major Cropping Seasons & Crops of India (NCERT Class 10)",
+    "category": "NCERT Class 6-10",
+    "answer": "India has three distinct cropping seasons: Kharif (sown in June–July with monsoon onset and harvested in September–October: Rice, Maize, Jowar, Bajra, Cotton, Jute), Rabi (sown in winter October–December and harvested in April–June: Wheat, Barley, Mustard, Gram, Peas), and Zaid (short summer season March–June: Watermelon, Cucumber, Vegetables).",
+    "highlights": [
+      "Kharif Season: Monsoon crops (Rice/Paddy is the chief food crop of India, requiring high heat >25°C and rainfall >100 cm)",
+      "Rabi Season: Winter crops (Wheat requires cool growing season and bright sunshine at harvest; 50–75 cm annual rainfall; Punjab, Haryana, UP leading producers)",
+      "Cash / Commercial Crops: Sugarcane (UP leading), Cotton (Black soil of Gujarat/Maharashtra), Tea (Assam leading), Coffee (Karnataka leading)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Agriculture_in_India"
+  },
+  {
+    "id": "ncert-parliament-structure",
+    "keywords": [
+      "indian parliament structure",
+      "lok sabha vs rajya sabha",
+      "parliament sessions",
+      "sansad ncert class 8"
+    ],
+    "title": "Indian Parliament (Sansad) — Structure & Functions (NCERT Class 8)",
+    "category": "NCERT Class 6-10",
+    "answer": "The Parliament of India (Sansad) is the supreme bicameral legislative body comprising the President of India, the Lok Sabha (House of the People / Lower House, 543 elected MPs), and the Rajya Sabha (Council of States / Upper House, 250 members: 238 elected from states/UTs and 12 nominated by the President).",
+    "highlights": [
+      "Lok Sabha (Lower House): Maximum 550 elected members (currently 543 elected constituencies); term of 5 years; presided over by the Speaker",
+      "Rajya Sabha (Upper House): Permanent house not subject to dissolution; 1/3rd of members retire every 2 years (6-year term); presided over by the Vice President of India as ex-officio Chairman",
+      "Three Parliamentary Sessions: Budget Session (Feb–May), Monsoon Session (July–August), Winter Session (Nov–Dec)",
+      "Money Bill (Article 110): Can only be introduced in Lok Sabha on President's recommendation; Rajya Sabha cannot reject or amend, can only delay for 14 days"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Parliament_of_India"
+  },
+  {
+    "id": "ncert-panchayati-raj",
+    "keywords": [
+      "panchayati raj system",
+      "73rd amendment 1992",
+      "gram panchayat structure",
+      "local self government ncert",
+      "sthanik swashasan"
+    ],
+    "title": "Panchayati Raj & Local Self-Government (NCERT Class 6 & 10)",
+    "category": "NCERT Class 6-10",
+    "answer": "The Panchayati Raj is India's three-tier system of local rural self-government constitutionally formalized by the 73rd Constitutional Amendment Act of 1992 (adding Part IX and 11th Schedule). The three tiers are Gram Panchayat at the village level, Panchayat Samiti at the block level, and Zilla Parishad at the district level.",
+    "highlights": [
+      "Constitutional Status: 73rd Amendment Act 1992 (came into force on 24 April 1993, celebrated as National Panchayati Raj Day)",
+      "Three Tiers: 1) Gram Panchayat (Village level, headed by Sarpanch), 2) Panchayat Samiti / Mandal (Block level), 3) Zilla Parishad (District level)",
+      "Gram Sabha: General body of all registered voters residing in a village; serves as the cornerstone of grassroots direct democracy",
+      "Mandatory Reservation: Minimum 1/3rd (33%) of all seats and chairperson positions reserved for women across all tiers"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Panchayati_raj_in_India"
+  },
+  {
+    "id": "ncert-judiciary-system",
+    "keywords": [
+      "indian judiciary system",
+      "supreme court high court subordinate courts",
+      "judicial review india",
+      "nyaypalika ncert class 8"
+    ],
+    "title": "Indian Judiciary System — Hierarchy & Powers (NCERT Class 8)",
+    "category": "NCERT Class 6-10",
+    "answer": "India has a single, integrated, and independent judicial hierarchy with the Supreme Court of India at the apex in New Delhi, followed by High Courts in the States, and Subordinate Courts (District and Sessions Courts) at the base. The Chief Justice of India (CJI) heads the Supreme Court.",
+    "highlights": [
+      "Hierarchy: Supreme Court (Apex court) → High Courts (25 High Courts across Indian states) → Subordinate District/Sessions Courts",
+      "Supreme Court Jurisdiction: Original (inter-state disputes, fundamental rights enforcement under Article 32), Appellate (civil and criminal appeals), and Advisory (Article 143 to President)",
+      "Judicial Review: Power of Supreme Court and High Courts to strike down legislative statutes or executive actions violating the Constitution (Basic Structure Doctrine - Kesavananda Bharati case 1973)",
+      "Public Interest Litigation (PIL): Introduced by Justice P.N. Bhagwati and Justice V.R. Krishna Iyer to democratize access to justice for marginalized citizens"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Judiciary_of_India"
+  },
+  {
+    "id": "ncert-french-revolution",
+    "keywords": [
+      "french revolution 1789",
+      "storming of the bastille",
+      "liberty equality fraternity",
+      "louis xvi reign of terror robespierre"
+    ],
+    "title": "The French Revolution (1789–1799)",
+    "category": "NCERT History",
+    "answer": "The French Revolution began on 14 July 1789 with the Storming of the Bastille fortress prison in Paris, overthrowing the Bourbon monarchy of King Louis XVI. It introduced the revolutionary ideals of Liberty, Equality, and Fraternity (Liberté, égalité, fraternité) to modern democracy.",
+    "highlights": [
+      "Three Estates of Old Regime: Clergy (1st), Nobility (2nd), Commoners (3rd Estate — bore all taxes)",
+      "Tennis Court Oath (20 June 1789): National Assembly pledged to write a new Constitution",
+      "Reign of Terror (1793–1794): Maximilien Robespierre executed thousands via Guillotine",
+      "Ended in 1799 when Napoleon Bonaparte staged a coup d'état and became First Consul"
+    ],
+    "url": "https://en.wikipedia.org/wiki/French_Revolution"
+  },
+  {
+    "id": "ncert-industrial-revolution",
+    "keywords": [
+      "industrial revolution class 9 10",
+      "steam engine industrial revolution",
+      "spinning jenny industrialization",
+      "audyogik kranti"
+    ],
+    "title": "The Industrial Revolution (c. 1760 – 1840) (NCERT Class 9 & 10)",
+    "category": "NCERT Class 6-10",
+    "answer": "The Industrial Revolution was the historic transition from manual, agrarian craftsmanship to mechanized factory-based mass manufacturing, beginning in Great Britain in the late 18th century powered by coal, iron metallurgy, and the steam engine.",
+    "highlights": [
+      "Origin in Britain: Abundant coal/iron ore reserves, capital from colonial trade, patent protections, and transportation networks (canals, railways)",
+      "Key Inventions: James Hargreaves (Spinning Jenny 1764), Richard Arkwright (Water Frame 1769), James Watt (Rotary Steam Engine 1769–1776), George Stephenson (Steam Locomotive Rocket 1829)",
+      "Social Impact: Massive urbanization, emergence of the working class (proletariat) and industrial capitalism, child labor concerns leading to Factory Acts",
+      "Impact on India: De-industrialized traditional Indian handloom textile artisans due to floods of cheap British machine-made cloth"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Industrial_Revolution"
+  },
+  {
+    "id": "ncert-cell-theory",
+    "keywords": [
+      "cell theory",
+      "who proposed cell theory",
+      "schleiden schwann virchow",
+      "omnis cellula e cellula"
+    ],
+    "title": "Cell Theory — Schleiden, Schwann & Virchow",
+    "category": "NCERT Science",
+    "answer": "Cell Theory states: (1) All living organisms are composed of one or more cells, (2) The cell is the basic unit of structure and organisation in organisms, (3) All cells arise from pre-existing cells (Omnis cellula-e-cellula proposed by Rudolf Virchow in 1855).",
+    "highlights": [
+      "Proposed by Matthias Schleiden (1838) and Theodor Schwann (1839)",
+      "Rudolf Virchow added 3rd postulate in 1855: cells come from pre-existing cells",
+      "Viruses are notable exception to cell theory (acellular)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Cell_theory"
+  },
+  {
+    "id": "ncert-mitochondria",
+    "keywords": [
+      "powerhouse of the cell",
+      "mitochondria function",
+      "atp production organelle",
+      "mitochondria kya hai"
+    ],
+    "title": "Mitochondria — Powerhouse of the Cell",
+    "category": "NCERT Science",
+    "answer": "Mitochondria are known as the powerhouse of the cell because they produce cellular energy in the form of ATP (Adenosine Triphosphate) through aerobic respiration. They possess their own circular DNA and 70S ribosomes, making them semi-autonomous.",
+    "highlights": [
+      "Produces ATP (energy currency of the cell) via oxidative phosphorylation",
+      "Has double membrane: outer smooth, inner folded into cristae (increases surface area)",
+      "Contains own DNA and ribosomes (maternally inherited in humans)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Mitochondrion"
+  },
+  {
+    "id": "ncert-chloroplast",
+    "keywords": [
+      "kitchen of the cell",
+      "chloroplast function",
+      "chlorophyll pigment",
+      "plastids types"
+    ],
+    "title": "Chloroplast and Plastids in Plant Cells",
+    "category": "NCERT Science",
+    "answer": "Chloroplasts are known as the kitchen of the plant cell because they conduct photosynthesis. They contain the green pigment chlorophyll which traps solar energy. Plastids are found only in plant cells: Chloroplasts (green), Chromoplasts (coloured), and Leucoplasts (colourless storage).",
+    "highlights": [
+      "Chloroplasts contain thylakoids arranged in stacks called grana, surrounded by stroma",
+      "Chromoplasts give flowers and fruits yellow, orange, and red colours (carotenoids)",
+      "Leucoplasts store starch (amyloplasts), oils (elaioplasts), or proteins (aleuroplasts)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Chloroplast"
+  },
+  {
+    "id": "ncert-nucleus-cell",
+    "keywords": [
+      "nucleus of cell",
+      "brain of the cell",
+      "nucleolus chromatin",
+      "who discovered nucleus"
+    ],
+    "title": "Nucleus — Control Centre of the Cell",
+    "category": "NCERT Science",
+    "answer": "The nucleus is the control centre (brain) of eukaryotic cells, discovered by Robert Brown in 1831. It contains genetic material in the form of chromatin (DNA + histone proteins) and the nucleolus, which synthesizes ribosomal RNA (rRNA).",
+    "highlights": [
+      "Discovered by Robert Brown in 1831 in orchid root cells",
+      "Surrounded by double membrane nuclear envelope with nuclear pores",
+      "Directs protein synthesis and cell division"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Cell_nucleus"
+  },
+  {
+    "id": "ncert-endoplasmic-reticulum",
+    "keywords": [
+      "endoplasmic reticulum",
+      "rough er vs smooth er",
+      "rer ser function",
+      "ribosomes on er"
+    ],
+    "title": "Endoplasmic Reticulum (RER & SER)",
+    "category": "NCERT Science",
+    "answer": "The Endoplasmic Reticulum (ER) is a network of membranous tubules within the cytoplasm. Rough ER (RER) has ribosomes on its surface and synthesizes proteins; Smooth ER (SER) lacks ribosomes and synthesizes lipids, steroids, and detoxifies drugs/poisons in liver cells.",
+    "highlights": [
+      "Rough ER: Protein synthesis and folding with bound 80S ribosomes",
+      "Smooth ER: Lipid synthesis, steroid hormone production, and detoxification",
+      "Forms skeletal framework of cytoplasm and helps in membrane biogenesis"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Endoplasmic_reticulum"
+  },
+  {
+    "id": "ncert-golgi-apparatus",
+    "keywords": [
+      "golgi apparatus",
+      "golgi complex function",
+      "post office of the cell",
+      "camillo golgi"
+    ],
+    "title": "Golgi Apparatus — Packaging and Dispatch Unit",
+    "category": "NCERT Science",
+    "answer": "The Golgi apparatus (discovered by Camillo Golgi in 1898) consists of flattened membrane-bound sacs called cisternae. It functions as the post office of the cell by packaging, modifying, and sorting proteins and lipids received from the ER for secretion or intracellular delivery.",
+    "highlights": [
+      "Discovered by Camillo Golgi in 1898 using silver nitrate staining",
+      "Two distinct faces: Cis face (forming/receiving) and Trans face (maturing/shipping)",
+      "Produces lysosomes and helps in complex sugar synthesis"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Golgi_apparatus"
+  },
+  {
+    "id": "ncert-lysosomes",
+    "keywords": [
+      "suicide bags of the cell",
+      "lysosome function",
+      "hydrolytic enzymes organelle",
+      "who discovered lysosomes"
+    ],
+    "title": "Lysosomes — Suicide Bags of the Cell",
+    "category": "NCERT Science",
+    "answer": "Lysosomes are membrane-bound vesicles containing acidic hydrolytic enzymes (optimal pH ~4.5-5.0) capable of breaking down all biological polymers. Discovered by Christian de Duve, they are called suicide bags because if a cell is damaged, lysosomes may burst and digest their own cell.",
+    "highlights": [
+      "Discovered by Christian de Duve in 1955",
+      "Contain ~50 hydrolytic enzymes including proteases, lipases, nucleases, and glycosidases",
+      "Perform autophagy (eating damaged organelles) and phagocytosis (eating foreign pathogens)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Lysosome"
+  },
+  {
+    "id": "ncert-mendel-genetics",
+    "keywords": [
+      "gregor mendel laws",
+      "father of genetics",
+      "monohybrid dihybrid cross",
+      "law of segregation",
+      "law of independent assortment"
+    ],
+    "title": "Mendel's Laws of Inheritance (Genetics)",
+    "category": "NCERT Science",
+    "answer": "Gregor Johann Mendel, the Father of Genetics, formulated the laws of inheritance using garden pea plants (Pisum sativum): (1) Law of Dominance, (2) Law of Segregation (purity of gametes, 3:1 phenotypic ratio in monohybrid cross), and (3) Law of Independent Assortment (9:3:3:1 ratio in dihybrid cross).",
+    "highlights": [
+      "Selected Pisum sativum (garden pea) with 7 pairs of contrasting traits",
+      "Monohybrid cross phenotypic ratio: 3:1; Genotypic ratio: 1:2:1",
+      "Dihybrid cross phenotypic ratio: 9:3:3:1 (Yellow Round, Yellow Wrinkled, Green Round, Green Wrinkled)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Mendelian_inheritance"
+  },
+  {
+    "id": "ncert-human-eye",
+    "keywords": [
+      "human eye anatomy",
+      "cornea retina pupil iris",
+      "accommodation power eye",
+      "myopia hypermetropia",
+      "presbyopia astigmatism"
+    ],
+    "title": "Human Eye and Defects of Vision",
+    "category": "NCERT Science",
+    "answer": "The human eye works like a camera forming inverted real images on the retina. Cornea refracts light, Iris controls pupil diameter, Ciliary muscles change lens focal length (power of accommodation, near point 25 cm). Myopia (short-sightedness) is corrected with concave lenses; Hypermetropia (far-sightedness) with convex lenses.",
+    "highlights": [
+      "Near point of normal human eye: 25 cm; Far point: Infinity",
+      "Retina has Rod cells (night/dim light vision) and Cone cells (colour/daylight vision)",
+      "Myopia: Image forms in front of retina; corrected by Concave lens",
+      "Hypermetropia: Image forms behind retina; corrected by Convex lens",
+      "Presbyopia: Old-age loss of accommodation; corrected by Bifocal lens"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_eye"
+  },
+  {
+    "id": "ncert-dispersion-spectrum",
+    "keywords": [
+      "dispersion of light prism",
+      "spectrum vibgyor",
+      "newton glass prism experiment",
+      "rainbow formation physics"
+    ],
+    "title": "Dispersion of Light and Rainbow Formation",
+    "category": "NCERT Science",
+    "answer": "Dispersion is the splitting of white light into its 7 constituent colours (VIBGYOR: Violet, Indigo, Blue, Green, Yellow, Orange, Red) when passing through a glass prism, first demonstrated by Sir Isaac Newton. Red deviates the least (longest wavelength ~700 nm), Violet deviates the most (shortest wavelength ~400 nm).",
+    "highlights": [
+      "VIBGYOR: Violet (max deviation, min wavelength) to Red (min deviation, max wavelength)",
+      "Rainbow caused by dispersion, refraction, and internal reflection in spherical raindrops",
+      "Atmospheric refraction causes twinkling of stars and advance sunrise/delayed sunset by 2 minutes"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Dispersion_(optics)"
+  },
+  {
+    "id": "ncert-chemical-reactions-types",
+    "keywords": [
+      "types of chemical reactions",
+      "combination reaction",
+      "decomposition reaction",
+      "displacement double displacement",
+      "redox reaction class 10"
+    ],
+    "title": "Types of Chemical Reactions (Class 10)",
+    "category": "NCERT Chemistry",
+    "answer": "The five primary chemical reaction types are: (1) Combination: A + B → AB (e.g. CaO + H2O → Ca(OH)2), (2) Decomposition: AB → A + B (thermal, electrolytic, or photolytic), (3) Displacement: A + BC → AC + B (e.g. Fe + CuSO4 → FeSO4 + Cu), (4) Double Displacement: AB + CD → AD + CB (precipitation), (5) Redox (simultaneous oxidation and reduction).",
+    "highlights": [
+      "Combination: Exothermic quicklime slaking produces slaked lime",
+      "Thermal decomposition: 2FeSO4 (green) → Fe2O3 (brown) + SO2 + SO3",
+      "Electrolytic decomposition: 2H2O → 2H2 (cathode) + O2 (anode) in 2:1 volume ratio",
+      "Photolytic decomposition: 2AgCl (white) → 2Ag (grey) + Cl2 in sunlight (used in black-and-white photography)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Chemical_reaction"
+  },
+  {
+    "id": "ncert-atomic-structure-models",
+    "keywords": [
+      "thomson rutherford bohr model",
+      "atomic structure class 9",
+      "rutherford gold foil experiment",
+      "alpha particle scattering"
+    ],
+    "title": "Atomic Structure Models — Thomson, Rutherford, Bohr",
+    "category": "NCERT Chemistry",
+    "answer": "Atomic models evolved from: (1) Thomson's Plum Pudding model (electrons in positive sphere, 1897), (2) Rutherford's Gold Foil α-particle experiment (1911) discovering the dense positive nucleus, and (3) Bohr's Model (1913) where electrons occupy discrete stationary orbits with quantized angular momentum (L = nh/2π).",
+    "highlights": [
+      "Rutherford's experiment showed most space in atom is empty, with mass concentrated in tiny nucleus",
+      "Discovery of subatomic particles: Electron (J.J. Thomson 1897), Proton (Goldstein/Rutherford 1886/1919), Neutron (James Chadwick 1932)",
+      "Bohr-Bury scheme: Maximum electrons in nth shell = 2n² (K=2, L=8, M=18, N=32)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Atomic_theory"
+  },
+  {
+    "id": "ncert-states-of-matter",
+    "keywords": [
+      "states of matter",
+      "solid liquid gas plasma bose einstein",
+      "sublimation deposition",
+      "latent heat of fusion vaporization"
+    ],
+    "title": "States of Matter and Phase Transitions",
+    "category": "NCERT Chemistry",
+    "answer": "Matter exists in 5 states: Solid (fixed shape and volume), Liquid (fixed volume, variable shape), Gas (variable shape and volume), Plasma (ionized gas at extreme temperatures), and Bose-Einstein Condensate (matter at near absolute zero 0 K).",
+    "highlights": [
+      "Sublimation: Direct transition from solid to gas without liquid phase (e.g. Camphor, Ammonium chloride, Dry Ice)",
+      "Deposition: Direct transition from gas to solid",
+      "Latent Heat: Heat absorbed/released during phase change without temperature rise",
+      "0°C = 273.15 K; Boiling point of water = 100°C = 373.15 K"
+    ],
+    "url": "https://en.wikipedia.org/wiki/State_of_matter"
+  },
+  {
+    "id": "ncert-work-energy-power",
+    "keywords": [
+      "work energy power formulas",
+      "kinetic energy formula",
+      "potential energy mgh",
+      "law of conservation of energy",
+      "power unit watt"
+    ],
+    "title": "Work, Energy and Power (Class 9)",
+    "category": "NCERT Physics",
+    "answer": "Work (W) = F · s · cosθ (measured in Joules). Kinetic Energy (KE) = ½mv². Gravitational Potential Energy (PE) = mgh. Law of Conservation of Energy: Energy cannot be created or destroyed, only converted. Power (P) = Work/Time (measured in Watts; 1 HP = 746 W).",
+    "highlights": [
+      "Work is zero if displacement is perpendicular to force (e.g. Earth orbiting Sun)",
+      "Work-Energy Theorem: Net work done on an object equals change in its kinetic energy (W = ΔKE)",
+      "Commercial unit of energy: 1 kWh = 1 unit = 3.6 × 10⁶ Joules",
+      "1 Horsepower (HP) = 746 Watts"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Work_(physics)"
+  },
+  {
+    "id": "ncert-sound-physics",
+    "keywords": [
+      "sound waves properties",
+      "longitudinal vs transverse waves",
+      "echo reverberation formula",
+      "sonar ultrasound frequency"
+    ],
+    "title": "Sound Waves — Propagation, Echo and SONAR",
+    "category": "NCERT Physics",
+    "answer": "Sound is a mechanical longitudinal wave requiring a material medium to propagate (cannot travel in vacuum). Speed in air at 20°C is ~343 m/s (fastest in solids, slowest in gases). Echo requires minimum obstacle distance of 17.2 m for distinct hearing. SONAR uses ultrasonic sound waves to measure underwater depths.",
+    "highlights": [
+      "Audible range for human ear: 20 Hz to 20,000 Hz (20 kHz)",
+      "Infrasound (<20 Hz): Elephants, whales, earthquakes; Ultrasound (>20 kHz): Bats, dolphins, SONAR, echocardiography",
+      "Echo minimum distance = (v × t)/2 = (344 m/s × 0.1 s)/2 = 17.2 metres",
+      "SONAR: Sound Navigation and Ranging (Distance d = (v × t) / 2)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Sound"
+  },
+  {
+    "id": "ncert-indus-valley",
+    "keywords": [
+      "indus valley civilization",
+      "harappa mohenjo daro",
+      "great bath granary",
+      "lothal port ivc"
+    ],
+    "title": "Indus Valley Civilization (Bronze Age 2500–1900 BCE)",
+    "category": "NCERT History",
+    "answer": "The Indus Valley Civilization (Harappan Civilization, ~2500–1900 BCE) was a Bronze Age urban civilization known for grid-plan cities, advanced covered drainage systems, standardized baked bricks, and maritime trade. Harappa was excavated by Daya Ram Sahni (1921) and Mohenjo-daro by R.D. Banerjee (1922).",
+    "highlights": [
+      "Key sites: Harappa (Ravi river, Pakistan), Mohenjo-daro (Indus, Great Bath & Granary), Lothal (Gujarat, dockyard/port), Kalibangan (Rajasthan, ploughed fields)",
+      "Script: Boustrophedon / pictographic (undeciphered till date)",
+      "Bronze Dancing Girl and Steatite Bearded Priest found at Mohenjo-daro",
+      "Declined ~1900 BCE likely due to climate shift, drying of Saraswati river, and floods"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
+  },
+  {
+    "id": "ncert-buddhism-jainism",
+    "keywords": [
+      "gautama buddha teachings",
+      "four noble truths eightfold path",
+      "mahavira jainism tirthankara",
+      "ahimsa anekantavada"
+    ],
+    "title": "Buddhism and Jainism — 6th Century BCE Sramana Traditions",
+    "category": "NCERT History",
+    "answer": "Buddhism was founded by Siddhartha Gautama (Lord Buddha, 563–483 BCE) who attained enlightenment at Bodh Gaya and taught Four Noble Truths and the Eightfold Path (Ashtangika Marga). Jainism was systematized by Vardhamana Mahavira (24th Tirthankara, 599–527 BCE) emphasizing Ahimsa (non-violence) and Anekantavada.",
+    "highlights": [
+      "Buddha: First sermon at Sarnath (Dhammacakkappavattana); Parinirvana at Kushinagar; Tripitakas (Vinaya, Sutta, Abhidhamma)",
+      "Four Buddhist Councils: Rajgriha (483 BCE), Vaishali (383 BCE), Pataliputra (250 BCE under Ashoka), Kundalvana (72 CE under Kanishka)",
+      "Mahavira: 24th Tirthankara; Three Jewels (Triratna): Right Faith, Right Knowledge, Right Conduct",
+      "Two main sects: Buddhism (Hinayana, Mahayana); Jainism (Digambara, Svetambara)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Buddhism"
+  },
+  {
+    "id": "ncert-russian-revolution",
+    "keywords": [
+      "russian revolution 1917",
+      "vladimir lenin bolsheviks",
+      "october revolution tsar nicholas ii",
+      "ussr formation 1922"
+    ],
+    "title": "Russian Revolution of 1917 and Rise of the USSR",
+    "category": "NCERT History",
+    "answer": "The Russian Revolution of 1917 consisted of the February Revolution (overthrew Tsar Nicholas II and Romanov dynasty) and the October Revolution led by Vladimir Lenin and the Bolsheviks, establishing the world's first communist state which became the USSR (Soviet Union) in 1922.",
+    "highlights": [
+      "February 1917: Food shortages and WWI losses forced Tsar Nicholas II to abdicate",
+      "October 1917: Lenin's Bolsheviks seized power with slogan \"Peace, Land, and Bread\"",
+      "April Theses: Lenin's program to end war, transfer land to peasants, and nationalize banks",
+      "Civil War (Reds vs Whites) ended in 1922 with the formation of the USSR under Bolshevik rule"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Russian_Revolution"
+  },
+  {
+    "id": "ncert-nationalism-europe",
+    "keywords": [
+      "nationalism in europe",
+      "unification of germany bismarck",
+      "unification of italy mazzini garibaldi cavour",
+      "treaty of vienna 1815"
+    ],
+    "title": "Rise of Nationalism in Europe and Unifications",
+    "category": "NCERT History",
+    "answer": "Nationalism in 19th-century Europe transformed multi-ethnic empires into modern nation-states. Key milestones: Unification of Germany (1871 under Otto von Bismarck via \"Blood and Iron\" policy) and Unification of Italy (1861 led by Giuseppe Mazzini, Count Cavour, and Giuseppe Garibaldi).",
+    "highlights": [
+      "Treaty of Vienna (1815): Restored Bourbon monarchy under conservative order after Napoleon's defeat at Waterloo",
+      "Giuseppe Mazzini founded secret society \"Young Italy\" in Marseilles in 1831",
+      "Otto von Bismarck orchestrated three wars (against Denmark, Austria, and France) to unify Germany in 1871",
+      "Kaiser Wilhelm I proclaimed German Emperor in the Hall of Mirrors at Versailles (1871)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Rise_of_nationalism_in_Europe"
+  },
+  {
+    "id": "ncert-indian-constitution-preamble",
+    "keywords": [
+      "preamble indian constitution",
+      "sovereign socialist secular democratic republic",
+      "justice liberty equality fraternity",
+      "dr br ambedkar father of constitution"
+    ],
+    "title": "Preamble and Architecture of Indian Constitution",
+    "category": "NCERT Civics",
+    "answer": "The Preamble is the introductory statement of the Constitution of India declaring India a \"Sovereign, Socialist, Secular, Democratic Republic\" securing Justice, Liberty, Equality, and Fraternity. Dr. B.R. Ambedkar was Chairman of the Drafting Committee. The Constitution was adopted on 26 November 1949 and enacted on 26 January 1950.",
+    "highlights": [
+      "Key words added by 42nd Amendment (1976): \"Socialist\", \"Secular\", and \"Integrity\"",
+      "Constituent Assembly took 2 years, 11 months, and 18 days to draft the Constitution",
+      "Adopted 26 November 1949 (National Constitution Day); In effect from 26 January 1950 (Republic Day)",
+      "Dr. B.R. Ambedkar regarded Article 32 (Constitutional Remedies) as the Heart and Soul of the Constitution"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Preamble_to_the_Constitution_of_India"
+  },
+  {
+    "id": "ncert-power-sharing-federalism",
+    "keywords": [
+      "power sharing class 10",
+      "federalism in india",
+      "union state concurrent list",
+      "belgium sri lanka model civics"
+    ],
+    "title": "Power Sharing and Federalism (Civics Class 10)",
+    "category": "NCERT Civics",
+    "answer": "Federalism is a system of government where power is divided between a central authority and constituent units (States). India has a 3-tier federal system (Union, State, Local Panchayati Raj) with legislative powers divided into Union List (100 items), State List (61 items), and Concurrent List (52 items).",
+    "highlights": [
+      "Union List: Defence, Foreign Affairs, Banking, Currency (Union Parliament only)",
+      "State List: Police, Public Health, Agriculture, Prisons (State Legislature)",
+      "Concurrent List: Education, Forests, Marriage, Trade Unions (Both make laws; Union prevails in conflict)",
+      "Residuary Powers (e.g. Cyber Law) vest exclusively with the Union Parliament in India (Article 248)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Federalism_in_India"
+  },
+  {
+    "id": "ncert-monsoon-climate-india",
+    "keywords": [
+      "monsoon in india",
+      "southwest monsoon onset",
+      "western disturbances",
+      "el nino climate effect india"
+    ],
+    "title": "Climate of India and the South-West Monsoon",
+    "category": "NCERT Geography",
+    "answer": "India has a tropical monsoon climate dominated by seasonal reversal of winds. The South-West Monsoon arrives in Kerala around 1 June and covers the entire subcontinent by mid-July, providing over 75% of India's annual rainfall across two branches: Arabian Sea branch and Bay of Bengal branch.",
+    "highlights": [
+      "Onset: 1 June in Kerala; retreats starting September from NW India",
+      "Mawsynram in Meghalaya receives the highest average annual rainfall in the world (~11,872 mm)",
+      "Western Disturbances: Cyclonic storms from Mediterranean bring winter rain to NW India (vital for Rabi wheat crop)",
+      "El Niño causes weak monsoons/droughts in India; La Niña brings normal to excess rainfall"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Monsoon_of_South_Asia"
+  },
+  {
+    "id": "ncert-laws-of-motion-newton",
+    "keywords": [
+      "newton three laws of motion class 9",
+      "law of inertia first law",
+      "f=ma second law of motion",
+      "action reaction third law",
+      "momentum conservation"
+    ],
+    "title": "Newton's Three Laws of Motion & Momentum Conservation (Class 9)",
+    "category": "NCERT Science",
+    "answer": "Sir Isaac Newton formulated 3 laws of motion: (1) First Law (Inertia): An object remains at rest or uniform motion in a straight line unless acted upon by an external net force. (2) Second Law: Force F = dp/dt = ma (rate of change of momentum is proportional to applied force). (3) Third Law: To every action there is an equal and opposite reaction (F_AB = -F_BA). Law of Conservation of Momentum: Total momentum before collision equals total momentum after collision (m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂).",
+    "highlights": [
+      "First Law defines Inertia (mass is quantitative measure of inertia)",
+      "Second Law gives mathematical definition and unit of Force: 1 Newton = 1 kg·m/s²",
+      "Third Law explains rocket propulsion, recoiling of gun, and walking",
+      "Momentum p = mv (vector quantity with SI unit kg·m/s)",
+      "Impulse J = F · Δt = Change in momentum (Δp)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion"
+  },
+  {
+    "id": "ncert-archimedes-principle-density",
+    "keywords": [
+      "archimedes principle buoyant force",
+      "relative density formula",
+      "law of floatation hydrometer lactometer",
+      "buoyancy class 9"
+    ],
+    "title": "Archimedes' Principle, Buoyancy & Relative Density (Class 9)",
+    "category": "NCERT Science",
+    "answer": "Archimedes' Principle states that when an object is immersed fully or partially in a fluid, it experiences an upward buoyant force (upthrust) equal to the weight of the fluid displaced: F_b = ρ_fluid · V_displaced · g. Relative Density = Density of substance / Density of water at 4°C (dimensionless ratio).",
+    "highlights": [
+      "Buoyant force F_b = V · ρ · g (acts upward through center of buoyancy)",
+      "Law of Floatation: An object floats if buoyant force equals its total weight (or if density < fluid density)",
+      "Lactometers (milk purity) and Hydrometers (liquid density) are built on Archimedes' principle",
+      "Relative density of iron ~7.8, gold ~19.3, water = 1.0 (substances with RD > 1 sink in water; RD < 1 float)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Archimedes%27_principle"
+  },
+  {
+    "id": "ncert-mole-concept-avogadro",
+    "keywords": [
+      "mole concept formulas class 9",
+      "avogadro number 6.022x1023",
+      "molar mass calculations",
+      "number of moles n=m/M",
+      "number of particles n=N/NA"
+    ],
+    "title": "The Mole Concept and Avogadro's Number (Class 9 & 11)",
+    "category": "NCERT Science",
+    "answer": "A mole is the amount of substance containing exactly 6.02214076 × 10²³ elementary entities (Avogadro's Constant N_A). Formulas: (1) Number of moles n = Mass (m) / Molar Mass (M), (2) Number of particles N = n · N_A = (m/M) · N_A, (3) Volume of 1 mole of any ideal gas at STP (Standard Temperature and Pressure: 0°C, 1 atm) is 22.4 Litres (or 22.7 L at 1 bar).",
+    "highlights": [
+      "Avogadro Constant: N_A = 6.022 × 10²³ particles/mol",
+      "1 mole of Carbon-12 has a mass of exactly 12 grams",
+      "Molar volume of ideal gas at STP (273.15 K, 1 atm) = 22.4 L/mol",
+      "Percentage composition = (Mass of element in 1 mole of compound / Molar mass of compound) × 100%"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Mole_(unit)"
+  },
+  {
+    "id": "ncert-human-excretory-nephron",
+    "keywords": [
+      "human excretory system nephron structure",
+      "ultrafiltration bowman capsule glomerulus",
+      "urine formation steps class 10",
+      "kidney dialysis hemodialysis"
+    ],
+    "title": "Human Excretory System and Nephron Physiology (Class 10)",
+    "category": "NCERT Science",
+    "answer": "The human excretory system consists of a pair of kidneys, ureters, urinary bladder, and urethra. The Nephron is the structural and functional filtration unit of the kidney (~1 million nephrons per kidney). Urine formation occurs in 3 steps: (1) Ultrafiltration in Glomerulus into Bowman's capsule (GFR ~125 mL/min or 180 L/day), (2) Selective Reabsorption along Proximal Convoluted Tubule (PCT) and Loop of Henle (reabsorbing glucose, amino acids, salts, 99% of water), (3) Tubular Secretion in Distal Convoluted Tubule (DCT) releasing K+, H+, and ammonia into urine (~1.5 L/day produced).",
+    "highlights": [
+      "Glomerulus + Bowman's Capsule = Malpighian Body / Renal Corpuscle",
+      "Selective Reabsorption: PCT reabsorbs 70–80% of electrolytes and water",
+      "Loop of Henle (descending limb permeable to water; ascending limb permeable to electrolytes) maintains hyperosmolarity",
+      "Hemodialysis (artificial kidney) removes nitrogenous metabolic waste (urea, creatinine) across semipermeable cellophane membranes"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Nephron"
+  },
+  {
+    "id": "ncert-plant-hormones-phytohormones",
+    "keywords": [
+      "plant hormones phytohormones class 10",
+      "auxin gibberellin cytokinin ethylene abscisic acid",
+      "phototropism geotropism hydrotropism",
+      "apical dominance fruit ripening hormone"
+    ],
+    "title": "Plant Hormones (Phytohormones) and Tropic Movements (Class 10)",
+    "category": "NCERT Science",
+    "answer": "Plant growth and responses are regulated by 5 major classes of Phytohormones: (1) Auxins (cell elongation, phototropism, apical dominance), (2) Gibberellins (stem elongation, breaking seed dormancy, bolting), (3) Cytokinins (cell division promotion, delaying senescence), (4) Abscisic Acid / ABA (growth inhibitor, stress hormone, stomatal closure during drought, leaf abscission), and (5) Ethylene (only gaseous plant hormone, promotes fruit ripening). Tropic movements: Phototropism (light), Geotropism (gravity), Hydrotropism (water), Chemotropism (pollen tube growth towards ovule), Thigmotropism (touch response in tendrils).",
+    "highlights": [
+      "Auxin: Synthesized at shoot tips; diffuses to shaded side causing cells to elongate faster, bending shoot toward light",
+      "Gibberellin: Induces internode elongation in rosette plants (bolting)",
+      "Cytokinins: Promote rapid cell division in fruits, seeds, and root tips; counteracts apical dominance",
+      "Abscisic Acid (ABA): Stress hormone closing stomata under water deficit",
+      "Ethylene (C₂H₄): Gaseous hormone accelerating fruit ripening and flower fading"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Plant_hormone"
+  },
+  {
+    "id": "ncert-human-heart-cardiac-cycle",
+    "keywords": [
+      "human heart cardiac cycle double circulation",
+      "sinoatrial node sa node pacemaker",
+      "systole diastole blood flow path",
+      "ecg p qrs t wave"
+    ],
+    "title": "Human Heart, Double Circulation & Cardiac Cycle (Class 10 & 11)",
+    "category": "NCERT Science",
+    "answer": "The human heart is myogenic, regulated by the SA (Sinoatrial) Node (\"natural pacemaker\" generating 70–75 action potentials/min in right atrium). Double Circulation comprises Pulmonary Circulation (Right Ventricle → Pulmonary Artery → Lungs → Pulmonary Vein → Left Atrium) and Systemic Circulation (Left Ventricle → Aorta → Body Tissues → Vena Cava → Right Atrium). The Cardiac Cycle lasts 0.8 seconds (Atrial Systole 0.1s, Ventricular Systole 0.3s, Joint Diastole 0.4s).",
+    "highlights": [
+      "Pacemaker pathway: SA Node → AV (Atrioventricular) Node → Bundle of His → Purkinje Fibers",
+      "Cardiac output = Stroke Volume (~70 mL) × Heart Rate (~72 bpm) ≈ 5.0 Litres/minute",
+      "Heart Sounds: \"LUB\" (closure of tricuspid and bicuspid/mitral valves) and \"DUB\" (closure of semilunar valves)",
+      "ECG Waves: P-wave (Atrial depolarization), QRS-complex (Ventricular depolarization), T-wave (Ventricular repolarization)",
+      "Coronary arteries supply oxygenated blood directly to cardiac muscle tissue"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Cardiac_cycle"
+  },
+  {
+    "id": "ncert-carbon-allotropes-diamond-graphite-fullerene",
+    "keywords": [
+      "allotropes of carbon diamond graphite fullerene graphene",
+      "structure of diamond vs graphite",
+      "buckminsterfullerene c60 bッキーボール",
+      "sp3 vs sp2 carbon allotropes"
+    ],
+    "title": "Allotropes of Carbon — Diamond, Graphite, Fullerenes & Graphene",
+    "category": "NCERT Science",
+    "answer": "Carbon exhibits allotropy in crystalline forms: (1) Diamond (each C atom is sp³ hybridized and tetrahedrally bonded to 4 other C atoms in a rigid 3D lattice, hardest natural substance, electrical insulator, refractive index 2.42), (2) Graphite (each C atom is sp² hybridized, bonded to 3 C atoms forming hexagonal layers held by weak van der Waals forces, free π-electrons make it a good conductor, soft and slippery lubricant), (3) Buckminsterfullerene C₆₀ (spherical cage of 20 hexagons and 12 pentagons like a football), (4) Graphene (single 2D atomic layer of sp² carbon with record tensile strength and electrical mobility).",
+    "highlights": [
+      "Diamond: sp³ hybridization, bond length 1.54 Å, no free electrons (electrical insulator), thermal conductor",
+      "Graphite: sp² hybridization, planar hexagonal sheets with delocalized π-electrons (conducts electricity), layer spacing 3.35 Å",
+      "Fullerenes (C₆₀): Discovered by Kroto, Curl, and Smalley (1996 Nobel Prize)",
+      "Graphene: Discovered by Geim and Novoselov (2010 Nobel Prize); 200× stronger than steel and ballistic conductor"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Allotropes_of_carbon"
+  },
+  {
+    "id": "ncert-modern-periodic-trends-detailed",
+    "keywords": [
+      "periodic table periodic trends detailed",
+      "atomic radius metallic character trends",
+      "effective nuclear charge zeff screening effect",
+      "electronegativity electropositivity variations"
+    ],
+    "title": "Detailed Periodic Table Trends & Anomalies (Class 10 & 11)",
+    "category": "NCERT Science",
+    "answer": "Across a Period (Left to Right): Atomic radius decreases, Effective nuclear charge (Z_eff) increases, Ionization Enthalpy increases (with anomalies: N > O due to half-filled 2p³ stability, and Be > B due to fully-filled 2s² stability), Electronegativity increases, Non-metallic character increases. Down a Group (Top to Bottom): Atomic radius increases, Screening/shielding effect increases, Ionization Enthalpy decreases, Metallic character increases, Electropositivity increases.",
+    "highlights": [
+      "Atomic Radii decrease across period due to increasing nuclear attraction pulling outer electrons inward",
+      "Ionization Enthalpy exception: Nitrogen (1402 kJ/mol) has higher IE than Oxygen (1314 kJ/mol) due to extra stability of half-filled 2p³ subshell",
+      "Electron Gain Enthalpy exception: Chlorine (-349 kJ/mol) is more negative than Fluorine (-328 kJ/mol) because F has small 2p orbital causing strong inter-electronic repulsion",
+      "Diagonal Relationships: Lithium-Magnesium, Beryllium-Aluminum, and Boron-Silicon share similar ionic size and charge density"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Periodic_trends"
+  },
+  {
+    "id": "ncert-curriculum-1-food-where-does-it-come-from",
+    "keywords": [
+      "food: where does it come from? ncert",
+      "food: where does it come from? class 6 7 8 9 10",
+      "notes on food: where does it come from?",
+      "chapter food: where does it come from?",
+      "summary of food: where does it come from?"
+    ],
+    "title": "Food: Where Does It Come From? — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Food: Where Does It Come From?\" covers core curriculum principles: Food varieties, ingredients, plant parts, animal products, herbivores, carnivores, omnivores, nectar, sprouted seeds. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 6 Science",
+      "Key Topics Covered: Food varieties, ingredients, plant parts, animal products, herbivores, carnivores, omnivores, nectar, sprouted seeds",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-2-components-of-food",
+    "keywords": [
+      "components of food ncert",
+      "components of food class 6 7 8 9 10",
+      "notes on components of food",
+      "chapter components of food",
+      "summary of components of food"
+    ],
+    "title": "Components of Food — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Components of Food\" covers core curriculum principles: Carbohydrates, proteins, fats, vitamins, minerals, dietary fibres, roughage, water, balanced diet, deficiency diseases like scurvy, rickets, beriberi, goitre, anaemia. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 6 Science",
+      "Key Topics Covered: Carbohydrates, proteins, fats, vitamins, minerals, dietary fibres, roughage, water, balanced diet, deficiency diseases like scurvy, rickets, beriberi, goitre, anaemia",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-3-fibre-to-fabric",
+    "keywords": [
+      "fibre to fabric ncert",
+      "fibre to fabric class 6 7 8 9 10",
+      "notes on fibre to fabric",
+      "chapter fibre to fabric",
+      "summary of fibre to fabric"
+    ],
+    "title": "Fibre to Fabric — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Fibre to Fabric\" covers core curriculum principles: Natural fibres (cotton, jute, silk, wool), synthetic fibres (nylon, polyester, acrylic), ginning, spinning, takli, charkha, weaving, knitting, looms. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 6 Science",
+      "Key Topics Covered: Natural fibres (cotton, jute, silk, wool), synthetic fibres (nylon, polyester, acrylic), ginning, spinning, takli, charkha, weaving, knitting, looms",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-4-sorting-materials-into-groups",
+    "keywords": [
+      "sorting materials into groups ncert",
+      "sorting materials into groups class 6 7 8 9 10",
+      "notes on sorting materials into groups",
+      "chapter sorting materials into groups",
+      "summary of sorting materials into groups"
+    ],
+    "title": "Sorting Materials into Groups — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Sorting Materials into Groups\" covers core curriculum principles: Appearance, hardness, soluble/insoluble, floating/sinking in water, transparency (transparent, translucent, opaque). It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 6 Science",
+      "Key Topics Covered: Appearance, hardness, soluble/insoluble, floating/sinking in water, transparency (transparent, translucent, opaque)",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-5-separation-of-substances",
+    "keywords": [
+      "separation of substances ncert",
+      "separation of substances class 6 7 8 9 10",
+      "notes on separation of substances",
+      "chapter separation of substances",
+      "summary of separation of substances"
+    ],
+    "title": "Separation of Substances — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Separation of Substances\" covers core curriculum principles: Handpicking, threshing, winnowing, sieving, sedimentation, decantation, filtration, evaporation, condensation, saturated solution. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 6 Science",
+      "Key Topics Covered: Handpicking, threshing, winnowing, sieving, sedimentation, decantation, filtration, evaporation, condensation, saturated solution",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-6-changes-around-us",
+    "keywords": [
+      "changes around us ncert",
+      "changes around us class 6 7 8 9 10",
+      "notes on changes around us",
+      "chapter changes around us",
+      "summary of changes around us"
+    ],
+    "title": "Changes Around Us — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Changes Around Us\" covers core curriculum principles: Reversible changes (stretching rubber, melting ice), irreversible changes (burning paper, curdling milk), physical vs chemical changes, expansion on heating. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 6 Science",
+      "Key Topics Covered: Reversible changes (stretching rubber, melting ice), irreversible changes (burning paper, curdling milk), physical vs chemical changes, expansion on heating",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-7-getting-to-know-plants",
+    "keywords": [
+      "getting to know plants ncert",
+      "getting to know plants class 6 7 8 9 10",
+      "notes on getting to know plants",
+      "chapter getting to know plants",
+      "summary of getting to know plants"
+    ],
+    "title": "Getting to Know Plants — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Getting to Know Plants\" covers core curriculum principles: Herbs, shrubs, trees, creepers, climbers, stem, leaf (petiole, lamina, venation: reticulate/parallel), transpiration, photosynthesis, roots (taproot, fibrous), flower (sepals, petals, stamens, pistil). It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 6 Science",
+      "Key Topics Covered: Herbs, shrubs, trees, creepers, climbers, stem, leaf (petiole, lamina, venation: reticulate/parallel), transpiration, photosynthesis, roots (taproot, fibrous), flower (sepals, petals, stamens, pistil)",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-8-body-movements",
+    "keywords": [
+      "body movements ncert",
+      "body movements class 6 7 8 9 10",
+      "notes on body movements",
+      "chapter body movements",
+      "summary of body movements"
+    ],
+    "title": "Body Movements — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Body Movements\" covers core curriculum principles: Ball and socket joint, pivotal joint, hinge joint, fixed joints, human skeleton, cartilage, muscle contraction, locomotion in earthworm, snail, cockroach, birds, fish, snakes. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 6 Science",
+      "Key Topics Covered: Ball and socket joint, pivotal joint, hinge joint, fixed joints, human skeleton, cartilage, muscle contraction, locomotion in earthworm, snail, cockroach, birds, fish, snakes",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-9-the-living-organisms-characteristics-habitats",
+    "keywords": [
+      "the living organisms — characteristics & habitats ncert",
+      "the living organisms — characteristics & habitats class 6 7 8 9 10",
+      "notes on the living organisms — characteristics & habitats",
+      "chapter the living organisms — characteristics & habitats",
+      "summary of the living organisms — characteristics & habitats"
+    ],
+    "title": "The Living Organisms — Characteristics & Habitats — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"The Living Organisms — Characteristics & Habitats\" covers core curriculum principles: Terrestrial habitats (deserts, mountains, grasslands), aquatic habitats (oceans, ponds, lakes), biotic and abiotic components, adaptation, acclimatisation, respiration, excretion, stimuli response. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 6 Science",
+      "Key Topics Covered: Terrestrial habitats (deserts, mountains, grasslands), aquatic habitats (oceans, ponds, lakes), biotic and abiotic components, adaptation, acclimatisation, respiration, excretion, stimuli response",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-10-motion-and-measurement-of-distances",
+    "keywords": [
+      "motion and measurement of distances ncert",
+      "motion and measurement of distances class 6 7 8 9 10",
+      "notes on motion and measurement of distances",
+      "chapter motion and measurement of distances",
+      "summary of motion and measurement of distances"
+    ],
+    "title": "Motion and Measurement of Distances — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Motion and Measurement of Distances\" covers core curriculum principles: History of transport, standard units of measurement (SI unit of length: metre), measuring curved lines, rectilinear motion, circular motion, periodic motion. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 6 Science",
+      "Key Topics Covered: History of transport, standard units of measurement (SI unit of length: metre), measuring curved lines, rectilinear motion, circular motion, periodic motion",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-11-light-shadows-and-reflections",
+    "keywords": [
+      "light, shadows and reflections ncert",
+      "light, shadows and reflections class 6 7 8 9 10",
+      "notes on light, shadows and reflections",
+      "chapter light, shadows and reflections",
+      "summary of light, shadows and reflections"
+    ],
+    "title": "Light, Shadows and Reflections — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Light, Shadows and Reflections\" covers core curriculum principles: Luminous and non-luminous objects, transparent, translucent, opaque materials, shadow formation, pinhole camera, rectilinear propagation of light, mirrors and reflections. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 6 Science",
+      "Key Topics Covered: Luminous and non-luminous objects, transparent, translucent, opaque materials, shadow formation, pinhole camera, rectilinear propagation of light, mirrors and reflections",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-12-electricity-and-circuits",
+    "keywords": [
+      "electricity and circuits ncert",
+      "electricity and circuits class 6 7 8 9 10",
+      "notes on electricity and circuits",
+      "chapter electricity and circuits",
+      "summary of electricity and circuits"
+    ],
+    "title": "Electricity and Circuits — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Electricity and Circuits\" covers core curriculum principles: Electric cell, terminals (positive and negative), bulb filament, electric circuit (closed and open), electric switch, conductors (metals, graphite) and insulators (rubber, plastic, wood). It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 6 Science",
+      "Key Topics Covered: Electric cell, terminals (positive and negative), bulb filament, electric circuit (closed and open), electric switch, conductors (metals, graphite) and insulators (rubber, plastic, wood)",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-13-fun-with-magnets",
+    "keywords": [
+      "fun with magnets ncert",
+      "fun with magnets class 6 7 8 9 10",
+      "notes on fun with magnets",
+      "chapter fun with magnets",
+      "summary of fun with magnets"
+    ],
+    "title": "Fun with Magnets — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Fun with Magnets\" covers core curriculum principles: Discovery of magnets (Magnes the shepherd in Greece, magnetite/lodestone), magnetic materials (iron, nickel, cobalt) and non-magnetic materials, poles of magnet (North and South), attraction of opposite poles, repulsion of like poles, compass, demagnetisation. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 6 Science",
+      "Key Topics Covered: Discovery of magnets (Magnes the shepherd in Greece, magnetite/lodestone), magnetic materials (iron, nickel, cobalt) and non-magnetic materials, poles of magnet (North and South), attraction of opposite poles, repulsion of like poles, compass, demagnetisation",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-14-water",
+    "keywords": [
+      "water ncert",
+      "water class 6 7 8 9 10",
+      "notes on water",
+      "chapter water",
+      "summary of water"
+    ],
+    "title": "Water — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Water\" covers core curriculum principles: Water cycle, evaporation, transpiration, cloud formation, precipitation, rain, groundwater, floods, droughts, water conservation, rainwater harvesting. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 6 Science",
+      "Key Topics Covered: Water cycle, evaporation, transpiration, cloud formation, precipitation, rain, groundwater, floods, droughts, water conservation, rainwater harvesting",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-15-air-around-us",
+    "keywords": [
+      "air around us ncert",
+      "air around us class 6 7 8 9 10",
+      "notes on air around us",
+      "chapter air around us",
+      "summary of air around us"
+    ],
+    "title": "Air Around Us — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Air Around Us\" covers core curriculum principles: Atmosphere, composition of air (78% nitrogen, 21% oxygen, 0.9% argon, 0.04% carbon dioxide, water vapour, dust), oxygen support for respiration and burning, aquatic breathing via dissolved oxygen. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 6 Science",
+      "Key Topics Covered: Atmosphere, composition of air (78% nitrogen, 21% oxygen, 0.9% argon, 0.04% carbon dioxide, water vapour, dust), oxygen support for respiration and burning, aquatic breathing via dissolved oxygen",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-16-garbage-in-garbage-out",
+    "keywords": [
+      "garbage in, garbage out ncert",
+      "garbage in, garbage out class 6 7 8 9 10",
+      "notes on garbage in, garbage out",
+      "chapter garbage in, garbage out",
+      "summary of garbage in, garbage out"
+    ],
+    "title": "Garbage In, Garbage Out — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Garbage In, Garbage Out\" covers core curriculum principles: Biodegradable vs non-biodegradable waste, composting, vermicomposting with red worms, recycling of paper and plastics, 4Rs (Reduce, Reuse, Recycle, Refuse), landfill sites. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 6 Science",
+      "Key Topics Covered: Biodegradable vs non-biodegradable waste, composting, vermicomposting with red worms, recycling of paper and plastics, 4Rs (Reduce, Reuse, Recycle, Refuse), landfill sites",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-17-nutrition-in-plants",
+    "keywords": [
+      "nutrition in plants ncert",
+      "nutrition in plants class 6 7 8 9 10",
+      "notes on nutrition in plants",
+      "chapter nutrition in plants",
+      "summary of nutrition in plants"
+    ],
+    "title": "Nutrition in Plants — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Nutrition in Plants\" covers core curriculum principles: Autotrophic nutrition, chlorophyll, photosynthesis equation, heterotrophic plants (parasites: Cuscuta/Amarbel, insectivorous: Pitcher plant, saprotrophs: Fungi/Mushrooms, symbiotic: Lichens). It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 7 Science",
+      "Key Topics Covered: Autotrophic nutrition, chlorophyll, photosynthesis equation, heterotrophic plants (parasites: Cuscuta/Amarbel, insectivorous: Pitcher plant, saprotrophs: Fungi/Mushrooms, symbiotic: Lichens)",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-18-nutrition-in-animals",
+    "keywords": [
+      "nutrition in animals ncert",
+      "nutrition in animals class 6 7 8 9 10",
+      "notes on nutrition in animals",
+      "chapter nutrition in animals",
+      "summary of nutrition in animals"
+    ],
+    "title": "Nutrition in Animals — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Nutrition in Animals\" covers core curriculum principles: Ingestion, digestion, absorption, assimilation, egestion, human digestive system, buccal cavity, teeth (incisors, canines, premolars, molars), stomach (HCl, pepsin), small intestine (villi), ruminants digestion in cud-chewing animals, feeding and digestion in Amoeba via pseudopodia. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 7 Science",
+      "Key Topics Covered: Ingestion, digestion, absorption, assimilation, egestion, human digestive system, buccal cavity, teeth (incisors, canines, premolars, molars), stomach (HCl, pepsin), small intestine (villi), ruminants digestion in cud-chewing animals, feeding and digestion in Amoeba via pseudopodia",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-19-fibre-to-fabric-silk-wool",
+    "keywords": [
+      "fibre to fabric (silk & wool) ncert",
+      "fibre to fabric (silk & wool) class 6 7 8 9 10",
+      "notes on fibre to fabric (silk & wool)",
+      "chapter fibre to fabric (silk & wool)",
+      "summary of fibre to fabric (silk & wool)"
+    ],
+    "title": "Fibre to Fabric (Silk & Wool) — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Fibre to Fabric (Silk & Wool)\" covers core curriculum principles: Wool yielding animals (sheep, goat, yak, camel), shearing, scouring, sorting, dyeing, spinning, life history of silk moth, sericulture, mulberry leaves, cocoon, reeling of silk. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 7 Science",
+      "Key Topics Covered: Wool yielding animals (sheep, goat, yak, camel), shearing, scouring, sorting, dyeing, spinning, life history of silk moth, sericulture, mulberry leaves, cocoon, reeling of silk",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-20-heat-and-temperature",
+    "keywords": [
+      "heat and temperature ncert",
+      "heat and temperature class 6 7 8 9 10",
+      "notes on heat and temperature",
+      "chapter heat and temperature",
+      "summary of heat and temperature"
+    ],
+    "title": "Heat and Temperature — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Heat and Temperature\" covers core curriculum principles: Temperature measurement, clinical thermometer (35°C to 42°C), laboratory thermometer (-10°C to 110°C), heat transfer modes: conduction (solids), convection (liquids and gases: sea breeze, land breeze), radiation (vacuum), thermal conductors and insulators. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 7 Science",
+      "Key Topics Covered: Temperature measurement, clinical thermometer (35°C to 42°C), laboratory thermometer (-10°C to 110°C), heat transfer modes: conduction (solids), convection (liquids and gases: sea breeze, land breeze), radiation (vacuum), thermal conductors and insulators",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-21-acids-bases-and-salts",
+    "keywords": [
+      "acids, bases and salts ncert",
+      "acids, bases and salts class 6 7 8 9 10",
+      "notes on acids, bases and salts",
+      "chapter acids, bases and salts",
+      "summary of acids, bases and salts"
+    ],
+    "title": "Acids, Bases and Salts — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Acids, Bases and Salts\" covers core curriculum principles: Natural indicators (litmus from lichens, turmeric, China rose), acidic substances, basic substances, neutralisation reaction (Acid + Base → Salt + Water + Heat), antacid treatment, ant sting (formic acid neutralised by calamine / zinc carbonate). It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 7 Science",
+      "Key Topics Covered: Natural indicators (litmus from lichens, turmeric, China rose), acidic substances, basic substances, neutralisation reaction (Acid + Base → Salt + Water + Heat), antacid treatment, ant sting (formic acid neutralised by calamine / zinc carbonate)",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-22-physical-and-chemical-changes",
+    "keywords": [
+      "physical and chemical changes ncert",
+      "physical and chemical changes class 6 7 8 9 10",
+      "notes on physical and chemical changes",
+      "chapter physical and chemical changes",
+      "summary of physical and chemical changes"
+    ],
+    "title": "Physical and Chemical Changes — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Physical and Chemical Changes\" covers core curriculum principles: Physical change (shape, size, state change, reversible, no new substance), chemical change (new substances formed: rusting of iron 4Fe + 3O2 + 2xH2O → 2Fe2O3.xH2O, burning of magnesium ribbon 2Mg + O2 → 2MgO, copper sulphate reaction with iron). It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 7 Science",
+      "Key Topics Covered: Physical change (shape, size, state change, reversible, no new substance), chemical change (new substances formed: rusting of iron 4Fe + 3O2 + 2xH2O → 2Fe2O3.xH2O, burning of magnesium ribbon 2Mg + O2 → 2MgO, copper sulphate reaction with iron)",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-23-weather-climate-and-adaptations-of-animals",
+    "keywords": [
+      "weather, climate and adaptations of animals ncert",
+      "weather, climate and adaptations of animals class 6 7 8 9 10",
+      "notes on weather, climate and adaptations of animals",
+      "chapter weather, climate and adaptations of animals",
+      "summary of weather, climate and adaptations of animals"
+    ],
+    "title": "Weather, Climate and Adaptations of Animals — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Weather, Climate and Adaptations of Animals\" covers core curriculum principles: Elements of weather (temperature, humidity, rainfall, wind speed), maximum and minimum thermometers, climate zones, polar region adaptations (polar bear white fur, thick blubber fat; penguins huddling), tropical rainforest adaptations (red-eyed tree frog, toucan, lion-tailed macaque, elephant). It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 7 Science",
+      "Key Topics Covered: Elements of weather (temperature, humidity, rainfall, wind speed), maximum and minimum thermometers, climate zones, polar region adaptations (polar bear white fur, thick blubber fat; penguins huddling), tropical rainforest adaptations (red-eyed tree frog, toucan, lion-tailed macaque, elephant)",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-24-winds-storms-and-cyclones",
+    "keywords": [
+      "winds, storms and cyclones ncert",
+      "winds, storms and cyclones class 6 7 8 9 10",
+      "notes on winds, storms and cyclones",
+      "chapter winds, storms and cyclones",
+      "summary of winds, storms and cyclones"
+    ],
+    "title": "Winds, Storms and Cyclones — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Winds, Storms and Cyclones\" covers core curriculum principles: Air pressure, air expands on heating and becomes lighter, wind generation due to uneven heating of earth, thunderstorms, cyclones formation (low-pressure center, eye of cyclone, high-speed swirling winds), tornadoes, anemometer. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 7 Science",
+      "Key Topics Covered: Air pressure, air expands on heating and becomes lighter, wind generation due to uneven heating of earth, thunderstorms, cyclones formation (low-pressure center, eye of cyclone, high-speed swirling winds), tornadoes, anemometer",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-25-soil",
+    "keywords": [
+      "soil ncert",
+      "soil class 6 7 8 9 10",
+      "notes on soil",
+      "chapter soil",
+      "summary of soil"
+    ],
+    "title": "Soil — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Soil\" covers core curriculum principles: Soil profile (A-horizon / topsoil rich in humus, B-horizon / subsoil rich in minerals, C-horizon / weathered rock, Bedrock), soil types (clayey, loamy, sandy), percolation rate of water in soil, crops suited for soil types. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 7 Science",
+      "Key Topics Covered: Soil profile (A-horizon / topsoil rich in humus, B-horizon / subsoil rich in minerals, C-horizon / weathered rock, Bedrock), soil types (clayey, loamy, sandy), percolation rate of water in soil, crops suited for soil types",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-26-respiration-in-organisms",
+    "keywords": [
+      "respiration in organisms ncert",
+      "respiration in organisms class 6 7 8 9 10",
+      "notes on respiration in organisms",
+      "chapter respiration in organisms",
+      "summary of respiration in organisms"
+    ],
+    "title": "Respiration in Organisms — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Respiration in Organisms\" covers core curriculum principles: Aerobic vs anaerobic respiration, cellular respiration in mitochondria, breathing mechanism in humans (diaphragm, ribs, lungs, trachea), breathing in other animals (earthworm skin, insects spiracles and tracheae, fish gills, frog lungs and moist skin), breathing in plants via stomata and lenticels. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 7 Science",
+      "Key Topics Covered: Aerobic vs anaerobic respiration, cellular respiration in mitochondria, breathing mechanism in humans (diaphragm, ribs, lungs, trachea), breathing in other animals (earthworm skin, insects spiracles and tracheae, fish gills, frog lungs and moist skin), breathing in plants via stomata and lenticels",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-27-transportation-in-animals-and-plants",
+    "keywords": [
+      "transportation in animals and plants ncert",
+      "transportation in animals and plants class 6 7 8 9 10",
+      "notes on transportation in animals and plants",
+      "chapter transportation in animals and plants",
+      "summary of transportation in animals and plants"
+    ],
+    "title": "Transportation in Animals and Plants — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Transportation in Animals and Plants\" covers core curriculum principles: Circulatory system, blood components (plasma, RBCs, WBCs, platelets), blood vessels (arteries with thick elastic walls, veins with valves, capillaries), human heart (4 chambers), pulse rate (72-80 bpm), excretion (kidneys, ureters, urinary bladder, urethra), dialysis, vascular tissues in plants (xylem for water/minerals, phloem for food/photosynthates), transpiration pull. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 7 Science",
+      "Key Topics Covered: Circulatory system, blood components (plasma, RBCs, WBCs, platelets), blood vessels (arteries with thick elastic walls, veins with valves, capillaries), human heart (4 chambers), pulse rate (72-80 bpm), excretion (kidneys, ureters, urinary bladder, urethra), dialysis, vascular tissues in plants (xylem for water/minerals, phloem for food/photosynthates), transpiration pull",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-28-reproduction-in-plants",
+    "keywords": [
+      "reproduction in plants ncert",
+      "reproduction in plants class 6 7 8 9 10",
+      "notes on reproduction in plants",
+      "chapter reproduction in plants",
+      "summary of reproduction in plants"
+    ],
+    "title": "Reproduction in Plants — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Reproduction in Plants\" covers core curriculum principles: Asexual reproduction (vegetative propagation in stem/root/leaf, budding in yeast, fragmentation in Spirogyra, spore formation in moss/ferns), sexual reproduction in flowers (stamen male organ with anther/filament, pistil female organ with stigma/style/ovary), pollination (self and cross-pollination by wind, water, insects), fertilisation, zygote, seed dispersal. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 7 Science",
+      "Key Topics Covered: Asexual reproduction (vegetative propagation in stem/root/leaf, budding in yeast, fragmentation in Spirogyra, spore formation in moss/ferns), sexual reproduction in flowers (stamen male organ with anther/filament, pistil female organ with stigma/style/ovary), pollination (self and cross-pollination by wind, water, insects), fertilisation, zygote, seed dispersal",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-29-motion-and-time",
+    "keywords": [
+      "motion and time ncert",
+      "motion and time class 6 7 8 9 10",
+      "notes on motion and time",
+      "chapter motion and time",
+      "summary of motion and time"
+    ],
+    "title": "Motion and Time — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Motion and Time\" covers core curriculum principles: Uniform and non-uniform motion, Speed = Distance / Time, units of speed (m/s, km/h), simple pendulum (oscillation, time period, amplitude, bob), sundials, water clocks, hourglasses, quartz clocks, speedometer, odometer, distance-time graphs. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 7 Science",
+      "Key Topics Covered: Uniform and non-uniform motion, Speed = Distance / Time, units of speed (m/s, km/h), simple pendulum (oscillation, time period, amplitude, bob), sundials, water clocks, hourglasses, quartz clocks, speedometer, odometer, distance-time graphs",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-30-electric-current-and-its-effects",
+    "keywords": [
+      "electric current and its effects ncert",
+      "electric current and its effects class 6 7 8 9 10",
+      "notes on electric current and its effects",
+      "chapter electric current and its effects",
+      "summary of electric current and its effects"
+    ],
+    "title": "Electric Current and Its Effects — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Electric Current and Its Effects\" covers core curriculum principles: Circuit symbols, heating effect of electric current (heating elements of nichrome wire, electric iron, toaster, geyser), electric fuse, MCB (Miniature Circuit Breaker), magnetic effect of current (Hans Christian Oersted 1820), electromagnet construction and uses, electric bell working mechanism. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 7 Science",
+      "Key Topics Covered: Circuit symbols, heating effect of electric current (heating elements of nichrome wire, electric iron, toaster, geyser), electric fuse, MCB (Miniature Circuit Breaker), magnetic effect of current (Hans Christian Oersted 1820), electromagnet construction and uses, electric bell working mechanism",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-31-light",
+    "keywords": [
+      "light ncert",
+      "light class 6 7 8 9 10",
+      "notes on light",
+      "chapter light",
+      "summary of light"
+    ],
+    "title": "Light — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Light\" covers core curriculum principles: Rectilinear propagation of light, reflection from plane mirrors (virtual, erect, same size, laterally inverted), spherical mirrors (concave mirror converging: real/inverted or virtual/magnified; convex mirror diverging: virtual/erect/diminished), lenses (convex converging, concave diverging), dispersion of white light into spectrum of seven colours (VIBGYOR), Newton's colour disc. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 7 Science",
+      "Key Topics Covered: Rectilinear propagation of light, reflection from plane mirrors (virtual, erect, same size, laterally inverted), spherical mirrors (concave mirror converging: real/inverted or virtual/magnified; convex mirror diverging: virtual/erect/diminished), lenses (convex converging, concave diverging), dispersion of white light into spectrum of seven colours (VIBGYOR), Newton's colour disc",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-32-water-a-precious-resource",
+    "keywords": [
+      "water: a precious resource ncert",
+      "water: a precious resource class 6 7 8 9 10",
+      "notes on water: a precious resource",
+      "chapter water: a precious resource",
+      "summary of water: a precious resource"
+    ],
+    "title": "Water: A Precious Resource — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Water: A Precious Resource\" covers core curriculum principles: Forms of water (solid ice caps, liquid, water vapour), groundwater as important source of water, water table, aquifers, infiltration, depletion of water table (population growth, industrialisation, agricultural activities, deforestation), water management, drip irrigation. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 7 Science",
+      "Key Topics Covered: Forms of water (solid ice caps, liquid, water vapour), groundwater as important source of water, water table, aquifers, infiltration, depletion of water table (population growth, industrialisation, agricultural activities, deforestation), water management, drip irrigation",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-33-forests-our-lifeline",
+    "keywords": [
+      "forests: our lifeline ncert",
+      "forests: our lifeline class 6 7 8 9 10",
+      "notes on forests: our lifeline",
+      "chapter forests: our lifeline",
+      "summary of forests: our lifeline"
+    ],
+    "title": "Forests: Our Lifeline — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Forests: Our Lifeline\" covers core curriculum principles: Structure of forest (canopy, understorey, forest floor, shrubs, herbs), forests as green lungs of the Earth, dynamic living entity, food webs, decomposers forming humus, prevention of soil erosion, recharge of groundwater. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 7 Science",
+      "Key Topics Covered: Structure of forest (canopy, understorey, forest floor, shrubs, herbs), forests as green lungs of the Earth, dynamic living entity, food webs, decomposers forming humus, prevention of soil erosion, recharge of groundwater",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-curriculum-34-wastewater-story",
+    "keywords": [
+      "wastewater story ncert",
+      "wastewater story class 6 7 8 9 10",
+      "notes on wastewater story",
+      "chapter wastewater story",
+      "summary of wastewater story"
+    ],
+    "title": "Wastewater Story — Complete NCERT Concept Summary",
+    "category": "NCERT Science",
+    "answer": "NCERT Textbook Chapter \"Wastewater Story\" covers core curriculum principles: Sewage treatment plant (WWTP: Wastewater Treatment Plant), physical, chemical, and biological processes, bar screens, grit and sand removal tank, clarifier, activated sludge, aeration tank, biogas generation, vermi-processing toilets. It establishes fundamental scientific inquiry, definitions, formulas, and real-world experiments.",
+    "highlights": [
+      "NCERT Subject & Level: NCERT Class 7 Science",
+      "Key Topics Covered: Sewage treatment plant (WWTP: Wastewater Treatment Plant), physical, chemical, and biological processes, bar screens, grit and sand removal tank, clarifier, activated sludge, aeration tank, biogas generation, vermi-processing toilets",
+      "Comprehensive reference for CBSE Class 6-10 board exams and foundational science"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-1-what-is-crop-production-and-management",
+    "keywords": [
+      "what is crop production and management?",
+      "explain what is crop production and management?",
+      "notes on what is crop production and management?",
+      "class 8 9 10 science what is crop production and management?"
+    ],
+    "title": "What is Crop Production and Management? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Crop Production and Management?: Agricultural practices: soil preparation, ploughing, levelling, sowing (seed drill), adding manure and fertilisers, irrigation (traditional vs modern: sprinkler and drip system), weeding, harvesting, threshing, winnowing, and food storage in silos/granaries.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 8 Science",
+      "Key Core Concepts: Agricultural practices: soil preparation, ploughing, levelling, sowing (seed drill), adding manure and fertilisers, irrigation (traditional vs modern: sprinkler and drip system), weeding, harvesting, ...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-2-what-are-microorganisms-friend-and-foe",
+    "keywords": [
+      "what are microorganisms: friend and foe?",
+      "explain what are microorganisms: friend and foe?",
+      "notes on what are microorganisms: friend and foe?",
+      "class 8 9 10 science what are microorganisms: friend and foe?"
+    ],
+    "title": "What are Microorganisms: Friend and Foe? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What are Microorganisms: Friend and Foe?: Four major groups: Bacteria, Fungi, Protozoa, Algae, plus Viruses. Useful: curd making (Lactobacillus), bread yeast fermentation, antibiotics (Penicillin by Alexander Fleming 1928), vaccines (Edward Jenner smallpox 1796), nitrogen fixation (Rhizobium in leguminous root nodules). Harmful: pathogens causing cholera, TB, malaria, rust of wheat, citrus canker.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 8 Science",
+      "Key Core Concepts: Four major groups: Bacteria, Fungi, Protozoa, Algae, plus Viruses. Useful: curd making (Lactobacillus), bread yeast fermentation, antibiotics (Penicillin by Alexander Fleming 1928), vaccines (Edward J...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-3-what-are-synthetic-fibres-and-plastics",
+    "keywords": [
+      "what are synthetic fibres and plastics?",
+      "explain what are synthetic fibres and plastics?",
+      "notes on what are synthetic fibres and plastics?",
+      "class 8 9 10 science what are synthetic fibres and plastics?"
+    ],
+    "title": "What are Synthetic Fibres and Plastics? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What are Synthetic Fibres and Plastics?: Rayon (artificial silk from wood pulp), Nylon (first fully synthetic fibre from coal, water, air - strong like steel wire), Polyester (PET bottles, Terylene), Acrylic (artificial wool). Plastics: Thermoplastics (melt on heating: PVC, Polythene) and Thermosetting plastics (cannot be softened on heating: Bakelite, Melamine).",
+    "highlights": [
+      "Curriculum Level: NCERT Class 8 Science",
+      "Key Core Concepts: Rayon (artificial silk from wood pulp), Nylon (first fully synthetic fibre from coal, water, air - strong like steel wire), Polyester (PET bottles, Terylene), Acrylic (artificial wool). Plastics: Ther...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-4-what-are-metals-and-nonmetals-in-class-8",
+    "keywords": [
+      "what are metals and non-metals in class 8?",
+      "explain what are metals and non-metals in class 8?",
+      "notes on what are metals and non-metals in class 8?",
+      "class 8 9 10 science what are metals and non-metals in class 8?"
+    ],
+    "title": "What are Metals and Non-Metals in Class 8? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What are Metals and Non-Metals in Class 8?: Physical properties: Malleability, ductility, sonorous, lustre, conductivity. Chemical properties: Reaction with oxygen (metal oxides are basic; non-metal oxides are acidic), reaction with water (Sodium reacts vigorously), reaction with acids (produces hydrogen gas with pop sound), displacement reactions based on reactivity series.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 8 Science",
+      "Key Core Concepts: Physical properties: Malleability, ductility, sonorous, lustre, conductivity. Chemical properties: Reaction with oxygen (metal oxides are basic; non-metal oxides are acidic), reaction with water (Sodi...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-5-what-is-coal-and-petroleum",
+    "keywords": [
+      "what is coal and petroleum?",
+      "explain what is coal and petroleum?",
+      "notes on what is coal and petroleum?",
+      "class 8 9 10 science what is coal and petroleum?"
+    ],
+    "title": "What is Coal and Petroleum? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Coal and Petroleum?: Fossil fuels formed from dead vegetation (coal via carbonisation) and marine organisms (petroleum and natural gas) over millions of years. Fractional distillation of petroleum yields LPG, petrol, kerosene, diesel, lubricating oil, paraffin wax, bitumen. Products of destructive distillation of coal: Coke, Coal tar, Coal gas.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 8 Science",
+      "Key Core Concepts: Fossil fuels formed from dead vegetation (coal via carbonisation) and marine organisms (petroleum and natural gas) over millions of years. Fractional distillation of petroleum yields LPG, petrol, kero...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-6-what-is-combustion-and-flame",
+    "keywords": [
+      "what is combustion and flame?",
+      "explain what is combustion and flame?",
+      "notes on what is combustion and flame?",
+      "class 8 9 10 science what is combustion and flame?"
+    ],
+    "title": "What is Combustion and Flame? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Combustion and Flame?: Combustion is a chemical process where a substance reacts with oxygen to give off heat. Requirements: Fuel, Oxygen, Ignition temperature. Flame structure: Inner dark zone (unburnt wax vapors, least hot), Middle yellow luminous zone (incomplete combustion, moderately hot), Outer blue non-luminous zone (complete combustion, hottest zone).",
+    "highlights": [
+      "Curriculum Level: NCERT Class 8 Science",
+      "Key Core Concepts: Combustion is a chemical process where a substance reacts with oxygen to give off heat. Requirements: Fuel, Oxygen, Ignition temperature. Flame structure: Inner dark zone (unburnt wax vapors, least ho...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-7-what-is-conservation-of-plants-and-animals",
+    "keywords": [
+      "what is conservation of plants and animals?",
+      "explain what is conservation of plants and animals?",
+      "notes on what is conservation of plants and animals?",
+      "class 8 9 10 science what is conservation of plants and animals?"
+    ],
+    "title": "What is Conservation of Plants and Animals? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Conservation of Plants and Animals?: Deforestation causes desertification and global warming. Conservation areas: Biosphere Reserves (Pachmarhi), National Parks (Kaziranga), Wildlife Sanctuaries. Red Data Book by IUCN records endangered species. Endemic species (found exclusively in a specific area like giant squirrel in Pachmarhi). Migration of birds.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 8 Science",
+      "Key Core Concepts: Deforestation causes desertification and global warming. Conservation areas: Biosphere Reserves (Pachmarhi), National Parks (Kaziranga), Wildlife Sanctuaries. Red Data Book by IUCN records endangered ...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-8-what-is-cell-structure-and-functions-in-class-8",
+    "keywords": [
+      "what is cell structure and functions in class 8?",
+      "explain what is cell structure and functions in class 8?",
+      "notes on what is cell structure and functions in class 8?",
+      "class 8 9 10 science what is cell structure and functions in class 8?"
+    ],
+    "title": "What is Cell Structure and Functions in Class 8? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Cell Structure and Functions in Class 8?: Robert Hooke discovered cell in 1665. Unicellular (Amoeba, Paramecium) vs Multicellular organisms. Cell components: Cell membrane, Cytoplasm, Nucleus (chromosomes with genes). Differences between plant and animal cells: Plant cells have rigid cell wall, chloroplasts, and large central vacuole.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 8 Science",
+      "Key Core Concepts: Robert Hooke discovered cell in 1665. Unicellular (Amoeba, Paramecium) vs Multicellular organisms. Cell components: Cell membrane, Cytoplasm, Nucleus (chromosomes with genes). Differences between plan...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-9-what-is-reproduction-in-animals-in-class-8",
+    "keywords": [
+      "what is reproduction in animals in class 8?",
+      "explain what is reproduction in animals in class 8?",
+      "notes on what is reproduction in animals in class 8?",
+      "class 8 9 10 science what is reproduction in animals in class 8?"
+    ],
+    "title": "What is Reproduction in Animals in Class 8? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Reproduction in Animals in Class 8?: Sexual reproduction involves male gametes (sperm) and female gametes (ova) fusing to form a zygote. Internal fertilisation (humans, cows, birds) vs External fertilisation (frogs, fish). Viviparous (give birth to young ones) vs Oviparous (lay eggs). Metamorphosis in frog (egg -> tadpole -> adult frog). Asexual: binary fission in Amoeba, budding in Hydra.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 8 Science",
+      "Key Core Concepts: Sexual reproduction involves male gametes (sperm) and female gametes (ova) fusing to form a zygote. Internal fertilisation (humans, cows, birds) vs External fertilisation (frogs, fish). Viviparous (gi...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-10-what-is-reaching-the-age-of-adolescence",
+    "keywords": [
+      "what is reaching the age of adolescence?",
+      "explain what is reaching the age of adolescence?",
+      "notes on what is reaching the age of adolescence?",
+      "class 8 9 10 science what is reaching the age of adolescence?"
+    ],
+    "title": "What is Reaching the Age of Adolescence? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Reaching the Age of Adolescence?: Adolescence leads to reproductive maturity (puberty). Secondary sexual characteristics triggered by hormones: Testosterone in boys (Adam's apple, facial hair, voice deepening) and Estrogen in girls (breast development, menstrual cycle). Pituitary gland controls endocrine secretions. Sex determination by X and Y chromosomes (XX=female, XY=male).",
+    "highlights": [
+      "Curriculum Level: NCERT Class 8 Science",
+      "Key Core Concepts: Adolescence leads to reproductive maturity (puberty). Secondary sexual characteristics triggered by hormones: Testosterone in boys (Adam's apple, facial hair, voice deepening) and Estrogen in girls (b...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-11-what-is-force-and-pressure-in-class-8",
+    "keywords": [
+      "what is force and pressure in class 8?",
+      "explain what is force and pressure in class 8?",
+      "notes on what is force and pressure in class 8?",
+      "class 8 9 10 science what is force and pressure in class 8?"
+    ],
+    "title": "What is Force and Pressure in Class 8? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Force and Pressure in Class 8?: Force is a push or pull on an object. Contact forces (Muscular force, Friction) vs Non-contact forces (Magnetic, Electrostatic, Gravitational). Pressure = Force / Area (SI unit: Pascal = N/m²). Liquids and gases exert pressure on the walls of containers. Atmospheric pressure due to weight of air column.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 8 Science",
+      "Key Core Concepts: Force is a push or pull on an object. Contact forces (Muscular force, Friction) vs Non-contact forces (Magnetic, Electrostatic, Gravitational). Pressure = Force / Area (SI unit: Pascal = N/m²). Liquid...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-12-what-is-friction-in-class-8",
+    "keywords": [
+      "what is friction in class 8?",
+      "explain what is friction in class 8?",
+      "notes on what is friction in class 8?",
+      "class 8 9 10 science what is friction in class 8?"
+    ],
+    "title": "What is Friction in Class 8? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Friction in Class 8?: Friction opposes relative motion between two surfaces in contact. Causes: interlocking of surface irregularities. Types: Static friction (maximum value = limiting friction) > Sliding friction > Rolling friction (rolling friction is smallest, hence ball bearings reduce friction). Fluid friction (drag) minimized by streamlined shapes in airplanes and fish.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 8 Science",
+      "Key Core Concepts: Friction opposes relative motion between two surfaces in contact. Causes: interlocking of surface irregularities. Types: Static friction (maximum value = limiting friction) > Sliding friction > Rollin...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-13-what-is-sound-in-class-8",
+    "keywords": [
+      "what is sound in class 8?",
+      "explain what is sound in class 8?",
+      "notes on what is sound in class 8?",
+      "class 8 9 10 science what is sound in class 8?"
+    ],
+    "title": "What is Sound in Class 8? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Sound in Class 8?: Sound is produced by vibrating bodies and travels through solid, liquid, gas (cannot travel in vacuum). Human larynx (vocal cords). Frequency in Hertz (Hz) determines pitch/shrillness; Amplitude determines loudness (measured in Decibels dB). Audible human range: 20 Hz to 20,000 Hz. Noise pollution hazards.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 8 Science",
+      "Key Core Concepts: Sound is produced by vibrating bodies and travels through solid, liquid, gas (cannot travel in vacuum). Human larynx (vocal cords). Frequency in Hertz (Hz) determines pitch/shrillness; Amplitude deter...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-14-what-are-chemical-effects-of-electric-current",
+    "keywords": [
+      "what are chemical effects of electric current?",
+      "explain what are chemical effects of electric current?",
+      "notes on what are chemical effects of electric current?",
+      "class 8 9 10 science what are chemical effects of electric current?"
+    ],
+    "title": "What are Chemical Effects of Electric Current? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What are Chemical Effects of Electric Current?: Liquids conducting electricity are electrolytes (solutions of acids, bases, and salts like CuSO4, NaCl). Electroplating: Depositing a layer of desired metal on another material using electricity (chromium plating on car parts, gold/silver plating on jewelry, zinc galvanization on iron).",
+    "highlights": [
+      "Curriculum Level: NCERT Class 8 Science",
+      "Key Core Concepts: Liquids conducting electricity are electrolytes (solutions of acids, bases, and salts like CuSO4, NaCl). Electroplating: Depositing a layer of desired metal on another material using electricity (chro...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-15-what-are-some-natural-phenomena-in-class-8",
+    "keywords": [
+      "what are some natural phenomena in class 8?",
+      "explain what are some natural phenomena in class 8?",
+      "notes on what are some natural phenomena in class 8?",
+      "class 8 9 10 science what are some natural phenomena in class 8?"
+    ],
+    "title": "What are Some Natural Phenomena in Class 8? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What are Some Natural Phenomena in Class 8?: Lightning is massive electrostatic discharge between clouds or cloud and earth. Benjamin Franklin discovered lightning nature (1752). Electroscope detects charge. Lightning conductor protects buildings. Earthquakes caused by sudden movement/tectonic plate collision along seismic fault zones; Richter scale measures magnitude; Seismograph records waves.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 8 Science",
+      "Key Core Concepts: Lightning is massive electrostatic discharge between clouds or cloud and earth. Benjamin Franklin discovered lightning nature (1752). Electroscope detects charge. Lightning conductor protects building...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-16-what-is-light-in-class-8",
+    "keywords": [
+      "what is light in class 8?",
+      "explain what is light in class 8?",
+      "notes on what is light in class 8?",
+      "class 8 9 10 science what is light in class 8?"
+    ],
+    "title": "What is Light in Class 8? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Light in Class 8?: Laws of reflection: (1) Angle of incidence = Angle of reflection, (2) Incident ray, reflected ray, and normal lie in the same plane. Regular reflection (smooth surfaces, sharp images) vs Diffuse/irregular reflection (rough surfaces). Multiple reflections in kaleidoscope and periscope. Human eye anatomy: Cornea, iris, pupil, lens, retina (blind spot, rods and cones), Braille system for visually challenged.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 8 Science",
+      "Key Core Concepts: Laws of reflection: (1) Angle of incidence = Angle of reflection, (2) Incident ray, reflected ray, and normal lie in the same plane. Regular reflection (smooth surfaces, sharp images) vs Diffuse/irreg...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-17-what-are-stars-and-the-solar-system",
+    "keywords": [
+      "what are stars and the solar system?",
+      "explain what are stars and the solar system?",
+      "notes on what are stars and the solar system?",
+      "class 8 9 10 science what are stars and the solar system?"
+    ],
+    "title": "What are Stars and the Solar System? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What are Stars and the Solar System?: Celestial objects: Moon phases (29.5 days), constellations (Ursa Major / Saptarishi, Orion the Hunter, Cassiopeia, Leo Major). Pole Star (Polaris) aligned with Earth's rotational axis. Solar System: Sun, 8 planets (Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune), asteroids (between Mars and Jupiter), comets (Halley's comet every 76 years), meteors (shooting stars), and artificial satellites (Aryabhata, INSAT).",
+    "highlights": [
+      "Curriculum Level: NCERT Class 8 Science",
+      "Key Core Concepts: Celestial objects: Moon phases (29.5 days), constellations (Ursa Major / Saptarishi, Orion the Hunter, Cassiopeia, Leo Major). Pole Star (Polaris) aligned with Earth's rotational axis. Solar System: S...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-18-what-is-pollution-of-air-and-water",
+    "keywords": [
+      "what is pollution of air and water?",
+      "explain what is pollution of air and water?",
+      "notes on what is pollution of air and water?",
+      "class 8 9 10 science what is pollution of air and water?"
+    ],
+    "title": "What is Pollution of Air and Water? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Pollution of Air and Water?: Air pollutants: CO, CO2, SO2, NOx, SPM (Suspended Particulate Matter), CFCs (Ozone depletion). Acid rain (SO2 + NO2 forming H2SO4 and HNO3 corroding Taj Mahal - Marble cancer). Greenhouse effect and Global Warming. Water pollutants: Sewage, industrial effluents, pesticides, eutrophication (algal bloom consuming dissolved oxygen), Ganga Action Plan (1985).",
+    "highlights": [
+      "Curriculum Level: NCERT Class 8 Science",
+      "Key Core Concepts: Air pollutants: CO, CO2, SO2, NOx, SPM (Suspended Particulate Matter), CFCs (Ozone depletion). Acid rain (SO2 + NO2 forming H2SO4 and HNO3 corroding Taj Mahal - Marble cancer). Greenhouse effect and G...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-19-what-is-matter-in-our-surroundings",
+    "keywords": [
+      "what is matter in our surroundings?",
+      "explain what is matter in our surroundings?",
+      "notes on what is matter in our surroundings?",
+      "class 8 9 10 science what is matter in our surroundings?"
+    ],
+    "title": "What is Matter in Our Surroundings? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Matter in Our Surroundings?: Physical nature of matter (particles with spaces, continuous motion, mutual attraction). States: Solid, Liquid, Gas, Plasma, BEC. Evaporation causes cooling (factors: surface area, temperature, humidity, wind speed). Latent heat of fusion (solid to liquid at melting point) and Latent heat of vaporization (liquid to gas at boiling point).",
+    "highlights": [
+      "Curriculum Level: NCERT Class 9 Science",
+      "Key Core Concepts: Physical nature of matter (particles with spaces, continuous motion, mutual attraction). States: Solid, Liquid, Gas, Plasma, BEC. Evaporation causes cooling (factors: surface area, temperature, humidi...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-20-what-is-is-matter-around-us-pure",
+    "keywords": [
+      "what is is matter around us pure?",
+      "explain what is is matter around us pure?",
+      "notes on what is is matter around us pure?",
+      "class 8 9 10 science what is is matter around us pure?"
+    ],
+    "title": "What is Is Matter Around Us Pure? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Is Matter Around Us Pure?: Pure substances (elements and compounds) vs Mixtures (homogeneous solutions vs heterogeneous suspensions/colloids). Solute + Solvent = Solution. Concentration = (Mass of solute / Mass of solution) * 100. Tyndall effect scattering in colloids (milk, fog, smoke). Separation: centrifugation, fractional distillation, chromatography.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 9 Science",
+      "Key Core Concepts: Pure substances (elements and compounds) vs Mixtures (homogeneous solutions vs heterogeneous suspensions/colloids). Solute + Solvent = Solution. Concentration = (Mass of solute / Mass of solution) * 1...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-21-what-are-atoms-and-molecules-in-class-9",
+    "keywords": [
+      "what are atoms and molecules in class 9?",
+      "explain what are atoms and molecules in class 9?",
+      "notes on what are atoms and molecules in class 9?",
+      "class 8 9 10 science what are atoms and molecules in class 9?"
+    ],
+    "title": "What are Atoms and Molecules in Class 9? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What are Atoms and Molecules in Class 9?: Law of Conservation of Mass (Lavoisier) and Law of Definite Proportions (Proust). John Dalton's Atomic Theory (1808). Atomic mass unit (amu / u = 1/12 mass of C-12 atom). Molecules of elements (O2, P4, S8) and compounds (H2O, NH3, CO2). Polyatomic ions (SO4^2-, NH4+, CO3^2-). Formula writing via valency criss-cross method.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 9 Science",
+      "Key Core Concepts: Law of Conservation of Mass (Lavoisier) and Law of Definite Proportions (Proust). John Dalton's Atomic Theory (1808). Atomic mass unit (amu / u = 1/12 mass of C-12 atom). Molecules of elements (O2, P4...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-22-what-is-structure-of-the-atom-in-class-9",
+    "keywords": [
+      "what is structure of the atom in class 9?",
+      "explain what is structure of the atom in class 9?",
+      "notes on what is structure of the atom in class 9?",
+      "class 8 9 10 science what is structure of the atom in class 9?"
+    ],
+    "title": "What is Structure of the Atom in Class 9? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Structure of the Atom in Class 9?: J.J. Thomson cathode ray discharge discovered electron (1897). E. Goldstein discovered canal rays/protons (1886). James Chadwick discovered neutron (1932). Rutherford gold foil alpha scattering experiment showed nucleus has positive charge and almost all mass. Bohr model stationary orbits (K, L, M, N shells). Valency. Isotopes (C-12/C-14, H-1/H-2/H-3) and Isobars (Ar-40/Ca-40).",
+    "highlights": [
+      "Curriculum Level: NCERT Class 9 Science",
+      "Key Core Concepts: J.J. Thomson cathode ray discharge discovered electron (1897). E. Goldstein discovered canal rays/protons (1886). James Chadwick discovered neutron (1932). Rutherford gold foil alpha scattering experi...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-23-what-is-the-fundamental-unit-of-life-in-class-9",
+    "keywords": [
+      "what is the fundamental unit of life in class 9?",
+      "explain what is the fundamental unit of life in class 9?",
+      "notes on what is the fundamental unit of life in class 9?",
+      "class 8 9 10 science what is the fundamental unit of life in class 9?"
+    ],
+    "title": "What is The Fundamental Unit of Life in Class 9? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is The Fundamental Unit of Life in Class 9?: Robert Hooke cork discovery 1665. Cell Theory: Schleiden (1838), Schwann (1839), Virchow (1855). Plasma membrane (fluid mosaic phospholipid bilayer), Osmosis (hypotonic, isotonic, hypertonic solutions), Endocytosis in Amoeba. Organelles: Nucleus, ER, Golgi apparatus, Lysosomes, Mitochondria, Plastids, Vacuoles.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 9 Science",
+      "Key Core Concepts: Robert Hooke cork discovery 1665. Cell Theory: Schleiden (1838), Schwann (1839), Virchow (1855). Plasma membrane (fluid mosaic phospholipid bilayer), Osmosis (hypotonic, isotonic, hypertonic solutions...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-24-what-are-tissues-in-class-9-science",
+    "keywords": [
+      "what are tissues in class 9 science?",
+      "explain what are tissues in class 9 science?",
+      "notes on what are tissues in class 9 science?",
+      "class 8 9 10 science what are tissues in class 9 science?"
+    ],
+    "title": "What are Tissues in Class 9 Science? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What are Tissues in Class 9 Science?: Plant tissues: Meristematic (apical, lateral/cambium, intercalary) and Permanent (simple: parenchyma, collenchyma, sclerenchyma; complex: xylem vessels/tracheids, phloem sieve tubes/companion cells). Animal tissues: Epithelial (squamous, cuboidal, columnar, ciliated), Connective (areolar, adipose, tendon, ligament, cartilage, bone, blood), Muscular (striated, smooth, cardiac), Nervous (neurons).",
+    "highlights": [
+      "Curriculum Level: NCERT Class 9 Science",
+      "Key Core Concepts: Plant tissues: Meristematic (apical, lateral/cambium, intercalary) and Permanent (simple: parenchyma, collenchyma, sclerenchyma; complex: xylem vessels/tracheids, phloem sieve tubes/companion cells). ...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-25-what-is-motion-in-class-9-physics",
+    "keywords": [
+      "what is motion in class 9 physics?",
+      "explain what is motion in class 9 physics?",
+      "notes on what is motion in class 9 physics?",
+      "class 8 9 10 science what is motion in class 9 physics?"
+    ],
+    "title": "What is Motion in Class 9 Physics? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Motion in Class 9 Physics?: Distance (scalar) vs Displacement (vector). Speed = Distance/Time; Velocity = Displacement/Time. Acceleration a = (v - u) / t. Distance-time and velocity-time graphs. Three kinematic equations: (1) v = u + at, (2) s = ut + 0.5*a*t^2, (3) v^2 = u^2 + 2as. Uniform circular motion with centripetal acceleration a = v^2 / r.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 9 Science",
+      "Key Core Concepts: Distance (scalar) vs Displacement (vector). Speed = Distance/Time; Velocity = Displacement/Time. Acceleration a = (v - u) / t. Distance-time and velocity-time graphs. Three kinematic equations: (1) v ...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-26-what-is-force-and-laws-of-motion-in-class-9",
+    "keywords": [
+      "what is force and laws of motion in class 9?",
+      "explain what is force and laws of motion in class 9?",
+      "notes on what is force and laws of motion in class 9?",
+      "class 8 9 10 science what is force and laws of motion in class 9?"
+    ],
+    "title": "What is Force and Laws of Motion in Class 9? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Force and Laws of Motion in Class 9?: Balanced vs unbalanced forces. Newton's 1st Law (Inertia: mass is measure of inertia). Newton's 2nd Law (F = ma; F = dp/dt). Newton's 3rd Law (action-reaction F12 = -F21). Momentum p = mv. Law of conservation of momentum: m1u1 + m2u2 = m1v1 + m2v2 for isolated collision.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 9 Science",
+      "Key Core Concepts: Balanced vs unbalanced forces. Newton's 1st Law (Inertia: mass is measure of inertia). Newton's 2nd Law (F = ma; F = dp/dt). Newton's 3rd Law (action-reaction F12 = -F21). Momentum p = mv. Law of cons...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-27-what-is-gravitation-in-class-9-physics",
+    "keywords": [
+      "what is gravitation in class 9 physics?",
+      "explain what is gravitation in class 9 physics?",
+      "notes on what is gravitation in class 9 physics?",
+      "class 8 9 10 science what is gravitation in class 9 physics?"
+    ],
+    "title": "What is Gravitation in Class 9 Physics? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Gravitation in Class 9 Physics?: Newton's Universal Law of Gravitation: F = G * m1 * m2 / r^2 where G = 6.674 * 10^-11 N*m^2/kg^2. Free fall acceleration g = G*M / R^2 (~9.8 m/s^2 on Earth; g_moon = g_earth / 6). Mass (constant scalar in kg) vs Weight (gravitational force W = mg in Newtons). Thrust and Pressure. Archimedes' Principle and Relative Density.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 9 Science",
+      "Key Core Concepts: Newton's Universal Law of Gravitation: F = G * m1 * m2 / r^2 where G = 6.674 * 10^-11 N*m^2/kg^2. Free fall acceleration g = G*M / R^2 (~9.8 m/s^2 on Earth; g_moon = g_earth / 6). Mass (constant scala...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-28-what-is-work-and-energy-in-class-9",
+    "keywords": [
+      "what is work and energy in class 9?",
+      "explain what is work and energy in class 9?",
+      "notes on what is work and energy in class 9?",
+      "class 8 9 10 science what is work and energy in class 9?"
+    ],
+    "title": "What is Work and Energy in Class 9? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Work and Energy in Class 9?: Work W = F * s * cos(theta) (Joules). Kinetic Energy KE = 0.5 * m * v^2. Gravitational Potential Energy PE = mgh. Law of Conservation of Energy: Total mechanical energy KE + PE remains constant in conservative field. Power P = Work / Time (Watts; 1 HP = 746 W). Commercial unit: 1 kWh = 3.6 * 10^6 Joules.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 9 Science",
+      "Key Core Concepts: Work W = F * s * cos(theta) (Joules). Kinetic Energy KE = 0.5 * m * v^2. Gravitational Potential Energy PE = mgh. Law of Conservation of Energy: Total mechanical energy KE + PE remains constant in con...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-29-what-is-sound-in-class-9-physics",
+    "keywords": [
+      "what is sound in class 9 physics?",
+      "explain what is sound in class 9 physics?",
+      "notes on what is sound in class 9 physics?",
+      "class 8 9 10 science what is sound in class 9 physics?"
+    ],
+    "title": "What is Sound in Class 9 Physics? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Sound in Class 9 Physics?: Sound as mechanical longitudinal wave requiring medium (compressions and rarefactions). Speed v = frequency * wavelength (v = f * lambda). Speed of sound ~343 m/s in air at 20°C. Echo requires minimum distance 17.2 m. Reverberation control in auditoriums. Ultrasound applications: SONAR, Echocardiography, flaw detection in metals. Human ear structure.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 9 Science",
+      "Key Core Concepts: Sound as mechanical longitudinal wave requiring medium (compressions and rarefactions). Speed v = frequency * wavelength (v = f * lambda). Speed of sound ~343 m/s in air at 20°C. Echo requires minimum...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-30-what-is-improvement-in-food-resources",
+    "keywords": [
+      "what is improvement in food resources?",
+      "explain what is improvement in food resources?",
+      "notes on what is improvement in food resources?",
+      "class 8 9 10 science what is improvement in food resources?"
+    ],
+    "title": "What is Improvement in Food Resources? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Improvement in Food Resources?: Crop variety improvement (hybridization, genetically modified crops for high yield, biotic/abiotic resistance), Crop production management (nutrients: 16 essential plant nutrients - Macronutrients N, P, K, Ca, Mg, S; Micronutrients Fe, Mn, B, Zn, Cu, Mo, Cl), Manure vs Fertilisers, Irrigation, Cropping patterns (mixed, intercropping, crop rotation), Animal husbandry (cattle, poultry, fish farming, apiculture/beekeeping with Apis mellifera).",
+    "highlights": [
+      "Curriculum Level: NCERT Class 9 Science",
+      "Key Core Concepts: Crop variety improvement (hybridization, genetically modified crops for high yield, biotic/abiotic resistance), Crop production management (nutrients: 16 essential plant nutrients - Macronutrients N, ...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-31-what-are-chemical-reactions-and-equations-in-class-10",
+    "keywords": [
+      "what are chemical reactions and equations in class 10?",
+      "explain what are chemical reactions and equations in class 10?",
+      "notes on what are chemical reactions and equations in class 10?",
+      "class 8 9 10 science what are chemical reactions and equations in class 10?"
+    ],
+    "title": "What are Chemical Reactions and Equations in Class 10? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What are Chemical Reactions and Equations in Class 10?: Writing balanced chemical equations based on law of conservation of mass. Types: Combination (CaO + H2O -> Ca(OH)2), Decomposition (thermal, electrolytic, photolytic), Displacement (Fe + CuSO4 -> FeSO4 + Cu), Double Displacement (precipitation of BaSO4), Redox (oxidation = gain of O / loss of e-, reduction = loss of O / gain of e-). Corrosion of metals and Rancidity of fats/oils.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 10 Science",
+      "Key Core Concepts: Writing balanced chemical equations based on law of conservation of mass. Types: Combination (CaO + H2O -> Ca(OH)2), Decomposition (thermal, electrolytic, photolytic), Displacement (Fe + CuSO4 -> FeSO...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-32-what-are-acids-bases-and-salts-in-class-10",
+    "keywords": [
+      "what are acids, bases and salts in class 10?",
+      "explain what are acids, bases and salts in class 10?",
+      "notes on what are acids, bases and salts in class 10?",
+      "class 8 9 10 science what are acids, bases and salts in class 10?"
+    ],
+    "title": "What are Acids, Bases and Salts in Class 10? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What are Acids, Bases and Salts in Class 10?: Acids produce H+ (aq) / H3O+ ions; Bases produce OH- (aq) ions. Reactions with metals produce H2 gas; with metal carbonates produce CO2 gas. Neutralisation: Acid + Base -> Salt + Water. pH scale (-log[H+]): 0-6 acidic, 7 neutral, 8-14 basic. Important salts: Bleaching powder (CaOCl2), Baking soda (NaHCO3), Washing soda (Na2CO3.10H2O), Plaster of Paris (CaSO4.0.5H2O) from Gypsum (CaSO4.2H2O).",
+    "highlights": [
+      "Curriculum Level: NCERT Class 10 Science",
+      "Key Core Concepts: Acids produce H+ (aq) / H3O+ ions; Bases produce OH- (aq) ions. Reactions with metals produce H2 gas; with metal carbonates produce CO2 gas. Neutralisation: Acid + Base -> Salt + Water. pH scale (-log...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-33-what-are-metals-and-nonmetals-in-class-10",
+    "keywords": [
+      "what are metals and non-metals in class 10?",
+      "explain what are metals and non-metals in class 10?",
+      "notes on what are metals and non-metals in class 10?",
+      "class 8 9 10 science what are metals and non-metals in class 10?"
+    ],
+    "title": "What are Metals and Non-Metals in Class 10? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What are Metals and Non-Metals in Class 10?: Physical properties (malleability, ductility, conductivity; mercury liquid metal; iodine lustrous non-metal). Chemical properties: reaction with oxygen, water, acids. Reactivity series: K > Na > Ca > Mg > Al > Zn > Fe > Pb > [H] > Cu > Hg > Ag > Au. Extraction of metals (metallurgy: concentration of ore, roasting of sulphide ores, calcination of carbonate ores, reduction with carbon/aluminium, electrolytic refining of copper). Alloys: Brass (Cu+Zn), Bronze (Cu+Sn), Solder (Pb+Sn), Stainless Steel (Fe+Ni+Cr).",
+    "highlights": [
+      "Curriculum Level: NCERT Class 10 Science",
+      "Key Core Concepts: Physical properties (malleability, ductility, conductivity; mercury liquid metal; iodine lustrous non-metal). Chemical properties: reaction with oxygen, water, acids. Reactivity series: K > Na > Ca > ...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-34-what-are-carbon-and-its-compounds-in-class-10",
+    "keywords": [
+      "what are carbon and its compounds in class 10?",
+      "explain what are carbon and its compounds in class 10?",
+      "notes on what are carbon and its compounds in class 10?",
+      "class 8 9 10 science what are carbon and its compounds in class 10?"
+    ],
+    "title": "What are Carbon and Its Compounds in Class 10? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What are Carbon and Its Compounds in Class 10?: Covalent bonding and tetravalency of carbon. Catenation self-linking ability. Saturated (alkanes CnH2n+2) and Unsaturated hydrocarbons (alkenes CnH2n, alkynes CnH2n-2). Functional groups: Alcohol (-OH), Aldehyde (-CHO), Ketone (-CO-), Carboxylic acid (-COOH), Halogens (-Cl, -Br). Chemical properties: Combustion, Oxidation, Addition (hydrogenation of vegetable oils), Substitution. Ethanol (C2H5OH) and Ethanoic acid (CH3COOH). Esterification. Soaps and Detergents (micelle structure, hard water cleansing).",
+    "highlights": [
+      "Curriculum Level: NCERT Class 10 Science",
+      "Key Core Concepts: Covalent bonding and tetravalency of carbon. Catenation self-linking ability. Saturated (alkanes CnH2n+2) and Unsaturated hydrocarbons (alkenes CnH2n, alkynes CnH2n-2). Functional groups: Alcohol (-OH...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-35-what-are-life-processes-in-class-10",
+    "keywords": [
+      "what are life processes in class 10?",
+      "explain what are life processes in class 10?",
+      "notes on what are life processes in class 10?",
+      "class 8 9 10 science what are life processes in class 10?"
+    ],
+    "title": "What are Life Processes in Class 10? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What are Life Processes in Class 10?: Nutrition: Autotrophic (photosynthesis in chloroplasts 6CO2+6H2O->C6H12O6+6O2) vs Heterotrophic; Human alimentary canal (mouth, stomach, small intestine, large intestine). Respiration: Aerobic (mitochondria, 36-38 ATP) vs Anaerobic (yeast ethanol, muscle lactic acid); Human respiratory system. Transportation: Human circulatory system (4-chambered heart, double circulation, arteries, veins, capillaries, blood, lymph); Plant transport (xylem vessels, phloem translocation). Excretion: Human kidneys, nephron filtration, tubular reabsorption, dialysis.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 10 Science",
+      "Key Core Concepts: Nutrition: Autotrophic (photosynthesis in chloroplasts 6CO2+6H2O->C6H12O6+6O2) vs Heterotrophic; Human alimentary canal (mouth, stomach, small intestine, large intestine). Respiration: Aerobic (mitoch...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-36-what-is-control-and-coordination-in-class-10",
+    "keywords": [
+      "what is control and coordination in class 10?",
+      "explain what is control and coordination in class 10?",
+      "notes on what is control and coordination in class 10?",
+      "class 8 9 10 science what is control and coordination in class 10?"
+    ],
+    "title": "What is Control and Coordination in Class 10? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Control and Coordination in Class 10?: Human nervous system: Neuron structure (dendrite, cell body, axon, synapse), Reflex arc through spinal cord, Human brain (Forebrain/Cerebrum, Midbrain, Hindbrain/Cerebellum, Pons, Medulla). Plant hormones (Auxins, Gibberellins, Cytokinins, Abscisic acid, Ethylene) and tropic movements (phototropism, geotropism, hydrotropism). Human endocrine glands and hormones (Pituitary GH, Thyroid Thyroxine, Pancreas Insulin, Adrenal Adrenaline, Testes Testosterone, Ovaries Estrogen).",
+    "highlights": [
+      "Curriculum Level: NCERT Class 10 Science",
+      "Key Core Concepts: Human nervous system: Neuron structure (dendrite, cell body, axon, synapse), Reflex arc through spinal cord, Human brain (Forebrain/Cerebrum, Midbrain, Hindbrain/Cerebellum, Pons, Medulla). Plant horm...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-37-what-is-how-do-organisms-reproduce-in-class-10",
+    "keywords": [
+      "what is how do organisms reproduce in class 10?",
+      "explain what is how do organisms reproduce in class 10?",
+      "notes on what is how do organisms reproduce in class 10?",
+      "class 8 9 10 science what is how do organisms reproduce in class 10?"
+    ],
+    "title": "What is How Do Organisms Reproduce in Class 10? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is How Do Organisms Reproduce in Class 10?: Asexual reproduction: Binary/Multiple fission (Amoeba, Plasmodium), Fragmentation (Spirogyra), Regeneration (Planaria), Budding (Hydra, Yeast), Vegetative propagation (Bryophyllum), Spore formation (Rhizopus). Sexual reproduction in plants: Flower organs (stamen, carpel), pollination, double fertilisation, seed formation. Human reproduction: Male reproductive system (testes, vas deferens, prostate, penis), Female reproductive system (ovaries, fallopian tube, uterus), Menstrual cycle, Fertilisation in fallopian tube, Contraception (barrier, chemical, IUDs, surgical tubectomy/vasectomy).",
+    "highlights": [
+      "Curriculum Level: NCERT Class 10 Science",
+      "Key Core Concepts: Asexual reproduction: Binary/Multiple fission (Amoeba, Plasmodium), Fragmentation (Spirogyra), Regeneration (Planaria), Budding (Hydra, Yeast), Vegetative propagation (Bryophyllum), Spore formation (R...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-38-what-is-heredity-and-evolution-in-class-10",
+    "keywords": [
+      "what is heredity and evolution in class 10?",
+      "explain what is heredity and evolution in class 10?",
+      "notes on what is heredity and evolution in class 10?",
+      "class 8 9 10 science what is heredity and evolution in class 10?"
+    ],
+    "title": "What is Heredity and Evolution in Class 10? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Heredity and Evolution in Class 10?: Mendel's laws of inheritance: Monohybrid cross (3:1 phenotypic, 1:2:1 genotypic ratio), Dihybrid cross (9:3:3:1 ratio). DNA as genetic material. Sex determination in humans (male heterogamety XY, female XX). Acquired vs Inherited traits. Speciation (geographical isolation, genetic drift, natural selection). Evidences of evolution: Homologous organs (same structure, different function), Analogous organs (different structure, same function), Fossils.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 10 Science",
+      "Key Core Concepts: Mendel's laws of inheritance: Monohybrid cross (3:1 phenotypic, 1:2:1 genotypic ratio), Dihybrid cross (9:3:3:1 ratio). DNA as genetic material. Sex determination in humans (male heterogamety XY, fema...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-39-what-is-light-reflection-and-refraction-in-class-10",
+    "keywords": [
+      "what is light: reflection and refraction in class 10?",
+      "explain what is light: reflection and refraction in class 10?",
+      "notes on what is light: reflection and refraction in class 10?",
+      "class 8 9 10 science what is light: reflection and refraction in class 10?"
+    ],
+    "title": "What is Light: Reflection and Refraction in Class 10? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Light: Reflection and Refraction in Class 10?: Reflection: Laws of reflection, Concave and Convex spherical mirrors, Ray diagrams, Mirror formula: 1/f = 1/v + 1/u, Magnification m = -v/u = h'/h. Refraction: Snell's Law (n1 sin theta1 = n2 sin theta2), Refractive index n = c/v. Lenses: Convex and Concave, Ray diagrams, Lens formula: 1/f = 1/v - 1/u, Magnification m = v/u = h'/h, Power of a lens P = 1/f in metres (Dioptre D).",
+    "highlights": [
+      "Curriculum Level: NCERT Class 10 Science",
+      "Key Core Concepts: Reflection: Laws of reflection, Concave and Convex spherical mirrors, Ray diagrams, Mirror formula: 1/f = 1/v + 1/u, Magnification m = -v/u = h'/h. Refraction: Snell's Law (n1 sin theta1 = n2 sin thet...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-40-what-is-human-eye-and-colourful-world-in-class-10",
+    "keywords": [
+      "what is human eye and colourful world in class 10?",
+      "explain what is human eye and colourful world in class 10?",
+      "notes on what is human eye and colourful world in class 10?",
+      "class 8 9 10 science what is human eye and colourful world in class 10?"
+    ],
+    "title": "What is Human Eye and Colourful World in Class 10? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Human Eye and Colourful World in Class 10?: Human eye anatomy: Cornea, iris, pupil, crystalline lens, ciliary muscles (accommodation, near point 25 cm), retina, blind spot. Defects of vision: Myopia (concave lens), Hypermetropia (convex lens), Presbyopia (bifocal lens), Cataract. Dispersion of white light by prism into VIBGYOR. Rainbow formation (refraction, dispersion, internal reflection). Atmospheric refraction (twinkling of stars, advance sunrise/delayed sunset). Scattering of light: Tyndall effect, blue sky, reddish sunrise/sunset.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 10 Science",
+      "Key Core Concepts: Human eye anatomy: Cornea, iris, pupil, crystalline lens, ciliary muscles (accommodation, near point 25 cm), retina, blind spot. Defects of vision: Myopia (concave lens), Hypermetropia (convex lens), ...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-41-what-is-electricity-in-class-10",
+    "keywords": [
+      "what is electricity in class 10?",
+      "explain what is electricity in class 10?",
+      "notes on what is electricity in class 10?",
+      "class 8 9 10 science what is electricity in class 10?"
+    ],
+    "title": "What is Electricity in Class 10? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What is Electricity in Class 10?: Electric current I = Q/t (Ampere). Potential difference V = W/Q (Volt). Ohm's Law: V = IR. Resistance factors: R = rho * L / A (Resistivity rho in Ohm-metre). Resistors in series (R_total = R1 + R2 + R3) vs Parallel (1/R_total = 1/R1 + 1/R2 + 1/R3). Joule's Law of Heating: H = I^2 * R * t. Electric Power P = VI = I^2*R = V^2/R (Watts). Domestic electric circuits (live 220V, neutral, earth wire, fuse).",
+    "highlights": [
+      "Curriculum Level: NCERT Class 10 Science",
+      "Key Core Concepts: Electric current I = Q/t (Ampere). Potential difference V = W/Q (Volt). Ohm's Law: V = IR. Resistance factors: R = rho * L / A (Resistivity rho in Ohm-metre). Resistors in series (R_total = R1 + R2 + ...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  },
+  {
+    "id": "ncert-qa-42-what-are-magnetic-effects-of-electric-current-in-class-10",
+    "keywords": [
+      "what are magnetic effects of electric current in class 10?",
+      "explain what are magnetic effects of electric current in class 10?",
+      "notes on what are magnetic effects of electric current in class 10?",
+      "class 8 9 10 science what are magnetic effects of electric current in class 10?"
+    ],
+    "title": "What are Magnetic Effects of Electric Current in Class 10? — Detailed Explanation & Concepts",
+    "category": "NCERT Science",
+    "answer": "What are Magnetic Effects of Electric Current in Class 10?: Oersted discovery 1820. Magnetic field lines around bar magnet. Right-Hand Thumb Rule for magnetic field around straight conductor. Solenoid acting as bar magnet. Fleming's Left-Hand Rule for force on current-carrying conductor (Electric Motor). Electromagnetic Induction (Michael Faraday 1831), Fleming's Right-Hand Rule (Electric Generator). Direct Current (DC) vs Alternating Current (AC, 50 Hz in India, 220V). Domestic safety: earthing and fuse.",
+    "highlights": [
+      "Curriculum Level: NCERT Class 10 Science",
+      "Key Core Concepts: Oersted discovery 1820. Magnetic field lines around bar magnet. Right-Hand Thumb Rule for magnetic field around straight conductor. Solenoid acting as bar magnet. Fleming's Left-Hand Rule for force on...",
+      "Verified NCERT Syllabus Master Reference"
+    ],
+    "url": "https://ncert.nic.in/"
+  }
+]

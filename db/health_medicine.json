@@ -1,0 +1,768 @@
+[
+  {
+    "id": "health-skeletal-cardiovascular",
+    "keywords": [
+      "human skeletal system",
+      "how many bones in human body 206",
+      "largest bone femur smallest bone stapes",
+      "blood groups abo system",
+      "universal donor o negative recipient ab positive"
+    ],
+    "title": "Human Skeletal & Cardiovascular System Facts",
+    "category": "Health & Medicine",
+    "answer": "An adult human skeleton consists of exactly 206 bones, with the Femur (thigh bone) being the largest and strongest, and the Stapes (in the middle ear) being the smallest. The ABO blood group system (discovered by Karl Landsteiner in 1900) classifies blood into A, B, AB, and O: O-negative is the universal red blood cell donor, and AB-positive is the universal recipient.",
+    "highlights": [
+      "Skeletal Count: 206 bones in adult (infants are born with ~270 bones which fuse over time)",
+      "Largest & Smallest Bones: Largest/Strongest = Femur; Smallest = Stapes (stirrup bone in ear, ~3 mm)",
+      "Blood Groups: Discovered by Karl Landsteiner (1930 Nobel Prize); O-Negative (O-) is universal donor (lacks A, B, and Rh antigens); AB-Positive (AB+) is universal recipient",
+      "Normal Blood Pressure: 120/80 mmHg (120 mmHg Systolic / 80 mmHg Diastolic measured with a Sphygmomanometer)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-infectious-diseases-pathogens",
+    "keywords": [
+      "infectious diseases pathogens vectors",
+      "malaria plasmodium anopheles",
+      "dengue aedes aegypti",
+      "tuberculosis mycobacterium bcg",
+      "typhoid widal test"
+    ],
+    "title": "Common Infectious Diseases, Pathogens & Vectors",
+    "category": "Health & Medicine",
+    "answer": "Malaria is caused by the protozoan parasite Plasmodium (P. falciparum) transmitted by the bite of infected female Anopheles mosquitoes. Dengue is a viral infection caused by Dengue virus transmitted by day-biting Aedes aegypti mosquitoes. Tuberculosis (TB) is an airborne bacterial infection caused by Mycobacterium tuberculosis, preventable with the BCG vaccine.",
+    "highlights": [
+      "Malaria: Protozoan parasite (Plasmodium falciparum / vivax); Vector: Female Anopheles mosquito; Treatment: Artemisinin-based combination therapy (ACT), Quinine",
+      "Dengue Fever (Breakbone Fever): Flavivirus transmitted by Aedes aegypti; causes severe thrombocytopenia (platelet count drop) and hemorrhagic risk",
+      "Tuberculosis (TB): Bacterium Mycobacterium tuberculosis; attacks lungs; diagnosed via Mantoux test and Sputum microscopy; treated via DOTS (Directly Observed Treatment, Short-course)",
+      "Typhoid: Bacterium Salmonella typhi transmitted via contaminated food/water; diagnosed with Widal Test",
+      "Cholera: Bacterium Vibrio cholerae producing severe acute watery diarrhea; managed with Oral Rehydration Solution (ORS)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Infectious_disease"
+  },
+  {
+    "id": "health-vitamins-deficiency-diseases",
+    "keywords": [
+      "vitamins and deficiency diseases table",
+      "vitamin a night blindness",
+      "vitamin c scurvy",
+      "vitamin d rickets",
+      "vitamin b12 anemia",
+      "vitamins chart"
+    ],
+    "title": "Vitamins, Physiological Roles & Deficiency Diseases Reference",
+    "category": "Health & Medicine",
+    "answer": "Vitamins are organic micronutrients essential for metabolism: Vitamin A (Retinol — deficiency causes Night Blindness / Xerophthalmia), Vitamin B1 (Thiamine — deficiency causes Beriberi), Vitamin C (Ascorbic Acid — deficiency causes Scurvy), and Vitamin D (Calciferol — deficiency causes Rickets in children and Osteomalacia in adults).",
+    "highlights": [
+      "Fat-Soluble Vitamins (A, D, E, K): Vitamin A (Retinol — vision/immunity; Night Blindness), Vitamin D (Calciferol — bone health/calcium; Rickets), Vitamin E (Tocopherol — antioxidant; neurological issues), Vitamin K (Phylloquinone — blood clotting factor synthesis; hemorrhagic bleeding)",
+      "Water-Soluble Vitamins (B-complex, C): Vitamin B1 (Thiamine — Beriberi), Vitamin B2 (Riboflavin — Cheilosis), Vitamin B3 (Niacin — Pellagra: 4Ds), Vitamin B9 (Folic Acid — Megaloblastic anemia & neural tube birth defects), Vitamin B12 (Cobalamin — Pernicious anemia)",
+      "Vitamin C (Ascorbic Acid): Synthesizes collagen, aids iron absorption; deficiency causes Scurvy (spongy bleeding gums, impaired wound healing)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Vitamin"
+  },
+  {
+    "id": "health-immune-system-vaccines",
+    "keywords": [
+      "human immune system",
+      "innate vs adaptive immunity",
+      "b cells and t cells antibodies",
+      "active vs passive immunity vaccines"
+    ],
+    "title": "Human Immune System: Innate, Adaptive Immunity & Vaccines",
+    "category": "Health & Medicine",
+    "answer": "The immune system defends the body against pathogens via Innate Immunity (non-specific, rapid: skin, stomach acid, phagocytes) and Adaptive/Acquired Immunity (pathogen-specific with immunological memory). B-lymphocytes produce antibodies for humoral immunity, while T-lymphocytes (Helper CD4+ and Cytotoxic CD8+) mediate cell-mediated immunity.",
+    "highlights": [
+      "B-Cells (Humoral Immunity): Mature in bone marrow; differentiate into plasma cells that secrete antigen-specific Immunoglobulins / Antibodies (IgG, IgM, IgA, IgE, IgD)",
+      "T-Cells (Cell-Mediated Immunity): Mature in the Thymus gland; Helper T-cells (CD4+) activate B-cells and macrophages; Cytotoxic T-cells (CD8+) destroy virus-infected and cancerous cells",
+      "Active vs Passive Immunity: Active immunity is generated by the host's own immune system upon infection or vaccination (long-lasting memory); Passive immunity is the direct transfer of pre-formed antibodies (e.g., mother's colostrum containing IgA, anti-venom; short-term protection)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Immune_system"
+  },
+  {
+    "id": "health-nutrition-bmi",
+    "keywords": [
+      "body mass index bmi formula",
+      "macronutrients caloric values",
+      "protein carbohydrates fat calories per gram",
+      "bmi ranges normal overweight"
+    ],
+    "title": "Nutrition Caloric Values & Body Mass Index (BMI) Formula",
+    "category": "Health & Medicine",
+    "answer": "Body Mass Index (BMI) evaluates body fat based on height and weight: BMI = Weight (kg) / [Height (m)]². The energy values of macronutrients are: Carbohydrates yield 4 kcal/g, Proteins yield 4 kcal/g, and Fats/Lipids yield 9 kcal/g.",
+    "highlights": [
+      "BMI Formula: BMI = Weight in kg / (Height in metres)²",
+      "WHO BMI Classifications: Underweight (< 18.5), Normal Weight (18.5 – 24.9), Overweight (25.0 – 29.9), Obese Class I (30.0 – 34.9), Obese Class II (35.0 – 39.9), Morbidly Obese (≥ 40.0)",
+      "Macronutrient Energy Density: Carbohydrates (4 kcal/g / 17 kJ/g), Proteins (4 kcal/g / 17 kJ/g), Fats (9 kcal/g / 37 kJ/g), Alcohol (7 kcal/g)",
+      "Basal Metabolic Rate (BMR): Minimal rate of energy expenditure required to sustain vital involuntary body functions at rest"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Body_mass_index"
+  },
+  {
+    "id": "health-cardiovascular-blood-pressure",
+    "keywords": [
+      "blood pressure normal range",
+      "systolic vs diastolic blood pressure",
+      "hypertension hypotension mmhg",
+      "sphygmomanometer blood pressure"
+    ],
+    "title": "Human Blood Pressure — Normal Ranges and Physiology",
+    "category": "Health & Medicine",
+    "answer": "Normal resting blood pressure for a healthy adult is approximately 120/80 mmHg (Systolic 120 mmHg during ventricular contraction / Diastolic 80 mmHg during ventricular relaxation). Measured using a Sphygmomanometer and stethoscope. Hypertension is diagnosed when blood pressure consistently exceeds 140/90 mmHg (or 130/80 mmHg under AHA guidelines).",
+    "highlights": [
+      "Systolic pressure: Maximum pressure in arteries during ventricular systole (~120 mmHg)",
+      "Diastolic pressure: Minimum pressure in arteries during ventricular diastole (~80 mmHg)",
+      "Pulse pressure = Systolic - Diastolic (normal ~40 mmHg)",
+      "Hypertension stages: Stage 1 (130-139 / 80-89 mmHg), Stage 2 (≥140 / ≥90 mmHg), Hypertensive crisis (>180 / >120 mmHg)",
+      "Cardiac output = Heart rate (72 bpm) × Stroke volume (70 mL) ≈ 5.0 Litres/min"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Blood_pressure"
+  },
+  {
+    "id": "health-endocrine-hormones",
+    "keywords": [
+      "endocrine glands hormones list",
+      "master gland pituitary",
+      "insulin glucagon pancreas",
+      "thyroxine adrenaline cortisol melatonin"
+    ],
+    "title": "Human Endocrine System — Glands and Hormones",
+    "category": "Health & Medicine",
+    "answer": "The endocrine system secretes hormones directly into the bloodstream. Key glands: Pituitary (Master gland at base of brain, secretes GH, TSH, ACTH, LH, FSH, Oxytocin, Vasopressin), Thyroid (Thyroxine T₄ and Triiodothyronine T₃ regulating basal metabolic rate), Pancreas (Insulin from β-cells lowers blood sugar; Glucagon from α-cells raises blood sugar), Adrenal (Adrenaline/Epinephrine for fight-or-flight; Cortisol for stress), Pineal (Melatonin for sleep-wake circadian rhythm).",
+    "highlights": [
+      "Pituitary gland: Called master gland; controlled by Hypothalamus via releasing hormones",
+      "Pancreatic Islets of Langerhans: Beta cells secrete Insulin; Alpha cells secrete Glucagon",
+      "Diabetes mellitus: Type 1 (autoimmune destruction of β-cells); Type 2 (insulin resistance and secretory defect)",
+      "Thyroid gland requires Iodine to synthesize Thyroxine; deficiency causes Goitre",
+      "Adrenal medulla secretes Adrenaline (emergency hormone increasing heart rate, blood pressure, and glycogen breakdown)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Endocrine_system"
+  },
+  {
+    "id": "health-immune-system-b-t-cells",
+    "keywords": [
+      "immune system innate vs adaptive immunity",
+      "b cells vs t cells antibodies humors",
+      "cd4 helper t cells cd8 cytotoxic t cells",
+      "vaccines immunological memory"
+    ],
+    "title": "Human Immune System — Innate & Adaptive Immunity (B & T Cells)",
+    "category": "Health & Medicine",
+    "answer": "The human immune system provides dual defense: (1) Innate Immunity (non-specific, immediate defense: skin physical barrier, stomach acid chemical barrier, neutrophils, macrophages, complement system), and (2) Adaptive Immunity (antigen-specific, creates long-term immunological memory): Humoral Immunity mediated by B cells producing Antibodies (IgG, IgM, IgA, IgE, IgD) and Cell-Mediated Immunity mediated by T cells (CD4+ Helper T cells activating responses and CD8+ Cytotoxic T cells destroying virus-infected/cancer cells).",
+    "highlights": [
+      "B Lymphocytes (mature in Bone marrow): Differentiate into Plasma cells (secreting thousands of antibodies/sec) and Memory B cells",
+      "T Lymphocytes (mature in Thymus): CD4+ T-Helper cells direct immune response (target of HIV virus); CD8+ Cytotoxic T-cells trigger apoptosis in infected cells via perforin and granzymes",
+      "Antibody classes: IgG (most abundant 80%, crosses placenta), IgM (first responder, pentamer), IgA (in secretions: tears, saliva, breast milk), IgE (allergic reactions and parasites), IgD (B-cell receptor)",
+      "Active Immunity (induced by infection or vaccines with memory) vs Passive Immunity (preformed antibodies: anti-venom, mother's colostrum)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Immune_system"
+  },
+  {
+    "id": "health-insulin-diabetes-physiology",
+    "keywords": [
+      "diabetes mellitus type 1 vs type 2 physiology",
+      "insulin glucagon mechanism islets of langerhans",
+      "hba1c test fasting blood sugar levels",
+      "ketoacidosis insulin resistance"
+    ],
+    "title": "Insulin, Glucagon & Diabetes Mellitus Physiology",
+    "category": "Health & Medicine",
+    "answer": "Blood glucose homeostasis is maintained by pancreatic Islets of Langerhans: Beta (β) cells secrete Insulin to facilitate cellular glucose uptake via GLUT-4 transporters and promote glycogenesis in liver/muscle; Alpha (α) cells secrete Glucagon to stimulate glycogenolysis and gluconeogenesis during fasting. Type 1 Diabetes is an autoimmune destruction of pancreatic β-cells (absolute insulin deficiency); Type 2 Diabetes is characterized by peripheral insulin resistance and progressive secretory defect.",
+    "highlights": [
+      "Normal Fasting Blood Sugar: 70–99 mg/dL (Prediabetes: 100–125 mg/dL; Diabetes: ≥126 mg/dL)",
+      "Postprandial (2-hour after meal) Blood Sugar: <140 mg/dL (Diabetes: ≥200 mg/dL)",
+      "HbA1c (Glycated Hemoglobin): Reflects average blood sugar over past 3 months; Normal <5.7%, Prediabetes 5.7–6.4%, Diabetes ≥6.5%",
+      "Diabetic Ketoacidosis (DKA): Life-threatening complication primarily in Type 1 where extreme insulin absence forces fatty acid breakdown into acidic ketone bodies (acetone, acetoacetate, β-hydroxybutyrate)",
+      "Metformin: First-line oral drug for Type 2 diabetes that inhibits hepatic gluconeogenesis via AMPK activation"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Diabetes"
+  },
+  {
+    "id": "health-bone-1-femur-thigh-bone",
+    "keywords": [
+      "femur (thigh bone)",
+      "bone femur (thigh bone)",
+      "function of femur (thigh bone)",
+      "where is femur (thigh bone) in body",
+      "human skeleton femur (thigh bone)"
+    ],
+    "title": "Femur (Thigh Bone) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Femur (Thigh Bone): Longest, heaviest, and strongest bone in the human body; supports body weight during walking/running.",
+    "highlights": [
+      "Bone / Region: Femur (Thigh Bone)",
+      "Anatomical Description: Longest, heaviest, and strongest bone in the human body; supports body weight during walking/running",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-2-stapes-stirrup",
+    "keywords": [
+      "stapes (stirrup)",
+      "bone stapes (stirrup)",
+      "function of stapes (stirrup)",
+      "where is stapes (stirrup) in body",
+      "human skeleton stapes (stirrup)"
+    ],
+    "title": "Stapes (Stirrup) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Stapes (Stirrup): Smallest and lightest bone in the human body (~3 mm long) located in the middle ear; transmits sound vibrations to inner ear oval window.",
+    "highlights": [
+      "Bone / Region: Stapes (Stirrup)",
+      "Anatomical Description: Smallest and lightest bone in the human body (~3 mm long) located in the middle ear; transmits sound vibrations to inner ear oval window",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-3-malleus-hammer",
+    "keywords": [
+      "malleus (hammer)",
+      "bone malleus (hammer)",
+      "function of malleus (hammer)",
+      "where is malleus (hammer) in body",
+      "human skeleton malleus (hammer)"
+    ],
+    "title": "Malleus (Hammer) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Malleus (Hammer): Largest of the three auditory ossicles in the middle ear; attached to tympanic membrane (eardrum).",
+    "highlights": [
+      "Bone / Region: Malleus (Hammer)",
+      "Anatomical Description: Largest of the three auditory ossicles in the middle ear; attached to tympanic membrane (eardrum)",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-4-incus-anvil",
+    "keywords": [
+      "incus (anvil)",
+      "bone incus (anvil)",
+      "function of incus (anvil)",
+      "where is incus (anvil) in body",
+      "human skeleton incus (anvil)"
+    ],
+    "title": "Incus (Anvil) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Incus (Anvil): Middle auditory ossicle connecting the malleus to the stapes.",
+    "highlights": [
+      "Bone / Region: Incus (Anvil)",
+      "Anatomical Description: Middle auditory ossicle connecting the malleus to the stapes",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-5-cranium-skull-vault",
+    "keywords": [
+      "cranium (skull vault)",
+      "bone cranium (skull vault)",
+      "function of cranium (skull vault)",
+      "where is cranium (skull vault) in body",
+      "human skeleton cranium (skull vault)"
+    ],
+    "title": "Cranium (Skull Vault) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Cranium (Skull Vault): Houses and protects the brain; composed of 8 cranial bones: Frontal, 2 Parietal, 2 Temporal, Occipital, Sphenoid, Ethmoid.",
+    "highlights": [
+      "Bone / Region: Cranium (Skull Vault)",
+      "Anatomical Description: Houses and protects the brain; composed of 8 cranial bones: Frontal, 2 Parietal, 2 Temporal, Occipital, Sphenoid, Ethmoid",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-6-mandible-lower-jaw",
+    "keywords": [
+      "mandible (lower jaw)",
+      "bone mandible (lower jaw)",
+      "function of mandible (lower jaw)",
+      "where is mandible (lower jaw) in body",
+      "human skeleton mandible (lower jaw)"
+    ],
+    "title": "Mandible (Lower Jaw) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Mandible (Lower Jaw): Only movable bone in the human skull and the strongest bone of the human face.",
+    "highlights": [
+      "Bone / Region: Mandible (Lower Jaw)",
+      "Anatomical Description: Only movable bone in the human skull and the strongest bone of the human face",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-7-maxilla-upper-jaw",
+    "keywords": [
+      "maxilla (upper jaw)",
+      "bone maxilla (upper jaw)",
+      "function of maxilla (upper jaw)",
+      "where is maxilla (upper jaw) in body",
+      "human skeleton maxilla (upper jaw)"
+    ],
+    "title": "Maxilla (Upper Jaw) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Maxilla (Upper Jaw): Forms upper jaw, hard palate, and floor of the eye orbits.",
+    "highlights": [
+      "Bone / Region: Maxilla (Upper Jaw)",
+      "Anatomical Description: Forms upper jaw, hard palate, and floor of the eye orbits",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-8-clavicle-collarbone",
+    "keywords": [
+      "clavicle (collarbone)",
+      "bone clavicle (collarbone)",
+      "function of clavicle (collarbone)",
+      "where is clavicle (collarbone) in body",
+      "human skeleton clavicle (collarbone)"
+    ],
+    "title": "Clavicle (Collarbone) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Clavicle (Collarbone): Only horizontally oriented long bone in the human body; most commonly fractured bone; connects sternum to scapula.",
+    "highlights": [
+      "Bone / Region: Clavicle (Collarbone)",
+      "Anatomical Description: Only horizontally oriented long bone in the human body; most commonly fractured bone; connects sternum to scapula",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-9-scapula-shoulder-blade",
+    "keywords": [
+      "scapula (shoulder blade)",
+      "bone scapula (shoulder blade)",
+      "function of scapula (shoulder blade)",
+      "where is scapula (shoulder blade) in body",
+      "human skeleton scapula (shoulder blade)"
+    ],
+    "title": "Scapula (Shoulder Blade) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Scapula (Shoulder Blade): Flat, triangular bone on posterior thorax connecting humerus with clavicle.",
+    "highlights": [
+      "Bone / Region: Scapula (Shoulder Blade)",
+      "Anatomical Description: Flat, triangular bone on posterior thorax connecting humerus with clavicle",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-10-sternum-breastbone",
+    "keywords": [
+      "sternum (breastbone)",
+      "bone sternum (breastbone)",
+      "function of sternum (breastbone)",
+      "where is sternum (breastbone) in body",
+      "human skeleton sternum (breastbone)"
+    ],
+    "title": "Sternum (Breastbone) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Sternum (Breastbone): Flat, T-shaped vertical bone in center of chest consisting of Manubrium, Body, and Xiphoid Process; protects heart and lungs.",
+    "highlights": [
+      "Bone / Region: Sternum (Breastbone)",
+      "Anatomical Description: Flat, T-shaped vertical bone in center of chest consisting of Manubrium, Body, and Xiphoid Process; protects heart and lungs",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-11-ribs-24-ribs-12-pairs",
+    "keywords": [
+      "ribs (24 ribs / 12 pairs)",
+      "bone ribs (24 ribs / 12 pairs)",
+      "function of ribs (24 ribs / 12 pairs)",
+      "where is ribs (24 ribs / 12 pairs) in body",
+      "human skeleton ribs (24 ribs / 12 pairs)"
+    ],
+    "title": "Ribs (24 Ribs / 12 Pairs) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Ribs (24 Ribs / 12 Pairs): Protects thoracic organs; 7 pairs True Ribs (1-7 attach to sternum directly), 3 pairs False Ribs (8-10 attach via cartilage), 2 pairs Floating Ribs (11-12 unattached in front).",
+    "highlights": [
+      "Bone / Region: Ribs (24 Ribs / 12 Pairs)",
+      "Anatomical Description: Protects thoracic organs; 7 pairs True Ribs (1-7 attach to sternum directly), 3 pairs False Ribs (8-10 attach via cartilage), 2 pairs Floating Ribs (11-12 unattached in front)",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-12-humerus",
+    "keywords": [
+      "humerus",
+      "bone humerus",
+      "function of humerus",
+      "where is humerus in body",
+      "human skeleton humerus"
+    ],
+    "title": "Humerus — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Humerus: Long bone of the upper arm extending from the shoulder to the elbow.",
+    "highlights": [
+      "Bone / Region: Humerus",
+      "Anatomical Description: Long bone of the upper arm extending from the shoulder to the elbow",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-13-radius",
+    "keywords": [
+      "radius",
+      "bone radius",
+      "function of radius",
+      "where is radius in body",
+      "human skeleton radius"
+    ],
+    "title": "Radius — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Radius: Lateral bone of the forearm (on the thumb side); articulates with capitulum of humerus and carpal bones.",
+    "highlights": [
+      "Bone / Region: Radius",
+      "Anatomical Description: Lateral bone of the forearm (on the thumb side); articulates with capitulum of humerus and carpal bones",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-14-ulna",
+    "keywords": [
+      "ulna",
+      "bone ulna",
+      "function of ulna",
+      "where is ulna in body",
+      "human skeleton ulna"
+    ],
+    "title": "Ulna — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Ulna: Medial bone of the forearm (on the pinky side); forms the elbow joint with the trochlea of humerus (Olecranon process).",
+    "highlights": [
+      "Bone / Region: Ulna",
+      "Anatomical Description: Medial bone of the forearm (on the pinky side); forms the elbow joint with the trochlea of humerus (Olecranon process)",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-15-carpals-wrist-bones-8-bones",
+    "keywords": [
+      "carpals (wrist bones - 8 bones)",
+      "bone carpals (wrist bones - 8 bones)",
+      "function of carpals (wrist bones - 8 bones)",
+      "where is carpals (wrist bones - 8 bones) in body",
+      "human skeleton carpals (wrist bones - 8 bones)"
+    ],
+    "title": "Carpals (Wrist Bones - 8 Bones) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Carpals (Wrist Bones - 8 Bones): Arranged in two rows: Scaphoid, Lunate, Triquetrum, Pisiform (proximal row); Trapezium, Trapezoid, Capitate, Hamate (distal row).",
+    "highlights": [
+      "Bone / Region: Carpals (Wrist Bones - 8 Bones)",
+      "Anatomical Description: Arranged in two rows: Scaphoid, Lunate, Triquetrum, Pisiform (proximal row); Trapezium, Trapezoid, Capitate, Hamate (distal row)",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-16-metacarpals-palm-bones-5-bones",
+    "keywords": [
+      "metacarpals (palm bones - 5 bones)",
+      "bone metacarpals (palm bones - 5 bones)",
+      "function of metacarpals (palm bones - 5 bones)",
+      "where is metacarpals (palm bones - 5 bones) in body",
+      "human skeleton metacarpals (palm bones - 5 bones)"
+    ],
+    "title": "Metacarpals (Palm Bones - 5 Bones) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Metacarpals (Palm Bones - 5 Bones): Five bones forming the palm numbered I to V starting from thumb to little finger.",
+    "highlights": [
+      "Bone / Region: Metacarpals (Palm Bones - 5 Bones)",
+      "Anatomical Description: Five bones forming the palm numbered I to V starting from thumb to little finger",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-17-phalanges-of-hand-14-bones",
+    "keywords": [
+      "phalanges of hand (14 bones)",
+      "bone phalanges of hand (14 bones)",
+      "function of phalanges of hand (14 bones)",
+      "where is phalanges of hand (14 bones) in body",
+      "human skeleton phalanges of hand (14 bones)"
+    ],
+    "title": "Phalanges of Hand (14 Bones) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Phalanges of Hand (14 Bones): Fingers: 2 phalanges in thumb (proximal, distal); 3 phalanges in each of the other 4 fingers (proximal, middle, distal).",
+    "highlights": [
+      "Bone / Region: Phalanges of Hand (14 Bones)",
+      "Anatomical Description: Fingers: 2 phalanges in thumb (proximal, distal); 3 phalanges in each of the other 4 fingers (proximal, middle, distal)",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-18-pelvis-coxal-bone-hip-bone",
+    "keywords": [
+      "pelvis / coxal bone (hip bone)",
+      "bone pelvis / coxal bone (hip bone)",
+      "function of pelvis / coxal bone (hip bone)",
+      "where is pelvis / coxal bone (hip bone) in body",
+      "human skeleton pelvis / coxal bone (hip bone)"
+    ],
+    "title": "Pelvis / Coxal Bone (Hip Bone) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Pelvis / Coxal Bone (Hip Bone): Formed by fusion of three bones: Ilium (largest upper blade), Ischium (lower posterior sitting bone), Pubis (lower anterior pubis).",
+    "highlights": [
+      "Bone / Region: Pelvis / Coxal Bone (Hip Bone)",
+      "Anatomical Description: Formed by fusion of three bones: Ilium (largest upper blade), Ischium (lower posterior sitting bone), Pubis (lower anterior pubis)",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-19-patella-kneecap",
+    "keywords": [
+      "patella (kneecap)",
+      "bone patella (kneecap)",
+      "function of patella (kneecap)",
+      "where is patella (kneecap) in body",
+      "human skeleton patella (kneecap)"
+    ],
+    "title": "Patella (Kneecap) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Patella (Kneecap): Largest sesamoid bone in the human body; embedded within the quadriceps tendon to increase knee extension leverage.",
+    "highlights": [
+      "Bone / Region: Patella (Kneecap)",
+      "Anatomical Description: Largest sesamoid bone in the human body; embedded within the quadriceps tendon to increase knee extension leverage",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-20-tibia-shin-bone",
+    "keywords": [
+      "tibia (shin bone)",
+      "bone tibia (shin bone)",
+      "function of tibia (shin bone)",
+      "where is tibia (shin bone) in body",
+      "human skeleton tibia (shin bone)"
+    ],
+    "title": "Tibia (Shin Bone) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Tibia (Shin Bone): Larger, stronger, and anterior weight-bearing bone of the lower leg; forms medial malleolus at ankle.",
+    "highlights": [
+      "Bone / Region: Tibia (Shin Bone)",
+      "Anatomical Description: Larger, stronger, and anterior weight-bearing bone of the lower leg; forms medial malleolus at ankle",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-21-fibula-calf-bone",
+    "keywords": [
+      "fibula (calf bone)",
+      "bone fibula (calf bone)",
+      "function of fibula (calf bone)",
+      "where is fibula (calf bone) in body",
+      "human skeleton fibula (calf bone)"
+    ],
+    "title": "Fibula (Calf Bone) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Fibula (Calf Bone): Slender, lateral non-weight-bearing bone of the lower leg; provides muscle attachment and forms lateral malleolus at ankle.",
+    "highlights": [
+      "Bone / Region: Fibula (Calf Bone)",
+      "Anatomical Description: Slender, lateral non-weight-bearing bone of the lower leg; provides muscle attachment and forms lateral malleolus at ankle",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-22-tarsals-ankle-bones-7-bones",
+    "keywords": [
+      "tarsals (ankle bones - 7 bones)",
+      "bone tarsals (ankle bones - 7 bones)",
+      "function of tarsals (ankle bones - 7 bones)",
+      "where is tarsals (ankle bones - 7 bones) in body",
+      "human skeleton tarsals (ankle bones - 7 bones)"
+    ],
+    "title": "Tarsals (Ankle Bones - 7 Bones) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Tarsals (Ankle Bones - 7 Bones): Talus (articulates with tibia), Calcaneus (heel bone - largest tarsal), Navicular, Cuboid, and 3 Cuneiform bones (medial, intermediate, lateral).",
+    "highlights": [
+      "Bone / Region: Tarsals (Ankle Bones - 7 Bones)",
+      "Anatomical Description: Talus (articulates with tibia), Calcaneus (heel bone - largest tarsal), Navicular, Cuboid, and 3 Cuneiform bones (medial, intermediate, lateral)",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-23-calcaneus-heel-bone",
+    "keywords": [
+      "calcaneus (heel bone)",
+      "bone calcaneus (heel bone)",
+      "function of calcaneus (heel bone)",
+      "where is calcaneus (heel bone) in body",
+      "human skeleton calcaneus (heel bone)"
+    ],
+    "title": "Calcaneus (Heel Bone) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Calcaneus (Heel Bone): Largest tarsal bone in the foot; transmits body weight to the ground and serves as attachment for Achilles tendon.",
+    "highlights": [
+      "Bone / Region: Calcaneus (Heel Bone)",
+      "Anatomical Description: Largest tarsal bone in the foot; transmits body weight to the ground and serves as attachment for Achilles tendon",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-24-metatarsals-foot-bones-5-bones",
+    "keywords": [
+      "metatarsals (foot bones - 5 bones)",
+      "bone metatarsals (foot bones - 5 bones)",
+      "function of metatarsals (foot bones - 5 bones)",
+      "where is metatarsals (foot bones - 5 bones) in body",
+      "human skeleton metatarsals (foot bones - 5 bones)"
+    ],
+    "title": "Metatarsals (Foot Bones - 5 Bones) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Metatarsals (Foot Bones - 5 Bones): Five long bones of the midfoot numbered I to V from big toe to little toe.",
+    "highlights": [
+      "Bone / Region: Metatarsals (Foot Bones - 5 Bones)",
+      "Anatomical Description: Five long bones of the midfoot numbered I to V from big toe to little toe",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-25-phalanges-of-foot-14-bones",
+    "keywords": [
+      "phalanges of foot (14 bones)",
+      "bone phalanges of foot (14 bones)",
+      "function of phalanges of foot (14 bones)",
+      "where is phalanges of foot (14 bones) in body",
+      "human skeleton phalanges of foot (14 bones)"
+    ],
+    "title": "Phalanges of Foot (14 Bones) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Phalanges of Foot (14 Bones): Toes: 2 phalanges in hallux (big toe); 3 phalanges in other four toes.",
+    "highlights": [
+      "Bone / Region: Phalanges of Foot (14 Bones)",
+      "Anatomical Description: Toes: 2 phalanges in hallux (big toe); 3 phalanges in other four toes",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-26-cervical-vertebrae-c1c7-7-bones",
+    "keywords": [
+      "cervical vertebrae (c1-c7 - 7 bones)",
+      "bone cervical vertebrae (c1-c7 - 7 bones)",
+      "function of cervical vertebrae (c1-c7 - 7 bones)",
+      "where is cervical vertebrae (c1-c7 - 7 bones) in body",
+      "human skeleton cervical vertebrae (c1-c7 - 7 bones)"
+    ],
+    "title": "Cervical Vertebrae (C1-C7 - 7 Bones) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Cervical Vertebrae (C1-C7 - 7 Bones): Neck spine; C1 is Atlas (supports skull nodding), C2 is Axis (contains Odontoid process / Dens for head rotation), C7 is Vertebra Prominens.",
+    "highlights": [
+      "Bone / Region: Cervical Vertebrae (C1-C7 - 7 Bones)",
+      "Anatomical Description: Neck spine; C1 is Atlas (supports skull nodding), C2 is Axis (contains Odontoid process / Dens for head rotation), C7 is Vertebra Prominens",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-27-thoracic-vertebrae-t1t12-12-bones",
+    "keywords": [
+      "thoracic vertebrae (t1-t12 - 12 bones)",
+      "bone thoracic vertebrae (t1-t12 - 12 bones)",
+      "function of thoracic vertebrae (t1-t12 - 12 bones)",
+      "where is thoracic vertebrae (t1-t12 - 12 bones) in body",
+      "human skeleton thoracic vertebrae (t1-t12 - 12 bones)"
+    ],
+    "title": "Thoracic Vertebrae (T1-T12 - 12 Bones) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Thoracic Vertebrae (T1-T12 - 12 Bones): Middle spine; articulate with 12 pairs of ribs; possess heart-shaped bodies and costal facets.",
+    "highlights": [
+      "Bone / Region: Thoracic Vertebrae (T1-T12 - 12 Bones)",
+      "Anatomical Description: Middle spine; articulate with 12 pairs of ribs; possess heart-shaped bodies and costal facets",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-28-lumbar-vertebrae-l1l5-5-bones",
+    "keywords": [
+      "lumbar vertebrae (l1-l5 - 5 bones)",
+      "bone lumbar vertebrae (l1-l5 - 5 bones)",
+      "function of lumbar vertebrae (l1-l5 - 5 bones)",
+      "where is lumbar vertebrae (l1-l5 - 5 bones) in body",
+      "human skeleton lumbar vertebrae (l1-l5 - 5 bones)"
+    ],
+    "title": "Lumbar Vertebrae (L1-L5 - 5 Bones) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Lumbar Vertebrae (L1-L5 - 5 Bones): Lower back spine; largest and strongest unfused vertebrae supporting the greatest body weight.",
+    "highlights": [
+      "Bone / Region: Lumbar Vertebrae (L1-L5 - 5 Bones)",
+      "Anatomical Description: Lower back spine; largest and strongest unfused vertebrae supporting the greatest body weight",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-29-sacrum-5-fused-vertebrae",
+    "keywords": [
+      "sacrum (5 fused vertebrae)",
+      "bone sacrum (5 fused vertebrae)",
+      "function of sacrum (5 fused vertebrae)",
+      "where is sacrum (5 fused vertebrae) in body",
+      "human skeleton sacrum (5 fused vertebrae)"
+    ],
+    "title": "Sacrum (5 Fused Vertebrae) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Sacrum (5 Fused Vertebrae): Triangular bone at base of spine wedged between hip bones at sacroiliac joints.",
+    "highlights": [
+      "Bone / Region: Sacrum (5 Fused Vertebrae)",
+      "Anatomical Description: Triangular bone at base of spine wedged between hip bones at sacroiliac joints",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-30-coccyx-tailbone-4-fused-bones",
+    "keywords": [
+      "coccyx (tailbone - 4 fused bones)",
+      "bone coccyx (tailbone - 4 fused bones)",
+      "function of coccyx (tailbone - 4 fused bones)",
+      "where is coccyx (tailbone - 4 fused bones) in body",
+      "human skeleton coccyx (tailbone - 4 fused bones)"
+    ],
+    "title": "Coccyx (Tailbone - 4 Fused Bones) — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Coccyx (Tailbone - 4 Fused Bones): Vestigial tailbone at the very bottom of the vertebral column providing attachment for pelvic floor muscles.",
+    "highlights": [
+      "Bone / Region: Coccyx (Tailbone - 4 Fused Bones)",
+      "Anatomical Description: Vestigial tailbone at the very bottom of the vertebral column providing attachment for pelvic floor muscles",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "health-bone-31-hyoid-bone",
+    "keywords": [
+      "hyoid bone",
+      "bone hyoid bone",
+      "function of hyoid bone",
+      "where is hyoid bone in body",
+      "human skeleton hyoid bone"
+    ],
+    "title": "Hyoid Bone — Human Skeletal Anatomy & Function",
+    "category": "Health & Medicine",
+    "answer": "Hyoid Bone: U-shaped bone in the anterior neck below mandible; only bone in the human body that does NOT articulate with any other bone (suspended by muscles and stylohyoid ligament).",
+    "highlights": [
+      "Bone / Region: Hyoid Bone",
+      "Anatomical Description: U-shaped bone in the anterior neck below mandible; only bone in the human body that does NOT articulate with any other bone (suspended by muscles and stylohyoid ligament)",
+      "Classification: Human Skeletal System (206 Adult Bones)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+  }
+]

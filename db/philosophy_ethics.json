@@ -1,0 +1,141 @@
+[
+  {
+    "id": "phil-western-traditions",
+    "keywords": [
+      "western philosophy schools",
+      "rationalism vs empiricism",
+      "stoicism marcus aurelius",
+      "existentialism sartre camus",
+      "descartes cogito ergo sum"
+    ],
+    "title": "Major Western Philosophical Traditions (Rationalism, Empiricism, Stoicism, Existentialism)",
+    "category": "Philosophy & Ethics",
+    "answer": "Western philosophy explores epistemology, metaphysics, and ontology: Rationalism (Descartes, Spinoza) holds that reason and innate ideas are the primary source of knowledge ('Cogito, ergo sum'). Empiricism (Locke, Hume) asserts all knowledge originates from sensory experience ('Tabula rasa'). Stoicism (Marcus Aurelius, Seneca) teaches tranquility through virtue and focusing only on what is within our control.",
+    "highlights": [
+      "Rationalism: René Descartes ('I think, therefore I am'), Spinoza, Leibniz (knowledge deduced a priori via reason and logical intuition)",
+      "Empiricism: John Locke (mind is a blank slate / Tabula rasa at birth), David Hume (impressions and skepticism), George Berkeley",
+      "Stoicism: Founded by Zeno of Citium in Athens; prominent Roman Stoics include Emperor Marcus Aurelius ('Meditations'), Seneca, and Epictetus; Dichotomy of Control (separating what is up to us from what is not)",
+      "Existentialism: Jean-Paul Sartre ('Existence precedes essence'), Søren Kierkegaard (father of existentialism), Friedrich Nietzsche ('God is dead', Übermensch, Amor fati), Albert Camus (The Myth of Sisyphus & Absurdism)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Western_philosophy"
+  },
+  {
+    "id": "phil-normative-ethics-kant-utilitarianism",
+    "keywords": [
+      "normative ethics",
+      "kantian ethics categorical imperative",
+      "utilitarianism bentham mill",
+      "social contract theory hobbes locke rousseau"
+    ],
+    "title": "Normative Ethics: Kantian Deontology, Utilitarianism & Social Contract",
+    "category": "Philosophy & Ethics",
+    "answer": "Normative ethics studies moral frameworks: Utilitarianism (Bentham, J.S. Mill) is a consequentialist theory advocating actions that maximize the greatest happiness for the greatest number of people. Kantian Deontology (Immanuel Kant) judges actions by duty according to the Categorical Imperative, arguing that people must always be treated as ends in themselves and never merely as means to an end.",
+    "highlights": [
+      "Utilitarianism (Consequentialism): Jeremy Bentham (hedonistic calculus) and John Stuart Mill (distinction between higher intellectual and lower bodily pleasures); Principle of Utility (greatest good for greatest number)",
+      "Kantian Deontology (Duty Ethics): Immanuel Kant's Categorical Imperative (1: Act only on maxims you can will to be universal laws; 2: Formula of Humanity — treat humanity always as an end, never as a mere means)",
+      "Social Contract Theory: Thomas Hobbes ('Leviathan' — life in state of nature is 'solitary, poor, nasty, brutish, and short'), John Locke ('Two Treatises' — natural rights to life, liberty, and property), Jean-Jacques Rousseau ('General Will' — 'Man is born free, and everywhere he is in chains')",
+      "Virtue Ethics (Aristotle): Nicomachean Ethics — moral character and the Golden Mean (the desirable middle between extremes of excess and deficiency)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Ethics"
+  },
+  {
+    "id": "phil-six-darshanas-indian",
+    "keywords": [
+      "six schools of indian philosophy",
+      "shad darshanas",
+      "samkhya yoga nyaya vaisheshika mimamsa vedanta",
+      "advaita vedanta shankara",
+      "bhartiya darshan"
+    ],
+    "title": "The Six Orthodox Schools of Indian Philosophy (Shad-Darshanas)",
+    "category": "Philosophy & Ethics",
+    "answer": "Classical Indian philosophy classifies six Astika (orthodox / Vedic) Darshanas: 1) Nyaya (Sage Gautama — logic and epistemology), 2) Vaisheshika (Sage Kanada — atomic theory and metaphysics), 3) Samkhya (Sage Kapila — dualism of Purusha and Prakriti), 4) Yoga (Sage Patanjali — Ashtanga 8-limbed path to Samadhi), 5) Mimamsa (Sage Jaimini — Vedic exegesis), and 6) Vedanta (Sage Badarayana — Upanishadic philosophy systematized by Adi Shankara into Advaita Non-Dualism).",
+    "highlights": [
+      "Nyaya (Sage Gautama): Formal system of Indian logic accepting 4 Pramanas (valid means of knowledge): Pratyaksha (perception), Anumana (inference), Upamana (comparison), Shabda (testimony)",
+      "Vaisheshika (Sage Kanada): Metaphysical pluralism proposing that all physical matter in the universe is composed of indivisible atoms (Paramanu) across 7 categories (Padarthas)",
+      "Samkhya (Sage Kapila): Oldest philosophical school; dualistic philosophy separating Purusha (pure unattached consciousness) and Prakriti (material nature, composed of 3 Gunas: Sattva, Rajas, Tamas)",
+      "Yoga (Sage Patanjali): 8 Limbs of Ashtanga Yoga (Yama, Niyama, Asana, Pranayama, Pratyahara, Dharana, Dhyana, Samadhi) to still the fluctuations of the mind (Chitta Vritti Nirodha)",
+      "Vedanta: Advaita Vedanta (Adi Shankara — Non-dualism: 'Brahman satyam, jagat mithya' — Brahman alone is real, the world is an illusion), Vishishtadvaita (Ramanuja — Qualified Non-Dualism), Dvaita (Madhvacharya — Dualism)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Indian_philosophy"
+  },
+  {
+    "id": "phil-buddhism-jainism-philosophy",
+    "keywords": [
+      "four noble truths buddhism",
+      "noble eightfold path",
+      "jain philosophy anekantavada syadvada",
+      "ahimsa buddhism jainism",
+      "bauddh jain darshan"
+    ],
+    "title": "Heterodox Indian Philosophy: Buddhism (Noble Truths) & Jainism (Anekantavada)",
+    "category": "Philosophy & Ethics",
+    "answer": "Buddhism (founded by Siddhartha Gautama / The Buddha) centers on the Four Noble Truths (the reality, cause, cessation of suffering / Dukkha, and the Noble Eightfold Path / Ashtangika Marga to attain Nirvana). Jainism (formalized by 24th Tirthankara Lord Mahavira) is founded on Ahimsa (absolute non-violence), Anekantavada (the multifaceted, many-sided nature of truth), and Syadvada (conditioned relativity of knowledge).",
+    "highlights": [
+      "Four Noble Truths (Buddhism): 1) Dukkha (Life involves suffering), 2) Samudaya (Origin of suffering is Trishna/craving), 3) Nirodha (Cessation of suffering is Nirvana), 4) Magga (Path leading to cessation is the Eightfold Path)",
+      "Noble Eightfold Path: Right View, Right Resolve, Right Speech, Right Action, Right Livelihood, Right Effort, Right Mindfulness, Right Concentration",
+      "Pratityasamutpada (Dependent Origination): Core Buddhist doctrine that all phenomena arise in inter-dependence on causes and conditions",
+      "Anekantavada & Syadvada (Jainism): Metaphysical doctrine that ultimate reality is complex and multifaceted, illustrated by the parable of the blind men and an elephant; knowledge is partial and perspective-dependent",
+      "Three Jewels of Jainism (Triratna): Samyak Darshana (Right Faith), Samyak Jnana (Right Knowledge), Samyak Charitra (Right Conduct)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Buddhist_philosophy"
+  },
+  {
+    "id": "phil-logic-fallacies",
+    "keywords": [
+      "logical fallacies list",
+      "ad hominem straw man false dichotomy",
+      "valid vs sound argument",
+      "formal and informal fallacies"
+    ],
+    "title": "Formal Logic & Common Logical Fallacies Reference",
+    "category": "Philosophy & Ethics",
+    "answer": "In formal logic, an argument is Valid if its conclusion logically follows from its premises; it is Sound if it is valid and all its premises are factually true. Logical fallacies are flawed reasoning patterns: Ad Hominem (attacking the character of the speaker), Straw Man (distorting an opponent's argument to refute it easily), False Dilemma (falsely claiming only two extreme alternatives exist), and Slippery Slope.",
+    "highlights": [
+      "Valid vs Sound: Validity = correct deductive structure; Soundness = Valid structure + 100% True real-world premises",
+      "Ad Hominem: 'You cannot trust his climate policy because he didn't finish college' (attacking the person instead of the argument)",
+      "Straw Man: Distorting, exaggerating, or oversimplifying an opponent's stance to make it easily attackable",
+      "False Dilemma / Bifurcation: 'You are either with us or you are against us' (ignoring nuanced middle-ground possibilities)",
+      "Post Hoc Ergo Propter Hoc: 'It rained after I washed my car, so washing the car caused the rain' (confusing temporal sequence with causation)",
+      "Appeal to Authority (Argumentum Ad Verecundiam): Claiming something is true solely because an unqualified or biased authority stated it"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_fallacies"
+  },
+  {
+    "id": "phil-six-orthodox-darshanas",
+    "keywords": [
+      "six schools of indian philosophy shad darshana",
+      "nyaya vaisheshika samkhya yoga mimamsa vedanta",
+      "adi shankara advaita vedanta"
+    ],
+    "title": "Six Orthodox Schools of Indian Philosophy (Shad-Darshana)",
+    "category": "Philosophy",
+    "answer": "The six orthodox (Astika — accepting Vedic authority) schools of classical Hindu philosophy are: (1) Nyaya (Logic and Epistemology by Sage Gautama), (2) Vaisheshika (Atomic naturalism and Metaphysics by Sage Kanada), (3) Samkhya (Dualism of Purusha/consciousness and Prakriti/matter by Sage Kapila), (4) Yoga (Mind control and Eight Limbs/Ashtanga Yoga by Sage Patanjali), (5) Purva Mimamsa (Vedic ritualism and Hermeneutics by Sage Jaimini), and (6) Uttara Mimamsa / Vedanta (Non-dualism/Advaita by Badarayana and Adi Shankaracharya).",
+    "highlights": [
+      "Adi Shankaracharya (788–820 CE) consolidated Advaita Vedanta: Brahman alone is real, world is Maya (illusion), Jiva is non-different from Brahman (Aham Brahmasmi)",
+      "Ramanujacharya (Vishishtadvaita / Qualified Non-Dualism) and Madhvacharya (Dvaita / Strict Dualism)",
+      "Sage Kanada in Vaisheshika proposed that all matter is composed of indivisible atoms called Paramāṇu centuries before Democritus",
+      "Patanjali's 8 Limbs of Yoga: Yama (restraints), Niyama (observances), Asana (postures), Pranayama (breath control), Pratyahara (withdrawal of senses), Dharana (concentration), Dhyana (meditation), Samadhi (absorption)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Hindu_philosophy"
+  },
+  {
+    "id": "phil-western-ethics-kant-utilitarianism",
+    "keywords": [
+      "utilitarianism vs deontology",
+      "immanuel kant categorical imperative",
+      "jeremy bentham john stuart mill greatest happiness principle",
+      "virtue ethics aristotle"
+    ],
+    "title": "Major Western Ethical Theories — Deontology, Utilitarianism, Virtue Ethics",
+    "category": "Philosophy",
+    "answer": "The three predominant branches of normative ethics are: (1) Deontology (Duty-based ethics of Immanuel Kant — actions are inherently right or wrong based on the Categorical Imperative: act only according to maxims you can will to become universal laws), (2) Consequentialism / Utilitarianism (Jeremy Bentham and John Stuart Mill — actions are judged solely by outcomes; maximize greatest happiness for greatest number), and (3) Virtue Ethics (Aristotle — cultivation of moral character and practical wisdom/Phronesis achieving Eudaimonia/human flourishing via the Golden Mean).",
+    "highlights": [
+      "Kant's Categorical Imperative: Treat humanity always as an end in itself, never merely as a means",
+      "Utilitarian principle: Utility = Pleasure/Wellbeing - Pain; Bentham (quantitative hedonic calculus) vs Mill (qualitative higher vs lower pleasures)",
+      "Aristotle's Golden Mean: Moral virtue is desirable middle state between excess and deficiency (e.g. Courage is mean between Rashness and Cowardice)",
+      "Trolley Problem (Philippa Foot, 1967): Classic thought experiment contrasting utilitarian decision (pull lever to save 5 kill 1) with deontological duty (do not actively cause harm)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Ethics"
+  }
+]

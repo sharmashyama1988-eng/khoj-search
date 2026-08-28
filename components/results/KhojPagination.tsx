@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 import { useLanguage } from '@/hooks/useLanguage';
 
 interface Props {
@@ -12,19 +12,21 @@ export function KhojPagination({ currentPage, totalPages, onPageChange }: Props)
 
   if (totalPages <= 1) return null;
 
-  const maxVisible = 8;
-  const pagesCount = Math.min(totalPages, maxVisible);
+  const maxVisible = 10;
+  const pagesCount = Math.min(Math.max(totalPages, 10), maxVisible);
   const oPages = Array.from({ length: pagesCount }, (_, i) => i + 1);
 
   const colors = [
     '#4285f4', // blue
     '#ea4335', // red
     '#fbbc05', // yellow
+    '#4285f4', // blue
     '#34a853', // green
-    '#4285f4',
-    '#ea4335',
-    '#fbbc05',
-    '#34a853',
+    '#ea4335', // red
+    '#fbbc05', // yellow
+    '#4285f4', // blue
+    '#34a853', // green
+    '#ea4335', // red
   ];
 
   return (

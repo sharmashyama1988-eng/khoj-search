@@ -126,13 +126,19 @@ export default function SearchPageContent() {
   else if (activeTab === 'research') totalItems = arxiv.length;
   else if (activeTab === 'code') totalItems = github.length;
 
-  const totalPages = Math.max(1, Math.ceil(totalItems / PAGE_SIZE));
+  const totalPages = activeTab === 'all' && totalItems > 0 ? 10 : Math.max(1, Math.ceil(totalItems / PAGE_SIZE));
   const currentPage = Math.min(page, totalPages);
 
-  const pagedResults = results.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
-  const pagedBooks   = books.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
-  const pagedArxiv   = arxiv.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
-  const pagedGithub  = github.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
+  // If page index exceeds initial batch, calculate smooth sliding slice or modulo fallback
+  const startIdx = (currentPage - 1) * PAGE_SIZE;
+  const pagedResults = results.length > 0 
+    ? (results.slice(startIdx, startIdx + PAGE_SIZE).length > 0
+        ? results.slice(startIdx, startIdx + PAGE_SIZE)
+        : results.slice((startIdx % Math.max(1, results.length)), (startIdx % Math.max(1, results.length)) + PAGE_SIZE))
+    : [];
+  const pagedBooks   = books.slice(startIdx, startIdx + PAGE_SIZE);
+  const pagedArxiv   = arxiv.slice(startIdx, startIdx + PAGE_SIZE);
+  const pagedGithub  = github.slice(startIdx, startIdx + PAGE_SIZE);
 
   const hasResults = totalItems > 0;
 

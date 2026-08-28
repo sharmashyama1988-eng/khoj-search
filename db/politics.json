@@ -56,5 +56,44 @@
       "Example: India and the United States are both constitutional democratic republics."
     ],
     "url": "https://en.wikipedia.org/wiki/Democratic_republic"
+  },
+  {
+    "id": "pol-five-constitutional-writs",
+    "keywords": [
+      "five writs in indian constitution article 32 article 226",
+      "habeas corpus mandamus quo warranto certiorari prohibition",
+      "supreme court high court writ jurisdiction"
+    ],
+    "title": "Five Types of Writs in the Indian Constitution (Articles 32 & 226)",
+    "category": "Politics",
+    "answer": "The Constitution of India empowers the Supreme Court (Article 32) and High Courts (Article 226) to issue 5 prerogative writs for enforcing Fundamental Rights: (1) Habeas Corpus (\"To have the body\" — against illegal detention), (2) Mandamus (\"We command\" — orders public authority to perform official duty), (3) Prohibition (stops lower court from exceeding jurisdiction), (4) Certiorari (\"To be certified\" — quashes illegal orders of lower courts), (5) Quo Warranto (\"By what authority\" — prevents illegal usurpation of public office).",
+    "highlights": [
+      "Habeas Corpus: Most powerful safeguard against unlawful arrest or detention by state or private individuals",
+      "Mandamus: Issued against public officials, inferior courts, tribunals, or corporations refusing to perform statutory duties",
+      "Prohibition vs Certiorari: Prohibition is preventive (during proceedings); Certiorari is curative (after order is passed)",
+      "Quo Warranto: Can be filed by ANY interested citizen, not only the aggrieved person (unlike other writs)",
+      "Dr. B.R. Ambedkar declared Article 32 as the \"Very Soul of the Constitution and the very heart of it\""
+    ],
+    "url": "https://en.wikipedia.org/wiki/Writ"
+  },
+  {
+    "id": "pol-lok-sabha-vs-rajya-sabha",
+    "keywords": [
+      "lok sabha vs rajya sabha differences",
+      "lower house vs upper house indian parliament",
+      "money bill article 110 rajya sabha 14 days",
+      "presiding officers speaker chairman"
+    ],
+    "title": "Lok Sabha vs Rajya Sabha — Structure & Powers of Parliament",
+    "category": "Politics",
+    "answer": "The Indian Parliament consists of the President and two Houses: Lok Sabha (House of the People / Lower House, up to 543 elected members, 5-year term) and Rajya Sabha (Council of States / Upper House, up to 250 members, permanent body with ⅓ members retiring every 2 years, 6-year tenure). Lok Sabha has exclusive power over Money Bills (Article 110) and Council of Ministers is collectively responsible strictly to Lok Sabha.",
+    "highlights": [
+      "Lok Sabha: 543 seats (all directly elected by citizens under Universal Adult Suffrage); Presided over by Speaker of Lok Sabha",
+      "Rajya Sabha: 238 elected by State Legislative Assemblies + 12 nominated by President (Literature, Science, Art, Social Service); Presided over by Vice-President of India as ex-officio Chairman",
+      "Money Bill (Article 110): Introduced ONLY in Lok Sabha with President's recommendation; Rajya Sabha can only delay for 14 days",
+      "Joint Sitting of Parliament (Article 108): Summoned by President, presided over by Lok Sabha Speaker to resolve ordinary bill deadlocks",
+      "Rajya Sabha Special Powers (Articles 249 & 312): Authorize Parliament to legislate on State List and create new All India Services (e.g. IAS, IPS, IFS)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Parliament_of_India"
   }
 ]
