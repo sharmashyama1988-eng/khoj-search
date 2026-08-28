@@ -1,9 +1,9 @@
-'use client';
+﻿'use client';
 import { useState, useRef, useEffect, FormEvent, KeyboardEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/hooks/useLanguage';
-import { useKeyboardNav } from '@/hooks/useKeyboardNav';
 import { debounce } from '@/lib/utils';
+import { isDirectDomainOrUrl } from '@/lib/intent';
 
 interface Props {
   initialValue?: string;
@@ -21,7 +21,9 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
   const [listening, setListening]     = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Voice search — Web Speech API (free, browser-native)
+  const directInfo = isDirectDomainOrUrl(query);
+
+  // Voice search — Web Speech API
   const startVoice = () => {
     if (typeof window === 'undefined') return;
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -43,7 +45,6 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
     recognition.start();
   };
 
-  // Keyboard shortcut: / or Ctrl+K to focus search
   useEffect(() => {
     const handler = (e: globalThis.KeyboardEvent) => {
       if ((e.key === '/' || (e.ctrlKey && e.key === 'k')) && document.activeElement !== inputRef.current) {
@@ -78,9 +79,22 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
     router.push(`/search?q=${encodeURIComponent(q.trim())}&lang=${lang}&tab=${currentTab}`);
   };
 
+  const openDirectUrl = (url: string) => {
+    if (typeof window !== 'undefined') {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+  };
+
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    doSearch(activeIdx >= 0 ? suggestions[activeIdx] : query);
+    const targetQ = activeIdx >= 0 ? suggestions[activeIdx] : query;
+    const direct = isDirectDomainOrUrl(targetQ);
+
+    // If direct URL is entered, open in new tab and search on Khoj
+    if (direct.isUrl) {
+      openDirectUrl(direct.url);
+    }
+    doSearch(targetQ);
   };
 
   const handleKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
@@ -120,8 +134,8 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
             value={query}
             onChange={(e) => handleChange(e.target.value)}
             onKeyDown={handleKeyDown}
-            onFocus={() => suggestions.length > 0 && setShowSugg(true)}
-            onBlur={() => setTimeout(() => setShowSugg(false), 150)}
+            onFocus={() => (suggestions.length > 0 || directInfo.isUrl) && setShowSugg(true)}
+            onBlur={() => setTimeout(() => setShowSugg(false), 200)}
             placeholder={t('search_placeholder')}
             className={`flex-1 bg-transparent text-text-primary placeholder-text-muted
               outline-none font-normal ${compact ? 'text-sm' : 'text-base'}`}
@@ -129,7 +143,18 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
             spellCheck={false}
           />
 
-
+          {/* Direct URL Instant Launch Pill */}
+          {directInfo.isUrl && (
+            <button
+              type="button"
+              onClick={() => openDirectUrl(directInfo.url)}
+              title={`Open ${directInfo.domain} in new tab`}
+              className="shrink-0 px-2.5 py-1 rounded-full bg-indigo-500/15 hover:bg-indigo-500/25 text-indigo-400 border border-indigo-500/30 text-xs font-semibold flex items-center gap-1 transition-all animate-fade-in cursor-pointer"
+            >
+              <span>↗ Open</span>
+              <span className="hidden sm:inline">{directInfo.domain}</span>
+            </button>
+          )}
 
           {/* Clear button */}
           {query && (
@@ -141,7 +166,7 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
             </button>
           )}
 
-          {/* 🎤 Voice search button */}
+          {/* Voice search button */}
           <button
             type="button"
             onClick={startVoice}
@@ -166,13 +191,35 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
         </div>
       </form>
 
-      {/* Suggestions dropdown */}
-      {showSugg && suggestions.length > 0 && (
+      {/* Suggestions & Direct URL Dropdown */}
+      {showSugg && (suggestions.length > 0 || directInfo.isUrl) && (
         <div className="absolute left-0 right-0 top-full mt-2 bg-surface border border-border
           rounded-xl shadow-2xl z-50 overflow-hidden animate-slide-up">
+          
+          {/* Direct URL Instant Item */}
+          {directInfo.isUrl && (
+            <button
+              type="button"
+              onMouseDown={() => {
+                openDirectUrl(directInfo.url);
+                doSearch(query);
+              }}
+              className="w-full flex items-center justify-between px-5 py-3 text-sm text-left bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-400 border-b border-border/50 transition-colors"
+            >
+              <div className="flex items-center gap-3">
+                <span className="text-base">🌐</span>
+                <span>Open <strong className="text-text-primary">{directInfo.domain}</strong> in new tab</span>
+              </div>
+              <span className="text-xs px-2 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 font-mono">
+                Direct URL ↗
+              </span>
+            </button>
+          )}
+
           {suggestions.map((s, i) => (
             <button
               key={s}
+              type="button"
               onMouseDown={() => doSearch(s)}
               className={`w-full flex items-center gap-3 px-5 py-3 text-sm text-left
                 hover:bg-surface-2 transition-colors

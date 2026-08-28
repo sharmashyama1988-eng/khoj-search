@@ -1,4 +1,4 @@
-import type { DetectedIntent, IntentType } from '@/types';
+﻿import type { DetectedIntent, IntentType } from '@/types';
 
 interface IntentPattern {
   type: IntentType;
@@ -19,7 +19,41 @@ export function extractFileType(query: string): { filetype: string | null; clean
   return { filetype: m[1], cleanQuery: query.replace(m[0], '').trim() };
 }
 
+// ── Direct Domain & Web URL Detector ─────────────────────────────────────────
+export function isDirectDomainOrUrl(query: string): { isUrl: boolean; url: string; domain: string } {
+  const clean = query.trim().toLowerCase();
+  const urlPattern = /^(https?:\/\/)?([a-z0-9-]+(\.[a-z0-9-]+)+)(:\d+)?(\/.*)?$/i;
+  const match = clean.match(urlPattern);
+
+  if (match) {
+    const domain = match[2];
+    const fullUrl = clean.startsWith('http') ? clean : `https://${clean}`;
+    return { isUrl: true, url: fullUrl, domain };
+  }
+
+  const commonTlds = ['.com', '.org', '.net', '.io', '.in', '.ai', '.app', '.co', '.dev', '.me'];
+  if (commonTlds.some((tld) => clean.endsWith(tld) || clean.includes(tld + '/'))) {
+    const domain = clean.replace(/^(https?:\/\/)?(www\.)?/, '').split('/')[0];
+    const fullUrl = clean.startsWith('http') ? clean : `https://${clean}`;
+    return { isUrl: true, url: fullUrl, domain };
+  }
+
+  return { isUrl: false, url: '', domain: '' };
+}
+
 const INTENT_PATTERNS: IntentPattern[] = [
+  {
+    type: 'price',
+    patterns: [
+      /\b(gold|sona|chandi|silver)\s*(?:price|rate|bhav|today|ka bhav)\b/i,
+      /^(?:gold|silver|sona|chandi)\s*(?:price|rate)?$/i,
+      /\b(iphone 16e?|iphone 15|s24 ultra|galaxy s24|ps5)\s*(?:price|cost|rate)\b/i,
+      /^(?:iphone 16e?|iphone 15|s24 ultra|galaxy s24)\s*price?$/i,
+      /\b(petrol|diesel|fuel)\s*(?:price|rate)\b/i,
+      /^(?:petrol|diesel)\s+price/i,
+    ],
+    extract: (q) => q,
+  },
   {
     type: 'weather',
     patterns: [
@@ -244,17 +278,20 @@ const INTENT_PATTERNS: IntentPattern[] = [
 ];
 
 export function detectIntent(query: string): DetectedIntent {
-  const q = query.trim();
+  const q = query.trim().slice(0, 300);
   if (!q) return { type: 'none' };
 
-  for (const intent of INTENT_PATTERNS) {
-    for (const pattern of intent.patterns) {
-      const match = q.match(pattern);
-      if (match) {
-        const payload = intent.extract ? intent.extract(q, match) : undefined;
-        return { type: intent.type, payload };
+  try {
+    for (const intent of INTENT_PATTERNS) {
+      for (const pattern of intent.patterns) {
+        const match = q.match(pattern);
+        if (match) {
+          const payload = intent.extract ? intent.extract(q, match) : undefined;
+          return { type: intent.type, payload };
+        }
       }
     }
-  }
+  } catch {}
+
   return { type: 'none' };
 }

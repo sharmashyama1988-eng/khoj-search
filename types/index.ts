@@ -87,6 +87,7 @@ export type IntentType =
   | 'unit'
   | 'map'
   | 'stock'
+  | 'price'
   | 'code'
   | 'regex'
   | 'none';
