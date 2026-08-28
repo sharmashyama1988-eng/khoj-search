@@ -7,6 +7,7 @@ import { SearchTabs } from '@/components/search/SearchTabs';
 import { ResultCard } from '@/components/results/ResultCard';
 import { WikiPanel } from '@/components/results/WikiPanel';
 import { ImageGrid } from '@/components/results/ImageGrid';
+import { VideosTab } from '@/components/results/VideosTab';
 import { BookCard } from '@/components/results/BookCard';
 import { ArxivCard } from '@/components/results/ArxivCard';
 import { GithubCard } from '@/components/results/GithubCard';
@@ -227,6 +228,11 @@ export default function SearchPageContent() {
                   </div>
                 )
                 : !error && !hasWidget && <EmptyState message={t('no_results')} />
+            )}
+
+            {/* Tab: Videos */}
+            {!loading && activeTab === 'videos' && (
+              <VideosTab query={query} />
             )}
 
             {/* Tab: Images */}

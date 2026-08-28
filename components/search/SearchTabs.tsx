@@ -9,6 +9,7 @@ interface Props {
 
 const TABS: { id: SearchTab; labelKey: string; icon: string }[] = [
   { id: 'all',      labelKey: 'tab_all',      icon: '🔍' },
+  { id: 'videos',   labelKey: 'tab_videos',   icon: '🎥' },
   { id: 'images',   labelKey: 'tab_images',   icon: '🖼️' },
   { id: 'code',     labelKey: 'tab_code',     icon: '💻' },
   { id: 'research', labelKey: 'tab_research', icon: '🔬' },

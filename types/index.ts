@@ -1,6 +1,21 @@
 // ─── Search & Results ────────────────────────────────────────────────────────
 
-export type SearchTab = 'all' | 'images' | 'code' | 'research' | 'books';
+export type SearchTab = 'all' | 'images' | 'videos' | 'code' | 'research' | 'books';
+
+export interface VideoResult {
+  id: string;
+  videoId: string;
+  title: string;
+  description: string;
+  url: string;
+  embedUrl: string;
+  thumbnail: string;
+  channelTitle?: string;
+  publishedAt?: string;
+  views?: string;
+  duration?: string;
+  source: 'YouTube';
+}
 
 export interface SearchResult {
   id: string;
