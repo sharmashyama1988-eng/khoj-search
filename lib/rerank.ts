@@ -143,16 +143,41 @@ function computeTokenOverlap(queryTokens: string[], docTokens: string[]): number
 // ─────────────────────────────────────────────────────────────────────────────
 // 4. Intent Classification Helper
 // ─────────────────────────────────────────────────────────────────────────────
+// ─────────────────────────────────────────────────────────────────────────────
+// 4. Multi-Domain Intent Classification Engine (Topic & Need Understanding)
+// ─────────────────────────────────────────────────────────────────────────────
 function detectQueryIntent(query: string, tokens: string[]) {
   const q = query.toLowerCase();
 
-  const isNavigational = [
-    'login', 'sign in', 'website', 'homepage', 'portal', 'official site', 'app'
-  ].some((kw) => q.includes(kw)) || tokens.length <= 2;
+  const isHealthMedical = [
+    'surgery', 'aiims', 'hospital', 'doctor', 'treatment', 'medicine', 'disease',
+    'symptoms', 'causes', 'cure', 'cancer', 'diabetes', 'fever', 'cardiac', 'heart',
+    'liver', 'kidney', 'bone', 'breast', 'implant', 'body', 'pain', 'vaccine',
+    'ilaj', 'dawa', 'rog', 'bimar', 'upchar', 'health', 'clinic', 'anatomy'
+  ].some((kw) => q.includes(kw));
+
+  const isAcademicEdu = [
+    'ncert', 'cbse', 'class 6', 'class 7', 'class 8', 'class 9', 'class 10', 'class 11', 'class 12',
+    'chapter', 'notes', 'syllabus', 'physics', 'chemistry', 'biology', 'math',
+    'formula', 'derivation', 'theorem', 'algebra', 'calculus', 'history', 'geography',
+    'economics', 'civics', 'exam', 'question paper', 'solution', 'pyq'
+  ].some((kw) => q.includes(kw));
+
+  const isGovNavigational = [
+    'portal', 'login', 'sign in', 'official site', 'admit card', 'result',
+    'sbi online', 'irctc', 'uidai', 'aadhar', 'pan card', 'passport',
+    'epfo', 'upsc', 'ssc', 'yojana', 'form apply', 'registration', 'recruitment'
+  ].some((kw) => q.includes(kw));
+
+  const isNewsOrFresh = [
+    'news', 'latest', 'today', 'update', 'current', '2026', '2025', 'breaking',
+    'live', 'khabar', 'samachar', 'halchal', 'headlines', 'election', 'budget', 'match'
+  ].some((kw) => q.includes(kw));
 
   const isDocs = [
     'doc', 'docs', 'documentation', 'api', 'reference', 'guide', 'tutorial',
-    'example', 'syntax', 'hook', 'class', 'function', 'how to use', 'cheatsheet'
+    'example', 'syntax', 'hook', 'class', 'function', 'how to use', 'cheatsheet',
+    'react', 'nextjs', 'typescript', 'python', 'javascript', 'tailwindcss'
   ].some((kw) => q.includes(kw));
 
   const isErrorOrDebug = [
@@ -167,7 +192,7 @@ function detectQueryIntent(query: string, tokens: string[]) {
 
   const isProduct = [
     'specs', 'review', 'vs', 'camera', 'battery', 'm4', 'rtx', 'iphone',
-    'macbook', 'phone', 'laptop', 'headphones', 'buy', 'deals'
+    'macbook', 'phone', 'laptop', 'headphones', 'buy', 'deals', 'under 50000', 'under 20000'
   ].some((kw) => q.includes(kw));
 
   const isCommunity = [
@@ -175,20 +200,32 @@ function detectQueryIntent(query: string, tokens: string[]) {
     'experience', 'discussion', 'thoughts', 'best'
   ].some((kw) => q.includes(kw));
 
-  const isNewsOrFresh = [
-    'news', 'latest', 'today', 'update', 'current', '2026', '2025', 'breaking', 'live'
-  ].some((kw) => q.includes(kw));
-
   const isMathQuery = [
     'square', 'cube', 'formula', 'identity', 'theorem', 'algebra', 'pythagoras',
-    'quadratic', 'equation', 'expansion', 'factorization', 'calculus', 'matrix'
+    'quadratic', 'equation', 'expansion', 'factorization', 'calculus', 'matrix', 'sin', 'cos', 'tan'
   ].some((kw) => q.includes(kw));
 
-  return { isNavigational, isDocs, isErrorOrDebug, isFinancialOrPricing, isProduct, isCommunity, isNewsOrFresh, isMathQuery };
+  const isNavigational = isGovNavigational || [
+    'website', 'homepage', 'app'
+  ].some((kw) => q.includes(kw)) || tokens.length <= 2;
+
+  return {
+    isHealthMedical,
+    isAcademicEdu,
+    isGovNavigational,
+    isNewsOrFresh,
+    isDocs,
+    isErrorOrDebug,
+    isFinancialOrPricing,
+    isProduct,
+    isCommunity,
+    isMathQuery,
+    isNavigational,
+  };
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// 5. Hybrid Cross-Encoder Re-Ranker
+// 5. Hybrid Cross-Encoder Re-Ranker (Contextual Intent-Driven)
 // ─────────────────────────────────────────────────────────────────────────────
 export function hybridReRank(
   query: string,
@@ -278,43 +315,76 @@ export function hybridReRank(
       score += 700;
     }
 
-    // Google Web & Google Live Stream Priority
+    // Google Web & Direct Matches
     if (item.source === 'Google Web' || item.badge === 'Google') {
-      score += 480;
+      score += 300;
     }
 
-    // News is ONLY boosted if the user specifically asked for news/recent updates
-    if (item.badge === '🔴 Live News' || item.domain === 'news.google.com' || (item.source && item.source.toLowerCase().includes('news'))) {
-      if (intent.isNewsOrFresh) {
-        score += 280;
-      } else {
-        score -= 350; // De-prioritize news on general/factual/educational searches!
+    // ── TOPIC-MATCHED ADAPTIVE ROUTING (JARURAT KE HISAAB SE RANKING) ─────────
+
+    // A. HEALTH & MEDICAL INTENT
+    if (intent.isHealthMedical) {
+      const isMedicalAuthority = [
+        'nih.gov', 'who.int', 'aiims.edu', 'webmd.com', 'mayoclinic.org',
+        'healthline.com', 'ncbi.nlm.nih.gov', 'pubmed', 'nhs.uk', 'icmr.gov.in',
+        'medlineplus.gov', 'hopkinsmedicine.org', 'clevelandclinic.org', '1mg.com',
+        'practo.com', 'netmeds.com', 'apollohospitals.com', 'fortishealthcare.com'
+      ].some((d) => domainLower.includes(d));
+
+      if (isMedicalAuthority) {
+        score += 500; // Strong authority boost for medical portals
+      }
+      if (item.badge === 'Health & Medicine' || item.source?.includes('Health')) {
+        score += 600;
+      }
+      // If user is searching health, suppress generic news clickbaits
+      if (item.badge === '🔴 Live News' && !intent.isNewsOrFresh) {
+        score -= 400;
       }
     }
 
-    // Filter out distractor noise on math queries
-    if (intent.isMathQuery) {
-      if (titleLower.includes('whole foods') || domainLower.includes('wholefoods')) {
-        score -= 600;
+    // B. ACADEMIC & NCERT INTENT
+    if (intent.isAcademicEdu) {
+      const isEduAuthority = [
+        'ncert.nic.in', 'cbse.gov.in', 'byjus.com', 'topperlearning.com',
+        'vedantu.com', 'geeksforgeeks.org', 'khanacademy.org', 'wikipedia.org',
+        'learncbse.in', 'physicswallah.live', 'unacademy.com'
+      ].some((d) => domainLower.includes(d));
+
+      if (isEduAuthority) {
+        score += 480;
+      }
+      if (item.badge?.includes('NCERT') || item.source?.includes('NCERT')) {
+        score += 650;
       }
     }
 
-    // 7. Temporal Recency & Real-Time Freshness (Only active for news or date-specific queries)
+    // C. GOVERNMENT & OFFICIAL SCHEMES / PORTALS
+    if (intent.isGovNavigational) {
+      if (domainLower.endsWith('.gov.in') || domainLower.endsWith('.nic.in') || domainLower.endsWith('.gov') || domainLower.endsWith('.ac.in')) {
+        score += 650; // Guaranteed #1 on official government searches
+      }
+    }
+
+    // D. NEWS & CURRENT AFFAIRS INTENT
     if (intent.isNewsOrFresh) {
+      if (item.badge === '🔴 Live News' || item.domain === 'news.google.com' || (item.source && item.source.toLowerCase().includes('news'))) {
+        score += 450; // Promote live news only when user wants news!
+      }
       const isCurrentYear = fullItemText.includes('2026') || fullItemText.includes('2025');
       const isLiveTimeIndicator = ['today', 'hours ago', 'mins ago', 'just now', 'breaking', 'live news'].some((kw) => fullItemText.includes(kw));
 
       if (isCurrentYear || isLiveTimeIndicator) {
         score += 200;
       }
-
-      const isAncient = ['2015', '2016', '2017', '2018', '2019', '2020'].some((y) => fullItemText.includes(y));
-      if (isAncient && !isCurrentYear) {
-        score -= 200;
+    } else {
+      // Non-news query: reduce news ranking
+      if (item.badge === '🔴 Live News' || item.domain === 'news.google.com') {
+        score -= 300;
       }
     }
 
-    // Tech Docs Intent
+    // E. TECH, CODING & DEVELOPER DOCS INTENT
     const isFirstPartyDomain = queryTokens.some((t) => (
       t.length >= 3 && (
         domainLower.startsWith(t + '.') ||
@@ -337,25 +407,23 @@ export function hybridReRank(
 
     if (intent.isDocs) {
       if (isFirstPartyDomain && (isDocDomain || item.badge === 'Docs')) {
-        score += 350;
+        score += 400;
       } else if (isDocDomain || item.badge === 'Docs') {
-        score += 180;
+        score += 220;
       }
       if (titleLower.includes('documentation') || titleLower.includes('tutorial') || titleLower.includes('guide')) {
-        score += 80;
+        score += 90;
       }
-    } else if (isFirstPartyDomain) {
-      score += 150;
     }
 
     // Error / Debugging Intent
     if (intent.isErrorOrDebug) {
-      if (item.source === 'StackOverflow' || domainLower.includes('stackoverflow.com')) score += 220;
-      if (item.source === 'GitHub' || domainLower.includes('github.com')) score += 140;
-      if (isDocDomain) score += 100;
+      if (item.source === 'StackOverflow' || domainLower.includes('stackoverflow.com')) score += 300;
+      if (item.source === 'GitHub' || domainLower.includes('github.com')) score += 180;
+      if (isDocDomain) score += 120;
     }
 
-    // Financial / Real-Time Pricing Intent
+    // F. FINANCIAL & PRICING INTENT
     if (intent.isFinancialOrPricing) {
       if (
         domainLower.includes('finance.yahoo.com') ||
@@ -367,20 +435,20 @@ export function hybridReRank(
         domainLower.includes('tradingview.com') ||
         domainLower.includes('economictimes.')
       ) {
-        score += 240;
+        score += 280;
       }
     }
 
-    // Product & Gadget Intent
+    // G. PRODUCT & GADGET INTENT
     if (intent.isProduct) {
-      if (item.badge === 'Official Site' || domainLower.includes('apple.com') || domainLower.includes('sony.com') || domainLower.includes('nvidia.com')) score += 200;
-      if (domainLower.includes('gsmarena.com') || domainLower.includes('rtings.com') || domainLower.includes('theverge.com')) score += 120;
+      if (item.badge === 'Official Site' || domainLower.includes('apple.com') || domainLower.includes('sony.com') || domainLower.includes('nvidia.com')) score += 250;
+      if (domainLower.includes('gsmarena.com') || domainLower.includes('rtings.com') || domainLower.includes('theverge.com') || domainLower.includes('91mobiles.com')) score += 180;
     }
 
-    // Community / Forum Intent
+    // H. COMMUNITY & REDDIT INTENT
     if (intent.isCommunity || query.toLowerCase().includes('reddit')) {
       if (item.source === 'Reddit' || domainLower.includes('reddit.com')) {
-        score += 260;
+        score += 280;
       }
     } else {
       if (item.source === 'Reddit' && !intent.isCommunity) {
@@ -388,9 +456,9 @@ export function hybridReRank(
       }
     }
 
-    // General Source Priors (Encyclopedias, General web & Knowledge)
+    // I. GENERAL FACTUAL & ENCYCLOPEDIC INTENT
     if (item.source === 'Wikipedia' && (queryTokens.length <= 2 || query.toLowerCase().includes('what is') || query.toLowerCase().includes('history') || query.toLowerCase().includes('kaun') || query.toLowerCase().includes('kya'))) {
-      score += 160;
+      score += 180;
     }
 
     return {
