@@ -1,4 +1,5 @@
 ﻿import type { SearchResult } from '@/types';
+import { resolveInstantMathOrFact } from '@/lib/knowledge';
 
 export interface AgentStep {
   step: number;
@@ -217,7 +218,20 @@ Structure your response as:
 
   // Local fallback if OpenRouter is unconfigured or unreachable
   if (!directAnswer) {
-    if (dataPayload.price) {
+    const instantKnowledge = resolveInstantMathOrFact(query, lang);
+    if (instantKnowledge) {
+      directAnswer = instantKnowledge.extract;
+      if (instantKnowledge.keyPoints) {
+        keyInsights.push(...instantKnowledge.keyPoints);
+      }
+      steps.push({
+        step: steps.length + 1,
+        toolName: 'InstantKnowledgeEngine',
+        action: 'Resolved mathematical identity and conceptual theorem instantly',
+        outputSummary: `Derived exact identity: ${instantKnowledge.title}`,
+        timestamp: new Date().toISOString(),
+      });
+    } else if (dataPayload.price) {
       const p = dataPayload.price;
       directAnswer = `${p.title}: ${p.mainPrice}. ${p.subtitle}.`;
       keyInsights.push(`Current rate/price: ${p.mainPrice}`);
@@ -240,7 +254,7 @@ Structure your response as:
 
   return {
     query,
-    thoughtProcess: `Processed intent classification -> dispatched parallel tools -> fused BM25+ & RTDT feeds -> OpenRouter neural synthesis in ${executionTimeMs}ms.`,
+    thoughtProcess: `Processed intent classification -> dispatched parallel tools -> fused BM25+ & RTDT feeds -> neural synthesis in ${executionTimeMs}ms.`,
     steps,
     directAnswer,
     keyInsights,

@@ -1,4 +1,5 @@
 ﻿import { NextRequest, NextResponse } from 'next/server';
+import { resolveInstantMathOrFact } from '@/lib/knowledge';
 
 export const runtime = 'edge';
 
@@ -14,10 +15,23 @@ export async function GET(req: NextRequest) {
   }
 
   try {
-    // 1. Call OpenRouter AI if API key is configured
+    // 1. Instant Mathematical & Core Fact Engine (0ms Sub-millisecond response)
+    const instantMatch = resolveInstantMathOrFact(q, lang);
+    if (instantMatch) {
+      return NextResponse.json({
+        status: 'success',
+        title: instantMatch.title,
+        extract: instantMatch.extract,
+        keyPoints: instantMatch.keyPoints,
+        type: instantMatch.type,
+        source: instantMatch.source,
+      });
+    }
+
+    // 2. OpenRouter AI Neural Synthesis (When API Key is Present)
     if (OPENROUTER_KEY) {
       const controller = new AbortController();
-      const timer = setTimeout(() => controller.abort(), 6500);
+      const timer = setTimeout(() => controller.abort(), 6000);
 
       const openRouterRes = await fetch('https://openrouter.ai/api/v1/chat/completions', {
         method: 'POST',
@@ -34,7 +48,7 @@ export async function GET(req: NextRequest) {
               role: 'system',
               content: `You are Khoj AI, an elite search engine intelligence agent.
 Your objective is to provide a direct, crystal-clear, accurate answer to the user's search query.
-If the query is a math question or formula (e.g. "a+b whole square"), write out the exact formula, algebraic expansion, and clean explanation.
+If the query is a math question or formula, write out the exact formula, algebraic expansion, and clean explanation.
 If the query is in Hindi (or if lang=hi), respond in Hindi. Otherwise respond in English.
 Structure your answer into:
 1. A concise direct answer paragraph (2-3 sentences).
@@ -79,7 +93,7 @@ Structure your answer into:
       }
     }
 
-    // 2. Fallback to Wikipedia Page Summary
+    // 3. Fallback to Wikipedia Page Summary
     const wikiBase = `https://${lang}.wikipedia.org`;
     const wikiUrl = `${wikiBase}/api/rest_v1/page/summary/${encodeURIComponent(q.replace(/ /g, '_'))}`;
     const wikiRes = await fetch(wikiUrl, { next: { revalidate: 3600 } });
