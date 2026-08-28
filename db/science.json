@@ -1,13 +1,19 @@
-﻿[
+[
   {
     "id": "sci-speed-of-light",
-    "keywords": ["speed of light", "speed of light in vacuum", "value of c", "prakash ki chal", "light speed m/s"],
+    "keywords": [
+      "speed of light",
+      "speed of light in vacuum",
+      "value of c",
+      "prakash ki chal",
+      "light speed m/s"
+    ],
     "title": "Speed of Light in Vacuum (c)",
     "category": "Science",
-    "answer": "The speed of light in vacuum is exactly 299,792,458 metres per second (approximately 3 × 10⁸ m/s or 186,282 miles per second). Denoted by the physical constant 'c'.",
+    "answer": "The speed of light in vacuum is exactly 299,792,458 metres per second (approximately 3 * 10^8 m/s or 186,282 miles per second). Denoted by the physical constant 'c'.",
     "highlights": [
       "Exact Value (SI): 299,792,458 m/s",
-      "Metric Approximation: 300,000 km/s (3 × 10⁸ m/s)",
+      "Metric Approximation: 300,000 km/s (3 * 10^8 m/s)",
       "Imperial Approximation: ~186,282 miles/second",
       "Significance: Universal physical constant and upper limit for speed of energy, matter, and information"
     ],
@@ -15,7 +21,13 @@
   },
   {
     "id": "sci-value-of-pi",
-    "keywords": ["value of pi", "pi value", "pi ki value", "what is pi", "pi constant"],
+    "keywords": [
+      "value of pi",
+      "pi value",
+      "pi ki value",
+      "what is pi",
+      "pi constant"
+    ],
     "title": "Value of Pi (π)",
     "category": "Science",
     "answer": "The value of Pi (π) is approximately 3.14159265359... (commonly represented as 22/7 or 3.14). It is defined as the ratio of a circle's circumference to its diameter.",
@@ -28,42 +40,59 @@
   },
   {
     "id": "sci-gravity",
-    "keywords": ["value of g", "acceleration due to gravity", "gravity on earth", "earth gravity", "g value m/s2"],
+    "keywords": [
+      "value of g",
+      "acceleration due to gravity",
+      "gravity on earth",
+      "earth gravity",
+      "g value m/s2"
+    ],
     "title": "Standard Acceleration Due to Gravity (g)",
     "category": "Science",
-    "answer": "The standard acceleration due to Earth's gravity at sea level is approximately 9.80665 m/s² (commonly rounded to 9.8 m/s² or 32.174 ft/s²).",
+    "answer": "The standard acceleration due to Earth gravity at sea level is approximately 9.80665 m/s² (commonly rounded to 9.8 m/s² or 32.174 ft/s²).",
     "highlights": [
       "Standard Value: g = 9.80665 m/s² (or ~9.8 m/s²)",
-      "Formula: g = G · M / r² (where G is gravitational constant, M is Earth's mass, r is radius)",
+      "Formula: g = G * M / r²",
       "Imperial Units: ~32.174 ft/s²"
     ],
     "url": "https://en.wikipedia.org/wiki/Standard_gravity"
   },
   {
     "id": "sci-photosynthesis",
-    "keywords": ["photosynthesis", "what is photosynthesis", "photosynthesis formula", "prakash sanshleshan", "photosynthesis equation"],
+    "keywords": [
+      "photosynthesis",
+      "what is photosynthesis",
+      "photosynthesis formula",
+      "prakash sanshleshan",
+      "photosynthesis equation"
+    ],
     "title": "Photosynthesis — Biological Process & Chemical Equation",
     "category": "Science",
-    "answer": "Photosynthesis is the biological process by which green plants, algae, and cyanobacteria convert light energy (sunlight), water (H₂O), and carbon dioxide (CO₂) into chemical energy (glucose, C₆H₁₂O₆) and oxygen (O₂).",
+    "answer": "Photosynthesis is the biological process by which green plants, algae, and cyanobacteria convert light energy, water (H2O), and carbon dioxide (CO2) into chemical energy (glucose) and oxygen (O2).",
     "highlights": [
-      "Chemical Equation: 6CO₂ + 6H₂O + Light Energy ➔ C₆H₁₂O₆ + 6O₂",
-      "Organelle: Chloroplasts (specifically containing green pigment Chlorophyll)",
-      "By-product: Oxygen (O₂) released into the atmosphere",
-      "Phases: Light-dependent reactions (Thylakoids) and Light-independent Calvin Cycle (Stroma)"
+      "Chemical Equation: 6CO2 + 6H2O + Light Energy -> C6H12O6 + 6O2",
+      "Organelle: Chloroplasts containing green pigment Chlorophyll",
+      "By-product: Oxygen (O2) released into atmosphere",
+      "Phases: Light-dependent reactions and Light-independent Calvin Cycle"
     ],
     "url": "https://en.wikipedia.org/wiki/Photosynthesis"
   },
   {
     "id": "sci-water-formula",
-    "keywords": ["chemical formula of water", "water formula", "pani ka formula", "water chemical name"],
-    "title": "Water (H₂O) — Chemical Formula & Properties",
+    "keywords": [
+      "chemical formula of water",
+      "water formula",
+      "pani ka formula",
+      "water chemical name"
+    ],
+    "title": "Water (H2O) — Chemical Formula & Properties",
     "category": "Science",
-    "answer": "The chemical formula of water is H₂O (two hydrogen atoms bonded covalently to one oxygen atom). Its chemical name is Dihydrogen Monoxide.",
+    "answer": "The chemical formula of water is H2O (two hydrogen atoms bonded covalently to one oxygen atom). Its chemical name is Dihydrogen Monoxide.",
     "highlights": [
-      "Chemical Formula: H₂O",
+      "Chemical Formula: H2O",
       "Molar Mass: 18.01528 g/mol",
-      "Freezing Point: 0 °C (32 °F / 273.15 K)",
-      "Boiling Point: 100 °C (212 °F / 373.15 K) at standard 1 atm pressure",
+      "Freezing Point: 0 C (32 F / 273.15 K)",
+      "Boiling Point: 100 C (212 F / 373.15 K) at standard 1 atm pressure",
       "Universal Solvent: Dissolves more substances than any other liquid"
     ],
     "url": "https://en.wikipedia.org/wiki/Properties_of_water"

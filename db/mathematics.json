@@ -1,7 +1,15 @@
-﻿[
+[
   {
     "id": "math-a-plus-b-sq",
-    "keywords": ["a+b whole square", "a plus b whole square", "a b whole square", "a b ka whole square", "a plus b square formula", "a+b square", "(a+b)2"],
+    "keywords": [
+      "a+b whole square",
+      "a plus b whole square",
+      "a b whole square",
+      "a b ka whole square",
+      "a plus b square formula",
+      "a+b square",
+      "(a+b)2"
+    ],
     "title": "(a + b)² — Algebraic Identity Formula & Derivation",
     "category": "Mathematics",
     "answer": "(a + b)² = a² + 2ab + b² (or a² + b² + 2ab). It is the fundamental algebraic identity for the square of a binomial sum. Expanding step-by-step: (a + b)(a + b) = a(a + b) + b(a + b) = a² + ab + ba + b² = a² + 2ab + b².",
@@ -15,7 +23,13 @@
   },
   {
     "id": "math-a-minus-b-sq",
-    "keywords": ["a-b whole square", "a minus b whole square", "a b whole square minus", "a minus b square", "(a-b)2"],
+    "keywords": [
+      "a-b whole square",
+      "a minus b whole square",
+      "a b whole square minus",
+      "a minus b square",
+      "(a-b)2"
+    ],
     "title": "(a - b)² — Algebraic Identity Formula & Derivation",
     "category": "Mathematics",
     "answer": "(a - b)² = a² - 2ab + b² (or a² + b² - 2ab). It is the standard algebraic identity for the square of a binomial difference. Expanding step-by-step: (a - b)(a - b) = a(a - b) - b(a - b) = a² - ab - ba + b² = a² - 2ab + b².",
@@ -28,20 +42,32 @@
   },
   {
     "id": "math-a2-minus-b2",
-    "keywords": ["a2-b2", "a square minus b square", "a 2 minus b 2", "difference of two squares", "a2 minus b2 formula"],
+    "keywords": [
+      "a2-b2",
+      "a square minus b square",
+      "a 2 minus b 2",
+      "difference of two squares",
+      "a2 minus b2 formula"
+    ],
     "title": "a² - b² (Difference of Two Squares)",
     "category": "Mathematics",
     "answer": "a² - b² = (a + b)(a - b). This fundamental algebraic identity states that the difference of two squares equals the product of their sum and their difference.",
     "highlights": [
       "Formula: a² - b² = (a + b)(a - b)",
-      "Numerical Example: 10² - 6² = (10 + 6)(10 - 6) = 16 × 4 = 64 (100 - 36 = 64)",
+      "Numerical Example: 10² - 6² = (10 + 6)(10 - 6) = 16 * 4 = 64 (100 - 36 = 64)",
       "Use Case: Factoring polynomials, mental calculation, calculus integration"
     ],
     "url": "https://en.wikipedia.org/wiki/Difference_of_two_squares"
   },
   {
     "id": "math-a-plus-b-cube",
-    "keywords": ["a+b whole cube", "a plus b whole cube", "a b whole cube", "(a+b)3", "a+b cube formula"],
+    "keywords": [
+      "a+b whole cube",
+      "a plus b whole cube",
+      "a b whole cube",
+      "(a+b)3",
+      "a+b cube formula"
+    ],
     "title": "(a + b)³ — Algebraic Cube Identity",
     "category": "Mathematics",
     "answer": "(a + b)³ = a³ + 3a²b + 3ab² + b³ = a³ + b³ + 3ab(a + b). It represents the expansion of a binomial cubed and geometrically corresponds to the volume of a cube with side (a + b).",
@@ -54,12 +80,18 @@
   },
   {
     "id": "math-pythagoras",
-    "keywords": ["pythagoras theorem", "pythagorean theorem", "a2+b2=c2", "right triangle formula", "hypotenuse formula"],
+    "keywords": [
+      "pythagoras theorem",
+      "pythagorean theorem",
+      "a2+b2=c2",
+      "right triangle formula",
+      "hypotenuse formula"
+    ],
     "title": "Pythagorean Theorem (a² + b² = c²)",
     "category": "Mathematics",
     "answer": "In a right-angled triangle, the square of the hypotenuse (c) is equal to the sum of the squares of the other two legs (a and b): a² + b² = c².",
     "highlights": [
-      "Formula: a² + b² = c² (or c = √(a² + b²))",
+      "Formula: a² + b² = c² (or c = sqrt(a² + b²))",
       "Pythagorean Triples: (3, 4, 5), (5, 12, 13), (7, 24, 25), (8, 15, 17)",
       "Applicability: Geometry, Trigonometry, Vector magnitude, Distance in Cartesian space"
     ],
@@ -67,14 +99,20 @@
   },
   {
     "id": "math-quadratic",
-    "keywords": ["quadratic formula", "quadratic equation roots", "sridharacharya formula", "shridharacharya formula", "roots of quadratic equation"],
+    "keywords": [
+      "quadratic formula",
+      "quadratic equation roots",
+      "sridharacharya formula",
+      "shridharacharya formula",
+      "roots of quadratic equation"
+    ],
     "title": "Quadratic Formula (Roots of ax² + bx + c = 0)",
     "category": "Mathematics",
-    "answer": "For any quadratic equation ax² + bx + c = 0 (where a ≠ 0), the roots are given by x = [-b ± √(b² - 4ac)] / (2a).",
+    "answer": "For any quadratic equation ax² + bx + c = 0 (where a != 0), the roots are given by x = [-b +- sqrt(b² - 4ac)] / (2a).",
     "highlights": [
-      "Formula: x = [-b ± √(b² - 4ac)] / (2a)",
+      "Formula: x = [-b +- sqrt(b² - 4ac)] / (2a)",
       "Discriminant (D = b² - 4ac): If D > 0 (2 distinct real roots), D = 0 (1 repeated real root), D < 0 (2 complex conjugate roots)",
-      "Discovered By: Ancient Indian mathematician Sridhara (Shridharacharya formula)"
+      "Discovered By: Ancient Indian mathematician Sridhara"
     ],
     "url": "https://en.wikipedia.org/wiki/Quadratic_formula"
   }

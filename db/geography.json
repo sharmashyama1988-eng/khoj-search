@@ -1,7 +1,12 @@
-﻿[
+[
   {
     "id": "geo-cap-france",
-    "keywords": ["capital of france", "france capital", "france ki rajdhani", "france city"],
+    "keywords": [
+      "capital of france",
+      "france capital",
+      "france ki rajdhani",
+      "france city"
+    ],
     "title": "Capital of France — Paris",
     "category": "Geography",
     "answer": "Paris is the capital and largest city of France, situated along the Seine River.",
@@ -9,41 +14,57 @@
       "Capital City: Paris",
       "Country: France (Europe)",
       "Famous Landmarks: Eiffel Tower, Louvre Museum, Notre-Dame, Arc de Triomphe",
-      "Currency: Euro (€ / EUR)"
+      "Currency: Euro (EUR)"
     ],
     "url": "https://en.wikipedia.org/wiki/Paris"
   },
   {
     "id": "geo-cap-india",
-    "keywords": ["capital of india", "india capital", "bharat ki rajdhani", "delhi capital"],
+    "keywords": [
+      "capital of india",
+      "india capital",
+      "bharat ki rajdhani",
+      "delhi capital"
+    ],
     "title": "Capital of India — New Delhi",
     "category": "Geography",
     "answer": "New Delhi is the capital of India and the seat of all three branches of the Government of India.",
     "highlights": [
-      "National Capital: New Delhi (National Capital Territory of Delhi)",
+      "National Capital: New Delhi",
       "Country: Republic of India",
-      "Seat of Government: Rashtrapati Bhavan, Parliament House (Sansad Bhavan), Supreme Court",
-      "Currency: Indian Rupee (₹ / INR)"
+      "Seat of Government: Rashtrapati Bhavan, Sansad Bhavan, Supreme Court",
+      "Currency: Indian Rupee (INR)"
     ],
     "url": "https://en.wikipedia.org/wiki/New_Delhi"
   },
   {
     "id": "geo-cap-japan",
-    "keywords": ["capital of japan", "japan capital", "japan ki rajdhani", "tokyo capital"],
+    "keywords": [
+      "capital of japan",
+      "japan capital",
+      "japan ki rajdhani",
+      "tokyo capital"
+    ],
     "title": "Capital of Japan — Tokyo",
     "category": "Geography",
     "answer": "Tokyo is the capital of Japan and the world's most populous metropolitan area.",
     "highlights": [
       "Capital City: Tokyo",
       "Country: Japan (East Asia)",
-      "Population: Over 37 million in the Greater Tokyo Area",
-      "Currency: Japanese Yen (¥ / JPY)"
+      "Population: Over 37 million in Greater Tokyo Area",
+      "Currency: Japanese Yen (JPY)"
     ],
     "url": "https://en.wikipedia.org/wiki/Tokyo"
   },
   {
     "id": "geo-cap-usa",
-    "keywords": ["capital of usa", "capital of united states", "capital of america", "america capital", "usa capital"],
+    "keywords": [
+      "capital of usa",
+      "capital of united states",
+      "capital of america",
+      "america capital",
+      "usa capital"
+    ],
     "title": "Capital of the United States — Washington, D.C.",
     "category": "Geography",
     "answer": "Washington, D.C. (District of Columbia) is the federal capital of the United States of America.",
@@ -51,41 +72,57 @@
       "Federal Capital: Washington, D.C.",
       "Country: United States of America (USA)",
       "Seat of Government: The White House, Capitol Hill, Supreme Court",
-      "Currency: United States Dollar ($ / USD)"
+      "Currency: United States Dollar (USD)"
     ],
     "url": "https://en.wikipedia.org/wiki/Washington,_D.C."
   },
   {
     "id": "geo-cap-uk",
-    "keywords": ["capital of uk", "capital of united kingdom", "capital of england", "england capital", "london capital"],
+    "keywords": [
+      "capital of uk",
+      "capital of united kingdom",
+      "capital of england",
+      "england capital",
+      "london capital"
+    ],
     "title": "Capital of the United Kingdom — London",
     "category": "Geography",
     "answer": "London is the capital and largest city of England and the United Kingdom, standing on the River Thames.",
     "highlights": [
       "Capital City: London",
-      "Country: United Kingdom (England, Scotland, Wales, Northern Ireland)",
+      "Country: United Kingdom",
       "Famous Landmarks: Big Ben, Tower Bridge, Buckingham Palace, British Museum",
-      "Currency: Pound Sterling (£ / GBP)"
+      "Currency: Pound Sterling (GBP)"
     ],
     "url": "https://en.wikipedia.org/wiki/London"
   },
   {
     "id": "geo-cap-australia",
-    "keywords": ["capital of australia", "australia capital", "australia ki rajdhani", "canberra capital"],
+    "keywords": [
+      "capital of australia",
+      "australia capital",
+      "australia ki rajdhani",
+      "canberra capital"
+    ],
     "title": "Capital of Australia — Canberra",
     "category": "Geography",
     "answer": "Canberra is the capital city of Australia, situated within the Australian Capital Territory (ACT).",
     "highlights": [
-      "Capital City: Canberra (NOT Sydney or Melbourne)",
+      "Capital City: Canberra",
       "Country: Commonwealth of Australia",
       "Selection: Chosen as a compromise between Sydney and Melbourne in 1908",
-      "Currency: Australian Dollar (A$ / AUD)"
+      "Currency: Australian Dollar (AUD)"
     ],
     "url": "https://en.wikipedia.org/wiki/Canberra"
   },
   {
     "id": "geo-cap-germany",
-    "keywords": ["capital of germany", "germany capital", "germany ki rajdhani", "berlin capital"],
+    "keywords": [
+      "capital of germany",
+      "germany capital",
+      "germany ki rajdhani",
+      "berlin capital"
+    ],
     "title": "Capital of Germany — Berlin",
     "category": "Geography",
     "answer": "Berlin is the capital and largest city of Germany by both area and population.",
@@ -93,27 +130,38 @@
       "Capital City: Berlin",
       "Country: Federal Republic of Germany",
       "Famous Landmarks: Brandenburg Gate, Reichstag Building, Berlin Wall Memorial",
-      "Currency: Euro (€ / EUR)"
+      "Currency: Euro (EUR)"
     ],
     "url": "https://en.wikipedia.org/wiki/Berlin"
   },
   {
     "id": "geo-cap-canada",
-    "keywords": ["capital of canada", "canada capital", "canada ki rajdhani", "ottawa capital"],
+    "keywords": [
+      "capital of canada",
+      "canada capital",
+      "canada ki rajdhani",
+      "ottawa capital"
+    ],
     "title": "Capital of Canada — Ottawa",
     "category": "Geography",
     "answer": "Ottawa is the capital city of Canada, located in the province of Ontario on the south bank of the Ottawa River.",
     "highlights": [
-      "Capital City: Ottawa (NOT Toronto or Vancouver)",
+      "Capital City: Ottawa",
       "Country: Canada",
       "Seat of Government: Parliament Hill",
-      "Currency: Canadian Dollar (C$ / CAD)"
+      "Currency: Canadian Dollar (CAD)"
     ],
     "url": "https://en.wikipedia.org/wiki/Ottawa"
   },
   {
     "id": "geo-continents",
-    "keywords": ["how many continents", "continents in the world", "list of continents", "7 continents", "seven continents"],
+    "keywords": [
+      "how many continents",
+      "continents in the world",
+      "list of continents",
+      "7 continents",
+      "seven continents"
+    ],
     "title": "The 7 Continents of the World",
     "category": "Geography",
     "answer": "There are 7 continents on Earth: Asia, Africa, North America, South America, Antarctica, Europe, and Australia (Oceania).",
@@ -128,12 +176,19 @@
   },
   {
     "id": "geo-oceans",
-    "keywords": ["how many oceans", "oceans in the world", "list of oceans", "5 oceans", "five oceans", "largest ocean"],
+    "keywords": [
+      "how many oceans",
+      "oceans in the world",
+      "list of oceans",
+      "5 oceans",
+      "five oceans",
+      "largest ocean"
+    ],
     "title": "The 5 Oceans of the World",
     "category": "Geography",
     "answer": "There are 5 major oceans on Earth: Pacific Ocean, Atlantic Ocean, Indian Ocean, Southern (Antarctic) Ocean, and Arctic Ocean.",
     "highlights": [
-      "Largest & Deepest: Pacific Ocean (Covers over 30% of Earth's surface)",
+      "Largest & Deepest: Pacific Ocean (Covers over 30% of Earth surface)",
       "Second Largest: Atlantic Ocean",
       "Third Largest: Indian Ocean",
       "Southernmost: Southern Ocean",
@@ -143,10 +198,16 @@
   },
   {
     "id": "geo-mount-everest",
-    "keywords": ["tallest mountain", "highest peak", "highest mountain in the world", "mount everest height", "everest height"],
+    "keywords": [
+      "tallest mountain",
+      "highest peak",
+      "highest mountain in the world",
+      "mount everest height",
+      "everest height"
+    ],
     "title": "Mount Everest (Sagarmatha / Chomolungma) — Tallest Mountain",
     "category": "Geography",
-    "answer": "Mount Everest is Earth's highest mountain above sea level, with an official elevation of 8,848.86 metres (29,031.7 ft). Located in the Mahalangur Himal sub-range of the Himalayas on the border between Nepal and China.",
+    "answer": "Mount Everest is Earth highest mountain above sea level, with an official elevation of 8,848.86 metres (29,031.7 ft). Located in the Himalayas on the border between Nepal and China.",
     "highlights": [
       "Official Elevation: 8,848.86 m (29,031.7 ft)",
       "Location: Himalayas, Nepal / Tibet (China)",
