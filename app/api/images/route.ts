@@ -14,9 +14,9 @@ interface ImageResult {
 }
 
 /**
- * 1. Global Web Image Index (Unrestricted & Multi-Source)
+ * 1. Global Web Image Index (Unrestricted & SafeSearch Aware)
  */
-async function fetchGlobalWebImages(query: string, limit: number = 30): Promise<ImageResult[]> {
+async function fetchGlobalWebImages(query: string, limit: number = 30, safe: 'off' | 'moderate' | 'strict' = 'off'): Promise<ImageResult[]> {
   try {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), 4000);
@@ -38,9 +38,10 @@ async function fetchGlobalWebImages(query: string, limit: number = 30): Promise<
       return [];
     }
 
-    // Step 2: Fetch unrestricted images across the web (p=1, kp=-2: SafeSearch disabled)
+    // Step 2: Fetch images across the web with SafeSearch flag
+    const pParam = safe === 'strict' ? 'p=1' : safe === 'moderate' ? 'p=-1' : 'p=-2';
     const imgRes = await fetch(
-      `https://duckduckgo.com/i.js?q=${encodeURIComponent(query)}&o=json&p=1&s=0&u=bing&f=,,,&l=us-en&vqd=${vqd}&p=1`,
+      `https://duckduckgo.com/i.js?q=${encodeURIComponent(query)}&o=json&${pParam}&s=0&u=bing&f=,,,&l=us-en&vqd=${vqd}&p=1`,
       {
         headers: {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
@@ -132,6 +133,8 @@ export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const query = (searchParams.get('q') || searchParams.get('query') || '').trim();
   const limit = Math.min(parseInt(searchParams.get('limit') || '30', 10), 60);
+  const safeParam = (searchParams.get('safe') || searchParams.get('safesearch') || 'off').toLowerCase();
+  const safe: 'off' | 'moderate' | 'strict' = safeParam === 'strict' ? 'strict' : safeParam === 'moderate' ? 'moderate' : 'off';
 
   if (!query) {
     return NextResponse.json({ results: [], total: 0 });
@@ -140,7 +143,7 @@ export async function GET(req: NextRequest) {
   try {
     // Fetch global unrestricted web images + Wikimedia in parallel
     const [globalImages, wikiImages] = await Promise.all([
-      fetchGlobalWebImages(query, limit),
+      fetchGlobalWebImages(query, limit, safe),
       fetchWikimediaImages(query, 15),
     ]);
 

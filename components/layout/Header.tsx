@@ -1,9 +1,10 @@
-﻿'use client';
+'use client';
 import { useState } from 'react';
 import Link from 'next/link';
 import { SearchBar } from '@/components/search/SearchBar';
 import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { LanguageSelector } from '@/components/ui/LanguageSelector';
+import { SafeSearchToggle } from '@/components/ui/SafeSearchToggle';
 import { AppLauncherMenu } from '@/components/ui/AppLauncherMenu';
 import { KhojLogo } from '@/components/ui/KhojLogo';
 import { AgentCopilotModal } from '@/components/agent/AgentCopilotModal';
@@ -29,8 +30,11 @@ export function Header({ showSearch = false, query = '', currentTab = 'all' }: P
             </div>
           )}
 
-          {/* Header Actions: Agent Mode, Language, Theme Toggle, Google 9-Dot App Menu */}
+          {/* Header Actions: SafeSearch, Agent Mode, Language, Theme Toggle, Google 9-Dot App Menu */}
           <div className="flex items-center gap-2 ml-auto shrink-0">
+            {/* SafeSearch Filter Toggle */}
+            <SafeSearchToggle />
+
             {/* Autonomous Agent Mode Trigger Button */}
             <button
               type="button"

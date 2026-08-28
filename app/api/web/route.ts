@@ -2,22 +2,11 @@ import { NextRequest, NextResponse } from 'next/server';
 import { applyReciprocalRankFusion, hybridReRank } from '@/lib/rerank';
 import { resolveInstantMathOrFact } from '@/lib/knowledge';
 import { resolveDNSDomain } from '@/lib/dns_resolver';
+import type { SearchResult } from '@/types';
 
 export const runtime = 'edge';
 
-export interface WebSearchResult {
-  id: string;
-  title: string;
-  url: string;
-  description: string;
-  source: string;
-  domain: string;
-  favicon?: string;
-  badge?: string;
-  score?: number;
-  rank?: number;
-  date?: string;
-}
+export type WebSearchResult = SearchResult;
 
 function decodeHtml(htmlStr: string): string {
   return htmlStr
@@ -296,14 +285,15 @@ async function fetchGoogleNewsLive(query: string, lang = 'en'): Promise<WebSearc
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// 3. DuckDuckGo Fresh Real-Time Search (df=y Past Year parameter)
+// 3. DuckDuckGo Fresh Real-Time Search (Unrestricted & SafeSearch Aware)
 // ─────────────────────────────────────────────────────────────────────────────
-async function fetchDuckDuckGoWeb(query: string): Promise<WebSearchResult[]> {
+async function fetchDuckDuckGoWeb(query: string, safe: 'off' | 'moderate' | 'strict' = 'off'): Promise<WebSearchResult[]> {
   try {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), 4000);
 
-    const res = await fetch(`https://html.duckduckgo.com/html/?q=${encodeURIComponent(query)}&df=y`, {
+    const kpParam = safe === 'strict' ? 'kp=1' : safe === 'moderate' ? 'kp=-1' : 'kp=-2';
+    const res = await fetch(`https://html.duckduckgo.com/html/?q=${encodeURIComponent(query)}&${kpParam}&df=y`, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -562,6 +552,8 @@ export async function GET(req: NextRequest) {
   const rawQuery = searchParams.get('q') ?? '';
   const lang     = searchParams.get('lang') ?? 'en';
   const limit    = Math.min(parseInt(searchParams.get('limit') ?? '20', 10), 30);
+  const safeParam = (searchParams.get('safe') || searchParams.get('safesearch') || 'off').toLowerCase();
+  const safe: 'off' | 'moderate' | 'strict' = safeParam === 'strict' ? 'strict' : safeParam === 'moderate' ? 'moderate' : 'off';
 
   if (!rawQuery.trim()) {
     return NextResponse.json({ results: [], total: 0 });
@@ -572,12 +564,12 @@ export async function GET(req: NextRequest) {
   try {
     const directPortal = resolveDirectPortal(query);
     const instantKnowledge = resolveInstantKnowledgeResult(query);
-    const dnsDomainResult = resolveDNSDomain(query);
+    const dnsDomainResult = resolveDNSDomain(query, safe);
 
     const promises = [
       fetchGoogleCustomSearch(query, lang),
       fetchGoogleNewsLive(query, lang),
-      fetchDuckDuckGoWeb(query),
+      fetchDuckDuckGoWeb(query, safe),
       fetchDuckDuckGoAPI(query),
       fetchRedditWeb(query),
       fetchStackOverflowWeb(query),

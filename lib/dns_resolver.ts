@@ -42,15 +42,22 @@ DOMAIN_REGISTRY.forEach((entry) => {
 });
 
 /**
- * Universal DNS Domain Resolver (12,000+ Domains + Dynamic TLD Synthesis)
+ * Universal DNS Domain Resolver (19,000+ Domains + Dynamic TLD Synthesis)
  */
-export function resolveDNSDomain(query: string): SearchResult | null {
+export function resolveDNSDomain(query: string, safeSearch: 'off' | 'moderate' | 'strict' = 'off'): SearchResult | null {
   const rawQ = query.trim().toLowerCase();
   if (!rawQ) return null;
+
+  const isSafeFiltered = (entry: DNSDomainEntry) => {
+    if (safeSearch === 'off') return false;
+    const cat = (entry.category || '').toLowerCase();
+    return cat.includes('adult') || cat.includes('18+') || cat.includes('explicit');
+  };
 
   // 1. Direct O(1) Exact Match in DNS Domain Table
   if (DOMAIN_MAP.has(rawQ)) {
     const entry = DOMAIN_MAP.get(rawQ)!;
+    if (isSafeFiltered(entry)) return null;
     return createDNSResult(entry, 'Exact DNS Domain Match');
   }
 
@@ -59,7 +66,9 @@ export function resolveDNSDomain(query: string): SearchResult | null {
   if (urlPattern) {
     const hostname = urlPattern[1].toLowerCase().replace(/^www\./, '');
     if (DOMAIN_MAP.has(hostname)) {
-      return createDNSResult(DOMAIN_MAP.get(hostname)!, 'Official DNS Portal');
+      const entry = DOMAIN_MAP.get(hostname)!;
+      if (isSafeFiltered(entry)) return null;
+      return createDNSResult(entry, 'Official DNS Portal');
     }
 
     // Dynamic DNS synthesis for any worldwide valid domain
@@ -83,8 +92,9 @@ export function resolveDNSDomain(query: string): SearchResult | null {
   // 3. Keyword / Tag Multi-Match
   if (KEYWORD_MAP.has(rawQ)) {
     const matches = KEYWORD_MAP.get(rawQ)!;
-    if (matches.length > 0) {
-      return createDNSResult(matches[0], 'Top Category DNS Domain');
+    const validMatches = matches.filter(m => !isSafeFiltered(m));
+    if (validMatches.length > 0) {
+      return createDNSResult(validMatches[0], 'Top Category DNS Domain');
     }
   }
 
@@ -93,7 +103,10 @@ export function resolveDNSDomain(query: string): SearchResult | null {
   if (tokens.length >= 2) {
     const firstToken = tokens[0];
     if (DOMAIN_MAP.has(firstToken)) {
-      return createDNSResult(DOMAIN_MAP.get(firstToken)!, 'Official Portal');
+      const entry = DOMAIN_MAP.get(firstToken)!;
+      if (!isSafeFiltered(entry)) {
+        return createDNSResult(entry, 'Official Portal');
+      }
     }
   }
 

@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 import { useState, useCallback, useRef } from 'react';
 import type { SearchResult, ImageResult, BookResult, ArxivResult, GithubResult, WikiPanel, SearchTab } from '@/types';
 
@@ -34,11 +34,12 @@ export function useSearch() {
 
     try {
       const fetches: Promise<void>[] = [];
+      const safe = (typeof window !== 'undefined' ? (new URLSearchParams(window.location.search).get('safe') || localStorage.getItem('khoj_safesearch') || 'off') : 'off');
 
       // Fetch global multi-source web results + query expansion for "all" tab
       if (tab === 'all') {
         fetches.push(
-          fetch(`/api/web?q=${encodeURIComponent(query)}&lang=${lang}`, { signal })
+          fetch(`/api/web?q=${encodeURIComponent(query)}&lang=${lang}&safe=${safe}`, { signal })
             .then((r) => r.json())
             .then((d: { results?: SearchResult[] }) => {
               if (!signal.aborted) {
@@ -60,7 +61,7 @@ export function useSearch() {
 
       if (tab === 'images') {
         fetches.push(
-          fetch(`/api/images?q=${encodeURIComponent(query)}&lang=${lang}`, { signal })
+          fetch(`/api/images?q=${encodeURIComponent(query)}&lang=${lang}&safe=${safe}`, { signal })
             .then((r) => r.json())
             .then((d: { results?: ImageResult[] }) => {
               if (!signal.aborted) {
