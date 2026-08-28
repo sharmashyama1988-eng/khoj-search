@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server';
+﻿import { NextRequest, NextResponse } from 'next/server';
 import { applyReciprocalRankFusion, hybridReRank } from '@/lib/rerank';
 
 export const runtime = 'edge';
@@ -14,6 +14,7 @@ export interface WebSearchResult {
   badge?: string;
   score?: number;
   rank?: number;
+  date?: string;
 }
 
 function decodeHtml(htmlStr: string): string {
@@ -42,6 +43,8 @@ function getSourceBadge(domain: string): string {
   if (d.includes('reddit.com')) return 'Reddit';
   if (d.includes('quora.com')) return 'Quora';
   if (d.includes('stackoverflow.com') || d.includes('stackexchange.com')) return 'StackOverflow';
+  if (d.includes('medium.com')) return 'Medium';
+  if (d.includes('dev.to')) return 'Dev.to';
   if (d.includes('github.com')) return 'GitHub';
   if (d.includes('wikipedia.org')) return 'Wikipedia';
   if (d.includes('youtube.com')) return 'YouTube';
@@ -49,17 +52,7 @@ function getSourceBadge(domain: string): string {
   if (d.includes('amazon.')) return 'Amazon';
   if (d.includes('flipkart.com')) return 'Flipkart';
   if (d.includes('gsmarena.com')) return 'GSMArena';
-  if (d.includes('theverge.com') || d.includes('techradar.com') || d.includes('rtings.com')) return 'Tech Review';
-  if (d.includes('finance.yahoo.com') || d.includes('bloomberg.com') || d.includes('nasdaq.com') || d.includes('mcxindia.com')) return 'Finance';
-  if (d.includes('coingecko.com') || d.includes('coinmarketcap.com')) return 'Crypto';
-  if (
-    d.includes('react.dev') || d.includes('nextjs.org') || d.includes('fastapi.tiangolo.com') ||
-    d.includes('tailwindcss.com') || d.includes('nodejs.org') || d.includes('python.org') ||
-    d.includes('docs.docker.com') || d.includes('git-scm.com') || d.includes('mozilla.org') ||
-    d.includes('w3schools.com') || d.includes('digitalocean.com') || d.includes('docs.')
-  ) return 'Docs';
-  if (d.includes('medium.com')) return 'Medium';
-  if (d.includes('dev.to')) return 'Dev.to';
+  if (d.includes('w3schools.com') || d.includes('mozilla.org') || d.includes('mdn.')) return 'Docs';
   if (d.includes('geeksforgeeks.org')) return 'GeeksforGeeks';
   if (d.includes('twitter.com') || d.includes('x.com')) return 'X / Twitter';
   if (d.includes('linkedin.com')) return 'LinkedIn';
@@ -72,46 +65,27 @@ function resolveDirectPortal(query: string): WebSearchResult | null {
   const match = clean.match(urlPattern);
 
   const FAMOUS_SITES: Record<string, { name: string; desc: string; domain: string; url?: string }> = {
-    'youtube': { name: 'YouTube', desc: 'Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.', domain: 'youtube.com' },
-    'youtube.com': { name: 'YouTube', desc: 'Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.', domain: 'youtube.com' },
-    'google': { name: 'Google', desc: 'Search the world\'s information, including webpages, images, videos and more.', domain: 'google.com' },
-    'google.com': { name: 'Google', desc: 'Search the world\'s information, including webpages, images, videos and more.', domain: 'google.com' },
-    'github': { name: 'GitHub: Let\'s build from here', desc: 'GitHub is where over 100 million developers shape the future of software, together. Contribute to open source, build web applications.', domain: 'github.com' },
-    'github.com': { name: 'GitHub: Let\'s build from here', desc: 'GitHub is where over 100 million developers shape the future of software, together. Contribute to open source, build web applications.', domain: 'github.com' },
-    'reddit': { name: 'Reddit - Dive into anything', desc: 'Reddit is a network of communities where people can dive into their interests, hobbies and passions.', domain: 'reddit.com' },
-    'reddit.com': { name: 'Reddit - Dive into anything', desc: 'Reddit is a network of communities where people can dive into their interests, hobbies and passions.', domain: 'reddit.com' },
-    'chatgpt': { name: 'ChatGPT - OpenAI', desc: 'ChatGPT is a free-to-use AI system. Use it for engaging conversations, gain insights, automate tasks, and witness the future of AI.', domain: 'chatgpt.com' },
-    'chatgpt.com': { name: 'ChatGPT - OpenAI', desc: 'ChatGPT is a free-to-use AI system. Use it for engaging conversations, gain insights, automate tasks, and witness the future of AI.', domain: 'chatgpt.com' },
-    'openai': { name: 'OpenAI', desc: 'OpenAI creates safe and powerful artificial general intelligence (AGI) that benefits all of humanity.', domain: 'openai.com' },
-    'openai.com': { name: 'OpenAI', desc: 'OpenAI creates safe and powerful artificial general intelligence (AGI) that benefits all of humanity.', domain: 'openai.com' },
-    'fastapi': { name: 'FastAPI', desc: 'FastAPI framework, high performance, easy to learn, fast to code, ready for production.', domain: 'fastapi.tiangolo.com', url: 'https://fastapi.tiangolo.com/' },
-    'react': { name: 'React', desc: 'The library for web and native user interfaces. Build user interfaces out of individual pieces called components.', domain: 'react.dev', url: 'https://react.dev/' },
-    'react.dev': { name: 'React', desc: 'The library for web and native user interfaces. Build user interfaces out of individual pieces called components.', domain: 'react.dev', url: 'https://react.dev/' },
-    'nextjs': { name: 'Next.js by Vercel', desc: 'The React Framework for the Web. Used by some of the world\'s largest companies to build full-stack web applications.', domain: 'nextjs.org', url: 'https://nextjs.org/' },
-    'nextjs.org': { name: 'Next.js by Vercel', desc: 'The React Framework for the Web. Used by some of the world\'s largest companies to build full-stack web applications.', domain: 'nextjs.org', url: 'https://nextjs.org/' },
-    'tailwindcss': { name: 'Tailwind CSS', desc: 'Rapidly build modern websites without ever leaving your HTML. A utility-first CSS framework.', domain: 'tailwindcss.com', url: 'https://tailwindcss.com/' },
-    'nodejs': { name: 'Node.js', desc: 'Node.js is an open-source, cross-platform JavaScript runtime environment.', domain: 'nodejs.org', url: 'https://nodejs.org/' },
-    'python': { name: 'Python Official Website', desc: 'Python is a programming language that lets you work quickly and integrate systems more effectively.', domain: 'python.org', url: 'https://www.python.org/' },
-    'twitter': { name: 'X / Twitter', desc: 'From breaking news and entertainment to sports and politics, get the full story with all the live commentary.', domain: 'x.com' },
-    'twitter.com': { name: 'X / Twitter', desc: 'From breaking news and entertainment to sports and politics, get the full story with all the live commentary.', domain: 'x.com' },
-    'x': { name: 'X / Twitter', desc: 'From breaking news and entertainment to sports and politics, get the full story with all the live commentary.', domain: 'x.com' },
-    'x.com': { name: 'X / Twitter', desc: 'From breaking news and entertainment to sports and politics, get the full story with all the live commentary.', domain: 'x.com' },
-    'instagram': { name: 'Instagram', desc: 'Create an account or log in to Instagram. Share photos and videos with friends and discover creators around the globe.', domain: 'instagram.com' },
-    'instagram.com': { name: 'Instagram', desc: 'Create an account or log in to Instagram. Share photos and videos with friends and discover creators around the globe.', domain: 'instagram.com' },
-    'facebook': { name: 'Facebook - Log In or Sign Up', desc: 'Connect with friends, family and other people you know. Share photos and videos, send messages and get updates.', domain: 'facebook.com' },
-    'facebook.com': { name: 'Facebook - Log In or Sign Up', desc: 'Connect with friends, family and other people you know. Share photos and videos, send messages and get updates.', domain: 'facebook.com' },
-    'wikipedia': { name: 'Wikipedia, the free encyclopedia', desc: 'Wikipedia is a free online encyclopedia, created and edited by volunteers around the world.', domain: 'wikipedia.org' },
-    'wikipedia.org': { name: 'Wikipedia, the free encyclopedia', desc: 'Wikipedia is a free online encyclopedia, created and edited by volunteers around the world.', domain: 'wikipedia.org' },
-    'stackoverflow': { name: 'Stack Overflow', desc: 'Stack Overflow is the largest, most trusted online community for developers to learn, share their programming knowledge, and build their careers.', domain: 'stackoverflow.com' },
-    'stackoverflow.com': { name: 'Stack Overflow', desc: 'Stack Overflow is the largest, most trusted online community for developers to learn, share their programming knowledge, and build their careers.', domain: 'stackoverflow.com' },
-    'amazon': { name: 'Amazon.com: Online Shopping', desc: 'Online shopping from a great selection of electronics, clothing, computers, books, DVDs, and more.', domain: 'amazon.com' },
-    'amazon.com': { name: 'Amazon.com: Online Shopping', desc: 'Online shopping from a great selection of electronics, clothing, computers, books, DVDs, and more.', domain: 'amazon.com' },
-    'netflix': { name: 'Netflix - Watch TV Shows Online', desc: 'Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more.', domain: 'netflix.com' },
-    'netflix.com': { name: 'Netflix - Watch TV Shows Online', desc: 'Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more.', domain: 'netflix.com' },
-    'quora': { name: 'Quora', desc: 'Quora is a place to gain and share knowledge. It\'s a platform to ask questions and connect with people who contribute unique insights.', domain: 'quora.com' },
-    'quora.com': { name: 'Quora', desc: 'Quora is a place to gain and share knowledge. It\'s a platform to ask questions and connect with people who contribute unique insights.', domain: 'quora.com' },
-    'linkedin': { name: 'LinkedIn', desc: 'Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities.', domain: 'linkedin.com' },
-    'linkedin.com': { name: 'LinkedIn', desc: 'Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities.', domain: 'linkedin.com' }
+    'youtube': { name: 'YouTube', desc: 'Enjoy videos, music, tutorials and live streams on YouTube.', domain: 'youtube.com' },
+    'youtube.com': { name: 'YouTube', desc: 'Enjoy videos, music, tutorials and live streams on YouTube.', domain: 'youtube.com' },
+    'google': { name: 'Google', desc: 'Search the world\'s information, webpages, and tools.', domain: 'google.com' },
+    'google.com': { name: 'Google', desc: 'Search the world\'s information, webpages, and tools.', domain: 'google.com' },
+    'github': { name: 'GitHub', desc: 'Where over 100 million developers build software and open-source packages.', domain: 'github.com' },
+    'github.com': { name: 'GitHub', desc: 'Where over 100 million developers build software and open-source packages.', domain: 'github.com' },
+    'reddit': { name: 'Reddit', desc: 'Dive into communities, questions, opinions, and trending discussions.', domain: 'reddit.com' },
+    'reddit.com': { name: 'Reddit', desc: 'Dive into communities, questions, opinions, and trending discussions.', domain: 'reddit.com' },
+    'chatgpt': { name: 'ChatGPT - OpenAI', desc: 'Free AI system for reasoning, programming, creative work and search.', domain: 'chatgpt.com' },
+    'chatgpt.com': { name: 'ChatGPT - OpenAI', desc: 'Free AI system for reasoning, programming, creative work and search.', domain: 'chatgpt.com' },
+    'openai': { name: 'OpenAI', desc: 'Pioneering artificial general intelligence and AI models.', domain: 'openai.com' },
+    'twitter': { name: 'X / Twitter', desc: 'Real-time breaking news, live sports, politics, and discussions.', domain: 'x.com' },
+    'twitter.com': { name: 'X / Twitter', desc: 'Real-time breaking news, live sports, politics, and discussions.', domain: 'x.com' },
+    'x': { name: 'X / Twitter', desc: 'Real-time breaking news, live sports, politics, and discussions.', domain: 'x.com' },
+    'x.com': { name: 'X / Twitter', desc: 'Real-time breaking news, live sports, politics, and discussions.', domain: 'x.com' },
+    'wikipedia': { name: 'Wikipedia', desc: 'The free encyclopedia written collaboratively by volunteers.', domain: 'wikipedia.org' },
+    'wikipedia.org': { name: 'Wikipedia', desc: 'The free encyclopedia written collaboratively by volunteers.', domain: 'wikipedia.org' },
+    'stackoverflow': { name: 'Stack Overflow', desc: 'The largest community for developers to learn, share code, and solve bugs.', domain: 'stackoverflow.com' },
+    'stackoverflow.com': { name: 'Stack Overflow', desc: 'The largest community for developers to learn, share code, and solve bugs.', domain: 'stackoverflow.com' },
+    'netflix': { name: 'Netflix', desc: 'Watch movies, TV shows, and original series streaming online.', domain: 'netflix.com' },
+    'netflix.com': { name: 'Netflix', desc: 'Watch movies, TV shows, and original series streaming online.', domain: 'netflix.com' },
   };
 
   const key = clean.replace(/^(https?:\/\/)?(www\.)?/, '').replace(/\/.*$/, '');
@@ -150,17 +124,85 @@ function resolveDirectPortal(query: string): WebSearchResult | null {
   return null;
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// 1. Google News Live Real-Time RSS Stream (Minute-by-minute live fresh data)
+// ─────────────────────────────────────────────────────────────────────────────
+async function fetchGoogleNewsLive(query: string, lang = 'en'): Promise<WebSearchResult[]> {
+  try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 3500);
 
+    const hl = lang === 'hi' ? 'hi' : 'en-IN';
+    const gl = lang === 'hi' ? 'IN' : 'IN';
+    const ceid = lang === 'hi' ? 'IN:hi' : 'IN:en';
 
+    const url = `https://news.google.com/rss/search?q=${encodeURIComponent(query)}&hl=${hl}&gl=${gl}&ceid=${ceid}`;
+    const res = await fetch(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+      },
+      signal: controller.signal,
+      next: { revalidate: 60 },
+    });
+    clearTimeout(timer);
+
+    if (!res.ok) return [];
+    const xml = await res.text();
+    const items = xml.match(/<item>([\s\S]*?)<\/item>/g) || [];
+
+    const results: WebSearchResult[] = [];
+    items.slice(0, 8).forEach((item, idx) => {
+      const titleMatch = item.match(/<title>([\s\S]*?)<\/title>/);
+      const linkMatch = item.match(/<link>([\s\S]*?)<\/link>/);
+      const dateMatch = item.match(/<pubDate>([\s\S]*?)<\/pubDate>/);
+      const sourceMatch = item.match(/<source[^>]*>([\s\S]*?)<\/source>/);
+
+      if (titleMatch && linkMatch) {
+        const fullTitle = decodeHtml(titleMatch[1]);
+        const sourceName = sourceMatch ? decodeHtml(sourceMatch[1]) : 'Live News';
+        const dateStr = dateMatch
+          ? new Date(dateMatch[1]).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+          : 'Today';
+
+        results.push({
+          id: `news-${idx}-${Math.random().toString(36).slice(2, 6)}`,
+          title: fullTitle,
+          url: linkMatch[1].trim(),
+          description: `Latest coverage from ${sourceName} (${dateStr}).`,
+          source: sourceName,
+          domain: 'news.google.com',
+          favicon: `https://www.google.com/s2/favicons?domain=google.com&sz=32`,
+          badge: '🔴 Live News',
+          date: dateStr,
+          score: 850,
+        });
+      }
+    });
+
+    return results;
+  } catch {
+    return [];
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 2. DuckDuckGo Fresh Real-Time Search (df=y Past Year parameter)
+// ─────────────────────────────────────────────────────────────────────────────
 async function fetchDuckDuckGoWeb(query: string): Promise<WebSearchResult[]> {
   try {
-    const res = await fetch(`https://html.duckduckgo.com/html/?q=${encodeURIComponent(query)}`, {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 4000);
+
+    // Using df=y (Past Year) to eliminate 5-10 year old legacy results
+    const res = await fetch(`https://html.duckduckgo.com/html/?q=${encodeURIComponent(query)}&df=y`, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
       },
+      signal: controller.signal,
       next: { revalidate: 60 },
     });
+    clearTimeout(timer);
 
     if (!res.ok) return [];
 
@@ -192,7 +234,7 @@ async function fetchDuckDuckGoWeb(query: string): Promise<WebSearchResult[]> {
 
     titles.forEach((item, i) => {
       const domain = getDomain(item.url);
-      const snippet = snippets[i] || `Information, resources, and discussion about ${query} on ${domain}.`;
+      const snippet = snippets[i] || `Latest resources, guides, and discussions about ${query} on ${domain}.`;
       results.push({
         id: `ddg-${i}-${Math.random().toString(36).slice(2, 7)}`,
         title: item.title,
@@ -241,7 +283,7 @@ async function fetchDuckDuckGoAPI(query: string): Promise<WebSearchResult[]> {
     }
 
     if (Array.isArray(data.RelatedTopics)) {
-      data.RelatedTopics.slice(0, 6).forEach((item, idx) => {
+      data.RelatedTopics.slice(0, 5).forEach((item, idx) => {
         if (item.FirstURL && item.Text) {
           const domain = getDomain(item.FirstURL);
           results.push({
@@ -264,55 +306,59 @@ async function fetchDuckDuckGoAPI(query: string): Promise<WebSearchResult[]> {
   }
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// 3. Reddit Recent Community Discussions (t=year sort)
+// ─────────────────────────────────────────────────────────────────────────────
 async function fetchRedditWeb(query: string): Promise<WebSearchResult[]> {
   try {
-    const res = await fetch(`https://html.duckduckgo.com/html/?q=${encodeURIComponent(`site:reddit.com ${query}`)}`, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-      },
-      next: { revalidate: 120 },
-    });
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 3500);
+
+    const res = await fetch(
+      `https://www.reddit.com/search.json?q=${encodeURIComponent(query)}&sort=relevance&t=year&limit=6`,
+      {
+        headers: { 'User-Agent': 'KhojSearch/2.0 (by /u/khoj_app)' },
+        signal: controller.signal,
+        next: { revalidate: 180 },
+      }
+    );
+    clearTimeout(timer);
+
     if (!res.ok) return [];
 
-    const html = await res.text();
-    const results: WebSearchResult[] = [];
-    const titleRegex = /<a[^>]+class="[^"]*result__a[^"]*"[^>]+href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi;
-    const snippetRegex = /<a[^>]+class="[^"]*result__snippet[^"]*"[^>]+href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi;
+    const data = await res.json() as {
+      data?: {
+        children?: Array<{
+          data: {
+            id: string;
+            title: string;
+            permalink: string;
+            selftext: string;
+            subreddit_name_prefixed: string;
+            score: number;
+            num_comments: number;
+            created_utc: number;
+          };
+        }>;
+      };
+    };
 
-    const titles: Array<{ url: string; title: string }> = [];
-    let tMatch;
-    while ((tMatch = titleRegex.exec(html)) !== null) {
-      let rawUrl = tMatch[1];
-      const uddgMatch = rawUrl.match(/uddg=([^&]+)/);
-      if (uddgMatch) {
-        try { rawUrl = decodeURIComponent(uddgMatch[1]); } catch {}
-      }
-      const titleText = decodeHtml(tMatch[2]);
-      if (rawUrl.includes('reddit.com') && titleText) {
-        titles.push({ url: rawUrl, title: titleText });
-      }
-    }
-
-    const snippets: string[] = [];
-    let sMatch;
-    while ((sMatch = snippetRegex.exec(html)) !== null) {
-      snippets.push(decodeHtml(sMatch[2]));
-    }
-
-    titles.slice(0, 4).forEach((item, i) => {
-      results.push({
-        id: `reddit-${i}-${Math.random().toString(36).slice(2, 6)}`,
-        title: item.title.replace(/ : r\/.*$/i, '').replace(/ - Reddit$/i, ''),
-        url: item.url,
-        description: snippets[i] || `Reddit community discussions, feedback, and user experiences for: ${item.title}`,
+    const posts = data.data?.children ?? [];
+    return posts.map((p) => {
+      const d = p.data;
+      const dateStr = new Date(d.created_utc * 1000).toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+      return {
+        id: `reddit-${d.id}`,
+        title: `${d.title} : ${d.subreddit_name_prefixed}`,
+        url: `https://reddit.com${d.permalink}`,
+        description: d.selftext ? d.selftext.slice(0, 220) : `Reddit community discussion with ${d.score} upvotes and ${d.num_comments} comments (${dateStr}).`,
         source: 'Reddit',
         domain: 'reddit.com',
         favicon: 'https://www.google.com/s2/favicons?domain=reddit.com&sz=32',
         badge: 'Reddit',
-      });
+        date: dateStr,
+      };
     });
-
-    return results;
   } catch {
     return [];
   }
@@ -321,21 +367,21 @@ async function fetchRedditWeb(query: string): Promise<WebSearchResult[]> {
 async function fetchStackOverflowWeb(query: string): Promise<WebSearchResult[]> {
   try {
     const res = await fetch(
-      `https://api.stackexchange.com/2.3/search/advanced?order=desc&sort=relevance&q=${encodeURIComponent(query)}&site=stackoverflow&pagesize=4`,
-      { next: { revalidate: 180 } }
+      `https://api.stackexchange.com/2.3/search/advanced?order=desc&sort=relevance&q=${encodeURIComponent(query)}&site=stackoverflow&pagesize=4&filter=default`,
+      { headers: { 'User-Agent': 'KhojSearch/2.0' }, next: { revalidate: 300 } }
     );
     if (!res.ok) return [];
 
     const data = await res.json() as {
-      items?: Array<{ question_id: number; title: string; link: string; score: number; answer_count: number; tags: string[] }>;
+      items?: Array<{ question_id: number; title: string; link: string; score: number; answer_count: number; is_answered: boolean }>;
     };
 
     const items = data.items ?? [];
     return items.map((item) => ({
       id: `so-${item.question_id}`,
-      title: decodeHtml(item.title),
+      title: `${decodeHtml(item.title)} - Stack Overflow`,
       url: item.link,
-      description: `Stack Overflow [Score: ${item.score}, ${item.answer_count} Answers]. Tags: ${item.tags?.slice(0, 4).join(', ') || 'programming'}.`,
+      description: `StackOverflow Developer Solution (${item.score} votes, ${item.answer_count} answers${item.is_answered ? ' • Accepted Answer ✓' : ''}).`,
       source: 'StackOverflow',
       domain: 'stackoverflow.com',
       favicon: 'https://www.google.com/s2/favicons?domain=stackoverflow.com&sz=32',
@@ -369,60 +415,6 @@ async function fetchGitHubWeb(query: string): Promise<WebSearchResult[]> {
       favicon: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
       badge: 'GitHub',
     }));
-  } catch {
-    return [];
-  }
-}
-
-async function fetchQuoraWeb(query: string): Promise<WebSearchResult[]> {
-  try {
-    const res = await fetch(`https://html.duckduckgo.com/html/?q=${encodeURIComponent(`site:quora.com ${query}`)}`, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-      },
-      next: { revalidate: 120 },
-    });
-    if (!res.ok) return [];
-
-    const html = await res.text();
-    const results: WebSearchResult[] = [];
-    const titleRegex = /<a[^>]+class="[^"]*result__a[^"]*"[^>]+href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi;
-    const snippetRegex = /<a[^>]+class="[^"]*result__snippet[^"]*"[^>]+href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi;
-
-    const titles: Array<{ url: string; title: string }> = [];
-    let tMatch;
-    while ((tMatch = titleRegex.exec(html)) !== null) {
-      let rawUrl = tMatch[1];
-      const uddgMatch = rawUrl.match(/uddg=([^&]+)/);
-      if (uddgMatch) {
-        try { rawUrl = decodeURIComponent(uddgMatch[1]); } catch {}
-      }
-      const titleText = decodeHtml(tMatch[2]);
-      if (rawUrl.includes('quora.com') && titleText) {
-        titles.push({ url: rawUrl, title: titleText });
-      }
-    }
-
-    const snippets: string[] = [];
-    let sMatch;
-    while ((sMatch = snippetRegex.exec(html)) !== null) {
-      snippets.push(decodeHtml(sMatch[2]));
-    }
-
-    titles.slice(0, 3).forEach((item, i) => {
-      results.push({
-        id: `quora-${i}-${Math.random().toString(36).slice(2, 6)}`,
-        title: item.title.replace(/ - Quora$/i, ''),
-        url: item.url,
-        description: snippets[i] || `Read questions, insights, and discussions on Quora: ${item.title}`,
-        source: 'Quora',
-        domain: 'quora.com',
-        favicon: 'https://www.google.com/s2/favicons?domain=quora.com&sz=32',
-        badge: 'Quora',
-      });
-    });
-
-    return results;
   } catch {
     return [];
   }
@@ -472,10 +464,10 @@ export async function GET(req: NextRequest) {
     const directPortal = resolveDirectPortal(query);
 
     const promises = [
+      fetchGoogleNewsLive(query, lang),
       fetchDuckDuckGoWeb(query),
       fetchDuckDuckGoAPI(query),
       fetchRedditWeb(query),
-      fetchQuoraWeb(query),
       fetchStackOverflowWeb(query),
       fetchGitHubWeb(query),
       fetchWikipediaWeb(query, lang),
@@ -497,7 +489,7 @@ export async function GET(req: NextRequest) {
     // 1. Reciprocal Rank Fusion (RRF) across multi-engine lists
     const fusedCandidates = applyReciprocalRankFusion(rankedEngineLists, 60);
 
-    // 2. Hybrid Lexical (BM25+) + Contextual Re-Ranker
+    // 2. Hybrid BM25F + Temporal Freshness + Contextual Re-Ranker
     const rankedResults = hybridReRank(query, fusedCandidates, limit);
 
     return NextResponse.json({
