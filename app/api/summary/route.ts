@@ -28,70 +28,78 @@ export async function GET(req: NextRequest) {
       });
     }
 
-    // 2. OpenRouter AI Neural Synthesis (When API Key is Present)
+    // 2. OpenRouter AI Dynamic Neural Q&A Engine
     if (OPENROUTER_KEY) {
-      try {
-        const controller = new AbortController();
-        const timer = setTimeout(() => controller.abort(), 6000);
+      const candidateModels = [
+        'openrouter/auto',
+        'nvidia/nemotron-3.5-lightning:free',
+        'google/gemini-3.7-flash',
+      ];
 
-        const openRouterRes = await fetch('https://openrouter.ai/api/v1/chat/completions', {
-          method: 'POST',
-          headers: {
-            'Authorization': `Bearer ${OPENROUTER_KEY}`,
-            'Content-Type': 'application/json',
-            'HTTP-Referer': 'https://khoj-dun.vercel.app',
-            'X-Title': 'Khoj Search Engine',
-          },
-          body: JSON.stringify({
-            model: 'openrouter/auto',
-            messages: [
-              {
-                role: 'system',
-                content: `You are Khoj Neural AI. Answer the user's question DIRECTLY, PRECISELY, AND CONCISELY.
-State the core fact or direct answer in the very first sentence (e.g. for questions about a person's age, state their exact age and birthdate; for math, state the exact formula; for facts, state the exact answer).
-Never output meta commentary like "Here is the summary" or "Search results synthesized for".
-Format as:
-1. Direct answer paragraph (1-2 crisp sentences).
+      for (const model of candidateModels) {
+        try {
+          const controller = new AbortController();
+          const timer = setTimeout(() => controller.abort(), 4500);
+
+          const openRouterRes = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+            method: 'POST',
+            headers: {
+              'Authorization': `Bearer ${OPENROUTER_KEY}`,
+              'Content-Type': 'application/json',
+              'HTTP-Referer': 'https://khoj-dun.vercel.app',
+              'X-Title': 'Khoj Search Engine',
+            },
+            body: JSON.stringify({
+              model,
+              messages: [
+                {
+                  role: 'system',
+                  content: `You are Khoj Neural AI. Answer the user's question DIRECTLY, FACTUALLY, AND CONCISELY.
+Your very first sentence MUST state the direct answer to what was asked (e.g. For questions about a person's age or birth, state their exact age and birthdate; for geography/capitals, state the city; for science/facts, state the exact principle; for coding/errors, state the exact fix).
+Never output meta fillers like "Here is the answer" or "Search results synthesized for".
+Format:
+1. Direct answer paragraph (1-2 sentences).
 2. Exactly 3 key highlights starting with "• ".`,
-              },
-              {
-                role: 'user',
-                content: `Question/Query: "${q}" (Language: ${lang})`,
-              },
-            ],
-            max_tokens: 300,
-            temperature: 0.2,
-          }),
-          signal: controller.signal,
-          next: { revalidate: 3600 },
-        });
-        clearTimeout(timer);
+                },
+                {
+                  role: 'user',
+                  content: `User Question: "${q}" (Target Language: ${lang})`,
+                },
+              ],
+              max_tokens: 350,
+              temperature: 0.2,
+            }),
+            signal: controller.signal,
+            next: { revalidate: 3600 },
+          });
+          clearTimeout(timer);
 
-        if (openRouterRes.ok) {
-          const data = await openRouterRes.json() as {
-            choices?: Array<{ message?: { content?: string } }>;
-          };
+          if (openRouterRes.ok) {
+            const data = await openRouterRes.json() as {
+              choices?: Array<{ message?: { content?: string } }>;
+            };
 
-          const rawText = data.choices?.[0]?.message?.content || '';
-          if (rawText.trim()) {
-            const parts = rawText.split(/(?=\n•|\n-)/);
-            const extract = parts[0]?.trim() || rawText;
-            const keyPoints = parts.slice(1)
-              .map((p) => p.replace(/^[•\-\*\s]+/, '').trim())
-              .filter(Boolean);
+            const rawText = data.choices?.[0]?.message?.content || '';
+            if (rawText.trim() && rawText.length > 20) {
+              const parts = rawText.split(/(?=\n•|\n-)/);
+              const extract = parts[0]?.trim() || rawText;
+              const keyPoints = parts.slice(1)
+                .map((p) => p.replace(/^[•\-\*\s]+/, '').trim())
+                .filter(Boolean);
 
-            return NextResponse.json({
-              status: 'success',
-              title: q.length > 50 ? q.slice(0, 50) + '...' : q,
-              extract,
-              keyPoints: keyPoints.length > 0 ? keyPoints.slice(0, 3) : undefined,
-              type: 'ai_synthesis',
-              source: 'Khoj Neural Intelligence (OpenRouter)',
-              model: 'OpenRouter AI',
-            });
+              return NextResponse.json({
+                status: 'success',
+                title: q.length > 50 ? q.slice(0, 50) + '...' : q,
+                extract,
+                keyPoints: keyPoints.length > 0 ? keyPoints.slice(0, 3) : undefined,
+                type: 'ai_synthesis',
+                source: 'Khoj Neural Intelligence (OpenRouter)',
+                model,
+              });
+            }
           }
-        }
-      } catch {}
+        } catch {}
+      }
     }
 
     // 3. Smart Canonical Entity Resolution
