@@ -143,7 +143,48 @@ function resolveDirectPortal(query: string): WebSearchResult | null {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// 1. Google News Live Real-Time RSS Stream (Minute-by-minute live fresh data)
+// 1. Google Custom Search Engine API (When GOOGLE_SEARCH_API_KEY is configured)
+// ─────────────────────────────────────────────────────────────────────────────
+async function fetchGoogleCustomSearch(query: string, lang = 'en'): Promise<WebSearchResult[]> {
+  const apiKey = process.env.GOOGLE_SEARCH_API_KEY || '';
+  const cx = process.env.GOOGLE_SEARCH_CX || '';
+  if (!apiKey || !cx) return [];
+
+  try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 3500);
+
+    const url = `https://customsearch.googleapis.com/v1?q=${encodeURIComponent(query)}&key=${apiKey}&cx=${cx}&hl=${lang}&num=10`;
+    const res = await fetch(url, { signal: controller.signal, next: { revalidate: 300 } });
+    clearTimeout(timer);
+
+    if (!res.ok) return [];
+    const data = await res.json() as {
+      items?: Array<{ title: string; link: string; snippet: string; displayLink?: string }>;
+    };
+
+    const items = data.items ?? [];
+    return items.map((item, idx) => {
+      const domain = item.displayLink ? item.displayLink.replace(/^www\./, '') : getDomain(item.link);
+      return {
+        id: `google-cs-${idx}`,
+        title: item.title,
+        url: item.link,
+        description: item.snippet,
+        source: 'Google Web',
+        domain,
+        favicon: `https://www.google.com/s2/favicons?domain=${domain}&sz=32`,
+        badge: 'Google',
+        score: 980,
+      };
+    });
+  } catch {
+    return [];
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 2. Google News Live Real-Time RSS Stream (Minute-by-minute live fresh data)
 // ─────────────────────────────────────────────────────────────────────────────
 async function fetchGoogleNewsLive(query: string, lang = 'en'): Promise<WebSearchResult[]> {
   try {
@@ -204,7 +245,7 @@ async function fetchGoogleNewsLive(query: string, lang = 'en'): Promise<WebSearc
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// 2. DuckDuckGo Fresh Real-Time Search (df=y Past Year parameter)
+// 3. DuckDuckGo Fresh Real-Time Search (df=y Past Year parameter)
 // ─────────────────────────────────────────────────────────────────────────────
 async function fetchDuckDuckGoWeb(query: string): Promise<WebSearchResult[]> {
   try {
@@ -324,7 +365,7 @@ async function fetchDuckDuckGoAPI(query: string): Promise<WebSearchResult[]> {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// 3. Reddit Recent Community Discussions (t=year sort)
+// 4. Reddit Recent Community Discussions (t=year sort)
 // ─────────────────────────────────────────────────────────────────────────────
 async function fetchRedditWeb(query: string): Promise<WebSearchResult[]> {
   try {
@@ -482,6 +523,7 @@ export async function GET(req: NextRequest) {
     const instantKnowledge = resolveInstantKnowledgeResult(query);
 
     const promises = [
+      fetchGoogleCustomSearch(query, lang),
       fetchGoogleNewsLive(query, lang),
       fetchDuckDuckGoWeb(query),
       fetchDuckDuckGoAPI(query),
@@ -510,7 +552,7 @@ export async function GET(req: NextRequest) {
     // 1. Reciprocal Rank Fusion (RRF) across multi-engine lists
     const fusedCandidates = applyReciprocalRankFusion(rankedEngineLists, 60);
 
-    // 2. Hybrid BM25F + Temporal Freshness + Contextual Re-Ranker
+    // 2. Hybrid BM25F + Temporal Freshness + Google Priority Re-Ranker
     const rankedResults = hybridReRank(query, fusedCandidates, limit);
 
     return NextResponse.json({

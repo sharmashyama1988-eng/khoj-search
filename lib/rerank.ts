@@ -38,7 +38,7 @@ export function applyReciprocalRankFusion(
         if (item.date && !existing.result.date) {
           existing.result.date = item.date;
         }
-        if (item.badge && item.badge === '🔴 Live News') {
+        if (item.badge && (item.badge === '🔴 Live News' || item.badge === 'Google' || item.badge === 'Verified Math')) {
           existing.result.badge = item.badge;
         }
       }
@@ -278,6 +278,15 @@ export function hybridReRank(
       score += 700;
     }
 
+    // Google Web & Google Live Stream Priority
+    if (item.source === 'Google Web' || item.badge === 'Google') {
+      score += 480;
+    }
+
+    if (item.badge === '🔴 Live News') {
+      score += 320;
+    }
+
     // Filter out distractor noise on math queries
     if (intent.isMathQuery) {
       if (titleLower.includes('whole foods') || domainLower.includes('wholefoods')) {
@@ -288,10 +297,6 @@ export function hybridReRank(
     // 7. Temporal Recency & Real-Time Freshness
     const isCurrentYear = fullItemText.includes('2026') || fullItemText.includes('2025');
     const isLiveTimeIndicator = ['today', 'hours ago', 'mins ago', 'just now', 'breaking', 'live news'].some((kw) => fullItemText.includes(kw));
-
-    if (item.badge === '🔴 Live News') {
-      score += 260;
-    }
 
     if (isCurrentYear || isLiveTimeIndicator) {
       score += 220;
