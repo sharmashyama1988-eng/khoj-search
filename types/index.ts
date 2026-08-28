@@ -8,6 +8,7 @@ export interface SearchResult {
   url: string;
   description: string;
   source: string;
+  domain?: string;
   thumbnail?: string;
   date?: string;
   favicon?: string;
