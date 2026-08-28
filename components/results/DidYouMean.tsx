@@ -1,11 +1,10 @@
-'use client';
+﻿'use client';
 import { useEffect, useState } from 'react';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useRouter } from 'next/navigation';
 
 interface Props { query: string }
 
-// Levenshtein distance for basic spell check
 function levenshtein(a: string, b: string): number {
   const m = a.length, n = b.length;
   const dp = Array.from({ length: m + 1 }, (_, i) => Array.from({ length: n + 1 }, (_, j) => i === 0 ? j : j === 0 ? i : 0));
@@ -19,29 +18,36 @@ function levenshtein(a: string, b: string): number {
 }
 
 export function DidYouMean({ query }: Props) {
-  const { lang, t } = useLanguage();
-  const router      = useRouter();
+  const { lang } = useLanguage();
+  const router   = useRouter();
   const [suggestion, setSuggestion] = useState<string | null>(null);
 
   useEffect(() => {
     if (!query || query.length < 3) return;
     setSuggestion(null);
 
-    // Use Wikipedia's opensearch to detect misspellings
-    const wikiBase = `https://${lang}.wikipedia.org`;
-    fetch(`${wikiBase}/w/api.php?action=opensearch&search=${encodeURIComponent(query)}&limit=1&format=json&origin=*`)
-      .then((r) => r.json())
-      .then((data: [string, string[]]) => {
-        const sugg = data[1]?.[0];
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 3500);
+
+    // Call our internal edge-proxied suggestions API instead of direct external fetch
+    fetch(`/api/suggestions?q=${encodeURIComponent(query)}&lang=${lang}`, { signal: controller.signal })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data: { suggestions?: string[] }) => {
+        const sugg = data?.suggestions?.[0];
         if (!sugg) return;
 
-        // Only show if suggestion is meaningfully different (Levenshtein > 1)
         const dist = levenshtein(query.toLowerCase(), sugg.toLowerCase());
         if (dist > 1 && dist <= 4 && sugg.toLowerCase() !== query.toLowerCase()) {
           setSuggestion(sugg);
         }
       })
-      .catch(() => {});
+      .catch(() => {})
+      .finally(() => clearTimeout(timer));
+
+    return () => {
+      clearTimeout(timer);
+      controller.abort();
+    };
   }, [query, lang]);
 
   if (!suggestion) return null;
@@ -50,8 +56,9 @@ export function DidYouMean({ query }: Props) {
     <div className="flex items-center gap-2 mb-4 text-sm animate-fade-in">
       <span className="text-text-muted">Did you mean:</span>
       <button
+        type="button"
         onClick={() => router.push(`/search?q=${encodeURIComponent(suggestion)}&lang=${lang}&tab=all`)}
-        className="text-accent hover:underline font-medium italic"
+        className="text-accent hover:underline font-medium italic cursor-pointer"
       >
         {suggestion}
       </button>

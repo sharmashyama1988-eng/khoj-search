@@ -44,7 +44,7 @@ function LanguageSelectorContent() {
       <button
         type="button"
         onClick={(e) => { e.preventDefault(); e.stopPropagation(); setOpen(!open); }}
-        className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-medium
+        className="flex items-center gap-1.5 px-2 sm:px-3 py-1.5 rounded-xl text-xs font-medium
           bg-surface-2/80 border border-border/80 text-text-secondary
           hover:bg-surface-3 hover:text-text-primary hover:border-accent/40
           transition-all duration-200 shadow-sm cursor-pointer select-none"
