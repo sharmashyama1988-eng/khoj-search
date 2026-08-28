@@ -240,6 +240,26 @@
     "url": "https://docs.python.org/3/glossary.html#term-decorator"
   },
   {
+    "id": "tech-py-generators",
+    "keywords": [
+      "python generators",
+      "yield keyword python",
+      "python generator functions",
+      "difference between return and yield",
+      "generator vs iterator"
+    ],
+    "title": "Python Generators & Yield — Memory-Efficient Iteration",
+    "category": "Technology",
+    "answer": "A generator function in Python uses the `yield` statement instead of `return` to produce a sequence of values lazily on demand. Unlike functions that return an entire list at once, generators maintain their internal state between successive calls.",
+    "highlights": [
+      "Yield Statement: Pauses function execution and yields value to caller, saving local variable state",
+      "Memory Efficiency: Generates items one at a time (O(1) memory consumption for infinite streams)",
+      "Generator Expression: `(x**2 for x in range(1000000))` creates a generator object rather than allocating a full array",
+      "Iteration: Uses `next(gen)` or `for item in gen:` protocol"
+    ],
+    "url": "https://docs.python.org/3/tutorial/classes.html#generators"
+  },
+  {
     "id": "tech-docker-commands",
     "keywords": [
       "docker commands",
@@ -302,6 +322,86 @@
       "D - Durability: Once a transaction is committed, data persists permanently even after power loss (WAL/logging)"
     ],
     "url": "https://en.wikipedia.org/wiki/ACID"
+  },
+  {
+    "id": "tech-rest-vs-graphql",
+    "keywords": [
+      "rest vs graphql",
+      "graphql vs rest api",
+      "difference between rest and graphql",
+      "when to use graphql",
+      "overfetching underfetching"
+    ],
+    "title": "REST vs GraphQL — API Architecture Comparison",
+    "category": "Technology",
+    "answer": "REST uses multiple URL endpoints with standard HTTP methods (GET, POST, PUT, DELETE) returning fixed JSON payloads, often causing over-fetching or under-fetching. GraphQL uses a single endpoint (/graphql) via POST where clients request exactly the fields and nested relationships they need using a typed schema.",
+    "highlights": [
+      "REST: Resource-centric endpoints (e.g. /users/1, /posts), simple HTTP caching (304, CDN), fixed payload structures",
+      "GraphQL: Query-centric single endpoint, client requests exact schema shape (zero over-fetching), strongly-typed schema (SDL)",
+      "Over-fetching / Under-fetching: Solved by GraphQL by fetching multiple nested entities in a single round-trip HTTP request"
+    ],
+    "url": "https://graphql.org/learn/thinking-in-graphs/"
+  },
+  {
+    "id": "tech-big-o-notation",
+    "keywords": [
+      "big o notation",
+      "big o cheat sheet",
+      "time complexity chart",
+      "o(1) vs o(n) vs o(log n)",
+      "algorithm complexity"
+    ],
+    "title": "Big O Notation & Time Complexity Cheat Sheet",
+    "category": "Technology",
+    "answer": "Big O notation describes the limiting behavior and asymptotic upper bound of an algorithm's execution time or space requirement as the input size (n) grows towards infinity.",
+    "highlights": [
+      "O(1) Constant Time: Hash table lookup, array index access",
+      "O(log n) Logarithmic Time: Binary search on sorted array, balanced binary search tree operations",
+      "O(n) Linear Time: Single loop traversal, linear search",
+      "O(n log n) Linearithmic Time: Merge sort, Heap sort, Quick sort (average)",
+      "O(n²) Quadratic Time: Nested loops, Bubble sort, Insertion sort",
+      "O(2ⁿ) Exponential Time: Recursive Fibonacci, exhaustive brute-force search"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Big_O_notation"
+  },
+  {
+    "id": "tech-tcp-vs-udp",
+    "keywords": [
+      "tcp vs udp",
+      "difference between tcp and udp",
+      "tcp 3-way handshake",
+      "transport layer protocols",
+      "udp speed"
+    ],
+    "title": "TCP vs UDP — Transport Layer Protocols Comparison",
+    "category": "Technology",
+    "answer": "TCP (Transmission Control Protocol) is connection-oriented, reliable, guarantees packet ordering, and performs congestion/flow control via a 3-way handshake. UDP (User Datagram Protocol) is connectionless, lightweight, and transmits packets with minimal overhead and lower latency without retransmissions.",
+    "highlights": [
+      "TCP: Reliable, ordered delivery, error checking, 3-way handshake (SYN, SYN-ACK, ACK), flow control (HTTP/HTTPS, SSH, FTP, Email)",
+      "UDP: Unreliable (fire-and-forget), unordered, zero handshake overhead, minimal latency (DNS queries, VoIP, live streaming, online gaming, WebRTC)",
+      "Header Size: TCP header (20–60 bytes) vs UDP header (8 bytes)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
+  },
+  {
+    "id": "tech-linux-commands",
+    "keywords": [
+      "linux commands cheat sheet",
+      "essential linux commands",
+      "grep find chmod linux",
+      "linux terminal commands"
+    ],
+    "title": "Essential Linux CLI Commands Reference",
+    "category": "Technology",
+    "answer": "Core Linux command-line utilities enable system administration, file manipulation, and process management on POSIX-compliant operating systems.",
+    "highlights": [
+      "File Navigation: `ls -lah` (detailed list), `cd`, `pwd`, `mkdir -p`, `rm -rf`",
+      "Search: `grep -rn 'text' .` (recursive regex search), `find . -name '*.ts'`",
+      "Permissions: `chmod 755 file` (rwxr-xr-x), `chown user:group file`",
+      "Processes: `ps aux | grep node`, `kill -9 <PID>`, `top` / `htop`",
+      "Disk & Network: `df -h` (disk usage), `free -m` (memory), `curl -I <url>`, `tar -czvf archive.tar.gz folder/`"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_POSIX_commands"
   },
   {
     "id": "tech-solid-principles",

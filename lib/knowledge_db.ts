@@ -9,6 +9,9 @@ import socialMedia from '@/db/social_media.json';
 import politics from '@/db/politics.json';
 import technology from '@/db/technology.json';
 import techProgramming from '@/db/tech_programming.json';
+import history from '@/db/history.json';
+import sports from '@/db/sports.json';
+import inventions from '@/db/inventions.json';
 
 export interface KnowledgeDBEntry {
   id: string;
@@ -21,9 +24,9 @@ export interface KnowledgeDBEntry {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Unified Multi-Domain Knowledge Base (/db)
+// Unified High-Density Knowledge Database (/db) - 250+ Verified Entries
 // ─────────────────────────────────────────────────────────────────────────────
-const ALL_ENTRIES: KnowledgeDBEntry[] = [
+export const ALL_ENTRIES: KnowledgeDBEntry[] = [
   ...(biographies as unknown as KnowledgeDBEntry[]),
   ...(geography as unknown as KnowledgeDBEntry[]),
   ...(mathematics as unknown as KnowledgeDBEntry[]),
@@ -35,12 +38,15 @@ const ALL_ENTRIES: KnowledgeDBEntry[] = [
   ...(politics as unknown as KnowledgeDBEntry[]),
   ...(technology as unknown as KnowledgeDBEntry[]),
   ...(techProgramming as unknown as KnowledgeDBEntry[]),
+  ...(history as unknown as KnowledgeDBEntry[]),
+  ...(sports as unknown as KnowledgeDBEntry[]),
+  ...(inventions as unknown as KnowledgeDBEntry[]),
 ];
 
 function tokenize(text: string): string[] {
   return text
     .toLowerCase()
-    .replace(/[^\w\s]/g, ' ')
+    .replace(/[^\w\s\^\+\-\*\/\=]/g, ' ')
     .split(/\s+/)
     .filter((w) => w.length >= 2);
 }
@@ -63,14 +69,14 @@ export function searchKnowledgeDB(query: string): KnowledgeDBEntry | null {
   for (const entry of ALL_ENTRIES) {
     let score = 0;
 
-    // 1. Exact or Substring Keyword Match (+500 to +600 points)
+    // 1. Exact or Substring Keyword Match (+700 / +450 / +350 points)
     for (const kw of entry.keywords) {
       const kwClean = kw.toLowerCase().trim();
       if (rawClean === kwClean) {
-        score += 600;
+        score += 700;
         break;
       } else if (rawClean.includes(kwClean) || kwClean.includes(rawClean)) {
-        score += 350;
+        score += 450;
       }
     }
 
@@ -86,6 +92,8 @@ export function searchKnowledgeDB(query: string): KnowledgeDBEntry | null {
     const tokenRatio = matchedTokens / queryTokens.length;
     if (tokenRatio >= 0.75) {
       score += Math.round(tokenRatio * 250);
+    } else if (tokenRatio >= 0.5) {
+      score += Math.round(tokenRatio * 150);
     }
 
     // 3. Title Token Match

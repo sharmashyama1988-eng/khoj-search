@@ -1,0 +1,402 @@
+[
+  {
+    "id": "inv-telephone",
+    "keywords": [
+      "who invented telephone",
+      "telephone inventor",
+      "alexander graham bell telephone",
+      "invention of telephone",
+      "telephone year"
+    ],
+    "title": "Telephone — Invented by Alexander Graham Bell (1876)",
+    "category": "Inventions",
+    "answer": "The telephone was invented by Scottish-born inventor Alexander Graham Bell, who was awarded the first US patent for the device (Patent No. 174,465) on 7 March 1876. He transmitted the first words: 'Mr. Watson, come here, I want to see you.'",
+    "highlights": [
+      "Inventor: Alexander Graham Bell (assisted by Thomas A. Watson)",
+      "Patent Date: 7 March 1876 (US Patent 174,465)",
+      "First Transmission: 10 March 1876 ('Mr. Watson, come here — I want to see you')",
+      "Significance: Revolutionized global telecommunications and led to the founding of Bell Telephone Company (AT&T)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Invention_of_the_telephone"
+  },
+  {
+    "id": "inv-light-bulb",
+    "keywords": [
+      "who invented light bulb",
+      "light bulb inventor",
+      "thomas edison light bulb",
+      "invention of light bulb",
+      "electric bulb year"
+    ],
+    "title": "Incandescent Light Bulb — Perfected by Thomas Edison (1879)",
+    "category": "Inventions",
+    "answer": "The practical commercial incandescent light bulb was developed by American inventor Thomas Alva Edison in 1879, using a carbonized bamboo filament that lasted over 1,200 hours, alongside an entire electrical distribution system.",
+    "highlights": [
+      "Inventor: Thomas Alva Edison (Menlo Park Laboratory, New Jersey)",
+      "Patent Date: 27 January 1880 (US Patent 223,898, filed in late 1879)",
+      "Filament: Carbonized bamboo filament enclosed in a high-vacuum glass bulb",
+      "Prior Pioneers: Humphry Davy (arc lamp, 1802), Warren de la Rue, Joseph Swan (UK)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Incandescent_light_bulb"
+  },
+  {
+    "id": "inv-airplane",
+    "keywords": [
+      "who invented airplane",
+      "airplane inventor",
+      "wright brothers airplane",
+      "first flight year",
+      "invention of aeroplane",
+      "kitty hawk flight"
+    ],
+    "title": "Airplane (Powered Flight) — Invented by the Wright Brothers (1903)",
+    "category": "Inventions",
+    "answer": "The first successful controlled, powered, and sustained heavier-than-air human flight was made by the Wright Brothers (Orville and Wilbur Wright) on 17 December 1903 at Kill Devil Hills near Kitty Hawk, North Carolina.",
+    "highlights": [
+      "Inventors: Orville Wright and Wilbur Wright (The Wright Brothers)",
+      "Historic Date: 17 December 1903 at Kitty Hawk, NC",
+      "First Flight: Orville piloted the Wright Flyer for 12 seconds covering 120 feet (37 metres)",
+      "Key Innovation: Three-axis control system (wing-warping, elevator, rudder) which enabled full pilot steering"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Wright_Flyer"
+  },
+  {
+    "id": "inv-computer",
+    "keywords": [
+      "who invented computer",
+      "father of computer",
+      "charles babbage computer",
+      "analytical engine",
+      "first computer inventor"
+    ],
+    "title": "Mechanical Computer — Conceptualized by Charles Babbage (1837)",
+    "category": "Inventions",
+    "answer": "Charles Babbage, an English mathematician and mechanical engineer known as the 'Father of the Computer', conceptualized and designed the first programmable mechanical general-purpose computer: the Analytical Engine in 1837.",
+    "highlights": [
+      "Inventor: Charles Babbage (Father of the Computer)",
+      "Concept Date: 1837 (Analytical Engine design incorporated ALU, control flow via conditionals/loops, and memory)",
+      "First Programmer: Ada Lovelace (wrote the first computer algorithm for the Analytical Engine to calculate Bernoulli numbers)",
+      "Modern Electronic Computing: Alan Turing (Turing machine concept 1936), John von Neumann, ENIAC (1945)"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Analytical_Engine"
+  },
+  {
+    "id": "inv-world-wide-web",
+    "keywords": [
+      "who invented world wide web",
+      "www inventor",
+      "tim berners lee www",
+      "invention of internet web",
+      "first website year"
+    ],
+    "title": "World Wide Web (WWW) — Invented by Sir Tim Berners-Lee (1989)",
+    "category": "Inventions",
+    "answer": "The World Wide Web (WWW) was invented in 1989 by British computer scientist Sir Tim Berners-Lee while working at CERN (Switzerland). He developed HTTP, HTML, URL, the first web browser, and the first web server (info.cern.ch).",
+    "highlights": [
+      "Inventor: Sir Tim Berners-Lee (at CERN, Switzerland)",
+      "Year: 1989 proposal ('Information Management: A Proposal'); first live website published on 6 August 1991",
+      "Core Technologies Created: HTTP (Hypertext Transfer Protocol), HTML (Hypertext Markup Language), URL (Uniform Resource Locator)",
+      "Open Royalty-Free Decision: CERN made the underlying code available on a royalty-free basis in April 1993, sparking global Internet growth"
+    ],
+    "url": "https://en.wikipedia.org/wiki/World_Wide_Web"
+  },
+  {
+    "id": "inv-penicillin",
+    "keywords": [
+      "who discovered penicillin",
+      "penicillin discoverer",
+      "alexander fleming penicillin",
+      "first antibiotic",
+      "discovery of penicillin"
+    ],
+    "title": "Penicillin (First Antibiotic) — Discovered by Alexander Fleming (1928)",
+    "category": "Inventions",
+    "answer": "Penicillin, the world's first modern antibiotic, was discovered in September 1928 by Scottish physician and microbiologist Sir Alexander Fleming at St Mary's Hospital in London when Penicillium notatum mold contaminated a staphylococcus culture plate.",
+    "highlights": [
+      "Discoverer: Sir Alexander Fleming (September 1928)",
+      "Organism: Penicillium notatum (fungus producing antibacterial substance)",
+      "Mass Production: Developed into a life-saving clinical drug by Howard Florey and Ernst Chain in the 1940s",
+      "Nobel Prize: 1945 Nobel Prize in Physiology or Medicine awarded jointly to Fleming, Florey, and Chain"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Discovery_of_penicillin"
+  },
+  {
+    "id": "inv-radio",
+    "keywords": [
+      "who invented radio",
+      "radio inventor",
+      "guglielmo marconi radio",
+      "wireless telegraphy",
+      "invention of radio"
+    ],
+    "title": "Radio (Wireless Telegraphy) — Pioneered by Guglielmo Marconi (1895)",
+    "category": "Inventions",
+    "answer": "Guglielmo Marconi, an Italian inventor and electrical engineer, pioneered practical long-distance radio transmission in 1895 and transmitted the first transatlantic wireless radio signal on 12 December 1901.",
+    "highlights": [
+      "Inventor: Guglielmo Marconi (alongside key theoretical work by Heinrich Hertz, Nikola Tesla, and JC Bose)",
+      "Transatlantic Signal: 12 December 1901 (transmitted letter 'S' in Morse code from Cornwall, UK to Newfoundland, Canada)",
+      "Nobel Prize: 1909 Nobel Prize in Physics awarded jointly to Marconi and Karl Ferdinand Braun",
+      "Indian Pioneer: Sir Jagadish Chandra Bose demonstrated millimeter-wave radio transmission in Calcutta in 1895"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Invention_of_radio"
+  },
+  {
+    "id": "inv-steam-engine",
+    "keywords": [
+      "who invented steam engine",
+      "steam engine inventor",
+      "james watt steam engine",
+      "separate condenser steam engine",
+      "industrial revolution engine"
+    ],
+    "title": "Modern Steam Engine — Perfected by James Watt (1769–1776)",
+    "category": "Inventions",
+    "answer": "Scottish mechanical engineer James Watt radically improved Thomas Newcomen's 1712 atmospheric engine by adding a separate condenser in 1769, boosting fuel efficiency by over 75% and powering the Industrial Revolution.",
+    "highlights": [
+      "Inventor: James Watt (partnered with Matthew Boulton at the Soho Manufactory)",
+      "Key Innovation: Separate condenser (Patent No. 913 in 1769) + rotary motion mechanism",
+      "Unit of Power: SI unit of power 'Watt' (W) and the term 'Horsepower' named in his honour",
+      "Impact: Provided scalable mechanical power for factories, locomotives, steamboats, and mining"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Watt_steam_engine"
+  },
+  {
+    "id": "inv-printing-press",
+    "keywords": [
+      "who invented printing press",
+      "printing press inventor",
+      "johannes gutenberg printing press",
+      "movable type printing",
+      "gutenberg bible"
+    ],
+    "title": "Printing Press (Movable Metal Type) — Johannes Gutenberg (c. 1440)",
+    "category": "Inventions",
+    "answer": "The movable-type printing press was invented around 1440 by German goldsmith Johannes Gutenberg in Mainz, Germany. It democratized knowledge dissemination and catalyzed the European Renaissance and Scientific Revolution.",
+    "highlights": [
+      "Inventor: Johannes Gutenberg (Mainz, Germany, c. 1440)",
+      "Masterpiece: The 42-Line Gutenberg Bible printed in 1455",
+      "Key Inventions: Lead-tin alloy movable type, oil-based ink, and hand mold for precise letter casting",
+      "Significance: Regarded by historians as one of the most influential inventions in human history"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Printing_press"
+  },
+  {
+    "id": "inv-television",
+    "keywords": [
+      "who invented television",
+      "television inventor",
+      "philo farnsworth tv",
+      "john logie baird tv",
+      "invention of tv"
+    ],
+    "title": "Electronic Television — Invented by Philo Farnsworth (1927)",
+    "category": "Inventions",
+    "answer": "The world's first fully electronic television system (incorporating an electronic camera tube called the Image Dissector) was invented by 21-year-old American inventor Philo Farnsworth in San Francisco on 7 September 1927.",
+    "highlights": [
+      "Inventor of Electronic TV: Philo Farnsworth (Demonstrated first electronic video transmission on 7 September 1927)",
+      "Mechanical TV Pioneer: John Logie Baird (Demonstrated first working mechanical television system in London in 1926)",
+      "CRT Technology: Vladimir Zworykin (Iconoscope and Kinescope patents)",
+      "Significance: Revolutionized mass media, news broadcasting, and global entertainment"
+    ],
+    "url": "https://en.wikipedia.org/wiki/History_of_television"
+  },
+  {
+    "id": "inv-automobile",
+    "keywords": [
+      "who invented car",
+      "automobile inventor",
+      "karl benz car",
+      "benz patent motorwagen",
+      "first modern car"
+    ],
+    "title": "Modern Automobile (Motor Car) — Karl Benz (1886)",
+    "category": "Inventions",
+    "answer": "The modern automobile powered by an internal combustion engine was invented by German engineer Karl Benz, who patented the three-wheeled Benz Patent-Motorwagen on 29 January 1886 (German Patent DRP 37435).",
+    "highlights": [
+      "Inventor: Karl Benz (Mannheim, Germany)",
+      "Patent Date: 29 January 1886 (Considered the birth certificate of the modern automobile)",
+      "First Long-Distance Trip: Bertha Benz drove the Motorwagen 106 km (66 mi) from Mannheim to Pforzheim in August 1888 without informing her husband",
+      "Mass Production: Later transformed by Henry Ford with the moving assembly line for the Ford Model T in 1913"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Benz_Patent-Motorwagen"
+  },
+  {
+    "id": "inv-telescope",
+    "keywords": [
+      "who invented telescope",
+      "telescope inventor",
+      "galileo telescope",
+      "hans lippershey telescope",
+      "invention of telescope"
+    ],
+    "title": "Telescope — Invented by Hans Lippershey & Adapted by Galileo (1608–1609)",
+    "category": "Inventions",
+    "answer": "The optical telescope was invented in the Netherlands by spectacle-maker Hans Lippershey, who filed the earliest known patent in October 1608. In 1609, Galileo Galilei constructed improved telescopes and made historic astronomical discoveries (Jupiter's moons, lunar craters, phases of Venus).",
+    "highlights": [
+      "First Patent: Hans Lippershey (Middelburg, Netherlands, October 1608)",
+      "Astronomical Breakthrough: Galileo Galilei (1609 — discovered 4 Galilean moons of Jupiter, Saturn's rings, sunspots)",
+      "Reflecting Telescope: Sir Isaac Newton designed the first practical reflecting telescope (Newtonian reflector) using a curved mirror in 1668"
+    ],
+    "url": "https://en.wikipedia.org/wiki/History_of_the_telescope"
+  },
+  {
+    "id": "inv-smallpox-vaccine",
+    "keywords": [
+      "who invented vaccine",
+      "first vaccine in history",
+      "edward jenner smallpox",
+      "father of immunology",
+      "smallpox vaccine year"
+    ],
+    "title": "Vaccination (Smallpox Vaccine) — Developed by Edward Jenner (1796)",
+    "category": "Inventions",
+    "answer": "The world's first vaccine was developed in 1796 by English physician Edward Jenner, who inoculated 8-year-old James Phipps with cowpox to confer immunity against deadly smallpox. Jenner is widely recognized as the 'Father of Immunology'.",
+    "highlights": [
+      "Inventor / Discoverer: Dr. Edward Jenner (Berkeley, Gloucestershire, England)",
+      "Historic Experiment: 14 May 1796 (inoculation with cowpox pus from milkmaid Sarah Nelmes)",
+      "Etymology: 'Vaccine' is derived from the Latin word 'vacca', meaning cow",
+      "Global Triumph: Smallpox was declared completely eradicated worldwide by the WHO in 1980"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Edward_Jenner"
+  },
+  {
+    "id": "inv-battery",
+    "keywords": [
+      "who invented battery",
+      "battery inventor",
+      "alessandro volta battery",
+      "voltaic pile",
+      "first electric battery"
+    ],
+    "title": "Electric Battery (Voltaic Pile) — Invented by Alessandro Volta (1800)",
+    "category": "Inventions",
+    "answer": "The first true electrical battery (the Voltaic Pile) was invented in 1800 by Italian physicist Alessandro Volta. Consisting of stacked alternating discs of zinc and copper separated by brine-soaked cloth, it produced a continuous electrical current.",
+    "highlights": [
+      "Inventor: Alessandro Volta (University of Pavia, Italy, 1800)",
+      "Structure: Alternating pairs of zinc and copper plates separated by electrolyte-soaked cardboard",
+      "Scientific Impact: Provided the first steady, non-electrostatic direct electric current (DC) for physics and chemistry experiments",
+      "Unit of Voltage: SI unit of electric potential 'Volt' (V) named in Volta's honor"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Voltaic_pile"
+  },
+  {
+    "id": "inv-dynamite",
+    "keywords": [
+      "who invented dynamite",
+      "dynamite inventor",
+      "alfred nobel dynamite",
+      "invention of dynamite"
+    ],
+    "title": "Dynamite — Invented by Alfred Nobel (1867)",
+    "category": "Inventions",
+    "answer": "Dynamite was invented in 1867 by Swedish chemist and engineer Alfred Nobel by absorbing highly volatile liquid nitroglycerin into diatomaceous earth (kieselguhr), creating a stable, safe-to-handle solid explosive.",
+    "highlights": [
+      "Inventor: Alfred Nobel (Patented in Sweden and Great Britain in 1867)",
+      "Composition: Nitroglycerin absorbed into porous silica diatomaceous earth + blasting cap detonator",
+      "Applications: Mining, blasting tunnels, canal construction, civil engineering",
+      "Legacy: Nobel bequeathed the vast fortune amassed from his 355 patents to establish the prestigious Nobel Prizes in his 1895 will"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Dynamite"
+  },
+  {
+    "id": "inv-python-language",
+    "keywords": [
+      "who created python",
+      "python creator",
+      "guido van rossum python",
+      "python release year",
+      "python programming language history"
+    ],
+    "title": "Python Programming Language — Created by Guido van Rossum (1991)",
+    "category": "Inventions",
+    "answer": "Python was created by Dutch programmer Guido van Rossum in the late 1980s as a successor to the ABC language and released on 20 February 1991. Named after the British comedy troupe Monty Python.",
+    "highlights": [
+      "Creator: Guido van Rossum (Benevolent Dictator for Life until 2018)",
+      "Release Date: 20 February 1991 (Version 0.9.0)",
+      "Key Principles: Readability, simplicity, explicit over implicit (Zen of Python by Tim Peters)",
+      "Significance: One of the world's most popular programming languages for AI, Machine Learning, Data Science, and Web Development"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+  },
+  {
+    "id": "inv-javascript-language",
+    "keywords": [
+      "who created javascript",
+      "javascript creator",
+      "brendan eich javascript",
+      "javascript created in 10 days",
+      "js creation year"
+    ],
+    "title": "JavaScript — Created by Brendan Eich (1995)",
+    "category": "Inventions",
+    "answer": "JavaScript was created in May 1995 by American programmer Brendan Eich in just 10 days while working at Netscape Communications. Originally codenamed Mocha and later renamed LiveScript before being released as JavaScript alongside Netscape Navigator 2.0.",
+    "highlights": [
+      "Creator: Brendan Eich (May 1995 at Netscape)",
+      "Development Timeline: Initial prototype created in only 10 days",
+      "Standardization: Standardized by Ecma International as ECMAScript (ECMA-262) in 1997",
+      "Significance: The universal programming language of the World Wide Web and modern full-stack web development"
+    ],
+    "url": "https://en.wikipedia.org/wiki/JavaScript"
+  },
+  {
+    "id": "inv-c-language",
+    "keywords": [
+      "who created c language",
+      "c language creator",
+      "dennis ritchie c language",
+      "c programming release year",
+      "bell labs c"
+    ],
+    "title": "C Programming Language — Created by Dennis Ritchie (1972)",
+    "category": "Inventions",
+    "answer": "The C programming language was developed between 1972 and 1973 by American computer scientist Dennis Ritchie at Bell Laboratories to re-implement the Unix operating system. It became the foundation of modern systems programming.",
+    "highlights": [
+      "Creator: Dennis Ritchie (with Ken Thompson at Bell Labs)",
+      "Year: 1972–1973 (Development on DEC PDP-11)",
+      "Famous Book: 'The C Programming Language' (K&R) co-authored with Brian Kernighan (1978)",
+      "Legacy: Direct ancestor of C++, C#, Java, JavaScript, PHP, Rust, and Go; operating systems (Linux, Windows, macOS kernels) are built with C/C++"
+    ],
+    "url": "https://en.wikipedia.org/wiki/C_(programming_language)"
+  },
+  {
+    "id": "inv-linux-kernel",
+    "keywords": [
+      "who created linux",
+      "linux creator",
+      "linus torvalds linux",
+      "linux release year",
+      "linux kernel history"
+    ],
+    "title": "Linux Operating System Kernel — Created by Linus Torvalds (1991)",
+    "category": "Inventions",
+    "answer": "The Linux operating system kernel was created by Finnish software engineer Linus Torvalds as a free, open-source Unix-like operating system kernel, first announced on the comp.os.minix newsgroup on 25 August 1991.",
+    "highlights": [
+      "Creator: Linus Torvalds (University of Helsinki, Finland)",
+      "Announcement Date: 25 August 1991 ('I'm doing a (free) operating system, just a hobby...')",
+      "Mascot: Tux the Penguin",
+      "Dominance: Powers over 90% of global cloud infrastructure, the world's top 500 supercomputers, and Android mobile devices"
+    ],
+    "url": "https://en.wikipedia.org/wiki/Linux"
+  },
+  {
+    "id": "inv-zero-number",
+    "keywords": [
+      "who invented zero",
+      "zero inventor",
+      "aryabhata zero",
+      "brahmagupta zero",
+      "invention of zero india",
+      "shunya inventor"
+    ],
+    "title": "Zero (0) as a Number & Place-Value Decimal System — Ancient India",
+    "category": "Inventions",
+    "answer": "The concept of zero (Shunya) as both a mathematical place-holder and a full numeral with arithmetic rules was formulated in ancient India, notably by mathematician Aryabhata (5th century CE) and formally defined with arithmetic operations by Brahmagupta in the 'Brahmasphutasiddhanta' (628 CE).",
+    "highlights": [
+      "Pioneering Mathematicians: Aryabhata (c. 476–550 CE) and Brahmagupta (c. 598–668 CE)",
+      "Foundational Treatise: Brahmasphutasiddhanta (628 CE — first text to define 0 as a number with operational rules for addition, subtraction, multiplication, division)",
+      "Earliest Physical Inscription: The Bakhshali Manuscript (dated to 3rd–4th century CE) and Gwalior Chaturbhuj Temple inscription (876 CE)",
+      "Global Spread: Transmitted to the Islamic world by Al-Khwarizmi and into Europe by Fibonacci"
+    ],
+    "url": "https://en.wikipedia.org/wiki/0"
+  }
+]
