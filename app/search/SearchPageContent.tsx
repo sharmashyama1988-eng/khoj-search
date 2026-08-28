@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { useEffect, useState, useCallback } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { Header } from '@/components/layout/Header';
@@ -38,6 +38,8 @@ import { useLanguage } from '@/hooks/useLanguage';
 import { useSearchHistory } from '@/components/ui/SearchHistory';
 import type { SearchTab } from '@/types';
 
+const PAGE_SIZE = 10;
+
 export default function SearchPageContent() {
   const searchParams = useSearchParams();
   const router       = useRouter();
@@ -47,9 +49,10 @@ export default function SearchPageContent() {
   const query     = searchParams.get('q') ?? '';
   const tabParam  = (searchParams.get('tab') ?? 'all') as SearchTab;
   const langParam = searchParams.get('lang') ?? lang;
+  const pageParam = Math.max(1, parseInt(searchParams.get('page') ?? '1', 10));
 
   const [activeTab, setActiveTab] = useState<SearchTab>(tabParam);
-  const [page, setPage]           = useState(1);
+  const [page, setPage]           = useState(pageParam);
 
   const { results, images, books, arxiv, github, wikiPanel, loading, error, search } = useSearch();
   const intent = useIntentDetector(query);
@@ -57,7 +60,7 @@ export default function SearchPageContent() {
   // Sync language from URL
   useEffect(() => {
     if (langParam && langParam !== lang) setLang(langParam);
-  }, [langParam]);
+  }, [langParam, lang, setLang]);
 
   // Search + add to history
   useEffect(() => {
@@ -65,7 +68,7 @@ export default function SearchPageContent() {
       search(query, langParam || lang, activeTab);
       addToHistory(query, langParam || lang);
     }
-  }, [query, activeTab, langParam, lang]);
+  }, [query, activeTab, langParam, lang, search, addToHistory]);
 
   const changeTab = useCallback((tab: SearchTab) => {
     setActiveTab(tab);
@@ -103,8 +106,25 @@ export default function SearchPageContent() {
 
   const widget    = renderWidget();
   const hasWidget = widget !== null;
-  const totalPages = 8;
-  const hasResults = results.length > 0 || images.length > 0 || books.length > 0 || arxiv.length > 0 || github.length > 0;
+
+  // Pagination calculation
+  let totalItems = 0;
+  if (activeTab === 'all') totalItems = results.length;
+  else if (activeTab === 'images') totalItems = images.length;
+  else if (activeTab === 'books') totalItems = books.length;
+  else if (activeTab === 'research') totalItems = arxiv.length;
+  else if (activeTab === 'code') totalItems = github.length;
+
+  const totalPages = Math.max(1, Math.ceil(totalItems / PAGE_SIZE));
+  const currentPage = Math.min(page, totalPages);
+
+  // Sliced items for current page
+  const pagedResults = results.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
+  const pagedBooks   = books.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
+  const pagedArxiv   = arxiv.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
+  const pagedGithub  = github.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
+
+  const hasResults = totalItems > 0;
 
   return (
     <div className="min-h-screen flex flex-col bg-[var(--surface)]" dir={dir}>
@@ -121,6 +141,7 @@ export default function SearchPageContent() {
             {query && (
               <span className="text-xs text-text-muted hidden sm:block">
                 {t('results_for')}: <span className="font-medium text-text-secondary">&ldquo;{query}&rdquo;</span>
+                {totalItems > 0 && <span className="ml-1.5 opacity-60">({totalItems} results)</span>}
               </span>
             )}
           </div>
@@ -141,8 +162,8 @@ export default function SearchPageContent() {
               <DidYouMean query={query} />
             )}
 
-            {/* Featured Answer */}
-            {activeTab === 'all' && query && !hasWidget && (
+            {/* Featured AI Answer */}
+            {activeTab === 'all' && query && !hasWidget && currentPage === 1 && (
               <SummaryCard query={query} />
             )}
 
@@ -159,48 +180,60 @@ export default function SearchPageContent() {
               </div>
             )}
 
-            {/* All */}
+            {/* Tab: All */}
             {!loading && activeTab === 'all' && (
-              results.length > 0
+              pagedResults.length > 0
                 ? (
                   <div className="space-y-1">
-                    {results.slice(0, 2).map((r, i) => <ResultCard key={r.id} result={r} index={i} />)}
-                    <PeopleAlsoAsk query={query} />
-                    {results.slice(2).map((r, i) => <ResultCard key={r.id} result={r} index={i + 2} />)}
+                    {currentPage === 1 ? (
+                      <>
+                        {pagedResults.slice(0, 2).map((r, i) => (
+                          <ResultCard key={r.id || `res-${i}`} result={r} index={i} />
+                        ))}
+                        <PeopleAlsoAsk query={query} />
+                        {pagedResults.slice(2).map((r, i) => (
+                          <ResultCard key={r.id || `res-${i + 2}`} result={r} index={i + 2} />
+                        ))}
+                      </>
+                    ) : (
+                      pagedResults.map((r, i) => (
+                        <ResultCard key={r.id || `res-${i}`} result={r} index={(currentPage - 1) * PAGE_SIZE + i} />
+                      ))
+                    )}
                   </div>
                 )
                 : !error && !hasWidget && <EmptyState message={t('no_results')} />
             )}
 
-            {/* Images */}
+            {/* Tab: Images */}
             {!loading && activeTab === 'images' && (
               images.length > 0 ? <ImageGrid images={images} /> : <EmptyState message={t('no_results')} />
             )}
 
-            {/* Books */}
+            {/* Tab: Books */}
             {!loading && activeTab === 'books' && (
-              books.length > 0
-                ? <div className="space-y-3">{books.map((b, i) => <BookCard key={b.key} book={b} index={i} />)}</div>
+              pagedBooks.length > 0
+                ? <div className="space-y-3">{pagedBooks.map((b, i) => <BookCard key={b.key} book={b} index={i} />)}</div>
                 : <EmptyState message={t('no_results')} />
             )}
 
-            {/* Research */}
+            {/* Tab: Research */}
             {!loading && activeTab === 'research' && (
-              arxiv.length > 0
-                ? <div className="space-y-3">{arxiv.map((p, i) => <ArxivCard key={p.id} paper={p} index={i} />)}</div>
+              pagedArxiv.length > 0
+                ? <div className="space-y-3">{pagedArxiv.map((p, i) => <ArxivCard key={p.id} paper={p} index={i} />)}</div>
                 : <EmptyState message={t('no_results')} />
             )}
 
-            {/* Code */}
+            {/* Tab: Code */}
             {!loading && activeTab === 'code' && (
-              github.length > 0
-                ? <div className="space-y-3">{github.map((r, i) => <GithubCard key={r.id} repo={r} index={i} />)}</div>
+              pagedGithub.length > 0
+                ? <div className="space-y-3">{pagedGithub.map((r, i) => <GithubCard key={r.id} repo={r} index={i} />)}</div>
                 : <EmptyState message={t('no_results')} />
             )}
 
-            {/* Khoooooj Pagination */}
-            {!loading && hasResults && (
-              <KhojPagination currentPage={page} totalPages={totalPages} onPageChange={changePage} />
+            {/* Khoooooj Pagination (Only visible when totalPages > 1) */}
+            {!loading && totalPages > 1 && (
+              <KhojPagination currentPage={currentPage} totalPages={totalPages} onPageChange={changePage} />
             )}
           </div>
 

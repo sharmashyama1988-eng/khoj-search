@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { truncate } from '@/lib/utils';
 import type { SearchResult } from '@/types';
 
@@ -14,6 +14,8 @@ const SOURCE_COLORS: Record<string, string> = {
   Wikipedia:     'bg-indigo-500/10 text-indigo-400 border-indigo-500/20',
   DuckDuckGo:    'bg-yellow-500/10 text-yellow-400 border-yellow-500/20',
   YouTube:       'bg-red-600/10 text-red-500 border-red-600/20',
+  'Official Site': 'bg-blue-500/10 text-blue-400 border-blue-500/20',
+  'Direct URL':  'bg-cyan-500/10 text-cyan-400 border-cyan-500/20',
 };
 
 function getFavicon(url: string): string {
@@ -42,39 +44,49 @@ function getCleanBreadcrumb(url: string): string {
 export function ResultCard({ result, index }: Props) {
   const badge = result.badge || result.source;
   const badgeClass = SOURCE_COLORS[badge] || 'bg-surface-3/50 text-text-muted border-border/40';
+  const rankNum = result.rank || (index + 1);
 
   return (
     <a
       href={result.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group block py-3.5 px-2 rounded-xl border-b border-border/20 last:border-b-0
-        hover:bg-surface-2/40 transition-colors duration-150 animate-fade-in"
-      style={{ animationDelay: `${Math.min(index * 25, 250)}ms` }}
+      className="group block py-3.5 px-3 rounded-xl border-b border-border/20 last:border-b-0
+        hover:bg-surface-2/50 transition-all duration-150 animate-fade-in"
+      style={{ animationDelay: `${Math.min(index * 20, 200)}ms` }}
     >
-      {/* Google-style Header: Favicon + Domain + Breadcrumb + Badge */}
-      <div className="flex items-center gap-2 mb-1 text-xs text-text-muted">
+      {/* Google-style Header: Rank # + Favicon + Domain + Breadcrumb + Badge */}
+      <div className="flex items-center gap-2 mb-1.5 text-xs text-text-muted">
+        {/* Result Rank Number Badge */}
+        <span className="w-5 h-5 rounded-full bg-surface-3 border border-border/60 text-text-muted font-mono font-bold text-[10px] flex items-center justify-center shrink-0 group-hover:border-indigo-400/50 group-hover:text-indigo-400 transition-colors">
+          #{rankNum}
+        </span>
+
+        {/* Favicon */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={result.favicon || getFavicon(result.url)}
           alt=""
           className="w-4 h-4 rounded-full shrink-0"
+          loading="lazy"
+          decoding="async"
           onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
         />
         <span className="font-medium text-text-primary text-[13px]">{getDomain(result.url)}</span>
         <span className="text-text-muted/60 text-[12px] truncate max-w-xs">{getCleanBreadcrumb(result.url)}</span>
-        <span className={`text-[10px] px-2 py-0.2 rounded-full border font-medium ml-auto ${badgeClass}`}>
+        
+        <span className={`text-[10px] px-2 py-0.5 rounded-full border font-medium ml-auto ${badgeClass}`}>
           {badge}
         </span>
       </div>
 
-      {/* Google-style Title: Soft Blue/Indigo Link */}
-      <h3 className="text-[19px] leading-[26px] font-normal text-indigo-400 dark:text-[#8ab4f8] group-hover:underline line-clamp-1 mb-1">
+      {/* Title */}
+      <h3 className="text-[18px] sm:text-[19px] leading-[24px] sm:leading-[26px] font-medium text-indigo-400 dark:text-[#8ab4f8] group-hover:underline line-clamp-1 mb-1">
         {result.title}
       </h3>
 
-      {/* Google-style Description Snippet */}
-      <p className="text-[14px] leading-[22px] text-text-secondary dark:text-[#bdc1c6] line-clamp-2">
+      {/* Snippet */}
+      <p className="text-[13.5px] sm:text-[14px] leading-[21px] sm:leading-[22px] text-text-secondary dark:text-[#bdc1c6] line-clamp-2">
         {truncate(result.description, 240)}
       </p>
     </a>

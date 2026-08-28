@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { useEffect, useState } from 'react';
 import { useLanguage } from '@/hooks/useLanguage';
 import { truncate } from '@/lib/utils';
@@ -7,20 +7,23 @@ import { CopyButton } from '@/components/ui/CopyButton';
 interface SummaryData {
   title: string;
   extract: string;
+  keyPoints?: string[];
   image?: string;
   url: string;
-  type: 'wikipedia' | 'duckduckgo' | 'summary';
+  type: 'wikipedia' | 'duckduckgo' | 'ai_synthesis';
 }
 
 interface Props { query: string }
 
-// Clean search prefixes to get the core topic for summary lookups
 function extractTopic(rawQuery: string): string {
   return rawQuery
-    .replace(/^(define|definition of|meaning of|what is|what does|search|explain|tell me about)\s+/i, '')
-    .replace(/\s+(meaning|definition|ka matlab|matlab)$/i, '')
+    .replace(/^(define|definition of|meaning of|what is|what does|search|explain|tell me about|who is|how to)\s+/i, '')
+    .replace(/\s+(meaning|definition|ka matlab|matlab|wiki|wikipedia)$/i, '')
     .replace(/\bsite:[^\s]+/gi, '')
     .replace(/\bfiletype:[^\s]+/gi, '')
+    .replace(/^https?:\/\//i, '')
+    .replace(/^www\./i, '')
+    .replace(/\.(com|org|net|io|co|in|edu|gov|dev|ai|app)/gi, '')
     .trim() || rawQuery;
 }
 
@@ -52,7 +55,7 @@ export function SummaryCard({ query }: Props) {
     const topic = extractTopic(query);
     const wikiBase = `https://${lang}.wikipedia.org`;
 
-    // Strategy 1: Direct Wikipedia page summary (fastest, richest)
+    // 1. Direct Wikipedia page summary
     const summaryUrl = `${wikiBase}/api/rest_v1/page/summary/${encodeURIComponent(topic.replace(/ /g, '_'))}`;
 
     fetch(summaryUrl)
@@ -63,10 +66,12 @@ export function SummaryCard({ query }: Props) {
         content_urls?: { desktop?: { page?: string } };
         type?: string;
       } | null) => {
-        if (d?.extract && d.type !== 'disambiguation' && d.extract.length > 30) {
+        if (d?.extract && d.type !== 'disambiguation' && d.extract.length > 25) {
+          const sentences = d.extract.split('. ').filter((s) => s.trim().length > 15);
           setData({
             title:   d.title ?? topic,
             extract: d.extract,
+            keyPoints: sentences.length > 1 ? sentences.slice(0, 3).map((s) => s.endsWith('.') ? s : `${s}.`) : undefined,
             image:   d.thumbnail?.source,
             url:     d.content_urls?.desktop?.page ?? `${wikiBase}/wiki/${encodeURIComponent(topic)}`,
             type:    'wikipedia',
@@ -75,7 +80,27 @@ export function SummaryCard({ query }: Props) {
           return;
         }
 
-        // Strategy 2: Fallback to Wikipedia Opensearch / Search list snippet
+        // 2. DuckDuckGo Instant Answer API
+        const ddgUrl = `https://api.duckduckgo.com/?q=${encodeURIComponent(topic)}&format=json&no_redirect=1&no_html=1`;
+        const dRes = await fetch(ddgUrl);
+        if (dRes.ok) {
+          const ddg = await dRes.json() as { AbstractText?: string; Heading?: string; AbstractURL?: string; Image?: string };
+          if (ddg.AbstractText && ddg.AbstractText.length > 20) {
+            const sentences = ddg.AbstractText.split('. ').filter((s) => s.trim().length > 15);
+            setData({
+              title:   ddg.Heading || topic,
+              extract: ddg.AbstractText,
+              keyPoints: sentences.length > 1 ? sentences.slice(0, 3).map((s) => s.endsWith('.') ? s : `${s}.`) : undefined,
+              image:   ddg.Image ? (ddg.Image.startsWith('http') ? ddg.Image : `https://duckduckgo.com${ddg.Image}`) : undefined,
+              url:     ddg.AbstractURL || '#',
+              type:    'duckduckgo',
+            });
+            setLoading(false);
+            return;
+          }
+        }
+
+        // 3. Fallback to Wikipedia Opensearch / Search list snippet
         const searchUrl = `${wikiBase}/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(topic)}&srlimit=1&format=json&origin=*`;
         const sRes = await fetch(searchUrl);
         if (sRes.ok) {
@@ -83,7 +108,7 @@ export function SummaryCard({ query }: Props) {
           const first = sData.query?.search?.[0];
           if (first?.snippet) {
             const cleanText = first.snippet.replace(/<[^>]*>/g, '').replace(/&[a-z]+;/gi, ' ').trim();
-            if (cleanText.length > 30) {
+            if (cleanText.length > 25) {
               setData({
                 title:   first.title,
                 extract: cleanText,
@@ -95,22 +120,6 @@ export function SummaryCard({ query }: Props) {
             }
           }
         }
-
-        // Strategy 3: Fallback to DuckDuckGo Instant Answer API
-        const ddgUrl = `https://api.duckduckgo.com/?q=${encodeURIComponent(topic)}&format=json&no_redirect=1&no_html=1`;
-        const dRes = await fetch(ddgUrl);
-        if (dRes.ok) {
-          const ddg = await dRes.json() as { AbstractText?: string; Heading?: string; AbstractURL?: string; Image?: string };
-          if (ddg.AbstractText && ddg.AbstractText.length > 20) {
-            setData({
-              title:   ddg.Heading || topic,
-              extract: ddg.AbstractText,
-              image:   ddg.Image ? (ddg.Image.startsWith('http') ? ddg.Image : `https://duckduckgo.com${ddg.Image}`) : undefined,
-              url:     ddg.AbstractURL || '#',
-              type:    'duckduckgo',
-            });
-          }
-        }
       })
       .catch(() => {})
       .finally(() => setLoading(false));
@@ -118,26 +127,25 @@ export function SummaryCard({ query }: Props) {
 
   if (loading || !data) return null;
 
-  const SHORT = 280;
+  const SHORT = 260;
   const isLong = data.extract.length > SHORT;
   const displayText = expanded || !isLong ? data.extract : truncate(data.extract, SHORT);
 
   return (
-    <div className="rounded-2xl border border-indigo-500/20 bg-surface-2/80 backdrop-blur-xl
-      overflow-hidden mb-6 animate-slide-up shadow-lg shadow-black/5">
+    <div className="rounded-2xl border border-indigo-500/20 bg-surface-2/90 backdrop-blur-xl
+      overflow-hidden mb-5 animate-slide-up shadow-lg shadow-black/5">
       {/* Header strip */}
-      <div className="flex items-center gap-3 px-5 py-3 border-b border-border/60 bg-surface-3/30">
+      <div className="flex items-center gap-3 px-4 sm:px-5 py-2.5 border-b border-border/60 bg-surface-3/30">
         <div className="flex items-center gap-2">
-          <span className="text-indigo-400 text-sm">✦</span>
+          <span className="text-indigo-400 text-sm animate-pulse">✦</span>
           <span className="text-xs font-semibold uppercase tracking-widest text-indigo-400">
-            Featured Answer
+            AI Overview & Answer
           </span>
         </div>
         <div className="ml-auto flex items-center gap-2">
-          <span className="text-xs text-text-muted font-medium">
-            {data.type === 'wikipedia' ? '📖 Wikipedia' : '🦆 DuckDuckGo'}
+          <span className="text-[11px] text-text-muted font-medium bg-surface-3 px-2 py-0.5 rounded-full border border-border/50">
+            {data.type === 'wikipedia' ? '📖 Knowledge Graph' : '🦆 Instant Intelligence'}
           </span>
-          {/* 🔊 Text-to-Speech */}
           <button
             type="button"
             onClick={() => speak(data.extract)}
@@ -151,23 +159,44 @@ export function SummaryCard({ query }: Props) {
         </div>
       </div>
 
-      <div className="p-5 flex gap-4 items-start">
-        {/* Thumbnail Image */}
+      <div className="p-4 sm:p-5 flex flex-col sm:flex-row gap-4 items-start">
+        {/* Compressed preview thumbnail */}
         {data.image && (
-          <div className="shrink-0 w-24 h-24 rounded-xl overflow-hidden bg-surface-3 border border-border/60">
+          <div className="shrink-0 w-20 h-20 sm:w-24 sm:h-24 rounded-xl overflow-hidden bg-surface-3 border border-border/60">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={data.image} alt={data.title} className="w-full h-full object-cover" loading="lazy" />
+            <img
+              src={data.image}
+              alt={data.title}
+              className="w-full h-full object-cover"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         )}
 
         <div className="flex-1 min-w-0">
-          <h3 className="font-semibold text-text-primary text-base mb-2">
+          <h3 className="font-semibold text-text-primary text-[17px] mb-1.5 flex items-center gap-2">
             {data.title}
           </h3>
 
           <p className="text-text-secondary text-sm leading-relaxed">
             {displayText}
           </p>
+
+          {/* Quick Key Takeaways */}
+          {data.keyPoints && data.keyPoints.length > 1 && (
+            <div className="mt-3 space-y-1 bg-surface-3/40 p-2.5 rounded-lg border border-border/40">
+              <span className="text-[11px] font-semibold text-indigo-400 uppercase tracking-wider block mb-1">
+                Key Insights:
+              </span>
+              {data.keyPoints.map((point, idx) => (
+                <div key={idx} className="flex items-start gap-2 text-xs text-text-muted">
+                  <span className="text-indigo-400 font-bold">•</span>
+                  <span>{point}</span>
+                </div>
+              ))}
+            </div>
+          )}
 
           {isLong && (
             <button
@@ -180,14 +209,14 @@ export function SummaryCard({ query }: Props) {
           )}
 
           {data.url && data.url !== '#' && (
-            <div className="mt-3">
+            <div className="mt-2.5">
               <a
                 href={data.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs text-text-muted hover:text-indigo-400 hover:underline font-medium inline-flex items-center gap-1"
               >
-                Learn more on {data.type === 'wikipedia' ? 'Wikipedia' : 'Source'} →
+                Learn more on source →
               </a>
             </div>
           )}

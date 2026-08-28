@@ -12,6 +12,8 @@ export interface SearchResult {
   date?: string;
   favicon?: string;
   badge?: string;
+  score?: number;
+  rank?: number;
   extra?: Record<string, unknown>;
 }
 
