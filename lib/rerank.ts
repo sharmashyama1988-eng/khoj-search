@@ -1,4 +1,4 @@
-﻿import type { SearchResult } from '@/types';
+import type { SearchResult } from '@/types';
 
 export interface RankedSourceItem {
   result: SearchResult;
@@ -32,8 +32,11 @@ export function applyReciprocalRankFusion(
         const existing = scoreMap.get(canonicalKey)!;
         existing.rrfScore += rrfIncrement;
         existing.appearances += 1;
-        if (item.description && item.description.length > existing.result.description.length) {
+        if (item.description && item.description.length > (existing.result.description?.length || 0)) {
           existing.result.description = item.description;
+        }
+        if (item.badge && !existing.result.badge) {
+          existing.result.badge = item.badge;
         }
       }
     });
@@ -50,8 +53,8 @@ export function applyReciprocalRankFusion(
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// 2. BM25+ (Sparse Lexical Scoring with Lower-Bound Delta Boost)
-// Formula: Score(D, Q) = Sum_i [ IDF(q_i) * ( (k1 + 1) * TF / (TF + k1*(1 - b + b*(|D|/avgDL))) + δ ) ]
+// 2. BM25+ (Sparse Lexical Scoring with Field Weights & Delta Boost)
+// Field Weights: Title (3.0x), Snippet (1.0x), Domain (2.0x)
 // ─────────────────────────────────────────────────────────────────────────────
 function computeBM25PlusScore(
   queryTokens: string[],
@@ -78,7 +81,7 @@ function computeBM25PlusScore(
     const tf = tfMap.get(q) || 0;
     if (tf > 0) {
       const nq = docFreqMap.get(q) || 1;
-      // Probabilistic IDF with smoothing
+      // Probabilistic Robertson-Spärck Jones IDF with smoothing
       const idf = Math.log(1 + (docCount - nq + 0.5) / (nq + 0.5));
       const termScore = (tf * (k1 + 1)) / (tf + k1 * lenNorm) + delta;
       totalBM25 += idf * termScore;
@@ -89,8 +92,8 @@ function computeBM25PlusScore(
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// 3. Dense Vector Semantic Match (Character & Token N-gram Cosine Distance)
-// Simulates embedding cosine similarity (A · B) / (||A|| * ||B||) in [0.0 - 1.0]
+// 3. Dense Vector Semantic Match (Character 3-Gram & Word Token Cosine Sim)
+// Simulates high-precision embedding cosine similarity in [0.0 - 1.0]
 // ─────────────────────────────────────────────────────────────────────────────
 function computeVectorCosineSimilarity(query: string, text: string): number {
   const qClean = query.toLowerCase().trim();
@@ -107,8 +110,8 @@ function computeVectorCosineSimilarity(query: string, text: string): number {
     return map;
   };
 
-  const qGrams = getGrams(qClean);
-  const tGrams = getGrams(tClean);
+  const qGrams = getGrams(qClean, 3);
+  const tGrams = getGrams(tClean, 3);
 
   let dotProduct = 0;
   let normA = 0;
@@ -129,9 +132,68 @@ function computeVectorCosineSimilarity(query: string, text: string): number {
   return Math.min(1.0, Math.max(0.0, cosine));
 }
 
+// Token Overlap Jaccard / Overlap coefficient
+function computeTokenOverlap(queryTokens: string[], docTokens: string[]): number {
+  if (!queryTokens.length || !docTokens.length) return 0;
+  const docSet = new Set(docTokens);
+  let matches = 0;
+  queryTokens.forEach((t) => {
+    if (docSet.has(t)) matches++;
+  });
+  return matches / queryTokens.length;
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
-// 4. Hybrid Cross-Encoder Re-Ranker
-// Merges: BM25+ (Sparse) + Cosine Vector Sim (Dense) + RRF Rank + Authority Prior
+// 4. Intent Classification Helpers
+// ─────────────────────────────────────────────────────────────────────────────
+interface QueryIntent {
+  isNavigational: boolean;
+  isDocs: boolean;
+  isErrorOrDebug: boolean;
+  isFinancialOrPricing: boolean;
+  isProduct: boolean;
+  isCommunity: boolean;
+}
+
+function detectQueryIntent(query: string, tokens: string[]): QueryIntent {
+  const q = query.toLowerCase();
+
+  const isNavigational = tokens.length <= 2 && (
+    q.includes('.com') || q.includes('.org') || q.includes('.net') ||
+    ['youtube', 'github', 'netflix', 'google', 'chatgpt', 'openai', 'amazon', 'quora', 'wikipedia', 'twitter', 'facebook', 'instagram'].some((brand) => q.includes(brand))
+  );
+
+  const isDocs = [
+    'doc', 'docs', 'documentation', 'guide', 'tutorial', 'reference',
+    'api', 'manual', 'cheatsheet', 'cheat sheet', 'handbook', 'learn', 'syntax'
+  ].some((kw) => q.includes(kw));
+
+  const isErrorOrDebug = [
+    'error', 'exception', 'failed', 'crash', 'undefined', 'nullpointer',
+    'bug', 'issue', 'cannot', 'fix', 'solved', 'traceback', 'why does', 'how to fix'
+  ].some((kw) => q.includes(kw));
+
+  const isFinancialOrPricing = [
+    'stock', 'price', 'rates', 'quote', 'usd', 'market cap', 'crypto',
+    'btc', 'gold', 'silver', '24k', 'live', 'ticker', 'share price'
+  ].some((kw) => q.includes(kw));
+
+  const isProduct = [
+    'specs', 'review', 'vs', 'camera', 'battery', 'm4', 'rtx', 'iphone',
+    'macbook', 'phone', 'laptop', 'headphones', 'buy', 'deals'
+  ].some((kw) => q.includes(kw));
+
+  const isCommunity = [
+    'reddit', 'forum', 'community', 'opinions', 'recommendations',
+    'experience', 'discussion', 'thoughts', 'best'
+  ].some((kw) => q.includes(kw));
+
+  return { isNavigational, isDocs, isErrorOrDebug, isFinancialOrPricing, isProduct, isCommunity };
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 5. Hybrid Cross-Encoder Re-Ranker
+// Merges: BM25F + Vector Cosine + Query Coverage + Exact Phrase + Authority Priors
 // ─────────────────────────────────────────────────────────────────────────────
 export function hybridReRank(
   query: string,
@@ -141,15 +203,26 @@ export function hybridReRank(
   if (!candidates.length) return [];
 
   const queryTokens = tokenize(query);
+  const cleanQ = queryTokens.join(' ');
+  const qLower = query.toLowerCase().trim();
   const N = candidates.length;
+  const intent = detectQueryIntent(query, queryTokens);
 
-  // Pre-tokenize all candidate documents (Title + Snippet + Domain)
+  // Field-weighted document tokens: Title (3x weight), Snippet (1x), Domain (2x)
   const docTokensList = candidates.map((item) => {
-    const fullText = `${item.title} ${item.title} ${item.description} ${item.domain || ''}`;
-    return tokenize(fullText);
+    const titleTokens = tokenize(item.title);
+    const domainTokens = tokenize(item.domain || '');
+    const descTokens = tokenize(item.description || '');
+    
+    // Field weighted token stream
+    return [
+      ...titleTokens, ...titleTokens, ...titleTokens,
+      ...domainTokens, ...domainTokens,
+      ...descTokens,
+    ];
   });
 
-  // Calculate average document length
+  // Calculate average doc length for BM25 normalization
   const totalLen = docTokensList.reduce((acc, tokens) => acc + tokens.length, 0);
   const avgDocLen = totalLen / N || 1;
 
@@ -165,36 +238,132 @@ export function hybridReRank(
 
   const scored = candidates.map((item, idx) => {
     const docTokens = docTokensList[idx];
-    const fullDocText = `${item.title} ${item.description}`;
+    const titleLower = (item.title || '').toLowerCase();
+    const descLower = (item.description || '').toLowerCase();
+    const domainLower = (item.domain || '').toLowerCase();
+    const urlLower = (item.url || '').toLowerCase();
 
-    // 1. BM25+ Score
-    const bm25Score = computeBM25PlusScore(queryTokens, docTokens, N, docFreqMap, avgDocLen);
+    // 1. Multi-Field BM25+ Score
+    const bm25Score = computeBM25PlusScore(queryTokens, docTokens, N, docFreqMap, avgDocLen, 1.2, 0.75, 0.5);
 
     // 2. Dense Semantic Cosine Similarity [0.0 - 1.0]
-    const titleCosine = computeVectorCosineSimilarity(query, item.title);
-    const descCosine  = computeVectorCosineSimilarity(query, item.description);
-    const semanticSim = titleCosine * 0.7 + descCosine * 0.3;
+    const titleCosine = computeVectorCosineSimilarity(query, item.title || '');
+    const descCosine  = computeVectorCosineSimilarity(query, item.description || '');
+    const semanticSim = titleCosine * 0.75 + descCosine * 0.25;
 
-    // 3. Base RRF Prior Score
+    // 3. Query Term Coverage Bonus / Penalty
+    const coverage = computeTokenOverlap(queryTokens, docTokens);
+    const coverageMultiplier = coverage >= 0.9 ? 1.4 : coverage >= 0.6 ? 1.0 : 0.65;
+
+    // 4. Base RRF Prior Score
     let score = (item.score ?? 50);
 
-    // Combine Sparse + Dense
-    score += Math.round(bm25Score * 40);
-    score += Math.round(semanticSim * 150);
+    // Combine Sparse BM25 + Dense Semantic
+    const coreLexicalDense = Math.round(bm25Score * 45) + Math.round(semanticSim * 160);
+    score += Math.round(coreLexicalDense * coverageMultiplier);
 
-    // Exact Title / Domain Matching
-    const cleanQ = queryTokens.join(' ');
-    const titleLower = item.title.toLowerCase();
-    const domainLower = (item.domain || '').toLowerCase();
+    // 5. Exact Phrase Matching in Title & Snippet
+    if (cleanQ.length > 2) {
+      if (titleLower.includes(cleanQ) || (qLower && titleLower.includes(qLower))) {
+        score += 160;
+        // Bonus if title begins with exact match
+        if (titleLower.startsWith(cleanQ) || titleLower.startsWith(qLower)) {
+          score += 60;
+        }
+      } else if (descLower.includes(cleanQ) || (qLower && descLower.includes(qLower))) {
+        score += 70;
+      }
+    }
 
-    if (cleanQ && titleLower.includes(cleanQ)) score += 100;
-    if (queryTokens.some((t) => domainLower.includes(t))) score += 120;
+    // Exact Domain Token Match
+    if (queryTokens.some((t) => domainLower.includes(t) || urlLower.includes(t))) {
+      score += 140;
+    }
 
-    // Authority Priors
-    if (item.badge === 'Official Site' || item.badge === 'Direct URL') score += 500;
-    if (item.source === 'StackOverflow' && (query.includes('how') || query.includes('error') || query.includes('code'))) score += 75;
-    if (item.source === 'GitHub' && (query.includes('repo') || query.includes('tool') || query.includes('framework'))) score += 80;
-    if (item.source === 'Reddit' && (query.includes('best') || query.includes('vs') || query.includes('review'))) score += 60;
+    // 6. Authority Priors & Intent-Aware Boosts
+    if (item.badge === 'Official Site' || item.badge === 'Direct URL') {
+      score += 550;
+    }
+
+    // Tech Docs Intent & First-Party Technology Authority
+    const isFirstPartyDomain = queryTokens.some((t) => (
+      t.length >= 3 && (
+        domainLower.startsWith(t + '.') ||
+        domainLower.includes('.' + t + '.') ||
+        domainLower.startsWith('docs.' + t) ||
+        domainLower === `${t}.dev` ||
+        domainLower === `${t}.org` ||
+        domainLower === `${t}.io` ||
+        domainLower === `${t}.com`
+      )
+    ));
+
+    const isDocDomain = (
+      domainLower.includes('docs.') ||
+      domainLower.endsWith('.dev') ||
+      domainLower.endsWith('.io') ||
+      domainLower.includes('developer.mozilla.org') ||
+      item.badge === 'Docs'
+    );
+
+    if (intent.isDocs) {
+      if (isFirstPartyDomain && (isDocDomain || item.badge === 'Docs')) {
+        score += 350; // First-party official documentation
+      } else if (isDocDomain || item.badge === 'Docs') {
+        score += 180;
+      }
+      if (titleLower.includes('documentation') || titleLower.includes('tutorial') || titleLower.includes('guide')) {
+        score += 80;
+      }
+    } else if (isFirstPartyDomain) {
+      score += 150;
+    }
+
+    // Error / Debugging Intent
+    if (intent.isErrorOrDebug) {
+      if (item.source === 'StackOverflow' || domainLower.includes('stackoverflow.com')) score += 220;
+      if (item.source === 'GitHub' || domainLower.includes('github.com')) score += 140;
+      if (isDocDomain) score += 100;
+    }
+
+    // Financial / Real-Time Pricing Intent
+    if (intent.isFinancialOrPricing) {
+      if (
+        domainLower.includes('finance.yahoo.com') ||
+        domainLower.includes('coingecko.com') ||
+        domainLower.includes('coinmarketcap.com') ||
+        domainLower.includes('mcxindia.com') ||
+        domainLower.includes('bloomberg.com') ||
+        domainLower.includes('nasdaq.com') ||
+        domainLower.includes('tradingview.com') ||
+        domainLower.includes('economictimes.')
+      ) {
+        score += 240;
+      }
+    }
+
+    // Product & Gadget Intent
+    if (intent.isProduct) {
+      if (item.badge === 'Official Site' || domainLower.includes('apple.com') || domainLower.includes('sony.com') || domainLower.includes('nvidia.com')) score += 200;
+      if (domainLower.includes('gsmarena.com') || domainLower.includes('rtings.com') || domainLower.includes('theverge.com')) score += 120;
+    }
+
+    // Community / Forum Intent (Reddit, Quora)
+    if (intent.isCommunity || query.toLowerCase().includes('reddit')) {
+      if (item.source === 'Reddit' || domainLower.includes('reddit.com')) {
+        score += 260;
+      }
+    } else {
+      // If NOT explicitly looking for community forum opinions, slightly temper forum threads when official docs/answers exist
+      if (item.source === 'Reddit' && !intent.isCommunity) {
+        score -= 40;
+      }
+    }
+
+    // General Source Priors
+    if (item.source === 'Wikipedia' && (queryTokens.length <= 2 || query.toLowerCase().includes('what is') || query.toLowerCase().includes('history'))) {
+      score += 80;
+    }
 
     return {
       ...item,
@@ -229,3 +398,4 @@ function tokenize(text: string): string[] {
     .split(/\s+/)
     .filter((w) => w.length >= 2);
 }
+

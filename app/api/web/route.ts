@@ -1,4 +1,4 @@
-﻿import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { applyReciprocalRankFusion, hybridReRank } from '@/lib/rerank';
 
 export const runtime = 'edge';
@@ -42,8 +42,6 @@ function getSourceBadge(domain: string): string {
   if (d.includes('reddit.com')) return 'Reddit';
   if (d.includes('quora.com')) return 'Quora';
   if (d.includes('stackoverflow.com') || d.includes('stackexchange.com')) return 'StackOverflow';
-  if (d.includes('medium.com')) return 'Medium';
-  if (d.includes('dev.to')) return 'Dev.to';
   if (d.includes('github.com')) return 'GitHub';
   if (d.includes('wikipedia.org')) return 'Wikipedia';
   if (d.includes('youtube.com')) return 'YouTube';
@@ -51,7 +49,17 @@ function getSourceBadge(domain: string): string {
   if (d.includes('amazon.')) return 'Amazon';
   if (d.includes('flipkart.com')) return 'Flipkart';
   if (d.includes('gsmarena.com')) return 'GSMArena';
-  if (d.includes('w3schools.com') || d.includes('mozilla.org') || d.includes('mdn.')) return 'Docs';
+  if (d.includes('theverge.com') || d.includes('techradar.com') || d.includes('rtings.com')) return 'Tech Review';
+  if (d.includes('finance.yahoo.com') || d.includes('bloomberg.com') || d.includes('nasdaq.com') || d.includes('mcxindia.com')) return 'Finance';
+  if (d.includes('coingecko.com') || d.includes('coinmarketcap.com')) return 'Crypto';
+  if (
+    d.includes('react.dev') || d.includes('nextjs.org') || d.includes('fastapi.tiangolo.com') ||
+    d.includes('tailwindcss.com') || d.includes('nodejs.org') || d.includes('python.org') ||
+    d.includes('docs.docker.com') || d.includes('git-scm.com') || d.includes('mozilla.org') ||
+    d.includes('w3schools.com') || d.includes('digitalocean.com') || d.includes('docs.')
+  ) return 'Docs';
+  if (d.includes('medium.com')) return 'Medium';
+  if (d.includes('dev.to')) return 'Dev.to';
   if (d.includes('geeksforgeeks.org')) return 'GeeksforGeeks';
   if (d.includes('twitter.com') || d.includes('x.com')) return 'X / Twitter';
   if (d.includes('linkedin.com')) return 'LinkedIn';
@@ -63,7 +71,7 @@ function resolveDirectPortal(query: string): WebSearchResult | null {
   const urlPattern = /^(https?:\/\/)?(www\.)?([a-z0-9-]+(\.[a-z]{2,})+)(\/.*)?$/i;
   const match = clean.match(urlPattern);
 
-  const FAMOUS_SITES: Record<string, { name: string; desc: string; domain: string }> = {
+  const FAMOUS_SITES: Record<string, { name: string; desc: string; domain: string; url?: string }> = {
     'youtube': { name: 'YouTube', desc: 'Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.', domain: 'youtube.com' },
     'youtube.com': { name: 'YouTube', desc: 'Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.', domain: 'youtube.com' },
     'google': { name: 'Google', desc: 'Search the world\'s information, including webpages, images, videos and more.', domain: 'google.com' },
@@ -75,6 +83,15 @@ function resolveDirectPortal(query: string): WebSearchResult | null {
     'chatgpt': { name: 'ChatGPT - OpenAI', desc: 'ChatGPT is a free-to-use AI system. Use it for engaging conversations, gain insights, automate tasks, and witness the future of AI.', domain: 'chatgpt.com' },
     'chatgpt.com': { name: 'ChatGPT - OpenAI', desc: 'ChatGPT is a free-to-use AI system. Use it for engaging conversations, gain insights, automate tasks, and witness the future of AI.', domain: 'chatgpt.com' },
     'openai': { name: 'OpenAI', desc: 'OpenAI creates safe and powerful artificial general intelligence (AGI) that benefits all of humanity.', domain: 'openai.com' },
+    'openai.com': { name: 'OpenAI', desc: 'OpenAI creates safe and powerful artificial general intelligence (AGI) that benefits all of humanity.', domain: 'openai.com' },
+    'fastapi': { name: 'FastAPI', desc: 'FastAPI framework, high performance, easy to learn, fast to code, ready for production.', domain: 'fastapi.tiangolo.com', url: 'https://fastapi.tiangolo.com/' },
+    'react': { name: 'React', desc: 'The library for web and native user interfaces. Build user interfaces out of individual pieces called components.', domain: 'react.dev', url: 'https://react.dev/' },
+    'react.dev': { name: 'React', desc: 'The library for web and native user interfaces. Build user interfaces out of individual pieces called components.', domain: 'react.dev', url: 'https://react.dev/' },
+    'nextjs': { name: 'Next.js by Vercel', desc: 'The React Framework for the Web. Used by some of the world\'s largest companies to build full-stack web applications.', domain: 'nextjs.org', url: 'https://nextjs.org/' },
+    'nextjs.org': { name: 'Next.js by Vercel', desc: 'The React Framework for the Web. Used by some of the world\'s largest companies to build full-stack web applications.', domain: 'nextjs.org', url: 'https://nextjs.org/' },
+    'tailwindcss': { name: 'Tailwind CSS', desc: 'Rapidly build modern websites without ever leaving your HTML. A utility-first CSS framework.', domain: 'tailwindcss.com', url: 'https://tailwindcss.com/' },
+    'nodejs': { name: 'Node.js', desc: 'Node.js is an open-source, cross-platform JavaScript runtime environment.', domain: 'nodejs.org', url: 'https://nodejs.org/' },
+    'python': { name: 'Python Official Website', desc: 'Python is a programming language that lets you work quickly and integrate systems more effectively.', domain: 'python.org', url: 'https://www.python.org/' },
     'twitter': { name: 'X / Twitter', desc: 'From breaking news and entertainment to sports and politics, get the full story with all the live commentary.', domain: 'x.com' },
     'twitter.com': { name: 'X / Twitter', desc: 'From breaking news and entertainment to sports and politics, get the full story with all the live commentary.', domain: 'x.com' },
     'x': { name: 'X / Twitter', desc: 'From breaking news and entertainment to sports and politics, get the full story with all the live commentary.', domain: 'x.com' },
@@ -100,7 +117,7 @@ function resolveDirectPortal(query: string): WebSearchResult | null {
   const key = clean.replace(/^(https?:\/\/)?(www\.)?/, '').replace(/\/.*$/, '');
   if (FAMOUS_SITES[key]) {
     const site = FAMOUS_SITES[key];
-    const fullUrl = `https://www.${site.domain}`;
+    const fullUrl = site.url || `https://www.${site.domain}`;
     return {
       id: `direct-${site.domain}`,
       title: `${site.name} — Official Website`,
@@ -132,6 +149,8 @@ function resolveDirectPortal(query: string): WebSearchResult | null {
 
   return null;
 }
+
+
 
 async function fetchDuckDuckGoWeb(query: string): Promise<WebSearchResult[]> {
   try {
