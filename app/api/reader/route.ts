@@ -48,7 +48,7 @@ function cleanArticleMarkdown(rawMarkdown: string, domain: string): string {
     /^#*\s*Password$/i,
     /^#*\s*Submit$/i,
     /^#*\s*Search$/i,
-    /^#*\s*$/i, // empty markdown headers
+    /^#*\s*$/i,
     /advertisement/i,
     /subscribe/i,
     /share\s*on/i,
@@ -58,26 +58,23 @@ function cleanArticleMarkdown(rawMarkdown: string, domain: string): string {
     /navigation\s*menu/i,
     /create\s*a\s*free\s*team/i,
     /ask\s*question/i,
-    /your\s*privacy\s*choices/i,
-    /table\s*of\s*contents/i,
-    /jump\s*to\s*content/i,
-    /manage\s*cookies/i
   ];
 
   for (const line of lines) {
     const trimmed = line.trim();
-    if (!trimmed) {
-      cleanedLines.push('');
+    if (!trimmed) continue;
+
+    const isBoilerplate = BOILERPLATE_PATTERNS.some((pattern) => pattern.test(trimmed));
+    if (isBoilerplate && trimmed.length < 90) continue;
+
+    if (trimmed.toLowerCase().includes(domain.toLowerCase()) && (trimmed.includes('©') || trimmed.includes('All Rights'))) {
       continue;
     }
 
-    const isBoilerplate = BOILERPLATE_PATTERNS.some((p) => p.test(trimmed)) && trimmed.length < 160;
-    if (!isBoilerplate) {
-      cleanedLines.push(line);
-    }
+    cleanedLines.push(trimmed);
   }
 
-  const result = cleanedLines.join('\n').replace(/\n{3,}/g, '\n\n').trim();
+  const result = cleanedLines.join('\n\n').replace(/\n{3,}/g, '\n\n').trim();
   return result;
 }
 
@@ -98,7 +95,7 @@ async function handleReadUrl(targetUrl: string) {
   try {
     // 1. Fetch from Jina AI Reader
     const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 8000);
+    const timer = setTimeout(() => controller.abort(), 7500);
 
     const jinaRes = await fetch(`https://r.jina.ai/${finalUrl}`, {
       headers: {
@@ -123,24 +120,27 @@ async function handleReadUrl(targetUrl: string) {
       const wordCount = cleanContent.split(/\s+/).filter(Boolean).length;
       const readingTimeMinutes = Math.max(1, Math.ceil(wordCount / 200));
 
-      return NextResponse.json({
-        status: 'success',
-        title,
-        url: finalUrl,
-        domain,
-        description,
-        content: cleanContent,
-        wordCount,
-        readingTimeMinutes,
-        source: `${domain} via Clean Reader`,
-      });
+      if (cleanContent.length >= 80) {
+        return NextResponse.json({
+          status: 'success',
+          title,
+          url: finalUrl,
+          domain,
+          description,
+          content: cleanContent,
+          wordCount,
+          readingTimeMinutes,
+          source: `${domain} via Clean Reader`,
+        });
+      }
     }
 
-    // 2. Direct HTML Fallback
+    // 2. Direct HTML Fallback Parser (Extracts structured article paragraphs)
     const htmlRes = await fetch(finalUrl, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
       },
+      redirect: 'follow',
       next: { revalidate: 1800 },
     });
 
@@ -155,29 +155,31 @@ async function handleReadUrl(targetUrl: string) {
     const titleMatch = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
     const title = titleMatch ? titleMatch[1].replace(/<[^>]*>/g, '').trim() : domain;
 
-    const cleanText = html
-      .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
-      .replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, '')
-      .replace(/<nav\b[^<]*(?:(?!<\/nav>)<[^<]*)*<\/nav>/gi, '')
-      .replace(/<header\b[^<]*(?:(?!<\/header>)<[^<]*)*<\/header>/gi, '')
-      .replace(/<footer\b[^<]*(?:(?!<\/footer>)<[^<]*)*<\/footer>/gi, '')
-      .replace(/<[^>]*>/g, ' ')
-      .replace(/\s+/g, ' ')
-      .trim();
+    // Extract paragraphs and headings
+    const pMatches = html.match(/<(?:p|h1|h2|h3|h4|li)[^>]*>([\s\S]*?)<\/(?:p|h1|h2|h3|h4|li)>/gi) || [];
+    const extractedParagraphs: string[] = [];
 
-    const sanitized = cleanArticleMarkdown(cleanText.slice(0, 8000), domain);
+    pMatches.forEach((chunk) => {
+      const plain = chunk.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+      if (plain.length > 30) {
+        extractedParagraphs.push(plain);
+      }
+    });
+
+    const bodyText = extractedParagraphs.length > 0 ? extractedParagraphs.join('\n\n') : html.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ');
+    const sanitized = cleanArticleMarkdown(bodyText.slice(0, 12000), domain);
     const wordCount = sanitized.split(/\s+/).filter(Boolean).length;
 
     return NextResponse.json({
       status: 'success',
       title,
-      url: finalUrl,
-      domain,
+      url: htmlRes.url || finalUrl,
+      domain: getDomain(htmlRes.url || finalUrl),
       description: sanitized.slice(0, 240),
       content: sanitized,
       wordCount,
       readingTimeMinutes: Math.max(1, Math.ceil(wordCount / 200)),
-      source: 'Direct Clean Parser',
+      source: 'Verified Clean Parser',
     });
   } catch (error) {
     return NextResponse.json({
