@@ -1,10 +1,16 @@
-'use client';
+﻿'use client';
 import { useTheme } from '@/hooks/useTheme';
 import { useLanguage } from '@/hooks/useLanguage';
 
 export function ThemeToggle() {
-  const { theme, toggle } = useTheme();
+  const { theme, toggle, mounted } = useTheme();
   const { t } = useLanguage();
+
+  if (!mounted) {
+    return (
+      <div className="w-9 h-9 rounded-xl bg-surface-2/80 border border-border/80" />
+    );
+  }
 
   return (
     <button

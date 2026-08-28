@@ -1,11 +1,12 @@
-'use client';
+﻿'use client';
 import { useState, useEffect, useCallback } from 'react';
 
 export function useTheme() {
   const [theme, setThemeState] = useState<'dark' | 'light'>('dark');
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // Sync with HTML class set by anti-flash script
+    setMounted(true);
     const isDark = document.documentElement.classList.contains('dark');
     setThemeState(isDark ? 'dark' : 'light');
   }, []);
@@ -25,5 +26,5 @@ export function useTheme() {
     });
   }, []);
 
-  return { theme, toggle };
+  return { theme, toggle, mounted };
 }

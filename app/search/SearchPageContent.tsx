@@ -14,6 +14,7 @@ import { SummaryCard } from '@/components/results/SummaryCard';
 import { KhojPagination } from '@/components/results/KhojPagination';
 import { DidYouMean } from '@/components/results/DidYouMean';
 import { PeopleAlsoAsk } from '@/components/results/PeopleAlsoAsk';
+import { ReaderModal } from '@/components/results/ReaderModal';
 import { SkeletonLoader, SkeletonPanel, SkeletonImageGrid } from '@/components/ui/SkeletonLoader';
 import { ExportButton } from '@/components/ui/ExportButton';
 // ── Widgets ──────────────────────────────────────────────────────────────────
@@ -53,6 +54,7 @@ export default function SearchPageContent() {
 
   const [activeTab, setActiveTab] = useState<SearchTab>(tabParam);
   const [page, setPage]           = useState(pageParam);
+  const [readerTarget, setReaderTarget] = useState<{ url: string; title: string } | null>(null);
 
   const { results, images, books, arxiv, github, wikiPanel, loading, error, search } = useSearch();
   const intent = useIntentDetector(query);
@@ -81,6 +83,10 @@ export default function SearchPageContent() {
     router.push(`/search?q=${encodeURIComponent(query)}&lang=${lang}&tab=${activeTab}&page=${p}`);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [query, lang, activeTab, router]);
+
+  const openReader = useCallback((url: string, title: string) => {
+    setReaderTarget({ url, title });
+  }, []);
 
   const renderWidget = () => {
     switch (intent.type) {
@@ -118,7 +124,6 @@ export default function SearchPageContent() {
   const totalPages = Math.max(1, Math.ceil(totalItems / PAGE_SIZE));
   const currentPage = Math.min(page, totalPages);
 
-  // Sliced items for current page
   const pagedResults = results.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
   const pagedBooks   = books.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
   const pagedArxiv   = arxiv.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
@@ -188,16 +193,31 @@ export default function SearchPageContent() {
                     {currentPage === 1 ? (
                       <>
                         {pagedResults.slice(0, 2).map((r, i) => (
-                          <ResultCard key={r.id || `res-${i}`} result={r} index={i} />
+                          <ResultCard
+                            key={r.id || `res-${i}`}
+                            result={r}
+                            index={i}
+                            onOpenReader={openReader}
+                          />
                         ))}
                         <PeopleAlsoAsk query={query} />
                         {pagedResults.slice(2).map((r, i) => (
-                          <ResultCard key={r.id || `res-${i + 2}`} result={r} index={i + 2} />
+                          <ResultCard
+                            key={r.id || `res-${i + 2}`}
+                            result={r}
+                            index={i + 2}
+                            onOpenReader={openReader}
+                          />
                         ))}
                       </>
                     ) : (
                       pagedResults.map((r, i) => (
-                        <ResultCard key={r.id || `res-${i}`} result={r} index={(currentPage - 1) * PAGE_SIZE + i} />
+                        <ResultCard
+                          key={r.id || `res-${i}`}
+                          result={r}
+                          index={(currentPage - 1) * PAGE_SIZE + i}
+                          onOpenReader={openReader}
+                        />
                       ))
                     )}
                   </div>
@@ -245,6 +265,15 @@ export default function SearchPageContent() {
           )}
         </div>
       </main>
+
+      {/* Instant In-App Reader Modal */}
+      {readerTarget && (
+        <ReaderModal
+          url={readerTarget.url}
+          initialTitle={readerTarget.title}
+          onClose={() => setReaderTarget(null)}
+        />
+      )}
 
       <Footer />
     </div>

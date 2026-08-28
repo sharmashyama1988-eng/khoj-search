@@ -2,7 +2,11 @@
 import { truncate } from '@/lib/utils';
 import type { SearchResult } from '@/types';
 
-interface Props { result: SearchResult; index: number }
+interface Props {
+  result: SearchResult;
+  index: number;
+  onOpenReader?: (url: string, title: string) => void;
+}
 
 const SOURCE_COLORS: Record<string, string> = {
   Reddit:        'bg-orange-500/10 text-orange-400 border-orange-500/20',
@@ -41,21 +45,18 @@ function getCleanBreadcrumb(url: string): string {
   }
 }
 
-export function ResultCard({ result, index }: Props) {
+export function ResultCard({ result, index, onOpenReader }: Props) {
   const badge = result.badge || result.source;
   const badgeClass = SOURCE_COLORS[badge] || 'bg-surface-3/50 text-text-muted border-border/40';
   const rankNum = result.rank || (index + 1);
 
   return (
-    <a
-      href={result.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group block py-3.5 px-3 rounded-xl border-b border-border/20 last:border-b-0
+    <div
+      className="group relative block py-3.5 px-3 rounded-xl border-b border-border/20 last:border-b-0
         hover:bg-surface-2/50 transition-all duration-150 animate-fade-in"
       style={{ animationDelay: `${Math.min(index * 20, 200)}ms` }}
     >
-      {/* Google-style Header: Rank # + Favicon + Domain + Breadcrumb + Badge */}
+      {/* Header: Rank # + Favicon + Domain + Breadcrumb + Quick Read + Badge */}
       <div className="flex items-center gap-2 mb-1.5 text-xs text-text-muted">
         {/* Result Rank Number Badge */}
         <span className="w-5 h-5 rounded-full bg-surface-3 border border-border/60 text-text-muted font-mono font-bold text-[10px] flex items-center justify-center shrink-0 group-hover:border-indigo-400/50 group-hover:text-indigo-400 transition-colors">
@@ -74,21 +75,47 @@ export function ResultCard({ result, index }: Props) {
         />
         <span className="font-medium text-text-primary text-[13px]">{getDomain(result.url)}</span>
         <span className="text-text-muted/60 text-[12px] truncate max-w-xs">{getCleanBreadcrumb(result.url)}</span>
-        
-        <span className={`text-[10px] px-2 py-0.5 rounded-full border font-medium ml-auto ${badgeClass}`}>
-          {badge}
-        </span>
+
+        <div className="ml-auto flex items-center gap-1.5 shrink-0">
+          {/* Instant In-App Reader Button */}
+          {onOpenReader && !result.url.includes('youtube.com') && (
+            <button
+              type="button"
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                onOpenReader(result.url, result.title);
+              }}
+              title="Read distraction-free in Khoj"
+              className="text-[10px] px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 hover:bg-indigo-500/20 border border-indigo-500/30 font-medium transition-colors cursor-pointer flex items-center gap-1"
+            >
+              <span>📖</span>
+              <span className="hidden sm:inline">Quick Read</span>
+            </button>
+          )}
+
+          <span className={`text-[10px] px-2 py-0.5 rounded-full border font-medium ${badgeClass}`}>
+            {badge}
+          </span>
+        </div>
       </div>
 
-      {/* Title */}
-      <h3 className="text-[18px] sm:text-[19px] leading-[24px] sm:leading-[26px] font-medium text-indigo-400 dark:text-[#8ab4f8] group-hover:underline line-clamp-1 mb-1">
-        {result.title}
-      </h3>
+      {/* Direct Clickable Title */}
+      <a
+        href={result.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block"
+      >
+        <h3 className="text-[18px] sm:text-[19px] leading-[24px] sm:leading-[26px] font-medium text-indigo-400 dark:text-[#8ab4f8] hover:underline line-clamp-1 mb-1">
+          {result.title}
+        </h3>
 
-      {/* Snippet */}
-      <p className="text-[13.5px] sm:text-[14px] leading-[21px] sm:leading-[22px] text-text-secondary dark:text-[#bdc1c6] line-clamp-2">
-        {truncate(result.description, 240)}
-      </p>
-    </a>
+        {/* Snippet */}
+        <p className="text-[13.5px] sm:text-[14px] leading-[21px] sm:leading-[22px] text-text-secondary dark:text-[#bdc1c6] line-clamp-2">
+          {truncate(result.description, 240)}
+        </p>
+      </a>
+    </div>
   );
 }

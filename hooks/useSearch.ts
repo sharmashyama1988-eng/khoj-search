@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { useState, useCallback, useRef } from 'react';
 import type { SearchResult, ImageResult, BookResult, ArxivResult, GithubResult, WikiPanel, SearchTab } from '@/types';
 
@@ -24,6 +24,8 @@ export function useSearch() {
 
   const search = useCallback(async (query: string, lang: string, tab: SearchTab) => {
     if (!query.trim()) return;
+
+    // Abort previous in-flight request to prevent race condition
     abortRef.current?.abort();
     abortRef.current = new AbortController();
     const { signal } = abortRef.current;
@@ -39,14 +41,18 @@ export function useSearch() {
           fetch(`/api/web?q=${encodeURIComponent(query)}&lang=${lang}`, { signal })
             .then((r) => r.json())
             .then((d: { results?: SearchResult[] }) => {
-              setState((s) => ({ ...s, results: d.results ?? [] }));
+              if (!signal.aborted) {
+                setState((s) => ({ ...s, results: d.results ?? [] }));
+              }
             })
             .catch(() => {}),
 
           fetch(`/api/wikipedia?q=${encodeURIComponent(query)}&lang=${lang}&type=panel`, { signal })
             .then((r) => r.json())
             .then((d: { panel?: WikiPanel | null }) => {
-              setState((s) => ({ ...s, wikiPanel: d.panel ?? null }));
+              if (!signal.aborted) {
+                setState((s) => ({ ...s, wikiPanel: d.panel ?? null }));
+              }
             })
             .catch(() => {}),
         );
@@ -57,7 +63,9 @@ export function useSearch() {
           fetch(`/api/images?q=${encodeURIComponent(query)}&lang=${lang}`, { signal })
             .then((r) => r.json())
             .then((d: { results?: ImageResult[] }) => {
-              setState((s) => ({ ...s, images: d.results ?? [] }));
+              if (!signal.aborted) {
+                setState((s) => ({ ...s, images: d.results ?? [] }));
+              }
             })
             .catch(() => {}),
         );
@@ -68,7 +76,9 @@ export function useSearch() {
           fetch(`/api/books?q=${encodeURIComponent(query)}`, { signal })
             .then((r) => r.json())
             .then((d: { results?: BookResult[] }) => {
-              setState((s) => ({ ...s, books: d.results ?? [] }));
+              if (!signal.aborted) {
+                setState((s) => ({ ...s, books: d.results ?? [] }));
+              }
             })
             .catch(() => {}),
         );
@@ -79,7 +89,9 @@ export function useSearch() {
           fetch(`/api/arxiv?q=${encodeURIComponent(query)}`, { signal })
             .then((r) => r.json())
             .then((d: { results?: ArxivResult[] }) => {
-              setState((s) => ({ ...s, arxiv: d.results ?? [] }));
+              if (!signal.aborted) {
+                setState((s) => ({ ...s, arxiv: d.results ?? [] }));
+              }
             })
             .catch(() => {}),
         );
@@ -90,7 +102,9 @@ export function useSearch() {
           fetch(`/api/github?q=${encodeURIComponent(query)}`, { signal })
             .then((r) => r.json())
             .then((d: { results?: GithubResult[] }) => {
-              setState((s) => ({ ...s, github: d.results ?? [] }));
+              if (!signal.aborted) {
+                setState((s) => ({ ...s, github: d.results ?? [] }));
+              }
             })
             .catch(() => {}),
         );
@@ -100,7 +114,7 @@ export function useSearch() {
     } catch (e) {
       if (!signal.aborted) setState((s) => ({ ...s, error: String(e) }));
     } finally {
-      if (!signal?.aborted) setState((s) => ({ ...s, loading: false }));
+      if (!signal.aborted) setState((s) => ({ ...s, loading: false }));
     }
   }, []);
 

@@ -1,4 +1,5 @@
 ﻿import { NextRequest, NextResponse } from 'next/server';
+import { applyReciprocalRankFusion, hybridReRank } from '@/lib/rerank';
 
 export const runtime = 'edge';
 
@@ -55,74 +56,6 @@ function getSourceBadge(domain: string): string {
   if (d.includes('twitter.com') || d.includes('x.com')) return 'X / Twitter';
   if (d.includes('linkedin.com')) return 'LinkedIn';
   return domain;
-}
-
-function extractQueryTokens(query: string): string[] {
-  return query
-    .toLowerCase()
-    .replace(/^https?:\/\//i, '')
-    .replace(/^www\./i, '')
-    .replace(/\.(com|org|net|io|co|in|edu|gov|dev|ai|app)/gi, ' ')
-    .replace(/[^\w\s]/gi, ' ')
-    .split(/\s+/)
-    .filter((w) => w.length >= 2);
-}
-
-function computeEnterpriseRelevancyScore(
-  rawQuery: string,
-  title: string,
-  description: string,
-  domain: string,
-  sourceType: string
-): number {
-  const queryTokens = extractQueryTokens(rawQuery);
-  const cleanQ = queryTokens.join(' ');
-  const cleanTitle = title.toLowerCase();
-  const cleanDesc = description.toLowerCase();
-  const cleanDomain = domain.toLowerCase();
-
-  let score = 50;
-
-  if (queryTokens.some((t) => cleanDomain.includes(t))) {
-    score += 150;
-  }
-  if (cleanQ && cleanTitle.includes(cleanQ)) {
-    score += 120;
-  }
-  if (cleanQ && cleanDesc.includes(cleanQ)) {
-    score += 60;
-  }
-
-  let matchedTokens = 0;
-  queryTokens.forEach((token) => {
-    let hit = false;
-    if (cleanTitle.includes(token)) {
-      score += 35;
-      hit = true;
-    }
-    if (cleanDesc.includes(token)) {
-      score += 15;
-      hit = true;
-    }
-    if (cleanDomain.includes(token)) {
-      score += 25;
-      hit = true;
-    }
-    if (hit) matchedTokens++;
-  });
-
-  if (sourceType === 'direct') score += 300;
-  if (sourceType === 'duckduckgo') score += 40;
-  if (sourceType === 'reddit') score += 30;
-  if (sourceType === 'stackoverflow') score += 35;
-  if (sourceType === 'github') score += 35;
-  if (sourceType === 'quora') score += 25;
-
-  if (cleanDomain.includes('wikipedia.org')) {
-    score = Math.min(score, 180);
-  }
-
-  return score;
 }
 
 function resolveDirectPortal(query: string): WebSearchResult | null {
@@ -530,85 +463,27 @@ export async function GET(req: NextRequest) {
     ];
 
     const fetchedBatches = await Promise.allSettled(promises);
-    const combined: WebSearchResult[] = [];
-    const seenUrls = new Set<string>();
+    const rankedEngineLists: WebSearchResult[][] = [];
 
     if (directPortal) {
-      seenUrls.add(directPortal.url);
-      combined.push(directPortal);
+      rankedEngineLists.push([directPortal]);
     }
 
-    fetchedBatches.forEach((batch, bIdx) => {
-      if (batch.status === 'fulfilled') {
-        const sourceName = ['duckduckgo', 'duckduckgo_api', 'reddit', 'quora', 'stackoverflow', 'github', 'wikipedia'][bIdx];
-        batch.value.forEach((item) => {
-          const cleanUrl = item.url.replace(/\/$/, '');
-          if (!seenUrls.has(cleanUrl)) {
-            seenUrls.add(cleanUrl);
-            const score = computeEnterpriseRelevancyScore(query, item.title, item.description, item.domain, sourceName);
-            combined.push({ ...item, score });
-          }
-        });
+    fetchedBatches.forEach((batch) => {
+      if (batch.status === 'fulfilled' && batch.value.length > 0) {
+        rankedEngineLists.push(batch.value);
       }
     });
 
-    if (combined.length < 5) {
-      const qTokens = extractQueryTokens(query);
-      const qClean = qTokens.join('+') || encodeURIComponent(query);
-      const fallbacks: WebSearchResult[] = [
-        {
-          id: `fb-yt`,
-          title: `${query} — Videos & Live Streams on YouTube`,
-          url: `https://www.youtube.com/results?search_query=${qClean}`,
-          description: `Watch official video tutorials, clips, reviews, and explanations for "${query}" on YouTube.`,
-          source: 'YouTube',
-          domain: 'youtube.com',
-          favicon: 'https://www.google.com/s2/favicons?domain=youtube.com&sz=32',
-          badge: 'YouTube',
-          score: 80,
-        },
-        {
-          id: `fb-gh`,
-          title: `${query} — Open Source Repositories on GitHub`,
-          url: `https://github.com/search?q=${qClean}`,
-          description: `Explore open-source libraries, CLI tools, scripts, and code implementations related to ${query}.`,
-          source: 'GitHub',
-          domain: 'github.com',
-          favicon: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
-          badge: 'GitHub',
-          score: 75,
-        },
-        {
-          id: `fb-reddit`,
-          title: `${query} — Community Discussions on Reddit`,
-          url: `https://www.reddit.com/search/?q=${qClean}`,
-          description: `Read real user reviews, recommendations, and troubleshooting threads about "${query}" on Reddit.`,
-          source: 'Reddit',
-          domain: 'reddit.com',
-          favicon: 'https://www.google.com/s2/favicons?domain=reddit.com&sz=32',
-          badge: 'Reddit',
-          score: 70,
-        }
-      ];
+    // 1. Reciprocal Rank Fusion (RRF) across multi-engine lists
+    const fusedCandidates = applyReciprocalRankFusion(rankedEngineLists, 60);
 
-      fallbacks.forEach((fb) => {
-        if (!seenUrls.has(fb.url)) {
-          seenUrls.add(fb.url);
-          combined.push(fb);
-        }
-      });
-    }
-
-    combined.sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
-
-    const finalResults = combined.slice(0, limit).map((item, index) => ({
-      ...item,
-      rank: index + 1,
-    }));
+    // 2. Hybrid Lexical (BM25+) + Contextual Re-Ranker
+    const rankedResults = hybridReRank(query, fusedCandidates, limit);
 
     return NextResponse.json({
-      results: finalResults,
-      total: finalResults.length,
+      results: rankedResults,
+      total: rankedResults.length,
       query,
     });
   } catch (e) {
