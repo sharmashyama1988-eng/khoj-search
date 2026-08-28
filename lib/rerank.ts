@@ -283,8 +283,13 @@ export function hybridReRank(
       score += 480;
     }
 
-    if (item.badge === '🔴 Live News') {
-      score += 320;
+    // News is ONLY boosted if the user specifically asked for news/recent updates
+    if (item.badge === '🔴 Live News' || item.domain === 'news.google.com' || (item.source && item.source.toLowerCase().includes('news'))) {
+      if (intent.isNewsOrFresh) {
+        score += 280;
+      } else {
+        score -= 350; // De-prioritize news on general/factual/educational searches!
+      }
     }
 
     // Filter out distractor noise on math queries
@@ -294,15 +299,15 @@ export function hybridReRank(
       }
     }
 
-    // 7. Temporal Recency & Real-Time Freshness
-    const isCurrentYear = fullItemText.includes('2026') || fullItemText.includes('2025');
-    const isLiveTimeIndicator = ['today', 'hours ago', 'mins ago', 'just now', 'breaking', 'live news'].some((kw) => fullItemText.includes(kw));
-
-    if (isCurrentYear || isLiveTimeIndicator) {
-      score += 220;
-    }
-
+    // 7. Temporal Recency & Real-Time Freshness (Only active for news or date-specific queries)
     if (intent.isNewsOrFresh) {
+      const isCurrentYear = fullItemText.includes('2026') || fullItemText.includes('2025');
+      const isLiveTimeIndicator = ['today', 'hours ago', 'mins ago', 'just now', 'breaking', 'live news'].some((kw) => fullItemText.includes(kw));
+
+      if (isCurrentYear || isLiveTimeIndicator) {
+        score += 200;
+      }
+
       const isAncient = ['2015', '2016', '2017', '2018', '2019', '2020'].some((y) => fullItemText.includes(y));
       if (isAncient && !isCurrentYear) {
         score -= 200;
@@ -383,9 +388,9 @@ export function hybridReRank(
       }
     }
 
-    // General Source Priors
-    if (item.source === 'Wikipedia' && (queryTokens.length <= 2 || query.toLowerCase().includes('what is') || query.toLowerCase().includes('history'))) {
-      score += 80;
+    // General Source Priors (Encyclopedias, General web & Knowledge)
+    if (item.source === 'Wikipedia' && (queryTokens.length <= 2 || query.toLowerCase().includes('what is') || query.toLowerCase().includes('history') || query.toLowerCase().includes('kaun') || query.toLowerCase().includes('kya'))) {
+      score += 160;
     }
 
     return {
@@ -396,7 +401,31 @@ export function hybridReRank(
 
   scored.sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
 
-  return scored.slice(0, maxResults).map((item, idx) => ({
+  // 8. Domain Diversity Filter (Max 2 results per domain to ensure wide web variety)
+  const domainCounts = new Map<string, number>();
+  const diversified: SearchResult[] = [];
+
+  for (const item of scored) {
+    const d = item.domain || 'web';
+    const count = domainCounts.get(d) || 0;
+    if (count < 2) {
+      domainCounts.set(d, count + 1);
+      diversified.push(item);
+    }
+    if (diversified.length >= maxResults) break;
+  }
+
+  // If diversity filter left fewer than maxResults, fill up with remaining items
+  if (diversified.length < maxResults) {
+    for (const item of scored) {
+      if (!diversified.some((existing) => existing.url === item.url)) {
+        diversified.push(item);
+      }
+      if (diversified.length >= maxResults) break;
+    }
+  }
+
+  return diversified.map((item, idx) => ({
     ...item,
     rank: idx + 1,
   }));

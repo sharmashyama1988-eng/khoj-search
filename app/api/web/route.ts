@@ -221,7 +221,33 @@ async function fetchGoogleNewsLive(query: string, lang = 'en'): Promise<WebSearc
     const items = xml.match(/<item>([\s\S]*?)<\/item>/g) || [];
 
     const results: WebSearchResult[] = [];
-    items.slice(0, 8).forEach((item, idx) => {
+    const KNOWN_NEWS_DOMAINS: Record<string, string> = {
+      'aaj tak': 'aajtak.in',
+      'ndtv': 'ndtv.com',
+      'times of india': 'timesofindia.indiatimes.com',
+      'hindustan times': 'hindustantimes.com',
+      'hindustan': 'livehindustan.com',
+      'bbc': 'bbc.com',
+      'the hindu': 'thehindu.com',
+      'indian express': 'indianexpress.com',
+      'dainik jagran': 'jagran.com',
+      'jagran': 'jagran.com',
+      'amar ujala': 'amarujala.com',
+      'navbharat times': 'navbharattimes.indiatimes.com',
+      'dainik bhaskar': 'bhaskar.com',
+      'bhaskar': 'bhaskar.com',
+      'news18': 'news18.com',
+      'zee news': 'zeenews.india.com',
+      'abp news': 'abplive.com',
+      'livemint': 'livemint.com',
+      'moneycontrol': 'moneycontrol.com',
+      'reuters': 'reuters.com',
+      'bloomberg': 'bloomberg.com',
+      'al jazeera': 'aljazeera.com',
+      'cnn': 'cnn.com',
+    };
+
+    items.slice(0, 4).forEach((item, idx) => {
       const titleMatch = item.match(/<title>([\s\S]*?)<\/title>/);
       const linkMatch = item.match(/<link>([\s\S]*?)<\/link>/);
       const dateMatch = item.match(/<pubDate>([\s\S]*?)<\/pubDate>/);
@@ -229,10 +255,23 @@ async function fetchGoogleNewsLive(query: string, lang = 'en'): Promise<WebSearc
 
       if (titleMatch && linkMatch) {
         const fullTitle = decodeHtml(titleMatch[1]);
-        const sourceName = sourceMatch ? decodeHtml(sourceMatch[1]) : 'Live News';
+        const sourceName = sourceMatch ? decodeHtml(sourceMatch[1]) : 'News';
+        const sourceLower = sourceName.toLowerCase();
+        
+        let publisherDomain = 'news.google.com';
+        for (const [sKey, dVal] of Object.entries(KNOWN_NEWS_DOMAINS)) {
+          if (sourceLower.includes(sKey)) {
+            publisherDomain = dVal;
+            break;
+          }
+        }
+        if (publisherDomain === 'news.google.com' && sourceName.includes('.')) {
+          publisherDomain = sourceName.toLowerCase().replace(/\s+/g, '');
+        }
+
         const dateStr = dateMatch
           ? new Date(dateMatch[1]).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
-          : 'Today';
+          : 'Latest';
 
         results.push({
           id: `news-${idx}-${Math.random().toString(36).slice(2, 6)}`,
@@ -240,11 +279,11 @@ async function fetchGoogleNewsLive(query: string, lang = 'en'): Promise<WebSearc
           url: linkMatch[1].trim(),
           description: `Latest coverage from ${sourceName} (${dateStr}).`,
           source: sourceName,
-          domain: 'news.google.com',
-          favicon: `https://www.google.com/s2/favicons?domain=google.com&sz=32`,
+          domain: publisherDomain,
+          favicon: `https://www.google.com/s2/favicons?domain=${publisherDomain}&sz=32`,
           badge: '🔴 Live News',
           date: dateStr,
-          score: 850,
+          score: 120,
         });
       }
     });
