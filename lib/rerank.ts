@@ -57,7 +57,6 @@ export function applyReciprocalRankFusion(
 
 // ─────────────────────────────────────────────────────────────────────────────
 // 2. BM25+ (Multi-Field BM25F with Lower-Bound Delta Boost)
-// Formula: Score(D, Q) = Sum_i [ IDF(q_i) * ( (k1 + 1) * TF / (TF + k1*(1 - b + b*(|D|/avgDL))) + δ ) ]
 // ─────────────────────────────────────────────────────────────────────────────
 function computeBM25PlusScore(
   queryTokens: string[],
@@ -131,7 +130,6 @@ function computeVectorCosineSimilarity(query: string, text: string): number {
   return Math.min(1.0, Math.max(0.0, cosine));
 }
 
-// Token Overlap Ratio
 function computeTokenOverlap(queryTokens: string[], docTokens: string[]): number {
   if (queryTokens.length === 0) return 0;
   const docSet = new Set(docTokens);
@@ -181,7 +179,12 @@ function detectQueryIntent(query: string, tokens: string[]) {
     'news', 'latest', 'today', 'update', 'current', '2026', '2025', 'breaking', 'live'
   ].some((kw) => q.includes(kw));
 
-  return { isNavigational, isDocs, isErrorOrDebug, isFinancialOrPricing, isProduct, isCommunity, isNewsOrFresh };
+  const isMathQuery = [
+    'square', 'cube', 'formula', 'identity', 'theorem', 'algebra', 'pythagoras',
+    'quadratic', 'equation', 'expansion', 'factorization', 'calculus', 'matrix'
+  ].some((kw) => q.includes(kw));
+
+  return { isNavigational, isDocs, isErrorOrDebug, isFinancialOrPricing, isProduct, isCommunity, isNewsOrFresh, isMathQuery };
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -266,9 +269,20 @@ export function hybridReRank(
       score += 140;
     }
 
-    // 6. Authority Priors
+    // 6. Authority Priors & Verified Badges
     if (item.badge === 'Official Site' || item.badge === 'Direct URL') {
       score += 550;
+    }
+
+    if (item.badge === 'Verified Math' || item.badge === 'Math Identity') {
+      score += 700;
+    }
+
+    // Filter out distractor noise on math queries
+    if (intent.isMathQuery) {
+      if (titleLower.includes('whole foods') || domainLower.includes('wholefoods')) {
+        score -= 600;
+      }
     }
 
     // 7. Temporal Recency & Real-Time Freshness
@@ -286,7 +300,7 @@ export function hybridReRank(
     if (intent.isNewsOrFresh) {
       const isAncient = ['2015', '2016', '2017', '2018', '2019', '2020'].some((y) => fullItemText.includes(y));
       if (isAncient && !isCurrentYear) {
-        score -= 200; // Strong penalty on stale historical pages
+        score -= 200;
       }
     }
 

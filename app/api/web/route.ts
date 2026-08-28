@@ -1,5 +1,6 @@
 ﻿import { NextRequest, NextResponse } from 'next/server';
 import { applyReciprocalRankFusion, hybridReRank } from '@/lib/rerank';
+import { resolveInstantMathOrFact } from '@/lib/knowledge';
 
 export const runtime = 'edge';
 
@@ -57,6 +58,23 @@ function getSourceBadge(domain: string): string {
   if (d.includes('twitter.com') || d.includes('x.com')) return 'X / Twitter';
   if (d.includes('linkedin.com')) return 'LinkedIn';
   return domain;
+}
+
+function resolveInstantKnowledgeResult(query: string): WebSearchResult | null {
+  const match = resolveInstantMathOrFact(query);
+  if (!match) return null;
+
+  return {
+    id: `instant-knowledge-${Math.random().toString(36).slice(2, 7)}`,
+    title: `${match.title} — Exact Formula, Derivation & Geometric Proof`,
+    url: 'https://en.wikipedia.org/wiki/Algebraic_identity',
+    description: match.extract,
+    source: 'Verified Knowledge',
+    domain: 'math.khoj.org',
+    favicon: 'https://www.google.com/s2/favicons?domain=wikipedia.org&sz=32',
+    badge: 'Verified Math',
+    score: 1000,
+  };
 }
 
 function resolveDirectPortal(query: string): WebSearchResult | null {
@@ -193,7 +211,6 @@ async function fetchDuckDuckGoWeb(query: string): Promise<WebSearchResult[]> {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), 4000);
 
-    // Using df=y (Past Year) to eliminate 5-10 year old legacy results
     const res = await fetch(`https://html.duckduckgo.com/html/?q=${encodeURIComponent(query)}&df=y`, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
@@ -462,6 +479,7 @@ export async function GET(req: NextRequest) {
 
   try {
     const directPortal = resolveDirectPortal(query);
+    const instantKnowledge = resolveInstantKnowledgeResult(query);
 
     const promises = [
       fetchGoogleNewsLive(query, lang),
@@ -476,6 +494,9 @@ export async function GET(req: NextRequest) {
     const fetchedBatches = await Promise.allSettled(promises);
     const rankedEngineLists: WebSearchResult[][] = [];
 
+    if (instantKnowledge) {
+      rankedEngineLists.push([instantKnowledge]);
+    }
     if (directPortal) {
       rankedEngineLists.push([directPortal]);
     }
