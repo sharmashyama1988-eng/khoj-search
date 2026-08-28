@@ -1,4 +1,4 @@
-﻿import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { applyReciprocalRankFusion, hybridReRank } from '@/lib/rerank';
 import { resolveInstantMathOrFact } from '@/lib/knowledge';
 
@@ -64,15 +64,26 @@ function resolveInstantKnowledgeResult(query: string): WebSearchResult | null {
   const match = resolveInstantMathOrFact(query);
   if (!match) return null;
 
+  const isMath = match.type === 'math_identity';
+  const isScience = match.type === 'science_constant' || match.type === 'math_constant';
+  const isBiography = match.type === 'direct_fact';
+
+  const badge = isMath ? 'Verified Math' : isScience ? 'Science Constant' : isBiography ? 'Biography' : 'Knowledge';
+  const domain = isMath ? 'math.wikipedia.org' : 'en.wikipedia.org';
+  const entitySlug = match.title.split(' — ')[0].replace(/ /g, '_');
+  const url = isMath
+    ? 'https://en.wikipedia.org/wiki/Algebraic_identity'
+    : `https://en.wikipedia.org/wiki/${encodeURIComponent(entitySlug)}`;
+
   return {
     id: `instant-knowledge-${Math.random().toString(36).slice(2, 7)}`,
-    title: `${match.title} — Exact Formula, Derivation & Geometric Proof`,
-    url: 'https://en.wikipedia.org/wiki/Algebraic_identity',
+    title: isMath ? `${match.title} — Exact Formula, Derivation & Geometric Proof` : match.title,
+    url,
     description: match.extract,
-    source: 'Verified Knowledge',
-    domain: 'math.khoj.org',
+    source: match.source || 'Knowledge Graph',
+    domain,
     favicon: 'https://www.google.com/s2/favicons?domain=wikipedia.org&sz=32',
-    badge: 'Verified Math',
+    badge,
     score: 1000,
   };
 }

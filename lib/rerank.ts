@@ -1,4 +1,4 @@
-﻿import type { SearchResult } from '@/types';
+import type { SearchResult } from '@/types';
 
 export interface RankedSourceItem {
   result: SearchResult;
@@ -274,7 +274,7 @@ export function hybridReRank(
       score += 550;
     }
 
-    if (item.badge === 'Verified Math' || item.badge === 'Math Identity') {
+    if (item.badge === 'Verified Math' || item.badge === 'Math Identity' || item.badge === 'Biography' || item.badge === 'Science Constant' || item.badge === 'Knowledge') {
       score += 700;
     }
 
