@@ -12,21 +12,10 @@ interface SummaryData {
   image?: string;
   url: string;
   type: 'wikipedia' | 'duckduckgo' | 'ai_synthesis';
+  model?: string;
 }
 
 interface Props { query: string }
-
-function extractTopic(rawQuery: string): string {
-  return rawQuery
-    .replace(/^(define|definition of|meaning of|what is|what does|search|explain|tell me about|who is|how to)\s+/i, '')
-    .replace(/\s+(meaning|definition|ka matlab|matlab|wiki|wikipedia)$/i, '')
-    .replace(/\bsite:[^\s]+/gi, '')
-    .replace(/\bfiletype:[^\s]+/gi, '')
-    .replace(/^https?:\/\//i, '')
-    .replace(/^www\./i, '')
-    .replace(/\.(com|org|net|io|co|in|edu|gov|dev|ai|app)/gi, '')
-    .trim() || rawQuery;
-}
 
 export function SummaryCard({ query }: Props) {
   const { lang } = useLanguage();
@@ -40,26 +29,19 @@ export function SummaryCard({ query }: Props) {
     setData(null);
     setExpanded(false);
 
-    const topic = extractTopic(query);
-    const wikiBase = `https://${lang}.wikipedia.org`;
-
-    // 1. Direct Wikipedia page summary
-    const summaryUrl = `${wikiBase}/api/rest_v1/page/summary/${encodeURIComponent(topic.replace(/ /g, '_'))}`;
-
-    fetch(summaryUrl)
+    // 1. Primary AI Intelligence Endpoint (Powered by OpenRouter AI)
+    fetch(`/api/summary?q=${encodeURIComponent(query)}&lang=${lang}`)
       .then((r) => (r.ok ? r.json() : null))
-      .then(async (wikiData) => {
-        if (wikiData && wikiData.type !== 'disambiguation' && wikiData.extract && wikiData.extract.length > 60) {
-          const sentences = wikiData.extract.split(/(?<=[.!?])\s+/).filter(Boolean);
-          const keyPoints = sentences.length > 2 ? sentences.slice(0, 3) : undefined;
-
+      .then(async (summaryRes) => {
+        if (summaryRes && summaryRes.extract && summaryRes.extract.length > 30) {
           setData({
-            title: wikiData.title,
-            extract: wikiData.extract,
-            keyPoints,
-            image: wikiData.thumbnail?.source,
-            url: wikiData.content_urls?.desktop?.page ?? '#',
-            type: 'wikipedia',
+            title: summaryRes.title || query,
+            extract: summaryRes.extract,
+            keyPoints: summaryRes.keyPoints,
+            image: summaryRes.image,
+            url: summaryRes.url || '#',
+            type: summaryRes.type || 'ai_synthesis',
+            model: summaryRes.model || 'OpenRouter AI',
           });
           setLoading(false);
           return;
@@ -74,13 +56,12 @@ export function SummaryCard({ query }: Props) {
               Heading?: string;
               AbstractURL?: string;
               Image?: string;
-              RelatedTopics?: Array<{ Text?: string; FirstURL?: string }>;
             };
 
             if (ddgData.AbstractText) {
               const sentences = ddgData.AbstractText.split(/(?<=[.!?])\s+/).filter(Boolean);
               setData({
-                title: ddgData.Heading || topic,
+                title: ddgData.Heading || query,
                 extract: ddgData.AbstractText,
                 keyPoints: sentences.length > 2 ? sentences.slice(0, 3) : undefined,
                 image: ddgData.Image ? `https://duckduckgo.com${ddgData.Image}` : undefined,
@@ -93,22 +74,7 @@ export function SummaryCard({ query }: Props) {
           }
         } catch {}
 
-        // 3. Fallback to Wikipedia Opensearch
-        const searchUrl = `${wikiBase}/w/api.php?action=opensearch&search=${encodeURIComponent(topic)}&limit=1&namespace=0&format=json&origin=*`;
-        const res = await fetch(searchUrl);
-        const json = await res.json() as [string, string[], string[], string[]];
-        const [,, descriptions, urls] = json;
-
-        if (descriptions?.[0] && descriptions[0].length > 30) {
-          setData({
-            title: json[1][0] ?? topic,
-            extract: descriptions[0],
-            url: urls?.[0] ?? '#',
-            type: 'wikipedia',
-          });
-        } else {
-          setData(null);
-        }
+        setData(null);
       })
       .catch(() => setData(null))
       .finally(() => setLoading(false));
@@ -132,24 +98,24 @@ export function SummaryCard({ query }: Props) {
 
   if (!data) return null;
 
-  const SHORT = 260;
+  const SHORT = 280;
   const isLong = data.extract.length > SHORT;
   const displayText = expanded || !isLong ? data.extract : truncate(data.extract, SHORT);
 
   return (
-    <div className="rounded-2xl border border-indigo-500/20 bg-surface-2/90 backdrop-blur-xl
-      overflow-hidden mb-5 animate-slide-up shadow-lg shadow-black/5">
+    <div className="rounded-2xl border border-indigo-500/25 bg-surface-2/95 backdrop-blur-xl
+      overflow-hidden mb-5 animate-slide-up shadow-xl shadow-black/5">
       {/* Header strip */}
-      <div className="flex items-center gap-3 px-4 sm:px-5 py-2.5 border-b border-border/60 bg-surface-3/30">
+      <div className="flex items-center gap-3 px-4 sm:px-5 py-2.5 border-b border-border/60 bg-gradient-to-r from-indigo-500/10 via-purple-500/10 to-transparent">
         <div className="flex items-center gap-2">
           <span className="text-indigo-400 text-sm animate-pulse">✦</span>
-          <span className="text-xs font-semibold uppercase tracking-widest text-indigo-400">
+          <span className="text-xs font-bold uppercase tracking-widest text-indigo-400">
             AI Overview & Answer
           </span>
         </div>
         <div className="ml-auto flex items-center gap-2">
-          <span className="text-[11px] text-text-muted font-medium bg-surface-3 px-2 py-0.5 rounded-full border border-border/50 hidden sm:inline-block">
-            {data.type === 'wikipedia' ? '📖 Knowledge Graph' : '🦆 Instant Intelligence'}
+          <span className="text-[11px] text-indigo-300 font-medium bg-indigo-500/15 px-2.5 py-0.5 rounded-full border border-indigo-500/20 hidden sm:inline-block">
+            {data.type === 'ai_synthesis' ? '⚡ OpenRouter Neural AI' : '📖 Knowledge Graph'}
           </span>
           <TTSButton text={data.extract} lang={lang} size="sm" />
           <CopyButton text={data.extract} />
@@ -172,22 +138,22 @@ export function SummaryCard({ query }: Props) {
         )}
 
         <div className="flex-1 min-w-0">
-          <h3 className="font-semibold text-text-primary text-[17px] mb-1.5 flex items-center gap-2">
+          <h3 className="font-bold text-text-primary text-[17px] mb-1.5 flex items-center gap-2">
             {data.title}
           </h3>
 
-          <p className="text-text-secondary text-sm leading-relaxed">
+          <div className="text-text-primary text-sm sm:text-base leading-relaxed whitespace-pre-wrap">
             {displayText}
-          </p>
+          </div>
 
           {/* Quick Key Takeaways */}
-          {data.keyPoints && data.keyPoints.length > 1 && (
-            <div className="mt-3 space-y-1 bg-surface-3/40 p-2.5 rounded-lg border border-border/40">
-              <span className="text-[11px] font-semibold text-indigo-400 uppercase tracking-wider block mb-1">
-                Key Insights:
+          {data.keyPoints && data.keyPoints.length > 0 && (
+            <div className="mt-3 space-y-1.5 bg-surface-3/50 p-3 rounded-xl border border-border/50">
+              <span className="text-[11px] font-bold text-indigo-400 uppercase tracking-wider block mb-1">
+                Key Highlights:
               </span>
               {data.keyPoints.map((point, idx) => (
-                <div key={idx} className="flex items-start gap-2 text-xs text-text-muted">
+                <div key={idx} className="flex items-start gap-2 text-xs text-text-secondary">
                   <span className="text-indigo-400 font-bold">•</span>
                   <span>{point}</span>
                 </div>
@@ -199,7 +165,7 @@ export function SummaryCard({ query }: Props) {
             <button
               type="button"
               onClick={() => setExpanded(!expanded)}
-              className="mt-2 text-xs font-medium text-indigo-400 hover:underline inline-block cursor-pointer"
+              className="mt-2 text-xs font-semibold text-indigo-400 hover:underline inline-block cursor-pointer"
             >
               {expanded ? 'Show less ▲' : 'Read full answer ▼'}
             </button>
