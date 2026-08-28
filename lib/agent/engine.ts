@@ -1,4 +1,4 @@
-﻿import type { SearchResult } from '@/types';
+import type { SearchResult } from '@/types';
 import { resolveInstantMathOrFact } from '@/lib/knowledge';
 
 export interface AgentStep {
@@ -28,13 +28,13 @@ export interface AgentRunOptions {
   allowedTools?: string[];
 }
 
+import { fetchOpenRouterChat } from '@/lib/openrouter_pool';
+
 interface AgentDataPayload {
   price?: { title: string; mainPrice: string; subtitle: string; variants?: Array<{ label: string; price: string }> };
   translation?: string;
   [key: string]: unknown;
 }
-
-const OPENROUTER_KEY = process.env.OPENROUTER_API_KEY || '';
 
 export async function runKhojAgent(options: AgentRunOptions): Promise<AgentExecutionResult> {
   const startTime = Date.now();
@@ -149,25 +149,13 @@ export async function runKhojAgent(options: AgentRunOptions): Promise<AgentExecu
     ...sources.slice(0, 6).map((s, idx) => `[Source ${idx + 1} - ${s.title} (${s.domain})]: ${s.description}`),
   ].filter(Boolean).join('\n');
 
-  if (OPENROUTER_KEY) {
-    try {
-      const controller = new AbortController();
-      const timer = setTimeout(() => controller.abort(), 6500);
-
-      const openRouterRes = await fetch('https://openrouter.ai/api/v1/chat/completions', {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${OPENROUTER_KEY}`,
-          'Content-Type': 'application/json',
-          'HTTP-Referer': 'https://khoj-dun.vercel.app',
-          'X-Title': 'Khoj Autonomous Agent',
-        },
-        body: JSON.stringify({
-          model: 'openrouter/auto',
-          messages: [
-            {
-              role: 'system',
-              content: `You are Khoj Autonomous AI Agent, an ultra-intelligent, accurate search intelligence engine.
+  try {
+    const { data, usedKeyMasked } = await fetchOpenRouterChat({
+      model: 'openrouter/auto',
+      messages: [
+        {
+          role: 'system',
+          content: `You are Khoj Autonomous AI Agent, an ultra-intelligent, accurate search intelligence engine.
 Answer the user query with maximum accuracy and clarity.
 - If it is a mathematical formula or expression (e.g. "a+b whole square"), write out the exact formula (a + b)² = a² + 2ab + b², its algebraic step-by-step expansion, and its geometric meaning.
 - If it is a price/commodity/gadget query, state the exact verified prices and specs from the retrieved data.
@@ -175,46 +163,38 @@ Answer the user query with maximum accuracy and clarity.
 Structure your response as:
 1. A concise, clear direct answer paragraph.
 2. A section "KEY_INSIGHTS:" containing exactly 3-4 bullet points starting with "• ".`,
-            },
-            {
-              role: 'user',
-              content: `User Query: "${query}" (Language: ${lang})\n\nRetrieved Grounding Facts:\n${groundingFacts || 'No prior facts needed for general query.'}`,
-            },
-          ],
-          max_tokens: 450,
-          temperature: 0.2,
-        }),
-        signal: controller.signal,
-      });
-      clearTimeout(timer);
+        },
+        {
+          role: 'user',
+          content: `User Query: "${query}" (Language: ${lang})\n\nRetrieved Grounding Facts:\n${groundingFacts || 'No prior facts needed for general query.'}`,
+        },
+      ],
+      max_tokens: 450,
+      temperature: 0.2,
+    }, 6500);
 
-      if (openRouterRes.ok) {
-        const data = await openRouterRes.json() as { choices?: Array<{ message?: { content?: string } }> };
-        const content = data.choices?.[0]?.message?.content || '';
+    const content = data?.choices?.[0]?.message?.content || '';
+    if (content.trim()) {
+      const parts = content.split(/KEY_INSIGHTS:|\n(?=•|\-)/i);
+      directAnswer = parts[0]?.trim() || content;
+      const rawKeyPoints = parts.slice(1).join('\n')
+        .split('\n')
+        .map((line) => line.replace(/^[•\-\*\s]+/, '').trim())
+        .filter((line) => line.length > 5);
 
-        if (content.trim()) {
-          const parts = content.split(/KEY_INSIGHTS:|\n(?=•|\-)/i);
-          directAnswer = parts[0]?.trim() || content;
-          const rawKeyPoints = parts.slice(1).join('\n')
-            .split('\n')
-            .map((line) => line.replace(/^[•\-\*\s]+/, '').trim())
-            .filter((line) => line.length > 5);
-
-          if (rawKeyPoints.length > 0) {
-            keyInsights.push(...rawKeyPoints.slice(0, 4));
-          }
-
-          steps.push({
-            step: steps.length + 1,
-            toolName: 'OpenRouterNeuralSynthesizer',
-            action: 'Synthesized grounded, fact-checked response using OpenRouter AI',
-            outputSummary: `Generated AI direct answer with ${keyInsights.length} key insights`,
-            timestamp: new Date().toISOString(),
-          });
-        }
+      if (rawKeyPoints.length > 0) {
+        keyInsights.push(...rawKeyPoints.slice(0, 4));
       }
-    } catch {}
-  }
+
+      steps.push({
+        step: steps.length + 1,
+        toolName: 'OpenRouterNeuralSynthesizer',
+        action: `Synthesized grounded, fact-checked response using OpenRouter AI [${usedKeyMasked}]`,
+        outputSummary: `Generated AI direct answer with ${keyInsights.length} key insights`,
+        timestamp: new Date().toISOString(),
+      });
+    }
+  } catch {}
 
   // Local fallback if OpenRouter is unconfigured or unreachable
   if (!directAnswer) {
