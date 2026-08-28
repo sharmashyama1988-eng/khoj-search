@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { applyReciprocalRankFusion, hybridReRank } from '@/lib/rerank';
 import { resolveInstantMathOrFact } from '@/lib/knowledge';
+import { resolveDNSDomain } from '@/lib/dns_resolver';
 
 export const runtime = 'edge';
 
@@ -571,6 +572,7 @@ export async function GET(req: NextRequest) {
   try {
     const directPortal = resolveDirectPortal(query);
     const instantKnowledge = resolveInstantKnowledgeResult(query);
+    const dnsDomainResult = resolveDNSDomain(query);
 
     const promises = [
       fetchGoogleCustomSearch(query, lang),
@@ -586,6 +588,9 @@ export async function GET(req: NextRequest) {
     const fetchedBatches = await Promise.allSettled(promises);
     const rankedEngineLists: WebSearchResult[][] = [];
 
+    if (dnsDomainResult) {
+      rankedEngineLists.push([dnsDomainResult]);
+    }
     if (instantKnowledge) {
       rankedEngineLists.push([instantKnowledge]);
     }
