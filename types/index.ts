@@ -14,7 +14,7 @@ export interface VideoResult {
   publishedAt?: string;
   views?: string;
   duration?: string;
-  source: 'YouTube';
+  source?: string;
 }
 
 export interface SearchResult {
