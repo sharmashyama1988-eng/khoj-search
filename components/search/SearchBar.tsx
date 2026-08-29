@@ -86,7 +86,7 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
     const bang = resolveBang(targetQ);
     if (bang.isBang && bang.targetUrl) {
       if (typeof window !== 'undefined') {
-        window.location.href = bang.targetUrl;
+        window.open(bang.targetUrl, '_blank', 'noopener,noreferrer');
       }
       return;
     }
