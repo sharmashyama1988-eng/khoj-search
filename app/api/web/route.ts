@@ -285,15 +285,16 @@ async function fetchGoogleNewsLive(query: string, lang = 'en'): Promise<WebSearc
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// 3. DuckDuckGo Fresh Real-Time Search (Unrestricted & SafeSearch Aware)
+// 3. DuckDuckGo Fresh Real-Time Search (Unrestricted & SafeSearch & Time Filter Aware)
 // ─────────────────────────────────────────────────────────────────────────────
-async function fetchDuckDuckGoWeb(query: string, safe: 'off' | 'moderate' | 'strict' = 'off'): Promise<WebSearchResult[]> {
+async function fetchDuckDuckGoWeb(query: string, safe: 'off' | 'moderate' | 'strict' = 'off', time: string = 'all'): Promise<WebSearchResult[]> {
   try {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), 4000);
 
     const kpParam = safe === 'strict' ? 'kp=1' : safe === 'moderate' ? 'kp=-1' : 'kp=-2';
-    const res = await fetch(`https://html.duckduckgo.com/html/?q=${encodeURIComponent(query)}&${kpParam}&df=y`, {
+    const dfParam = time && time !== 'all' ? `&df=${time}` : '&df=y';
+    const res = await fetch(`https://html.duckduckgo.com/html/?q=${encodeURIComponent(query)}&${kpParam}${dfParam}`, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -552,6 +553,7 @@ export async function GET(req: NextRequest) {
   const rawQuery = searchParams.get('q') ?? '';
   const lang     = searchParams.get('lang') ?? 'en';
   const limit    = Math.min(parseInt(searchParams.get('limit') ?? '20', 10), 30);
+  const time     = searchParams.get('time') ?? searchParams.get('df') ?? 'all';
   const safeParam = (searchParams.get('safe') || searchParams.get('safesearch') || 'off').toLowerCase();
   const safe: 'off' | 'moderate' | 'strict' = safeParam === 'strict' ? 'strict' : safeParam === 'moderate' ? 'moderate' : 'off';
 
@@ -569,7 +571,7 @@ export async function GET(req: NextRequest) {
     const promises = [
       fetchGoogleCustomSearch(query, lang),
       fetchGoogleNewsLive(query, lang),
-      fetchDuckDuckGoWeb(query, safe),
+      fetchDuckDuckGoWeb(query, safe, time),
       fetchDuckDuckGoAPI(query),
       fetchRedditWeb(query),
       fetchStackOverflowWeb(query),

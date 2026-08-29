@@ -1,28 +1,31 @@
 'use client';
+
 import { useState, useCallback, useRef } from 'react';
 import type { SearchResult, ImageResult, BookResult, ArxivResult, GithubResult, WikiPanel, SearchTab } from '@/types';
+import type { InstantAnswerResponse } from '@/app/api/instant/route';
 
 export interface SearchState {
-  results:    SearchResult[];
-  images:     ImageResult[];
-  books:      BookResult[];
-  arxiv:      ArxivResult[];
-  github:     GithubResult[];
-  wikiPanel:  WikiPanel | null;
-  loading:    boolean;
-  error:      string | null;
+  results:       SearchResult[];
+  images:        ImageResult[];
+  books:         BookResult[];
+  arxiv:         ArxivResult[];
+  github:        GithubResult[];
+  wikiPanel:     WikiPanel | null;
+  instantAnswer: InstantAnswerResponse | null;
+  loading:       boolean;
+  error:         string | null;
 }
 
 const INIT: SearchState = {
   results: [], images: [], books: [], arxiv: [], github: [],
-  wikiPanel: null, loading: false, error: null,
+  wikiPanel: null, instantAnswer: null, loading: false, error: null,
 };
 
 export function useSearch() {
   const [state, setState] = useState<SearchState>(INIT);
   const abortRef = useRef<AbortController | null>(null);
 
-  const search = useCallback(async (query: string, lang: string, tab: SearchTab) => {
+  const search = useCallback(async (query: string, lang: string, tab: SearchTab, time: string = 'all') => {
     if (!query.trim()) return;
 
     // Abort previous in-flight request to prevent race condition
@@ -39,11 +42,20 @@ export function useSearch() {
       // Fetch global multi-source web results + query expansion for "all" tab
       if (tab === 'all') {
         fetches.push(
-          fetch(`/api/web?q=${encodeURIComponent(query)}&lang=${lang}&safe=${safe}`, { signal })
+          fetch(`/api/web?q=${encodeURIComponent(query)}&lang=${lang}&safe=${safe}&time=${time}`, { signal })
             .then((r) => r.json())
             .then((d: { results?: SearchResult[] }) => {
               if (!signal.aborted) {
                 setState((s) => ({ ...s, results: d.results ?? [] }));
+              }
+            })
+            .catch(() => {}),
+
+          fetch(`/api/instant?q=${encodeURIComponent(query)}`, { signal })
+            .then((r) => r.json())
+            .then((d: InstantAnswerResponse) => {
+              if (!signal.aborted) {
+                setState((s) => ({ ...s, instantAnswer: d.found ? d : null }));
               }
             })
             .catch(() => {}),

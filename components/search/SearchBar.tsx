@@ -1,9 +1,11 @@
-﻿'use client';
+'use client';
+
 import { useState, useRef, useEffect, FormEvent, KeyboardEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/hooks/useLanguage';
 import { debounce } from '@/lib/utils';
 import { isDirectDomainOrUrl } from '@/lib/intent';
+import { resolveBang, getMatchingBangs } from '@/lib/bangs';
 
 interface Props {
   initialValue?: string;
@@ -22,6 +24,7 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
   const inputRef = useRef<HTMLInputElement>(null);
 
   const directInfo = isDirectDomainOrUrl(query);
+  const bangInfo = resolveBang(query);
 
   // Voice search — Web Speech API
   const startVoice = () => {
@@ -57,14 +60,15 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
   }, []);
 
   const fetchSuggestions = debounce(async (q: string) => {
-    if (q.length < 2) { setSuggestions([]); return; }
+    const trimmed = q.trim();
+    if (!trimmed) { setSuggestions([]); return; }
     try {
-      const res  = await fetch(`/api/suggestions?q=${encodeURIComponent(q)}&lang=${lang}`);
+      const res  = await fetch(`/api/suggestions?q=${encodeURIComponent(trimmed)}&lang=${lang}`);
       const data = await res.json() as { suggestions: string[] };
       setSuggestions(data.suggestions ?? []);
       setShowSugg(true);
     } catch { setSuggestions([]); }
-  }, 250);
+  }, 200);
 
   const handleChange = (v: string) => {
     setQuery(v);
@@ -73,10 +77,21 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
   };
 
   const doSearch = (q: string) => {
-    if (!q.trim()) return;
+    const targetQ = q.trim();
+    if (!targetQ) return;
     setShowSugg(false);
     setSuggestions([]);
-    router.push(`/search?q=${encodeURIComponent(q.trim())}&lang=${lang}&tab=${currentTab}`);
+
+    // Check for !bang direct redirect
+    const bang = resolveBang(targetQ);
+    if (bang.isBang && bang.targetUrl) {
+      if (typeof window !== 'undefined') {
+        window.location.href = bang.targetUrl;
+      }
+      return;
+    }
+
+    router.push(`/search?q=${encodeURIComponent(targetQ)}&lang=${lang}&tab=${currentTab}`);
   };
 
   const openDirectUrl = (url: string) => {
@@ -117,13 +132,13 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
   return (
     <div className={`w-full ${compact ? 'max-w-2xl' : 'max-w-2xl'} relative`}>
       <form onSubmit={handleSubmit} className="relative">
-        <div className={`flex items-center gap-3 w-full
-          bg-surface-2 border border-border rounded-full
-          shadow-sm hover:shadow-md hover:border-text-muted/40 focus-within:border-accent focus-within:ring-2 focus-within:ring-accent/15
-          transition-all duration-200 ${compact ? 'px-4 py-1.5' : 'px-5 py-3'}`}
+        <div className={`flex items-center gap-2 sm:gap-3 w-full
+          bg-surface-2/95 backdrop-blur-md border border-border/80 rounded-full
+          shadow-sm hover:shadow-md hover:border-primary/40 focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/20
+          transition-all duration-200 ${compact ? 'px-3 sm:px-4 py-1.5' : 'px-4 sm:px-5 py-3'}`}
         >
           {/* Search icon */}
-          <svg className="w-5 h-5 text-text-muted shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg className="w-4 sm:w-5 h-4 sm:h-5 text-text-muted shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
               d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
@@ -134,22 +149,35 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
             value={query}
             onChange={(e) => handleChange(e.target.value)}
             onKeyDown={handleKeyDown}
-            onFocus={() => (suggestions.length > 0 || directInfo.isUrl) && setShowSugg(true)}
-            onBlur={() => setTimeout(() => setShowSugg(false), 200)}
+            onFocus={() => (suggestions.length > 0 || directInfo.isUrl || bangInfo.isBang) && setShowSugg(true)}
+            onBlur={() => setTimeout(() => setShowSugg(false), 220)}
             placeholder={t('search_placeholder')}
             className={`flex-1 bg-transparent text-text-primary placeholder-text-muted
-              outline-none font-normal ${compact ? 'text-sm' : 'text-base'}`}
+              outline-none font-normal ${compact ? 'text-sm' : 'text-sm sm:text-base'}`}
             autoComplete="off"
             spellCheck={false}
           />
 
+          {/* Bang Predictor Pill */}
+          {bangInfo.isBang && bangInfo.bang && (
+            <button
+              type="button"
+              onClick={() => doSearch(query)}
+              title={`Direct search on ${bangInfo.bang.name}`}
+              className="shrink-0 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full bg-gradient-to-r from-amber-500/20 to-orange-500/20 text-amber-300 border border-amber-500/35 text-[11px] sm:text-xs font-semibold flex items-center gap-1 transition-all animate-fade-in cursor-pointer active:scale-95"
+            >
+              <span>{bangInfo.bang.icon}</span>
+              <span className="hidden sm:inline">Direct {bangInfo.bang.name} ↗</span>
+            </button>
+          )}
+
           {/* Direct URL Instant Launch Pill */}
-          {directInfo.isUrl && (
+          {!bangInfo.isBang && directInfo.isUrl && (
             <button
               type="button"
               onClick={() => openDirectUrl(directInfo.url)}
               title={`Open ${directInfo.domain} in new tab`}
-              className="shrink-0 px-2.5 py-1 rounded-full bg-indigo-500/15 hover:bg-indigo-500/25 text-indigo-400 border border-indigo-500/30 text-xs font-semibold flex items-center gap-1 transition-all animate-fade-in cursor-pointer"
+              className="shrink-0 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full bg-indigo-500/15 hover:bg-indigo-500/25 text-indigo-400 border border-indigo-500/30 text-[11px] sm:text-xs font-semibold flex items-center gap-1 transition-all animate-fade-in cursor-pointer"
             >
               <span>↗ Open</span>
               <span className="hidden sm:inline">{directInfo.domain}</span>
@@ -159,7 +187,8 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
           {/* Clear button */}
           {query && (
             <button type="button" onClick={() => { setQuery(''); setSuggestions([]); inputRef.current?.focus(); }}
-              className="shrink-0 text-text-muted hover:text-text-primary transition-colors p-1">
+              className="shrink-0 text-text-muted hover:text-text-primary transition-colors p-1"
+              title="Clear search">
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
@@ -174,7 +203,7 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
             className={`shrink-0 transition-all duration-150 rounded-full p-1.5
               ${listening
                 ? 'text-red-400 animate-pulse scale-110'
-                : 'text-text-muted hover:text-accent'}`}
+                : 'text-text-muted hover:text-primary'}`}
           >
             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 1a4 4 0 0 1 4 4v7a4 4 0 0 1-8 0V5a4 4 0 0 1 4-4zm-7 11a7 7 0 0 0 14 0h-2a5 5 0 0 1-10 0H5zm7 9v-2a7.003 7.003 0 0 0 6.93-6H19a7.003 7.003 0 0 1-14 0H3.07A7.003 7.003 0 0 0 10 21v2h2z"/>
@@ -182,9 +211,9 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
           </button>
 
           <button type="submit"
-            className={`shrink-0 bg-accent hover:bg-accent-hover text-surface-2 font-medium
+            className={`shrink-0 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold
               rounded-full transition-all duration-200 hover:scale-105 active:scale-95 shadow-sm
-              ${compact ? 'px-3.5 py-1 text-xs' : 'px-5 py-2 text-sm'}`}
+              ${compact ? 'px-3 sm:px-3.5 py-1 text-xs' : 'px-4 sm:px-5 py-2 text-xs sm:text-sm'}`}
           >
             {t('search_button')}
           </button>
@@ -192,46 +221,65 @@ export function SearchBar({ initialValue = '', compact = false, currentTab = 'al
       </form>
 
       {/* Suggestions & Direct URL Dropdown */}
-      {showSugg && (suggestions.length > 0 || directInfo.isUrl) && (
-        <div className="absolute left-0 right-0 top-full mt-2 bg-surface border border-border
-          rounded-xl shadow-2xl z-50 overflow-hidden animate-slide-up">
+      {showSugg && (suggestions.length > 0 || directInfo.isUrl || bangInfo.isBang) && (
+        <div className="absolute left-0 right-0 top-full mt-2 bg-surface-2/95 backdrop-blur-xl border border-border/80
+          rounded-2xl shadow-2xl z-50 overflow-hidden animate-slide-up divide-y divide-border/40">
           
+          {/* Bang Shortcut Item */}
+          {bangInfo.isBang && bangInfo.bang && (
+            <button
+              type="button"
+              onMouseDown={() => doSearch(query)}
+              className="w-full flex items-center justify-between px-4 sm:px-5 py-3 text-sm text-left bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 transition-colors"
+            >
+              <div className="flex items-center gap-3">
+                <span className="text-lg">{bangInfo.bang.icon}</span>
+                <span className="text-xs sm:text-sm">Search directly on <strong className="text-amber-200">{bangInfo.bang.name}</strong></span>
+              </div>
+              <span className="text-[11px] px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 font-mono">
+                !Bang Shortcut ↗
+              </span>
+            </button>
+          )}
+
           {/* Direct URL Instant Item */}
-          {directInfo.isUrl && (
+          {!bangInfo.isBang && directInfo.isUrl && (
             <button
               type="button"
               onMouseDown={() => {
                 openDirectUrl(directInfo.url);
                 doSearch(query);
               }}
-              className="w-full flex items-center justify-between px-5 py-3 text-sm text-left bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-400 border-b border-border/50 transition-colors"
+              className="w-full flex items-center justify-between px-4 sm:px-5 py-3 text-sm text-left bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-400 transition-colors"
             >
               <div className="flex items-center gap-3">
                 <span className="text-base">🌐</span>
-                <span>Open <strong className="text-text-primary">{directInfo.domain}</strong> in new tab</span>
+                <span className="text-xs sm:text-sm">Open <strong className="text-text-primary">{directInfo.domain}</strong> in new tab</span>
               </div>
-              <span className="text-xs px-2 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 font-mono">
+              <span className="text-[11px] px-2 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 font-mono">
                 Direct URL ↗
               </span>
             </button>
           )}
 
-          {suggestions.map((s, i) => (
-            <button
-              key={s}
-              type="button"
-              onMouseDown={() => doSearch(s)}
-              className={`w-full flex items-center gap-3 px-5 py-3 text-sm text-left
-                hover:bg-surface-2 transition-colors
-                ${i === activeIdx ? 'bg-surface-2 text-text-primary' : 'text-text-secondary'}`}
-            >
-              <svg className="w-4 h-4 text-text-muted shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-              {s}
-            </button>
-          ))}
+          {suggestions.map((s, i) => {
+            const isBangSugg = s.startsWith('!');
+            return (
+              <button
+                key={s}
+                type="button"
+                onMouseDown={() => doSearch(s)}
+                className={`w-full flex items-center gap-3 px-4 sm:px-5 py-2.5 sm:py-3 text-xs sm:text-sm text-left
+                  hover:bg-surface-3 transition-colors cursor-pointer
+                  ${i === activeIdx ? 'bg-surface-3 text-text-primary font-medium' : 'text-text-secondary'}`}
+              >
+                <span className="text-text-muted shrink-0 text-xs sm:text-sm">
+                  {isBangSugg ? '⚡' : '🔍'}
+                </span>
+                <span className="line-clamp-1">{s}</span>
+              </button>
+            );
+          })}
         </div>
       )}
     </div>

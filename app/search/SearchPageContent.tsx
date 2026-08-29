@@ -1,11 +1,15 @@
 'use client';
+
 import { useEffect, useState, useCallback } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
-import { SearchTabs } from '@/components/search/SearchTabs';
+import { SearchTabs, type TimeFilter } from '@/components/search/SearchTabs';
+import { MobileBottomNav } from '@/components/layout/MobileBottomNav';
+import { AgentCopilotModal } from '@/components/agent/AgentCopilotModal';
 import { ResultCard } from '@/components/results/ResultCard';
 import { WikiPanel } from '@/components/results/WikiPanel';
+import { InstantAnswerCard } from '@/components/results/InstantAnswerCard';
 import { ImageGrid } from '@/components/results/ImageGrid';
 import { VideosTab } from '@/components/results/VideosTab';
 import { BookCard } from '@/components/results/BookCard';
@@ -52,14 +56,17 @@ export default function SearchPageContent() {
 
   const query     = searchParams.get('q') ?? '';
   const tabParam  = (searchParams.get('tab') ?? 'all') as SearchTab;
+  const timeParam = (searchParams.get('time') ?? 'all') as TimeFilter;
   const langParam = searchParams.get('lang') ?? lang;
   const pageParam = Math.max(1, parseInt(searchParams.get('page') ?? '1', 10));
 
   const [activeTab, setActiveTab] = useState<SearchTab>(tabParam);
+  const [timeFilter, setTimeFilter] = useState<TimeFilter>(timeParam);
   const [page, setPage]           = useState(pageParam);
+  const [agentOpen, setAgentOpen] = useState(false);
   const [readerTarget, setReaderTarget] = useState<{ url: string; title: string } | null>(null);
 
-  const { results, images, books, arxiv, github, wikiPanel, loading, error, search } = useSearch();
+  const { results, images, books, arxiv, github, wikiPanel, instantAnswer, loading, error, search } = useSearch();
   const intent = useIntentDetector(query);
 
   // Sync language from URL
@@ -70,22 +77,37 @@ export default function SearchPageContent() {
   // Search + add to history
   useEffect(() => {
     if (query) {
-      search(query, langParam || lang, activeTab);
+      search(query, langParam || lang, activeTab, timeFilter);
       addToHistory(query, langParam || lang);
     }
-  }, [query, activeTab, langParam, lang, search, addToHistory]);
+  }, [query, activeTab, timeFilter, langParam, lang, search, addToHistory]);
 
   const changeTab = useCallback((tab: SearchTab) => {
     setActiveTab(tab);
     setPage(1);
-    router.push(`/search?q=${encodeURIComponent(query)}&lang=${lang}&tab=${tab}&page=1`);
-  }, [query, lang, router]);
+    const params = new URLSearchParams(searchParams.toString());
+    params.set('tab', tab);
+    params.set('page', '1');
+    router.push(`/search?${params.toString()}`);
+  }, [searchParams, router]);
+
+  const changeTime = useCallback((time: TimeFilter) => {
+    setTimeFilter(time);
+    setPage(1);
+    const params = new URLSearchParams(searchParams.toString());
+    if (time === 'all') params.delete('time');
+    else params.set('time', time);
+    params.set('page', '1');
+    router.push(`/search?${params.toString()}`);
+  }, [searchParams, router]);
 
   const changePage = useCallback((p: number) => {
     setPage(p);
-    router.push(`/search?q=${encodeURIComponent(query)}&lang=${lang}&tab=${activeTab}&page=${p}`);
+    const params = new URLSearchParams(searchParams.toString());
+    params.set('page', p.toString());
+    router.push(`/search?${params.toString()}`);
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [query, lang, activeTab, router]);
+  }, [searchParams, router]);
 
   const openReader = useCallback((url: string, title: string) => {
     setReaderTarget({ url, title });
@@ -129,7 +151,6 @@ export default function SearchPageContent() {
   const totalPages = activeTab === 'all' && totalItems > 0 ? 10 : Math.max(1, Math.ceil(totalItems / PAGE_SIZE));
   const currentPage = Math.min(page, totalPages);
 
-  // If page index exceeds initial batch, calculate smooth sliding slice or modulo fallback
   const startIdx = (currentPage - 1) * PAGE_SIZE;
   const pagedResults = results.length > 0 
     ? (results.slice(startIdx, startIdx + PAGE_SIZE).length > 0
@@ -143,30 +164,45 @@ export default function SearchPageContent() {
   const hasResults = totalItems > 0;
 
   return (
-    <div className="min-h-screen flex flex-col bg-[var(--surface)]" dir={dir}>
+    <div className="min-h-screen flex flex-col bg-surface pb-16 md:pb-0" dir={dir}>
       <Header showSearch query={query} currentTab={activeTab} />
 
-      <main className="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 py-4">
+      <main className="flex-1 max-w-7xl mx-auto w-full px-3 sm:px-6 py-3 sm:py-4">
         {/* Tabs + export row */}
-        <div className="mb-4 flex flex-wrap items-center gap-3">
-          <SearchTabs activeTab={activeTab} onTabChange={changeTab} />
-          <div className="ml-auto flex items-center gap-2">
-            {hasResults && (
-              <ExportButton data={{ results, arxiv, github, books, query }} />
-            )}
+        <div className="mb-3 sm:mb-4">
+          <SearchTabs
+            activeTab={activeTab}
+            onTabChange={changeTab}
+            timeFilter={timeFilter}
+            onTimeChange={changeTime}
+          />
+          <div className="flex items-center justify-between gap-2 px-1">
             {query && (
-              <span className="text-xs text-text-muted hidden sm:block">
-                {t('results_for')}: <span className="font-medium text-text-secondary">&ldquo;{query}&rdquo;</span>
+              <span className="text-xs text-text-muted">
+                {t('results_for')}: <span className="font-semibold text-text-primary">&ldquo;{query}&rdquo;</span>
                 {totalItems > 0 && <span className="ml-1.5 opacity-60">({totalItems} results)</span>}
               </span>
+            )}
+            {hasResults && (
+              <div className="ml-auto">
+                <ExportButton data={{ results, arxiv, github, books, query }} />
+              </div>
             )}
           </div>
         </div>
 
         {/* 2-column grid */}
-        <div className="flex gap-6 items-start">
+        <div className="flex flex-col lg:flex-row gap-6 items-start">
           {/* LEFT column */}
-          <div className="flex-1 min-w-0">
+          <div className="flex-1 min-w-0 w-full">
+
+            {/* Instant DuckDuckGo Zero-Click Answer Card */}
+            {activeTab === 'all' && instantAnswer && (
+              <InstantAnswerCard
+                data={instantAnswer}
+                onTopicClick={(topic) => router.push(`/search?q=${encodeURIComponent(topic)}&tab=all`)}
+              />
+            )}
 
             {/* Instant widget */}
             {hasWidget && (
@@ -179,7 +215,7 @@ export default function SearchPageContent() {
             )}
 
             {/* Featured AI Answer */}
-            {activeTab === 'all' && query && !hasWidget && currentPage === 1 && (
+            {activeTab === 'all' && query && !hasWidget && currentPage === 1 && !instantAnswer?.abstract && (
               <SummaryCard query={query} />
             )}
 
@@ -233,7 +269,7 @@ export default function SearchPageContent() {
                     )}
                   </div>
                 )
-                : !error && !hasWidget && <EmptyState message={t('no_results')} />
+                : !error && !hasWidget && !instantAnswer && <EmptyState message={t('no_results')} />
             )}
 
             {/* Tab: Videos */}
@@ -290,6 +326,16 @@ export default function SearchPageContent() {
           onClose={() => setReaderTarget(null)}
         />
       )}
+
+      {/* Mobile Floating Bottom Navigation Bar */}
+      <MobileBottomNav onOpenAgent={() => setAgentOpen(true)} />
+
+      {/* Autonomous Agent Copilot Modal (Mobile & Global) */}
+      <AgentCopilotModal
+        initialQuery={query}
+        isOpen={agentOpen}
+        onClose={() => setAgentOpen(false)}
+      />
 
       <Footer />
     </div>
