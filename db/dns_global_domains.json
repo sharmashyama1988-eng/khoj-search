@@ -293041,5 +293041,580 @@
       "ke",
       "education"
     ]
+  },
+  {
+    "name": "Medium",
+    "domain": "medium.com",
+    "url": "https://medium.com",
+    "category": "Publishing & Articles",
+    "desc": "World premier publishing platform for human-written essays, engineering articles, and ideas.",
+    "tags": [
+      "medium",
+      "medium.com",
+      "blog",
+      "article",
+      "writing",
+      "stories"
+    ]
+  },
+  {
+    "name": "Substack",
+    "domain": "substack.com",
+    "url": "https://substack.com",
+    "category": "Newsletters & Independent Journalism",
+    "desc": "Leading platform for independent newsletters, expert analysis, and publications.",
+    "tags": [
+      "substack",
+      "substack.com",
+      "newsletter",
+      "journalism",
+      "writers",
+      "articles"
+    ]
+  },
+  {
+    "name": "WordPress",
+    "domain": "wordpress.org",
+    "url": "https://wordpress.org",
+    "category": "Blogging & CMS",
+    "desc": "Open-source web publishing software and world largest content management platform.",
+    "tags": [
+      "wordpress",
+      "wordpress.org",
+      "wp",
+      "cms",
+      "blog",
+      "plugins"
+    ]
+  },
+  {
+    "name": "WordPress.com",
+    "domain": "wordpress.com",
+    "url": "https://wordpress.com",
+    "category": "Blogging & Web Hosting",
+    "desc": "Hosted blogging and web creation platform powered by WordPress.",
+    "tags": [
+      "wordpress.com",
+      "wordpress",
+      "blogs",
+      "sites"
+    ]
+  },
+  {
+    "name": "Ghost",
+    "domain": "ghost.org",
+    "url": "https://ghost.org",
+    "category": "Blogging & Creators",
+    "desc": "Modern open-source publishing platform built for independent creators and media teams.",
+    "tags": [
+      "ghost",
+      "ghost.org",
+      "ghost blog",
+      "publishing",
+      "newsletters"
+    ]
+  },
+  {
+    "name": "Blogger",
+    "domain": "blogger.com",
+    "url": "https://blogger.com",
+    "category": "Blogging & Google",
+    "desc": "Google free, reliable web publishing and blogging service.",
+    "tags": [
+      "blogger",
+      "blogger.com",
+      "blogspot",
+      "free blog"
+    ]
+  },
+  {
+    "name": "Tumblr",
+    "domain": "tumblr.com",
+    "url": "https://tumblr.com",
+    "category": "Microblogging & Community",
+    "desc": "Microblogging and social networking platform for art, culture, and visual media.",
+    "tags": [
+      "tumblr",
+      "tumblr.com",
+      "blogs",
+      "fandom",
+      "art"
+    ]
+  },
+  {
+    "name": "LiveJournal",
+    "domain": "livejournal.com",
+    "url": "https://livejournal.com",
+    "category": "Community & Journals",
+    "desc": "Global online community for personal journaling, discussions, and diaries.",
+    "tags": [
+      "livejournal",
+      "livejournal.com",
+      "journal",
+      "community"
+    ]
+  },
+  {
+    "name": "Wix",
+    "domain": "wix.com",
+    "url": "https://wix.com",
+    "category": "Website Builder",
+    "desc": "Cloud-based web development and SEO-optimized website creation suite.",
+    "tags": [
+      "wix",
+      "wix.com",
+      "website builder",
+      "portfolio",
+      "store"
+    ]
+  },
+  {
+    "name": "Squarespace",
+    "domain": "squarespace.com",
+    "url": "https://squarespace.com",
+    "category": "Website Builder & Design",
+    "desc": "All-in-one website creation platform with award-winning design templates.",
+    "tags": [
+      "squarespace",
+      "squarespace.com",
+      "domains",
+      "builder",
+      "design"
+    ]
+  },
+  {
+    "name": "Webflow",
+    "domain": "webflow.com",
+    "url": "https://webflow.com",
+    "category": "Visual Web Development",
+    "desc": "Visual web design, animations, CMS, and hosting for modern digital experiences.",
+    "tags": [
+      "webflow",
+      "webflow.com",
+      "no code",
+      "web design",
+      "ui"
+    ]
+  },
+  {
+    "name": "DEV Community",
+    "domain": "dev.to",
+    "url": "https://dev.to",
+    "category": "Developer & Coding Blog",
+    "desc": "Constructive and inclusive social network for software developers to share tutorials.",
+    "tags": [
+      "dev community",
+      "dev.to",
+      "dev",
+      "coding blog",
+      "tutorials",
+      "javascript",
+      "python"
+    ]
+  },
+  {
+    "name": "Hashnode",
+    "domain": "hashnode.com",
+    "url": "https://hashnode.com",
+    "category": "Developer Blogging",
+    "desc": "Free developer blogging platform and engineering community for software engineers.",
+    "tags": [
+      "hashnode",
+      "hashnode.com",
+      "tech blog",
+      "engineering",
+      "articles"
+    ]
+  },
+  {
+    "name": "GitHub Pages",
+    "domain": "github.io",
+    "url": "https://github.io",
+    "category": "Open Source & Developer Portfolios",
+    "desc": "Websites for developers, open source projects, documentation, and personal blogs.",
+    "tags": [
+      "github pages",
+      "github.io",
+      "github",
+      "portfolio",
+      "docs"
+    ]
+  },
+  {
+    "name": "HackerNoon",
+    "domain": "hackernoon.com",
+    "url": "https://hackernoon.com",
+    "category": "Tech & AI Publication",
+    "desc": "Independent technology publication covering AI, blockchain, cybersecurity, and coding.",
+    "tags": [
+      "hackernoon",
+      "hackernoon.com",
+      "tech news",
+      "ai",
+      "crypto",
+      "programming"
+    ]
+  },
+  {
+    "name": "FreeCodeCamp",
+    "domain": "freecodecamp.org",
+    "url": "https://freecodecamp.org",
+    "category": "Coding & Learning",
+    "desc": "Non-profit community that teaches people to code with interactive projects and certifications.",
+    "tags": [
+      "freecodecamp",
+      "freecodecamp.org",
+      "learn coding",
+      "web dev",
+      "html",
+      "python"
+    ]
+  },
+  {
+    "name": "GeeksforGeeks",
+    "domain": "geeksforgeeks.org",
+    "url": "https://geeksforgeeks.org",
+    "category": "Computer Science & DSA",
+    "desc": "Computer science portal for DSA, algorithms, competitive programming, and interview prep.",
+    "tags": [
+      "geeksforgeeks",
+      "geeksforgeeks.org",
+      "gfg",
+      "dsa",
+      "algorithms",
+      "interview questions"
+    ]
+  },
+  {
+    "name": "CSS-Tricks",
+    "domain": "css-tricks.com",
+    "url": "https://css-tricks.com",
+    "category": "Web Design & CSS",
+    "desc": "Articles, videos, and guides on CSS, HTML, JavaScript, and responsive web design.",
+    "tags": [
+      "css-tricks",
+      "css-tricks.com",
+      "css tricks",
+      "css",
+      "frontend",
+      "flexbox",
+      "grid"
+    ]
+  },
+  {
+    "name": "Smashing Magazine",
+    "domain": "smashingmagazine.com",
+    "url": "https://smashingmagazine.com",
+    "category": "Web Design & UX",
+    "desc": "Professional magazine for web designers and developers on UI, UX, and performance.",
+    "tags": [
+      "smashing magazine",
+      "smashingmagazine.com",
+      "smashingmagazine",
+      "ux",
+      "ui design",
+      "accessibility"
+    ]
+  },
+  {
+    "name": "Hacker News",
+    "domain": "news.ycombinator.com",
+    "url": "https://news.ycombinator.com",
+    "category": "Tech & Startup Discussions",
+    "desc": "Social news website focusing on computer science, technology, and entrepreneurship by Y Combinator.",
+    "tags": [
+      "hacker news",
+      "news.ycombinator.com",
+      "news",
+      "ycombinator",
+      "hn",
+      "startups",
+      "tech discussion"
+    ]
+  },
+  {
+    "name": "HubSpot Blog",
+    "domain": "hubspot.com",
+    "url": "https://hubspot.com",
+    "category": "Marketing & Sales",
+    "desc": "Authority inbound marketing, sales, customer service, and business strategy guides.",
+    "tags": [
+      "hubspot blog",
+      "hubspot.com",
+      "hubspot",
+      "marketing",
+      "sales",
+      "seo",
+      "crm"
+    ]
+  },
+  {
+    "name": "Harvard Business Review",
+    "domain": "hbr.org",
+    "url": "https://hbr.org",
+    "category": "Management & Strategy",
+    "desc": "World premier management and leadership research, case studies, and executive insights.",
+    "tags": [
+      "harvard business review",
+      "hbr.org",
+      "hbr",
+      "management",
+      "leadership",
+      "strategy"
+    ]
+  },
+  {
+    "name": "Entrepreneur",
+    "domain": "entrepreneur.com",
+    "url": "https://entrepreneur.com",
+    "category": "Startups & Small Business",
+    "desc": "Advice, insight, and profiles for entrepreneurs, founders, and small business owners.",
+    "tags": [
+      "entrepreneur",
+      "entrepreneur.com",
+      "startups",
+      "funding",
+      "business ideas"
+    ]
+  },
+  {
+    "name": "Fast Company",
+    "domain": "fastcompany.com",
+    "url": "https://fastcompany.com",
+    "category": "Innovation & Design",
+    "desc": "Progressive business media brand with focus on innovation in technology, leadership, and design.",
+    "tags": [
+      "fast company",
+      "fastcompany.com",
+      "fastcompany",
+      "innovation",
+      "design",
+      "future"
+    ]
+  },
+  {
+    "name": "TechCrunch",
+    "domain": "techcrunch.com",
+    "url": "https://techcrunch.com",
+    "category": "Startups & Venture Capital",
+    "desc": "Breaking technology news, startup profiles, venture capital funding, and analysis.",
+    "tags": [
+      "techcrunch",
+      "techcrunch.com",
+      "startups",
+      "vc funding",
+      "silicon valley"
+    ]
+  },
+  {
+    "name": "Quora",
+    "domain": "quora.com",
+    "url": "https://quora.com",
+    "category": "Q&A & Knowledge Sharing",
+    "desc": "Question-and-answer platform where questions are asked, answered, followed, and edited by users.",
+    "tags": [
+      "quora",
+      "quora.com",
+      "q&a",
+      "answers",
+      "questions",
+      "opinions"
+    ]
+  },
+  {
+    "name": "Indie Hackers",
+    "domain": "indiehackers.com",
+    "url": "https://indiehackers.com",
+    "category": "Solopreneurs & Startups",
+    "desc": "Community of bootstrap founders and solopreneurs sharing revenue, stories, and growth strategies.",
+    "tags": [
+      "indie hackers",
+      "indiehackers.com",
+      "indiehackers",
+      "solopreneur",
+      "saas",
+      "bootstrap",
+      "mrr"
+    ]
+  },
+  {
+    "name": "Product Hunt",
+    "domain": "producthunt.com",
+    "url": "https://producthunt.com",
+    "category": "Product Launches & Tech",
+    "desc": "Curation of the best new products in tech, apps, AI tools, and startups every day.",
+    "tags": [
+      "product hunt",
+      "producthunt.com",
+      "producthunt",
+      "launches",
+      "ai tools",
+      "apps"
+    ]
+  },
+  {
+    "name": "Stack Exchange",
+    "domain": "stackexchange.com",
+    "url": "https://stackexchange.com",
+    "category": "Expert Q&A Network",
+    "desc": "Network of 170+ Q&A communities across science, math, physics, linguistics, and technology.",
+    "tags": [
+      "stack exchange",
+      "stackexchange.com",
+      "stackexchange",
+      "ask ubuntu",
+      "super user",
+      "server fault"
+    ]
+  },
+  {
+    "name": "wikiHow",
+    "domain": "wikihow.com",
+    "url": "https://wikihow.com",
+    "category": "How-to & Step-by-Step Guides",
+    "desc": "World leading how-to website with step-by-step illustrations for learning how to do anything.",
+    "tags": [
+      "wikihow",
+      "wikihow.com",
+      "how to",
+      "guide",
+      "steps",
+      "tutorial",
+      "learn"
+    ]
+  },
+  {
+    "name": "Instructables",
+    "domain": "instructables.com",
+    "url": "https://instructables.com",
+    "category": "DIY & Hands-on Projects",
+    "desc": "Community for people who like to make things with step-by-step DIY projects in electronics, craft, and code.",
+    "tags": [
+      "instructables",
+      "instructables.com",
+      "diy",
+      "arduino",
+      "craft",
+      "projects"
+    ]
+  },
+  {
+    "name": "Khan Academy",
+    "domain": "khanacademy.org",
+    "url": "https://khanacademy.org",
+    "category": "Free Online Education",
+    "desc": "Free world-class education for anyone, anywhere in math, physics, chemistry, biology, and CS.",
+    "tags": [
+      "khan academy",
+      "khanacademy.org",
+      "khanacademy",
+      "maths",
+      "science",
+      "free courses",
+      "lectures"
+    ]
+  },
+  {
+    "name": "Coursera",
+    "domain": "coursera.org",
+    "url": "https://coursera.org",
+    "category": "Online Degrees & Certificates",
+    "desc": "Online courses and degrees from leading universities like Stanford, Yale, Google, and IBM.",
+    "tags": [
+      "coursera",
+      "coursera.org",
+      "certificates",
+      "online degree",
+      "courses"
+    ]
+  },
+  {
+    "name": "Behance",
+    "domain": "behance.net",
+    "url": "https://behance.net",
+    "category": "Design & Creative Portfolios",
+    "desc": "Adobe premier creative showcase for graphic design, UI/UX, branding, and typography.",
+    "tags": [
+      "behance",
+      "behance.net",
+      "design portfolio",
+      "ui",
+      "ux",
+      "branding",
+      "typography"
+    ]
+  },
+  {
+    "name": "Dribbble",
+    "domain": "dribbble.com",
+    "url": "https://dribbble.com",
+    "category": "Design Showcase & UX/UI",
+    "desc": "Community for designers and creative professionals to share work, process, and current projects.",
+    "tags": [
+      "dribbble",
+      "dribbble.com",
+      "ui design",
+      "app design",
+      "illustrations",
+      "mockups"
+    ]
+  },
+  {
+    "name": "Pinterest",
+    "domain": "pinterest.com",
+    "url": "https://pinterest.com",
+    "category": "Visual Inspiration & Ideas",
+    "desc": "Visual discovery engine for finding ideas like home decor, style, art, recipes, and creative design.",
+    "tags": [
+      "pinterest",
+      "pinterest.com",
+      "pins",
+      "ideas",
+      "aesthetic",
+      "moodboard"
+    ]
+  },
+  {
+    "name": "DeviantArt",
+    "domain": "deviantart.com",
+    "url": "https://deviantart.com",
+    "category": "Digital Art & Community",
+    "desc": "Largest online social community for artists and art enthusiasts showcasing digital paintings and anime.",
+    "tags": [
+      "deviantart",
+      "deviantart.com",
+      "digital art",
+      "paintings",
+      "illustrations",
+      "anime art"
+    ]
+  },
+  {
+    "name": "ArtStation",
+    "domain": "artstation.com",
+    "url": "https://artstation.com",
+    "category": "3D Art & Game Concepts",
+    "desc": "Leading showcase platform for games, film, media & entertainment artists.",
+    "tags": [
+      "artstation",
+      "artstation.com",
+      "3d art",
+      "game design",
+      "concept art"
+    ]
+  },
+  {
+    "name": "Unsplash",
+    "domain": "unsplash.com",
+    "url": "https://unsplash.com",
+    "category": "High-Res Free Photography",
+    "desc": "Beautiful, free images and photos that you can download and use for any project.",
+    "tags": [
+      "unsplash",
+      "unsplash.com",
+      "stock photos",
+      "wallpapers",
+      "photography"
+    ]
   }
 ]
